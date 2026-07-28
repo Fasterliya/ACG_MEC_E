@@ -202,7 +202,7 @@ KSN_missions_7 = {
 		icon = mission_african_soldier
 		position = 1
 		trigger = {
-			always = yes
+			ai = no
 		}
 		effect = {
 			tunisia_area = {
