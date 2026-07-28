@@ -103,3 +103,66 @@ ACG_MEC_EXPAND_new_mercenary_7 = {
 	cost_modifier = 0.25
 	manpower_pool = 75
 }
+ACG_MEC_EXPAND_new_mercenary_8 = {
+    regiments_per_development = 0.1
+	max_size = 160
+    cavalry_weight = 0.10
+	artillery_weight = 0.20
+	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+	trigger = {
+		ai = no
+	}
+	general = {
+		fire = 2
+		shock = 3
+		maneuver = 2
+		siege = 2
+	}
+	modifier = {
+
+	}
+	cost_modifier = 0.25
+	manpower_pool = 75
+}
+ACG_MEC_EXPAND_new_mercenary_9 = {
+    regiments_per_development = 0.08
+	max_size = 200
+    cavalry_weight = 0.15
+	artillery_weight = 0.25
+	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+	trigger = {
+		ai = no
+	}
+	general = {
+		fire = 3
+		shock = 3
+		maneuver = 3
+		siege = 2
+	}
+	modifier = {
+
+	}
+	cost_modifier = 0.35
+	manpower_pool = 100
+}
+ACG_MEC_EXPAND_new_mercenary_10 = {
+    regiments_per_development = 0.06
+	max_size = 240
+    cavalry_weight = 0.20
+	artillery_weight = 0.30
+	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+	trigger = {
+		ai = no
+	}
+	general = {
+		fire = 4
+		shock = 4
+		maneuver = 4
+		siege = 3
+	}
+	modifier = {
+
+	}
+	cost_modifier = 0.50
+	manpower_pool = 120
+}
