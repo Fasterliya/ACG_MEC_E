@@ -8,7 +8,7 @@ country_decisions = {
 			is_at_war = no
 			mil_power = 200
 			total_development = 400
-			mil_tech = 12
+			mil_tech = 4
 			NOT = { has_country_modifier = KSN_spell_optical_bombardment }
 		}
 		effect = {
