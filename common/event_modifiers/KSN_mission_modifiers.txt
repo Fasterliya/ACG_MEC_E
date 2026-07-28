@@ -259,3 +259,10 @@ KSN_industrial_empire = {
 	build_cost = -0.15
 	administrative_efficiency = 0.10
 }
+
+KSN_spell_optical_bombardment = {
+	artillery_power = 0.15
+	fire_damage = 0.10
+	backrow_artillery_damage = 0.15
+	leader_land_fire = 1
+}

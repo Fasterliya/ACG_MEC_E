@@ -1,0 +1,25 @@
+country_decisions = {
+	Optical_Precision_Bombardment = {
+		major = yes
+		potential = {
+			tag = KSN
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 200
+			total_development = 400
+			mil_tech = 12
+			NOT = { has_country_modifier = KSN_spell_optical_bombardment }
+		}
+		effect = {
+			add_mil_power = -100
+			add_country_modifier = {
+				name = KSN_spell_optical_bombardment
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

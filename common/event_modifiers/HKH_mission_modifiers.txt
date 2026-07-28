@@ -256,3 +256,10 @@ HKH_ultimate_cavalry = {
 	cavalry_fire = 1
 	cavalry_shock = 1
 }
+
+HKH_spell_winds_of_tengu = {
+	cavalry_power = 0.20
+	shock_damage = 0.15
+	movement_speed = 0.15
+	leader_land_shock = 1
+}

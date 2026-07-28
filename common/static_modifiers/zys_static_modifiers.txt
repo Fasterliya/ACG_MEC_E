@@ -91,26 +91,32 @@ difficulty_hard_ai = {
 
 # 极难难度 - 玩家 (原版无加成)
 difficulty_very_hard_player = {
+	global_tax_modifier = 0.10
+	global_prosperity_growth = 0.5
+	production_efficiency = 0.05
 }
 
 # 极难难度 - AI (原版基准 +10%放大)
 difficulty_very_hard_ai = {
 	manpower_recovery_speed = 0.55
 	global_manpower_modifier = 0.55
-	land_forcelimit_modifier = 0.55
-	naval_forcelimit_modifier = 0.55
+	land_forcelimit_modifier = 0.60
+	naval_forcelimit_modifier = 0.60
 	global_regiment_cost = -0.36
 	global_ship_cost = -0.36
 	inflation_reduction = 0.05
+	technology_cost = -0.10
 	global_unrest = -2
 	war_exhaustion = -0.05
 	core_creation = -0.28
 	idea_cost = -0.28
 	interest = -1
 	improve_relation_modifier = 0.55
-	development_cost = -0.22
-	build_cost = -0.28
-	ae_impact = -0.36
+	development_cost = -0.25
+	build_cost = -0.30
+	army_tradition_decay = -0.005
+	infantry_cost = -0.25
+	ae_impact = -0.35
 	missionary_maintenance_cost = -0.33
 }
 

@@ -1,0 +1,25 @@
+country_decisions = {
+	Winds_of_Tengu_Riders = {
+		major = yes
+		potential = {
+			tag = HKH
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 200
+			total_development = 400
+			cavalry_fraction = 0.35
+			NOT = { has_country_modifier = HKH_spell_winds_of_tengu }
+		}
+		effect = {
+			add_mil_power = -100
+			add_country_modifier = {
+				name = HKH_spell_winds_of_tengu
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

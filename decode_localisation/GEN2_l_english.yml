@@ -46,6 +46,8 @@ l_english:
 
  gen2_military_readiness: "军事准备"
  gen2_military_readiness_desc: "备战状态：步兵作战能力得到加强。"
+ gen2_claim_fabrication: "伪造宣称加速"
+ gen2_claim_fabrication_desc: "间谍网络效率提升，伪造宣称的花费大幅削减——帝国为了扩张可以不择手段。"
  gen2_grand_army: "大兵团"
  gen2_grand_army_desc: "集结的大军团带来了训练度与围城能力的提升。"
  gen2_military_hegemony: "军事霸权"

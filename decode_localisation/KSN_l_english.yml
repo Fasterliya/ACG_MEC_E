@@ -176,3 +176,8 @@
  Water_Power_Grid_desc: "巨型水坝与涡轮机将帝国的工业产能推向了前所未有的高度。工厂的烟囱无需停歇，建筑工期缩短至原先的一半以下。"
  Ultimate_Engineer_Corps: "究极工程兵团"
  Ultimate_Engineer_Corps_desc: "河童最顶尖的工程师被编入军团，在战场上直接部署攻城机械与防御工事。帝国军队的士气与纪律达到了钢铁般的境界。"
+
+ KSN_spell_optical_bombardment: "光学「超精密炮击阵」"
+ KSN_spell_optical_bombardment_desc: "荷取展开了终极的光学工程阵列——数十枚精密透镜同时聚焦于敌军阵线。炮兵部队的火力、伤害与指挥精准度得到了永久性的质的飞跃。"
+ Optical_Precision_Bombardment_title: "光学「超精密炮击阵」"
+ Optical_Precision_Bombardment_desc: "需要消耗200军事点数。荷取在最先进的河童光学工坊中部署了超精密炮击阵列——每一发炮弹都将精准地命中敌军最脆弱的部位。"

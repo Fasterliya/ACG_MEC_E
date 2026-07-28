@@ -40,6 +40,10 @@ gen2_military = {
 				name = "gen2_military_readiness"
 				duration = -1
 			}
+			add_country_modifier = {
+				name = "gen2_claim_fabrication"
+				duration = 18250
+			}
 			add_splendor = 50
 			add_prestige = 10
 			add_mil_power = 100
@@ -121,7 +125,7 @@ gen2_military = {
 			}
 			add_country_modifier = {
 				name = "gen2_grand_army"
-				duration = -1
+				duration = 9125
 			}
 			add_splendor = 150
 			add_prestige = 20
@@ -220,7 +224,7 @@ gen2_naval = {
 			}
 			add_country_modifier = {
 				name = "gen2_established_fleet"
-				duration = -1
+				duration = 9125
 			}
 			add_splendor = 100
 			add_prestige = 15
@@ -520,7 +524,7 @@ gen2_administrative = {
 			}
 			add_country_modifier = {
 				name = "gen2_manufacturing"
-				duration = -1
+				duration = 9125
 			}
 			add_splendor = 150
 			add_prestige = 20
@@ -644,7 +648,7 @@ gen2_domestic = {
 			}
 			add_country_modifier = {
 				name = "gen2_cultural_flourishing"
-				duration = -1
+				duration = 9125
 			}
 			add_splendor = 100
 			add_prestige = 20

@@ -1,7 +1,11 @@
 #============== GEN2 通用任务修正 ==============
 
+gen2_claim_fabrication = {
+	fabricate_claims_cost = -0.50
+	spy_offence = 0.25
+}
 gen2_military_readiness = {
-	infantry_power = 0.15
+	infantry_power = 0.10
 }
 gen2_grand_army = {
 	discipline = 0.075
@@ -58,10 +62,10 @@ gen2_economic_empire = {
 	production_efficiency = 0.10
 }
 gen2_religious_unity = {
-	global_unrest = -3
+	global_unrest = -2
 }
 gen2_clean_government = {
-	yearly_corruption = -0.15
+	yearly_corruption = -0.10
 }
 gen2_cultural_flourishing = {
 	culture_conversion_cost = -0.20
@@ -72,8 +76,8 @@ gen2_imperial_splendor = {
 	prestige = 0.5
 }
 gen2_urban_development = {
-	build_cost = -0.20
-	build_time = -0.20
+	build_cost = -0.15
+	build_time = -0.15
 }
 growth_of_capital_area = {
 	local_development_cost = -0.10
