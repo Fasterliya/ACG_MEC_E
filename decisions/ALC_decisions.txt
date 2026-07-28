@@ -1,0 +1,30 @@
+country_decisions = {
+	Master_Spark_of_Alice = {
+		major = yes
+		potential = {
+			tag = ALC
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 100
+			total_development = 300
+			NOT = { has_country_modifier = ALC_master_spark }
+		}
+		effect = {
+			add_mil_power = -100
+			capital_scope = {
+				add_province_modifier = {
+					name = ALC_capital_fort
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = ALC_master_spark
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

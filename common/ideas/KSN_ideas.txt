@@ -1,0 +1,42 @@
+KSN_ideas = {
+	start = {
+		infantry_power = 0.15
+		build_cost = -0.15
+	}
+	bonus = {
+		shock_damage_received = -0.15
+		fire_damage_received = -0.1
+	}
+	trigger = {
+		tag = KSN
+	}
+	free = yes
+	Kappa_Waterworks = {
+		goods_produced_modifier = 0.25
+		trade_efficiency = 0.15
+	}
+	Precision_Engineering = {
+		leader_land_fire = 2
+		artillery_cost = -0.15
+	}
+	Optical_Industries = {
+		fire_damage = 0.20
+		siege_ability = 0.15
+	}
+	Artillery_Legions = {
+		artillery_power = 0.25
+		global_regiment_cost = -0.1
+	}
+	Mechanical_Infrastructure = {
+		movement_speed = 0.15
+		development_cost = -0.1
+	}
+	Water_Power_Grid = {
+		production_efficiency = 0.25
+		build_time = -0.2
+	}
+	Ultimate_Engineer_Corps = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+}

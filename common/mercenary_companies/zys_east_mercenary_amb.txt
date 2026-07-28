@@ -1,0 +1,776 @@
+
+#Amba Daicing Gurun
+zys_adg_merc_0 = { #源氏爱新觉罗清废帝天照贤孙溥仪
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.3
+	cost_modifier = 2
+	no_additional_manpower_from_max_size = yes
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		OR = { 
+			alliance_with = JAP  
+			OVERLORD_OF = JAP
+			religion = shinto
+			culture_group = japanese_g
+			JAP = { OVERLORD_OF = ROOT }
+		}
+	}
+	
+	min_size = 20
+	max_size = 20
+}
+zys_adg_merc_1 = { #禁旅八旗
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 1
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+	}
+	
+	min_size = 10
+}
+zys_adg_merc_2 = { #盛京八旗
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	home_province = 726
+	sprites = { far_east_cav mch_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		726 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 10
+}
+zys_adg_merc_3 = { #吉林八旗
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	home_province = 730
+	sprites = { far_east_cav mch_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		730 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+
+	min_size = 10
+}
+zys_adg_merc_4 = { #黑龙江八旗
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	home_province = 725
+	sprites = { far_east_cav mch_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		730 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 10
+}
+zys_adg_merc_5 = { #伊犁八旗
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	home_province = 2120
+	sprites = { mon_cav_units dlc069_chg_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		2120 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 10
+}
+zys_adg_merc_6 = { #随军驱口
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.001
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH is_nomad = yes TAG = CSH }
+	}
+	
+	
+	min_size = 20
+}
+zys_adg_merc_7 = { #湘西云贵广西土司兵
+	regiments_per_development = 0.075
+	artillery_weight = 0.27
+	cost_modifier = 0.5
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	home_province = 2173
+	sprites = { shan_units asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		2173 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_8 = { #西北番骑
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	home_province = 2134
+	sprites = { far_east_cav }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		2134 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 10
+}
+zys_adg_merc_9 = { #满饷不可敌
+	regiments_per_development = 0.1
+	cavalry_weight = 0.05
+	artillery_weight = 0.38
+	cost_modifier = 0.05
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+	}
+	
+}
+zys_adg_merc_10 = { #直隶驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = {
+				area = hebei_area
+				area = south_hebei_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_11 = { #山东驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = shandong_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_12 = { #山西驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = shanxi_area
+			controlled_by = ROOT 
+		}
+	}
+
+	min_size = 20
+}
+zys_adg_merc_13 = { #陕西驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = shaanxi_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_14 = { #甘肃驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = {
+				area = west_gansu_area
+				area = gansu_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_15 = { #河南驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.15
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = {
+				area = north_henan_area
+				area = henan_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_16 = { #安徽驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = {
+				area = south_anhui_area
+				area = anhui_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+
+	min_size = 20
+}
+zys_adg_merc_17 = { #江苏驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = {
+				area = south_jiangsu_area
+				area = jiangsu_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_18 = { #湖北驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = huguang_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_19 = { #湖南驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = hunan_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_20 = { #浙江驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = zhejiang_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_21 = { #福建驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = fujian_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_22 = { #江西驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = jiangxi_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_23 = { #广东驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = { 
+				area = west_guangdong_area
+				area = guangdong_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_24 = { #广西驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			area = guangxi_area
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_25 = { #四川驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = { 
+				area = chuannan_area
+				area = chuanbei_area
+				area = sichuan_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_26 = { #贵州驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = { 
+				area = yun_gui_area
+				area = yun_gui_borderland_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_27 = { #云南驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = { 
+				area = yun_gui_area
+				area = yun_gui_borderland_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_28 = { #安南驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		any_owned_province = {
+			OR = { 
+				area = red_river_delta_area
+				area = vietnam_area
+			}
+			controlled_by = ROOT 
+		}
+	}
+	
+	min_size = 20
+}
+zys_adg_merc_29 = { #朝鲜驻防军 驻防驻防军马队+绿营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.29
+	cost_modifier = 0.25
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = { TAG = QNG TAG = MCH }
+		korea_region = {
+			type = any
+			controlled_by = ROOT 
+		}
+	}
+
+	min_size = 20
+}

@@ -1,0 +1,151 @@
+development = {
+	allowed_num_of_buildings = 0.1
+	supply_limit_modifier = 0.02
+	local_missionary_strength = -0.001
+	land_forcelimit	= 0.1			# special case, affected by autonomy
+	naval_forcelimit = 0.1			# special case, affected by autonomy & set to 0 by code if not port
+	local_sailors = 60			# special case, affected by autonomy & set to 0 by code if not port
+	province_trade_power_value = 0.2
+	local_amount_of_banners = 0.066
+	local_amount_of_cawa = 0.125
+	local_amount_of_carolean = 0.1
+	local_amount_of_hussars = 0.01
+}
+
+base_values = {
+	max_absolutism = 65
+	merchants = 2							#Start with 2 merchants
+	diplomats = 2							#Start with 2 diplomats..
+	missionaries = 2						#1 missionary #改动，多个传教士
+	army_tradition_decay = 0.05				#lose 5% yearly
+	navy_tradition_decay = 0.05				#lose 5% yearly
+	prestige_decay = 0.05					#lose 5% prestige each year
+	tolerance_own = 3
+	diplomatic_upkeep = 4
+	tolerance_heathen = -3
+	tolerance_heretic = -2
+	global_missionary_strength = 0.02
+	global_manpower = 10.0
+	advisor_pool = 3
+	colonist_placement_chance = 0.1
+	free_leader_pool = 1
+	republican_tradition = 1
+	monthly_fervor_increase = 1
+	vassal_income = 0.10
+	horde_unity = -2
+	devotion = -0.5
+	meritocracy = -2
+	governing_capacity = 200
+	num_accepted_cultures = 2
+	monthly_splendor = 1
+	artillery_levels_available_vs_fort = 5
+	cav_to_inf_ratio = 0.5
+	merc_maintenance_modifier = 0	#改动：佣兵贵一点好（下同）
+	mercenary_cost = 0
+	mercenary_discipline = 0	#改动：但是贵也要有贵的理由（下同）
+	merc_leader_army_tradition = 0.5
+	monthly_heir_claim_increase = 0.208
+	tolerance_of_heretics_capacity = 3
+	tolerance_of_heathens_capacity = 3
+	max_flagships = 1                      #改动：最大旗舰数更变为2
+	num_of_parliament_issues = 10
+	mercenary_manpower = 0	#改动：不觉得佣兵现在人力池很离谱吗？砍50%了还是很多诶
+	has_marines = yes
+	pulse_mana_get_modifier = 10	#实验性质：不知道能不能用-看起来可以
+	pulse_magic_exp_get_modifier = 5
+	magic_casting_slots = 3
+	magic_power_government = 5
+	magic_speed_government = 3
+}
+
+pasha_state = {
+	local_governing_cost = -0.2
+	min_local_autonomy = 20
+	local_state_maintenance_modifier = -0.33
+	local_autonomy = -0.1
+	local_tolerance_of_heathens = 10
+}
+
+patriarch_authority_global = {
+	manpower_recovery_speed = 0.15
+	global_missionary_strength = 0.03
+}
+
+patriarch_authority_local = {
+	local_development_cost = -0.1
+	local_manpower_modifier = 0.33
+}
+
+patriarch_state = {
+	local_governing_cost = -0.1
+	local_monthly_devastation = -0.05
+}
+
+militarized_society = {
+	discipline = 0.10
+	administrative_efficiency = 0.1
+	land_maintenance_modifier = -0.20
+
+}
+corruption = {
+	global_spy_defence = -0.25
+	spy_offence = -0.50
+	all_power_cost = 1.0
+	min_autonomy = 50
+	global_unrest = -20
+	imperial_mandate = -1
+	brahmins_hindu_loyalty_modifier = 0.1
+	brahmins_muslim_loyalty_modifier = 0.1
+	brahmins_other_loyalty_modifier = 0.1
+	church_loyalty_modifier = 0.1
+	maratha_loyalty_modifier = 0.1
+	nobles_loyalty_modifier = 0.1
+	burghers_loyalty_modifier = 0.1
+	vaisyas_loyalty_modifier = 0.1
+	cossacks_loyalty_modifier = 0.1
+	nomadic_tribes_loyalty_modifier = 0.1
+	dhimmi_loyalty_modifier = 0.1
+	jains_loyalty_modifier = 0.1
+	rajput_loyalty_modifier = 0.1
+	eunuchs_loyalty_modifier = 0.1
+	janissaries_loyalty_modifier = 0.1
+	qizilbash_loyalty_modifier = 0.1
+	ghulams_loyalty_modifier = 0.1
+	monthly_heir_claim_increase = 0.025
+	monthly_russian_modernization = -1
+	monthly_ottoman_decadence = 10
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_authority_power = 0.5
+}
+cossacks_regiment = {	#哥萨克换皮野雁突击队
+    shock_damage = 0.1
+	fire_damage = 0.1
+	morale_damage_received = -0.3
+}
+
+carolean_regiment = {	#卡洛琳换皮舞台少女
+	morale_damage = 0.15
+	morale_damage_received = -0.15
+	reinforce_cost_modifier = 0.33
+	reinforce_speed = -0.2
+}
+
+revolutionary_guard_regiment = {	#革命卫队换皮魔导部队
+	fire_damage = 0.1
+	shock_damage = 0.1
+	morale_damage = 0.1
+}
+
+man_of_war_ship = {		#主力舰换皮魔导海军
+	hull_size_modifier = 0.15
+	heavy_ship_power = 0.1
+	number_of_cannons_modifier = 0.1
+	naval_morale_damage = 0.15
+}
+
+caravel_ship = {	#卡拉维尔换皮舰娘
+	movement_speed_in_fleet_modifier = 1 
+	hull_size = 10
+	number_of_cannons = 10
+	ship_trade_power = 2
+}

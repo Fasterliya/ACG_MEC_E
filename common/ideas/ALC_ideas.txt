@@ -1,0 +1,40 @@
+ALC_ideas = {
+	start = {
+		mercenary_cost = -0.25
+		available_mercenary_companies = 1.0
+	}
+	bonus = {
+		mercenary_discipline = 0.1
+	}
+	trigger = {
+		tag = ALC
+	}
+	free = yes
+	Magic_user_ALC = {
+		technology_cost = -0.1
+		global_institution_spread = 0.25
+	}
+	Making_doll = {
+		mercenary_manpower = 1.0
+		merc_maintenance_modifier = -0.25
+	}
+	Doll_support = {
+		shock_damage = 0.1
+		reinforce_speed = 0.25
+	}
+	dushipai = {
+		free_adm_policy = 2
+		core_creation = -0.15
+	}
+	preserve_one = {
+		merc_leader_army_tradition = 1.00
+	}
+	Doll_giantism = {
+		infantry_power = 0.15
+		cav_to_inf_ratio = 0.50
+	}
+	Doll_factory = {
+		production_efficiency = 0.15
+		build_cost = -0.2
+	}
+}

@@ -1,0 +1,969 @@
+HKH_missions_6 = {
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = HKH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HKH_missions_6_1 = {
+		icon = mission_noble_council
+		position = 1
+		trigger = {
+			army_size_percentage = 0.85
+		}
+		effect = {
+			fezzan_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			tripolitania_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			tunisia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_intelligence_network duration = -1 }
+			add_splendor = 50
+			add_prestige = 15
+			add_mil_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+	HKH_missions_6_2 = {
+		icon = mission_alliances
+		position = 2
+		required_missions = { HKH_missions_6_1 }
+		provinces_to_highlight = {
+			area = fezzan_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			fezzan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			djerba_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			kabylia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			algiers_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_news_circulation duration = -1 }
+			add_splendor = 100
+			add_prestige = 20
+			add_dip_power = 100
+			change_government_reform_progress = 50
+		}
+	}
+	HKH_missions_6_3 = {
+		icon = mission_religious
+		position = 3
+		required_missions = { HKH_missions_6_2 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = university
+				value = 2
+			}
+			dip_tech = 6
+		}
+		effect = {
+			add_country_modifier = { name = HKH_public_opinion duration = -1 }
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 150
+			change_government_reform_progress = 75
+		}
+	}
+	HKH_missions_6_4 = {
+		icon = mission_italian_condottiere
+		position = 4
+		required_missions = { HKH_missions_6_3 }
+		trigger = {
+			cavalry_fraction = 0.3
+			land_forcelimit = 40
+			mil_tech = 8
+		}
+		effect = {
+			add_country_modifier = { name = HKH_tengu_vision duration = -1 }
+			add_splendor = 150
+			add_prestige = 25
+			add_mil_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+	HKH_missions_6_5 = {
+		icon = mission_empire
+		position = 5
+		required_missions = {
+			HKH_missions_6_4
+			HKH_missions_7_4
+			HKH_missions_8_4
+		}
+		trigger = {
+			total_development = 500
+			is_great_power = yes
+		}
+		effect = {
+			add_country_modifier = { name = HKH_intel_hegemony duration = -1 }
+			add_splendor = 200
+			add_prestige = 40
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+	HKH_missions_6_6 = {
+		icon = mission_war_chest
+		position = 6
+		required_missions = { HKH_missions_6_5 HKH_missions_9_5 }
+		trigger = {
+			total_development = 700
+			monthly_income = 80
+			num_of_owned_provinces_with = {
+				value = 3
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HKH_complete_info duration = -1 }
+			add_splendor = 250
+			add_prestige = 45
+			change_government_reform_progress = 200
+			add_stability = 1
+		}
+	}
+	HKH_missions_6_7 = {
+		icon = mission_roman_empire_west
+		position = 7
+		required_missions = {
+			HKH_missions_6_6
+		}
+		trigger = {
+			total_development = 1000
+			is_hegemon = yes
+			OR = {
+				monthly_income = 200
+				land_forcelimit = 120
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HKH_supreme_intelligence duration = -1 }
+			add_splendor = 300
+			add_prestige = 60
+			change_government_reform_progress = 250
+			add_stability = 2
+		}
+	}
+	HKH_missions_6_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { HKH_missions_6_7 }
+		trigger = {
+			total_development = 1500
+			is_hegemon = yes
+		}
+		effect = {
+			add_country_modifier = { name = HKH_omniscient_empire duration = -1 }
+			add_splendor = 500
+			add_prestige = 100
+			add_stability = 3
+			change_adm = 1
+			capital_scope = {
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 5
+			}
+		}
+	}
+}
+
+HKH_missions_7 = {
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = HKH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HKH_missions_7_1 = {
+		icon = mission_african_soldier
+		position = 1
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = fort_15th
+				value = 3
+			}
+		}
+		effect = {
+			tripolitania_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			tunisia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 50
+			add_prestige = 15
+			add_mil_power = 100
+			change_government_reform_progress = 25
+			add_treasury = 400
+		}
+	}
+	HKH_missions_7_2 = {
+		icon = mission_arabian_fort
+		position = 2
+		required_missions = { HKH_missions_7_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = tripolitania_area
+				area = tunisia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tripolitania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kabylia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			algiers_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_maghreb_base duration = -1 }
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+	HKH_missions_7_3 = {
+		icon = mission_spain
+		position = 3
+		required_missions = { HKH_missions_7_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = kabylia_area
+				area = algiers_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kabylia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			algiers_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			barbary_coast_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			northern_morocco_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_tunis_control duration = -1 }
+			add_splendor = 100
+			add_prestige = 25
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+	HKH_missions_7_4 = {
+		icon = mission_invade_island
+		position = 4
+		required_missions = { HKH_missions_7_3 }
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = maghreb_region
+				value = 15
+			}
+		}
+		effect = {
+			maghreb_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_algeria_secured duration = -1 }
+			add_splendor = 150
+			add_prestige = 30
+			add_mil_power = 150
+			change_government_reform_progress = 75
+		}
+	}
+	HKH_missions_7_5 = {
+		icon = mission_eastern_europe
+		position = 5
+		required_missions = { HKH_missions_7_4 }
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = maghreb_region
+				value = 25
+			}
+			total_development = 400
+		}
+		effect = {
+			sahel_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			niger_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_morocco_claim duration = -1 }
+			add_splendor = 150
+			add_prestige = 30
+			add_mil_power = 150
+			change_government_reform_progress = 75
+		}
+	}
+	HKH_missions_7_6 = {
+		icon = mission_sicilian_vespers
+		position = 6
+		required_missions = { HKH_missions_7_5 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = maghreb_region
+				value = 30
+			}
+			num_of_owned_provinces_with = {
+				region = sahel_region
+				value = 5
+			}
+			total_development = 600
+		}
+		effect = {
+			add_country_modifier = { name = HKH_maghreb_dominance duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			change_government_reform_progress = 100
+			add_army_tradition = 35
+		}
+	}
+	HKH_missions_7_7 = {
+		icon = mission_kingdom_of_italy
+		position = 7
+		required_missions = { HKH_missions_7_6 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = maghreb_region
+				value = 35
+			}
+			total_development = 800
+		}
+		effect = {
+			add_country_modifier = { name = HKH_sahel_scout duration = -1 }
+			add_splendor = 250
+			add_prestige = 40
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+	HKH_missions_7_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { HKH_missions_7_7 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = maghreb_region
+				value = 40
+			}
+			total_development = 1000
+			is_great_power = yes
+		}
+		effect = {
+			add_country_modifier = { name = HKH_africa_intel duration = -1 }
+			add_splendor = 300
+			add_prestige = 50
+			add_stability = 1
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+		}
+	}
+}
+
+HKH_missions_8 = {
+	slot = 8
+	generic = no
+	ai = yes
+	potential = {
+		tag = HKH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HKH_missions_8_1 = {
+		icon = mission_rb_a_mighty_fleet
+		position = 1
+		trigger = {
+			num_of_total_ports = 5
+			navy_size_percentage = 0.8
+		}
+		effect = {
+			baleares_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			lower_andalucia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			upper_andalucia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 50
+			add_prestige = 15
+			add_dip_power = 100
+			change_government_reform_progress = 25
+			add_treasury = 500
+		}
+	}
+	HKH_missions_8_2 = {
+		icon = mission_iberian_conquistador
+		position = 2
+		required_missions = { HKH_missions_8_1 }
+		provinces_to_highlight = {
+			area = lower_andalucia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			lower_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			toledo_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			valencia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			aragon_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_andalusian_expedition duration = -1 }
+			add_splendor = 100
+			add_prestige = 20
+			add_navy_tradition = 25
+			change_government_reform_progress = 50
+		}
+	}
+	HKH_missions_8_3 = {
+		icon = mission_spain
+		position = 3
+		required_missions = { HKH_missions_8_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = toledo_area
+				area = valencia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			toledo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			valencia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			castille_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			leon_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			asturias_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_iberia_beachhead duration = -1 }
+			add_splendor = 150
+			add_prestige = 30
+			add_mil_power = 150
+			change_government_reform_progress = 75
+		}
+	}
+	HKH_missions_8_4 = {
+		icon = mission_monarch_in_throne_room
+		position = 4
+		required_missions = { HKH_missions_8_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = castille_area
+				area = leon_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			castille_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			catalonia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			galicia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			alentejo_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_castille_heartland duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			add_mil_power = 150
+			change_government_reform_progress = 100
+		}
+	}
+	HKH_missions_8_5 = {
+		icon = mission_kingdom_of_italy
+		position = 5
+		required_missions = { HKH_missions_8_4 }
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = iberia_region
+				value = 20
+			}
+		}
+		effect = {
+			iberia_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = HKH_portugal_trade duration = -1 }
+			add_splendor = 200
+			add_prestige = 40
+			add_dip_power = 150
+			change_government_reform_progress = 100
+		}
+	}
+	HKH_missions_8_6 = {
+		icon = mission_sardinia_piedmont
+		position = 6
+		required_missions = { HKH_missions_8_5 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = iberia_region
+				value = 25
+			}
+			total_development = 600
+		}
+		effect = {
+			add_country_modifier = { name = HKH_iberia_crowned duration = -1 }
+			add_splendor = 200
+			add_prestige = 45
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+	HKH_missions_8_7 = {
+		icon = mission_roman_empire_west
+		position = 7
+		required_missions = { HKH_missions_8_6 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = iberia_region
+				value = 30
+			}
+			total_development = 800
+			is_great_power = yes
+		}
+		effect = {
+			add_country_modifier = { name = HKH_spanish_mastery duration = -1 }
+			add_splendor = 250
+			add_prestige = 50
+			change_government_reform_progress = 200
+			add_stability = 1
+		}
+	}
+	HKH_missions_8_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { HKH_missions_8_7 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = iberia_region
+				value = 35
+			}
+			total_development = 1000
+		}
+		effect = {
+			add_country_modifier = { name = HKH_iberian_hegemony duration = -1 }
+			add_splendor = 300
+			add_prestige = 60
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+		}
+	}
+}
+
+HKH_missions_9 = {
+	slot = 9
+	generic = no
+	ai = yes
+	potential = {
+		tag = HKH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HKH_missions_9_1 = {
+		icon = mission_dominate_home_trade_node
+		position = 1
+		trigger = {
+			monthly_income = 30
+		}
+		effect = {
+			add_country_modifier = { name = HKH_trade_empire duration = -1 }
+			add_splendor = 50
+			add_prestige = 15
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+	HKH_missions_9_2 = {
+		icon = mission_have_manufactories
+		position = 2
+		required_missions = { HKH_missions_9_1 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 6
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HKH_colonial_ambition duration = -1 }
+			add_splendor = 100
+			add_prestige = 20
+			add_dip_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+	HKH_missions_9_3 = {
+		icon = mission_berber_trade
+		position = 3
+		required_missions = { HKH_missions_9_2 }
+		trigger = {
+			monthly_income = 60
+		}
+		effect = {
+			add_country_modifier = { name = HKH_tengu_trade_network duration = -1 }
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+	HKH_missions_9_4 = {
+		icon = mission_establish_high_seas_navy
+		position = 4
+		required_missions = { HKH_missions_9_3 }
+		trigger = {
+			num_of_light_ship = 20
+			num_of_total_ports = 10
+		}
+		effect = {
+			add_country_modifier = { name = HKH_new_world duration = -1 }
+			add_splendor = 200
+			add_prestige = 30
+			add_dip_power = 200
+			change_government_reform_progress = 100
+		}
+	}
+	HKH_missions_9_5 = {
+		icon = mission_invade_england
+		position = 5
+		required_missions = { HKH_missions_9_4 }
+		trigger = {
+			num_of_light_ship = 30
+			num_of_owned_provinces_with = {
+				value = 10
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HKH_global_trade duration = -1 }
+			add_splendor = 200
+			add_prestige = 30
+			add_dip_power = 250
+			change_government_reform_progress = 100
+		}
+	}
+	HKH_missions_9_6 = {
+		icon = mission_caribbean_cn
+		position = 6
+		required_missions = { HKH_missions_9_5 }
+		trigger = {
+			total_development = 200
+		}
+		effect = {
+			add_country_modifier = { name = HKH_colonial_master duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			add_dip_power = 250
+			change_government_reform_progress = 125
+		}
+	}
+	HKH_missions_9_7 = {
+		icon = mission_sea_battles
+		position = 7
+		required_missions = { HKH_missions_9_6 }
+		trigger = {
+			num_of_light_ship = 50
+			num_of_owned_provinces_with = {
+				value = 15
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HKH_trade_hegemony duration = -1 }
+			add_splendor = 250
+			add_prestige = 40
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+	HKH_missions_9_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { HKH_missions_9_7 }
+		trigger = {
+			num_of_light_ship = 70
+			num_of_total_ports = 30
+			total_development = 800
+		}
+		effect = {
+			add_country_modifier = { name = HKH_maritime_empire duration = -1 }
+			add_splendor = 300
+			add_prestige = 50
+			change_government_reform_progress = 200
+			add_stability = 2
+		}
+	}
+}
+
+HKH_missions_10 = {
+	slot = 10
+	generic = no
+	ai = yes
+	potential = {
+		tag = HKH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HKH_missions_10_1 = {
+		icon = mission_assemble_an_army
+		position = 1
+		trigger = {
+			cavalry_fraction = 0.3
+			army_size_percentage = 0.8
+		}
+		effect = {
+			add_country_modifier = { name = HKH_cavalry_reform duration = -1 }
+			add_splendor = 50
+			add_prestige = 15
+			add_mil_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+	HKH_missions_10_2 = {
+		icon = mission_italian_condottiere
+		position = 2
+		required_missions = { HKH_missions_10_1 }
+		trigger = {
+			land_forcelimit = 40
+			num_of_cavalry = 10
+		}
+		effect = {
+			add_country_modifier = { name = HKH_mobile_warfare duration = -1 }
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+	HKH_missions_10_3 = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { HKH_missions_10_2 }
+		trigger = {
+			land_forcelimit = 60
+			cavalry_fraction = 0.35
+			mil_tech = 8
+		}
+		effect = {
+			add_country_modifier = { name = HKH_shock_tactics duration = -1 }
+			add_splendor = 150
+			add_prestige = 25
+			add_mil_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+	HKH_missions_10_4 = {
+		icon = mission_cannons_firing
+		position = 4
+		required_missions = { HKH_missions_10_3 }
+		trigger = {
+			land_forcelimit = 80
+			army_size_percentage = 0.9
+			num_of_cavalry = 20
+		}
+		effect = {
+			add_country_modifier = { name = HKH_elite_cavalry duration = -1 }
+			add_splendor = 200
+			add_prestige = 30
+			add_mil_power = 200
+			change_government_reform_progress = 100
+		}
+	}
+	HKH_missions_10_5 = {
+		icon = mission_two_sicilies
+		position = 5
+		required_missions = { HKH_missions_10_4 }
+		trigger = {
+			cavalry_fraction = 0.4
+			num_of_cavalry = 30
+			land_forcelimit = 100
+		}
+		effect = {
+			add_country_modifier = { name = HKH_wind_rider duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			add_mil_power = 250
+			change_government_reform_progress = 125
+		}
+	}
+	HKH_missions_10_6 = {
+		icon = mission_noble_council
+		position = 6
+		required_missions = { HKH_missions_10_5 }
+		trigger = {
+			total_development = 600
+			army_size_percentage = 1.0
+			land_forcelimit = 120
+		}
+		effect = {
+			add_country_modifier = { name = HKH_tengu_riders duration = -1 }
+			add_splendor = 250
+			add_prestige = 40
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+	HKH_missions_10_7 = {
+		icon = mission_empire
+		position = 7
+		required_missions = { HKH_missions_10_6 }
+		trigger = {
+			total_development = 800
+			land_forcelimit = 150
+			num_of_cavalry = 40
+		}
+		effect = {
+			add_country_modifier = { name = HKH_cavalry_supremacy duration = -1 }
+			add_splendor = 300
+			add_prestige = 50
+			change_government_reform_progress = 200
+			add_stability = 1
+		}
+	}
+	HKH_missions_10_8 = {
+		icon = mission_roman_empire_west
+		position = 8
+		required_missions = { HKH_missions_10_7 }
+		trigger = {
+			total_development = 1200
+			land_forcelimit = 200
+			cavalry_fraction = 0.5
+		}
+		effect = {
+			add_country_modifier = { name = HKH_ultimate_cavalry duration = -1 }
+			add_splendor = 400
+			add_prestige = 70
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+		}
+	}
+}

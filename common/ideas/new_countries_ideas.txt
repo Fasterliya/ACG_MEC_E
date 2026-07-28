@@ -1,0 +1,6072 @@
+YSN_ideas = {
+	#����������
+	start = {
+		infantry_cost = -0.1
+		global_spy_defence = 0.3
+	}
+	bonus = {
+		yearly_corruption = -0.1
+	}
+	trigger = {
+		OR = {
+			tag = YSN
+		}
+	}
+	free = yes	#will be added at load.
+	Along_with_the_rain = {
+		hostile_attrition = 1
+	}
+	Timid = {
+		stability_cost_modifier = -0.2
+	}
+	Speed_value_max = {
+		leader_land_manuever = 1
+	}
+	Yoshino_and_Yoshino = {
+		advisor_cost = -0.15
+	}
+	Zadkiel = {
+		movement_speed = 0.1
+		land_attrition = -0.2
+	}
+	Siryon = {
+		defensiveness = 0.1
+		fire_damage_received = -0.05
+	}
+	Hermit = {
+		diplomatic_reputation = 2
+	}
+}
+
+AOG_ideas = {
+	#�����ڶ�������
+	start = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+		diplomatic_upkeep = 2
+	}
+	bonus = {
+		years_of_nationalism = -5
+	}
+	trigger = {
+		tag = AOG
+	}
+	free = yes	#will be added at load.
+	Ainz_Ooal_Gown = {
+		governing_capacity_modifier = 0.2
+	}
+	Legacy_treasure = {
+		vassal_income = 0.25
+		global_tax_modifier = 0.1
+	}
+	Heteromorpha_racial_principles = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	Nathalic = {
+		discipline = 0.05
+	}
+	Floor_guardian = {
+		mercenary_cost = -0.2
+		vassal_forcelimit_bonus = 1
+	}
+	Conquer_the_weak = {
+		war_exhaustion = -0.1
+		war_taxes_cost_modifier = -0.2
+	}
+	The_glory_of_nasalik = {
+		cb_on_religious_enemies = yes
+		core_creation = -0.1
+	}
+}
+
+PRA_ideas = {
+	#P������
+	start = {
+		movement_speed = -0.1
+		diplomatic_reputation = 2
+	}
+	bonus = {
+		infantry_power = 0.15
+	}
+	trigger = {
+		OR = {
+			tag = PRA
+		}
+	}
+	free = yes	#will be added at load.
+	Swedish_fool_donkey = {
+		advisor_pool = 2
+		global_institution_spread = -0.1
+	}
+	The_developed_middle_ages = {
+		development_cost = 0.2
+		build_cost = -0.2
+	}
+	DLC_universalis = {
+		global_trade_goods_size_modifier = 0.2
+		global_unrest = 2
+	}
+	Magical_hearts = {
+		land_forcelimit_modifier = 0.5
+		legitimacy = -1
+	}
+	CPU0_Stellaris = {
+		state_maintenance_modifier = 1
+		naval_maintenance_modifier = -0.5
+	}
+	Abandoned_infant_Victory = {
+		prestige = -1
+		colonists = 1
+	}
+	The_holiday_is_preferred = {
+		stability_cost_modifier = -0.5
+		production_efficiency = -0.2
+	}
+}
+
+STR_ideas = {
+	#����������
+	start = {
+		global_unrest = -2
+		cavalry_shock = 0.2
+	}
+	bonus = {
+		production_efficiency = 0.1
+	}
+	trigger = {
+		tag = STR
+	}
+	free = yes
+	The_gate_guard = {
+		governing_capacity_modifier = 0.15
+	}
+	Vampire = {
+		reinforce_speed = 0.15
+		reinforce_cost_modifier = -0.1
+	}
+	Necrophilia = {
+		army_tradition_from_battle = 1
+		loot_amount = 0.5
+	}
+	Sha9 = {
+		technology_cost = -0.1
+	}
+	Dropper_pike = {
+		shock_damage = 0.1
+	}
+	War_with_ainz = {
+		army_tradition_decay = -0.01
+	}
+	War_girl_with_blood = {
+		discipline = 0.025
+		infantry_power = 0.05
+	}
+}
+
+CCT_ideas = {
+	#������˹����
+	start = {
+		global_unrest = -2
+		mil_tech_cost_modifier = -0.1
+	}
+	bonus = {
+		production_efficiency = 0.1
+	}
+	trigger = {
+		tag = CCT
+	}
+	free = yes
+	Insects_warrior = {
+		drill_gain_modifier = 0.33
+	}
+	Glacier_ruler = {
+		hostile_attrition = 1
+	}
+	Completely_naked_fighting = {
+		siege_ability = 0.2
+	}
+	Conquer_the_lizard_man = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 0.25
+	}
+	ZhanShenDaoHuang = {
+		leader_land_shock = 1
+	}
+	Master_of_weapon = {
+		army_tradition = 1
+	}
+	Samurai_spirit = {
+		recover_army_morale_speed = 0.1
+	}
+}
+
+DMU_ideas = {
+	#�����ڸ�˹����
+	start = {
+		global_unrest = -2
+		mil_tech_cost_modifier = -0.1
+	}
+	bonus = {
+		production_efficiency = 0.1
+	}
+	trigger = {
+		tag = DMU
+	}
+	free = yes
+	In_purgatory = {
+		artillery_levels_available_vs_fort = 2
+	}
+	Tapana_demiurge = {
+		global_manpower_modifier = 0.25
+	}
+	Gentlemanly = {
+		diplomatic_reputation = 2
+	}
+	Wise_head = {
+		yearly_corruption = -0.1
+		advisor_cost = -0.1
+	}
+	Bipedal_sheep_pasture = {
+		innovativeness_gain = 0.33
+	}
+	Attack_kindom_capital = {
+		army_tradition = 1
+	}
+	The_most_evil_devil = {
+		unjustified_demands = -0.2
+	}
+}
+
+ABD_ideas = {
+	#�Ŷ���������
+	start = {
+		global_unrest = -2
+		mil_tech_cost_modifier = -0.1
+	}
+	bonus = {
+		production_efficiency = 0.1
+	}
+	trigger = {
+		tag = ABD
+	}
+	free = yes
+	Love_with_ainz = {
+		legitimacy = 1
+		diplomatic_upkeep = 1
+	}
+	Guardian_manager = {
+		governing_capacity_modifier = 0.1
+		reduced_liberty_desire_on_same_continent = 10
+	}
+	Succubus = {
+		diplomatic_reputation = 2
+	}
+	Two_horns_beast = {
+		cavalry_cost = -0.1
+		cavalry_flanking = 0.25
+	}
+	Excellent_management_skills = {
+		administrative_efficiency = 0.025
+		same_culture_advisor_cost = -0.1
+	}
+	Pure_white_demon = {
+		harsh_treatment_cost = -0.2
+		global_autonomy = -0.05
+	}
+	Dark_knight = {
+		cavalry_power = 0.1
+		cav_to_inf_ratio = 0.15
+	}
+}
+
+SEB_ideas = {
+	#����˹����
+	start = {
+		global_unrest = -2
+		mil_tech_cost_modifier = -0.1
+	}
+	bonus = {
+		production_efficiency = 0.1
+	}
+	trigger = {
+		tag = SEB
+	}
+	free = yes
+	Housekeeper = {
+		global_autonomy = -0.1
+	}
+	Dragonman = {
+		province_warscore_cost = -0.15
+	}
+	Sense_of_justice = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	Grapple_overlord = {
+		discipline = 0.05
+	}
+	Pleiades_master = {
+		free_leader_pool = 2
+		advisor_pool = 2
+	}
+	War_with_six_arm = {
+		army_tradition_decay = -0.01
+	}
+	Gap_small = {
+		shock_damage = 0.1
+		prestige_decay = -0.01
+	}
+}
+
+PLE_ideas = {
+	#������������
+	start = {
+		global_unrest = -2
+		mil_tech_cost_modifier = -0.1
+	}
+	bonus = {
+		production_efficiency = 0.1
+	}
+	trigger = {
+		tag = PLE
+	}
+	free = yes
+	Alpha = {
+		monthly_splendor = 2
+	}
+	Beta = {
+		land_forcelimit_modifier = 0.25
+	}
+	Gamma = {
+		leader_land_fire = 1
+	}
+	Delta = {
+		leader_siege = 1
+	}
+	Epsilon = {
+		core_creation = -0.15
+	}
+	Zeta = {
+		loot_amount = 1
+		war_taxes_cost_modifier = -0.5
+	}
+	Cooperative_combat_PLE = {
+		reserves_organisation = 0.1
+	}
+}
+
+JNC_ideas = {
+	#����collection����
+	start = {
+		advisor_cost = -0.1
+		development_cost = -0.1
+	}
+	bonus = {
+		culture_conversion_cost = -0.2
+	}
+	trigger = {
+		tag = JNC
+	}
+	free = yes
+	Initial_light = {
+		embracement_cost = -0.15
+	}
+	Yamato_hotel = {
+		trade_efficiency = 0.1
+	}
+	Great_fool = {
+		native_uprising_chance = -0.5
+		native_assimilation = 0.5
+	}
+	As_fsat_as_Shimakaze = {
+		movement_speed = 0.1
+	}
+	Solomon_nightmare = {
+		hostile_attrition = 1
+	}
+	Entry_of_outsiders = {
+		manpower_recovery_speed = 0.2
+	}
+	Front_equality_of_all_living_beings460 = {
+		siege_ability = 0.2
+	}
+}
+
+JNR_ideas = {
+	#ս����ŮR����
+	start = {
+		prestige = 1
+		land_morale = 0.1
+	}
+	bonus = {
+		global_unrest = -2
+	}
+	trigger = {
+		tag = JNR
+	}
+	free = yes
+	Quincy_Quincy_Quin_0v0 = {
+		global_colonial_growth = 20
+		colonists = 1
+	}
+	Dr_Yubari = {
+		technology_cost = -0.1
+	}
+	Lonely_female_otaku_in_the_north = {
+		global_tax_modifier = 0.1
+	}
+	Naval_dream = {
+		heavy_ship_power = 0.1
+		light_ship_power = 0.1
+	}
+	The_advent_of_the_Empress = {
+		army_tradition = 1
+		drill_gain_modifier = 0.1
+	}
+	Natural_and_unrestrained_Renown = {
+		administrative_efficiency = 0.05
+	}
+	Detected_381_hits_on_the_way = {
+		fire_damage = 0.1
+	}
+}
+
+JNB_ideas = {
+	#������������
+	start = {
+		ae_impact = -0.2 #ae
+		ship_durability = 0.1 #船只耐久度
+	}
+	bonus = {
+		global_naval_engagement_modifier = 0.15 #接战宽度
+	}
+	trigger = {
+		tag = JNB
+	}
+	free = yes
+	Integrated_Rigging_Protocol = {
+		heavy_ship_power = 0.1 #三船作战力
+		light_ship_power = 0.1
+		galley_power = 0.1
+	}
+	Cross-Faction_Tactical_Synergy = {
+		leader_naval_manuever = 1	#提督移速和冲击
+		leader_naval_shock = 1
+	}
+	Anti-Siren_Countermeasure_Engineering = {
+		naval_attrition = -0.15	#海军月度损耗
+		global_ship_cost = -0.1	#全国船只建造花费-10%
+	}
+	Global_Maritime_Control = {
+		naval_forcelimit_modifier = 0.15	#海军上限
+		global_trade_power = 0.15	#全局贸易力量
+	}
+	Strategic_Adaptability_Evolution = {
+		idea_cost = -0.1	#理念花费
+		development_cost = -0.1	#提升发展花费
+	}
+	Bastion_of_Human_Will = {
+		manpower_recovery_speed = 0.15	#后备恢复速度
+		global_sailors_modifier = 0.15	#全国水手数量修正
+	}
+	Commander_Centric_System = {
+		administrative_efficiency = 0.05	#行政效率
+		diplomatic_reputation = 2	#外交声誉
+	}
+}
+
+DJD_ideas = {
+	#���.alter����
+	start = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	bonus = {
+		global_unrest = -2
+	}
+	trigger = {
+		tag = DJD
+	}
+	free = yes
+	Avenger = {
+		war_exhaustion = -0.1
+	}
+	Dragon_Witch = {
+		shock_damage = 0.1
+	}
+	Self_recovery = {
+		manpower_recovery_speed = 0.2
+	}
+	Tyrant = {
+		yearly_corruption = -0.15
+	}
+	Revenge_plan_for_Britain = {
+		global_ship_cost = -0.15
+		global_ship_recruit_speed = -0.15
+	}
+	Roar_my_anger = {
+		fire_damage = 0.1
+	}
+	Magic_Dragon_spit = {
+		siege_ability = 0.15
+		hostile_attrition = 1
+	}
+}
+
+ATR_ideas = {
+	#��������������
+	start = {
+		trade_efficiency = 0.1
+		global_tax_modifier = 0.15
+	}
+	bonus = {
+		technology_cost = -0.1
+	}
+	trigger = {
+		tag = ATR
+	}
+	free = yes
+	The_body_of_the_red_dragon = {
+		army_tradition = 1
+	}
+	The_choice_of_sword_in_the_stone = {
+		prestige = 1
+	}
+	Charisma1 = {
+		land_morale = 0.1
+	}
+	Setting_up_the_knights_of_the_round_table = {
+		free_leader_pool = 2
+	}
+	The_king_who_do_not_understand_the_public_feeling = {
+		max_absolutism = 30
+	}
+	Excalibur = {
+		fire_damage = 0.1
+	}
+	Avalon = {
+		global_manpower_modifier = 0.15
+		manpower_recovery_speed = 0.1
+	}
+}
+
+NER_ideas = {
+	#��»����
+	start = {
+		defensiveness = 0.1
+		fort_maintenance_modifier = -0.25
+	}
+	bonus = {
+		ae_impact = -0.25
+	}
+	trigger = {
+		tag = NER
+	}
+	free = yes
+	Rejuvenation_of_rome = {
+		infantry_power = 0.1
+	}
+	The_privileges_of_the_emperor = {
+		trade_efficiency = 0.15
+	}
+	Artist_ner = {
+		innovativeness_gain = 0.33
+	}
+	Dominate_the_mediterranean = {
+		global_ship_cost = -0.1
+		galley_power = 0.2
+	}
+	Nero_sacrifice = {
+		global_unrest = -2
+	}
+	The_glory_of_the_virgin_emperor = {
+		administrative_efficiency = 0.05
+		stability_cost_modifier = -0.1
+	}
+	Invited_to_the_heart_of_the_golden_theater = {
+		land_morale = 0.15
+	}
+}
+
+#TAL_ideas = { #̩¡����������Ƴ���
+#start = {
+#       global_unrest = -2
+#       global_autonomy = -0.05
+#	}
+#
+#bonus = {
+#	harsh_treatment_cost = -0.2
+#}
+#
+#trigger = {
+#	tag = TAL
+#}
+#free = yes
+#	
+#	Irish_roots = {
+#	    global_tax_modifier = 0.1
+#	}
+#		The_thief_experience = {
+#	     loot_amount = 1
+#	}
+#		Blade_proficiency = {
+#	     leader_land_shock = 1
+#	}
+#		The_generals_dagger = {
+#		spy_offence = 0.25
+#		rebel_support_efficiency = 0.15
+#	}
+#		Noxus_diplomacy = {
+#	    diplomatic_annexation_cost = -0.2
+#	}
+#			Trampover_hill_and_dale = {
+#	    land_attrition = -0.1
+#		leader_land_manuever = 1
+#	}
+#				At_the_end_of_the_blade = {
+#	    yearly_army_professionalism = 0.005
+#	}
+#	}
+HKR_ideas = {
+	#������������
+	start = {
+		defensiveness = 0.1
+		infantry_power = 0.1
+	}
+	bonus = {
+		trade_efficiency = 0.15
+	}
+	trigger = {
+		tag = HKR
+	}
+	free = yes
+	Hakurei_miko = {
+		land_forcelimit_modifier = 0.15
+		diplomatic_reputation = 1
+	}
+	Free_and_easy_life = {
+		global_autonomy = -0.1
+		monthly_piety = -0.005
+	}
+	Empty_cashbox = {
+		interest = -2
+		loot_amount = 1
+	}
+	Chengguan = {
+		land_morale = 0.1
+		army_tradition_from_battle = 0.5
+	}
+	Without_discrimination = {
+		num_accepted_cultures = 2
+		same_culture_advisor_cost = -0.2
+	}
+	Seal_the_dream = {
+		discipline = 0.05
+	}
+	lidaji = {
+		global_trade_goods_size_modifier = 0.1
+		idea_cost = -0.05
+	}
+}
+
+NBL_ideas = {
+    start = {
+	    land_morale = 0.1
+		technology_cost = -0.05
+    }
+	bonus = {
+	    years_of_nationalism = -5
+	}
+	trigger = {
+		tag = NBL
+	}
+	free = yes
+	NBL_ideas_1 = {
+	    global_manpower_modifier = 0.25
+	}	
+	NBL_ideas_2 = {
+	    monthly_church_power = 3
+		infantry_power = 0.15
+	}
+	NBL_ideas_3 = {
+	    global_tax_modifier = 0.10
+		loot_amount = 1
+	}
+	NBL_ideas_4 = {
+	    province_warscore_cost = -0.1
+		governing_capacity_modifier = 0.1
+	}
+	NBL_ideas_5 = {
+	    global_missionary_strength = 0.02
+		core_creation = -0.1
+	}
+	NBL_ideas_6 = {
+		discipline = 0.05
+	    army_tradition = 0.5
+	}
+	NBL_ideas_7 = {
+	    production_efficiency = 0.15
+    }
+}
+
+NBL_ideas_UP = {
+    start = {
+	    land_morale = 0.1
+		technology_cost = -0.1
+    }
+	bonus = {
+	    years_of_nationalism = -5
+	}
+	trigger = {
+		tag = NBL
+		has_country_flag = NBL_NEW_idea 
+	}
+	free = yes
+	NBL2_ideas_1 = {
+	    global_manpower_modifier = 0.25
+	}	
+	NBL2_ideas_2 = {
+	    monthly_church_power = 3
+		infantry_power = 0.15
+	}
+	NBL2_ideas_3 = {
+	    global_tax_modifier = 0.15
+		loot_amount = 1
+	}
+	NBL2_ideas_4 = {
+	    province_warscore_cost = -0.15
+		governing_capacity_modifier = 0.2
+	}
+	NBL2_ideas_5 = {
+	    global_missionary_strength = 0.02
+		core_creation = -0.2
+	}
+	NBL2_ideas_6 = {
+		discipline = 0.05
+	    army_tradition = 0.5
+	}
+	NBL2_ideas_7 = {
+	    production_efficiency = 0.2
+    }
+}
+
+MTE_ideas = {
+	#��������
+	start = {
+		idea_cost = -0.1
+		fort_maintenance_modifier = -0.2
+	}
+	bonus = {
+		advisor_cost = -0.15
+	}
+	trigger = {
+		tag = MTE
+	}
+	free = yes
+	Advanced_technology_in_chaldea = {
+		development_cost = -0.1
+	}
+	Knowledgeabilit_school_girl = {
+		colonists = 1
+		native_uprising_chance = -0.5
+	}
+	Demi_servant = {
+		manpower_recovery_speed = 0.2
+	}
+	Lord_chaldeas = {
+		shock_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+	Know_the_real_name = {
+		diplomatic_reputation = 2
+	}
+	Father_arrival = {
+		army_tradition = 1
+	}
+	Lord_camelot = {
+		fire_damage_received = -0.05
+		discipline = 0.025
+	}
+}
+
+RIN_ideas = {
+	#Զ��������
+	start = {
+		trade_steering = 0.15
+		trade_efficiency = 0.1
+	}
+	bonus = {
+		global_colonial_growth = 25
+	}
+	trigger = {
+		tag = RIN
+	}
+	free = yes
+	The_heiress = {
+		global_tax_modifier = 0.15
+	}
+	Recombination_time_tower = {
+		global_trade_power = 0.1
+	}
+	Gem_magic = {
+		colonists = 1
+		range = 0.4
+	}
+	The_successor_of_the_second_magic = {
+		spy_offence = 0.2
+	}
+	A_good_mage_is_a_mage_who_can_fight_in_close_combat = {
+		discipline = 0.05
+	}
+	Magic_patent_rights = {
+		global_tariffs = 0.2
+	}
+	Magic_is_the_first_productivity = {
+		production_efficiency = 0.15
+	}
+}
+
+
+MDK_ideas = {
+	#¹ĿԲ����
+	start = {
+		land_forcelimit_modifier = 0.25
+		manpower_recovery_speed = 0.2
+	}
+	bonus = {
+		global_unrest = -2
+	}
+	trigger = {
+		tag = MDK
+	}
+	free = yes
+	Bulgarian_support = {
+		siege_ability = 0.15
+		land_attrition = -0.2
+	}
+	Sign_contract_qb = {
+		army_tradition = 1
+		global_regiment_cost = -0.1
+	}
+	Circle_of_reason = {
+		province_warscore_cost = -0.2
+	}
+	Causal_loop_MDK = {
+		tolerance_own = 2
+		global_missionary_strength = 0.02
+	}
+	magic_girl_kami = {
+		global_manpower_modifier = 0.3
+		reinforce_speed = 0.2
+	}
+	Balkan_master = {
+		diplomats = 1
+		diplomatic_reputation = 1
+	}
+	Interfere_in_the_world = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+SM0_ideas = {
+	#Բ������
+	start = {
+		land_forcelimit_modifier = 0.25
+		manpower_recovery_speed = 0.2
+	}
+	bonus = {
+		global_unrest = -2
+	}
+	trigger = {
+		tag = SM0
+	}
+	free = yes
+	Bulgarian_support = {
+		siege_ability = 0.15
+		land_attrition = -0.2
+	}
+	Sign_contract_qb = {
+		army_tradition = 1
+		global_regiment_cost = -0.1
+	}
+	Circle_of_reason = {
+		province_warscore_cost = -0.2
+	}
+	Causal_loop_MDK = {
+		tolerance_own = 2
+		global_missionary_strength = 0.02
+	}
+	magic_girl_kami = {
+		global_manpower_modifier = 0.3
+		reinforce_speed = 0.2
+	}
+	Balkan_master = {
+		diplomats = 1
+		diplomatic_reputation = 1
+	}
+	Interfere_in_the_world_1 = {
+		global_trade_goods_size_modifier = 0.2
+	}
+}
+
+RML_ideas = {
+	#������������
+	start = {
+		global_trade_power = 0.2	#全局贸易力量
+		discipline = 0.05	
+	}
+	bonus = {
+		improve_relation_modifier = 0.5	#改善关系
+	}
+	trigger = {
+		tag = RML
+	}
+	free = yes
+	Red_mist_variation = {
+		production_efficiency = 0.1	#生产效率
+		global_tax_modifier = 0.1	#税收收入修正
+	}
+	Vampire_Lord = {
+		manpower_recovery_speed = 0.15	#后备人力恢复速度
+		reinforce_speed = 0.2	#补员速率
+	}
+	New_Scarlet_Devil = {
+		governing_capacity_modifier = 0.2	#行政容量
+	}
+	Gungnir = {
+		leader_land_fire = 1	#将领火力+1
+		shock_damage = 0.1	#冲击伤害+0.1
+	}
+	Scarlet_Devil_master = {
+		global_unrest = -2	#叛乱-2
+		core_creation = -0.15	#造核
+	}
+	Trade_networks = {
+		trade_steering = 0.25	#贸易引导
+		trade_efficiency = 0.2	#贸易效率
+	}
+	Holding_head = {
+		fire_damage_received = -0.05	#这个不用说吧
+		morale_damage_received = -0.1
+	}
+}
+ILY_ideas = {
+	#����������
+	start = {
+		global_trade_power = 0.1
+		land_morale = 0.1
+	}
+	bonus = {
+		galley_power = 0.15
+	}
+	trigger = {
+		tag = ILY
+	}
+	free = yes
+	Artificial_life = {
+		idea_cost = -0.1
+	}
+	Gift_clothing_ruby = {
+		shock_damage_received = -0.05
+		fire_damage_received = -0.05
+	}
+	Sister_or_sister = {
+		improve_relation_modifier = 0.35
+	}
+	Heaven_of_clothing = {
+		years_of_nationalism = -5
+	}
+	Strange_medicine = {
+		expel_minorities_cost = -0.2
+	}
+	Dream_summon = {
+		administrative_efficiency = 0.05
+	}
+	Saturation_attack = {
+		fire_damage = 0.1
+	}
+}
+
+MUS_ideas = {
+	#��˹����
+	start = {
+		core_creation = -0.15
+		land_morale = 0.1
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	trigger = {
+		OR = {
+			tag = MUS
+			tag = LLF
+		}
+	}
+	free = yes
+	High_eq_idol = {
+		diplomatic_upkeep = 1
+		missionary_maintenance_cost = -0.1
+	}
+	Guard_the_idol_pure_land = {
+		defensiveness = 0.15
+	}
+	Popular_idol = {
+		global_unrest = -2
+	}
+	Trainning_idol_guard = {
+		discipline = 0.05
+	}
+	Idol_craze = {
+		global_manpower_modifier = 0.2
+		manpower_recovery_speed = 0.1
+	}
+	A_academy_of_talents = {
+		same_culture_advisor_cost = -0.25
+	}
+	YanYi = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+}
+
+
+#KNK_ideas = { #��ľ������
+#	start = {
+#		  global_manpower_modifier = 0.15
+#	war_exhaustion = -0.05
+#	}
+#	bonus = {
+#		infantry_shock = 0.25
+#	}
+#	
+#	trigger = {
+#		tag = KNK
+#	}
+#	free = yes
+#	
+#	Good_nature = {
+#	improve_relation_modifier = 0.3
+#}
+#
+#	Ghouls = {
+#	manpower_recovery_speed = 0.2
+#	loot_amount = 0.5
+#}
+#	One_eyed = {
+#	prestige = 1
+#	}
+#	
+#	HeZi = {
+#	leader_land_shock = 1
+#	fire_damage_received = -0.05
+#}
+#	KamisiroRize = {
+#	max_absolutism = 15
+#	governing_capacity_modifier = 0.1
+#	}
+#	Renounce_everything = {
+#	core_creation = -0.15
+#	}
+#	One_thousand_minus_seven = {
+#	unjustified_demands = -0.25
+#	}
+#}
+
+QIN_ideas = {
+	#������
+	start = {
+		land_morale = 0.1
+		idea_cost = -0.1
+	}
+	bonus = {
+		years_of_nationalism = -5
+	}
+	trigger = {
+		tag = QIN
+	}
+	free = yes
+	Fight_for_quartet = {
+		core_creation = -0.2
+	}
+	Frozen_spirit = {
+		free_leader_pool = 2
+		leader_cost = -0.25
+	}
+	Immortal_body = {
+		administrative_efficiency = 0.05
+	}
+	Daqin_technology = {
+		fire_damage = 0.1
+	}
+	Supreme_glory = {
+		tolerance_own = 2
+	}
+	Saints_or_tyrants = {
+		max_absolutism = 25
+	}
+	Eternal_throne = {
+		imperial_mandate = 0.05
+	}
+}
+
+HUH_ideas = {
+	#�ݻ�����
+	start = {
+		infantry_fire = 0.15
+		leader_naval_fire = 1
+	}
+	bonus = {
+		colonists = 1
+		magic_power_government = 1
+	}
+	trigger = {
+		tag = HUH
+	}
+	free = yes
+	Magic_of_genius = {
+		magic_power_government = 2
+		pulse_mana_get_modifier = 10
+		#mana+10
+	}
+	Red_devil_construction = {
+		build_cost = -0.1
+		development_cost = -0.1
+	}
+	Focus_fire = {
+		fire_damage = 0.1
+	}
+	YouYou = {
+		land_forcelimit_modifier = 0.25
+		mercenary_cost = -0.2
+	}
+	IndependentNavy_of_SouthernIberia = {
+		heavy_ship_cost = -0.2
+		heavy_ship_power = 0.1
+	}
+	Deportation_heretic = {
+		global_missionary_strength = 0.02
+		expel_minorities_cost = -0.2
+	}
+	Burst_of_magic = {
+		backrow_artillery_damage = 0.15
+	}
+}
+
+RIB_ideas = {
+	#��������
+	start = {
+		discipline = 0.05
+		warscore_cost_vs_other_religion = -0.2
+	}
+	bonus = {
+		core_creation = -0.25
+	}
+	trigger = {
+		tag = RIB
+	}
+	free = yes
+	German_savior = {
+		global_tax_modifier = 0.15
+	}
+	In_the_front = {
+		global_manpower_modifier = 0.33
+	}
+	Recover_south_germany = {
+		years_of_nationalism = -5
+	}
+	Expel_acg = {
+		missionaries = 1
+		papal_influence = 1.5
+	}
+	Trade_liberalization = {
+		merchants = 1
+		center_of_trade_upgrade_cost = -0.25
+	}
+	Thriving_german_art = {
+		prestige = 1
+	}
+	Precise_german_craftsmanship = {
+		production_efficiency = 0.05
+		infantry_power = 0.1
+	}
+}
+
+NSL_ideas = {
+	#ħ��������
+	start = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+		diplomatic_reputation = 2
+	}
+	bonus = {
+		years_of_nationalism = -10
+	}
+	trigger = {
+		tag = NSL
+	}
+	free = yes
+	Legacy_treasure = {
+		governing_capacity_modifier = 0.2
+		global_tax_modifier = 0.1
+	}
+	Nathalic = {
+		discipline = 0.05
+	}
+	The_dead_country = {
+		global_missionary_strength = 0.05
+		global_unrest = 2
+	}
+	Floor_guardian = {
+		mercenary_cost = -0.3
+		vassal_forcelimit_bonus = 2
+	}
+	Heavily_guarded = {
+		defensiveness = 0.1
+		fire_damage_received = -0.05
+	}
+	Setup_NasalikSpyBureau = {
+		siege_ability = 0.1
+		own_coast_naval_combat_bonus = 1
+	}
+	Reorganize_magic = {
+		innovativeness_gain = 0.2
+		pulse_mana_get_modifier = 10
+		#mana+15
+	}
+}
+
+AKE_ideas = {
+	#吼姆拉的新idea
+	start = {
+		leader_land_fire = 1
+		land_forcelimit_modifier = 0.2
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = AKE
+	}
+	free = yes
+	Knowledge_accumulation = {
+		technology_cost = -0.1
+	}
+	Time_stop = {
+		movement_speed = 0.2
+	}
+	Full_of_Experience = {
+		global_unrest = -2
+	}
+	Inner_closed = {
+		war_exhaustion = -0.05 	
+		war_exhaustion_cost = -0.15
+	}
+	Looking_for_possibilities_in_an_unseen_future = {
+		fire_damage = 0.1
+		max_general_fire = 2
+	}
+	One_of_Balkans_lord = {
+		province_warscore_cost = -0.15
+	}
+	Round_magic = {
+		backrow_artillery_damage = 0.2
+	}
+}
+
+SKR_ideas = {
+	#ľ֮��ӣ����
+	start = {
+		promote_culture_cost = -0.5
+		global_regiment_recruit_speed = -0.33
+	}
+	bonus = {
+		adm_advisor_cost = -0.3
+	}
+	trigger = {
+		tag = SKR
+	}
+	free = yes
+	Card_collector = {
+		monthly_splendor = 2
+	}
+	Cerberus = {
+		idea_cost = -0.1
+	}
+	Tomoyo_Daidouji = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	Sakura_card = {
+		innovativeness_gain = 0.5
+	}
+	Clear_card = {
+		discipline = 0.05
+	}
+	King_of_cute = {
+		free_policy = 1
+	}
+	Release_SKR = {
+		ae_impact = -0.33
+	}
+}
+
+MSK_ideas = {
+	#������������
+	start = {
+		trade_efficiency = 0.1
+		development_cost = -0.1
+	}
+	bonus = {
+		naval_forcelimit_modifier = 0.33
+	}
+	trigger = {
+		tag = MSK
+	}
+	free = yes
+	Only_seven = {
+		diplomatic_reputation = 2
+	}
+	AcademyCityPinnacleTechnology = {
+		technology_cost = -0.1
+	}
+	Sisters_MSK = {
+		global_manpower_modifier = 0.25
+	}
+	MSK_goodness = {
+		stability_cost_modifier = -0.2
+	}
+	Integrated_trading_network = {
+		trade_range_modifier = 0.5
+		merchants = 1
+	}
+	March_on_the_Netherlands = {
+		infantry_cost = -0.2
+		global_regiment_recruit_speed = -0.2
+	}
+	Only_my_railgun_MSK = {
+		fire_damage = 0.1
+	}
+}
+
+RDI_ideas = {
+	#�޵µ�
+	start = {
+		naval_maintenance_modifier = -0.2
+		mercenary_cost = -0.25
+	}
+	bonus = {
+		ship_durability = 0.1
+	}
+	trigger = {
+		tag = RDI
+	}
+	free = yes
+	Pharmaceutical_companies = {
+		manpower_recovery_speed = 0.25
+	}
+	Save_the_infected = {
+		prestige = 1
+	}
+	Infrastructure_expansion = {
+		build_cost = -0.1
+		build_time = -0.8
+	}
+	Source_rock_art = {
+		production_efficiency = 0.2
+	}
+	Foreign_mercenary = {
+		mercenary_discipline = 0.05
+		mercenary_manpower = 0.25
+	}
+	Strategic_vision = {
+		reinforce_speed = 0.2
+		reinforce_cost_modifier = -0.2
+	}
+	Setup_base = {
+		core_creation = -0.15
+		governing_capacity_modifier = 0.1
+	}
+}
+
+SKY_ideas = {
+	#ʮ��ҹ�Dҹ����
+	start = {
+		build_cost = -0.15
+		improve_relation_modifier = 0.25
+	}
+	bonus = {
+		diplomatic_reputation = 2
+	}
+	trigger = {
+		tag = SKY
+	}
+	free = yes
+	Perfect_handsome_flying_knife = {
+		leader_land_manuever = 2
+	}
+	TimeSpells_illusory_vertical_time = {
+		army_tradition_decay = -0.01
+	}
+	Perfect_handsome_maid = {
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+	}
+	Dial_Connected = {
+		leader_land_shock = 1
+	}
+	Down_the_stairs = {
+		yearly_corruption = -0.1
+	}
+	Speed_of_light_bouncing = {
+		artillery_power = 0.1
+	}
+	Perfect_handsome_world = {
+		defensiveness = 0.1
+		ae_impact = -0.15
+	}
+}
+
+
+TYA_ideas = {
+	start = {
+		papal_influence = 2
+		ae_impact = -0.2
+	}
+	bonus = {
+		female_advisor_chance = 0.5
+	}
+	trigger = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	free = yes	#will be added at load.
+	Rational_thinking = {
+		stability_cost_modifier = -0.1
+		global_tax_modifier = 0.1
+	}
+	The_devil_instructor = {
+		discipline = 0.05
+	}
+	Demons_of_Rhine = {
+		diplomatic_reputation = 1
+	}
+	Prepare_for_war = {
+		global_manpower_modifier = 0.25
+	}
+	Zetua_and_Lutyrudev = {
+		mil_tech_cost_modifier = -0.1
+	}
+	Suppression_of_the_mob = {
+		harsh_treatment_cost = -0.3
+	}
+	AA_203_aviation_magic_brigade = {
+		fire_damage = 0.1
+		leader_land_manuever = 1
+	}
+}
+
+INX_ideas = {
+	#��ٿ�˿����
+	start = {
+		monthly_splendor = 2
+		advisor_pool = 1
+	}
+	bonus = {
+		land_morale = 0.15
+	}
+	trigger = {
+		tag = INX
+	}
+	free = yes
+	Moving_church = {
+		defensiveness = 0.1
+		shock_damage_received = -0.05
+	}
+	remember_completely = {
+		global_institution_spread = 0.25
+	}
+	library_INX = {
+		discipline = 0.05
+	}
+	Science_idiot = {
+		technology_cost = -0.1
+	}
+	dedicated_lamb_guards_the_knowledge_of_the_strong = {
+		embracement_cost = -0.2
+	}
+	foodie_INX = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	KamijouToma = {
+		free_mil_policy = 1
+	}
+}
+
+OKT_ideas = {
+	#������˾����
+	start = {
+		production_efficiency = 0.1
+		mil_tech_cost_modifier = -0.1
+	}
+	bonus = {
+		trade_efficiency = 0.1
+	}
+	trigger = {
+		tag = OKT
+	}
+	free = yes
+	An_incomparable_genius_swordsman = {
+		land_morale = 0.1
+	}
+	The_leader_of_shinsengumi_first_team = {
+		global_unrest = -2
+	}
+	Tennen_rishin_ry = {
+		prestige = 1
+	}
+	Sick_and_weak = {
+		reinforce_cost_modifier = -0.25
+	}
+	Shorten_distance = {
+		leader_land_manuever = 1
+	}
+	Flag_of_honesty = {
+		culture_conversion_cost = -0.2
+	}
+	Wuming_sanduanqiu = {
+		shock_damage = 0.1
+		siege_ability = 0.05
+	}
+}
+
+HTS_ideas = {
+	#����δ������
+	start = {
+		naval_morale = 0.1
+		land_morale = 0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = HTS
+	}
+	free = yes
+	Virtual_song_ji = {
+		technology_cost = -0.1
+	}
+	VOCALOID = {
+		diplomatic_upkeep = 3
+		prestige = 1
+	}
+	Music_rule_country = {
+		global_unrest = -2
+		stability_cost_modifier = -0.1
+	}
+	Acg_Pope = {
+		religious_unity = 0.1
+		global_missionary_strength = 0.02
+	}
+	Claim_Japanese_orthodoxy = {
+		legitimacy = 1
+		fabricate_claims_cost = -0.2
+	}
+	Global_market_HTS = {
+		global_trade_goods_size_modifier = 0.1
+		global_trade_power = 0.1
+	}
+	World_is_Mine = {
+		global_manpower_modifier = 0.25
+		cavalry_cost = -0.2
+	}
+}
+
+YUI_ideas = {
+	#ƽ��Ψ����
+	start = {
+		army_tradition_decay = -0.01
+		fabricate_claims_cost = -0.2
+	}
+	bonus = {
+		monthly_splendor = 5
+	}
+	trigger = {
+		tag = YUI
+	}
+	free = yes
+	Development_department_YUI = {
+		development_cost = -0.1
+	}
+	budget_management = {
+		global_tax_modifier = 0.1
+		inflation_action_cost = -0.25
+	}
+	Daily_practice_YUI = {
+		army_tradition = 1
+	}
+	Hokago_Tea_Time = {
+		war_exhaustion_cost = -0.25
+	}
+	UI_support = {
+		global_unrest = -2
+	}
+	senpai_support = {
+		same_culture_advisor_cost = -0.25
+	}
+	KON_HTT_forever = {
+		discipline = 0.05
+	}
+}
+
+RSK_ideas = {
+	#����ʽ����
+	start = {
+		naval_forcelimit_modifier = 0.25
+		development_cost = -0.1
+	}
+	bonus = {
+		diplomatic_annexation_cost = -0.2
+	}
+	trigger = {
+		tag = RSK
+	}
+	free = yes	#will be added at load.
+	genyuanxujie = {
+		years_of_nationalism = -5
+	}
+	danduxianxian = {
+		colonists = 1
+		global_colonial_growth = 10
+	}
+	zhisizhimoyan = {
+		shock_damage = 0.1
+		siege_ability = 0.05
+	}
+	yunyao = {
+		discipline = 0.05
+	}
+	xuezhiye = {
+		prestige = 1
+	}
+	yinyangyu = {
+		trade_efficiency = 0.2
+		global_tax_modifier = -0.1
+	}
+	zhouzhili = {
+		yearly_corruption = -0.15
+	}
+}
+
+#MTE_ideas = { #nero�汾
+#start = {
+#	colonists = 1
+#	diplomats = 1
+#	}
+#bonus = {
+#	technology_cost = -0.15
+#	}
+#
+#trigger = {
+#	tag = MTE
+#	}
+#free = yes
+#
+#Chaldeans_important_exploer = {
+#	diplomatic_reputation = 1 
+#	colonist_placement_chance = 0.05
+#	}#����������
+#sub_servent_the_six = {
+#	global_institution_spread = 0.2 
+#	innovativeness_gain = 0.2
+#	}#�Ǵ��ߡ�������ʵ��Ʒ
+#Galahad_the_second_servent = {
+#	army_tradition = 0.5 
+#	global_unrest = -1
+#	}#�������¡�Ӣ�����
+#honor_snow_wall = {
+#	fire_damage_received = -0.1
+#	global_manpower_modifier = 0.1
+#	}#�ٹ�����ѩ��֮��
+#the_time_of_wall = {
+#	shock_damage_received = -0.1
+#	manpower_recovery_speed = 0.05
+#	}#ʱΪ���ʵİ���֮��
+#for_the_love_to_fight = {		
+#	land_morale = 0.1
+#	}#�������֮��
+#Lord_Camelot = {
+#	fort_maintenance_modifier = -0.2
+#	defensiveness = 0.2
+#	}#��ȻңԶ������֮��
+#}
+KHK_ideas = {
+	#空白理念
+	start = {
+		idea_cost = -0.1
+		technology_cost = -0.1
+	}
+	bonus = {
+		overextension_impact_modifier = -0.2
+	}
+	trigger = {
+		OR = {
+			tag = SRA
+			tag = SIR
+			tag = ELZ
+		}
+	}
+	free = yes
+	Ten_rulers = {
+		core_creation = -0.1
+		diplomatic_reputation = 1
+	}
+	The_weak_manifesto = {
+		land_morale = 0.15
+		war_exhaustion = -0.05
+	}
+	Dora_goverment_affairs = {
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+	}
+	Jibril_attack = {
+		artillery_power = 0.1
+		leader_siege = 1
+	}
+	Elf_support = {
+		spy_offence = 0.2
+	}
+	Izuna_outburst = {
+		discipline = 0.05
+	}
+	Elzia_commonwealth = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+}
+
+TSA_ideas = {
+	#����˹���������
+	start = {
+		global_manpower_modifier = 0.33
+		core_creation = -0.15
+	}
+	bonus = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	trigger = {
+		tag = TSA
+	}
+	free = yes	#will be added at load.
+	luomannuofu = {
+		years_of_nationalism = -5
+	}
+	shaluliebing = {
+		land_morale = 0.1
+	}
+	eluositudi = {
+		ae_impact = -0.15
+	}
+	jueduiqiangquan = {
+		global_autonomy = -0.1
+	}
+	elipsijunshixueyuan = {
+		army_tradition = 1
+	}
+	SumerkiKremlin = {
+		defensiveness = 0.2
+	}
+	viywei = {
+		hostile_attrition = 2
+	}
+}
+
+CHN_ideas = {
+	#�����������
+	start = {
+		naval_forcelimit_modifier = 0.2
+		trade_steering = 0.2
+	}
+	bonus = {
+		production_efficiency = 0.15
+	}
+	trigger = {
+		tag = CHN
+	}
+	free = yes	#will be added at load.
+	rabbit_house = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+	}
+	onechan_ni_omakase_kudasai = {
+		land_morale = 0.1
+	}
+	triumvirate_of_colmar = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 2
+	}
+	rize_instructor_discipline = {
+		fire_damage_received = -0.05
+		fire_damage = 0.05
+	}
+	support_from_tedezas = {
+		global_manpower_modifier = 0.15
+		manpower_recovery_speed = 0.1
+	}
+	tippy = {
+		advisor_pool = 1
+		advisor_cost = -0.15
+	}
+	cappuccino_magic_of_chino = {
+		global_prov_trade_power_modifier = 0.2
+		trade_efficiency = 0.15
+	}
+}
+
+FLD_ideas = {
+	#ܽ����¶����
+	start = {
+		land_morale = 0.1
+		core_creation = -0.15
+	}
+	bonus = {
+		global_ship_cost = -0.1
+	}
+	trigger = {
+		tag = FLD
+	}
+	free = yes	#will be added at load.
+	Scarlet_imoto = {
+		diplomatic_upkeep = 2
+	}
+	three_female_otaku_FLD = {
+		stability_cost_modifier = -0.2
+		liberty_desire = 20
+	}
+	Great_destructive_power = {
+		shock_damage = 0.1
+	}
+	Laevatein = {
+		infantry_shock = 0.2
+	}
+	Four_of_a_Kind = {
+		free_leader_pool = 3
+		leader_land_manuever = 1
+	}
+	Crystal_wings = {
+		tolerance_own = 3
+	}
+	lanlanlu = {
+		prestige = 1
+	}
+}
+
+MRS_ideas = {
+	#����ħ��ɳ����
+	start = {
+		province_warscore_cost = -0.2
+		stability_cost_modifier = -0.15
+		#����ѧ�ɽ��ɻ���
+	}
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	trigger = {
+		tag = MRS
+	}
+	free = yes	#will be added at load.
+	Magic_forest = {
+		idea_cost = -0.05
+		pulse_mana_get_modifier = 10
+		#mana+10
+	}
+	Magic_user = {
+		cavalry_fire = 0.5
+	}
+	Magic_shop = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	Mini_eight_trigrams_furnace = {
+		leader_land_fire = 1
+	}
+	thieves = {
+		embracement_cost = -0.2
+	}
+	Master_Spark = {
+		siege_ability = 0.1
+	}
+	hougongwang = {
+		same_culture_advisor_cost = -0.25
+	}
+}
+
+YKR_ideas = {
+	#����������
+	start = {
+		trade_efficiency = 0.1
+		navy_tradition = 1
+	}
+	bonus = {
+		colonist_placement_chance = 0.1
+	}
+	trigger = {
+		tag = YKR
+	}
+	free = yes	#will be added at load.
+	monster_in_the_crack = {
+		land_morale = 0.1
+		naval_morale = 0.1
+	}
+	Yakumo_Ran = {
+		diplomats = 1
+		free_leader_pool = 1
+	}
+	THE_17sui_meishaonv = {
+		ae_impact = -0.2
+	}
+	manipulation_realm = {
+		movement_speed = 0.2
+	}
+	Gensokyo_future = {
+		development_cost = -0.1
+	}
+	Yaoguai_expansion_plan = {
+		colonists = 1
+		expel_minorities_cost = -0.1
+	}
+	hakurei_big_array = {
+		defensiveness = 0.2
+	}
+}
+
+YYK_ideas = {
+	#�������������������������
+	start = {
+		land_forcelimit_modifier = 0.2
+		interest = -1
+	}
+	bonus = {
+		galley_power = 0.2
+	}
+	trigger = {
+		OR = {
+			tag = YYK
+			tag = YOM
+		}
+	}
+	free = yes	#will be added at load.
+	Tower_of_White_Jade = {
+		prestige = 1
+	}
+	ghost_ruler = {
+		global_manpower_modifier = 0.25
+		global_regiment_recruit_speed = -0.2
+	}
+	xixingyao = {
+		global_trade_power = 0.1
+	}
+	blademaster = {
+		drill_gain_modifier = 0.2
+		drill_decay_modifier = -0.2
+	}
+	endless_eat = {
+		global_tax_modifier = -0.1
+		production_efficiency = 0.2
+	}
+	YOM_two_sword = {
+		leader_land_shock = 1
+	}
+	Developing_food_industry_chain = {
+		development_cost = -0.1
+		build_cost = -0.1
+	}
+}
+
+QLN_ideas = {
+	#��¶ŵ����
+	start = {
+		infantry_cost = -0.15
+		infantry_power = 0.1
+	}
+	bonus = {
+		ship_durability = 0.05
+	}
+	trigger = {
+		tag = QLN
+	}
+	free = yes	#will be added at load.
+	ice_spirit = {
+		hostile_attrition = 1
+	}
+	Manipulation_of_the_cold = {
+		defensiveness = 0.2
+	}
+	mischief_QLN = {
+		army_tradition = 1
+	}
+	Icicle_Fall = {
+		fire_damage = -0.1
+	}
+	baka_9 = {
+		technology_cost = 0.05
+		prestige = 1
+	}
+	Daiyousei = {
+		advisor_cost = -0.25
+		advisor_pool = 3
+	}
+	QLN_is_the_strongest = {
+		discipline = 0.05
+		land_morale = 0.05
+	}
+}
+
+EBS_ideas = {
+	#��������
+	start = {
+		infantry_power = 0.1
+		shock_damage_received = -0.05
+	}
+	bonus = {
+		possible_mil_policy = 1
+		free_mil_policy = 1
+	}
+	trigger = {
+		tag = EBS
+	}
+	free = yes	#will be added at load.
+	fortress_of_school = {
+		defensiveness = 0.15
+		fort_maintenance_modifier = -0.15
+	}
+	yukis_fatacy_world = {
+		improve_relation_modifier = 0.25
+	}
+	heritage_of_megune = {
+		technology_cost = -0.05
+		idea_cost = -0.1
+	}
+	survivor_of_apocalypse = {
+		leader_land_manuever = 1
+		leader_land_shock = 1
+	}
+	the_contingency = {
+		land_morale = 0.15
+	}
+	kurumi_training_efforts = {
+		discipline = 0.05
+	}
+	reinforce_the_barrier = {
+		build_cost = -0.1
+		build_time = -0.25
+	}
+}
+
+CTL_ideas = {
+	#珂朵莉理念
+	start = {
+		light_ship_power = 0.2
+		naval_maintenance_modifier = -0.2
+	}
+	bonus = {
+		naval_morale = 0.2
+	}
+	trigger = {
+		tag = CTL
+	}
+	free = yes
+	no_ground_land = {
+		fort_maintenance_modifier = -0.25
+		defensiveness = 0.15
+	}
+	#浮空岛
+	the_elf_weapons = {
+		army_tradition = 1
+	}
+	#妖精兵器
+	the_lossing_memory = {
+		ae_impact = -0.15
+	}
+	#逐渐消逝的记忆（削弱记忆debuff）
+	elf_weapons_senioris = {
+		fire_damage = 0.05
+		shock_damage = 0.05
+	}
+	#瑟尼欧里斯
+	the_sadness_fate = {
+		prestige = 1
+		prestige_decay = -0.01
+	}
+	#悲哀的命运
+	the_godness_aluco = {
+		global_unrest = -2
+	}
+	#星神艾露可
+	the_most_fortunate_girl = {
+		army_tradition_from_battle = 0.5
+		discipline = 0.05
+	}
+	#最幸福的女孩
+}
+
+TES_ideas = {
+	#����������������
+	start = {
+		global_missionary_strength = 0.02
+		core_creation = -0.2
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.2
+	}
+	trigger = {
+		tag = TES
+	}
+	free = yes
+	TES_sky_people = {
+		prestige = 1
+	}
+	#����
+	TES_fantasy_sword = {
+		siege_ability = 0.2
+	}
+	#���֮��
+	TES_key_stone = {
+		defensiveness = 0.2
+	}
+	#Ҫʯ
+	TES_confident_girl = {
+		improve_relation_modifier = -0.2
+		yearly_absolutism = 1
+		legitimacy = 1
+	}
+	#���
+	TES_fantasy_sword_card = {
+		global_unrest = -2
+	}
+	#���롰����Ƿ���֮���� 
+	TES_key_stone_card = {
+		leader_land_shock = 1
+	}
+	#Ҫʯ������ٵ�֮ѹ�� 
+	TES_all_humans_fantasy = {
+		fire_damage = 0.1
+	}
+	#��ȫ���������족
+}
+
+TES_ideas_up = {
+	#天子理念升级
+	start = {
+		global_missionary_strength = 0.02
+		core_creation = -0.2
+	}
+	bonus = {
+		artillery_fire = 1
+	}
+	trigger = {
+		tag = TES
+		has_country_flag = TES_ideas_up
+	}
+	free = yes
+	TES_sky_people_up = {	#天人
+		shock_damage_received = -0.05
+		fire_damage_received = -0.05
+	}
+	TES_iberian = {	#伊比利亚的遗产
+		colonists = 1
+		global_colonial_growth = 15
+	}
+	TES_ideas_3_up = {	#绯想之术
+		fire_damage = 0.1
+		leader_land_fire = 1
+	}
+	TES_ideas_4_up = {	#要石
+		defensiveness = 0.15
+		siege_ability = 0.15
+	}
+	TES_ideas_5_up = {	#天人的统治
+		global_unrest = -2
+		years_of_nationalism = -5
+	}
+	TES_ideas_6_up = {	#强运
+		global_trade_goods_size_modifier = 0.1
+	}
+	TES_all_humans_fantasy_up = {	#全人类的绯想天
+		land_morale = 0.1
+		backrow_artillery_damage = 0.1
+	}
+}
+
+#ALC_ideas = {
+#	start = {
+#		merc_maintenance_modifier = -0.2
+#		mercenary_cost = -0.2
+#	}
+#	bonus = {
+#		build_cost = -0.15
+#	}
+#	trigger = {
+#		tag = ALC
+#	}
+#	free = yes
+#	Magic_user_ALC = {
+#		global_institution_spread = 0.25
+#	}
+#	Making_doll = {
+#		mercenary_manpower = 0.5
+#	}
+#	Doll_support = {
+#		shock_damage = 0.1
+#	}
+#	dushipai = {
+#		free_adm_policy = 1
+#	}
+#	preserve_one = {
+#		global_spy_defence = 0.25
+#	}
+#	Doll_giantism = {
+#		mercenary_discipline = 0.1
+#	}
+#	Doll_factory = {
+#		production_efficiency = 0.1
+#		global_manpower_modifier = 0.2
+#	}
+#}
+
+AQO_ideas = {
+	#aqours����
+	start = {
+		core_creation = -0.2
+		improve_relation_modifier = 0.3
+	}
+	bonus = {
+		technology_cost = -0.05
+	}
+	trigger = {
+		tag = AQO
+	}
+	free = yes	#will be added at load.
+	step_zero_to_one = {
+		missionaries = 1
+		global_missionary_strength = 0.02
+	}
+	fengtianxiang = {
+		prestige = 1
+	}
+	Yahane_Summoning = {
+		global_manpower_modifier = 0.25
+		infantry_power = 0.1
+	}
+	idol_muscle = {
+		discipline = 0.05
+	}
+	aqours_sunshine = {
+		land_morale = 0.15
+	}
+	aqours_and_miusi = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	idol_rule_land = {
+		governing_capacity_modifier = 0.15
+	}
+}
+
+TOM_ideas = {
+	#����������
+	start = {
+		global_manpower_modifier = 0.2
+		leader_land_fire = 1
+	}
+	bonus = {
+		production_efficiency = 0.2
+	}
+	trigger = {
+		tag = TOM
+	}
+	free = yes
+	Elegant_tea_party = {
+		build_cost = -0.1
+		development_cost = -0.1
+	}
+	Ribbon_barrier = {
+		defensiveness = 0.15
+		hostile_attrition = 1
+	}
+	Holy_Quintet = {
+		advisor_cost = -0.1
+	}
+	Lonely_magic_girl = {
+		army_tradition = 1
+	}
+	Fettered_chains = {
+		inflation_action_cost = -0.2
+		war_exhaustion_cost = -0.2
+	}
+	Justice_daichang = {
+		land_morale = 0.1
+		naval_morale = 0.1
+	}
+	tiro_finale_idea = {
+		fire_damage = 0.1
+		artillery_levels_available_vs_fort = 1
+	}
+}
+
+DTR_ideas = {
+	#�ڴ�����
+	start = {
+		naval_maintenance_modifier = -0.2
+		global_trade_power = 0.25
+	}
+	bonus = {
+		naval_morale = 0.2
+	}
+	trigger = {
+		tag = DTR
+	}
+	free = yes
+	DTR_King_of_inversion = {
+		army_tradition_from_battle = 1
+	}
+	DTR_Tyranny_and_Ideal = {
+		global_unrest = 2
+		global_tax_modifier = 0.2
+	}
+	DTR_Magic_Hearth = {
+		land_forcelimit_modifier = 0.33
+	}
+	DTR_Leadership = {
+		discipline = 0.05
+	}
+	DTR_Magic_release = {
+		infantry_power = 0.1
+	}
+	DTR_intuition = {
+		movement_speed = 0.2
+		reinforce_cost_modifier = -0.25
+	}
+	DTR_Excalibur_Morgan = {
+		fire_damage = 0.1
+	}
+}
+
+ELE_ideas = {
+	#��������
+	start = {
+		tolerance_own = 3
+		warscore_cost_vs_other_religion = -0.25
+	}
+	bonus = {
+		culture_conversion_cost = -0.25
+	}
+	trigger = {
+		OR = {
+			tag = ELE
+		}
+	}
+	free = yes	#will be added at load.
+	nucleusofthegoddess = {
+		discipline = 0.05
+	}
+	underworldgoddess = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+	}
+	Hiddencrown = {
+		war_exhaustion = -0.03
+		missionary_maintenance_cost = -0.33
+	}
+	Underworlddevelopment = {
+		development_cost = -0.1
+		build_cost = -0.1
+	}
+	KurKigalIrkalla = {
+		hostile_attrition = 1
+		fire_damage_received = -0.05
+	}
+	Underworldprotection = {
+		land_morale = 0.1
+		fire_damage = 0.05
+	}
+	UnderworldFlower = {
+		improve_relation_modifier = 0.3
+	}
+}
+
+IST_ideas = {
+	#��ʲ��������
+	start = {
+		global_trade_goods_size_modifier = 0.15
+		trade_efficiency = 0.15
+	}
+	bonus = {
+		reduced_liberty_desire = 20
+	}
+	trigger = {
+		OR = {
+			tag = IST
+		}
+	}
+	free = yes	#will be added at load.
+	nucleusofthegoddess = {
+		discipline = 0.05
+	}
+	Manifestationofbeauty = {
+		ae_impact = -0.15
+	}
+	Shiningcrown = {
+		stability_cost_modifier = -0.1
+		num_accepted_cultures = 2
+	}
+	Searchforwealth = {
+		colonists = 1
+		colonist_placement_chance = 0.05
+	}
+	TZManana = {
+		ship_durability = 0.05
+		heavy_ship_power = 0.1
+	}
+	Venusgoddess = {
+		global_unrest = 2
+		global_autonomy = -0.05
+		production_efficiency = 0.15
+	}
+	AnGalTaKigalShe = {
+		siege_ability = 0.1
+		leader_siege = 1
+	}
+}
+
+LTY_ideas = {
+	#����������
+	start = {
+		church_power_modifier = 0.2
+		global_missionary_strength = 0.03
+	}
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	trigger = {
+		OR = {
+			tag = LTY
+		}
+	}
+	free = yes	#will be added at load.
+	Virtual_song_ji_lty = {
+		idea_cost = -0.1
+	}
+	jingyiwei = {
+		spy_offence = 0.25
+		global_spy_defence = 0.2
+	}
+	huaxiafengyun = {
+		production_efficiency = 0.15
+		num_accepted_cultures = 1
+	}
+	Music_Genie = {
+		improve_relation_modifier = 0.2
+		diplomatic_upkeep = 1
+	}
+	Queen_of_Zhongyuan = {
+		culture_conversion_cost = -0.2
+		imperial_mandate = 0.05
+	}
+	head_to_the_World = {
+		colonists = 1
+		global_colonial_growth = 15
+	}
+	chihuo_dianxia = {
+		global_supply_limit_modifier = 0.2
+		leader_land_manuever = 1
+	}
+}
+
+KYO_ideas = {
+	#������������
+	start = {
+		discipline = 0.05
+		manpower_recovery_speed = 0.2
+	}
+	bonus = {
+		leader_siege = 1
+	}
+	trigger = {
+		OR = {
+			tag = KYO
+		}
+	}
+	free = yes	#will be added at load.
+	KYO_ideas_1 = {
+		infantry_power = 0.1
+	}
+	KYO_ideas_2 = {
+		ae_impact = -0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	KYO_ideas_3 = {
+		defensiveness = 0.2
+		hostile_attrition = 1
+	}
+	KYO_ideas_4 = {
+		war_exhaustion = -0.1
+	}
+	KYO_ideas_5 = {
+		core_creation = -0.15
+		church_power_modifier = 0.1
+	}
+	KYO_ideas_6 = {
+		drill_gain_modifier = 0.2
+		reinforce_speed = 0.2
+	}
+	KYO_ideas_7 = {
+		siege_ability = 0.2
+	}
+}
+
+KMK_ideas = {
+	#��ħ������
+	start = {
+		years_of_nationalism = -5
+		idea_cost = -0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = KMK
+	}
+	free = yes	#will be added at load.
+	KMK_ideas_1 = {
+		governing_capacity_modifier = 0.2
+		global_autonomy = -0.1
+	}
+	KMK_ideas_2 = {
+		diplomatic_reputation = 2
+		culture_conversion_cost = -0.15
+	}
+	KMK_ideas_3 = {
+		defensiveness = 0.2
+		build_cost = -0.1
+	}
+	KMK_ideas_4 = {
+		global_manpower_modifier = 0.25	
+		manpower_recovery_speed = 0.15
+	}
+	KMK_ideas_5 = {
+		global_unrest = -1
+		technology_cost = -0.1
+	}
+	KMK_ideas_6 = {
+		trade_efficiency = 0.2
+		trade_steering = 0.25
+	}
+	KMK_ideas_7 = {
+		core_creation = -0.25
+	}
+}
+
+KDE_ideas = {
+	#����������
+	start = {
+		land_morale = 0.1
+		tolerance_heathen = 3
+	}
+	bonus = {
+		republican_tradition = 1
+	}
+	trigger = {
+		tag = KDE
+	}
+	free = yes
+	Angel_player = {
+		technology_cost = -0.1
+	}
+	Delay = {
+		shock_damage_received = -0.05
+	}
+	The_un-dead_wished = {
+		manpower_recovery_speed = 0.2
+	}
+	Hand_sonic = {
+		discipline = 0.05
+	}
+	Harmonics = {
+		global_manpower_modifier = 0.15
+		reinforce_speed = 0.15
+	}
+	Gardener = {
+		development_cost = -0.1
+	}
+	Distortion = {
+		fire_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+}
+
+KRE_ideas = {
+	#������������
+	start = {
+		sailors_recovery_speed = 0.2
+		ae_impact = -0.15
+	}
+	bonus = {
+		ship_durability = 0.05
+	}
+	trigger = {
+		tag = KRE
+	}
+	free = yes	#will be added at load.
+	cultural_exchange = {
+		global_institution_spread = 0.25
+	}
+	japanese_oversea_study_trailer = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.25
+	}
+	kiniro_embassies = {
+		diplomats = 1
+		diplomatic_upkeep = 1
+	}
+	kujo_families = {
+		production_efficiency = 0.15
+	}
+	link_of_friendship = {
+		land_morale = 0.15
+	}
+	anglican_communion_in_middle_east = {
+		religious_unity = 0.25
+		missionary_maintenance_cost = -0.2
+	}
+	the_fleet_is_our_wooden_wall = {
+		own_coast_naval_combat_bonus = 1
+	}
+}
+
+AOB_ideas = {
+	#������Ҷ����
+	start = {
+		merchants = 1
+		global_trade_goods_size_modifier = 0.15
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.2
+	}
+	trigger = {
+		tag = AOB
+	}
+	free = yes	#will be added at load.
+	recruitment_of_staff = {
+		global_regiment_cost = -0.15
+		female_advisor_chance = 0.5
+	}
+	commercial_policy_of_eagle_jump = {
+		global_trade_power = 0.15
+		trade_range_modifier = 0.2
+	}
+	advanced_administrative_department = {
+		governing_capacity_modifier = 0.1
+		max_absolutism = 10
+	}
+	upgrade_from_oversea = {
+		ship_power_propagation = 0.2
+	}
+	just_cause_of_commercial = {
+		naval_morale = 0.1
+		land_morale = 0.1
+	}
+	enlargement_of_security_department = {
+		land_maintenance_modifier = -0.1
+		global_manpower_modifier = 0.15
+	}
+	dawn_of_monopoly_plutocracy = {
+		global_naval_engagement_modifier = 0.2
+	}
+}
+
+KRF_ideas = {
+	#��ҫ����������
+	start = {
+		land_morale = 0.15
+		stability_cost_modifier = -0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = KRF
+	}
+	free = yes	#will be added at load.
+	archive_grand_mage = {
+		fire_damage = 0.1
+		artillery_power = 0.15
+	}
+	union_between_lamp_and_kirara = {
+		legitimacy = 1
+	}
+	summonor_power = {
+		land_forcelimit_modifier = 0.25
+		manpower_recovery_speed = 0.2
+	}
+	seven_sage = {
+		advisor_cost = -0.2
+		advisor_pool = 1
+	}
+	call_of_etoilia = {
+		missionary_maintenance_cost = -0.2
+		missionaries = 1
+	}
+	using_the_gate_of_clea = {
+		diplomatic_upkeep = 1
+		diplomats = 1
+	}
+	warp_by_using_clea = {
+		movement_speed = 0.2
+	}
+}
+
+MIH_ideas = {
+	#��ס��������
+	start = {
+		cavalry_cost = -0.1
+		movement_speed = 0.2
+	}
+	bonus = {
+		prestige = 1
+	}
+	trigger = {
+		tag = MIH
+	}
+	free = yes	#will be added at load.
+	MIH_ideas_1 = {
+		army_tradition = 1
+	}
+	MIH_ideas_2 = {
+		land_forcelimit_modifier = 0.33
+	}
+	MIH_ideas_3 = {
+		improve_relation_modifier = 0.33
+	}
+	MIH_ideas_4 = {
+		fire_damage = 0.1
+	}
+	MIH_ideas_5 = {
+		spy_offence = 0.2
+		siege_ability = 0.2
+	}
+	MIH_ideas_6 = {
+		development_cost = -0.1
+	}
+	MIH_ideas_7 = {
+		discipline = 0.05
+	}
+}
+
+#DDL_ideas = { #������ѧ������
+#	start = {
+#	global_trade_power = 0.1
+#	tolerance_heathen = 3
+#	}
+#
+#	bonus = {
+#	land_forcelimit_modifier = 0.2
+#	}
+#	
+#	trigger = {
+#			tag = DDL
+#	}
+#	free = yes		#will be added at load.
+#	
+#	Monika = {
+#	             infantry_power = 0.2
+#                            land_morale = 0.10
+#}	 
+#              Sayor = {
+#                          shock_damage = 0.1
+#}
+#Yuri = {
+#                       diplomatic_reputation = 1
+#          province_warscore_cost = -0.1
+#}
+#Natsuki = {
+#            	defensiveness = 0.1
+#                          global_spy_defence = 0.1
+#}
+# TERU_teru_bozu = {
+#             fire_damage_received = -0.2
+# }
+#Master_of_arms = {
+#            fire_damage = 0.1
+#}
+#Fourth_wall = {
+#            ae_impact = -0.1
+#}
+#
+#}
+KQS_ideas = {
+	#����ɯ����
+	start = {
+		army_tradition = 1
+		land_morale = 0.1
+	}
+	bonus = {
+		land_attrition = -0.25
+	}
+	trigger = {
+		tag = KQS
+	}
+	free = yes	#will be added at load.
+	KQS_ideas_1 = {
+		church_power_modifier = 0.3
+	}
+	KQS_ideas_2 = {
+		hostile_attrition = 1.5
+	}
+	KQS_ideas_3 = {
+		defensiveness = 0.2
+	}
+	KQS_ideas_4 = {
+		global_manpower_modifier = 0.25
+	}
+	KQS_ideas_5 = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	KQS_ideas_6 = {
+		global_unrest = -2
+	}
+	KQS_ideas_7 = {
+		max_absolutism = 25
+	}
+}
+
+HDM_ideas = {
+	#��������
+	start = {
+		prestige_decay = -0.01
+		stability_cost_modifier = -0.15
+	}
+	bonus = {
+		governing_capacity_modifier = 0.25
+	}
+	trigger = {
+		tag = HDM
+	}
+	free = yes	#will be added at load.
+	HDM_ideas_1 = {
+		diplomatic_reputation = 2
+	}
+	HDM_ideas_2 = {
+		land_morale = 0.1
+	}
+	HDM_ideas_3 = {
+		tolerance_own = 2
+		improve_relation_modifier = 0.2
+	}
+	HDM_ideas_4 = {
+		idea_cost = -0.1
+	}
+	HDM_ideas_5 = {
+		possible_policy = 1
+	}
+	HDM_ideas_6 = {
+		diplomatic_upkeep = 2
+	}
+	HDM_ideas_7 = {
+		discipline = 0.05
+	}
+}
+
+SMR_ideas = {
+	#־Ħ������
+	start = {
+		colonists = 1
+		may_explore = yes
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+		sea_repair = yes
+	}
+	trigger = {
+		tag = SMR
+	}
+	free = yes	#will be added at load.
+	SMR_ideas_1 = {
+		may_perform_slave_raid = yes
+		global_colonial_growth = 15
+	}
+	SMR_ideas_2 = {
+		infantry_power = 0.1
+		allowed_marine_fraction = 0.1
+	}
+	SMR_ideas_3 = {
+		tolerance_heretic = 1
+		tolerance_heathen = 2
+	}
+	SMR_ideas_4 = {
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.15
+	}
+	SMR_ideas_5 = {
+		global_manpower_modifier = 0.25
+		global_sailors_modifier = 0.25
+	}
+	SMR_ideas_6 = {
+		governing_capacity_modifier = 0.25
+	}
+	SMR_ideas_7 = {
+		development_cost = -0.1
+	}
+}
+
+SMK_ideas = {
+	#������������
+	start = {
+		siege_ability = 0.1
+		stability_cost_modifier = -0.1
+	}
+	bonus = {
+		artillery_power = 0.15
+	}
+	trigger = {
+		tag = SMK
+	}
+	free = yes	#will be added at load.
+	SMK_ideas_1 = {
+		missionaries = 1
+		diplomatic_reputation = 1
+	}
+	SMK_ideas_2 = {
+		reinforce_speed = 0.25
+		reinforce_cost_modifier = -0.33
+	}
+	SMK_ideas_3 = {
+		spy_offence = 0.25
+		global_spy_defence = 0.25
+	}
+	SMK_ideas_4 = {
+		discipline = 0.05
+	}
+	SMK_ideas_5 = {
+		cb_on_religious_enemies = yes
+		extra_manpower_at_religious_war = yes
+	}
+	SMK_ideas_6 = {
+		fire_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+	SMK_ideas_7 = {
+		embracement_cost = -0.2
+		technology_cost = -0.05
+	}
+}
+
+NHY_ideas = {
+	#ҰҰԭ��������
+	start = {
+		idea_cost = -0.1
+		stability_cost_modifier = -0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = NHY
+	}
+	free = yes	#will be added at load.
+	NHY_ideas_1 = {
+		global_manpower_modifier = 0.25
+		reinforce_speed = 0.25
+	}
+	NHY_ideas_2 = {
+		hostile_attrition = 1
+		defensiveness = 0.15
+	}
+	NHY_ideas_3 = {
+		spy_offence = 0.25
+		envoy_travel_time = -0.1
+	}
+	NHY_ideas_4 = {
+		technology_cost = -0.05
+		innovativeness_gain = 0.5
+	}
+	NHY_ideas_5 = {
+		diplomatic_upkeep = 1
+		unjustified_demands = -0.1
+	}
+	NHY_ideas_6 = {
+		fire_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+	NHY_ideas_7 = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+}
+
+#URR_ideas = {
+	#����¶�������
+#	start = {
+#		infantry_power = 0.1
+#		build_cost = -0.1
+#	}
+#	bonus = {
+#		land_forcelimit_modifier = 0.3
+#	}
+#	trigger = {
+#		tag = URR
+#	}
+#	free = yes	#will be added at load.
+#	Necromancer = {
+#		diplomatic_reputation = 2
+#	}
+#	nanodesu = {
+#		global_unrest = -2
+#	}
+#	Hollow_Knight = {
+#		shock_damage = 0.1
+#		global_missionary_strength = 0.02
+#	}
+#	Cutting_Board = {
+#		defensiveness = 0.2
+#	}
+#	Houshou_Marine = {
+#		artillery_power = 0.1
+#		loot_amount = 0.1
+#	}
+#	game = {
+#		fire_damage = 0.1
+#	}
+#	Horror_Games = {
+#		fire_damage_received = -0.1
+#	}
+#}
+
+PCL_ideas = {
+	#帕秋莉·诺蕾姬理念
+	start = {
+		technology_cost = -0.1
+		idea_cost = -0.1
+	}
+	bonus = {
+		free_policy = 1
+	}
+	trigger = {
+		tag = PCL
+	}
+	free = yes
+	PCL_ideas_1 = {
+		infantry_fire = 0.2
+	}
+	PCL_ideas_2 = {
+		stability_cost_modifier = -0.3
+	}
+	PCL_ideas_3 = {
+		global_unrest = -2
+	}
+	PCL_ideas_4 = {
+		min_autonomy_in_territories = -0.1
+	}
+	PCL_ideas_5 = {
+		administrative_efficiency = 0.05
+	}
+	PCL_ideas_6 = {
+		global_ship_cost = -0.2
+	}
+	PCL_ideas_7 = {
+		ae_impact = -0.3
+	}
+}
+
+HML_ideas = {
+	#红美玲理念
+	start = {
+		defensiveness = 0.25
+		discipline = 0.05
+	}
+	bonus = {
+		infantry_cost = -0.2
+	}
+	trigger = {
+		tag = HML
+	}
+	free = yes
+	HML_ideas_1 = {
+		global_tax_modifier = 0.15
+	}
+	HML_ideas_2 = {
+		land_morale = 0.1
+	}
+	HML_ideas_3 = {
+		war_taxes_cost_modifier = -0.5
+	}
+	HML_ideas_4 = {
+		global_unrest = -1
+	}
+	HML_ideas_5 = {
+		infantry_power = 0.2
+	}
+	HML_ideas_6 = {
+		num_accepted_cultures = 2
+	}
+	HML_ideas_7 = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+}
+
+NMK_ideas = {
+	#藤原妹红理念
+	start = {
+		manpower_recovery_speed = 0.2
+		fire_damage = 0.1
+	}
+	bonus = {
+		backrow_artillery_damage = 0.1
+	}
+	trigger = {
+		tag = NMK
+	}
+	free = yes
+	NMK_ideas_1 = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	NMK_ideas_2 = {
+		global_spy_defence = 0.2
+	}
+	NMK_ideas_3 = {
+		prestige = 1
+	}
+	NMK_ideas_4 = {
+		leader_land_fire = 1
+		hostile_attrition = 1
+	}
+	NMK_ideas_5 = {
+		war_exhaustion = -0.1
+	}
+	NMK_ideas_6 = {
+		global_tax_modifier = 0.075
+		production_efficiency = 0.075
+	}
+	NMK_ideas_7 = {
+		unjustified_demands = -0.5
+	}
+}
+
+YUK_ideas = {
+	#风见幽香理念
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		infantry_power = 0.15
+	}
+	bonus = {
+		siege_ability = 0.2
+	}
+	trigger = {
+		tag = YUK
+	}
+	free = yes
+	YUK_ideas_1 = {
+		core_creation = -0.2
+	}
+	YUK_ideas_2 = {
+		prestige_decay = -0.01
+	}
+	YUK_ideas_3 = {
+		yearly_army_professionalism = 0.002
+		global_unrest = -1
+	}
+	YUK_ideas_4 = {
+		discipline = 0.05
+	}
+	YUK_ideas_5 = {
+		land_morale = 0.15
+	}
+	YUK_ideas_6 = {
+		fire_damage = 0.1
+	}
+	YUK_ideas_7 = {
+		free_mil_policy = 1
+		army_tradition = 0.5
+	}
+}
+
+KGY_ideas = {
+	#蓬莱山辉夜理念
+	start = {
+		diplomatic_upkeep = 3
+		improve_relation_modifier = 0.3
+	}
+	bonus = {
+		ae_impact = -0.15
+	}
+	trigger = {
+		tag = KGY
+	}
+	free = yes
+	KGY_ideas_1 = {
+		diplomatic_reputation = 1
+		diplomats = 1
+	}
+	KGY_ideas_2 = {
+		prestige = 1.5
+	}
+	KGY_ideas_3 = {
+		envoy_travel_time = -0.25
+		accept_vassalization_reasons = 20
+	}
+	KGY_ideas_4 = {
+		reduced_liberty_desire = 10
+		liberty_desire_from_subject_development = -0.1
+	}
+	KGY_ideas_5 = {
+		advisor_cost = -0.15
+		advisor_pool = 1
+	}
+	KGY_ideas_6 = {
+		free_dip_policy = 1
+		idea_cost = -0.05
+		imperial_authority_value = 0.15
+	}
+	KGY_ideas_7 = {
+		diplomatic_annexation_cost = -0.2
+	}
+}
+
+EIR_ideas = {
+	#八意永琳理念
+	start = {
+		global_regiment_cost = -0.1
+		land_attrition = -0.1
+	}
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+	trigger = {
+		tag = EIR
+	}
+	free = yes
+	EIR_ideas_1 = {
+		infantry_fire = 0.1
+		infantry_power = 0.1
+	}
+	EIR_ideas_2 = {
+		reinforce_cost_modifier = -0.1
+		reinforce_speed = 0.1
+	}
+	EIR_ideas_3 = {
+		core_creation = -0.15
+	}
+	EIR_ideas_4 = {
+		global_institution_spread = 0.15
+		embracement_cost = -0.15
+		institution_spread_from_true_faith = 0.15
+	}
+	EIR_ideas_5 = {
+		possible_policy = 1
+	}
+	EIR_ideas_6 = {
+		land_morale = 0.15
+	}
+	EIR_ideas_7 = {
+		global_tax_income = 120
+		inflation_reduction = 0.1
+	}
+}
+
+RES_ideas = {
+	#铃仙理念
+	start = {
+		land_morale = 0.1
+		infantry_power = 0.15
+	}
+	bonus = {
+		yearly_army_professionalism = 0.003
+	}
+	trigger = {
+		tag = RES
+	}
+	free = yes
+	RES_ideas_1 = {
+		army_tradition = 0.5
+		infantry_fire = 0.2
+	}
+	RES_ideas_2 = {
+		land_forcelimit_modifier = 0.1
+		global_manpower_modifier = 0.1
+	}
+	RES_ideas_3 = {
+		fort_maintenance_modifier = -0.1
+		war_exhaustion = -0.05
+	}
+	RES_ideas_4 = {
+		prestige_from_land = 1
+		loot_amount = 1
+	}
+	RES_ideas_5 = {
+		siege_ability = 0.15
+	}
+	RES_ideas_6 = {
+		merc_maintenance_modifier = -0.2
+	}
+	RES_ideas_7 = {
+		global_tax_income = 120
+		inflation_reduction = 0.1
+	}
+}
+
+IBK_ideas = {
+	#伊吹萃香理念
+	start = {
+		infantry_power = 0.2
+		core_creation = -0.1
+	}
+	bonus = {
+		province_warscore_cost = -0.2
+	}
+	trigger = {
+		tag = IBK
+	}
+	free = yes
+	IBK_ideas_1 = {
+		manpower_in_true_faith_provinces = 0.25
+	}
+	IBK_ideas_2 = {
+		discipline = 0.05
+	}
+	IBK_ideas_3 = {
+		stability_cost_modifier = -0.3
+	}
+	IBK_ideas_4 = {
+		prestige_decay = -0.01
+	}
+	IBK_ideas_5 = {
+		possible_policy = 1
+	}
+	IBK_ideas_6 = {
+		improve_relation_modifier = 0.2
+	}
+	IBK_ideas_7 = {
+		development_cost = -0.1
+	}
+}
+
+SJY_ideas = {
+	#四季映姬理念
+	start = {
+		stability_cost_modifier = -0.3
+		years_of_nationalism = -5
+	}
+	bonus = {
+		core_creation = -0.2
+	}
+	trigger = {
+		tag = SJY
+	}
+	free = yes
+	SJY_ideas_1 = {
+		land_morale = 0.1
+		recover_army_morale_speed = 0.05
+	}
+	SJY_ideas_2 = {
+		ae_impact = -0.1
+		improve_relation_modifier = 0.1
+	}
+	SJY_ideas_3 = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	SJY_ideas_4 = {
+		war_exhaustion = -0.05
+		leader_siege = 1
+	}
+	SJY_ideas_5 = {
+		land_maintenance_modifier = -0.05
+		global_manpower_modifier = 0.2
+	}
+	SJY_ideas_6 = {
+		global_unrest = -1
+		governing_capacity_modifier = 0.1
+	}
+	SJY_ideas_7 = {
+		free_adm_policy = 1
+		global_trade_goods_size_modifier = 0.05
+	}
+}
+
+IRH_ideas = {
+	#������������
+	start = {
+		tolerance_heretic = 3
+		same_culture_advisor_cost = -0.33
+	}
+	bonus = {
+		colonists = 1
+	}
+	trigger = {
+		tag = IRH
+	}
+	free = yes
+	IRH_ideas_1 = {
+		#�����е�������
+		diplomats = 3
+	}
+	IRH_ideas_2 = {
+		#Ѱ������
+		movement_speed = 0.15
+		land_attrition = -0.2
+	}
+	IRH_ideas_3 = {
+		#�������
+		development_cost = -0.1
+		global_supply_limit_modifier = 0.2
+	}
+	IRH_ideas_4 = {
+		#����ԭ���ͬ��
+		diplomatic_upkeep = 1
+		envoy_travel_time = -0.33
+	}
+	IRH_ideas_5 = {
+		#�ؽ�������
+		build_time = -0.2
+		build_cost = -0.15
+	}
+	IRH_ideas_6 = {
+		#strada.futuro
+		manpower_recovery_speed = 0.2
+		mercenary_manpower = 0.3
+	}
+	IRH_ideas_7 = {
+		#�ᶨ����
+		stability_cost_modifier = -0.25
+		hostile_attrition = 1
+	}
+}
+
+STM_ideas = {
+	#����ƻ�����
+	start = {
+		vassal_forcelimit_bonus = 1
+		reduced_liberty_desire = 10
+	}
+	bonus = {
+		province_warscore_cost = -0.15
+	}
+	trigger = {
+		tag = STM
+	}
+	free = yes
+	STM_ideas_1 = {
+		#magius����
+		core_creation = -0.15
+		infantry_power = 0.15
+		improve_relation_modifier = -0.2
+	}
+	STM_ideas_2 = {
+		#�����Ů
+		technology_cost = -0.05
+		embracement_cost = -0.2
+	}
+	STM_ideas_3 = {
+		#ҽԺ����
+		manpower_recovery_speed = 0.15
+		global_manpower_modifier = 0.1
+	}
+	STM_ideas_4 = {
+		#ħ����Ů��������
+		tolerance_own = 2
+		global_missionary_strength = 0.02
+		tolerance_heathen = -3
+	}
+	STM_ideas_5 = {
+		#Neo Genesis
+		fire_damage = 0.1
+	}
+	STM_ideas_6 = {
+		#��Ȩ���Ȩ
+		max_absolutism = 30
+		global_autonomy = 0.025
+	}
+	STM_ideas_7 = {
+		#���޸���
+		max_revolutionary_zeal = 30
+		stability_cost_modifier = 0.2
+	}
+}
+
+YZL_ideas = {
+	#���������
+	start = {
+		improve_relation_modifier = 0.3
+		land_morale = 0.1
+	}
+	bonus = {
+		infantry_power = 0.15
+	}
+	trigger = {
+		OR = {
+			tag = YZL
+		}
+	}
+	free = yes	#will be added at load.
+	YZL_ideas_1 = {
+		fire_damage = 0.05
+		shock_damage = 0.05
+	}
+	YZL_ideas_2 = {
+		global_tax_modifier = 0.15
+		land_maintenance_modifier = -0.05
+	}
+	YZL_ideas_3 = {
+		recover_army_morale_speed = 0.1
+		recover_navy_morale_speed = 0.1
+	}
+	YZL_ideas_4 = {
+		idea_cost = -0.05
+		technology_cost = -0.05
+	}
+	YZL_ideas_5 = {
+		diplomatic_reputation = 2
+		culture_conversion_cost = -0.2
+	}
+	YZL_ideas_6 = {
+		drill_gain_modifier = 0.15
+		leader_land_fire = 1
+	}
+	YZL_ideas_7 = {
+		yearly_absolutism = 1
+		max_absolutism = 15
+	}
+}
+
+KMJ_ideas = {
+	#古明地觉理念
+	start = {
+		war_exhaustion = -0.05
+		land_morale = 0.1
+	}
+	bonus = {
+		no_religion_penalty = yes
+	}
+	trigger = {
+		tag = KMJ
+	}
+	free = yes
+	KMJ_ideas_1 = {
+		production_efficiency = 0.075
+	}
+	KMJ_ideas_2 = {
+		improve_relation_modifier = 0.1
+	}
+	KMJ_ideas_3 = {
+		stability_cost_modifier = -0.2
+	}
+	KMJ_ideas_4 = {
+		build_cost = -0.1
+	}
+	KMJ_ideas_5 = {
+		unjustified_demands = -0.2
+	}
+	KMJ_ideas_6 = {
+		shock_damage = 0.075
+	}
+	KMJ_ideas_7 = {
+		core_creation = -0.15
+	}
+}
+
+KML_ideas = {
+	#古明地恋理念
+	start = {
+		war_exhaustion = -0.05
+		land_morale = 0.1
+	}
+	bonus = {
+		no_religion_penalty = yes
+	}
+	trigger = {
+		tag = KML
+	}
+	free = yes
+	KML_ideas_1 = {
+		global_tax_modifier = 0.075
+	}
+	KML_ideas_2 = {
+		diplomats = 1
+	}
+	KML_ideas_3 = {
+		global_manpower_modifier = 0.15
+	}
+	KML_ideas_4 = {
+		build_time = -0.1
+	}
+	KML_ideas_5 = {
+		province_warscore_cost = -0.1
+	}
+	KML_ideas_6 = {
+		fire_damage = 0.075
+	}
+	KML_ideas_7 = {
+		administrative_efficiency = 0.03
+	}
+}
+
+MJL_ideas = {
+	#地灵殿理念
+	start = {
+		war_exhaustion = -0.1
+		land_morale = 0.1
+	}
+	bonus = {
+		no_religion_penalty = yes
+	}
+	trigger = {
+		tag = MJL
+	}
+	free = yes
+	MJL_ideas_1 = {
+		production_efficiency = 0.075
+		global_tax_modifier = 0.075
+	}
+	MJL_ideas_2 = {
+		improve_relation_modifier = 0.1
+		diplomats = 1
+	}
+	MJL_ideas_3 = {
+		stability_cost_modifier = -0.2
+		global_manpower_modifier = 0.15
+	}
+	MJL_ideas_4 = {
+		build_cost = -0.1
+		build_time = -0.1
+	}
+	MJL_ideas_5 = {
+		province_warscore_cost = -0.1
+		unjustified_demands = -0.2
+	}
+	MJL_ideas_6 = {
+		fire_damage = 0.075
+		shock_damage = 0.075
+	}
+	MJL_ideas_7 = {
+		core_creation = -0.15
+		administrative_efficiency = 0.03
+	}
+}
+
+#FBK_ideas = {
+	#���ϴ�ѩ����
+#	start = {
+#		land_forcelimit_modifier = 0.2
+#		ae_impact = -0.2
+#	}
+#	bonus = {
+#		legitimacy = 1
+#		republican_tradition = 1
+#	}
+#	trigger = {
+#		tag = FBK
+#	}
+#	free = yes
+#	FBK_ideas_1 = {
+#		improve_relation_modifier = 0.4
+#	}
+#	FBK_ideas_2 = {
+#		diplomatic_reputation = 2
+#	}
+#	FBK_ideas_3 = {
+#		idea_cost = -0.1
+#		fire_damage = 0.05
+#	}
+#	FBK_ideas_4 = {
+#		unjustified_demands = -0.3
+#	}
+#	FBK_ideas_5 = {
+#		prestige = 1
+#	}
+#	FBK_ideas_6 = {
+#		development_cost = -0.1
+#	}
+#	FBK_ideas_7 = {
+#		monarch_admin_power = 1
+#	}
+#}
+
+KTY_ideas = {
+	#守矢神社理念
+	start = {
+		infantry_power = 0.15
+		diplomatic_upkeep = 2
+	}
+	bonus = {
+		governing_capacity_modifier = 0.2
+	}
+	trigger = {
+		OR = {
+			tag = KTY
+			tag = MRY
+			tag = YSK
+		}
+	}
+	free = yes
+	KTY_fullbox = {
+		global_tax_modifier = 0.15
+	}
+	KTY_800Wkami = {
+		manpower_in_true_faith_provinces = 0.25
+	}
+	KTY_firmfaith = {
+		missionaries = 1
+		tolerance_own = 1
+	}
+	KTY_fightfortouhou = {
+		warscore_cost_vs_other_religion = -0.25
+	}
+	KTY_steadygate = {
+		defensiveness = 0.2
+		hostile_attrition = 1
+	}
+	KTY_holdcelebration = {
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.15
+	}
+	KTY_hometoreturn = {
+		core_creation = -0.1
+		local_culture_conversion_cost = -0.15
+	}
+}
+
+MIF_ideas = {
+	#����������
+	start = {
+		diplomatic_reputation = 2
+		diplomats = 1
+	}
+	bonus = {
+		improve_relation_modifier = 0.2
+	}
+	trigger = {
+		tag = MIF
+	}
+	free = yes
+	MIF_ideas_1 = {
+		#magius�ڰ���
+		land_forcelimit_modifier = 0.2
+		global_manpower_modifier = 0.2
+	}
+	MIF_ideas_2 = {
+		#�ºͼ�����
+		stability_cost_to_declare_war = -1
+		liberty_desire = 10
+	}
+	MIF_ideas_3 = {
+		#Assault Paranoia
+		land_attrition = -0.2
+		hostile_attrition = 1
+	}
+	MIF_ideas_4 = {
+		#����Ļ�
+		prestige = 1
+		legitimacy = 1
+	}
+	MIF_ideas_5 = {
+		#��Ϊ�����Ķ���Ů��
+		production_efficiency = 0.1
+		development_cost = -0.15
+		liberty_desire = 10
+	}
+	MIF_ideas_6 = {
+		#һ��Ϊ�˾���
+		shock_damage = 0.05
+		fire_damage_received = -0.05
+	}
+	MIF_ideas_7 = {
+		#����Э��
+		core_creation = -0.15
+	}
+}
+
+MRM_ideas = {
+	start = {
+		land_morale = 0.1
+		religious_unity = 0.25
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	trigger = {
+		tag = MRM
+	}
+	free = yes	#will be added at load.
+	MRM_ideas_1 = {
+		fire_damage_received = -0.05
+		movement_speed = 0.1
+	}
+	MRM_ideas_2 = {
+		global_unrest = -2
+	}
+	MRM_ideas_3 = {
+		state_maintenance_modifier = -0.15
+		production_efficiency = 0.1
+	}
+	MRM_ideas_4 = {
+		global_spy_defence = 0.15
+	}
+	MRM_ideas_5 = {
+		diplomatic_reputation = 2
+	}
+	MRM_ideas_6 = {
+		discipline = 0.05
+	}
+	MRM_ideas_7 = {
+		improve_relation_modifier = 0.2
+	}
+}
+
+MKM_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		recover_army_morale_speed = 0.15
+	}
+	bonus = {
+		idea_cost = -0.15
+	}
+	trigger = {
+		tag = MKM
+	}
+	free = yes	#will be added at load.
+	MKM_ideas_1 = {
+		prestige = 1
+		stability_cost_modifier = -0.1
+	}
+	MKM_ideas_2 = {
+		global_trade_power = 0.2
+	}
+	MKM_ideas_3 = {
+		infantry_power = 0.1
+		innovativeness_gain = 0.25
+	}
+	MKM_ideas_4 = {
+		spy_offence = 0.15
+	}
+	MKM_ideas_5 = {
+		fire_damage = 0.1
+	}
+	MKM_ideas_6 = {
+		land_attrition = -0.25
+	}
+	MKM_ideas_7 = {
+		administrative_efficiency = 0.05
+	}
+}
+
+SAY_ideas = {
+	#����ɳҮ������
+	start = {
+		manpower_recovery_speed = 0.25
+		war_exhaustion = -0.05
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.4
+	}
+	trigger = {
+		tag = SAY
+	}
+	free = yes
+	SAY_ideas_1 = {
+		land_morale = 0.1
+		land_attrition = -0.2
+	}
+	SAY_ideas_2 = {
+		leader_land_shock = 1
+		shock_damage = 0.05
+	}
+	SAY_ideas_3 = {
+		stability_cost_to_declare_war = -1
+		tolerance_own = 2
+	}
+	SAY_ideas_4 = {
+		prestige = 1
+		legitimacy = 1
+	}
+	SAY_ideas_5 = {
+		inflation_reduction = 0.2
+	}
+	SAY_ideas_6 = {
+		army_tradition = 0.5
+		army_tradition_decay = -0.01
+		reinforce_cost_modifier = 0.2
+	}
+	SAY_ideas_7 = {
+		shock_damage_received = -0.05
+		fire_damage_received = -0.05
+	}
+}
+
+HNK_ideas = {
+	#面气灵理念 Hata no Kokoro  HNK
+	start = {
+		development_cost = -0.02
+		all_power_cost = -0.025
+	}
+	#发展成本-2% 点数花费-2.5%
+	bonus = {
+		core_creation = -0.2
+	}
+	#核心花费-25%
+	trigger = {
+		tag = HNK
+	}
+	free = yes
+	HNK_ideas_1 = {
+		development_cost = -0.02
+	}
+	#发展成本-2%  根据面具获得效果
+	HNK_ideas_4 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	#10商品	
+	HNK_ideas_3 = {
+		development_cost = -0.02
+	}
+	#发展成本-2%  根据面具获得效果
+	HNK_ideas_2 = {
+		land_morale = 0.1
+		war_exhaustion = -0.1
+	}
+	#士气15% 厌战-0.1 2与4已经进行了对换
+	HNK_ideas_5 = {
+		development_cost = -0.02
+	}
+	#发展成本-2%  根据面具获得效果
+	HNK_ideas_6 = {
+		global_missionary_strength = 0.01
+		missionaries = 1
+	}
+	#2传教强度 1传教士
+	HNK_ideas_7 = {
+		development_cost = -0.02
+	}
+	#发展成本-2%  根据面具获得效果 
+}
+
+SHW_ideas = {
+	trigger = {
+		tag = SHW
+	}
+	free = yes
+	start = {
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+	}
+	bonus = {
+		province_warscore_cost = -0.15
+	}
+	SHW_ideas_1 = {
+		#������
+		core_creation = -0.2
+	}
+	SHW_ideas_2 = {
+		#������
+		diplomats = 1
+		spy_offence = 0.25
+	}
+	SHW_ideas_3 = {
+		#�������������
+		may_establish_frontier = yes
+		#ħ��ֵ�Լ�дȥ
+	}
+	SHW_ideas_4 = {
+		#һ��ͨ��
+		fire_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+	SHW_ideas_5 = {
+		#α������Х
+		fire_damage = 0.03
+	}
+	SHW_ideas_6 = {
+		#��־��
+		war_exhaustion = -0.05
+		reserves_organisation = 0.1
+	}
+	SHW_ideas_7 = {
+		#����ɶ��
+		land_morale = 0.15
+	}
+}
+
+RLU_ideas = {
+	trigger = {
+		OR = {
+			tag = RLU
+		}
+	}
+	free = yes
+	start = {
+		army_tradition = 1
+		drill_decay_modifier = -0.5
+	}
+	bonus = {
+		ae_impact = -0.15
+	}
+	RLU_ideas_1 = {
+		#���˾���   ����ħ��ֵ���ۼƿɻ������
+		land_maintenance_modifier = -0.02
+		land_forcelimit_modifier = 0.04
+	}
+	RLU_ideas_2 = {
+		#�������
+		global_manpower_modifier = 0.25
+	}
+	RLU_ideas_3 = {
+		#�����
+		movement_speed = 0.1
+		spy_offence = 0.2
+	}
+	RLU_ideas_4 = {
+		#��֮���� ����ħ��ֵ���ۼƿɻ������
+		land_morale = 0.04
+		recover_army_morale_speed = 0.01
+	}
+	RLU_ideas_5 = {
+		#��ı���ʷ����ʧ�Ļ�е
+		core_creation = -0.1
+		min_autonomy_in_territories = -0.05
+	}
+	RLU_ideas_6 = {
+		# ��е�����
+		no_religion_penalty = yes
+	}
+	RLU_ideas_7 = {
+		#����б�����ʹ
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.2
+	}
+}
+
+IKR_ideas = {
+	trigger = {
+		OR = {
+			tag = IKR
+		}
+	}
+	free = yes
+	start = {
+		land_morale = 0.1
+		artillery_power = 0.1
+	}
+	bonus = {
+		artillery_cost = -0.25
+	}
+	IKR_ideas_1 = {
+		#������ʹ ����ħ��ֵ���ۼƿɻ������
+		global_tax_modifier = 0.03
+		production_efficiency = 0.03
+	}
+	IKR_ideas_2 = {
+		#�ɱ�ʽ����ϵͳ
+		movement_speed = 0.15
+		envoy_travel_time = -0.15
+	}
+	IKR_ideas_3 = {
+		#������ë�����
+		army_tradition = 0.5
+		prestige = 0.5
+	}
+	IKR_ideas_4 = {
+		#���Է���Ȧ ����ħ��ֵ���ۼƿɻ������
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	IKR_ideas_5 = {
+		#�콵֮��
+		core_creation = -0.15
+	}
+	IKR_ideas_6 = {
+		# �˶���ϵͳ ��ʹ���������
+		war_exhaustion = -0.05
+	}
+	IKR_ideas_7 = {
+		#��֮Ů��
+		fire_damage = 0.1
+	}
+}
+
+YAY_ideas = {
+	trigger = {
+		OR = {
+			tag = YAY
+		}
+	}
+	free = yes
+	start = {
+		prestige_from_land = 1
+		army_tradition_from_battle = 1
+	}
+	bonus = {
+		cavalry_power = 0.2
+	}
+	YAY_ideas_1 = {
+		#������Ů��������
+		shock_damage = 0.05
+		leader_land_shock = 1
+	}
+	YAY_ideas_2 = {
+		#ħ����·���������  ����ħ��ֵ���ۼƿɻ������
+		fire_damage_received = -0.05
+	}
+	YAY_ideas_3 = {
+		#���޵�����    ���ħ��ֵ����10�� 
+		global_manpower_modifier = 0.15
+	}
+	YAY_ideas_4 = {
+		#��ɫ�н������� ����ħ��ֵ���ۼƿɻ������
+		movement_speed = 0.04
+		cav_to_inf_ratio = 0.1
+	}
+	YAY_ideas_5 = {
+		#����������ɭ�С������桹���썁�� ����ħ��ֵ���� ��ò�ͬ����
+	}
+	YAY_ideas_6 = {
+		# ������ż
+		discipline = 0.05
+	}
+	YAY_ideas_7 = {
+		#���Ի���
+		land_morale = 0.1
+		war_exhaustion = -0.05
+	}
+}
+
+YMI_ideas = {
+	trigger = {
+		OR = {
+			tag = YMI
+		}
+	}
+	free = yes
+	start = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	bonus = {
+		num_accepted_cultures = 3
+	}
+	YMI_ideas_1 = {
+		#������ԭ��
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.1
+	}
+	YMI_ideas_2 = {
+		#��ƽ����
+		tolerance_heretic = 3
+		relation_with_heretics = 60
+	}
+	YMI_ideas_3 = {
+		#�ִ����Ļ����� ����ħ��ֵ���ۼƿɻ������  
+		development_cost = -0.03
+	}
+	YMI_ideas_4 = {
+		#���õ��
+		land_attrition = -0.15
+		reinforce_speed = 0.15
+	}
+	YMI_ideas_5 = {
+		#����
+		leader_land_manuever = 1
+		infantry_power = 0.1
+	}
+	YMI_ideas_6 = {
+		#񷶥����
+		fort_maintenance_modifier = -0.1
+	}
+	YMI_ideas_7 = {
+		#��������֮�� ����ħ��ֵ���ۼƿɻ������  
+		core_creation = -0.07
+	}
+}
+
+ELN_ideas = {
+	#����������
+	start = {
+		development_cost = -0.1
+		fire_damage = 0.1
+	}
+	bonus = {
+		fire_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+	trigger = {
+		tag = ELN
+	}
+	free = yes	#will be added at load.
+	ELN_ideas_1 = {
+		global_institution_spread = 0.2
+		embracement_cost = -0.2
+	}
+	ELN_ideas_2 = {
+		prestige = 1
+		#mana+10
+	}
+	ELN_ideas_3 = {
+		discipline = 0.05
+	}
+	ELN_ideas_4 = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	ELN_ideas_5 = {
+		administrative_efficiency = -0.05
+		technology_cost = -0.15
+	}
+	ELN_ideas_6 = {
+		free_policy = 1
+	}
+	ELN_ideas_7 = {
+		land_morale = 0.15
+	}
+}
+
+HME_ideas = {
+	#神圣缪斯帝国理念
+	start = {
+		global_missionary_strength = 0.05
+		tolerance_own = 2
+	}
+	bonus = {
+		artillery_power = 0.15
+	}
+	trigger = {
+		tag = HME
+	}
+	free = yes
+	HME_ideas_1 = {
+		discipline = 0.05
+	}
+	HME_ideas_2 = {
+		galley_power = 0.2
+	}
+	HME_ideas_3 = {
+		infantry_power = 0.15
+	}
+	HME_ideas_4 = {
+		diplomatic_reputation = 1
+		province_warscore_cost = -0.2
+	}
+	HME_ideas_5 = {
+		core_creation = -0.15
+		development_cost = -0.15
+	}
+	HME_ideas_6 = {
+		land_morale = 0.15
+	}
+	HME_ideas_7 = {
+		governing_capacity_modifier = 0.3
+	}
+}
+
+NJK_ideas = {
+	#虹团理念
+	start = {
+		discipline = 0.05
+		improve_relation_modifier = 0.25
+	}
+	bonus = {
+		cb_on_government_enemies = yes
+	}
+	trigger = {
+		tag = NJK
+	}
+	free = yes
+	NJK_ideas_1 = {
+		manpower_in_true_faith_provinces = 0.25
+	}
+	NJK_ideas_2 = {
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+	}
+	NJK_ideas_3 = {
+		diplomats = 1
+		envoy_travel_time = -0.33
+	}
+	NJK_ideas_4 = {
+		global_unrest = -2
+	}
+	NJK_ideas_5 = {
+		land_morale = 0.15
+	}
+	NJK_ideas_6 = {
+		republican_tradition = 1
+	}
+	NJK_ideas_7 = {
+		global_missionary_strength = 0.02
+		religious_unity = 0.2
+	}
+}
+
+RIK_ideas = {
+	start = {
+		defensiveness = 0.15
+		land_morale = 0.1
+	}
+	bonus = {
+		improve_relation_modifier = 0.35
+	}
+	trigger = {
+		tag = RIK
+	}
+	free = yes
+	RIK_ideas_1 = {
+		all_power_cost = -0.05
+	}
+	RIK_ideas_2 = {
+		development_cost = -0.1
+	}
+	RIK_ideas_3 = {
+		fire_damage = 0.1
+	}
+	RIK_ideas_4 = {
+		stability_cost_modifier = -0.25
+	}
+	RIK_ideas_5 = {
+		land_forcelimit_modifier = 0.33
+	}
+	RIK_ideas_6 = {
+		diplomatic_upkeep = 2
+	}
+	RIK_ideas_7 = {
+		discipline = 0.05
+	}
+}
+
+SNK_ideas = {
+	start = {
+		production_efficiency = 0.1
+		prestige = 1
+	}
+	bonus = {
+		technology_cost = -0.1
+	}
+	trigger = {
+		tag = SNK
+	}
+	free = yes
+	SNK_ideas_1 = {
+		global_institution_spread = 0.33
+	}
+	SNK_ideas_2 = {
+		idea_cost = -0.1
+	}
+	SNK_ideas_3 = {
+		diplomatic_reputation = 2
+	}
+	SNK_ideas_4 = {
+		diplomatic_annexation_cost = -0.2
+	}
+	SNK_ideas_5 = {
+		reduced_liberty_desire = 15
+	}
+	SNK_ideas_6 = {
+		shock_damage = 0.1
+	}
+	SNK_ideas_7 = {
+		trade_goods_size_modifier = 0.15
+	}
+}
+
+DKM_ideas = {
+	start = {
+		global_manpower_modifier = 0.25
+		missionaries = 1
+	}
+	bonus = {
+		leader_land_shock = 1
+	}
+	trigger = {
+		tag = DKM
+	}
+	free = yes
+	DKM_ideas_1 = {
+		liberty_desire = -15
+		infantry_power = 0.15
+	}
+	DKM_ideas_2 = {
+		global_missionary_strength = 0.03
+	}
+	DKM_ideas_3 = {
+		infantry_shock = 0.5
+	}
+	DKM_ideas_4 = {
+		global_tax_modifier = 0.15
+	}
+	DKM_ideas_5 = {
+		dip_tech_cost_modifier = -0.1
+	}
+	DKM_ideas_6 = {
+		war_exhaustion = -0.1
+	}
+	DKM_ideas_7 = {
+		discipline = 0.05
+	}
+}
+
+
+HCA_ideas = {
+	#保登心爱理念
+	start = {
+		improve_relation_modifier = 0.2
+		diplomats = 2
+	}
+	bonus = {
+		recover_army_morale_speed = 0.15
+	}
+	trigger = {
+		tag = HCA
+	}
+	free = yes	#will be added at load.
+	rabbit_house = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+	}
+	onechan_ni_omakase_kudasai = {
+		land_morale = 0.1
+	}
+	triumvirate_of_colmar = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 2
+	}
+	HCA_ideas_1 = {
+		land_attrition = -0.25
+	}
+	HCA_ideas_2 = {
+		technology_cost = -0.05
+		country_admin_power = 1
+	}
+	HCA_ideas_3 = {
+		inflation_reduction = 0.1
+		production_efficiency = 0.05
+	}
+	HCA_ideas_4 = {
+		development_cost = -0.1
+	}
+}
+
+TRZ_ideas = {
+	#天天座理世理念
+	start = {
+		discipline = 0.05
+		shock_damage_received = -0.05
+	}
+	bonus = {
+		garrison_size = 0.2
+	}
+	trigger = {
+		tag = TRZ
+	}
+	free = yes	#will be added at load.
+	rabbit_house = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+	}
+	TRZ_ideas_1 = {
+		cav_to_inf_ratio = 0.25
+		special_unit_forcelimit = 0.25
+	}
+	triumvirate_of_colmar = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 2
+	}
+	rize_instructor_discipline = {
+		fire_damage_received = -0.05
+		fire_damage = 0.05
+	}
+	support_from_tedezas = {
+		global_manpower_modifier = 0.15
+		manpower_recovery_speed = 0.1
+	}
+	TRZ_ideas_2 = {
+		may_recruit_female_generals = yes
+		ae_impact = -0.1
+	}
+	TRZ_ideas_3 = {
+		fire_damage = 0.05
+		infantry_power = 0.1
+	}
+}
+
+UJC_ideas = {
+	#宇治松千夜理念
+	start = {
+		navy_tradition = 1
+		navy_tradition_decay = -0.01
+	}
+	bonus = {
+		merchants = 2
+	}
+	trigger = {
+		tag = UJC
+	}
+	free = yes	#will be added at load.
+	UJC_ideas_1 = {
+		governing_capacity_modifier = 0.2
+	}
+	UJC_ideas_2 = {
+		shock_damage = 0.1
+	}
+	UJC_ideas_3 = {
+		unjustified_demands = -0.2
+	}
+	triumvirate_of_colmar = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 2
+	}
+	UJC_ideas_4 = {
+		global_spy_defence = 0.33
+	}
+	UJC_ideas_5 = {
+		global_unrest = -2
+	}
+	UJC_ideas_6 = {
+		tolerance_own = 3
+	}
+}
+
+KSR_ideas = {
+	#桐间纱路理念
+	start = {
+		trade_efficiency = 0.1
+		core_creation = -0.15
+	}
+	bonus = {
+		yearly_corruption = -0.15
+	}
+	trigger = {
+		tag = KSR
+	}
+	free = yes	#will be added at load.
+	KSR_ideas_1 = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+	}
+	KSR_ideas_2 = {
+		infantry_power = 0.15
+	}
+	triumvirate_of_colmar = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 2
+	}
+	KSR_ideas_3 = {
+		movement_speed = 0.1
+		shock_damage_received = -0.05
+	}
+	KSR_ideas_4 = {
+		technology_cost = -0.05
+		embracement_cost = -0.2
+	}
+	KSR_ideas_5 = {
+		tolerance_heathen = 1
+		years_of_nationalism = -5
+	}
+	KSR_ideas_6 = {
+		infantry_cost = -0.15
+	}
+}
+
+BBT_ideas = {
+	#巴别塔理念
+	start = {
+		free_leader_pool = 2
+		war_taxes_cost_modifier = -1
+	}
+	bonus = {
+		governing_capacity_modifier = 0.25
+	}
+	trigger = {
+		tag = BBT
+	}
+	free = yes
+	BBT_Enable_mercenaries = {
+		mercenary_cost = -0.3
+		merc_maintenance_modifier = -0.25
+	}
+	BBT_Dream_tower = {
+		ae_impact = -0.2
+	}
+	BBT_Completely_rational = {
+		discipline = 0.05
+		reinforce_speed = 0.5
+	}
+	BBT_Military_wizards = {
+		free_mil_policy = 1
+		country_military_power = 1
+	}
+	BBT_Dedicated_to_ideals = {
+		global_manpower_modifier = 0.25
+	}
+	BBT_Words_of_a_Man = {
+		yearly_absolutism = 1
+		max_absolutism = 20
+	}
+	BBT_Make_best_use_of = {
+		mercenary_discipline = 0.05
+		mercenary_manpower = 0.25
+	}
+}
+
+REU_ideas = {
+	#整合运动理念
+	start = {
+		army_tradition_decay = -0.01
+		war_taxes_cost_modifier = -1
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.5
+	}
+	trigger = {
+		tag = REU
+	}
+	free = yes
+	REU_idea_1 = {
+		spy_offence = 0.2
+	}
+	REU_idea_2 = {
+		min_autonomy = -30
+	}
+	REU_idea_3 = {
+		num_accepted_cultures = 2
+	}
+	REU_idea_4 = {
+		reform_progress_growth = 0.25
+	}
+	REU_idea_5 = {
+		mil_advisor_cost = -0.25
+	}
+	REU_idea_6 = {
+		global_regiment_cost = -0.25
+		global_regiment_recruit_speed = -0.25
+	}
+	REU_idea_7 = {
+		global_manpower_modifier = 0.3
+	}
+}
+
+TLL_ideas = {
+	#塔露拉理念
+	start = {
+		manpower_recovery_speed = 0.5
+		war_exhaustion = -0.05
+	}
+	bonus = {
+		stability_cost_to_declare_war = -1
+	}
+	trigger = {
+		tag = TLL
+	}
+	free = yes
+	TLL_idea_1 = {
+		ae_impact = -0.2
+	}
+	TLL_idea_2 = {
+		province_warscore_cost = -0.1
+	}
+	TLL_idea_3 = {
+		global_tax_modifier = 0.2
+	}
+	TLL_idea_4 = {
+		autonomy_change_time = -0.25
+	}
+	TLL_idea_5 = {
+		years_of_nationalism = -5
+	}
+	TLL_idea_6 = {
+		global_spy_defence = 0.5
+	}
+	TLL_idea_7 = {
+		cavalry_power = 0.25
+	}
+}
+
+BKT_ideas = {
+	#博卓卡斯替
+	start = {
+		mil_tech_cost_modifier = -0.1
+		build_time = -0.25
+	}
+	bonus = {
+		fire_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+	trigger = {
+		tag = BKT
+	}
+	free = yes
+	BKT_idea_1 = {
+		yearly_corruption = -0.05
+	}
+	BKT_idea_2 = {
+		blockade_efficiency = 0.3
+	}
+	BKT_idea_3 = {
+		army_tradition_decay = -0.01
+	}
+	BKT_idea_4 = {
+		discipline = 0.05
+	}
+	BKT_idea_5 = {
+		drill_gain_modifier = 0.5
+	}
+	BKT_idea_6 = {
+		yearly_absolutism = 1
+	}
+	BKT_idea_7 = {
+		land_morale = 0.2
+	}
+}
+
+FON_ideas = {
+	#霜星
+	start = {
+		missionaries = 1
+		global_missionary_strength = 0.03
+	}
+	bonus = {
+		fire_damage = 0.2
+	}
+	trigger = {
+		tag = FON
+	}
+	free = yes
+	FON_idea_1 = {
+		embracement_cost = -0.25
+		global_institution_spread = 0.25
+	}
+	FON_idea_2 = {
+		defensiveness = 0.25
+	}
+	FON_idea_3 = {
+		leader_land_fire = 1
+		leader_siege = 1
+	}
+	FON_idea_4 = {
+		siege_ability = 0.2
+	}
+	FON_idea_5 = {
+		administrative_efficiency = 0.05
+	}
+	FON_idea_6 = {
+		manpower_in_true_faith_provinces = 0.5
+	}
+	FON_idea_7 = {
+		cb_on_religious_enemies = yes
+	}
+}
+
+AL1_ideas = {
+	#阿丽娜
+	start = {
+		vassal_forcelimit_bonus = 0.5
+		vassal_income = 0.5
+	}
+	bonus = {
+		accept_vassalization_reasons = 50
+	}
+	trigger = {
+		tag = AL1
+	}
+	free = yes
+	AL1_idea_1 = {
+		diplomats = 1
+	}
+	AL1_idea_2 = {
+		improve_relation_modifier = 0.3
+	}
+	AL1_idea_3 = {
+		diplomatic_reputation = 2
+	}
+	AL1_idea_4 = {
+		religious_unity = 0.5
+		culture_conversion_cost = -0.25
+	}
+	AL1_idea_5 = {
+		trade_efficiency = 0.25
+	}
+	AL1_idea_6 = {
+		diplomatic_annexation_cost = -0.25
+	}
+	AL1_idea_7 = {
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+}
+
+JSC_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		diplomatic_reputation = 2
+	}
+	bonus = {
+		governing_capacity_modifier = 0.2
+	}
+	trigger = {
+		tag = JSC
+	}
+	free = yes
+	JSC_idea_1 = {
+		development_cost = -0.1
+	}
+	JSC_idea_2 = {
+		army_tradition = 1
+	}
+	JSC_idea_3 = {
+		manpower_recovery_speed = 0.2
+	}
+	JSC_idea_4 = {
+		global_tax_modifier = 0.15
+	}
+	JSC_idea_5 = {
+		loot_amount = 0.5
+		privateer_efficiency = 0.5
+	}
+	JSC_idea_6 = {
+		build_cost = -0.1
+		build_time = -0.5
+	}
+	JSC_idea_7 = {
+		infantry_shock = 0.5
+	}
+}
+
+YRN_ideas = {
+	start = {
+		land_morale = 0.1
+		province_trade_power_modifier = 0.25
+	}
+	bonus = {
+		naval_morale = 0.1
+	}
+	trigger = {
+		tag = YRN
+	}
+	free = yes
+	YRN_idea_1 = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+	}
+	YRN_idea_2 = {
+		regiment_recruit_speed = -0.2
+		local_regiment_cost = -0.2
+	}
+	YRN_idea_3 = {
+		army_tradition_decay = -0.01
+	}
+	YRN_idea_4 = {
+		administrative_efficiency = 0.05
+	}
+	YRN_idea_5 = {
+		discipline = 0.05
+	}
+	YRN_idea_6 = {
+		diplomatic_annexation_cost = -0.2
+	}
+	YRN_idea_7 = {
+		culture_conversion_cost = -0.2
+	}
+}
+
+PLP_ideas = {
+	#涅普理念
+	start = {
+		global_missionary_strength = 0.03
+		infantry_power = 0.1
+	}
+	bonus = {
+		core_creation = -0.15
+	}
+	trigger = {
+		tag = PLP
+	}
+	free = yes
+	PLP_ideas_1 = {
+		ae_impact = -0.2
+	}
+	#新世界的探险，开幕！
+	PLP_ideas_2 = {
+		stability_cost_modifier = -0.15
+	}
+	#涅普姬雅的应援
+	PLP_ideas_3 = {
+		shock_damage_received = -0.05
+		fire_damage_received = -0.05
+	}
+	#主角光环
+	PLP_ideas_4 = {
+		spy_offence = 0.25
+		reinforce_speed = 0.15
+	}
+	#爱耶芙与孔帕
+	PLP_ideas_5 = {
+		production_efficiency = -0.1
+		improve_relation_modifier = 0.2
+	}
+	#摸鱼女神
+	PLP_ideas_6 = {
+		governing_capacity_modifier = 0.1
+	}
+	#伊丝
+	PLP_ideas_7 = {
+		prestige = 1
+		advisor_cost = -0.1
+	}
+	#打破第四面墙
+}
+
+LAS_ideas = {
+	#诺瓦露理念
+	start = {
+		global_missionary_strength = 0.03
+		cavalry_power = 0.15
+	}
+	bonus = {
+		global_spy_defence = 0.3
+	}
+	trigger = {
+		tag = LAS
+	}
+	free = yes
+	LAS_ideas_1 = {
+		diplomatic_upkeep = -1
+		diplomatic_reputation = 2
+	}
+	#完美无瑕但是没朋友
+	LAS_ideas_2 = {
+		development_cost = -0.1
+		production_efficiency = 0.15
+	}
+	#工业之国
+	LAS_ideas_3 = {
+		prestige = 1
+	}
+	#工作努力
+	LAS_ideas_4 = {
+		technology_cost = -0.1
+		idea_cost = -0.05
+	}
+	#工业带动科技
+	LAS_ideas_5 = {
+		fire_damage = 0.075
+		leader_land_fire = 1
+	}
+	#优尼的火力支援
+	LAS_ideas_6 = {
+		inflation_reduction = 0.05
+		yearly_corruption = -0.05
+	}
+	#经济控制
+	LAS_ideas_7 = {
+		shock_damage_received = -0.05
+		morale_damage_received = -0.05
+	}
+	#全游戏界最好的垫子？
+}
+
+LW1_ideas = {
+	#普兰理念
+	start = {
+		global_missionary_strength = 0.03
+		artillery_power = 0.1
+	}
+	bonus = {
+		siege_ability = 0.2
+	}
+	trigger = {
+		tag = LW1
+	}
+	free = yes
+	LW1_ideas_1 = {
+		tolerance_own = 3
+	}
+	#无表情的女神
+	LW1_ideas_2 = {
+		missionary_maintenance_cost = -0.5
+		global_institution_spread = 0.25
+	}
+	#写小说的女神
+	LW1_ideas_3 = {
+		innovativeness_gain = 0.33
+		idea_cost = -0.1
+	}
+	#普兰的奇思妙想
+	LW1_ideas_4 = {
+		improve_relation_modifier = 0.2
+		advisor_cost = -0.1
+	}
+	#菈姆和萝姆
+	LW1_ideas_5 = {
+		yearly_corruption = -0.15
+	}
+	#驱逐恶大臣
+	LW1_ideas_6 = {
+		development_cost = -0.15
+	}
+	#开发冰雪笼罩之地
+	LW1_ideas_7 = {
+		tolerance_heathen = -2
+		tolerance_heretic = -2
+		cb_on_religious_enemies = yes
+	}
+	#杀光巨乳星人
+}
+
+LBX_ideas = {
+	#贝露理念
+	start = {
+		global_missionary_strength = 0.03
+		manpower_recovery_speed = 0.2
+	}
+	bonus = {
+		province_warscore_cost = -0.15
+	}
+	trigger = {
+		tag = LBX
+	}
+	free = yes
+	LBX_ideas_1 = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+		global_unrest = -2
+	}
+	#成熟的女神
+	LBX_ideas_2 = {
+		prestige = 1
+	}
+	#沉迷网游
+	LBX_ideas_3 = {
+		fabricate_claims_cost = -0.25
+		can_fabricate_for_vassals = yes
+	}
+	#腐女
+	LBX_ideas_4 = {
+		sea_repair = yes
+		naval_morale = 0.2
+	}
+	#远离大陆的绿茵之国
+	LBX_ideas_5 = {
+		trade_efficiency = 0.15
+		development_cost = -0.1
+	}
+	#商业中心
+	LBX_ideas_6 = {
+		female_advisor_chance = 0.5
+		advisor_pool = 2
+	}
+	#渴望妹妹
+	LBX_ideas_7 = {
+		army_tradition = 2
+		drill_gain_modifier = 0.2
+	}
+	#战争游戏玩家
+}
+
+EDE_ideas = {
+	#皮榭理念
+	start = {
+		global_missionary_strength = 0.03
+		discipline = 0.05
+	}
+	bonus = {
+		improve_relation_modifier = 0.2
+	}
+	trigger = {
+		tag = EDE
+	}
+	free = yes
+	EDE_ideas_1 = {
+		advisor_pool = 2
+		advisor_cost = -0.1
+	}
+	#七贤人政治
+	EDE_ideas_2 = {
+		leader_siege = 1
+		leader_land_shock = 1
+	}
+	#皮——升——拳——！
+	EDE_ideas_3 = {
+		culture_conversion_cost = -0.2
+	}
+	#强制文化统一
+	EDE_ideas_4 = {
+		reform_progress_growth = 0.25
+	}
+	#多重组件
+	EDE_ideas_5 = {
+		envoy_travel_time = -0.2
+	}
+	#跨越次元
+	EDE_ideas_6 = {
+		manpower_recovery_speed = 0.2
+		global_manpower_modifier = 0.25
+		global_regiment_cost = 0.15
+	}
+	#根据地：R18岛
+	EDE_ideas_7 = {
+		embargo_efficiency = 0.25
+		privateer_efficiency = 0.33
+	}
+	#■■的皮榭的布丁
+}
+
+REI_ideas = {
+	#达利理念
+	start = {
+		global_missionary_strength = 0.03
+		leader_cost = -0.5
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.2
+	}
+	trigger = {
+		tag = REI
+	}
+	free = yes
+	REI_ideas_1 = {
+		fire_damage = 0.05
+		infantry_fire = 0.05
+	}
+	#上古的黑科技
+	REI_ideas_2 = {
+		siege_ability = 0.2
+	}
+	#浮空岛的炮击
+	REI_ideas_3 = {
+		harsh_treatment_cost = -0.75
+		global_unrest = 2
+	}
+	#残暴的女神
+	REI_ideas_4 = {
+		land_morale = 0.15
+		manpower_recovery_speed = -0.1
+	}
+	#不许后退
+	REI_ideas_5 = {
+		war_taxes_cost_modifier = -0.5
+		global_tax_modifier = 0.1
+		war_exhaustion = 0.05
+	}
+	#强制征收战争税
+	REI_ideas_6 = {
+		warscore_cost_vs_other_religion = -0.35
+		ae_impact = 0.15
+	}
+	#对待异端无需仁慈
+	REI_ideas_7 = {
+		max_absolutism = 20
+		yearly_absolutism = 0.5
+	}
+	#雅达利大崩溃的教训
+}
+
+HDS_ideas = {
+	#暗黑星黑芽理念
+	start = {
+		global_missionary_strength = 0.03
+		land_morale = 0.1
+	}
+	bonus = {
+		global_unrest = -2
+	}
+	trigger = {
+		tag = HDS
+	}
+	free = yes
+	HDS_ideas_1 = {
+		global_regiment_cost = -0.1
+		manpower_recovery_speed = 0.1
+	}
+	#怪物军团
+	HDS_ideas_2 = {
+		artillery_levels_available_vs_fort = 1
+	}
+	#暗黑女神
+	HDS_ideas_3 = {
+		liberty_desire_from_subject_development = -0.1
+		diplomatic_annexation_cost = -0.1
+	}
+	#心次元的一梦
+	HDS_ideas_4 = {
+		governing_capacity_modifier = 0.05
+		administrative_efficiency = 0.025
+	}
+	#库洛瓦尔的力量
+	HDS_ideas_5 = {
+		movement_speed = 0.15
+		shock_damage = 0.05
+	}
+	#次元碰撞的开始
+	HDS_ideas_6 = {
+		artillery_fire = 0.5
+	}
+	#负面能量
+	HDS_ideas_7 = {
+		province_warscore_cost = -0.2
+	}
+	#崩坏的超次元
+}
+
+IMS_idea = {
+	start = {
+		colonists = 1
+		tolerance_own = 2
+	}
+	bonus = {
+		heavy_ship_power = 0.15
+	}
+	trigger = {
+		tag = IMS
+	}
+	free = yes
+	IMS_idea_1 = {
+		legitimacy = 1
+		republican_tradition = 1
+	}
+	IMS_idea_2 = {
+		development_cost = -0.1
+	}
+	IMS_idea_3 = {
+		production_efficiency = 0.15
+	}
+	IMS_idea_4 = {
+		discipline = 0.05
+	}
+	IMS_idea_5 = {
+		naval_morale = 0.1
+		land_morale = 0.1
+	}
+	IMS_idea_6 = {
+		fire_damage = 0.1
+	}
+	IMS_idea_7 = {
+		advisor_cost = -0.2
+	}
+}
+
+TKK_ideas = {
+	#岁纳京子理念
+	start = {
+		innovativeness_gain = 0.5
+		tolerance_own = 3
+	}
+	bonus = {
+		diplomatic_reputation = 2
+	}
+	trigger = {
+		tag = TKK
+	}
+	free = yes
+	TKK_ideas_1 = {
+		###天才少女
+		technology_cost = -0.1
+	}
+	TKK_ideas_2 = {
+		###无铁炮
+		fire_damage = 0.05
+		shock_damage = 0.075
+	}
+	TKK_ideas_3 = {
+		###灵魂人物
+		diplomatic_upkeep = 2
+		diplomats = 1
+	}
+	TKK_ideas_4 = {
+		###漫画大师
+		global_tax_modifier = 0.15
+	}
+	TKK_ideas_5 = {
+		###时间管理大师
+		governing_capacity_modifier = 0.25
+	}
+	TKK_ideas_6 = {
+		###部长的领导力
+		land_morale = 0.15
+	}
+	TKK_ideas_7 = {
+		###不为人知的过去
+		global_unrest = -2
+	}
+}
+
+FNY_ideas = {
+	#船见结衣理念
+	start = {
+		ae_impact = -0.2
+		global_unrest = -2
+	}
+	bonus = {
+		core_creation = -0.2
+	}
+	trigger = {
+		tag = FNY
+	}
+	free = yes
+	FNY_ideas_1 = {
+		###沉稳镇静
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	FNY_ideas_2 = {
+		###假小子
+		land_morale = 0.15
+	}
+	FNY_ideas_3 = {
+		###温柔的内心
+		improve_relation_modifier = 0.25
+	}
+	FNY_ideas_4 = {
+		###吐槽役
+		idea_cost = -0.05
+		technology_cost = -0.05
+	}
+	FNY_ideas_5 = {
+		###创部元老
+		prestige = 1
+	}
+	FNY_ideas_6 = {
+		###事务通
+		administrative_efficiency = 0.05
+	}
+	FNY_ideas_7 = {
+		###运动万能
+		army_tradition = 1
+	}
+}
+
+AKR_ideas = {
+	#赤座灯里理念
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		core_creation = -0.15
+	}
+	bonus = {
+		#咱也想要有存在感啊！
+		diplomatic_upkeep = 3
+	}
+	trigger = {
+		tag = AKR
+	}
+	free = yes
+	AKR_ideas_1 = {
+		###阿卡林~
+		prestige = 0.5
+		prestige_decay = -0.01
+	}
+	AKR_ideas_2 = {
+		###路人女主
+		spy_offence = 0.33
+	}
+	AKR_ideas_3 = {
+		###奇妙的工具包
+		production_efficiency = 0.15
+	}
+	AKR_ideas_4 = {
+		###团子发饰
+		fire_damage = 0.1
+	}
+	AKR_ideas_5 = {
+		###老好人
+		diplomatic_reputation = 2
+	}
+	AKR_ideas_6 = {
+		###偶尔的严肃
+		global_autonomy = -0.1
+	}
+	AKR_ideas_7 = {
+		###成为女主之路
+		land_morale = 0.15
+	}
+}
+
+YKC_ideas = {
+	#吉川千夏理念
+	start = {
+		manpower_recovery_speed = 0.25
+		missionaries = 1
+	}
+	bonus = {
+		#为了结衣前辈！
+		artillery_power = 0.05
+		artillery_fire = 0.5
+	}
+	trigger = {
+		tag = YKC
+	}
+	free = yes
+	YKC_ideas_1 = {
+		###粉切黑
+		spy_offence = 0.2
+		global_spy_defence = 0.2
+	}
+	YKC_ideas_2 = {
+		###灵魂画师
+		culture_conversion_cost = -0.25
+	}
+	YKC_ideas_3 = {
+		###吻魔（？）
+		discipline = 0.05
+	}
+	YKC_ideas_4 = {
+		###绝佳的cosplayer
+		stability_cost_modifier = -0.25
+	}
+	YKC_ideas_5 = {
+		###料理奇才
+		global_trade_goods_size_modifier = 0.1
+	}
+	YKC_ideas_6 = {
+		###异次元马尾
+		land_forcelimit_modifier = 0.33
+	}
+	YKC_ideas_7 = {
+		###对前辈的执着之爱
+		warscore_cost_vs_other_religion = -0.25
+	}
+}
+
+NNH_ideas = {
+	start = {
+		may_explore = yes
+		land_morale = 0.1
+	}
+	bonus = {
+		artillery_fire = 0.5
+	}
+	trigger = {
+		tag = NNH
+	}
+	free = yes
+	NNH_idea_1 = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 2
+	}
+	NNH_idea_2 = {
+		fire_damage = 0.05
+		fire_damage_received = -0.05
+	}
+	NNH_idea_3 = {
+		administrative_efficiency = 0.05
+		land_forcelimit_modifier = 0.1
+	}
+	NNH_idea_4 = {
+		drill_gain_modifier = 0.5
+		global_unrest = -2
+	}
+	NNH_idea_5 = {
+		heavy_ship_power = 0.1
+		leader_naval_shock = 1
+	}
+	NNH_idea_6 = {
+		global_manpower_modifier = 0.2
+		discipline = 0.05
+	}
+	NNH_idea_7 = {
+		cavalry_flanking = 0.25
+		leader_land_manuever = 1
+	}
+}
+
+BDR_ideas = {
+	start = {
+		ae_impact = -0.1
+	  	num_accepted_cultures = 2
+	  	may_recruit_female_generals = yes
+	}
+	bonus = {
+	  	global_manpower_modifier = 0.33
+	}
+	trigger = {
+	  tag = BDR
+	}
+	free = yes
+	BDR_first = {
+		prestige = 1
+		missionaries = 1
+	}
+	BDR_second = {
+	  	global_unrest = -1
+	  	years_of_nationalism = -5
+	}
+	BDR_third = {
+	  	tolerance_own = 2
+	  	improve_relation_modifier = 0.15
+	}
+	BDR_fourth = {
+	  	land_morale = 0.15
+	  	army_tradition = 0.5
+	}
+	BDR_fifth = {
+	  	global_trade_goods_size_modifier = 0.1
+	  	innovativeness_gain = 0.5
+	}
+	BDR_sixth = {
+	  	idea_cost = -0.05
+	 	monthly_reform_progress_modifier = 0.2
+	}
+	BDR_seventh = {
+	  	discipline = 0.05
+	  	yearly_army_professionalism = 0.005
+	}
+}
+
+SL9_ideas = {
+	start = {
+		devotion = 1
+		infantry_power = 0.1
+	}
+	bonus = {
+		morale_damage_received = -0.1
+	}
+	trigger = {
+	  tag = SL9
+	}
+	free = yes
+	SL9_ideas_1 = {
+		global_manpower_modifier = 0.25
+		special_unit_forcelimit = 0.25
+	}
+	SL9_ideas_2 = {
+	  	global_missionary_strength = 0.02
+		tolerance_own = 2
+	}
+	SL9_ideas_3 = {
+		warscore_from_battles_modifier = 0.2
+		years_of_nationalism = -5
+	}
+	SL9_ideas_4 = {
+		global_allowed_num_of_buildings = 1
+		build_cost = -0.15
+	}
+	SL9_ideas_5 = {
+		culture_conversion_cost = -0.1
+		culture_conversion_time = -0.2
+	}
+	SL9_ideas_6 = {
+		monthly_revue_starlight_government_authority = 2
+	}
+	SL9_ideas_7 = {
+	  	land_morale = 0.1
+		land_morale_constant = 0.5
+	}
+}
+
+LYZ_ideas = { 
+	start = {
+		same_culture_advisor_cost = -0.25
+		garrison_size = 0.2
+			}
+	
+	bonus = {
+		 global_tax_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = LYZ
+	}
+	free = yes
+	
+	Tahe = {
+		galley_cost = -0.2
+	}
+	Dayan = {
+		trade_efficiency = 0.1
+	}
+	Zhonghuasiqianniandewushu = {
+		mil_tech_cost_modifier = -0.1
+	}
+	Wowusuowei = {
+		no_religion_penalty = yes
+	}
+	Haiwang = {
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+	Xiaoli = {
+		shock_damage_received = -0.05
+		morale_damage_received = -0.1
+	}
+	Bikehuoyongyuxiayici = {
+		prestige = 1
+
+	}
+}
+
+LHW_ideas = { 
+	start = {
+		leader_siege = 1
+		diplomatic_upkeep = 2
+			}
+	
+	bonus = {
+		 legitimacy = 1
+	}
+	
+	trigger = {
+		tag = LHW
+	}
+	free = yes
+	
+	Ercichuangzuozhiqiji = {
+		idea_cost = -0.1
+	}
+	Zhonghuasiqianniandechuyi = {
+		religious_unity = 0.25
+		global_unrest = -2
+	}
+	Huaqianyuexiamantianxing = {
+		diplomatic_reputation = 2
+	}
+	Xuejianchunhuachaorenshu = {
+		fire_damage = 0.1
+                	shock_damage = 0.1
+	}
+	Shitingtouwujijiuquan = {
+		discipline = 0.05
+		manpower_recovery_speed = 0.25
+	}
+	Heiyaoshimingzhentan = {
+		yearly_corruption = -0.1
+	}
+	Huanxiangjuanliandeliehaiwang = {
+		governing_capacity_modifier = 0.2
+	}
+}
+
+ATD_ideas = {
+	start = {
+		tolerance_own = 3
+		trade_efficiency = 0.2
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	trigger = {
+		OR = {
+			tag = ATD
+		}
+	}
+	free = yes		#will be added at load.
+	
+	nucleusofthegoddess = {        #女神的神核
+		discipline = 0.075
+	}
+	Devils_sugar = {        #恶魔的砂糖
+		land_morale = 0.1
+		reduced_liberty_desire = 20
+	}
+	Venus_drive = {         #金星驱动
+		candidate_random_bonus = 3
+	}
+	Galactic_primitive_development = {        #发展原始银河
+		development_cost = -0.1
+		build_cost = -0.1
+	}
+	Avenger = {        #复仇者
+		culture_conversion_cost = -0.25
+		province_warscore_cost = -0.2
+	}
+	Edin_Shugurra_Quasar = {            #闪耀于原始宇宙的王冠
+		fire_damage = 0.1
+		backrow_artillery_damage = 0.15
+	}
+	Multiple_star_rings = {          #多重星环
+		administrative_efficiency = 0.05
+	}
+}
+
+BTR_ideas = {
+	start = {
+		morale_damage_received = -0.1
+		defensiveness = 0.15  
+	}
+	bonus = {
+		prestige = 1
+	}
+	trigger = {
+		tag = BTR
+	}
+	free = yes
+	BTR_idea_1 = {
+		envoy_travel_time = -0.33
+		diplomats = 1     
+	}
+	BTR_idea_2 = {
+		discipline = 0.05
+		yearly_army_professionalism = 0.005
+	}
+	BTR_idea_3 = {
+		build_cost = -0.1
+		idea_cost = -0.1 
+	}
+	BTR_idea_4 = {
+		production_efficiency = 0.15
+	}
+	BTR_idea_5 = {
+		war_exhaustion = -0.1
+		global_tax_income = 12     #永远祭奠我们的喜多桑，以至于每月都能爆她1杜卡特金币
+	}
+	BTR_idea_6 = {
+		infantry_power = 0.15
+	}
+	BTR_idea_7 = {
+		land_morale = 0.15
+	}
+}
+
+InterspeciesReviewers_ideas = { #异种族风俗娘
+    trigger = {
+        OR = {
+            tag = CRM
+	        tag = STN
+	        tag = ZEL
+            primary_culture = InterspeciesReviewers
+        }
+    }
+    free = yes
+    start = {
+		diplomatic_reputation = 1
+		infantry_power = 0.1
+	}
+	bonus = {
+		prestige = 1
+	}
+    InterspeciesReviewers_ideas_1 = { #评鉴家的自我修养
+        improve_relation_modifier = 0.2
+    }
+	InterspeciesReviewers_ideas_7 = { #大家一起来评鉴吧
+		ae_impact = -0.1
+	}
+    InterspeciesReviewers_ideas_3 = { #评鉴指南的可信度
+        global_missionary_strength = 0.02
+    }
+    InterspeciesReviewers_ideas_4 = { #评鉴永无止境
+        unjustified_demands = -0.2
+    }
+    InterspeciesReviewers_ideas_5 = { #评鉴家的包容度
+        num_accepted_cultures = 2
+    }
+    InterspeciesReviewers_ideas_6 = { #本地化风俗店
+        global_tax_modifier = 0.2
+    }
+	InterspeciesReviewers_ideas_2 = { #评鉴家风雨无阻！
+        infantry_fire = 0.25
+    }
+}
+
+SHJ_ideas = {
+	#山海经
+	start = {
+		num_accepted_cultures = 3
+        global_unrest= -2
+	}
+	bonus = {
+		core_creation = -0.2
+	}
+	trigger = {
+		tag = SHJ
+	}
+	free = yes
+
+    #山海经的悠久传统
+	SHJ_ideas_1 = {
+		stability_cost_modifier = -0.25
+	}
+
+    #耕战立校
+	SHJ_ideas_2 = {
+		land_maintenance_modifier = -0.1
+        army_tradition = 0.5
+	}
+
+    #物产丰饶
+	SHJ_ideas_3 = {
+		trade_goods_size_modifier = 0.1
+	}
+
+    #有教无类
+	SHJ_ideas_4 = {
+		tolerance_heretic = 2
+        tolerance_heathen = 2
+	}
+
+    #山海经校立书院
+	SHJ_ideas_5 = {
+		technology_cost = -0.1
+	}
+
+    #门主禁卫
+	SHJ_ideas_6 = {
+		shock_damage_received = -0.05
+        fire_damage_received = -0.05
+	}
+
+    #新丝绸之路
+	SHJ_ideas_7 = {
+		merchants = 1
+        global_trade_power = 0.2
+	}
+}
+
+ABY_ideas = {	#阿拜多斯理念
+	start = {
+		defensiveness = 0.15
+	  	land_morale = 0.1
+	}
+	bonus = {
+	  	governing_capacity_modifier = 0.25
+	}
+	trigger = {
+	  tag = ABY
+	}
+	free = yes
+	ABY_first = {
+		war_exhaustion = -0.05
+        recover_army_morale_speed = 0.1
+	}
+	ABY_second = {
+	  	development_cost = -0.1
+        culture_conversion_cost = -0.1
+	}
+	ABY_third = {
+        land_attrition = -0.15
+        leader_land_manuever = 1
+	}
+	ABY_fourth = {
+	  	advisor_cost = -0.1
+	  	advisor_pool = 1
+	}
+	ABY_fifth = {
+	  	shock_damage_received = -0.05
+      	fire_damage_received = -0.05
+	}
+	ABY_sixth = {
+	  	discipline = 0.05
+		drill_gain_modifier = 0.2
+	}
+	ABY_seventh = {
+	  	core_creation = -0.1
+    	province_warscore_cost = -0.1
+	}
+}
+IYS_ideas = { 
+	start = { #半妖
+		shock_damage = 0.10
+		cavalry_cost = -0.15
+	}
+	bonus = {
+		core_creation = -0.1
+	}
+	trigger = {
+	  tag = IYS
+	}
+	free = yes
+	IYS_first = {	#火鼠裘
+		fire_damage_received = -0.05
+        manpower_recovery_speed = 0.15
+	}
+	IYS_second = {	#言灵念珠
+		global_unrest = -2
+        morale_damage_received = -0.1
+	}
+	IYS_fourth = {	#散魂铁爪
+		leader_land_shock = 1
+		siege_ability = 0.1
+	}
+	IYS_third = { #铁碎牙
+		discipline = 0.05
+        army_tradition = 1
+	}
+	IYS_fifth = {	#纯真的半妖
+		improve_relation_modifier = 0.15
+		diplomats = 1
+	}
+	IYS_sixth = {	#妖怪之血
+		land_morale = 0.15
+		movement_speed = 0.10
+	}
+	IYS_seventh = {	#四魂之玉
+		fire_damage = 0.1
+		cavalry_power = 0.1
+	}
+}
+IYS_new_ideas = { 
+	start = { #半妖
+		shock_damage = 0.15
+		cavalry_cost = -0.2
+	}
+	bonus = {
+		core_creation = -0.15
+	}
+	trigger = {
+	  tag = IYS
+	  has_country_flag = IYS_ideas_up
+	}
+	free = yes
+	IYS_new_first = {	#火鼠裘
+		fire_damage_received = -0.05
+        manpower_recovery_speed = 0.2
+	}
+	IYS_new_second = {	#言灵念珠
+		global_unrest = -2
+        morale_damage_received = -0.1
+	}
+	IYS_new_third = { #冥道铁碎牙
+		discipline = 0.05
+        fire_damage = 0.1
+	}
+	IYS_new_fourth = {	#冥道残月破
+		military_tactics = 0.1
+		siege_ability = 0.15
+	}
+	IYS_new_fifth = {	#纯真的半妖
+		improve_relation_modifier = 0.15
+		diplomats = 1
+	}
+	IYS_new_sixth = {	#妖怪之血
+		land_morale = 0.15
+		movement_speed = 0.10
+	}
+	IYS_new_seventh = {	#四魂之玉
+		cavalry_fire = 1
+    	cavalry_power = 0.2
+	}
+}
+
+DXD_ideas = { 
+	start = { 
+		prestige = 1
+		development_cost = -0.1
+	}
+	bonus = { 
+		diplomatic_upkeep = 1
+	}
+	free = yes
+	trigger = {
+		tag = DXD
+	}
+	DXD_idea_1 = { 
+		land_morale = 0.1
+		discipline = 0.05
+	}
+	DXD_idea_2 = { 
+		diplomatic_reputation = 2
+	}
+	DXD_idea_3 = { 
+		production_efficiency = 0.1
+		trade_efficiency = 0.1
+	}
+	DXD_idea_4 = { 
+		global_autonomy = -0.05
+		army_tradition = 0.5
+	}
+	DXD_idea_5 = { 
+		defensiveness = 0.1
+		max_hostile_attrition = 1
+	}
+	DXD_idea_6 = { 
+		all_power_cost = -0.025
+	}
+	DXD_idea_7 = { 
+		infantry_power = 0.1
+		recover_army_morale_speed = 0.1
+	}
+}
+
+SEK_ideas = {  #夜来舞社理念
+	start = {
+		diplomatic_reputation = 2           #外交威望+2
+		prestige = 1                        #威望+1
+	}
+	bonus = {
+	  	land_morale = 0.15
+	}
+	free = yes
+	trigger = {
+		tag = SEK
+		has_country_flag = Sakura_fall_Societies_flag
+	}
+	#憧憬梦想的少女
+	SEK_ideas_1 = {
+		core_creation = -0.1          #建造核心花费-10%
+		prestige_from_land = 0.5      #陆战获得的威望+50%
+	}
+	#前往不可思议的世界
+	SEK_ideas_2 = { 
+		idea_cost = -0.1              #理念花费-10%
+	}
+	#蓝星花与红蔷薇 
+	SEK_ideas_3 = { 
+		improve_relation_modifier = 0.33     #改善关系+33%
+		diplomatic_annexation_cost = -0.1    #外交合并花费-10%
+	}
+	#所憧憬的幸福  #我还记得那个时候，身旁的舞蹈伙伴，观众席上的最喜欢的父亲。因为害怕被最喜欢的人所讨厌，所以一直着父亲大人眼中那个让他骄傲的女儿。扮演着那个最完美的西御门家的大小姐，将真实的自己忘却。如果那样真是自己的幸福的话，就不会露出那样的表情了吧。‘多美姐从来就不是一个人！因为多美姐一直一直都是我最喜欢的姐姐了！’，能和自己一起哭一起笑的人在一起是一件非常美好的事情。所以这一次..我想扮演最真实的自己，去找到自己真正憧憬的幸福。
+	SEK_ideas_4 = {
+		global_missionary_strength = 0.02   #传教强度+2%
+		recover_army_morale_speed = 0.1     #陆军月度士气恢复+10%
+	}
+	#太阳花约定
+	SEK_ideas_5 = {
+		discipline = 0.05                  #训练度+5%
+		prestige_decay = -0.01             #威望衰减-1%    
+	}
+	#一同相遇的花束
+	SEK_ideas_6 = {
+		development_cost_in_primary_culture = -0.1     #主流省份发展成本-10%
+		global_prosperity_growth = 1                   #所有省份繁荣+1
+	}
+	#夜舞鸣音：属于我们的夜来舞
+	SEK_ideas_7 = {
+		all_power_cost = -0.025                        #所有点数花费-2.5%
+		monthly_splendor = 3                           #月辉煌点数+3
+	}
+}
+
+YKY_ideas = {  #结城友奈理念
+	start = {
+		infantry_power = 0.1
+		land_morale = 0.1
+	}
+	bonus = {
+	  	morale_damage_received = -0.15
+	}
+	free = yes
+	trigger = {
+		tag = YKY
+	}
+	YKY_ideas_1 = {
+		fire_damage = 0.1
+		global_unrest = -1
+	}
+	YKY_ideas_2 = { 
+		army_tradition = 0.5
+		magic_army_cost_decrease_modifier = 1
+	}
+	YKY_ideas_3 = { 
+		discipline = 0.05
+	}
+	YKY_ideas_4 = {
+		colonists = 1
+		native_uprising_chance = -0.5
+	}
+	YKY_ideas_5 = {
+		diplomats = 1
+		improve_relation_modifier = 0.2
+	}
+	YKY_ideas_6 = {
+		defensiveness = 0.1
+		hostile_attrition = 1
+	}
+	YKY_ideas_7 = {
+		core_creation = -0.1
+		global_institution_spread = 0.25
+	}
+}

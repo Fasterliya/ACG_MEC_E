@@ -1,0 +1,41 @@
+HKH_ideas = {
+	start = {
+		cavalry_power = 0.40
+		spy_offence = 0.2
+	}
+	bonus = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+	trigger = {
+		tag = HKH
+	}
+	free = yes
+	Tengu_News_Network = {
+		diplomats = 1
+		improve_relation_modifier = 0.25
+	}
+	Information_Warfare = {
+		ae_impact = -0.2
+		global_spy_defence = 0.25
+	}
+	Wind_Scout_Cavalry = {
+		leader_land_maneuver = 2
+		movement_speed = 0.15
+	}
+	Mobile_Tactics = {
+		land_attrition = -0.2
+		shock_damage_received = -0.15
+	}
+	Shock_Doctrine = {
+		shock_damage = 0.20
+	}
+	Tengu_Rider_Elite = {
+		cavalry_cost = -0.2
+		cav_to_inf_ratio = 0.50
+	}
+	Bullet_Journal_Express = {
+		leader_land_shock = 2
+		cavalry_flanking = 0.50
+	}
+}

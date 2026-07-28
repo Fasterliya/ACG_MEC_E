@@ -1,0 +1,14 @@
+namespace = ALC_missions
+
+country_event = {
+	id = ALC_missions.1
+	title = ALC_missions.1.t
+	desc = ALC_missions.1.d
+	picture = MISSION_OVERSEAS_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = ALC_missions.1.a
+		add_stability = 1
+	}
+}

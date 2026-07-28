@@ -1,0 +1,6415 @@
+#######################################################
+########################JP#############################
+#######################################################
+zys_jp_merc_1 = { #大和武士
+	regiments_per_development = 0.05
+	cost_modifier = 0.5
+	home_province = 1832
+	sprites = { jap_base_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		1832 = { country_or_non_sovereign_subject_holds = ROOT }
+		NOT = { has_reform = indep_daimyo }
+		NOT = { has_reform = daimyo }
+	}
+	
+
+	min_size = 20
+}
+zys_jp_merc_2 = { #僧兵
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1.5
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		culture_group = japanese_g
+		religion_group = eastern
+	}
+	modifier = {
+		infantry_power = 0.1
+	}
+}
+zys_jp_merc_3 = { #风魔众
+	regiments_per_development = 0.02
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1.25
+	home_province = 4189
+	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = japan_region
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_jp_merc_4 = { #根来众
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.25
+	cost_modifier = 1.25
+	home_province = 4187
+	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = japan_region
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_jp_merc_5 = { #村上水军
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1.25
+	home_province = 4186
+	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		num_of_ports = 1
+		any_province = {
+			region = japan_region
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_jp_merc_6 = { #一领具足众
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.05
+	home_province = 1819
+	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		has_idea = csk_ichiryo_gusoku
+		#is_at_war = yes
+	}
+	
+	min_size = 10
+}
+zys_jp_merc_7 = { #阿依努人
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 1
+	home_province = 1852
+	sprites = { Ainu_units inuitgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		1852 = { NOT = { culture_group = japanese_g } }
+		any_province = {
+			superregion = far_east_superregion
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_jp_merc_8 = { #陆上自卫队
+	regiments_per_development = 0.065
+	cavalry_weight = 0.05
+	artillery_weight = 0.2
+	cost_modifier = 0.5
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		OR = {
+			TAG = JAP
+			WAS_TAG = JAP
+		}
+	}
+	
+}
+zys_jp_merc_9 = { #北陆龙骑兵
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 2
+	home_province = 1026
+	sprites = { dlc067_dte_sprite_pack dlc068_jap_sprite_pack jap_base_sprite_pack  }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = japan_region
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_jp_merc_10 = { #信浓流镝马
+	regiments_per_development = 0.038
+	cavalry_weight = 1
+	cost_modifier = 1
+	home_province = 4188
+	sprites = { dlc067_tkd_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = japan_region
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+#######################################################
+########################CN#############################
+#######################################################
+zys_cn_merc_1 = { #燕军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.32
+	cost_modifier = 0.5
+	home_province = 1816
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		1816 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_2 = { #辽军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.32
+	cost_modifier = 1.25
+	home_province = 4652
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		NOT = { primary_culture = manchu } 
+		4652 = { NOT = { culture = manchu_new } NOT = { culture = manchu }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+zys_cn_merc_3 = { #凉军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.27
+	artillery_weight = 0.32
+	cost_modifier = 1.25
+	home_province = 699 #2182
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2182 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_4 = { #秦军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.14
+	artillery_weight = 0.32
+	cost_modifier = 1.25
+	home_province = 700
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	cavalry_cap = 8
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		700 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_5 = { #晋军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.32
+	cost_modifier = 1.25
+	home_province = 693
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		693 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+zys_cn_merc_6 = { #齐军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.12
+	artillery_weight = 0.34
+	cost_modifier = 1.25
+	home_province = 690
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	cavalry_cap = 2
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		690 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_7 = { #淮军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.12
+	artillery_weight = 0.34
+	cost_modifier = 1.25
+	home_province = 1838
+	cavalry_cap = 4
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_8 = { #楚军
+	regiments_per_development = 0.075
+	artillery_weight = 0.34
+	cost_modifier = 1.25
+	home_province = 2172
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+zys_cn_merc_9 = { #吴军
+	regiments_per_development = 0.075
+	artillery_weight = 0.34
+	cost_modifier = 1.25
+	home_province = 1822
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		1821 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+		allow_mercenary_drill = yes
+	
+	min_size = 12
+}
+zys_cn_merc_10 = { #越军
+	regiments_per_development = 0.075
+	artillery_weight = 0.34
+	cost_modifier = 1.25
+	home_province = 2148
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2148 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_11 = { #闽军
+	regiments_per_development = 0.075
+	artillery_weight = 0.34
+	cost_modifier = 1.25
+	home_province = 1829
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		1829 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_12 = { #粤军
+	regiments_per_development = 0.075
+	artillery_weight = 0.4
+	cost_modifier = 1.25
+	home_province = 667
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		667 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					region = indo_china_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+zys_cn_merc_13 = { #蜀军
+	regiments_per_development = 0.075
+	#cavalry_weight = 0
+	artillery_weight = 0.34
+	cost_modifier = 1
+	home_province = 679
+	#cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		679 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+zys_cn_merc_14 = { #湘军
+	regiments_per_development = 0.075
+	artillery_weight = 0.34
+	cost_modifier = 1
+	home_province = 671
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_15 = { #随军猎夫
+	regiments_per_development = 0.038
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 662
+	sprites = { dlc120_CDL_sprite_pack asiangfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		662 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	modifier = {
+		leader_land_manuever = 5
+		land_attrition = -0.5
+		fire_damage = -0.1
+		shock_damage_received = -0.1
+		allow_mercenary_drill = yes
+	}
+}
+zys_cn_merc_16 = { #大理象兵
+	regiments_per_development = 0.038
+	cavalry_weight = 1
+	artillery_weight = 0.4
+	cost_modifier = 0.8
+	home_province = 661
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion
+					region = indo_china_region
+					region = burma_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			any_province = {
+				region = indo_china_region
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+}
+zys_cn_merc_17 = { #冀军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.32
+	cost_modifier = 1.25
+	home_province = 2137
+	cavalry_cap = 8
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2137 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_18 = { #豫军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.14
+	artillery_weight = 0.34
+	cost_modifier = 1.25
+	home_province = 1836
+	cavalry_cap = 4
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		1836 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_19 = { #燕云铁骑
+	regiments_per_development = 0.075
+	cavalry_weight = 1
+	cost_modifier = 1
+	home_province = 4194
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		4194 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 15
+}
+zys_cn_merc_20 = { #交趾
+	regiments_per_development = 0.075
+	artillery_weight = 0.34
+	cost_modifier = 0.67
+	cavalry_cap = 2
+	home_province = 613
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new }
+		NOT = { primary_culture = evenk_manchu }
+		NOT = { primary_culture = vietnamese_new }
+		NOT = { primary_culture = vietnamese }
+		NOT = { TAG = DAI }
+		NOT = { TAG = TOK }
+		NOT = { TAG = ANN }
+		NOT = { WAS_TAG = DAI }
+		NOT = { WAS_TAG = TOK }
+		NOT = { WAS_TAG = ANN }
+		NOT = { has_idea_group = DAI_ideas }
+		OR = {
+			culture_group = east_asian
+			is_emperor_of_china = yes
+		}
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		613 = {  
+			NOT = { culture = vietnamese }
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 20
+}
+zys_cn_merc_21 = { #甘凉铁骑
+	regiments_per_development = 0.075
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 1.1
+	home_province = 2182
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2182 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 15
+}
+zys_cn_merc_22 = { #赣军
+	regiments_per_development = 0.075
+	cavalry_weight = 0
+	artillery_weight = 0.32
+	cost_modifier = 1.25
+	home_province = 670
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		670 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				#OR = {
+					superregion = china_superregion
+				#}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_23 = { #桂军
+	regiments_per_development = 0.075
+	#cavalry_weight = 0.0
+	artillery_weight = 0.32
+	cost_modifier = 0.67
+	home_province = 1840
+	#cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		1840 = {
+			NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } NOT = { culture = evenk_manchu } OR = { culture_group = ROOT culture_group = east_asian }
+		}
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					region = indo_china_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_24 = { #黔军
+	regiments_per_development = 0.075
+	#cavalry_weight = 0.1
+	artillery_weight = 0.32
+	cost_modifier = 0.67
+	home_province = 674
+	cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					region = indo_china_region
+					region = burma_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_25 = { #京营步兵
+	regiments_per_development = 0.1
+	artillery_weight = 0.38
+	cost_modifier = 0.67
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	counts_towards_force_limit = no #不占上限
+	trigger = {
+		NOT = { has_idea = the_green_standard_army }
+		OR = { 
+			is_emperor_of_china = yes 
+			AND = { culture_group = east_asian government = monarchy government_rank = 3 }
+		}
+	}
+	
+	min_size = 20
+	max_size = 80
+}
+zys_cn_merc_26 = { #京营骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no #不占上限
+	trigger = {
+		NOT = { has_idea = the_green_standard_army }
+		OR = { 
+			is_emperor_of_china = yes 
+			AND = { culture_group = east_asian government = monarchy government_rank = 3 }
+		}
+	}
+	
+	min_size = 20
+	max_size = 20
+}
+zys_cn_merc_27 = { #麓川甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0
+	cavalry_cap = 4
+	cost_modifier = 0.67
+	home_province = 2166
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	sprites = { shan_units dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		2166 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_28 = { #苗军
+	regiments_per_development = 0.05
+	cost_modifier = 0.67
+	home_province = 673
+	sprites = { shan_units dlc068_mng_sprite_pack mng_base_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		673 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					region = indo_china_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 20
+}
+
+zys_cn_merc_29 = { #赵军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.32
+	cost_modifier = 1.25
+	home_province = 4195
+	cavalry_cap = 8
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		4194 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+zys_cn_merc_30 = { #女真骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	home_province = 2112
+	sprites = { far_east_cav mch_base_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 10
+}
+zys_cn_merc_31 = { #河东甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1.25
+	home_province = 694
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		694 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+}
+
+zys_cn_merc_32 = { #松潘骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	home_province = 2170
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	counts_towards_force_limit = no #不占上限
+	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2170 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+		2170 = { OR = { culture_group = ROOT culture_group = east_asian } }
+	}
+
+	min_size = 10
+}
+
+zys_cn_merc_33 = { #西番铁骑
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	home_province = 2184
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 10
+}
+
+zys_cn_merc_34 = { #宁夏骑兵
+	regiments_per_development = 0.04
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	home_province = 698
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		698 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+		698 = { OR = { culture_group = ROOT culture_group = east_asian } }
+	}
+
+	min_size = 10
+}
+
+zys_cn_merc_35 = { #娄烦骑兵
+	regiments_per_development = 0.04
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	home_province = 2177
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2177 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+		2177 = { OR = { culture_group = ROOT culture_group = east_asian } }
+	}
+
+	min_size = 10
+}
+zys_cn_merc_36 = { #保定骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	home_province = 696
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	counts_towards_force_limit = no #不占上限
+	sprites = { far_east_cav dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		696 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+		696 = { OR = { culture_group = ROOT culture_group = east_asian } }
+	}
+
+	min_size = 10
+}
+
+zys_cn_merc_37 = { #徐州甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 2141
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2141 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = far_east_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_38 = { #汉中甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 689
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		689 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				superregion = china_superregion 
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+
+zys_cn_merc_39 = { #丹阳甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 1821
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		1821 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = far_east_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+
+zys_cn_merc_40 = { #武昌甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 682
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		682 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				superregion = china_superregion 
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_41 = { #辽西甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 704
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		NOT = { primary_culture = manchu } 
+		704 = { NOT = { culture = manchu_new }  NOT = { culture = manchu }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_42 = { #鄱阳甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 2151
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2151 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				superregion = china_superregion 
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_43 = { #河西甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 2179
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2179 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+
+zys_cn_merc_44 = { #南阳甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 687
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		687 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				superregion = china_superregion 
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_45 = { #巴军
+	regiments_per_development = 0.075
+	#cavalry_weight = 0
+	artillery_weight = 0.34
+	cost_modifier = 1
+	home_province = 680
+	#cavalry_cap = 2
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		680 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+
+zys_cn_merc_46 = { #琉球军
+	regiments_per_development = 0.05
+	#cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 738
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no #不占上限
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		738 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			any_province = {
+				OR = { 
+					superregion = china_superregion 
+					superregion = far_east_superregion 
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 20
+}
+
+zys_cn_merc_47 = { #青州甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 691
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		691 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = far_east_superregion 
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+zys_cn_merc_48 = { #辽南甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 0.25
+	home_province = 2113
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		NOT = { primary_culture = manchu } 
+		NOT = { TAG = MCH } 
+		2113 = { NOT = { culture = manchu_new }  NOT = { culture = manchu }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+					region = manchuria_region
+					region = korea_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+
+	min_size = 12
+}
+
+zys_cn_merc_49 = { #羌军
+	regiments_per_development = 0.05
+	cavalry_weight = 0.25
+	#artillery_weight = 0.15
+	cost_modifier = 0.67
+	home_province = 2183
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2183 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					superregion = tartary_superregion
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 20
+}
+
+
+zys_cn_merc_50 = { #越西甲士
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	#artillery_weight = 0.15
+	cost_modifier = 0.75
+	home_province = 2748
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_CN
+	sprites = { zys_cul_pack_new dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { has_idea = the_green_standard_army }
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		2748 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			NOT = { primary_culture = manchu }
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = china_superregion 
+					region = burma_region
+				}
+			}
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 12
+}
+
+#######################################################
+########################其他###########################
+#######################################################
+zys_tt_merc_1 = { #卡法贩奴团
+	regiments_per_development = 0.038
+	cavalry_weight = 0.5
+	artillery_weight = 0
+	cost_modifier = 1
+	#cavalry_cap = 4
+	home_province = 285
+	sprites = { dlc047_cri_sprite_pack muslimgfx_sprite_pack }
+	no_additional_manpower_from_max_size = yes
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		285 = { 
+			owner = { NOT = { culture_group = east_slavic } }
+			NOT = { culture_group = east_slavic } 
+		}
+		NOT = { has_country_modifier = the_abolish_slavery_act }
+		any_province = {
+			OR = { 
+				region = crimea_region 
+				region = anatolia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 10
+	max_size = 10
+}
+zys_tt_merc_2 = { #钦察骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 303
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { dlc048_gol_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		303 = { 
+			NOT = { culture_group = east_slavic } 
+		}
+		any_province = {
+			OR = { 
+				region = crimea_region 
+				region = central_asia_region 
+				region = caucasia_region 
+				region = ural_region 
+				region = carpathia_region 
+				region = ruthenia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_3 = { #喀尔巴阡库曼军团
+	regiments_per_development = 0.05
+	cavalry_weight = 0.3
+	artillery_weight = 0
+	#cavalry_cap = 8
+	cost_modifier = 1
+	home_province = 155
+	sprites = { dlc048_gol_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		155 = { 
+			NOT = { culture_group = east_slavic } 
+		}
+		any_province = {
+			OR = {
+				region = carpathia_region 
+				region = balkan_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 10
+}
+zys_tt_merc_4 = { #库曼骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.75
+	home_province = 466
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { dlc048_gol_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		466 = { 
+			NOT = { culture_group = east_slavic } 
+		}
+		any_province = {
+			OR = { 
+				region = crimea_region 
+				region = central_asia_region 
+				region = caucasia_region 
+				region = ural_region 
+				region = carpathia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 15
+}
+zys_tt_merc_5 = { #格鲁吉亚骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 423
+	sprites = { dlc048_gol_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = { 
+				region = caucasia_region 
+				region = anatolia_region 
+				region = persia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 15
+}
+zys_tt_merc_6 = { #诺盖劫掠者
+	regiments_per_development = 0.063
+	cavalry_weight = 0.45
+	artillery_weight = 0.18
+	cost_modifier = 0.6
+	home_province = 465
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { dlc048_nog_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = { 
+				region = crimea_region 
+				region = ural_region 
+				region = caucasia_region 
+				superregion = tartary_superregion 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	modifier = {
+		loot_amount = 1
+		shock_damage_received = 0.1
+		movement_speed = 0.25
+		cavalry_flanking = 2.5
+		cav_to_inf_ratio = 1
+	}
+}
+zys_tt_merc_7 = { #河中骑兵
+	regiments_per_development = 0.075
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.8
+	home_province = 454
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { dlc048_shy_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = { 
+				region = crimea_region 
+				region = ural_region 
+				region = khorasan_region 
+				region = persia_region 
+				superregion = tartary_superregion 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 10
+}
+zys_tt_merc_8 = { #吉尔吉斯骑兵
+	regiments_per_development = 0.075
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.4
+	home_province = 2125
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { uyghur_cav dlc048_shy_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			superregion = tartary_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 10
+}
+zys_tt_merc_9 = { #土库曼炮兵
+	regiments_per_development = 0.075
+	#cavalry_weight = 0.15
+	artillery_weight = 0.34
+	#cavalry_cap = 6
+	cost_modifier = 0.3
+	home_province = 1973
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = { 
+				region = central_asia_region 
+				region = persia_region 
+				region = khorasan_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	modifier = {
+		land_morale = -0.33
+		merc_leader_army_tradition = -0.33
+		infantry_fire = 0.15
+		artillery_fire = 0.3
+	}
+	min_size = 20
+}
+zys_tt_merc_10 = { #准噶尔骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0.5
+	cost_modifier = 0.25
+	home_province = 714
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
+	}
+
+	min_size = 15
+}
+zys_tt_merc_11 = { #河套骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 4223
+	sprites = { mon_cav_units dlc069_kha_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = { 
+				superregion = tartary_superregion 
+				region = north_china_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_12 = { #安纳托利亚大队
+	regiments_per_development = 0.075
+	cavalry_weight = 0.15
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 4312 
+	sprites = { dlc047_feo_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = { 
+				region = caucasia_region 
+				area = thrace_area 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_13 = { #亚美尼亚流浪者
+	regiments_per_development = 0.035
+	cavalry_weight = 0.15
+	artillery_weight = 0
+	cavalry_cap = 4
+	cost_modifier = 1
+	home_province = 419
+	sprites = { dlc129_ARM_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { exists = ARM }
+		any_province = {
+			OR = { 
+				region = caucasia_region 
+				region = anatolia_region 
+				region = persia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 8
+}
+zys_tt_merc_14 = { #萨法维佣兵
+	regiments_per_development = 0.035
+	cavalry_weight = 0.15
+	artillery_weight = 0
+	cavalry_cap = 2
+	cost_modifier = 1
+	home_province = 424
+	sprites = { dlc079_per_sprite_pack muslimgfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { war_with = ARL }
+		any_province = {
+			OR = { 
+				region = caucasia_region 
+				region = anatolia_region 
+				region = persia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_15 = { #萨法维教团
+	regiments_per_development = 0.05
+	cavalry_weight = 0.4
+	artillery_weight = 0
+	cavalry_cap = 4
+	cost_modifier = 0.2
+	home_province = 424
+	sprites = { dlc079_per_sprite_pack muslimgfx_sprite_pack }
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		OR = {
+			TAG = ARL
+			WAS_TAG = ARL
+			OVERLORD_OF = ARL
+		}
+	}
+	
+	min_size = 10
+	max_size = 30
+}
+zys_tt_merc_16 = { #阿拉伯城市暴民
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	cavalry_cap = 4
+	home_province = 411
+	sprites = { dlc002_mam_sprite_pack dlc058_mam_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				superregion = near_east_superregion 
+				region = persia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_17 = { #波斯湾海盗
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 1.15
+	home_province = 408
+	sprites = { dlc078_oma_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				region = mashriq_region 
+				region = arabia_region 
+				region = persia_region 
+				region = khorasan_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_18 = { #霍尔木兹海盗
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 1.1
+	home_province = 2999
+	sprites = { dlc078_oma_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				region = mashriq_region 
+				region = arabia_region 
+				region = persia_region 
+				region = khorasan_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_19 = { #亚丁湾海盗
+	regiments_per_development = 0.04
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 388
+	sprites = { dlc078_naj_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				region = arabia_region 
+				region = east_africa_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_20 = { #阿富汗大队
+	regiments_per_development = 0.063
+	cavalry_weight = 0.3
+	#cavalry_cap = 6
+	artillery_weight = 0.25
+	cost_modifier = 1.1
+	home_province = 447
+	sprites = { dlc079_afg_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				region = persia_region 
+				region = khorasan_region 
+				region = central_asia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 18
+}
+zys_tt_merc_21 = { #loli
+	regiments_per_development = 0.038
+	cavalry_weight = 0
+	artillery_weight = 1
+	cost_modifier = 0.67
+	home_province = 419
+	sprites = { zysgfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		419 = { country_or_non_sovereign_subject_holds = root }
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_22 = { #巴哈利亚精锐马穆鲁克
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 1.25
+	home_province = 2318
+	sprites = { dlc002_mam_sprite_pack dlc058_mam_sprite_pack muslimgfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = egypt_region 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 20
+}
+zys_tt_merc_23 = { #阿拉伯佣兵
+	regiments_per_development = 0.063
+	cavalry_weight = 0.25
+	artillery_weight = 0.15
+	cost_modifier = 1
+	cavalry_cap = 4
+	home_province = 392
+	sprites = { dlc078_naj_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = arabia_region 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 15
+}
+zys_tt_merc_24 = { #西伯利亚猎手团
+	regiments_per_development = 0.038
+	cavalry_weight = 0.1
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 1075
+	cavalry_cap = 2
+	sprites = { inuitgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		1075 = { NOT = { culture_group = east_slavic } }
+		any_province = {
+			OR = {  
+				region = east_siberia_region 
+				region = west_siberia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_25 = { #高加索大队
+	regiments_per_development = 0.063
+	cavalry_weight = 0.25
+	artillery_weight = 0.21
+	cost_modifier = 1
+	home_province = 2199
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				region = caucasia_region 
+				region = crimea_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_26 = { #呼罗珊卫队
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	cavalry_cap = 8
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 2221
+	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			superregion = persia_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_27 = { #东北六镇
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.28
+	cost_modifier = 0.5
+	home_province = 732
+	sprites = { dlc068_kor_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		732 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		any_province = {
+			OR = {  
+				superregion = china_superregion 
+				superregion = far_east_superregion 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+
+	min_size = 12
+}
+zys_tt_merc_28 = { #神机箭
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 1
+	cost_modifier = 0.5
+	home_province = 735
+	sprites = { dlc068_kor_sprite_pack asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		735 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		any_province = {
+			region = korea_region 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_29 = { #女真海盗
+	regiments_per_development = 0.043
+	cavalry_weight = 0.2
+	artillery_weight = 0.15
+	cost_modifier = 1
+	home_province = 2742
+	sprites = { mch_base_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 100
+		}
+		num_of_ports = 1
+		2742 = { OR = { culture = manchu_new culture_group = evenks }  }
+		any_province = {
+			superregion = far_east_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_30 = { #索伦兵
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.1
+	home_province = 1049
+	sprites = { Buryatia_units inuitgfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 100
+		}
+		any_province = {
+			superregion = far_east_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 20
+}
+zys_tt_merc_31 = { #辛加尔奴贩
+	regiments_per_development = 0.075
+	cavalry_weight = 0.6
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 2309
+	sprites = { dlc102_hun_sprite_pack muslimgfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {
+				region = mashriq_region 
+				region = arabia_region
+				region = anatolia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		NOT = { has_country_modifier = the_abolish_slavery_act }
+	}
+
+	min_size = 8
+}
+zys_tt_merc_32 = { #匈牙利骠骑兵
+	regiments_per_development = 0.04
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 153
+	sprites = { dlc102_hun_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				superregion = eastern_europe_superregion 
+				region = italy_region 
+				region = south_german_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_33 = { #塞尔柱遗老
+	regiments_per_development = 0.025
+	cavalry_weight = 0.3
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 329
+	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		NOT = { TAG = TUR }
+		NOT = { WAS_TAG = TUR }
+		NOT = { exists = RUM }
+		is_year = 1308 
+		NOT = { is_year = 1516 }
+		any_province = {
+			OR = {  
+				region = mashriq_region 
+				region = anatolia_region 
+				region = persia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_34 = { #土耳其海盗
+	regiments_per_development = 0.045
+	cavalry_weight = 0.1
+	artillery_weight = 0.15
+	cost_modifier = 1
+	home_province = 328
+	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		328 = { NOT = { culture_group = byzantine } }
+		any_province = {
+			OR = {  
+				region = crimea_region 
+				region = anatolia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_35 = { #民意代表
+	regiments_per_development = 0.025
+	cavalry_weight = 0.2
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 241
+	sprites = { dlc087_wls_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		241 = { 
+			country_or_non_sovereign_subject_holds = ROOT 
+			NOT = { is_capital_of = ROOT } 
+		}
+	}
+	
+}
+zys_tt_merc_36 = { #柏柏尔海盗
+	regiments_per_development = 0.055
+	cavalry_weight = 0.25
+	artillery_weight = 0.15
+	cost_modifier = 1
+	home_province = 337
+	sprites = { dlc129_TLC_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		num_of_ports = 1
+		any_province = {
+			OR = {  
+				region = maghreb_region 
+				region = iberia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_37 = { #十大卡神
+	regiments_per_development = 0.035
+	cavalry_weight = 0.2
+	artillery_weight = 0.3 #卡特沃 卡尔德 卡罗拉特
+	cavalry_cap = 2 #卡尔大公 卡基特沃斯基
+	cost_modifier = 1
+	home_province = 341
+	counts_towards_force_limit = no #不占上限
+	no_additional_manpower_from_max_size = yes
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 500 
+		}
+	}
+	
+	min_size = 10
+	max_size = 10
+}
+zys_tt_merc_38 = { #安多骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 4204
+	sprites = { dlc069_oir_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_39 = { #沙姆游侠
+	regiments_per_development = 0.035
+	cavalry_weight = 0
+	cavalry_cap = 2
+	cost_modifier = 1.2
+	home_province = 382
+	sprites = { dlc129_SYR_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		any_province = {
+			OR = {
+				region = mashriq_region 
+				region = egypt_region
+				region = arabia_region
+				region = anatolia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_40 = { #马六甲海盗
+	regiments_per_development = 0.055
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1
+	home_province = 596
+	sprites = { dlc107_MLC_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			superregion = east_indies_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_41 = { #威尔士射手
+	regiments_per_development = 0.025
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1.15
+	home_province = 242
+	sprites = { dlc087_wls_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = british_isles_region 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_42 = { #热那亚射手
+	regiments_per_development = 0.04
+	cavalry_weight = 0
+	artillery_weight = 0.24
+	cost_modifier = 1
+	home_province = 101
+	sprites = { dlc020_gen_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = {
+			any_province = {
+				OR = {
+					region = france_region 
+					region = italy_region
+					region = south_german_region
+					region = north_german_region 
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			alliance_with = GEN
+		}
+	}
+	
+}
+zys_tt_merc_43 = { #布拉班特方阵
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.26
+	cavalry_cap = 2
+	cost_modifier = 1
+	home_province = 92
+	sprites = { dlc042_ned_sprite_pack dlc028_ned_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		any_province = {
+			OR = {
+				region = low_countries_region 
+				region = france_region 
+				region = south_german_region
+				region = north_german_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_44 = { #罗斯佣兵
+	regiments_per_development = 0.05
+	cavalry_weight = 0.25
+	artillery_weight = 0
+	cavalry_cap = 6
+	cost_modifier = 1
+	home_province = 280
+	sprites = { dlc075_ukr_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {
+				region = russia_region 
+				region = poland_region
+				region = ruthenia_region
+				region = crimea_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_45 = { #叙利亚佣兵
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.28
+	cavalry_cap = 4
+	cost_modifier = 0.85
+	home_province = 1849
+	sprites = { dlc129_SYR_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {
+				region = mashriq_region 
+				region = egypt_region
+				region = arabia_region
+				region = anatolia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+
+	min_size = 12
+}
+zys_tt_merc_46 = { #高昌回纥骑兵
+	regiments_per_development = 0.075
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.4
+	home_province = 4207
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { uyghur_cav dlc069_chg_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_47 = { #康巴骑兵
+	regiments_per_development = 0.035
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 2132
+	sprites = { dlc041_tib_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = {
+			owns = 2170
+			owns = 2184
+			owns = 2183
+			any_province = {  
+				region = tibet_region
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+	}
+	
+	min_size = 10
+}
+zys_tt_merc_48 = { #吐蕃步兵
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1.1
+	home_province = 677
+	sprites = { dlc041_tib_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			region = tibet_region
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 10
+}
+zys_tt_merc_49 = { #占城海盗
+	regiments_per_development = 0.035
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 0.9
+	home_province = 607
+	sprites = { dlc107_CHA_sprite_pack asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			superregion = east_indies_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_50 = { #三山营
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 1015
+	sprites = { Ryukyu_units asiangfx_sprite_pack }
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		owns = 1015
+		OR = { 
+			NOT = { culture_group = japanese_g } 
+			TAG = RYU
+		}
+	}
+	
+	max_size = 40
+}
+zys_tt_merc_51 = { #骑逝精神
+	regiments_per_development = 0.1
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 183
+	sprites = { dlc049_FRA_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 200
+		}
+		OR = { 
+			culture_group = french 
+			TAG = FRA
+			marriage_with = FRA
+			ruler_culture = cosmopolitan_french
+			consort_culture = cosmopolitan_french
+			any_country = {
+				culture_group = french 
+				marriage_with = ROOT
+			}
+		}
+	}
+	
+	min_size = 20
+}
+
+zys_tt_merc_52 = { #瓦剌骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 719
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { mon_cav_units dlc069_oir_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 15
+}
+
+zys_tt_merc_53 = { #达斡尔骑兵
+	regiments_per_development = 0.03
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.8
+	home_province = 725
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { far_east_cav dlc069_kha_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 10
+}
+zys_tt_merc_54 = { #蒙古骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.7
+	home_province = 4678
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	sprites = { mon_cav_units dlc069_kha_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_55 = { #瑞典蠢驴
+	regiments_per_development = 0.1
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.1
+	home_province = 1
+	sprites = { dlc054_swe_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		1 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_56 = { #伊比利亚骑手
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.8
+	home_province = 219
+	sprites = { dlc049_SPA_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { OR = { region = iberia_region region = france_region } country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_57 = { #吕根海盗
+	regiments_per_development = 0.035
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 1.25
+	home_province = 4745
+	sprites = { dlc061_pom_sprite_pack dlc028_pom_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { OR = { region = north_german_region region = scandinavia_region region = baltic_region } country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_58 = { #维京突袭者
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1.1
+	home_province = 17
+	sprites = { dlc116_NOR_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { OR = { region = scandinavia_region region = low_countries_region region = british_isles_region region = north_german_region } country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+	min_size = 8
+}
+zys_tt_merc_59 = { #波罗的海公爵亲卫
+	regiments_per_development = 0.025
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1.5
+	home_province = 271
+	sprites = { dlc074_lit_sprite_pack dlc003_lit_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { OR = { region = baltic_region region = poland_region } country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_60 = { #西西里海盗
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1
+	home_province = 125
+	sprites = { dlc103_sic_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { region = italy_region country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_61 = { #巴塞罗那蠢驴
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.1
+	home_province = 213
+	sprites = { dlc020_ara_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		213 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+
+zys_tt_merc_62 = { #鱼皮鞑子
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.1
+	home_province = 2105
+	sprites = { Yeren_units asiangfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = manchuria_region 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 20
+}
+
+zys_tt_merc_63 = { #精彩哥的白马
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 186
+	sprites = { dlc049_FRA_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = ZYS_NPL_CAV_DESC 
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 200
+		}
+		any_province = {  
+			OR = {
+				region = france_region
+				region = italy_region
+				region = south_german_region
+				region = low_countries_region
+				region = north_german_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		OR = { 
+			is_revolutionary = yes
+			government = republic
+		}
+	}
+	
+	min_size = 10
+}
+
+zys_tt_merc_64 = { #印度程序员
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 1
+	cost_modifier = 0.05
+	home_province = 533
+	sprites = { indiangfx_sprite_pack  }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		533 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_65 = { #埃及佣兵
+	regiments_per_development = 0.075
+	cavalry_weight = 0.3
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 358
+	cavalry_cap = 4
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			region = egypt_region 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_66 = { #宇宙起源
+	regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0.5
+	cost_modifier = 0.1
+	home_province = 4227
+	sprites = { asiangfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		4227 = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_67 = { #保加利亚军团
+	regiments_per_development = 0.063
+	cavalry_weight = 0.15
+	artillery_weight = 0.23
+	cost_modifier = 1
+	home_province = 4704
+	sprites = { dlc102_wal_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = anatolia_region
+				region = carpathia_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_68 = { #巴尔干山地战士
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.75
+	home_province = 138
+	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = anatolia_region
+				region = carpathia_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_69 = { #罗斯炮兵
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 1
+	cost_modifier = 0.85
+	home_province = 293
+	sprites = { dlc075_ukr_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = russia_region 
+				region = poland_region
+				region = ruthenia_region
+				region = crimea_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_70 = { #利沃尼亚大队
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.3
+	cost_modifier = 0.8
+	home_province = 36
+	sprites = { dlc074_lit_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		36 = { NOT = { culture_group = germanic } }
+		any_province = {  
+			OR = {
+				region = russia_region 
+				region = british_isles_region
+				region = ruthenia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_71 = { #保加尔骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.85
+	home_province = 4267
+	sprites = { dlc074_kaz_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = russia_region 
+				region = poland_region
+				region = ruthenia_region
+				region = balkan_region
+				region = carpathia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 8
+}
+
+zys_tt_merc_72 = { #波西米亚车营
+	regiments_per_development = 0.063
+	artillery_weight = 0.31
+	cost_modifier = 1
+	home_province = 266
+	sprites = { dlc061_boh_sprite_pack dlc028_boh_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = {
+			any_province = {  
+				OR = {
+					region = poland_region 
+					region = baltic_region
+					region = carpathia_region
+					region = north_german_region
+					region = south_german_region
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			266 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+	}
+	
+}
+zys_tt_merc_73 = { #北欧重斧兵
+	regiments_per_development = 0.04
+	cost_modifier = 1.5
+	home_province = 12
+	sprites = { dlc116_DAN_sprite_pack dlc028_dan_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = scandinavia_region 
+				region = north_german_region
+				region = british_isles_region
+				region = low_countries_region
+				region = baltic_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 10
+}
+zys_tt_merc_74 = { #高地佣兵
+	regiments_per_development = 0.04
+	cost_modifier = 1.1
+	home_province = 250
+	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			superregion = europe_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_75 = { #会说话的树
+	regiments_per_development = 0.05
+	cost_modifier = 1
+	home_province = 2373
+	sprites = { dlc041_dai_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		2373 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	modifier = {
+		movement_speed = 0.5
+		land_attrition = -0.5
+		morale_damage = 0.25
+		can_bypass_forts = yes
+	}
+	min_size = 15
+}
+zys_tt_merc_76 = { #缅军
+	regiments_per_development = 0.075
+	cost_modifier = 0.75
+	artillery_weight = 0.28
+	home_province = 581
+	sprites = { asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = indo_china_region 
+				region = burma_region
+				region = bengal_region
+				region = xinan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_77 = { #吕宋勇士
+	regiments_per_development = 0.038
+	cost_modifier = 0.75
+	home_province = 4348
+	sprites = { asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			superregion = east_indies_superregion
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_78 = { #爪哇水军
+	regiments_per_development = 0.06
+	cost_modifier = 1.15
+	artillery_weight = 0.2
+	home_province = 628
+	sprites = { asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			superregion = east_indies_superregion
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_79 = { #波兰枪骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	cost_modifier = 0.9
+	home_province = 254
+	sprites = { dlc053_pol_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = poland_region 
+				region = baltic_region
+				region = ruthenia_region
+				region = carpathia_region
+				region = north_german_region
+				region = south_german_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_80 = { #乌拉尔大队
+	regiments_per_development = 0.063
+	artillery_weight = 0.17
+	cavalry_weight = 0.24
+	cavalry_cap = 2
+	cost_modifier = 1
+	home_province = 1077
+	sprites = { easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = west_siberia_region 
+				region = ural_region
+				region = russia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_81 = { #布列塔尼铁颅军团
+	regiments_per_development = 0.038
+	artillery_weight = 0.15
+	cavalry_weight = 0
+	cavalry_cap = 2
+	cost_modifier = 1
+	home_province = 171
+	sprites = { dlc087_bri_sprite_pack dlc001_bri_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = france_region 
+				region = british_isles_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 8
+}
+zys_tt_merc_82 = { #波斯商队护卫
+	regiments_per_development = 0.038
+	cavalry_weight = 1
+	cost_modifier = 0.67
+	home_province = 445
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = khorasan_region 
+				region = persia_region
+				region = central_asia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_83 = { #突厥卫队
+	regiments_per_development = 0.075
+	cavalry_weight = 0.3
+	artillery_weight = 0.2
+	cost_modifier = 1
+	home_province = 456
+	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = khorasan_region 
+				region = persia_region
+				region = central_asia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_84 = { #马佐维亚佣兵团
+	regiments_per_development = 0.063
+	cavalry_weight = 0.25
+	artillery_weight = 0.21
+	cost_modifier = 0.67
+	home_province = 257
+	sprites = { dlc029_pol_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = poland_region 
+				region = north_german_region
+				region = baltic_region
+				region = ruthenia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_85 = { #诺曼骑士
+	regiments_per_development = 0.03
+	cavalry_weight = 1
+	cost_modifier = 1.15
+	home_province = 167
+	sprites = { dlc088_nrm_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = france_region 
+				region = italy_region
+				region = balkan_region
+				region = low_countries_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_86 = { #君士坦丁堡市民
+	regiments_per_development = 0.1
+	cost_modifier = 0.5
+	home_province = 151
+	sprites = { dlc100_rom_sprite_pack easterngfx_sprite_pack }
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { TAG = HLR }
+		owns = 151
+		OR = {
+			TAG = BYZ
+			WAS_TAG = BYZ
+			TAG = ROM
+			primary_culture = roman
+			culture_group = byzantine
+			culture_group = latin
+		}
+	}
+	
+	max_size = 30
+}
+zys_tt_merc_87 = { #罗马市民
+	regiments_per_development = 0.1
+	cost_modifier = 0.5
+	home_province = 118
+	sprites = { dlc100_rom_sprite_pack easterngfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	no_additional_manpower_from_max_size = yes
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = { TAG = HLR }
+		owns = 118
+		OR = {
+			TAG = BYZ
+			WAS_TAG = BYZ
+			TAG = ROM
+			primary_culture = roman
+			culture_group = byzantine
+			culture_group = latin
+		}
+	}
+	
+	max_size = 30
+}
+zys_tt_merc_88 = { #阿兰骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	cost_modifier = 0.5
+	home_province = 2201
+	sprites = { easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = crimea_region 
+				region = caucasia_region
+				region = anatolia_region
+				region = balkan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_89 = { #也门山地营
+	regiments_per_development = 0.063
+	cavalry_weight = 0.15
+	artillery_weight = 0.15
+	cavalry_cap = 4
+	cost_modifier = 1
+	home_province = 390
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = arabia_region 
+				region = egypt_region
+				region = mashriq_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_90 = { #万象营
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0.29
+	cost_modifier = 1
+	home_province = 614
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		OR = {
+			any_province = {
+				superregion = china_superregion 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			any_province = {
+				region = indo_china_region
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	
+	min_size = 10
+}
+
+zys_tt_merc_91 = { #巴尔干骠骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 4173
+	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = anatolia_region
+				region = carpathia_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+
+zys_tt_merc_92 = { #斯拉夫刺客
+	regiments_per_development = 0.025
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 2.5
+	home_province = 3002
+	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = north_german_region
+				region = carpathia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_93 = { #龙骑士团
+	regiments_per_development = 0.05
+	cavalry_weight = 0.5
+	cavalry_cap = 9
+	artillery_weight = 0
+	cost_modifier = 0.71
+	home_province = 268
+	sprites = { dlc040_kni_sprite_pack easterngfx_sprite_pack }
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = carpathia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 29
+	max_size = 29
+}
+zys_tt_merc_94 = { #勃艮第炮兵
+	regiments_per_development = 0.04
+	artillery_weight = 1
+	cost_modifier = 0.8
+	home_province = 192
+	sprites = { dlc001_bur_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = france_region
+				region = low_countries_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_95 = { #纳瓦拉伏击者
+	regiments_per_development = 0.038
+	artillery_weight = 0.25
+	cost_modifier = 1
+	home_province = 210
+	sprites = { dlc098_nav_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		any_province = {  
+			OR = {
+				region = france_region
+				region = iberia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_96 = { #那不勒斯骑炮兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0.5
+	cost_modifier = 0.67
+	home_province = 121
+	sprites = { dlc056_nap_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = france_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_97 = { #宗座宫卫队
+	regiments_per_development = 0.05
+	cavalry_weight = 0.3
+	cost_modifier = 0.5
+	cavalry_cap = 2
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		TAG = PAP
+	}
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	
+	min_size = 15
+	max_size = 15
+}
+zys_tt_merc_98 = { #闹事的酒鬼
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 65
+	sprites = { dlc061_bav_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_99 = { #劫掠印度者
+	regiments_per_development = 0.038
+	cavalry_weight = 0.3
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 578
+	sprites = { dlc079_afg_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		any_province = {  
+			OR = {
+				region = khorasan_region
+				region = central_asia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_100 = { #兀良哈骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 2187
+	sprites = { far_east_cav dlc069_kha_sprite_pack asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = north_china_region
+				region = manchuria_region
+				superregion = tartary_superregion
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_101 = { #掸军
+	regiments_per_development = 0.075
+	cavalry_weight = 0
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 2396
+	sprites = { shan_units asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = xinan_region
+				region = burma_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_102 = { #安南炮兵
+	regiments_per_development = 0.04
+	cavalry_weight = 0
+	artillery_weight = 1
+	cost_modifier = 0.67
+	home_province = 613
+	sprites = { dlc041_dai_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = indo_china_region
+				region = south_china_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_103 = { #于阗营
+	regiments_per_development = 0.075
+	cavalry_weight = 0.24
+	artillery_weight = 0.24
+	cost_modifier = 1
+	home_province = 710
+	sprites = { asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			superregion = tartary_superregion
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_104 = { #波斯长生军
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.25
+	cost_modifier = 1.15
+	home_province = 2218
+	sprites = { dlc079_per_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = persia_region
+				region = khorasan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_105 = { #土耳其劲旅
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 418
+	sprites = { dlc002_tur_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = anatolia_region
+				region = balkan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_106 = { #瓦隆开颅者
+	regiments_per_development = 0.04
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1
+	home_province = 93
+	sprites = { dlc028_ned_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		any_province = {  
+			OR = {
+				region = france_region
+				region = low_countries_region
+				region = south_german_region
+				region = british_isles_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_107 = { #达契亚战团
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	artillery_weight = 0.15
+	cost_modifier = 1
+	home_province = 161
+	sprites = { dlc102_wal_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = carpathia_region
+				region = balkan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_108 = { #本都步兵
+	regiments_per_development = 0.025
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 330
+	sprites = { dlc129_TRE_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = anatolia_region
+				region = caucasia_region
+				region = crimea_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_109 = { #燕山虎贲
+	regiments_per_development = 0.038
+	cavalry_weight = 0.4
+	artillery_weight = 0
+	cost_modifier = 0.8
+	home_province = 703
+	sprites = { zys_cul_pack dlc068_mng_sprite_pack asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		703 = { country_or_non_sovereign_subject_holds = ROOT }
+		OR = { TAG = MNG is_emperor_of_china = yes total_development = 1000 }
+	}
+	
+}
+
+zys_tt_merc_110 = { #伯罗奔尼撒战团
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+	artillery_weight = 0.28
+	cavalry_cap = 2
+	cost_modifier = 1
+	home_province = 145
+	sprites = { dlc100_rom_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = anatolia_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_111 = { #藤甲军
+	regiments_per_development = 0.038
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 616
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	sprites = { shan_units dlc041_dai_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = indo_china_region
+				region = south_china_region
+				region = xinan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_112 = { #西京军
+	regiments_per_development = 0.05
+	cavalry_weight = 0.2
+	artillery_weight = 0.3
+	cost_modifier = 0.5
+	home_province = 1845
+	sprites = { dlc068_kor_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		1845 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		any_province = {
+			OR = {  
+				superregion = china_superregion 
+				superregion = far_east_superregion 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_113 = { #喀尔喀骑兵
+	regiments_per_development = 0.063
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.6
+	home_province = 4219
+	sprites = { mon_cav_units dlc069_kha_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = { 
+				superregion = tartary_superregion 
+				region = north_china_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_114 = { #科尔沁骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.7
+	home_province = 724
+	sprites = { far_east_cav dlc069_kha_sprite_pack asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = { 
+				superregion = tartary_superregion 
+				region = north_china_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_115 = { #葱岭回纥骑兵
+	regiments_per_development = 0.075
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 2127
+	sprites = { uyghur_cav dlc069_chg_sprite_pack muslimgfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = { 
+				superregion = tartary_superregion 
+				region = north_china_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_116 = { #察哈尔骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.65
+	home_province = 2115
+	sprites = { mon_cav_units dlc069_chg_sprite_pack asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = { 
+				superregion = tartary_superregion 
+				region = north_china_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_117 = { #安南海盗
+	regiments_per_development = 0.055
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1
+	home_province = 4819
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	sprites = { dlc041_dai_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		num_of_ports = 1
+		any_province = {  
+			OR = {
+				region = indo_china_region
+				region = south_china_region
+				region = xinan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_118 = { #朝鲜水军
+	regiments_per_development = 0.055
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 0.5
+	home_province = 4228
+	sprites = { dlc068_kor_sprite_pack asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		num_of_ports = 1
+		NOT = { primary_culture = manchu_new } 
+		NOT = { primary_culture = evenk_manchu } 
+		4228 = { NOT = { culture = manchu_new }  NOT = { culture = evenk_manchu } }
+		any_province = {
+			OR = {  
+				superregion = china_superregion 
+				superregion = far_east_superregion 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_119 = { #阿拉干海盗
+	regiments_per_development = 0.035
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 1
+	home_province = 579
+	sprites = { asiangfx_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		num_of_ports = 1
+		any_province = {
+			OR = {  
+				region = burma_region 
+				region = bengal_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_120 = { #荷兰水军
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1
+	home_province = 97
+	sprites = { dlc028_ned_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		any_province = {  
+			OR = {
+				region = france_region
+				region = low_countries_region
+				region = south_german_region
+				region = british_isles_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_121 = { #英格兰水军
+	regiments_per_development = 0.055
+	cavalry_weight = 0
+	artillery_weight = 0.15
+	cost_modifier = 0.25
+	home_province = 236
+	sprites = { dlc001_eng_sprite_pack }
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		num_of_ports = 1
+		any_province = {  
+			OR = {
+				region = france_region
+				region = low_countries_region
+				region = british_isles_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_122 = { #爱尔兰卫队
+	regiments_per_development = 0.063
+	cavalry_weight = 0
+	artillery_weight = 0.21
+	cost_modifier = 0.7
+	home_province = 374
+	sprites = { dlc087_ire_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			superregion = europe_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_123 = { #瑞士卫队
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.22
+	cost_modifier = 1.25
+	home_province = 1869
+	sprites = { dlc054_swe_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			superregion = europe_superregion 
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+	min_size = 12
+}
+zys_tt_merc_124 = { #山鹰卫队
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.22
+	cost_modifier = 1
+	home_province = 4175
+	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = italy_region
+				region = anatolia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_125 = { #芬兰卫队
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.22
+	cost_modifier = 1
+	home_province = 30
+	sprites = { dlc116_FIN_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = scandinavia_region
+				region = baltic_region
+				region = anatolia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_126 = { #卢尔营
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0.22
+	cost_modifier = 1.2
+	home_province = 413
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = persia_region
+				region = mashriq_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_127 = { #古尔步兵
+	regiments_per_development = 0.038
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 449
+	sprites = { dlc079_afg_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = persia_region
+				region = khorasan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_128 = { #俾路支大队
+	regiments_per_development = 0.063
+	cavalry_weight = 0
+	artillery_weight = 0.18
+	cost_modifier = 1
+	home_province = 577
+	sprites = { dlc079_afg_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = persia_region
+				region = khorasan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_129 = { #阿萨姆佣兵
+	regiments_per_development = 0.063
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cost_modifier = 1
+	home_province = 566
+	sprites = { shan_units asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = bengal_region
+				region = burma_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_130 = { #印度象兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0.3
+	cost_modifier = 1
+	home_province = 522
+	sprites = { dlc092_jnp_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = hindusthan_region
+				region = khorasan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_131 = { #孟加拉骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 563
+	sprites = { asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = bengal_region
+				region = burma_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_132 = { #锡克骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 507
+	sprites = { dlc024_mul_sprite_pack asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = hindusthan_region
+				region = khorasan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_133 = { #古吉拉特大队
+	regiments_per_development = 0.075
+	cavalry_weight = 0.15
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 2054
+	sprites = { dlc092_guj_sprite_pack indiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = west_india_region
+				region = khorasan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_134 = { #拉杰普特大队
+	regiments_per_development = 0.075
+	cavalry_weight = 0.15
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 4497
+	sprites = { dlc091_mer_sprite_pack indiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = west_india_region
+				region = hindusthan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_135 = { #僧伽罗步兵
+	regiments_per_development = 0.04
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 572
+	sprites = { asiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = coromandel_region
+				region = deccan_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_136 = { #贡德步兵
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1
+	home_province = 550
+	sprites = { indiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = hindusthan_region
+				region = west_india_region
+				region = deccan_region
+				region = bengal_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_137 = { #马拉塔大队
+	regiments_per_development = 0.075
+	cavalry_weight = 0.24
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 1946
+	sprites = { indiangfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = coromandel_region
+				region = deccan_region
+				region = west_india_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_138 = { #伊拉克佣兵
+	regiments_per_development = 0.075
+	cavalry_weight = 0.2
+	cavalry_cap = 6
+	artillery_weight = 0.28
+	cost_modifier = 1
+	home_province = 410
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = mashriq_region
+				region = persia_superregion
+				region = anatolia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_139 = { #加泰罗尼亚卫队
+	regiments_per_development = 0.07
+	cavalry_weight = 0.15
+	artillery_weight = 0.24
+	cost_modifier = 1
+	home_province = 220
+	sprites = { dlc020_ara_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = iberia_region
+				region = maghreb_region
+				region = france_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_140 = { #安达卢斯骑兵
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 223
+	sprites = { dlc098_gra_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = iberia_region
+				region = maghreb_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_141 = { #塞尔维亚战团
+	regiments_per_development = 0.065
+	cavalry_weight = 0.15
+	artillery_weight = 0.25
+	cost_modifier = 1
+	home_province = 4176
+	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = carpathia_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_142 = { #西西里卫队
+	regiments_per_development = 0.065
+	cavalry_weight = 0.15
+	artillery_weight = 0.25
+	cost_modifier = 1
+	home_province = 4736
+	sprites = { dlc103_sic_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { region = italy_region country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_143 = { #费拉拉炮兵
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 1
+	cost_modifier = 1
+	home_province = 113
+	sprites = { dlc056_aqu_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = { region = italy_region country_or_non_sovereign_subject_holds = ROOT }
+	}
+	
+}
+zys_tt_merc_144 = { #土库曼佣兵
+	regiments_per_development = 0.05
+	cavalry_weight = 0.4
+	artillery_weight = 0.1
+	cost_modifier = 1
+	home_province = 2349
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = { 
+				region = central_asia_region 
+				region = persia_region 
+				region = khorasan_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_145 = { #柏柏尔辅兵
+	regiments_per_development = 0.065
+	cavalry_weight = 0.3
+	artillery_weight = 0.21
+	cost_modifier = 0.67
+	home_province = 2456
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {
+			OR = {  
+				region = maghreb_region 
+				region = iberia_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_146 = { #马其顿战团
+	regiments_per_development = 0.065
+	artillery_weight = 0.26
+	cost_modifier = 0.5
+	home_province = 148
+	sprites = { dlc100_rom_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = balkan_region
+				region = anatolia_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_147 = { #圣墓守卫
+	regiments_per_development = 0.05
+	cavalry_weight = 0.3
+	cost_modifier = 0.5
+	home_province = 379
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
+	sprites = { dlc040_kni_sprite_pack easterngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		religion_group = christian
+		379 = { country_or_non_sovereign_subject_holds = ROOT religion_group = christian }
+	}
+	
+	min_size = 20
+	max_size = 20
+}
+zys_tt_merc_148 = { #巴伐利亚雇佣军
+	regiments_per_development = 0.065
+	cavalry_weight = 0.16
+	artillery_weight = 0.26
+	cost_modifier = 0.9
+	home_province = 64
+	sprites = { dlc061_bav_sprite_pack dlc029_bav_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		any_province = {  
+			OR = {
+				region = south_german_region
+				region = north_german_region
+				region = italy_region
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}
+zys_tt_merc_149 = { #雇佣骑手
+	regiments_per_development = 0.03
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	counts_towards_force_limit = no #不占上限
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+	}
+	
+}
+zys_tt_merc_150 = { #虎力巴图鲁
+	regiments_per_development = 0.03
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.67
+	home_province = 1059
+	sprites = { mch_base_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = { ai = yes }
+			NOT = { army_size_percentage = 0.7 }
+		}
+		if = {
+			limit = { ai = yes }
+			total_development = 150
+		}
+		1059 = { 
+			owner = { NOT = { culture_group = east_slavic } }
+			NOT = { culture_group = east_slavic } 
+		}
+		any_province = {
+			OR = { 
+				region = east_siberia_region 
+				region = west_siberia_region 
+				region = manchuria_region 
+			}
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	
+}

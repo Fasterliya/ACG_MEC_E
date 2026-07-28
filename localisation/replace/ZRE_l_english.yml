@@ -1,0 +1,16 @@
+﻿l_english:
+#################################unit################################
+zys_ruler_east:0 "ßu»lw"
+zys_ruler_east_desc:0 ""
+ZYS_ALWAYS:0 "I`=f"
+zrp.1:0 ":VS[Root.Monarch.GetTitle]qVÍT›R"
+zrp.1_desc:0 "9hncßu»lwýw›RÐc›OýV¶RîOckÿ‚Yœgßu»lwÇŽNŸ^irRO	gèT'Y„vé`Z0"
+zrp.3:0 "[Root.Heir.GetTitle]ÂS?e"
+zrp.3_desc:0 "©‹çubºNOS©RYt‹N¡R,‚YçubºNýw›RØšŽNßu»lwÿRïSåNµbˆmNOýw›R„vé`Z0\n‚YœgçubºNýw›R¾0R5öeïSåN·ƒ—V5¹pßu»lwýw›RøvT„vîOckÿÖSgØš<PÿNOàS R	ÿ0"
+zrp.4:0 "[Root.Monarch.GetTitle]„vLˆ?eýw›R"
+zrp.4_desc:0 "9hncßu»lw„vLˆ?eýw›RÐc›OýV¶RîOck0"
+zrp.5:0 "[Root.Monarch.GetTitle]„vY²Nýw›R"
+zrp.5_desc:0 "9hncßu»lw„vY²Nýw›RÐc›OýV¶RîOck0"
+zrp.6:0 "[Root.Monarch.GetTitle]„v›Q‹Nýw›R"
+zrp.6_desc:0 "9hncßu»lw„v›Q‹Nýw›RÐc›OýV¶RîOck0"
+zys_ruler_east_privilege_slots:0 "yrCgýi"

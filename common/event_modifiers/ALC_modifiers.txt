@@ -1,0 +1,158 @@
+ALC_south_italy = {
+	mercenary_cost = -0.15
+	development_cost = -0.15
+	picture = "province_razed"
+}
+ALC_naples_crown = {
+	manpower_recovery_speed = 0.25
+	land_forcelimit_modifier = 0.2
+	picture = "province_razed"
+}
+ALC_italy_crown = {
+	administrative_efficiency = 0.05
+	prestige = 1
+	diplomatic_reputation = 1
+	picture = "province_razed"
+}
+ALC_italy_hegemon = {
+	discipline = 0.05
+	global_unrest = -3
+	max_absolutism = 15
+	picture = "province_razed"
+}
+ALC_iberia_claim = {
+	trade_efficiency = 0.15
+	naval_morale = 0.1
+	range = 0.33
+	picture = "province_razed"
+}
+ALC_mediterranean = {
+	naval_forcelimit_modifier = 0.25
+	ship_durability = 0.1
+	global_ship_trade_power = 0.2
+	picture = "province_razed"
+}
+ALC_africa_claim = {
+	global_manpower_modifier = 0.25
+	merc_maintenance_modifier = -0.15
+	hostile_attrition = 1
+	picture = "province_razed"
+}
+ALC_balkan_crown = {
+	land_morale = 0.15
+	shock_damage = 0.1
+	recover_army_morale_speed = 0.1
+	picture = "province_razed"
+}
+ALC_doll_hegemony = {
+	province_warscore_cost = -0.15
+	ae_impact = -0.2
+	mercenary_discipline = 0.1
+	core_creation = -0.15
+	picture = "province_razed"
+}
+ALC_doll_workshop = {
+	production_efficiency = 0.15
+	build_time = -0.25
+	global_trade_goods_size_modifier = 0.1
+	picture = "province_razed"
+}
+ALC_magic_academy = {
+	technology_cost = -0.05
+	innovativeness_gain = 0.5
+	idea_cost = -0.1
+	picture = "province_razed"
+}
+ALC_trade_empire = {
+	trade_efficiency = 0.15
+	merchants = 2
+	caravan_power = 0.2
+	picture = "province_razed"
+}
+ALC_industry = {
+	goods_produced_modifier = 0.15
+	development_cost = -0.1
+	global_allowed_num_of_manufactories = 1
+	picture = "province_razed"
+}
+ALC_economic_hegemony = {
+	all_power_cost = -0.1
+	interest = -3
+	years_of_nationalism = -10
+	picture = "province_razed"
+}
+ALC_fortification = {
+	defensiveness = 0.2
+	fort_maintenance_modifier = -0.25
+	garrison_damage = 0.15
+	picture = "province_razed"
+}
+ALC_naval_power = {
+	naval_morale = 0.15
+	ship_durability = 0.1
+	blockade_efficiency = 0.25
+	picture = "province_razed"
+}
+ALC_grand_cathedral = {
+	global_missionary_strength = 0.03
+	tolerance_own = 2
+	monthly_church_power = 0.1
+	picture = "province_razed"
+}
+ALC_monument_master = {
+	great_project_upgrade_cost = -0.33
+	prestige = 2
+	monthly_splendor = 2
+	picture = "province_razed"
+}
+ALC_world_wonder = {
+	great_project_upgrade_cost = -0.5
+	development_cost = -0.2
+	build_cost = -0.3
+	administrative_efficiency = 0.05
+	picture = "province_razed"
+}
+ALC_doll_research = {
+	technology_cost = -0.05
+	drill_gain_modifier = 0.25
+	yearly_army_professionalism = 0.02
+	picture = "province_razed"
+}
+ALC_doll_mass_prod = {
+	mercenary_manpower = 0.5
+	global_regiment_recruit_speed = -0.25
+	reinforce_cost_modifier = -0.2
+	picture = "province_razed"
+}
+ALC_doll_legion = {
+	mercenary_discipline = 0.1
+	available_mercenary_companies = 0.5
+	allow_mercenary_drill = yes
+	picture = "province_razed"
+}
+ALC_doll_army = {
+	land_morale = 0.1
+	reinforce_speed = 0.25
+	movement_speed = 0.15
+	picture = "province_razed"
+}
+ALC_doll_master = {
+	mercenary_discipline = 0.1
+	fire_damage = 0.15
+	shock_damage = 0.15
+	discipline = 0.05
+	picture = "province_razed"
+}
+ALC_master_spark = {
+	fire_damage = 0.2
+	siege_ability = 0.25
+	artillery_power = 0.1
+	leader_siege = 1
+	picture = "province_razed"
+}
+ALC_capital_fort = {
+	local_defensiveness = 1.0
+	supply_limit = 20
+	fort_level = 4
+	garrison_growth = 0.5
+}
