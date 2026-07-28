@@ -1,0 +1,707 @@
+gen2_military = {
+	slot = 6
+	generic = yes
+	ai = no
+	potential = {
+		always = yes
+	}
+	has_country_shield = no
+
+	gen2_build_army = {
+		icon = mission_assemble_an_army
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_claim = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+		}
+		trigger = {
+			army_size_percentage = 1.0
+		}
+		effect = {
+			custom_tooltip = perma_claim_neighbor_area
+			hidden_effect = {
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { is_core = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "gen2_military_readiness"
+				duration = -1
+			}
+			add_splendor = 50
+			add_prestige = 10
+			add_mil_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+	gen2_expand_country = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = { gen2_build_army }
+		provinces_to_highlight = {
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_claim = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+		}
+		trigger = {
+			OR = {
+				grown_by_development = 50
+				army_size_percentage = 0.9
+				AND = {
+					ai = yes
+					total_development = 150
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = perma_claim_neighbor_area
+			hidden_effect = {
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { is_core = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}
+			add_splendor = 100
+			add_prestige = 15
+			add_mil_power = 150
+			add_army_tradition = 20
+		}
+	}
+	gen2_assemble_grand_army = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { gen2_expand_country }
+		trigger = {
+			OR = {
+				army_size = 60
+				land_forcelimit = 80
+				AND = {
+					ai = yes
+					army_size_percentage = 0.8
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { army_tradition = 40 } }
+				create_general = { tradition = 40 }
+			}
+			else_if = {
+				limit = { NOT = { army_tradition = 60 } }
+				create_general = { tradition = 60 }
+			}
+			else_if = {
+				limit = { NOT = { army_tradition = 80 } }
+				create_general = { tradition = 80 }
+			}
+			else = {
+				create_general = { tradition = 100 }
+			}
+			add_country_modifier = {
+				name = "gen2_grand_army"
+				duration = -1
+			}
+			add_splendor = 150
+			add_prestige = 20
+			add_mil_power = 200
+		}
+	}
+	gen2_military_hegemony = {
+		icon = mission_cannons_firing
+		position = 4
+		required_missions = { gen2_assemble_grand_army }
+		trigger = {
+			total_development = 500
+			army_size_percentage = 0.9
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_military_hegemony"
+				duration = -1
+			}
+			add_splendor = 200
+			add_prestige = 30
+			add_mil_power = 250
+			add_stability = 1
+		}
+	}
+}
+
+gen2_naval = {
+	slot = 7
+	generic = yes
+	ai = no
+	potential = {
+		always = yes
+	}
+	has_country_shield = no
+
+	gen2_form_navy = {
+		icon = mission_rb_a_mighty_fleet
+		position = 1
+		trigger = {
+			num_of_total_ports = 5
+			navy_size_percentage = 0.9
+		}
+		effect = {
+			custom_tooltip = perma_claim_coastal_area
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_port = yes }
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { is_core = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "gen2_naval_readiness"
+				duration = 9125
+			}
+			add_splendor = 50
+			add_prestige = 10
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+	gen2_establish_fleet = {
+		icon = mission_establish_high_seas_navy
+		position = 2
+		required_missions = { gen2_form_navy }
+		trigger = {
+			OR = {
+				num_of_heavy_ship = 10
+				num_of_galley = 30
+				AND = {
+					ai = yes
+					num_of_total_ports = 10
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { navy_tradition = 40 } }
+				create_admiral = { tradition = 40 }
+			}
+			else_if = {
+				limit = { NOT = { navy_tradition = 60 } }
+				create_admiral = { tradition = 60 }
+			}
+			else = {
+				create_admiral = { tradition = 80 }
+			}
+			add_country_modifier = {
+				name = "gen2_established_fleet"
+				duration = -1
+			}
+			add_splendor = 100
+			add_prestige = 15
+			add_dip_power = 150
+		}
+	}
+	gen2_dominate_trade = {
+		icon = mission_dominate_home_trade_node
+		position = 3
+		required_missions = { gen2_establish_fleet }
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_trade_dominance"
+				duration = -1
+			}
+			add_splendor = 150
+			add_prestige = 20
+			add_dip_power = 200
+			add_mercantilism_or_monarch_power = { amount = 2 }
+		}
+	}
+	gen2_global_navy = {
+		icon = mission_sea_battles
+		position = 4
+		required_missions = { gen2_dominate_trade }
+		trigger = {
+			OR = {
+				num_of_heavy_ship = 25
+				num_of_light_ship = 40
+				AND = {
+					ai = yes
+					navy_size_percentage = 0.9
+					total_development = 200
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { navy_tradition = 40 } }
+				create_explorer = { tradition = 40 }
+			}
+			else_if = {
+				limit = { NOT = { navy_tradition = 60 } }
+				create_explorer = { tradition = 60 }
+			}
+			else = {
+				create_explorer = { tradition = 80 }
+			}
+			add_country_modifier = {
+				name = "gen2_global_navy"
+				duration = -1
+			}
+			add_splendor = 200
+			add_prestige = 25
+			add_dip_power = 250
+			add_stability = 1
+		}
+	}
+	gen2_maritime_empire = {
+		icon = mission_empire
+		position = 5
+		required_missions = { gen2_global_navy }
+		trigger = {
+			num_of_total_ports = 25
+			total_development = 600
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_maritime_empire"
+				duration = -1
+			}
+			add_splendor = 300
+			add_prestige = 35
+			add_dip_power = 300
+			add_years_of_income = 1.0
+			add_stability = 1
+		}
+	}
+}
+
+gen2_diplomatic = {
+	slot = 8
+	generic = yes
+	ai = no
+	potential = {
+		always = yes
+	}
+	has_country_shield = no
+
+	gen2_build_alliances = {
+		icon = mission_alliances
+		position = 1
+		trigger = {
+			num_of_allies = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_diplomatic_network"
+				duration = -1
+			}
+			add_splendor = 50
+			add_prestige = 10
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+	gen2_raise_subjects = {
+		icon = mission_have_two_subjects
+		position = 2
+		required_missions = { gen2_build_alliances }
+		trigger = {
+			OR = {
+				num_of_non_tributary_subjects = 2
+				diplomatic_reputation = 2
+				AND = {
+					ai = yes
+					total_development = 200
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { num_of_non_tributary_subjects = 1 }
+				every_subject_country = {
+					limit = { liberty_desire = 10 }
+					add_liberty_desire = -10
+				}
+			}
+			add_country_modifier = {
+				name = "gen2_subject_loyalty"
+				duration = -1
+			}
+			add_splendor = 100
+			add_prestige = 15
+			add_dip_power = 150
+		}
+	}
+	gen2_diplomatic_ambition = {
+		icon = mission_monarch_in_throne_room
+		position = 3
+		required_missions = { gen2_raise_subjects }
+		trigger = {
+			OR = {
+				diplomatic_reputation = 2
+				improve_relation_modifier = 0.20
+				AND = {
+					ai = yes
+					num_of_allies = 3
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = perma_claim_capital_region
+			hidden_effect = {
+				capital_scope = {
+					every_province = {
+						limit = {
+							region = PREV
+							NOT = { owned_by = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+			define_advisor = {
+				type = diplomat
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+			add_splendor = 150
+			add_prestige = 20
+			add_dip_power = 200
+		}
+	}
+	gen2_global_presence = {
+		icon = mission_empire
+		position = 4
+		required_missions = { gen2_diplomatic_ambition }
+		trigger = {
+			is_great_power = yes
+			num_of_allies = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_global_presence"
+				duration = -1
+			}
+			add_splendor = 200
+			add_prestige = 30
+			add_dip_power = 250
+			add_stability = 1
+		}
+	}
+}
+
+gen2_administrative = {
+	slot = 9
+	generic = yes
+	ai = no
+	potential = {
+		always = yes
+	}
+	has_country_shield = no
+
+	gen2_build_treasury = {
+		icon = mission_war_chest
+		position = 1
+		trigger = {
+			OR = {
+				treasury = 1000
+				monthly_income = 20
+				AND = {
+					ai = yes
+					treasury = 500
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_fiscal_discipline"
+				duration = 9125
+			}
+			add_splendor = 50
+			add_prestige = 10
+			add_adm_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+	gen2_high_income = {
+		icon = mission_high_income
+		position = 2
+		required_missions = { gen2_build_treasury }
+		trigger = {
+			OR = {
+				monthly_income = 40
+				AND = {
+					ai = yes
+					total_development = 200
+					treasury = 1000
+				}
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = treasurer
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+			add_country_modifier = {
+				name = "gen2_economic_growth"
+				duration = 9125
+			}
+			add_splendor = 100
+			add_prestige = 15
+			add_adm_power = 150
+		}
+	}
+	gen2_build_manufactories = {
+		icon = mission_have_manufactories
+		position = 3
+		required_missions = { gen2_high_income }
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					has_manufactory_trigger = yes
+					value = 7
+				}
+				AND = {
+					ai = yes
+					num_of_owned_provinces_with = {
+						has_manufactory_trigger = yes
+						value = 3
+					}
+					total_development = 300
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Rule Britannia" }
+				}
+				add_innovativeness_big_effect = yes
+			}
+			add_country_modifier = {
+				name = "gen2_manufacturing"
+				duration = -1
+			}
+			add_splendor = 150
+			add_prestige = 20
+			add_adm_power = 200
+		}
+	}
+	gen2_economic_empire = {
+		icon = mission_empire
+		position = 4
+		required_missions = { gen2_build_manufactories }
+		trigger = {
+			total_development = 500
+			monthly_income = 80
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_economic_empire"
+				duration = -1
+			}
+			add_splendor = 200
+			add_prestige = 30
+			add_adm_power = 250
+			add_years_of_income = 1.0
+		}
+	}
+}
+
+gen2_domestic = {
+	slot = 10
+	generic = yes
+	ai = no
+	potential = {
+		always = yes
+	}
+	has_country_shield = no
+
+	gen2_build_temples = {
+		icon = mission_european_church
+		position = 1
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					has_building = cathedral
+					value = 3
+				}
+				num_of_owned_provinces_with = {
+					has_building = temple
+					value = 5
+				}
+				AND = {
+					ai = yes
+					num_of_owned_provinces_with = {
+						has_building = temple
+						value = 3
+					}
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital_area"
+						duration = 9125
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "gen2_religious_unity"
+				duration = -1
+			}
+			add_splendor = 50
+			add_prestige = 10
+			add_adm_power = 100
+		}
+	}
+	gen2_root_out_corruption = {
+		icon = mission_noble_council
+		position = 2
+		required_missions = { gen2_build_temples }
+		trigger = {
+			stability = 1
+			monthly_income = 15
+		}
+		effect = {
+			if = {
+				limit = { NOT = { corruption = 0 } }
+				add_corruption = -2
+			}
+			add_country_modifier = {
+				name = "gen2_clean_government"
+				duration = -1
+			}
+			add_splendor = 100
+			add_prestige = 15
+			add_adm_power = 150
+			add_stability = 1
+		}
+	}
+	gen2_cultural_development = {
+		icon = mission_europa_university
+		position = 3
+		required_missions = { gen2_root_out_corruption }
+		trigger = {
+			OR = {
+				num_accepted_cultures = 2
+				adm_tech = 8
+				AND = {
+					ai = yes
+					total_development = 250
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "gen2_cultural_flourishing"
+				duration = -1
+			}
+			add_splendor = 100
+			add_prestige = 20
+			add_adm_power = 150
+		}
+	}
+	gen2_imperial_splendor = {
+		icon = mission_empire
+		position = 4
+		required_missions = { gen2_cultural_development }
+		trigger = {
+			total_development = 400
+			prestige = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gen2_imperial_splendor"
+				duration = -1
+			}
+			add_splendor = 250
+			add_prestige = 35
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+		}
+	}
+	gen2_urban_development = {
+		icon = mission_early_game_buildings
+		position = 5
+		required_missions = { gen2_imperial_splendor }
+		trigger = {
+			total_development = 600
+			OR = {
+				num_of_owned_provinces_with = {
+					has_building = university
+					value = 3
+				}
+				num_of_owned_provinces_with = {
+					has_building = workshop
+					value = 8
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_country_modifier = {
+				name = "gen2_urban_development"
+				duration = -1
+			}
+			add_splendor = 200
+			add_prestige = 25
+			add_adm_power = 200
+			add_stability = 1
+		}
+	}
+}

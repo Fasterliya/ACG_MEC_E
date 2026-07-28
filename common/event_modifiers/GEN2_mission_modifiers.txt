@@ -1,0 +1,80 @@
+#============== GEN2 通用任务修正 ==============
+
+gen2_military_readiness = {
+	infantry_power = 0.15
+}
+gen2_grand_army = {
+	discipline = 0.075
+	siege_ability = 0.15
+}
+gen2_military_hegemony = {
+	land_morale = 0.15
+	fire_damage = 0.10
+	shock_damage_received = -0.05
+}
+gen2_naval_readiness = {
+	naval_morale = 0.10
+}
+gen2_established_fleet = {
+	galley_power = 0.15
+	heavy_ship_power = 0.15
+}
+gen2_trade_dominance = {
+	trade_efficiency = 0.15
+}
+gen2_global_navy = {
+	naval_forcelimit_modifier = 0.25
+	ship_durability = 0.15
+	naval_morale = 0.10
+}
+gen2_maritime_empire = {
+	global_colonial_growth = 30
+	range = 0.33
+	may_explore = yes
+}
+gen2_diplomatic_network = {
+	improve_relation_modifier = 0.25
+}
+gen2_subject_loyalty = {
+	reduced_liberty_desire = 20
+}
+gen2_global_presence = {
+	diplomats = 1
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.15
+}
+gen2_fiscal_discipline = {
+	global_tax_modifier = 0.10
+}
+gen2_economic_growth = {
+	advisor_cost = -0.15
+}
+gen2_manufacturing = {
+	production_efficiency = 0.20
+}
+gen2_economic_empire = {
+	development_cost = -0.15
+	goods_produced_modifier = 0.15
+	production_efficiency = 0.10
+}
+gen2_religious_unity = {
+	global_unrest = -3
+}
+gen2_clean_government = {
+	yearly_corruption = -0.15
+}
+gen2_cultural_flourishing = {
+	culture_conversion_cost = -0.20
+}
+gen2_imperial_splendor = {
+	prestige_decay = -0.01
+	monthly_splendor = 2
+	prestige = 0.5
+}
+gen2_urban_development = {
+	build_cost = -0.20
+	build_time = -0.20
+}
+growth_of_capital_area = {
+	local_development_cost = -0.10
+}
