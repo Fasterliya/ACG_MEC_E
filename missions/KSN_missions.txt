@@ -154,9 +154,8 @@ KSN_missions_6 = {
 		}
 		trigger = {
 			total_development = 1000
-			is_hegemon = yes
 			OR = {
-				monthly_income = 200
+				monthly_income = 100
 				land_forcelimit = 150
 			}
 		}
@@ -174,7 +173,6 @@ KSN_missions_6 = {
 		required_missions = { KSN_missions_6_7 }
 		trigger = {
 			total_development = 1500
-			is_hegemon = yes
 		}
 		effect = {
 			add_country_modifier = { name = KSN_ultimate_engineer duration = -1 }
@@ -204,7 +202,7 @@ KSN_missions_7 = {
 		icon = mission_african_soldier
 		position = 1
 		trigger = {
-			navy_size_percentage = 0.8
+			always = yes
 		}
 		effect = {
 			tunisia_area = {
@@ -221,6 +219,7 @@ KSN_missions_7 = {
 			add_dip_power = 100
 			change_government_reform_progress = 25
 			add_treasury = 400
+			inherit = SMM
 		}
 	}
 	KSN_missions_7_2 = {

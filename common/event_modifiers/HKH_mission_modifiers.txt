@@ -57,6 +57,7 @@ HKH_omniscient_empire = {
 	idea_cost = -0.10
 	technology_cost = -0.10
 	development_cost = -0.20
+	administrative_efficiency = 0.10
 }
 
 HKH_maghreb_base = {
@@ -206,6 +207,7 @@ HKH_mobile_warfare = {
 	movement_speed = 0.2
 	land_attrition = -0.2
 	cavalry_flanking = 0.15
+	reinforce_speed = 0.15
 }
 
 HKH_shock_tactics = {
@@ -232,6 +234,7 @@ HKH_tengu_riders = {
 	cavalry_power = 0.15
 	shock_damage = 0.1
 	shock_damage_received = -0.1
+	reinforce_speed = 0.18
 }
 
 HKH_cavalry_supremacy = {
