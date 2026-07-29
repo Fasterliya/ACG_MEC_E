@@ -1,0 +1,838 @@
+# acg_generic_1 = {	#内政线
+# 	slot = 1
+# 	generic = yes
+# 	ai = yes
+# 	has_country_shield = no
+# 	potential = {
+# 		OR = {
+# 			religion_group = Anime
+# 			tag = DJD
+# 			tag = QIN
+# 		}
+# 	}
+
+# 	acg_genertic_1_1 = {	#稳定政权
+# 		icon = mission_empire
+# 		position = 1
+# 		required_missions = {
+
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				stability = 1
+# 				national_focus = ADM
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			custom_tooltip = acg_genertic_1_1_tt
+# 			if = {
+# 				limit = {
+# 					national_focus = ADM
+# 					stability = 1
+# 				}
+# 				add_stability = 1
+# 				define_advisor = {
+# 					type = artist
+# 					skill = 2
+# 					cost_multiplier = 0.33
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					stability = 1
+# 					NOT = {
+# 						national_focus = ADM
+# 					}
+# 				}
+# 				define_advisor = {
+# 					type = artist
+# 					skill = 1
+# 					cost_multiplier = 0.5
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					national_focus = ADM
+# 					NOT = {
+# 						stability = 1
+# 					}
+# 				}
+# 				add_stability = 1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_1_2 = {	#扩张教会
+# 		icon = mission_book_of_royal_degrees
+# 		position = 2
+# 		required_missions = {
+# 			acg_genertic_1_1
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				custom_trigger_tooltip = {
+# 					tooltip = obj_convert_10_provinces_tooltip
+# 					check_variable = { which = num_converted_religion value = 25 }
+# 				}
+# 				stability = 3
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			custom_tooltip = acg_genertic_1_2_tt
+# 			if = {
+# 				limit = {
+# 					check_variable = { 
+# 						which = num_converted_religion 
+# 						value = 25 
+# 					}
+# 				}
+# 				add_country_modifier = {
+# 					name = acg_genertic_1_2_modifier
+# 					duration = 3650
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					stability = 3
+# 				}
+# 				add_country_modifier = {
+# 					name = acg_genertic_1_2_modifier_branch
+# 					duration = 3650
+# 				}
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_1_3 = {	#开采原料
+# 		icon = bohemian_crystal
+# 		position = 3
+# 		required_missions = {
+# 			acg_genertic_1_2
+# 		}
+# 		trigger = { 
+# 			dip_power_cost = 100
+# 			OR = {
+# 				any_owned_province = {
+# 					OR = {
+# 						trade_goods = Magic_material
+# 						trade_goods = Magic_crystal
+# 					}
+# 					development = 15
+# 				}
+# 				any_owned_province = {
+# 					NOT = {
+# 						OR = {
+# 							trade_goods = Magic_material
+# 							trade_goods = Magic_crystal
+# 						}
+# 					}
+# 					development = 24
+# 				}
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_dip_power = -100
+# 			custom_tooltip = acg_genertic_1_3_tt
+# 			country_event = {
+# 				id = acgr_genertic.1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_1_4 = {	#改善生产
+# 		icon = mission_rb_build_furnaces
+# 		position = 4
+# 		required_missions = {
+# 			acg_genertic_1_3
+# 			acg_genertic_2_3
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				workshop = 20
+# 				counting_house = 20
+# 				production_income_percentage = 0.25
+# 				num_of_trading_bonuses = 2
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_country_modifier = {
+# 				name = acg_genertic_1_4_modifier_1
+# 				duration = 7300
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_1_4_modifier_2
+# 				duration = 7300
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_1_4_modifier_3
+# 				duration = 7300
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_1_5 = {	#制定改革
+# 		icon = mission_the_polish_throne
+# 		position = 5
+# 		required_missions = {
+# 			acg_genertic_1_4
+# 		}
+# 		trigger = { 
+# 			reform_level = 11
+# 			stability = 3
+# 			government_rank = 3
+# 			adm_power = 150
+# 		} 
+
+# 		effect = { 
+# 			add_adm_power = -150
+# 			add_country_modifier = {
+# 				name = acg_genertic_1_5_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# }
+
+# acg_genertic_2 = {	#魔法线
+# 	slot = 2
+# 	generic = yes
+# 	ai = yes
+# 	has_country_shield = no
+# 	potential = {
+# 		OR = {
+# 			religion_group = Anime
+# 			tag = DJD
+# 			tag = QIN
+# 		}
+# 	}
+# 	acg_genertic_2_1 = {	#初入神秘
+# 		icon = mission_persian_lion
+# 		position = 1
+# 		required_missions = {
+
+# 		}
+# 		trigger = { 
+# 			has_institution = renaissance
+# 			treasury = 50
+# 		} 
+
+# 		effect = { 
+# 			add_treasury = -50
+# 			change_variable = {
+# 				which = Mana
+# 				value = 15
+# 			}
+# 			custom_tooltip = acg_genertic_2_1_tt
+# 			add_country_modifier = {
+# 				name = acg_genertic_2_1_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+
+# 	acg_genertic_2_2 = {	#奠定理论
+# 		icon = the_great_school
+# 		position = 2
+# 		required_missions = {
+# 			acg_genertic_2_1
+# 		}
+# 		trigger = { 
+# 			is_institution_enabled = Basic_Laws_of_Magic
+# 			check_variable = {
+# 				which = Mana
+# 				value = 20
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			subtract_variable = {
+# 				which = Mana
+# 				value = 20
+# 			}
+# 			custom_tooltip = acg_genertic_2_2_tt
+# 			add_country_modifier = {
+# 				name = acg_genertic_2_2_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_2_3 = {	#加强研究
+# 		icon = mission_plc_edict_education
+# 		position = 3
+# 		required_missions = {
+# 			acg_genertic_2_2
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				innovativeness = 35
+# 				full_idea_group = innovativeness_ideas
+# 				full_idea_group = education_ideas
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			change_variable = {
+# 				which = Mana
+# 				value = 15
+# 			}
+# 			add_adm_power = 200
+# 			change_innovativeness = 10
+# 			add_country_modifier = {
+# 				name = acg_genertic_2_3_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+
+# 	acg_genertic_2_4 = {	#推广教育
+# 		icon = mission_swedish_peasantry
+# 		position = 4
+# 		required_missions = {
+# 			acg_genertic_2_3
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				AND = {
+# 					university = 20
+# 					treasury = 600
+# 				}
+# 				AND = {
+# 					full_idea_group = education_ideas
+# 					adm_power = 200
+# 				}
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_adm_power = 200
+# 			add_dip_power = 200
+# 			add_mil_power = 200
+# 			add_country_modifier = {
+# 				name = acg_genertic_2_4_modifier
+# 				duration = 18250
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_2_4_modifier_2
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_2_5 = {	#大规模应用
+# 		icon = strengthen_the_vroedschappen
+# 		position = 5
+# 		required_missions = {
+# 			acg_genertic_2_4
+# 		}
+# 		trigger = { 
+# 			total_development = 2000
+# 			check_variable = {
+# 				which = Mana
+# 				value = 100
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			subtract_variable = {
+# 				which = Mana
+# 				value = 100
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_2_5_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# }
+
+# acg_genertic_3 = {	#军事线
+# 	slot = 3
+# 	generic = yes
+# 	ai = yes
+# 	has_country_shield = no
+# 	potential = {
+# 		OR = {
+# 			religion_group = Anime
+# 			tag = DJD
+# 			tag = QIN
+# 		}
+# 	}
+# 	acg_genertic_3_1 = {	#重整军备
+# 		icon = mission_conquer_kannauj
+# 		position = 1
+# 		required_missions = {
+
+# 		}
+# 		trigger = { 
+# 			army_size_percentage = 0.9
+# 			mil_tech = 4
+# 		} 
+
+# 		effect = { 
+# 			add_manpower = 5
+# 			create_general = {
+# 				tradition = 50
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_3_2 = {	#培养将领
+# 		icon = gory_to_the_black_army
+# 		position = 2
+# 		required_missions = {
+# 			acg_genertic_3_1
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				army_tradition = 40
+# 				estate_loyalty = {
+# 					estate = estate_nobles
+# 					loyalty = 75
+# 				}
+# 				has_idea = battlefield_commisions
+# 				has_idea = quality_education
+# 				has_idea = noble_officers
+# 				has_idea = Military_education
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_army_professionalism = 0.05
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_2_modifier_1
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_3_3 = {	#职业训练
+# 		icon = mission_mnd_maj_subjugate_makassar
+# 		position = 3
+# 		required_missions = {
+# 			acg_genertic_3_2
+# 		}
+# 		trigger = { 
+# 			army_professionalism = 0.5
+# 		} 
+
+# 		effect = { 
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_3_modifier
+# 				duration = 18250
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_3_modifier_1
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_3_4 = {	#武备生产
+# 		icon = the_ostend_company
+# 		position = 4
+# 		required_missions = {
+# 			acg_genertic_3_3
+# 			acg_genertic_2_3
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				AND = {
+# 					treasury = 500
+# 					check_variable = {
+# 						which = Mana
+# 						value = 25
+# 					}
+# 				}
+# 				full_idea_group = infrastructure_ideas
+# 				full_idea_group = economic_ideas
+# 				full_idea_group = innovativeness_ideas
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_4_modifier_1
+# 				duration = -1
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_4_modifier_2
+# 				duration = -1
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_4_modifier_3
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_3_5 = {	#铁血强军
+# 		icon = mission_subdue_rajputana
+# 		position = 5
+# 		required_missions = {
+# 			acg_genertic_3_4
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				full_idea_group = quality_ideas
+# 				full_idea_group = quantity_ideas
+# 				full_idea_group = offensive_ideas
+# 				full_idea_group = defensive_ideas
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_5_modifier_1
+# 				duration = -1
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_5_modifier_2
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_3_6 = {	#永恒霸权
+# 		icon = mission_city_of_the_world's_desire
+# 		position = 6
+# 		required_missions = {
+# 			acg_genertic_3_5
+# 		}
+# 		trigger = { 
+# 			is_hegemon = yes
+# 			army_size_percentage = 1
+# 			manpower_percentage = 1
+# 		} 
+
+# 		effect = { 
+# 			add_mil_tech = 1
+# 			add_country_modifier = {
+# 				name = acg_genertic_3_6_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# }
+# acg_genertic_4 = {	#殖民线与经济线
+# 	slot = 4
+# 	generic = yes
+# 	ai = yes
+# 	has_country_shield = no
+# 	potential = {
+# 		OR = {
+# 			religion_group = Anime
+# 			tag = DJD
+# 			tag = QIN
+# 		}
+# 	}
+# 	acg_genertic_4_1 = {	#粮食安全
+# 		icon = unite_the_league
+# 		position = 1
+# 		required_missions = {
+
+# 		}
+# 		trigger = { 	
+# 			development_in_provinces = {
+# 				value = 150
+# 				OR = {
+# 					trade_goods = grain
+# 					trade_goods = wine
+# 					trade_goods = fish
+# 					trade_goods = livestock
+# 				}
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_years_of_income = 0.2
+# 		} 
+# 	}
+# 	acg_genertic_4_2 = {	#商路稳定
+# 		icon = establish_oktoberfest
+# 		position = 2
+# 		required_missions = {
+# 			acg_genertic_4_1
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				advisor = trader
+# 				trade_income_percentage = 0.2
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_mercantilism = 2
+# 			define_advisor = {
+# 				type = trader
+# 				skill = 2
+# 				cost_multiplier = 0.5
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_4_3 = {	#转向海洋
+# 		icon = imperial_navy
+# 		position = 3
+# 		required_missions = {
+# 			acg_genertic_4_2
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				num_of_heavy_ship = 20
+# 				num_of_light_ship = 50
+# 				num_of_galley = 70
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_sailors = 0.25
+# 			add_country_modifier = {
+# 				name = acg_genertic_4_3_modifier
+# 				duration = -1
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_4_3_modifier_1
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_4_4 = {	#贸易霸权
+# 		icon = mission_look_west
+# 		position = 4
+# 		required_missions = {
+# 			acg_genertic_4_3
+# 		}
+# 		trigger = { 
+# 			development_in_provinces = {
+# 				value = 700
+# 				province_has_center_of_trade_of_level = 1
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_country_modifier = {
+# 				name = acg_genertic_4_4_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_4_5 = {	#海外殖民
+# 		icon = mission_raid_christian_trade
+# 		position = 5
+# 		required_missions = {
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				expansion_ideas = 1
+# 				exploration_ideas = 1
+# 			}
+# 		} 
+
+# 		effect = {
+# 			create_explorer = {
+# 				tradition = 50
+# 			}
+# 			create_conquistador = {
+# 				tradition = 50
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_4_5_modifier
+# 				duration = -1
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_4_5_modifier_1
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_4_6 = {	#日不落帝国
+# 		icon = mal_trade_with_europeans
+# 		position = 6
+# 		required_missions = {
+# 			acg_genertic_4_5
+# 		}
+# 		trigger = { 
+# 			colony = 5
+# 		} 
+
+# 		effect = { 
+# 			add_country_modifier = {
+# 				name = acg_genertic_4_6_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# }
+# acg_genertic_5 = {	#外交线
+# 	slot = 5
+# 	generic = yes
+# 	ai = yes
+# 	has_country_shield = no
+# 	potential = {
+# 		OR = {
+# 			religion_group = Anime
+# 			tag = DJD
+# 			tag = QIN
+# 		}
+# 	}
+# 	acg_genertic_5_1 = {	#寻求盟友
+# 		icon = support_american_independence
+# 		position = 1
+# 		required_missions = {
+# 		}
+# 		trigger = { 
+# 			calc_true_if = {
+# 				all_ally = {
+# 					religion_group = ROOT
+# 				}
+# 				amount = 2
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			add_dip_power = 150
+# 		} 
+# 	}
+# 	acg_genertic_5_2 = {	#统一地区之路
+# 		icon = mission_rb_monopolize_the_channel
+# 		position = 2
+# 		required_missions = {
+# 			acg_genertic_5_1
+# 		}
+# 		trigger = { 
+# 			overextension_percentage = 0.5
+# 		} 
+
+# 		effect = { 
+# 			add_adm_power = 100
+# 			custom_tooltip = acg_genertic_5_2_tt
+# 			hidden_effect = {
+# 				every_neighbor_province = {
+# 					add_claim = ROOT
+# 				}
+# 			}
+# 		} 
+# 	}
+# 	acg_genertic_5_3 = {	#威震四方
+# 		icon = mission_friends_or_enemies
+# 		position = 3
+# 		required_missions = {
+# 			acg_genertic_5_2
+# 		}
+# 		trigger = { 
+# 			calc_true_if = {
+# 				all_neighbor_country = {
+# 					OR = {
+# 						ai_attitude = {
+# 							who = ROOT
+# 							attitude = attitude_hostile
+# 						}
+# 						ai_attitude = {
+# 							who = ROOT
+# 							attitude = attitude_threatened
+# 						}
+# 						ai_attitude = {
+# 							who = ROOT
+# 							attitude = attitude_outraged
+# 						}
+# 						ai_attitude = {
+# 							who = ROOT
+# 							attitude = attitude_rivalry
+# 						}
+# 					}
+# 				}
+# 				amount = 5
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			capital_scope = {
+# 				region = {
+# 					add_claim = ROOT
+# 				}
+# 			}
+# 			tooltip = {
+# 				custom_tooltip = acg_genertic_5_3_tt_1
+# 			add_country_modifier = {
+# 				name = acg_genertic_5_3_modifier
+# 				duration = -1
+# 			}
+# 		}
+# 	}
+# 	acg_genertic_5_4 = {	#附庸忠诚
+# 		icon = mission_have_two_subjects
+# 		position = 4
+# 		required_missions = {
+# 			acg_genertic_5_3
+# 		}
+# 		trigger = { 
+# 			calc_true_if = {
+# 				all_country = {
+# 					is_subject_of = ROOT
+# 					NOT = {
+# 						liberty_desire = 5
+# 					}
+# 				}
+# 				amount = 3
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			capital_scope = {
+# 				region = {
+# 					add_permanent_claim = ROOT
+# 				}
+# 			}
+# 			tooltip = {
+# 				custom_tooltip = acg_genertic_5_4_tt
+# 			add_country_modifier = {
+# 				name = acg_genertic_5_4_modifier
+# 				duration = -1
+# 			}
+# 		}
+# 	}
+# 	acg_genertic_5_5 = {	#没有硝烟的战场
+# 		icon = mission_plc_golden_liberty
+# 		position = 5
+# 		required_missions = {
+# 			acg_genertic_5_4
+# 		}
+# 		trigger = { 
+# 			OR = {
+# 				is_hegemon = yes
+# 				calc_true_if = {
+# 					all_neighbor_country = {
+# 						OR = {
+# 							ai_attitude = {
+# 								who = ROOT
+# 								attitude = attitude_hostile
+# 							}
+# 							ai_attitude = {
+# 								who = ROOT
+# 								attitude = attitude_threatened
+# 							}
+# 							ai_attitude = {
+# 								who = ROOT
+# 								attitude = attitude_outraged
+# 							}
+# 							ai_attitude = {
+# 								who = ROOT
+# 								attitude = attitude_rivalry
+# 							}
+# 						}
+# 					}
+# 					amount = 10
+# 				}
+# 				dip_tech = 20
+# 			}
+# 		} 
+
+# 		effect = { 
+# 			custom_tooltip = acg_genertic_5_5_tt
+# 			hidden_effect = {
+# 				every_owned_province = {
+# 					region = {
+# 						add_permanent_claim = ROOT
+# 					}
+# 				}
+# 			}
+# 			add_country_modifier = {
+# 				name = acg_genertic_5_5_modifier
+# 				duration = -1
+# 			}
+# 		} 
+# 	}
+# }

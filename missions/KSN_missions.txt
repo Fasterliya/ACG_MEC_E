@@ -1,5 +1,5 @@
 KSN_missions_6 = {
-	slot = 6
+	slot = 1
 	generic = no
 	ai = yes
 	potential = {
@@ -189,7 +189,7 @@ KSN_missions_6 = {
 }
 
 KSN_missions_7 = {
-	slot = 7
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -427,7 +427,7 @@ KSN_missions_7 = {
 }
 
 KSN_missions_8 = {
-	slot = 8
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -675,7 +675,7 @@ KSN_missions_8 = {
 }
 
 KSN_missions_9 = {
-	slot = 9
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -758,7 +758,7 @@ KSN_missions_9 = {
 			num_of_light_ship = 30
 			OR = {
 				has_country_flag = KSN_privateer_mission_flag
-				monthly_income = 80
+				monthly_income = 50
 			}
 		}
 		effect = {
@@ -824,7 +824,7 @@ KSN_missions_9 = {
 }
 
 KSN_missions_10 = {
-	slot = 10
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
@@ -837,7 +837,7 @@ KSN_missions_10 = {
 		icon = mission_have_manufactories
 		position = 1
 		trigger = {
-			monthly_income = 25
+			monthly_income = 10
 		}
 		effect = {
 			add_country_modifier = { name = KSN_economic_power duration = -1 }
@@ -856,7 +856,7 @@ KSN_missions_10 = {
 				has_manufactory_trigger = yes
 				value = 5
 			}
-			monthly_income = 50
+			monthly_income = 25
 		}
 		effect = {
 			add_country_modifier = { name = KSN_capital_industry duration = -1 }
@@ -897,7 +897,7 @@ KSN_missions_10 = {
 				has_manufactory_trigger = yes
 				value = 10
 			}
-			monthly_income = 100
+			monthly_income = 50
 		}
 		effect = {
 			add_country_modifier = { name = KSN_manufacturing_empire duration = -1 }
@@ -913,7 +913,7 @@ KSN_missions_10 = {
 		required_missions = { KSN_missions_10_4 }
 		trigger = {
 			total_development = 600
-			monthly_income = 150
+			monthly_income = 100
 		}
 		effect = {
 			add_country_modifier = { name = KSN_grand_infrastructure duration = -1 }
@@ -945,7 +945,7 @@ KSN_missions_10 = {
 		required_missions = { KSN_missions_10_6 }
 		trigger = {
 			total_development = 1000
-			monthly_income = 200
+			monthly_income = 100
 			num_of_owned_provinces_with = {
 				has_manufactory_trigger = yes
 				value = 15
@@ -969,7 +969,7 @@ KSN_missions_10 = {
 		required_missions = { KSN_missions_10_7 }
 		trigger = {
 			total_development = 1500
-			monthly_income = 300
+			monthly_income = 250
 		}
 		effect = {
 			add_country_modifier = { name = KSN_industrial_empire duration = -1 }

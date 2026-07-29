@@ -32,7 +32,7 @@ gen2_military = {
 			hidden_effect = {
 				every_owned_province = {
 					every_neighbor_province = {
-						area = {
+						region = {
 							limit = {
 								NOT = { owned_by = ROOT }
 								NOT = { is_permanent_claim = ROOT }
@@ -72,10 +72,6 @@ gen2_military = {
 			OR = {
 				grown_by_development = 50
 				army_size_percentage = 0.9
-				AND = {
-					ai = yes
-					total_development = 150
-				}
 			}
 		}
 		effect = {
@@ -108,10 +104,6 @@ gen2_military = {
 			OR = {
 				army_size = 60
 				land_forcelimit = 80
-				AND = {
-					ai = yes
-					army_size_percentage = 0.8
-				}
 			}
 		}
 		effect = {
@@ -211,10 +203,6 @@ gen2_naval = {
 			OR = {
 				num_of_heavy_ship = 10
 				num_of_galley = 30
-				AND = {
-					ai = yes
-					num_of_total_ports = 10
-				}
 			}
 		}
 		effect = {
@@ -269,11 +257,6 @@ gen2_naval = {
 			OR = {
 				num_of_heavy_ship = 25
 				num_of_light_ship = 40
-				AND = {
-					ai = yes
-					navy_size_percentage = 0.9
-					total_development = 200
-				}
 			}
 		}
 		effect = {
@@ -354,10 +337,6 @@ gen2_diplomatic = {
 			OR = {
 				num_of_non_tributary_subjects = 2
 				diplomatic_reputation = 2
-				AND = {
-					ai = yes
-					total_development = 200
-				}
 			}
 		}
 		effect = {
@@ -385,10 +364,6 @@ gen2_diplomatic = {
 			OR = {
 				diplomatic_reputation = 2
 				improve_relation_modifier = 0.20
-				AND = {
-					ai = yes
-					num_of_allies = 3
-				}
 			}
 		}
 		effect = {
@@ -454,10 +429,6 @@ gen2_administrative = {
 			OR = {
 				treasury = 1000
 				monthly_income = 20
-				AND = {
-					ai = yes
-					treasury = 500
-				}
 			}
 		}
 		effect = {
@@ -476,14 +447,7 @@ gen2_administrative = {
 		position = 2
 		required_missions = { gen2_build_treasury }
 		trigger = {
-			OR = {
-				monthly_income = 40
-				AND = {
-					ai = yes
-					total_development = 200
-					treasury = 1000
-				}
-			}
+			monthly_income = 40
 		}
 		effect = {
 			define_advisor = {
@@ -507,19 +471,9 @@ gen2_administrative = {
 		position = 3
 		required_missions = { gen2_high_income }
 		trigger = {
-			OR = {
-				num_of_owned_provinces_with = {
-					has_manufactory_trigger = yes
-					value = 7
-				}
-				AND = {
-					ai = yes
-					num_of_owned_provinces_with = {
-						has_manufactory_trigger = yes
-						value = 3
-					}
-					total_development = 300
-				}
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				value = 7
 			}
 		}
 		effect = {
@@ -581,13 +535,6 @@ gen2_domestic = {
 					has_building = temple
 					value = 5
 				}
-				AND = {
-					ai = yes
-					num_of_owned_provinces_with = {
-						has_building = temple
-						value = 3
-					}
-				}
 			}
 		}
 		effect = {
@@ -643,10 +590,6 @@ gen2_domestic = {
 			OR = {
 				num_accepted_cultures = 2
 				adm_tech = 8
-				AND = {
-					ai = yes
-					total_development = 250
-				}
 			}
 		}
 		effect = {

@@ -1,5 +1,5 @@
 ALC_missions_6 = {
-	slot = 6
+	slot = 1
 	generic = no
 	ai = yes
 	potential = {
@@ -189,7 +189,7 @@ ALC_missions_6 = {
 }
 
 ALC_missions_7 = {
-	slot = 7
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -351,7 +351,7 @@ ALC_missions_7 = {
 }
 
 ALC_missions_8 = {
-	slot = 8
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -448,7 +448,7 @@ ALC_missions_8 = {
 }
 
 ALC_missions_9 = {
-	slot = 9
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -535,7 +535,7 @@ ALC_missions_9 = {
 }
 
 ALC_missions_10 = {
-	slot = 10
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {

@@ -1,5 +1,5 @@
 HKH_missions_6 = {
-	slot = 6
+	slot = 1
 	generic = no
 	ai = yes
 	potential = {
@@ -188,7 +188,7 @@ HKH_missions_6 = {
 }
 
 HKH_missions_7 = {
-	slot = 7
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -220,6 +220,7 @@ HKH_missions_7 = {
 			add_mil_power = 100
 			change_government_reform_progress = 25
 			add_treasury = 400
+
 		}
 	}
 	HKH_missions_7_2 = {
@@ -426,7 +427,7 @@ HKH_missions_7 = {
 }
 
 HKH_missions_8 = {
-	slot = 8
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -673,7 +674,7 @@ HKH_missions_8 = {
 }
 
 HKH_missions_9 = {
-	slot = 9
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -818,7 +819,7 @@ HKH_missions_9 = {
 }
 
 HKH_missions_10 = {
-	slot = 10
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {

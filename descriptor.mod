@@ -5,6 +5,7 @@ tags={
 	"Alternative History"
 }
 dependencies={
+	"ACG1"
 	"Chinese Language Supplementary Mod for 1.35"
 	"Chinese Language Mod for 1.35"
 	"Chinese Language Supplementary Mod for 1.36"
