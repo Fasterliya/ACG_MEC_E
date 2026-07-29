@@ -219,7 +219,7 @@ KSN_missions_7 = {
 			add_dip_power = 100
 			change_government_reform_progress = 25
 			add_treasury = 400
-			inherit = SMM
+			inherit = SMM 
 		}
 	}
 	KSN_missions_7_2 = {

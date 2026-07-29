@@ -1,0 +1,5 @@
+#Mountains splitting Norway from Sweden.
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = tech_gensokyan
