@@ -1,0 +1,33 @@
+government = acgt_theocracy
+add_government_reform = Hakurei_Shrine_government_reform
+primary_culture = Reimu
+government_rank = 1
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 118
+historical_friend = YKR
+historical_friend = MRS
+1444.11.11 = {
+	monarch = {
+		name = "Reimu"
+		dynasty = "Hakurei"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 5
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = calm_personality
+	add_ruler_personality = just_personality
+
+	leader = {
+		name = "Hakurei Reimu"
+		type = general
+		fire = 5
+		shock = 4
+		manuever = 5
+		siege = 3
+	}
+}

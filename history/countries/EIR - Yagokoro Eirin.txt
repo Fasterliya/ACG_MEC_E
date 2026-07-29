@@ -1,0 +1,24 @@
+government = acg_monarchy
+add_government_reform = Yongyuanting_reform
+primary_culture = YagokoroEirin
+government_rank = 1
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 101
+historical_friend = RES
+historical_friend = KGY
+1444.11.11 = {
+	monarch = {
+		name = "Eirin"
+		dynasty = "Yagokoro"
+		birth_date = 1420.1.1
+		adm = 6
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = secretive_personality
+	add_ruler_personality = lawgiver_personality
+}

@@ -1,0 +1,26 @@
+#2961 - Lwow
+
+latent_trade_goods = {
+	coal
+}
+
+owner = ZEL
+controller = ZEL
+add_core = ZEL
+culture = InterspeciesReviewers
+religion = acg
+capital= "Lw�w"
+trade_goods = dyes #Polish cochineal
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 2
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan
+extra_cost = 8
+center_of_trade = 1
+

@@ -1,0 +1,27 @@
+#162 - Zempl�n
+
+owner = HRG
+controller = HRG
+culture = HiiragiNemu
+religion = MagicalGirl
+capital = "Kassa"
+trade_goods = grain
+hre = no
+base_tax = 4
+base_production = 5
+base_manpower = 6
+is_city = yes
+add_core = HRG
+add_core = TRA
+fort_15th = yes
+add_core = SLO
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan

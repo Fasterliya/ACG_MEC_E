@@ -1,0 +1,24 @@
+government = acg_monarchy
+add_government_reform = Yongyuanting_reform
+primary_culture = Reisen
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 102
+historical_friend = EIR
+historical_friend = KGY
+1444.11.11 = {
+	monarch = {
+		name = "Reisen"
+		dynasty = "Udongein Inaba"
+		birth_date = 1420.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = strict_personality
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = craven_personality
+}

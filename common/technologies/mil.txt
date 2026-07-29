@@ -1,0 +1,1448 @@
+monarch_power = MIL
+
+# applied when a country is ahead of time in this technology
+# no bonus for MIL currently
+ahead_of_time = {
+	monthly_russian_modernization = 0.05
+	ahead_of_time_benefit_mil = 1
+}
+
+# Pre-era techs
+technology = {
+	# Tech 0
+	year = 1350
+	
+	sprite_level = 1
+
+	infantry_fire		= 	0.25
+	infantry_shock 		= 	0.20	
+	cavalry_shock  		= 	0.8	
+	land_morale 		= 	2.0
+}
+
+technology = {
+	# Tech 1
+	year = 1390
+	expects_institution = {
+		feudalism = 0.25
+	}
+	
+	infantry_shock		= 	0.1
+	infantry_fire 		= 	0.1
+	
+	fort_15th = yes
+	
+	enable = south_american_spearmen		
+	enable = native_indian_archer
+	enable = native_clubmen
+	enable = african_spearmen
+	enable = african_clubmen
+	enable = indian_archers
+	enable = mesoamerican_spearmen
+	enable = halberd_infantry
+	enable = chevauchee
+	enable = western_medieval_knights
+	enable = bardiche_infantry
+	enable = muslim_cavalry_archers
+	enable = western_medieval_infantry
+	enable = eastern_medieval_infantry
+	enable = ottoman_yaya
+	enable = chinese_longspear
+	enable = japanese_archer
+	enable = persian_footsoldier
+	enable = east_asian_spearmen
+	enable = mongolian_bow	
+	enable = indian_footsoldier	
+	enable = rajput_hill_fighters	
+	enable = eastern_bow	
+	enable = persian_cavalry_charge
+	enable = african_mandelaku
+	enable = african_abyssinian_light_cavalry
+	enable = mongol_swarm
+	enable = mongol_steppe	
+	enable = mongol_bow	
+	enable = eastern_knights
+	enable = druzhina_cavalry	
+	enable = ottoman_musellem	
+	enable = mamluk_archer	
+	enable = mamluk_cavalry_charge	
+	enable = south_american_warfare	
+	enable = ha_xantican_warrior
+	enable = aboriginal_boomerang
+	enable = aboriginal_warrior
+	enable = pacific_spearman
+	enable = Citizens_of_infantry
+	enable = Citizens_of_cavalry
+	enable = Old_Stone_slinger
+	enable = magician_archer
+	enable = xantican_knight
+	enable = magician_stone_slinger
+	enable = hive_defender_infantry_1
+	enable = hive_defender_cavalry_1
+	enable = REU_Agent
+	enable = REU_Breaker
+	enable = REU_Guards
+	enable = REU_Herd
+	enable = REU_Phantom_Crossbowman
+	enable = REU_Sakaz
+	enable = REU_Shield_guard
+	enable = REU_Snow_monster
+	enable = Science_short_weapon_1
+	enable = Science_short_weapon_2
+	enable = Science_short_weapon_3
+	enable = Science_short_weapon_4
+	enable = Science_short_weapon_5
+	enable = Science_long_weapon_1
+	enable = Science_long_weapon_2
+	enable = Science_long_weapon_3
+	enable = Science_long_weapon_4
+	enable = Science_long_weapon_5
+	enable = acg_american_infantry_1
+	enable = Elzia_Ex_Machina_artillery_ut
+	enable = Elzia_Ex_Machina_cavalry_ut
+	enable = Elzia_Ex_Machina_infantry_ut
+	enable = shana_1_1
+	enable = IYS_Phosphorus_Fire_Wolf_Riding
+	enable = DXD_Red_Dragon_Guard
+	enable = DXD_Boosted_Infantry
+	enable = cavalry_gen_t1_01
+	enable = cavalry_gen_t1_02
+	enable = cavalry_gen_t1_03
+	enable = infantry_gen_t1_01
+	enable = infantry_gen_t1_02
+	enable = infantry_gen_t1_03
+	enable = infantry_gen_t1_04
+}
+
+technology = {
+	# Tech 2
+	year = 1420
+	expects_institution = {
+		feudalism = 0.5
+	}
+	
+	infantry_shock		= 	0.2
+	cavalry_shock		= 	0.2
+	
+	combat_width = 5
+}
+
+# The 30 big techs from here on
+
+technology = {
+	# Tech 3
+	year = 1440
+	expects_institution = {
+		feudalism = 0.5
+	}
+	
+	land_morale = 	0.5
+	may_drill = yes
+	enable = Imperial_instructions_unit_11
+	enable = Imperial_instructions_unit_21
+}
+
+technology = {
+	# Tech 4
+	year = 1453
+	expects_institution = {
+		feudalism = 0.5
+	}
+
+	#Pike Square
+	
+
+	land_morale = 	0.5
+	military_tactics 	= 	0.25
+}
+
+technology = {
+	# Tech 5
+	year = 1466
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.15
+	}
+	
+	#Standardised Pikes
+	supply_limit 		= 	0.5
+	infantry_shock		= 	0.15
+	cavalry_shock		= 	0.2
+
+	enable = western_men_at_arms	
+	enable = western_longbow	
+	enable = gaelic_galloglaigh				
+	enable = aztec_tribal_warfare	
+	enable = zapotec_tribal_warfare		
+	enable = songhai_tribal_warfare		
+	enable = niger_kongolese_tribal_warfare		
+	enable = bantu_tribal_warfare	
+	enable = mali_tribal_warfare	
+	enable = pueblo_ambush	
+	enable = native_indian_tribal_warfare
+	enable = algonkin_tomahawk_charge	
+	enable = indian_arquebusier	
+	enable = eastern_militia
+	enable = mamluk_duel  
+	enable = ottoman_azab
+	enable = inca_mountain_warfare	
+	enable = south_american_forest_warfare
+	enable = incan_slingshots
+	enable = incan_axemen	
+	enable = maya_tribal_warfare
+	enable = chinese_footsoldier		
+	enable = japanese_footsoldier	
+	enable = ha_reformed_xantican_warrior
+	enable = aboriginal_ambusher
+	enable = aboriginal_infantry
+	enable = aboriginal_reformed_boomerang
+	enable = pacific_reformed_spearman
+	enable = nero_Chariot
+	enable = magician_long_bow_soldier
+	enable = hive_defender_infantry_2
+	enable = acg_american_infantry_2
+	enable = huh_new_infantry_5
+	enable = DXD_Dragonscale_Infantry
+	enable = DXD_Red_Dragon_Archers
+	enable = DXD_Harem_Royal_Guard
+	enable = infantry_gen_t5_01
+	enable = infantry_gen_t5_02
+	enable = infantry_gen_t5_03
+	enable = infantry_gen_t5_04
+	
+	combat_width = 2
+}
+
+technology = {
+	# Tech 6
+	year = 1479
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.3
+	}
+	
+	#Arquebus
+	military_tactics 	= 	0.25
+	infantry_shock		= 	0.30
+	infantry_fire 		= 	0.20
+	
+	
+	barracks = yes
+
+
+	enable = african_somali_cavalry
+	enable = african_tuareg_cavalry
+	enable = slavic_stradioti	
+	enable = native_indian_horsemen
+	enable = central_american_horsemen
+	enable = south_american_horsemen	
+	enable = mughal_mansabdar	
+	enable = ottoman_timariot 
+	enable = chinese_steppe		
+	enable = japanese_samurai	
+	enable = shaybani	
+	enable = high_american_horsemen
+	enable = aboriginal_horseman	
+	enable = pacific_horseman
+	enable = nero_Youth_army
+	enable = xeno_horsemen
+	enable = hive_defender_cavalry_2
+	enable = Imperial_instructions_unit_12
+	enable = Imperial_instructions_unit_22
+	enable = acg_american_cav_1
+	enable = IYS_Ice_Spirit_Battle_Ride
+	enable = cavalry_gen_t6_01
+	enable = cavalry_gen_t6_02
+	enable = cavalry_gen_t6_03
+	
+	combat_width = 2
+}
+
+technology = {
+	# Tech 7
+	year = 1492
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+	}
+	
+	#The limber
+	artillery_fire 		= 	1
+	artillery_shock 	=	0.05
+	military_tactics 	= 	0.25
+	enable = large_cast_bronze_mortar 
+	enable = houfnice
+	enable = DXD_Dragon_Shot_Cannon
+	enable = DXD_Boosted_Mortar
+	enable = moyeteshu_7_1  #魔夜
+	enable = moyeteshu_7_2  #魔夜
+	enable = moyetushu_7_3  #魔夜
+}
+
+technology = {
+	# Tech 8
+	year = 1505
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+	}
+
+	
+	#Pike and Shot
+	infantry_fire		= 	0.25
+	cavalry_shock		=	0.8
+
+	
+	regimental_camp = yes
+}
+
+technology = {
+	# Tech 9
+	year = 1518
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+	}
+	
+	#Ditch
+	
+	enable = south_indian_musketeer	
+	enable = mughal_musketeer		
+	enable = ottoman_janissary	
+	enable = persian_shamshir	
+	enable = italian_condotta
+	enable = swiss_landsknechten
+	enable = gaelic_mercenary
+	enable = germanized_pike
+	enable = asian_arquebusier	
+	enable = steppe_raiders
+	enable = ha_xiuhtecuhtli_soldier
+	enable = nero_Pikemen
+	enable = nero_Grab_the_cavalry
+	enable = Quadruple_existence
+	enable = magician_musketeer
+	enable = hive_defender_infantry_3
+	enable = Imperial_instructions_unit_13
+	enable = Imperial_instructions_unit_23
+	enable = REU_Agent_2
+	enable = REU_Breaker_2
+	enable = REU_Guards_2
+	enable = REU_Herd_2
+	enable = REU_Phantom_Crossbowman_2
+	enable = REU_Sakaz_2
+	enable = REU_Shield_guard_2
+	enable = REU_Snow_monster_2
+	enable = acg_american_infantry_3
+	enable = huh_new_infantry_9
+	enable = gorakubu_defender_1_infantry
+	enable = Elzia_Gigant_ut_9
+	enable = DXD_Red_Dragon_Emperor_Guard
+	enable = DXD_Boosted_Heavy_Infantry
+	enable = DXD_Dragonheart_Infantry
+	military_tactics 	= 	0.25
+	combat_width = 1
+	enable = shana_1_2	
+	enable = shana_1_6		
+	enable = shana_1_9
+	enable = infantry_gen_t9_01
+	enable = infantry_gen_t9_02
+	enable = infantry_gen_t9_03
+	enable = infantry_gen_t9_04
+}
+
+technology = {
+	# Tech 10
+	year = 1531
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+	}
+	
+	#Reiter
+	maneuver_value 		= 	0.25
+
+	enable = hungarian_hussar
+	enable = ottoman_spahi		
+	enable = culverin		
+	enable = pedrero 
+	enable = schwarze_reiter
+	enable = african_mossi_horsemen
+	enable = african_abyssinian_cavalry
+	enable = native_indian_mountain_warfare	
+	enable = aztec_hill_warfare	
+	enable = maya_forest_warfare	
+	enable = zapotec_plains_warfare
+	enable = south_american_gunpowder_warfare
+	enable = south_american_arquebusier	
+	enable = north_american_rifle_cavalry
+	enable = central_american_rifle_cavalry
+	enable = south_american_rifle_cavalry	
+	enable = qizilbash_cavalry_unit	
+	enable = east_mongolian_steppe	
+	enable = indian_elephant	
+	enable = steppe_riders
+	enable = high_american_rifle_cavalry
+	enable = aboriginal_outback_warriors
+	enable = aboriginal_cavalry
+	enable = pacific_island_warriors
+	enable = pacific_cavalry
+	enable = magician_rifle_cavalry
+	enable = magician_projecting_artillery
+	enable = KYG_infantry_1
+	enable = KYG_cavalry_1
+	enable = KYG_artillery_1
+	enable = hive_defender_cavalry_3
+	enable = hive_defender_artillery_2
+	enable = acg_american_cav_2
+	enable = Elzia_Phantasma_ut_10
+	enable = Elzia_Dragonia_ut_10
+	enable = gorakubu_defender_1_artillery            
+    enable = gorakubu_defender_1_cavalry
+	enable = IYS_Demon_Star_Iron_Cavalry
+	enable = DXD_Red_Dragon_Cannon
+	enable = DXD_Dragon_Breath_Howitzer
+	enable = cavalry_gen_t10_01
+	enable = cavalry_gen_t10_02
+}
+
+technology = {
+	# Tech 11
+	year = 1544
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.25
+	}
+	
+	#Matchlock Musket
+	infantry_shock		= 	0.20
+	cavalry_fire		= 	0.5
+
+	
+	weapons = yes
+	
+	combat_width = 2
+}
+	
+technology = {
+	# Tech 12
+	year = 1557
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+	}
+	
+	#Spanish Square
+	sprite_level = 2
+	
+	supply_limit 		= 	0.5
+	military_tactics	=	0.25
+
+	enable = tofongchis_musketeer		
+	enable = ottoman_sekban		
+	enable = rajput_musketeer	
+	enable = spanish_tercio	
+	enable = gaelic_free_shooter	
+	enable = han_banner	
+	enable = reformed_mughal_musketeer	
+	enable = polish_musketeer 
+	enable = muscovite_musketeer
+	enable = bantu_plains_warfare	
+	enable = niger_kongolese_forest_warfare		
+	enable = african_hill_warfare	
+	enable = ethiopian_mountain_warfare		
+	enable = steppe_footmen
+	enable = ha_xiuhtecuhtlian_infantry
+	enable = formal_magician_infantry
+	enable = KYG_infantry_2
+	enable = hive_defender_infantry_4
+	enable = Imperial_instructions_unit_14
+	enable = Imperial_instructions_unit_24
+	enable = acg_american_infantry_4
+	enable = huh_new_infantry_12
+	enable = Elzia_Gigant_ut_12
+	enable = DXD_Dragon_Breath_Sharpshooters
+	enable = DXD_Red_Dragon_Phalanx
+	enable = infantry_gen_t12_01
+	enable = infantry_gen_t12_02
+	enable = infantry_gen_t12_03
+	enable = infantry_gen_t12_04
+}
+
+technology = {
+	# Tech 13
+	year = 1570
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+	}
+	
+	#Trunnions
+	artillery_shock 	= 	0.1
+	artillery_fire 		= 	0.4
+	
+	enable = small_cast_iron_bombard
+	enable = large_cast_iron_bombard
+	enable = KYG_artillery_2
+	enable = hive_defender_artillery_3
+	enable = huh_new_artillery_13
+	enable = Elzia_Phantasma_ut_13
+	enable = DXD_Dragon_Shot_Artillery
+	enable = DXD_Boosted_Cannon
+}
+
+technology = {
+	# Tech 14
+	year = 1583
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.1
+	}
+	
+	#Star Bastions
+	fort_16th = yes
+	infantry_fire		=	0.3
+	
+	enable = african_hussar
+	enable = french_caracolle 
+	enable = huron_arquebusier	 
+	enable = creek_arquebusier	
+	enable = aztec_gunpowder_warfare		
+	enable = maya_gunpowder_warfare	
+	enable = zapotec_gunpowder_warfare	
+	enable = south_american_reformed_gunpowder_warfare	
+	enable = north_american_hussar
+	enable = central_american_hussar
+	enable = south_american_hussar
+	enable = polish_hussar	
+	enable = muscovite_caracolle	
+	enable = zaporoghian_cossack	
+	enable = topchis_artillery	
+	enable = asian_charge_cavalry
+	enable = reformed_mughal_mansabdar	
+	enable = steppe_lancers
+	enable = high_american_hussar
+	enable = aboriginal_hussar
+	enable = aboriginal_arquebusier
+	enable = aboriginal_tasmanian_arquebusier
+	enable = pacific_hussar
+	enable = pacific_arquebusier
+	enable = new_Roman_square
+	enable = nero_Shot_cavalry
+	enable = French_musketeer_TSK
+	enable = xeno_shoting_musketeer
+	enable = KYG_cavalry_2
+	enable = hive_defender_cavalry_4
+	enable = acg_american_cav_3
+	enable = Elzia_Dragonia_ut_14
+	enable = IYS_Ghost_Hunting_Heavy_Cavalry
+	enable = moyeteshu_14_1  #魔夜
+	enable = moyeteshu_14_2  #魔夜
+	enable = moyetushu_14_3  #魔夜
+	enable = cavalry_gen_t14_01
+	enable = cavalry_gen_t14_02
+	combat_width = 2
+}
+
+technology = {
+	# Tech 15
+	year = 1596
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+	}
+	
+	#Maurician Infantry
+	land_morale 		=	1.0
+	military_tactics	=	0.25
+	
+
+	
+	enable = irish_charge 
+	enable = dutch_maurician	
+	enable = afsharid_reformed_infantry	
+	enable = muscovite_soldaty	
+	enable = polish_tercio
+	enable = asian_mass_infantry	
+	enable = bantu_gunpowder_warfare	
+	enable = niger_kongolese_gunpowder_warfare	
+	enable = adal_gunpowder_warfare		
+	enable = ethiopian_gunpowder_warfare	
+	enable = steppe_musketeers
+	enable = KYG_infantry_3
+	enable = hive_defender_infantry_5
+	enable = Imperial_instructions_unit_15
+	enable = Imperial_instructions_unit_25
+	enable = Imperial_instructions_unit_33
+	enable = REU_Agent_3
+	enable = REU_Breaker_3
+	enable = REU_Guards_3
+	enable = REU_Herd_3
+	enable = REU_Phantom_Crossbowman_3
+	enable = REU_Sakaz_3
+	enable = REU_Shield_guard_3
+	enable = REU_Snow_monster_3	
+	enable = acg_american_infantry_5
+	enable = Elzia_Gigant_ut_15
+	enable = DXD_Juggernaut_Vanguards
+	enable = DXD_Aura_of_Domination_Infantry
+	enable = infantry_gen_t15_01
+	enable = infantry_gen_t15_02
+	enable = infantry_gen_t15_03
+	enable = infantry_gen_t15_04
+}
+
+technology = {
+	# Tech 16
+	year = 1609
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+	}
+	
+	#Standardisation of Calibre
+	artillery_shock 	= 	0.1
+	artillery_fire 		= 	1.0	
+
+
+	training_fields = yes
+	
+	combat_width = 1
+	
+	enable = chambered_demi_cannon
+	enable = demi_culverin
+	enable = magician_cannon_artillery
+	enable = hive_defender_artillery_4
+	enable = KYG_artillery_3
+	enable = Elzia_Phantasma_ut_16
+	enable = shana_1_3
+	enable = DXD_Red_Dragon_Emperor_Siege_Cannon
+	enable = DXD_Dragonscale_Artillery
+}
+
+technology = {
+	# Tech 17
+	year = 1622
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+	}
+	
+	cavalry_shock		=	1.0
+	supply_limit		= 	0.5	
+	
+	enable = maharathan_cavalry		
+	enable = manchu_banner		
+	enable = african_swarm
+	enable = shana_1_7
+	enable = IYS_Four_Soul_Dragon_Cavalry
+	enable = cavalry_gen_t17_01
+	enable = cavalry_gen_t17_02
+}
+
+technology = {
+	# Tech 18
+	year = 1635
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.1
+	}
+	
+	#Carbine
+	maneuver_value 		= 	0.25
+
+		
+	enable = swedish_gallop	
+	enable = sikh_hit_and_run
+	enable = bhonsle_infantry	
+	enable = ottoman_reformed_spahi		
+	enable = mamluk_musket_charge 
+	enable = afsharid_reformed	
+	enable = leather_cannon	
+	enable = chambered_cannon	
+	enable = steppe_mounted_raiders
+	enable = ha_xoloti
+	enable = aboriginal_swarm_cav
+	enable = pacific_swarm_cav
+	enable = reformed_magician_infantry
+	enable = magician_howitzer_artillery
+	enable = KYG_cavalry_3
+	enable = KYG_artillery_4
+	enable = hive_defender_cavalry_5
+	enable = hive_defender_artillery_5
+	enable = huh_new_infantry_18
+	enable = Elzia_Phantasma_ut_18
+	enable = Elzia_Dragonia_ut_18
+	enable = gorakubu_defender_2_cavalry
+	enable = DXD_Crimson_Dragon_Cannon
+	enable = DXD_Juggernaut_Artillery
+	
+	combat_width = 2
+}
+
+technology = {
+	# Tech 19
+	year = 1648
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+	}
+	
+	#Gustavian Infantry
+	military_tactics 	= 	0.25
+	supply_limit		=	0.5
+
+	fort_17th = yes
+
+	
+	enable = austrian_tercio   
+	enable = swedish_gustavian		
+	enable = scottish_highlander	
+	enable = saxon_infantry	
+	enable = ottoman_reformed_janissary	
+	enable = asian_musketeer	
+	enable = incan_guerilla_warfare	
+	enable = iroquois_rifle_scout
+	enable = peruvian_guerilla_warfare
+	enable = mexican_guerilla_warfare	
+	enable = maya_guerilla_warfare	
+	enable = commanche_swarm
+	enable = central_american_swarm
+	enable = south_american_swarm
+	enable = steppe_infantry
+	enable = high_american_swarm
+	enable = aboriginal_riflemen
+	enable = pacific_riflemen
+	enable = nero_Guardian_army
+	enable = nero_Armored_cavalry
+	enable = xeno_armored_cavalry
+	enable = KYG_infantry_5
+	enable = hive_defender_infantry_6
+	enable = hive_defender_artillery_6
+	enable = Imperial_instructions_unit_34
+	enable = acg_american_infantry_6
+    enable = acg_american_cav_4
+	enable = Elzia_Gigant_ut_19
+	enable = gorakubu_defender_2_infantry
+	enable = DXD_Red_Dragon_Emperor_Elite_Guard
+	enable = DXD_Draconic_Berserkers
+	enable = DXD_Unyielding_Dragon_Guard
+	enable = infantry_gen_t19_01
+	enable = infantry_gen_t19_02
+	enable = infantry_gen_t19_03
+	enable = infantry_gen_t19_04
+}
+
+technology = {
+	# Tech 20
+	year = 1661
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+	}
+	
+	#Killing Grounds
+	
+	infantry_fire		= 	0.5
+		
+	enable = swivel_cannon
+	enable = howitzer
+	enable = Improve_French_musketeer_TSK
+	enable = magician_swivel_howitzer
+	enable = KYG_cavalry_4
+	enable = KYG_artillery_5
+	enable = Elzia_Phantasma_ut_20
+	enable = gorakubu_defender_2_artillery
+	enable = DXD_Dragon_Judgment_Cannon
+	enable = DXD_Aura_of_Domination_Howitzer
+
+	combat_width = 2
+}
+
+technology = {
+	# Tech 21
+	year = 1674
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+	}
+	
+	#Line Infantry
+	sprite_level = 3
+	military_tactics 	= 	0.25
+	
+	infantry_shock 		=	0.5
+}
+
+technology = {
+	# Tech 22
+	year = 1687
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.1
+	}
+	
+	#Cartridge	(1620)?)
+	cavalry_fire		=	0.5
+	artillery_shock 	=	0.1
+	artillery_fire		=	2.0
+	
+	combat_width = 2
+	
+	conscription_center = yes
+
+	
+	enable = polish_winged_hussar	
+	enable = muscovite_cossack	
+
+	enable = horse_artillery_unit
+	enable = coehorn_mortar
+	enable = coehorn_mortar		
+	enable = the_disappear_army
+	enable = KYG_artillery_6
+	enable = hive_defender_artillery_7
+	enable = Elzia_Phantasma_ut_22
+	enable = DXD_Red_Dragon_Emperor_Heavy_Mortar
+	enable = DXD_Promotion_Horse_Artillery
+}
+
+technology = {
+	# Tech 23
+	year = 1700
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+	}
+	
+	#Light Cavalry
+	
+	cavalry_shock		=	1.0
+	military_tactics 	= 	0.25
+	maneuver_value 		= 	0.5
+
+	enable = swedish_arme_blanche	
+	enable = french_dragoon		
+	enable = austrian_hussar	
+	enable = ottoman_toprakli_hit_and_run			
+	enable = sioux_dragoon
+	enable = central_american_dragoon
+	enable = south_american_dragoon
+	enable = african_dragoon
+	enable = maharathan_guerilla_warfare		
+	enable = austrian_grenzer	
+	enable = swedish_caroline 	
+	enable = anglofrench_line	
+	enable = durrani_rifled_musketeer	
+	enable = ottoman_nizami_cedid	
+	enable = niger_kongolese_guerilla_warfare	
+	enable = adal_guerilla_warfare	
+	enable = ethiopian_guerilla_warfare
+	enable = muslim_dragoon
+	enable = ali_bey_reformed_infantry
+	enable = indian_shock_cavalry	
+	enable = chinese_dragoon	
+	enable = russian_petrine	
+	enable = steppe_cavalry
+	enable = ha_foreign_influenced_infantry
+	enable = high_american_dragoon
+	enable = aboriginal_dragoon
+	enable = pacific_dragoon
+	enable = higher_magician_infantry
+	enable = xeno_dragoon
+	enable = KYG_infantry_6
+	enable = KYG_cavalry_5
+	enable = hive_defender_infantry_7
+	enable = hive_defender_cavalry_6
+	enable = acg_american_infantry_7
+	enable = acg_american_cav_5
+	enable = Elzia_Gigant_ut_23
+	enable = Elzia_Dragonia_ut_23
+	enable = shana_1_8
+	enable = IYS_Forever_frozen_pioneer
+	enable = DXD_Red_Dragon_Emperor_Royal_Guard
+	enable = DXD_Dragonblood_Infantry
+	enable = DXD_Boosted_Line_Infantry
+	enable = cavalry_gen_t23_01
+	enable = cavalry_gen_t23_02
+}
+
+technology = {
+	# Tech 24
+	year = 1715
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.15
+	}
+	
+	#Covered Way
+	fort_18th	= yes	
+	military_tactics 	= 	0.25
+	enable = nero_new_Shot_cavalry
+	enable = Imperial_instructions_unit_35
+	enable = moyeteshu_24_1  #魔夜
+	enable = moyeteshu_24_2  #魔夜
+	enable = moyetushu_24_3 #魔夜
+	combat_width = 2
+}
+
+technology = {
+	# Tech 25
+	year = 1730
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.3
+	}
+	
+	#Metallurgy
+	artillery_shock 	=	0.1
+	artillery_fire		=	2.0
+	
+	enable = royal_mortar
+	enable = licorne
+	enable = magician_mortar	
+	enable = KYG_artillery_7
+	enable = hive_defender_artillery_8
+	enable = Elzia_Phantasma_ut_25
+	enable = shana_1_10
+	enable = DXD_Red_Dragon_Emperor_Grand_Cannon
+	enable = DXD_Sacred_Gear_Artillery
+}
+
+technology = {
+	# Tech 26
+	year = 1745
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+	}
+	
+	#Light Infantry Companies
+	sprite_level = 4
+
+	land_morale			=	1.0
+
+	enable = austrian_white_coat	
+	enable = french_bluecoat	
+	enable = british_redcoat	
+	enable = prussian_frederickian    
+	enable = russian_green_coat		
+	enable = muslim_mass_infantry		
+	enable = eastern_carabinier	 		
+	enable = indian_rifle
+	enable = reformed_asian_musketeer	
+	enable = westernized_bantu	
+	enable = westernized_niger_kongolese	
+	enable = westernized_adal	
+	enable = westernized_ethiopian	
+	enable = apache_guerilla	
+	enable = westernized_south_american	
+	enable = westernized_aztec	
+	enable = westernized_zapotec	
+	enable = westernized_incan	
+	enable = russian_lancer		
+	enable = tartar_cossack	
+	enable = prussian_uhlan
+	enable = british_hussar	
+	enable = french_carabinier
+	enable = eastern_uhlan
+	enable = eastern_skirmisher
+	enable = steppe_rifles
+	enable = ha_reformed_influenced_infantry
+	enable = aboriginal_guerrillas
+	enable = pacific_guerrillas
+	enable = the_new_innovation_armys
+	enable = Double_gunman
+	enable = hive_defender_infantry_8
+	enable = hive_defender_cavalry_7
+	enable = acg_american_infantry_8
+	enable = Elzia_Gigant_ut_26
+	enable = Elzia_Dragonia_ut_26
+	enable = shana_1_5
+	enable = shana_1_11
+	enable = shana_1_12
+	enable = DXD_Juggernaut_Berserkers
+	enable = DXD_Red_Dragon_Emperor_Imperial_Guard
+	enable = DXD_Sacred_Gear_Infantry
+	enable = DXD_Crimson_Dragonscale_Infantry
+	enable = infantry_gen_t26_01
+	enable = infantry_gen_t26_02
+	enable = infantry_gen_t26_03
+	enable = infantry_gen_t26_04
+	combat_width = 2
+}
+
+technology = {
+	# Tech 27
+	year = 1760
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+	}
+	
+	#Bayonet
+	supply_limit		=	0.5
+	infantry_fire		= 	0.5	
+}
+
+technology = {
+	# Tech 28
+	year = 1775
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 0.25
+	}
+	
+	#Cuirassier
+	maneuver_value 		= 	0.25
+	infantry_shock		=	0.5	
+	
+	enable = african_cuirassier
+	enable = russian_cuirassier	
+	enable = russian_cossack
+	enable = ottoman_toprakli_dragoon		
+	enable = ottoman_lancer 
+	enable = reformed_manchu_rifle	
+	enable = open_order_cavalry
+	enable = napoleonic_lancers	
+	enable = french_cuirassier
+	enable = durrani_dragoon 
+	enable = durrani_swivel	
+	enable = sikh_rifle
+	enable = bhonsle_cavalry
+	enable = reformed_asian_cavalry		
+	enable = french_impulse
+	enable = british_square
+	enable = steppe_uhlans
+	enable = KYG_infantry_8
+	enable = KYG_cavalry_7
+	enable = hive_defender_infantry_9
+	enable = hive_defender_cavalry_8
+	enable = Elzia_Gigant_ut_28
+	enable = Elzia_Dragonia_ut_28
+	enable = gorakubu_defender_3_cavalry
+	enable = shana_1_13
+	enable = shana_1_15
+	enable = IYS_Heavenly_Demon_Forbidden_Guard
+	enable = DXD_Dragon_Charge_Infantry
+	enable = DXD_Immortal_Dragon_Phalanx
+	enable = cavalry_gen_t28_01
+	enable = cavalry_gen_t28_02
+}
+
+technology = {
+	# Tech 29
+	year = 1790
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 0.5
+	}
+	
+	#Defense in Depth
+		
+	enable = flying_battery
+	enable = grand_battery
+	enable = magician_battery_artillery	
+	enable = KYG_artillery_8
+	enable = hive_defender_artillery_9
+	enable = Elzia_Phantasma_ut_29
+	enable = gorakubu_defender_3_artillery
+	enable = DXD_Juggernaut_Annihilation_Battery
+	enable = DXD_Ultimate_Red_Dragon_Emperor_Battery
+}
+
+technology = {
+	# Tech 30
+	year = 1805
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 1
+		industrialization = 0.5
+	}
+	
+	#Impulse Warfare
+	#sprite_level = 5	
+	
+	military_tactics	=	0.25
+	land_morale			=	1.0
+	maneuver_value = 0.25
+	
+	enable = russian_mass
+	enable = mixed_order_infantry	
+	enable = prussian_drill		
+	enable = austrian_jaeger	
+	enable = napoleonic_square
+	enable = persian_rifle
+	enable = ottoman_new_model
+	enable = tipu_sultan_rocket		
+	enable = american_western_franchise_warfare	
+	enable = african_western_franchise_warfare
+	enable = westernized_mayan
+	enable = reformed_westernized_incan		
+	enable = reformed_steppe_rifles
+	enable = ha_reformed_xoloti
+	enable = the_nero_new_armys
+	enable = the_nero_new_cavalry
+	enable = arc_sage_army
+	enable = yamabuki_army
+	enable = Grenadiers
+	enable = magician_army
+	enable = hunter_army
+	enable = army_of_death
+	enable = mazoku_army
+	enable = defender_of_kon_bu
+	enable = informational_infantry
+	enable = KYG_infantry_9
+	enable = KYG_cavalry_8
+	enable = hive_defender_infantry_10
+	enable = acg_american_infantry_9
+	enable = modern_tank
+	enable = modern_cannon
+	enable = pretender_cannon_1
+	enable = pretender_cannon_2
+	enable = pretender_cannon_3
+	enable = pretender_cannon_4
+	enable = pretender_cannon_5
+	enable = pretender_cannon_6
+	enable = pretender_cannon_7
+	enable = pretender_cannon_8
+	enable = pretender_cannon_9
+	enable = pretender_cannon_10
+	enable = pretender_infantry_1
+	enable = pretender_infantry_2
+	enable = pretender_infantry_3
+	enable = pretender_infantry_4
+	enable = pretender_infantry_5
+	enable = pretender_infantry_6
+	enable = pretender_infantry_7
+	enable = pretender_infantry_8
+	enable = pretender_infantry_9
+	enable = pretender_cav_1
+	enable = pretender_cav_2
+	enable = pretender_cav_3
+    enable = pretender_cav_4
+	enable = pretender_cav_5
+	enable = pretender_cav_6
+	enable = pretender_cav_7
+	enable = pretender_cav_8
+	enable = sister_defender
+	enable = great_war_artillery
+	enable = lapin_army
+	enable = anko_cavalry
+	enable = modern_infantry_1_1
+	enable = modern_infantry_1_2
+	enable = modern_infantry_1_3
+	enable = modern_infantry_2_1
+	enable = modern_infantry_2_2
+	enable = modern_infantry_2_3
+	enable = modern_infantry_3_1
+	enable = modern_infantry_3_2
+	enable = modern_infantry_3_3
+	enable = modern_infantry_4_1
+	enable = modern_infantry_4_2
+	enable = modern_infantry_4_3
+	enable = modern_infantry_5_1
+	enable = modern_infantry_5_2
+	enable = modern_infantry_5_3
+	enable = combat_engineer
+	enable = advance_tank_1
+	enable = advance_tank_2
+	enable = advance_artillery_1
+	enable = modern_artillery_1
+	enable = modern_artillery_2
+	enable = modern_artillery_3
+	enable = modern_artillery_4
+	enable = modern_artillery_5
+	enable = modern_cavalry_1
+	enable = modern_cavalry_2
+	enable = modern_cavalry_3
+	enable = modern_cavalry_4
+	enable = modern_cavalry_5
+	enable = kirara_hero_1_1
+	enable = kirara_hero_1_2
+	enable = kirara_hero_1_3
+	enable = kirara_hero_1_4
+	enable = kirara_hero_1_5
+	enable = kirara_hero_1_6
+	enable = kirara_hero_2_1
+	enable = kirara_hero_2_2
+	enable = kirara_hero_2_3
+	enable = kirara_hero_2_4
+	enable = kirara_hero_2_5
+	enable = kirara_hero_2_6
+	enable = kirara_hero_3_1
+	enable = kirara_hero_3_2
+	enable = kirara_hero_3_3
+	enable = kirara_hero_3_4
+	enable = kirara_hero_3_5
+	enable = kirara_hero_3_6
+	enable = kirara_hero_4_1
+	enable = kirara_hero_4_2
+	enable = kirara_hero_4_3
+	enable = kirara_hero_4_4
+	enable = kirara_hero_4_5
+	enable = kirara_hero_4_6
+	enable = kirara_hero_5_1
+	enable = kirara_hero_5_2
+	enable = kirara_hero_5_3
+	enable = kirara_hero_5_4
+	enable = kirara_hero_5_5
+	enable = kirara_hero_5_6
+	enable = kirara_hero_6_1
+	enable = kirara_hero_6_2
+	enable = kirara_hero_6_3
+	enable = kirara_hero_6_4
+	enable = kirara_hero_6_5
+	enable = kirara_hero_6_6
+	enable = kirara_hero_7_1
+	enable = kirara_hero_7_2
+	enable = kirara_hero_7_3
+	enable = kirara_hero_7_4
+	enable = kirara_hero_7_5
+	enable = kirara_hero_7_6
+	enable = kirara_hero_8_1
+	enable = kirara_hero_8_2
+	enable = kirara_hero_8_3
+	enable = kirara_hero_8_4
+	enable = kirara_hero_8_5
+	enable = kirara_hero_8_6
+	enable = kirara_hero_9_1
+	enable = kirara_hero_9_2
+	enable = kirara_hero_9_3
+	enable = kirara_hero_9_4
+	enable = kirara_hero_9_5
+	enable = kirara_hero_9_6
+	enable = kirara_hero_10_1
+	enable = kirara_hero_10_2
+	enable = kirara_hero_10_3
+	enable = kirara_hero_10_4
+	enable = kirara_hero_10_5
+	enable = kirara_hero_10_6
+	enable = kirara_unit_1
+	enable = kirara_unit_2
+	enable = kirara_unit_3
+	enable = kirara_unit_4
+	enable = kirara_unit_5
+	enable = kirara_unit_6
+	enable = kirara_unit_7
+	enable = kirara_unit_8
+	enable = kirara_unit_9
+	enable = kirara_unit_10
+	enable = kirara_fantom_1
+	enable = kirara_fantom_2
+	enable = kirara_fantom_3
+	enable = kirara_fantom_4
+	enable = kirara_fantom_5
+	enable = kirara_fantom_6
+	enable = kirara_fantom_7
+	enable = kirara_fantom_8
+	enable = kirara_fantom_9
+	enable = kirara_fantom_10
+	enable = mint_teleport_unit
+	enable = krik_infantry_1
+	enable = krik_infantry_2
+	enable = krik_infantry_3
+	enable = krik_infantry_4
+	enable = krik_cav_1
+	enable = krik_cav_2
+	enable = krik_cav_3
+	enable = krik_cav_4
+	enable = krik_artillery_1
+	enable = krik_artillery_2
+	enable = krik_artillery_3
+	enable = krik_artillery_4
+	enable = salt_unit
+	enable = yui_yuyushiki_unit
+	enable = yukari_unit
+	enable = yoriko_unit
+	enable = chiho_unit
+	enable = chiya_unit
+	enable = kon_unit
+	enable = koume_unit
+	enable = nono_unit
+	enable = haruka_unit
+	enable = yuu_unit
+	enable = hana_unit
+	enable = kamuri_unit
+	enable = tamate_unit
+	enable = hiroe_unit
+	enable = azusa_unit
+	enable = mio_unit
+	enable = youko_unit
+	enable = kuro_unit
+	enable = teru_unit
+	enable = youko_kinmoza_unit
+	enable = alice_unit
+	enable = shinobu_unit
+	enable = honoka_unit
+	enable = aya_unit
+	enable = isami_unit
+	enable = tamaki_unit
+	enable = kayo_unit
+	enable = shiina_unit
+	enable = ayame_unit
+	enable = nono_stella_unit
+	enable = kaoruko_unit
+	enable = koume_cg_unit
+	enable = cocoa_unit
+	enable = rize_1_unit
+	enable = rize_2_unit
+	enable = syaro_unit
+	enable = maya_unit
+	enable = megu_unit
+	enable = chiya_gochiusa_unit
+	enable = yuki_unit
+	enable = yuki_water_unit
+	enable = yuri_unit
+	enable = yuri_newyear_unit
+	enable = miki_unit
+	enable = megumi_unit
+	enable = ginger_unit
+	enable = nadeshiko_unit
+	enable = aoi_unit
+	enable = mary_unit
+	enable = isana_unit
+	enable = angy_unit
+	enable = naru_unit
+	enable = hanako_unit
+	enable = hibari_unit
+	enable = botan_unit
+	enable = haruka_2_unit
+	enable = chiaki_unit
+	enable = kanata_unit
+	enable = nadeshiko_mizugi_unit
+	enable = sugar_unit
+	enable = miyako_unit
+	enable = miyako_xmas_unit
+	enable = hiro_unit
+	enable = tooru_unit
+	enable = yuuko_unit
+	enable = nagi_unit
+	enable = hifumi_unit
+	enable = rin_ng_unit
+	enable = hajime_unit
+	enable = asuna_unit
+	enable = sonia_unit
+	enable = maika_unit
+	enable = kaho_unit
+	enable = mira_unit
+	enable = kisaragi_unit
+	enable = kohane_unit
+	enable = archive_unit
+	enable = harumi_unit
+	enable = momo_unit
+	enable = Elzia_Gigant_ut_30
+	enable = Elzia_Dragonia_ut_30
+	enable = gorakubu_defender_3_infantry
+	enable = AOG_unit
+	enable = DXD_Ultimate_Red_Dragon_Emperor_Guard
+	enable = DXD_Dragon_Eye_Jaegers
+	enable = DXD_Promotion_Infantry_Regiment
+	enable = DXD_Juggernaut_Wrath
+}
+
+technology = {
+	# Tech 31
+	year = 1820
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 1
+	}
+	
+	#Rifle
+	cavalry_shock		=	1.0
+	infantry_fire		=	1.0
+	supply_limit		=	0.5
+}
+
+technology = {
+	# Tech 32
+	year = 1835
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 1
+		enlightenment = 1
+		industrialization = 1
+	}
+	
+	#Field Howitzer
+	military_tactics	=	0.25
+	artillery_shock		=	0.1
+	artillery_fire		=	2.0	
+}

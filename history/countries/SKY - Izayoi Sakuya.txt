@@ -1,0 +1,30 @@
+government = acg_monarchy
+add_government_reform = Touhou_Republic_government_reform
+primary_culture = Sakuya
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 109
+1444.11.11 = {
+	monarch = {
+		name = "Sakuya"
+		dynasty = "Izayoi"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = midas_touched_personality
+	add_ruler_personality = calm_personality
+	add_ruler_personality = charismatic_negotiator_personality
+	leader = {
+		name = "Izayoi Sakuya"
+		type = general
+		fire = 4
+		shock = 4
+		manuever = 8
+		siege = 4
+	}
+}

@@ -1,0 +1,23 @@
+#1969 - Syghnak
+
+owner = MMQ
+controller = MMQ
+culture = MejiroMcQueen
+religion = acg
+add_core = MMQ
+
+
+capital = "Sozak"
+trade_goods = salt
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+hre = no
+is_city = yes
+discovered_by = KAS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = tech_gensokyan
+
+

@@ -1,0 +1,34 @@
+government = acg_monarchy
+add_government_reform = Magic_user_government_reform
+primary_culture = Marisa
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 121
+historical_friend = HKR
+historical_friend = NBL
+historical_friend = ALC
+1444.11.11 = {
+	monarch = {
+		name = "Marisa"
+		dynasty = "Kirisame"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 6
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = charismatic_negotiator_personality
+
+	leader = {
+		name = "Kirisame Marisa"
+		type = general
+		fire = 6
+		shock = 4
+		manuever = 4
+		siege = 3
+	}
+}

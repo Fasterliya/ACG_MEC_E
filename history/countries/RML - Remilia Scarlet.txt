@@ -1,0 +1,37 @@
+government = acg_monarchy
+add_government_reform = RML_Feudalism
+primary_culture = Remilia
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 112
+add_accepted_culture = Flandre
+add_accepted_culture = Sakuya
+add_accepted_culture = Hongmeiling
+add_accepted_culture = Patchouli
+historical_friend = SKY
+historical_friend = FLD
+historical_friend = PCL
+1444.11.11 = {
+	monarch = {
+		name = "Remilia"
+		dynasty = "Scarlet"
+		birth_date = 1420.1.1
+		adm = 4
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = martial_educator_personality
+	leader = {
+		name = "Remilia Scarlet"
+		type = general
+		fire = 3
+		shock = 6
+		manuever = 4
+		siege = 2
+	}
+}

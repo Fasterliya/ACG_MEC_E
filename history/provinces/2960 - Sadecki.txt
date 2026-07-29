@@ -1,0 +1,19 @@
+#262 - Sadecki
+
+owner = ATI
+controller = ATI
+add_core = ATI
+culture = Atri_cul
+religion = acg
+capital = "Sadecki"
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = iron
+base_manpower = 2
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan

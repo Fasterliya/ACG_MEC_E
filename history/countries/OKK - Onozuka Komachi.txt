@@ -1,0 +1,25 @@
+government = acgr_republic
+add_government_reform = acg_universal_government_reform_1
+primary_culture = OnozukaKomachi
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 340
+
+1444.11.11 = {
+	monarch = {
+		name = "Komachi"
+		dynasty = "Onozuka"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = incorruptible_personality
+	add_ruler_personality = tactical_genius_personality
+}
+
+

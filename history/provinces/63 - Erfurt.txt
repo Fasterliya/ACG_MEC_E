@@ -1,0 +1,30 @@
+#63 - Erfurt
+
+owner = EMM
+controller = EMM
+add_core = EMM
+culture = henshin_magic_culture
+religion = acg
+capital = "Erfurt"
+trade_goods = dyes #Woad, also a center for glassmaking
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 3
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan
+fort_15th = yes
+center_of_trade = 1
+
+1531.1.1 = { religion = protestant }
+1665.1.1 = {
+	fort_15th = no
+	fort_17th = yes
+}
+1790.8.1 = { unrest = 5 } # Peasant revolt
+1791.1.1 = { unrest = 0 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

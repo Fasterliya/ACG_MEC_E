@@ -1,0 +1,22 @@
+# 2363 - Atakent
+
+owner = U06
+controller = U06
+culture = Etoilia
+religion = acg
+add_core = U06
+
+
+capital = "Atakent"
+trade_goods = Magic_crystal
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = KAS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = tech_gensokyan
+

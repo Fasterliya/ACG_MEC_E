@@ -1,0 +1,25 @@
+government = acgt_theocracy
+add_government_reform = Moriya_government_reform
+government_rank = 1
+primary_culture = Suwako
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 114
+historical_friend = KTY
+historical_friend = YSK
+1444.11.11 = {
+	monarch = {
+		name = "Suwako"
+		dynasty = "Moriya"
+		birth_date = 1428.11.11
+		death_date = 1821.12.31
+		adm = 3
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = pious_personality
+	add_ruler_personality = tolerant_personality
+	add_ruler_personality = benevolent_personality
+}

@@ -1,0 +1,25 @@
+government = acg_monarchy
+add_government_reform = TES_heaven_reform
+primary_culture = HinanawiTenshi
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 1749
+
+1444.11.11 = {
+	monarch = {
+		name = "Tenshi"
+		dynasty = "Hinanawi"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 3
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = cruel_personality
+}
+
+

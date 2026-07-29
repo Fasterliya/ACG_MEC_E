@@ -1,0 +1,23 @@
+government = acgt_theocracy
+add_government_reform = Touhou_Republic_government_reform
+primary_culture = KamishirasawaKeine
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 120
+
+1444.11.11 = {
+	monarch = {
+		name = "Keine"
+		dynasty = "Kamishirasawa"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = scholar_personality
+}
+
+

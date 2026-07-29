@@ -1,0 +1,22 @@
+government = acgr_republic
+add_government_reform = acg_universal_government_reform_1
+primary_culture = ShikieikiYamaxanadu
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 341
+1444.11.11 = {
+	monarch = {
+		name = "Yamaxanadu"
+		dynasty = "Shikieiki"
+		birth_date = 1420.1.1
+		adm = 6
+		dip = 3
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = just_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = babbling_buffoon_personality
+}

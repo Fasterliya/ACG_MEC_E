@@ -1,0 +1,26 @@
+#465 - Nogay
+
+owner = U10
+controller = U10
+culture = SakuraChitoseO
+religion = acg
+add_core = U10
+
+
+capital = "Saraychik"
+trade_goods = salt
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = tech_gensokyan
+
+

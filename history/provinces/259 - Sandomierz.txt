@@ -1,0 +1,25 @@
+#259 - Sandomierz
+
+owner = ATI
+controller = ATI
+add_core = ATI
+culture = Atri_cul
+religion = acg
+capital = "Sandomierz"
+trade_goods = cloth
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 2
+is_city = yes
+
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan
+
+

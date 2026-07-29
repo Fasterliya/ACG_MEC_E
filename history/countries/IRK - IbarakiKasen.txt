@@ -1,0 +1,23 @@
+government = acgr_republic
+add_government_reform = Touhou_Republic_government_reform
+primary_culture = IbarakiKasen
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 127
+
+1444.11.11 = {
+	monarch = {
+		name = "Kasen"
+		dynasty = "Ibaraki"
+		birth_date = 1420.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = strict_personality
+}
+
+

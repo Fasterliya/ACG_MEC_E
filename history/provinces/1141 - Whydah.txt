@@ -1,0 +1,30 @@
+#1141 - Whydah
+
+owner = NNH
+controller = NNH
+add_core = NNH
+culture = NanohaTakamachi
+religion = acg
+capital = "Siyu"
+is_city = yes
+base_manpower = 1
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+discovered_by = tech_gensokyan
+extra_cost = 8
+center_of_trade = 1
+
+1472.1.1 = { discovered_by = POR }
+
+1650.1.1 = { trade_goods = slaves } # Rapid expansion of slave trade starts after 1650
+1727.1.1 = { owner = DAH controller = DAH add_core = DAH } #Dahomey expand to the coast
+1779.1.1 = { unrest = 6 } # Campaigns against the Popo chieftaincy by Dahomey rulers
+1784.1.1 = { unrest = 8 } # Dahomey raids against independent chieftains in area
+1787.1.1 = { unrest = 0 } # Dahomey armies withdraw on order of Oyo overlords

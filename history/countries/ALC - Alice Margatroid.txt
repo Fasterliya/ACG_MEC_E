@@ -1,0 +1,25 @@
+government = acg_monarchy
+add_government_reform = Magic_user_government_reform
+primary_culture = AliceMargatroid
+government_rank = 1
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 123
+historical_friend = MRS
+
+1444.11.11 = {
+	monarch = {
+		name = "Alice"
+		dynasty = "Margatroid"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = calm_personality
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = scholar_personality
+}
+

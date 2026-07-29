@@ -1,0 +1,22 @@
+government = acg_monarchy
+add_government_reform = Chireiden_reform
+primary_culture = Komeiji
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 125
+1444.11.11 = {
+	monarch = {
+		name = "Satori"
+		dynasty = "Komeiji"
+		birth_date = 1420.1.1
+		adm = 6
+		dip = 6
+		mil = 3
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = careful_personality
+	add_ruler_personality = Mind_reading_personality
+	add_ruler_personality = Claustrophobic_personality
+}

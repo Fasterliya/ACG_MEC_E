@@ -1,0 +1,22 @@
+government = acg_monarchy
+add_government_reform = Touhou_Republic_government_reform
+primary_culture = Patchouli
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 108
+1444.11.11 = {
+	monarch = {
+		name = "Patchouli"
+		dynasty = "Knowledge"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 3
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = calm_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = Sick_and_Weak_personality
+}

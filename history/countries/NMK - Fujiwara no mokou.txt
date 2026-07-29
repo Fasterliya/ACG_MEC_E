@@ -1,0 +1,25 @@
+government = acgr_republic
+add_government_reform = Touhou_Republic_government_reform
+primary_culture = NoMokou
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 4733
+
+1444.11.11 = {
+	monarch = {
+		name = "nomokou"
+		dynasty = "Fujiwara"
+		birth_date = 1420.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = righteous_personality
+	add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = inspiring_leader_personality
+}
+
+

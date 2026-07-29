@@ -1,0 +1,25 @@
+government = acgt_theocracy
+add_government_reform = Moriya_government_reform
+government_rank = 2
+primary_culture = Sanae
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 101
+historical_friend = YSK
+historical_friend = MRY
+1444.11.11 = {
+	monarch = {
+		name = "Sanae"
+		dynasty = "Kotiya"
+		birth_date = 1428.11.11
+		death_date = 1821.12.31
+		adm = 5
+		dip = 4
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = naive_personality
+}

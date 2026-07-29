@@ -1,0 +1,32 @@
+#339 - Bejaia
+
+owner = OKK
+controller = OKK
+culture = OnozukaKomachi
+religion = Gensokyo_reg
+add_core = OKK
+capital = "Bejaia"
+trade_goods = iron
+hre = no
+base_tax = 4
+base_production = 5
+base_manpower = 3
+is_city = yes
+add_core = TUN
+add_core = KBA
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan
+
+
+1510.1.1 = {
+	owner = KBA
+	controller = KBA
+	capital = "Kal�a"
+}
+1600.1.1 = { capital = "Medjana" }

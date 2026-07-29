@@ -1,0 +1,26 @@
+government = acg_monarchy
+add_government_reform = Yukari_government_reform
+primary_culture = Yukari
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 104
+historical_friend = HKR
+historical_friend = YYK
+
+1444.11.11 = {
+	monarch = {
+		name = "Yukari"
+		dynasty = "Yakumo"
+		birth_date = 1420.1.1
+		adm = 6
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = careful_personality
+}
+

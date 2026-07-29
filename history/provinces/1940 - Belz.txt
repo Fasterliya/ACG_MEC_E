@@ -1,0 +1,24 @@
+#Belz
+
+owner = ZEL
+controller = ZEL
+add_core = ZEL
+culture = InterspeciesReviewers
+religion = acg
+capital= "Belz"
+trade_goods = livestock
+hre = no
+base_tax = 4 
+base_production = 3
+base_manpower = 2
+is_city = yes
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan
+
+

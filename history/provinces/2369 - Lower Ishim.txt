@@ -1,0 +1,27 @@
+# 2369 - Upper Ishim, formerly Lower Ishim
+
+owner = U08
+controller = U08
+culture = SakuraBakushinO
+religion = acg
+add_core = U08
+
+
+capital = "Zhanibek"
+trade_goods = iron
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+
+
+discovered_by = KZH
+discovered_by = KAZ
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = tech_gensokyan
+
+

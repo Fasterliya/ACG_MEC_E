@@ -1,0 +1,28 @@
+government = acg_monarchy
+add_government_reform = acg_universal_government_reform_1
+primary_culture = Flandre
+government_rank = 1
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 107
+historical_friend = SKY
+historical_friend = RML
+historical_friend = PCL
+
+1444.11.11 = {
+	monarch = {
+		name = "Flandre"
+		dynasty = "Scarlet"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 3
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = bold_fighter_personality 
+	add_ruler_personality = well_advised_personality 
+	add_ruler_personality = cruel_personality 
+	leader = { name = "Flandre Scarlet"	type = general	fire = 3	shock = 5	manuever = 6	siege = 2 } 
+}
+

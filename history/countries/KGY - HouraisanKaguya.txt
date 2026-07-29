@@ -1,0 +1,24 @@
+government = acg_monarchy
+add_government_reform = Yongyuanting_reform
+primary_culture = HouraisanKaguya
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 205
+historical_friend = RES
+historical_friend = EIR
+1444.11.11 = {
+	monarch = {
+		name = "Kaguya"
+		dynasty = "Houraisan"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = careful_personality
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = free_thinker_personality
+}

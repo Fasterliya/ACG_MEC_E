@@ -1,0 +1,22 @@
+government = acgr_republic
+add_government_reform = Touhou_Republic_government_reform
+primary_culture = IbukiSuika
+religion = Gensokyo_reg
+government_rank = 1
+technology_group = tech_gensokyan
+capital = 1247
+1444.11.11 = {
+	monarch = {
+		name = "Suika"
+		dynasty = "Ibuki"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 4
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = intricate_web_weaver_personality
+}

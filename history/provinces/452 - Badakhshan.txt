@@ -1,0 +1,25 @@
+#452 - Badakhshan
+
+owner = U01
+controller = U01
+culture = Etoilia
+religion = acg
+add_core = U01
+
+
+capital = "Munjan"
+trade_goods = gems #Rubies, Saphires
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = KAS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = tech_gensokyan
+
+add_local_autonomy = 25 #governed by Muhammad Juki
+

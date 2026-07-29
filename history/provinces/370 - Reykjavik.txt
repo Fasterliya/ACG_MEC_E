@@ -1,0 +1,29 @@
+#370 - Reykjavik
+
+add_core = MYH
+owner = MYH
+controller = MYH
+culture = moye_wenhua
+religion = Fate_reg
+capital = "Eiriksfjord"
+trade_goods = Magic_material
+hre = no
+is_city = yes
+base_tax = 4 
+base_production = 6
+base_manpower = 4
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan
+extra_cost = 16
+center_of_trade = 2	
+
+1536.1.1 = {
+	religion = protestant
+	owner = DAN
+	controller = DAN
+	add_core = DAN
+}
+1752.1.1 = { trade_goods = wool remove_province_modifier = icelanding_fisher_sea } # Wool becomes more important.

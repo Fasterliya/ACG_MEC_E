@@ -1,0 +1,37 @@
+#Estland, incl. Reval, Hapsal, Weissenstein, Wesenberg and Pernau.
+
+owner = SHW
+controller = SHW
+add_core = SHW
+culture = Schwi
+religion = catholic
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 3
+capital = "Reval"
+is_city = yes
+fort_15th = yes
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = tech_gensokyan
+
+
+1542.1.1 = { religion = protestant} # Unknown date
+1561.1.1 = {
+	owner = SWE
+	controller = SWE
+	add_core = SWE
+	remove_core = LIV
+}
+1710.9.15 = { controller = RUS } # The Great Nordic War-Captured Reval
+1721.8.30 = {
+	owner = RUS
+	add_core = RUS
+	remove_core = SWE
+} # The Peace of Nystad
+

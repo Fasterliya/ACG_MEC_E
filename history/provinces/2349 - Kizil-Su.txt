@@ -1,0 +1,22 @@
+# 2349 - Kizil-Su
+
+owner = U02
+controller = U02
+culture = Etoilia
+religion = acg
+add_core = U02
+
+
+capital = "Kizil-Su"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = tech_gensokyan
+

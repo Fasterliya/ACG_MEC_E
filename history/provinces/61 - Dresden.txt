@@ -1,0 +1,30 @@
+#61 - Saxony
+
+owner = ILY
+controller = ILY
+add_core = ILY
+culture = henshin_magic_culture
+religion = acg
+capital = "Meissen"
+trade_goods = iron
+hre = yes
+base_tax = 6
+base_production = 6
+base_manpower = 2
+is_city = yes
+fort_15th = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = tech_gensokyan
+extra_cost = 8
+center_of_trade = 1
+
+
+1464.1.1 = { capital = "Dresden" }
+1531.1.1 = { religion = protestant }
+1589.1.1 = { fort_15th = no fort_16th = yes } # Current structure of Festung K�nigstein is built
+1790.8.1 = { unrest = 5 } # Peasant revolt
+1791.1.1 = { unrest = 0 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

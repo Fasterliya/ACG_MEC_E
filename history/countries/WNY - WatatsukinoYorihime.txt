@@ -1,0 +1,21 @@
+government = acgr_republic
+add_government_reform = Touhou_Republic_government_reform
+government_rank = 1
+primary_culture = WatatsukinoToyohime
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 346
+historical_friend = WNT
+1444.11.11 = {
+	monarch = {
+		name = "Yorihime"
+		dynasty = "Watatsuki no"
+		birth_date = 1428.11.11
+		death_date = 1821.12.31
+		adm = 5
+		dip = 4
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+}

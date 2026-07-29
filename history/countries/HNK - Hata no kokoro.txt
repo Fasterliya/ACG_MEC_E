@@ -1,0 +1,25 @@
+government = acgr_republic
+add_government_reform = HNK_government_reform
+primary_culture = Hatanokokoro
+government_rank = 1
+religion = Gensokyo_reg
+technology_group = tech_gensokyan
+capital = 333
+
+1444.11.11 = {
+	monarch = {
+		name = "Kokoro"
+		dynasty = "Hata no"
+		birth_date = 1420.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = tolerant_personality
+}
+
+

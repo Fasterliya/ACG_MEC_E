@@ -1,0 +1,23 @@
+#Dalaskogen, northwesten part of Dalarna, including Mora and entire Siljan area.
+
+add_core = JJJ
+owner = JJJ
+controller = JJJ
+culture = shana_wenhua
+religion = acg
+hre = no
+base_tax = 1 
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Mora"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = tech_gensokyan
+extra_cost = 10
+
+add_province_triggered_modifier = stora_kopparberget_modifier
+1448.6.20 = { revolt = {} controller = SWE } # Karl VIII is elected king of Sweden
+1527.6.1 = { religion = protestant}
+1617.1.1 = { base_tax = 3 base_production = 3 } #Copper is king!
