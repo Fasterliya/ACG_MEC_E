@@ -256,6 +256,8 @@ KSN_missions_7 = {
 			add_splendor = 100
 			add_prestige = 20
 			add_dip_power = 100
+			set_country_flag = KSN_maghreb_cb_unlocked_flag
+			custom_tooltip = KSN_maghreb_cb_tooltip
 			change_government_reform_progress = 50
 		}
 	}

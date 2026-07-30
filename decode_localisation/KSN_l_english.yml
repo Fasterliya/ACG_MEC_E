@@ -181,3 +181,8 @@
  KSN_spell_optical_bombardment_desc: "荷取展开了终极的光学工程阵列——数十枚精密透镜同时聚焦于敌军阵线。炮兵部队的火力、伤害与指挥精准度得到了永久性的质的飞跃。"
  Optical_Precision_Bombardment_title: "光学「超精密炮击阵」"
  Optical_Precision_Bombardment_desc: "需要消耗200军事点数。荷取在最先进的河童光学工坊中部署了超精密炮击阵列——每一发炮弹都将精准地命中敌军最脆弱的部位。"
+
+ KSN_maghreb_cb_tooltip: "解锁专属宣战理由「马格里布征服」：\n- 割取马格里布省份时代价-50%战争分数，-75%侵略扩张\n- 使用此宣战理由时，防御方将无法召唤盟友参战"
+ KSN_MAGHREB_CB_NO_ALLY_CALL_TT: "正在被河童的「马格里布征服」战争宣战，无法召唤盟友。"
+ cb_ksn_maghreb: "马格里布征服"
+ KSN_MAGHREB_WAR_NAME: "河童对$DEFENDER$的马格里布征服战争"

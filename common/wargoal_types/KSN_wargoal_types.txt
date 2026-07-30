@@ -1,0 +1,33 @@
+take_province_ksn_maghreb = {
+	type = take_province
+
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1.25
+		peace_cost_factor = 0.5
+		allowed_provinces = {
+			region = maghreb_region
+		}
+		peace_options = {
+			po_demand_provinces
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1.25
+		peace_cost_factor = 0.5
+		allowed_provinces = {
+			region = maghreb_region
+		}
+		peace_options = {
+			po_demand_provinces
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	war_name = KSN_MAGHREB_WAR_NAME
+}
