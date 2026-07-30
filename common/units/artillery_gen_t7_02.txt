@@ -1,0 +1,12 @@
+# T7 Defensive shock artillery .2 pip total
+
+type = artillery
+unit_type = tech_gensokyan
+
+maneuver = 2
+offensive_morale = 1
+defensive_morale = 0
+offensive_fire = 0
+defensive_fire = 1
+offensive_shock = 0
+defensive_shock = 1

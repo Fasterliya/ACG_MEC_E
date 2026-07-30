@@ -277,6 +277,8 @@ technology = {
 	enable = moyeteshu_7_1  #魔夜
 	enable = moyeteshu_7_2  #魔夜
 	enable = moyetushu_7_3  #魔夜
+	enable = artillery_gen_t7_01
+	enable = artillery_gen_t7_02
 }
 
 technology = {
@@ -294,6 +296,7 @@ technology = {
 
 	
 	regimental_camp = yes
+	enable = artillery_gen_t8_KSN
 }
 
 technology = {
@@ -403,6 +406,9 @@ technology = {
 	enable = DXD_Dragon_Breath_Howitzer
 	enable = cavalry_gen_t10_01
 	enable = cavalry_gen_t10_02
+	enable = artillery_gen_t10_01
+	enable = artillery_gen_t10_02
+	enable = artillery_gen_t10_KSN
 }
 
 technology = {
@@ -468,6 +474,7 @@ technology = {
 	enable = infantry_gen_t12_02
 	enable = infantry_gen_t12_03
 	enable = infantry_gen_t12_04
+	enable = artillery_gen_t12_KSN
 }
 
 technology = {
@@ -491,6 +498,8 @@ technology = {
 	enable = Elzia_Phantasma_ut_13
 	enable = DXD_Dragon_Shot_Artillery
 	enable = DXD_Boosted_Cannon
+	enable = artillery_gen_t13_01
+	enable = artillery_gen_t13_02
 }
 
 technology = {
@@ -545,6 +554,7 @@ technology = {
 	enable = moyetushu_14_3  #魔夜
 	enable = cavalry_gen_t14_01
 	enable = cavalry_gen_t14_02
+	enable = artillery_gen_t14_KSN
 	combat_width = 2
 }
 
@@ -596,6 +606,7 @@ technology = {
 	enable = infantry_gen_t15_02
 	enable = infantry_gen_t15_03
 	enable = infantry_gen_t15_04
+	enable = artillery_gen_t15_KSN
 }
 
 technology = {
@@ -626,6 +637,8 @@ technology = {
 	enable = shana_1_3
 	enable = DXD_Red_Dragon_Emperor_Siege_Cannon
 	enable = DXD_Dragonscale_Artillery
+	enable = artillery_gen_t16_01
+	enable = artillery_gen_t16_02
 }
 
 technology = {
@@ -689,6 +702,9 @@ technology = {
 	enable = gorakubu_defender_2_cavalry
 	enable = DXD_Crimson_Dragon_Cannon
 	enable = DXD_Juggernaut_Artillery
+	enable = artillery_gen_t18_01
+	enable = artillery_gen_t18_02
+	enable = artillery_gen_t18_KSN
 	
 	combat_width = 2
 }
@@ -774,6 +790,9 @@ technology = {
 	enable = gorakubu_defender_2_artillery
 	enable = DXD_Dragon_Judgment_Cannon
 	enable = DXD_Aura_of_Domination_Howitzer
+	enable = artillery_gen_t20_01
+	enable = artillery_gen_t20_02
+	enable = artillery_gen_t20_KSN
 
 	combat_width = 2
 }
@@ -830,6 +849,9 @@ technology = {
 	enable = Elzia_Phantasma_ut_22
 	enable = DXD_Red_Dragon_Emperor_Heavy_Mortar
 	enable = DXD_Promotion_Horse_Artillery
+	enable = artillery_gen_t22_01
+	enable = artillery_gen_t22_02
+	enable = artillery_gen_t22_KSN
 }
 
 technology = {
@@ -946,6 +968,8 @@ technology = {
 	enable = shana_1_10
 	enable = DXD_Red_Dragon_Emperor_Grand_Cannon
 	enable = DXD_Sacred_Gear_Artillery
+	enable = artillery_gen_t25_01
+	enable = artillery_gen_t25_02
 }
 
 technology = {
@@ -1013,6 +1037,7 @@ technology = {
 	enable = infantry_gen_t26_02
 	enable = infantry_gen_t26_03
 	enable = infantry_gen_t26_04
+	enable = artillery_gen_t26_KSN
 	combat_width = 2
 }
 
@@ -1083,6 +1108,8 @@ technology = {
 	enable = DXD_Immortal_Dragon_Phalanx
 	enable = cavalry_gen_t28_01
 	enable = cavalry_gen_t28_02
+	enable = artillery_gen_t29_01
+	enable = artillery_gen_t29_02
 }
 
 technology = {

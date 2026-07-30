@@ -1,0 +1,16 @@
+# T18 KSN exclusive defensive artillery 14 pip total
+
+type = artillery
+unit_type = tech_gensokyan
+
+maneuver = 2
+offensive_morale = 2
+defensive_morale = 3
+offensive_fire = 3
+defensive_fire = 4
+offensive_shock = 1
+defensive_shock = 1
+
+trigger = {
+    tag = KSN
+}
