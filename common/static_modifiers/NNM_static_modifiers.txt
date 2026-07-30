@@ -1,0 +1,9 @@
+NNM_mikazuki_overlord_modifier = {
+	prestige = 0.5
+	improve_relation_modifier = 0.10
+}
+
+NNM_mikazuki_subject_modifier = {
+	land_morale = 0.10
+	army_tradition = 0.5
+}

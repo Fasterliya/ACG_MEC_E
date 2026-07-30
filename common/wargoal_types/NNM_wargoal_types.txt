@@ -1,0 +1,34 @@
+nnm_duel_subjugate = {
+	type = take_capital
+
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 1.25
+		peace_cost_factor = 0.75
+		allowed_provinces = {
+			always = yes
+		}
+		peace_options = {
+			po_demand_provinces
+			po_vassalize
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 1.25
+		peace_cost_factor = 0.75
+		allowed_provinces = {
+			always = yes
+		}
+		peace_options = {
+			po_demand_provinces
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	war_name = NNM_DUEL_WAR_NAME
+}

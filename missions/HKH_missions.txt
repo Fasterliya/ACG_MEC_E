@@ -156,6 +156,7 @@ HKH_missions_6 = {
 				monthly_income = 100
 				land_forcelimit = 120
 			}
+			
 		}
 		effect = {
 			add_country_modifier = { name = HKH_supreme_intelligence duration = -1 }

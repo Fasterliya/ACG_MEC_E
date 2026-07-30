@@ -1,4 +1,4 @@
-﻿l_english:
+﻿﻿l_english:
  # ============ LLF ØšBWWzCNœg ============
  LLF_ideas: "loveliveTw¦tõV"
  LLF_ideas_start: "Fight Dayoÿ"
@@ -82,3 +82,198 @@
  eternal_magical_girl_desc: "kQCSãN„vT›sYS«ŽT:N0Campanella0ö”³lÁ”SKNY-N±*N(WÅe-NÃqKSêñT„vÒ‰r‚0ck‚YvQTÿkQCSãNsSOb—ùR‰k¡NmNNO)0yY„vupB›Rówþf«ˆ<ógP–ÿFOyYÏkN!kýIm†NNeg0ÙÍy¾|^y.ObÙuyY„vè–sSOb×SQ'Y„v²QûQÿyYìNmNNOPN0"
  bonds_power_nnm: "	Nåeg„^„vÊu"
  bonds_power_nnm_desc: "(WGÁ‰¯siVËKNMRÿkQCSãNìrêNºNÌwNwNR0FO(WqQTb—e-NÿyYNiVË0džCN0òƒ‰ƒ^šN0ŽƒHYú^Ëzw†N…ŠbËS„vÊu0	Nåeg„^„vopkpgq®N†NyY°QS„v…QÃV0ÙýNÊu„v›RÏ‘‚Ydk:V'YÿåNóŽN«ˆVg„vW0WmNýwÅ‡eQÙ*N)n–f„v'Y¶R­^ÿR»yININ„vkpÍyàeÎN¹pÃq0"
+ # ============ NNM 七海八千代 任务树 ============
+ 
+ # Missions - Slot 1: 三日月同盟
+ NNM_missions_1_title: "三日月同盟"
+ NNM_missions_1_1_title: "三日月庄的灯火"
+ NNM_missions_1_1_desc: "菲莉希亚、纱奈、鹤乃——她们是八千代最珍视的伙伴。在迈向外界的征途之前，必须先确保三日月庄的灯火温暖而明亮。改善与三位附庸的关系，确保她们的忠诚。"
+ NNM_missions_1_2_title: "羁绊的纽带"
+ NNM_missions_1_2_desc: "信任不是一天建立的。八千代用七年的孤独换来了对这些孩子们的珍视。当三位附庸的信任达到绝对，羁绊便牢不可破。"
+ NNM_missions_1_3_title: "三日月同盟成立"
+ NNM_missions_1_3_desc: "三日月庄不只是一个居所——它是魔法少女们在绝望世界中的归宿。将菲莉希亚、纱奈和鹤乃从普通附庸升格为「三日月同盟」的正式成员，享受专属的羁绊加成。"
+ NNM_missions_1_4_title: "神滨的盾牌"
+ NNM_missions_1_4_desc: "同盟的军事力量正在凝聚。随着领土的扩张，三日月同盟的军队已经足以成为守护神滨的最强盾牌。"
+ NNM_missions_1_5_title: "彩羽的归所"
+ NNM_missions_1_5_desc: "环彩羽——她是改变了八千代命运的人。在八千代最孤独的时刻，这个粉发女孩推开了三日月庄的门。将彩羽的国家纳入三日月同盟，完成命运的圆环。"
+ NNM_missions_1_6_title: "魔法少女联邦"
+ NNM_missions_1_6_desc: "五名三日月同盟的成员——这已不再是简单的庇护关系，而是一个真正的魔法少女联邦。在八千代的旗帜下，神滨的魔法少女们团结如一。"
+ NNM_missions_1_7_title: "圆环之理的理解"
+ NNM_missions_1_7_desc: "八名同盟成员，三百发展度的联邦——八千代开始隐约理解圆环之理的真正含义。羁绊的力量超越了国家、超越了魔法少女的宿命。"
+ NNM_missions_1_8_title: "永恒的羁绊"
+ NNM_missions_1_8_desc: "当三日月羁绊之力达到顶峰，八千代终于明白了：她不再是为自己而活。每一位同盟成员的笑脸都是她存在的理由。三日月庄的灯火永不熄灭。"
+
+ # Missions - Slot 2: 喀尔巴阡征服
+ NNM_missions_2_title: "喀尔巴阡征服"
+ NNM_missions_2_1_title: "北方之门"
+ NNM_missions_2_1_desc: "喀尔巴阡山脉横亘于北方，山间的隘口是通往中欧的大门。在巩固后方之前，先迈出北上的第一步。"
+ NNM_missions_2_2_title: "多瑙河上游"
+ NNM_missions_2_2_desc: "佩斯和普雷斯堡——多瑙河上游的明珠，也是玛吉斯之翼的势力范围。征服这片区域将撼动灯花的统治根基。"
+ NNM_missions_2_3_title: "玛吉斯之翼的覆灭"
+ NNM_missions_2_3_desc: "里见灯花的玛吉斯之翼曾经统治着上匈牙利的广袤领土，但面对八千代的历战之师，这座纸牌屋终于倒塌。斯皮什的陷落标志着神滨魔法少女对旧秩序的胜利。"
+ NNM_missions_2_4_title: "斯洛伐克的铁壁"
+ NNM_missions_2_4_desc: "喀尔巴阡的隘口是天然的屏障。在此修筑要塞网，让北方的任何威胁都无法越过这道铁壁。"
+ NNM_missions_2_5_title: "维斯瓦河的呼唤"
+ NNM_missions_2_5_desc: "喀尔巴阡以北是波兰人的沃野。维斯瓦河畔的城市富庶而繁荣，是拓展联邦影响力的绝佳方向。"
+ NNM_missions_2_6_title: "喀尔巴阡之主"
+ NNM_missions_2_6_desc: "从斯洛伐克的群山到特兰西瓦尼亚的高原，整个喀尔巴阡盆地已在八千代的掌控之中。北方的天空燃起了三日月同盟的旗帜。"
+ NNM_missions_2_7_title: "金帐的遗迹"
+ NNM_missions_2_7_desc: "庞蒂克草原——金帐汗国的故地，无尽的原野曾经是游牧民族的天下。现在，它将成为魔法少女们的新边疆。"
+ NNM_missions_2_8_title: "北方帝国的边疆"
+ NNM_missions_2_8_desc: "喀尔巴阡与波兰已在联邦的铁腕下统一。八千代从匈牙利一隅的小邦崛起为北方的霸主——三日月同盟的旗帜飘扬在从多瑙河到波罗的海的广袤土地上。"
+
+ # Missions - Slot 3: 奥地利征伐
+ NNM_missions_3_title: "奥地利征伐"
+ NNM_missions_3_1_title: "西境的威胁"
+ NNM_missions_3_1_desc: "奥地利地区盘踞着强大的势力。在向西扩张之前，八千代的军队必须做好万全准备——八成常备军已集结完毕。"
+ NNM_missions_3_2_title: "多瑙河上游西岸"
+ NNM_missions_3_2_desc: "多瑙河的西岸，奥地利的肥沃平原是任何征服者梦想中的战利品。先锋部队已在河畔建立了桥头堡。"
+ NNM_missions_3_3_title: "维也纳之门"
+ NNM_missions_3_3_desc: "维也纳——这座多瑙河畔的明珠，中欧的权力中心。当三日月同盟的旗帜在维也纳的城头升起，整个西方世界都将颤抖。"
+ NNM_missions_3_4_title: "阿尔卑斯防線"
+ NNM_missions_3_4_desc: "阿尔卑斯山脉是意大利半岛的天然屏障。控制了奥地利并修筑要塞，便等于扼住了南欧的咽喉。"
+ NNM_missions_3_5_title: "神圣罗马的阴影"
+ NNM_missions_3_5_desc: "神圣罗马帝国的影响力笼罩着南德意志。但帝国的荣光正在褪色，三日月同盟的势力开始渗透这片古老的土地。"
+ NNM_missions_3_6_title: "多瑙河之盟"
+ NNM_missions_3_6_desc: "多瑙河从黑森林到黑海，绵延数千公里。控制奥地利与南德意志的大片领土，让多瑙河的贸易与军事命脉落入联邦之手。"
+ NNM_missions_3_7_title: "帝国的遗产"
+ NNM_missions_3_7_desc: "随着德意志领土的稳固，帝国的遗产向更南的方向延伸——意大利的富庶城邦将成为联邦的新目标。"
+ NNM_missions_3_8_title: "西方帝国的霸主"
+ NNM_missions_3_8_desc: "奥地利全境与南德意志的核心领地已尽归联邦。八千代被加冕为西方帝国的霸主——从阿尔卑斯到多瑙河，无人再敢质疑她的权威。"
+
+ # Missions - Slot 4: 巴尔干征服
+ NNM_missions_4_title: "巴尔干征服"
+ NNM_missions_4_1_title: "南方之盾"
+ NNM_missions_4_1_desc: "巴尔干半岛——欧洲的火药桶，也是无数魔法少女活跃的舞台。在踏入这片纷争之地前，先确保南境的防线坚不可摧。"
+ NNM_missions_4_2_title: "萨瓦河的渡口"
+ NNM_missions_4_2_desc: "塞尔维亚地区控制着萨瓦河与多瑙河的交汇处。征服此地将为联邦打开通往巴尔干腹地的大门。"
+ NNM_missions_4_3_title: "圆神的领地"
+ NNM_missions_4_3_desc: "鹿目圆——传说中拥有无限魔力的魔法少女，她的国家盘踞在保加利亚的群山之中。八千代决定向这位传说中的存在发起单挑，将她纳入三日月同盟。"
+ NNM_missions_4_4_title: "巴麻美的试炼"
+ NNM_missions_4_4_desc: "巴麻美——经验丰富的魔法少女，以优雅的枪带战术闻名。击败她不仅是对实力的证明，更是对老兵的敬意。获得对巴麻美的专属单挑CB。"
+ NNM_missions_4_5_title: "沙耶香的剑"
+ NNM_missions_4_5_desc: "美树沙耶香——正义的剑士，圆神最忠实的伙伴。她的剑只为守护而挥。八千代将用战斗赢得她的尊重，并将她纳入联邦。获得对沙耶香的专属单挑CB。"
+ NNM_missions_4_6_title: "君士坦丁堡的钟声"
+ NNM_missions_4_6_desc: "君士坦丁堡——千年帝国的都城，欧亚大陆的十字路口。当三日月同盟的旗帜在圣索菲亚大教堂前升起，东方与西方都听到了这声钟响。"
+ NNM_missions_4_7_title: "巴尔干的霸主"
+ NNM_missions_4_7_desc: "二十五省在巴尔干的地图上连成一片。从亚得里亚海到黑海，八千代的联邦已是巴尔干无可争议的霸主。"
+ NNM_missions_4_8_title: "圆环之理"
+ NNM_missions_4_8_desc: "鹿目圆、美树沙耶香、巴麻美——三位传说中的魔法少女齐聚三日月同盟。八千代完成了所有人都认为不可能的事：打破魔法少女的宿命，以羁绊代替绝望。完成此任务将为「三日月羁绊」进度条解锁全局叛乱-2的永久增益。"
+
+ # Missions - Slot 5: 安纳托利亚远征
+ NNM_missions_5_title: "安纳托利亚远征"
+ NNM_missions_5_1_title: "博斯普鲁斯对岸"
+ NNM_missions_5_1_desc: "博斯普鲁斯海峡的另一侧是安纳托利亚——东方的大陆。要跨越这片海峡，联邦需要一支强大的舰队和稳固的桥头堡。"
+ NNM_missions_5_2_title: "奥斯曼的阴影"
+ NNM_missions_5_2_desc: "奥斯曼帝国是安纳托利亚最强大的势力。在与他们的第一次交锋中取胜，证明三日月同盟有能力挑战旧秩序。"
+ NNM_missions_5_3_title: "晓美焰的轮回"
+ NNM_missions_5_3_desc: "晓美焰——穿梭于无数时间线中的魔法少女，她的战斗力深不可测。但八千代知道，焰的内心深处渴望的不是战斗，而是被理解。获得对晓美焰的专属单挑CB。"
+ NNM_missions_5_4_title: "杏子的教堂"
+ NNM_missions_5_4_desc: "佐仓杏子——流浪的战士，她的长枪曾经只为自己的生存而挥舞。八千代在她身上看到了自己过去的影子。获得对佐仓杏子的专属单挑CB。"
+ NNM_missions_5_5_title: "安纳托利亚的铁蹄"
+ NNM_missions_5_5_desc: "安纳托利亚的高原与山脉见证了无数帝国的兴衰。如今，三日月同盟的铁蹄踏上了这片古老的土地。"
+ NNM_missions_5_6_title: "百江渚的召唤"
+ NNM_missions_5_6_desc: "百江渚——神秘的魔法少女，据传拥有操控结界的能力。联邦的势力已经触及她的领域，是时候将她召唤至三日月同盟了。"
+ NNM_missions_5_7_title: "安纳托利亚之主"
+ NNM_missions_5_7_desc: "二十五省在安纳托利亚的高原上归附联邦。三日月同盟的势力跨越了欧亚大陆的分界线。"
+ NNM_missions_5_8_title: "魔法少女的黎明"
+ NNM_missions_5_8_desc: "晓美焰、佐仓杏子、百江渚——三位东方的魔法少女成为三日月同盟的成员。联邦的版图从多瑙河的源头延伸至两河流域。八千代以一己之力打破了魔法少女注定相互残杀的宿命。完成此任务将为「三日月羁绊」进度条解锁外交声望+2的永久增益。"
+
+ # Custom Tooltips
+ NNM_missions_1_3_tt: "完成此任务后，为「三日月羁绊」进度条解锁阶段1额外增益：\n外交关系+1"
+ NNM_missions_1_4_tt: "完成此任务后，为「三日月羁绊」进度条解锁阶段2额外增益：\n附庸提供的陆军上限+50%"
+ NNM_missions_1_5_tt: "环彩羽（IRH）已成为三日月同盟成员。"
+ NNM_missions_1_6_tt: "完成此任务后，为「三日月羁绊」进度条解锁阶段3额外增益：\n侵略扩张影响-15%"
+ NNM_missions_1_8_tt: "完成此任务后，为「三日月羁绊」进度条解锁阶段4额外增益：\n训练度+5%"
+ NNM_missions_4_3_tt: "获得对鹿目圆（MDK）的专属单挑CB「魔法少女对决」。在战争中使用此CB可以附庸目标。"
+ NNM_missions_4_4_tt: "获得对巴麻美（TOM）的专属单挑CB「魔法少女对决」。在战争中使用此CB可以附庸目标。"
+ NNM_missions_4_5_tt: "获得对美树沙耶香（SAY）的专属单挑CB「魔法少女对决」。在战争中使用此CB可以附庸目标。"
+ NNM_missions_4_8_tt: "完成此任务后，为「三日月羁绊」进度条解锁跨阶段额外增益：\n全局叛乱-2（力量≥25时生效）"
+ NNM_missions_5_3_tt: "获得对晓美焰（AKE）的专属单挑CB「魔法少女对决」。在战争中使用此CB可以附庸目标。"
+ NNM_missions_5_4_tt: "获得对佐仓杏子（KYO）的专属单挑CB「魔法少女对决」。在战争中使用此CB可以附庸目标。"
+ NNM_missions_5_6_tt: "触发释放百江渚（MMN）为三日月同盟附庸的决议。"
+ NNM_missions_5_8_tt: "完成此任务后，为「三日月羁绊」进度条解锁跨阶段额外增益：\n外交声望+2（力量≥50时生效）"
+
+ # Government Mechanic
+ NNM_mikazuki_government_reform: "三日月庄君主制"
+ NNM_mikazuki_government_reform_desc: "以三日月庄为核心的魔法少女联邦政体。八千代以羁绊而非恐惧维系着她的盟友们，每一位附庸都是自主作战的伙伴，而非被奴役的臣民。三日月羁绊之力随着同盟的壮大而增长。"
+ NNM_mikazuki_bonds_mechanic: "三日月羁绊"
+ NNM_mikazuki_bonds_power: "羁绊之力"
+ NNM_mikazuki_meeting_interaction: "三日月庄会议"
+ NNM_mikazuki_meeting_interaction_desc: "召开三日月庄全体会议，检视当前同盟成员并凝聚羁绊之力。每个三日月同盟附庸将提供5点羁绊之力。冷却5年。"
+ NNM_bonds_resonance_interaction: "羁绊共鸣"
+ NNM_bonds_resonance_interaction_desc: "消耗25点羁绊之力与100外交点数，所有三日月同盟附庸获得+15信任并-10%独立倾向。冷却10年。"
+ NNM_mikazuki_meeting_refresh_tt: "正在检视三日月同盟成员……"
+ NNM_mikazuki_bonds_stage_tt: "羁绊之力已根据当前同盟成员数量更新。使用「羁绊共鸣」可进一步增强与附庸的纽带。"
+ NNM_bonds_resonance_effect_tt: "所有三日月同盟附庸获得信任+15，独立倾向-10%"
+
+ # Government Mechanic - Stage Inspection
+ NNM_bonds_stage1_base_tt: "【阶段1 三日月之绊】（力量0-24）\n基础效果：改善关系+10%"
+ NNM_bonds_stage1_extra_tt: "  ·完成「三日月同盟成立」后解锁：外交关系+1"
+ NNM_bonds_stage2_base_tt: "【阶段2 神滨守护者】（力量25-49）\n基础效果：独立倾向-10%"
+ NNM_bonds_stage2_extra_tt: "  ·完成「神滨的盾牌」后解锁：附庸陆军上限+50%"
+ NNM_bonds_stage3_base_tt: "【阶段3 玛吉斯之影】（力量50-74）\n基础效果：分离主义年数-5"
+ NNM_bonds_stage3_extra_tt: "  ·完成「魔法少女联邦」后解锁：侵略扩张影响-15%"
+ NNM_bonds_stage4_base_tt: "【阶段4 圆环之理】（力量75-100）\n基础效果：行政效率+5%"
+ NNM_bonds_stage4_extra_tt: "  ·完成「永恒的羁绊」后解锁：训练度+5%"
+ NNM_bonds_cross_extra_tt: "【跨阶段增益】\n  ·完成「圆环之理」后解锁（力量≥25时生效）：全局叛乱-2\n  ·完成「魔法少女的黎明」后解锁（力量≥50时生效）：外交声望+2"
+
+ # Decisions
+ NNM_admit_mikazuki_member_decision: "接纳新成员"
+ NNM_admit_mikazuki_member_decision_desc: "将拥有魔法少女文化的附庸国正式纳入三日月同盟。每位新成员都将为联邦带来独特的战斗力与羁绊的增幅。消耗15点羁绊之力。"
+ NNM_inspect_mikazuki_bonds_decision: "检视三日月羁绊"
+ NNM_inspect_mikazuki_bonds_decision_desc: "查看当前三日月羁绊进度条的完整效果，包括所有已解锁的任务增益。"
+ NNM_admit_member_effect_tt: "所有符合条件的普通附庸已转为三日月同盟类型。"
+
+ # Subject Type
+ mikazuki_ally: "三日月同盟"
+ mikazuki_ally_title: "同盟成员"
+ mikazuki_ally_long_desc: "三日月同盟是三日月庄的正式成员，享有高度自治权，不占用外交关系。盟约建立在信任与羁绊之上，而非单纯的臣服。"
+
+ # CB & War
+ cb_nnm_magical_girl_duel: "魔法少女对决"
+ cb_nnm_magical_girl_duel_desc: "八千代向另一位魔法少女发起荣耀对决。战胜后可以将其纳入三日月同盟，以羁绊代替征服。"
+ NNM_DUEL_WAR_NAME: "$ORDER$对$SECOND$的魔法少女对决"
+
+ # Modifiers
+ NNM_mikazuki_trust_modifier: "三日月庄的信任"
+ NNM_mikazuki_trust_modifier_desc: "三日月庄的成员之间建立了牢不可破的信任关系。这份羁绊超越了一般附庸的忠诚。"
+ NNM_kamihama_unity_modifier: "神滨统一"
+ NNM_kamihama_unity_modifier_desc: "玛吉斯之翼已被瓦解，神滨市的魔法少女们在八千代的旗帜下实现了前所未有的团结。改善关系加成让外交交涉事半功倍。"
+ NNM_carpathian_fortress_modifier: "喀尔巴阡防线"
+ NNM_carpathian_fortress_modifier_desc: "喀尔巴阡山脉的要塞网络构成了帝国北方最坚固的盾牌。敌军在此寸步难行，守军却能迅速增援。"
+ NNM_carpathian_master_modifier: "喀尔巴阡之主"
+ NNM_carpathian_master_modifier_desc: "喀尔巴阡的广袤领土为联邦提供了充足的人力储备，陆军上限大幅提升。"
+ NNM_carpathian_hegemony_modifier: "喀尔巴阡霸权"
+ NNM_carpathian_hegemony_modifier_desc: "从多瑙河到波罗的海，北方大陆的霸权已然确立。征服新领土所需的行政成本显著降低。"
+ NNM_vienna_taken_modifier: "维也纳陷落"
+ NNM_vienna_taken_modifier_desc: "维也纳的陷落震撼了整个基督教世界。八千代的威名远扬，联邦的年度威望获得大幅提升。"
+ NNM_alpine_defense_modifier: "阿尔卑斯防線"
+ NNM_alpine_defense_modifier_desc: "阿尔卑斯山脉的自然天险加上联邦的要塞工事，任何试图入侵的敌人都要在崇山峻岭中消耗殆尽。"
+ NNM_danube_league_modifier: "多瑙河之盟"
+ NNM_danube_league_modifier_desc: "多瑙河沿岸的城邦与领地加入了联邦的贸易联盟。贸易效率获得可观的提升。"
+ NNM_western_hegemony_modifier: "西方霸权"
+ NNM_western_hegemony_modifier_desc: "奥地利与南德意志已入囊中。联邦掌握了西方世界的经济与技术命脉，发展成本显著下降。"
+ NNM_byzantium_fallen_modifier: "君士坦丁堡的征服"
+ NNM_byzantium_fallen_modifier_desc: "君士坦丁堡落入联邦之手，博斯普鲁斯海峡的贸易命脉被完全掌控。全球贸易力量大幅提升。"
+ NNM_balkan_master_modifier: "巴尔干霸主"
+ NNM_balkan_master_modifier_desc: "巴尔干全境已被联邦统一。这片饱经战火的土地终于迎来了和平，人力恢复速度惊人。"
+ NNM_madoka_circle_modifier: "圆环之理"
+ NNM_madoka_circle_modifier_desc: "鹿目圆、沙耶香与麻美齐聚三日月同盟。圆环之理的祝福降临联邦——对异端与异教的包容性达到前所未有的高度。"
+ NNM_anatolia_iron_march_modifier: "安纳托利亚铁蹄"
+ NNM_anatolia_iron_march_modifier_desc: "联邦军队在安纳托利亚高原上如履平地。常年的征战让军团获得了超乎常理的机动力。"
+ NNM_anatolia_master_modifier: "安纳托利亚之主"
+ NNM_anatolia_master_modifier_desc: "安纳托利亚的高原与海岸尽归联邦。被征服地区的分离主义倾向在联邦的强大治理下迅速消退。"
+ NNM_magical_dawn_modifier: "魔法少女的黎明"
+ NNM_magical_dawn_modifier_desc: "晓美焰、杏子与百江渚的加入标志着魔法少女新纪元的开启。八千年来的相互残杀终于结束——在新秩序下，联邦的传教力量显著增强。"
+ NNM_mikazuki_deep_bonds_modifier: "深化的羁绊"
+ NNM_mikazuki_deep_bonds_modifier_desc: "经历过无数战斗后，三日月同盟的羁绊已深入骨髓。附庸缴纳的税收和忠诚度都达到了新的高度。"
+
+ # Stage display for mechanic UI
+ NNM_bonds_stage_1: "三日月之绊"
+ NNM_bonds_stage_2: "神滨守护者"
+ NNM_bonds_stage_3: "玛吉斯之影"
+ NNM_bonds_stage_4: "圆环之理"
+
+ # Misc
+ empty_line_tt: ""

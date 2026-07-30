@@ -1,0 +1,998 @@
+NNM_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = NNM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	NNM_missions_1_1 = {
+		icon = mission_diplomatic
+		position = 1
+		provinces_to_highlight = {
+			any_subject_country = {
+				capital_scope = { always = yes }
+			}
+		}
+		trigger = {
+			FLC = { has_opinion = { who = ROOT value = 150 } }
+			FTB = { has_opinion = { who = ROOT value = 150 } }
+			TRN = { has_opinion = { who = ROOT value = 150 } }
+			FLC = { liberty_desire = 25 }
+			FTB = { liberty_desire = 25 }
+			TRN = { liberty_desire = 25 }
+		}
+		effect = {
+			add_splendor = 50
+			add_prestige = 15
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	NNM_missions_1_2 = {
+		icon = mission_alliance
+		position = 2
+		required_missions = { NNM_missions_1_1 }
+		trigger = {
+			FLC = { trust = { who = ROOT value = 100 } }
+			FTB = { trust = { who = ROOT value = 100 } }
+			TRN = { trust = { who = ROOT value = 100 } }
+		}
+		effect = {
+			add_country_modifier = { name = NNM_mikazuki_trust_modifier duration = -1 }
+			add_splendor = 50
+			add_prestige = 20
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	NNM_missions_1_3 = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = { NNM_missions_1_2 }
+		trigger = {
+			FLC = { is_subject_of_type = mikazuki_ally }
+			FTB = { is_subject_of_type = mikazuki_ally }
+			TRN = { is_subject_of_type = mikazuki_ally }
+		}
+		effect = {
+			set_country_flag = NNM_mikazuki_alliance_formed_flag
+			custom_tooltip = NNM_missions_1_3_tt
+			hidden_effect = {
+				FLC = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+				FTB = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+				TRN = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+			}
+			add_splendor = 100
+			add_prestige = 25
+			add_dip_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_1_4 = {
+		icon = mission_strong_vassals
+		position = 4
+		required_missions = { NNM_missions_1_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 20
+			}
+			total_development = 120
+		}
+		effect = {
+			custom_tooltip = NNM_missions_1_4_tt
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_1_5 = {
+		icon = mission_alliance
+		position = 5
+		required_missions = { NNM_missions_1_3 NNM_missions_4_2 }
+		provinces_to_highlight = {
+			owned_by = IRH
+		}
+		trigger = {
+			IRH = {
+				is_allied_to = ROOT
+				trust = {
+					who = ROOT
+					value = 80
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_1_5_tt
+			hidden_effect = {
+				add_casus_belli = {
+					type = cb_nnm_magical_girl_duel
+					target = IRH
+				}
+			}
+			add_splendor = 150
+			add_prestige = 30
+			add_dip_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_1_6 = {
+		icon = mission_empire
+		position = 6
+		required_missions = { NNM_missions_1_5 }
+		trigger = {
+			num_of_subjects = 5
+			any_subject_country = {
+				count = 5
+				is_subject_of_type = mikazuki_ally
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_1_6_tt
+			add_splendor = 200
+			add_prestige = 35
+			change_government_reform_progress = 100
+			add_stability = 1
+		}
+	}
+
+	NNM_missions_1_7 = {
+		icon = mission_kingdom_of_italy
+		position = 7
+		required_missions = { NNM_missions_1_6 }
+		trigger = {
+			num_of_subjects = 8
+			any_subject_country = {
+				count = 8
+				is_subject_of_type = mikazuki_ally
+			}
+			total_development = 300
+		}
+		effect = {
+			add_country_modifier = { name = NNM_mikazuki_deep_bonds_modifier duration = -1 }
+			add_splendor = 250
+			add_prestige = 40
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+
+	NNM_missions_1_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { NNM_missions_1_7 }
+		trigger = {
+			has_government_power = {
+				mechanic_type = NNM_mikazuki_bonds_mechanic
+				power_type = NNM_mikazuki_bonds_power
+				value = 75
+			}
+			num_of_subjects = 8
+			any_subject_country = {
+				count = 8
+				is_subject_of_type = mikazuki_ally
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_1_8_tt
+			add_splendor = 300
+			add_prestige = 50
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+		}
+	}
+}
+
+NNM_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = NNM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	NNM_missions_2_1 = {
+		icon = mission_african_soldier
+		position = 1
+		provinces_to_highlight = {
+			region = carpathian_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = carpathian_region
+				value = 5
+			}
+		}
+		effect = {
+			add_splendor = 50
+			add_prestige = 15
+			add_mil_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	NNM_missions_2_2 = {
+		icon = mission_eastern_europe
+		position = 2
+		required_missions = { NNM_missions_2_1 }
+		provinces_to_highlight = {
+			area = pest_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = pozsony_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pest_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			pozsony_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_2_3 = {
+		icon = mission_arabian_fort
+		position = 3
+		required_missions = { NNM_missions_2_2 }
+		provinces_to_highlight = {
+			area = spis_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			spis_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			spis_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = NNM_kamihama_unity_modifier duration = -1 }
+			add_splendor = 150
+			add_prestige = 25
+			add_mil_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_2_4 = {
+		icon = mission_spain
+		position = 4
+		required_missions = { NNM_missions_2_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = carpathian_region
+				value = 12
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_carpathian_fortress_modifier duration = -1 }
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+			change_mil = 1
+		}
+	}
+
+	NNM_missions_2_5 = {
+		icon = mission_invade_island
+		position = 5
+		required_missions = { NNM_missions_2_4 }
+		provinces_to_highlight = {
+			region = poland_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = carpathian_region
+				value = 15
+			}
+		}
+		effect = {
+			poland_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 150
+			add_prestige = 30
+			add_mil_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_2_6 = {
+		icon = mission_king_of_naples
+		position = 6
+		required_missions = { NNM_missions_2_5 NNM_missions_1_4 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = carpathian_region
+				value = 20
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_carpathian_master_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 30
+			change_government_reform_progress = 100
+			add_stability = 1
+		}
+	}
+
+	NNM_missions_2_7 = {
+		icon = mission_rb_steppe_conquest
+		position = 7
+		required_missions = { NNM_missions_2_6 }
+		provinces_to_highlight = {
+			region = pontic_steppe_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = carpathian_region
+				value = 25
+			}
+		}
+		effect = {
+			pontic_steppe_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 250
+			add_prestige = 35
+			add_mil_power = 250
+			change_government_reform_progress = 150
+		}
+	}
+
+	NNM_missions_2_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { NNM_missions_2_7 NNM_missions_1_6 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = carpathian_region
+				value = 30
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = poland_region
+				value = 10
+			}
+			total_development = 600
+		}
+		effect = {
+			add_country_modifier = { name = NNM_carpathian_hegemony_modifier duration = -1 }
+			add_splendor = 300
+			add_prestige = 45
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+
+NNM_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = NNM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	NNM_missions_3_1 = {
+		icon = mission_early_game_buildings
+		position = 1
+		trigger = {
+			army_size_percentage = 0.8
+			any_neighbor_country = {
+				any_owned_province = {
+					region = austria_region
+				}
+			}
+		}
+		effect = {
+			add_splendor = 50
+			add_prestige = 15
+			add_mil_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	NNM_missions_3_2 = {
+		icon = mission_roman_empire_west
+		position = 2
+		required_missions = { NNM_missions_3_1 }
+		provinces_to_highlight = {
+			region = austria_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = austria_region
+				value = 5
+			}
+		}
+		effect = {
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_3_3 = {
+		icon = mission_siege
+		position = 3
+		required_missions = { NNM_missions_3_2 }
+		provinces_to_highlight = {
+			area = wien_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			wien_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_vienna_taken_modifier duration = -1 }
+			add_splendor = 150
+			add_prestige = 30
+			add_mil_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_3_4 = {
+		icon = mission_arabian_fort
+		position = 4
+		required_missions = { NNM_missions_3_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = austria_region
+				value = 12
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_alpine_defense_modifier duration = -1 }
+			add_splendor = 100
+			add_prestige = 25
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_3_5 = {
+		icon = mission_noble_council
+		position = 5
+		required_missions = { NNM_missions_3_4 NNM_missions_1_3 }
+		provinces_to_highlight = {
+			region = south_germany_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = austria_region
+				value = 15
+			}
+		}
+		effect = {
+			south_germany_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 200
+			add_prestige = 30
+			add_mil_power = 200
+			change_government_reform_progress = 100
+		}
+	}
+
+	NNM_missions_3_6 = {
+		icon = mission_monarch_in_throne_room
+		position = 6
+		required_missions = { NNM_missions_3_5 NNM_missions_1_4 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				OR = {
+					region = austria_region
+					region = south_germany_region
+				}
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_danube_league_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+
+	NNM_missions_3_7 = {
+		icon = mission_kingdom_of_italy
+		position = 7
+		required_missions = { NNM_missions_3_6 }
+		provinces_to_highlight = {
+			region = italy_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				OR = {
+					region = austria_region
+					region = south_germany_region
+				}
+				value = 25
+			}
+		}
+		effect = {
+			italy_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 250
+			add_prestige = 40
+			add_mil_power = 250
+			change_government_reform_progress = 150
+		}
+	}
+
+	NNM_missions_3_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { NNM_missions_3_7 NNM_missions_1_7 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = austria_region
+				value = 20
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = south_germany_region
+				value = 20
+			}
+			total_development = 700
+		}
+		effect = {
+			add_country_modifier = { name = NNM_western_hegemony_modifier duration = -1 }
+			add_splendor = 300
+			add_prestige = 50
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+
+NNM_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = NNM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	NNM_missions_4_1 = {
+		icon = mission_high_income
+		position = 1
+		provinces_to_highlight = {
+			region = balkan_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = balkan_region
+				value = 5
+			}
+		}
+		effect = {
+			add_splendor = 50
+			add_prestige = 15
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	NNM_missions_4_2 = {
+		icon = mission_rifle
+		position = 2
+		required_missions = { NNM_missions_4_1 }
+		provinces_to_highlight = {
+			area = serbia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			serbia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			balkan_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_4_3 = {
+		icon = mission_empire
+		position = 3
+		required_missions = { NNM_missions_4_2 NNM_missions_1_3 }
+		provinces_to_highlight = {
+			owned_by = MDK
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = balkan_region
+				value = 10
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_4_3_tt
+			hidden_effect = {
+				add_casus_belli = {
+					type = cb_nnm_magical_girl_duel
+					target = MDK
+				}
+			}
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 150
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_4_4 = {
+		icon = mission_privateer
+		position = 4
+		required_missions = { NNM_missions_4_3 }
+		provinces_to_highlight = {
+			owned_by = TOM
+		}
+		trigger = {
+			OR = {
+				NOT = { exists = TOM }
+				TOM = { is_subject_of = ROOT }
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_4_4_tt
+			hidden_effect = {
+				add_casus_belli = {
+					type = cb_nnm_magical_girl_duel
+					target = TOM
+				}
+			}
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_4_5 = {
+		icon = mission_sicilian_vespers
+		position = 5
+		required_missions = { NNM_missions_4_4 }
+		provinces_to_highlight = {
+			owned_by = SAY
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = balkan_region
+				value = 15
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_4_5_tt
+			hidden_effect = {
+				add_casus_belli = {
+					type = cb_nnm_magical_girl_duel
+					target = SAY
+				}
+			}
+			add_splendor = 200
+			add_prestige = 30
+			add_dip_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_4_6 = {
+		icon = mission_arabian_trade
+		position = 6
+		required_missions = { NNM_missions_4_5 NNM_missions_1_4 }
+		provinces_to_highlight = {
+			area = constantinople_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			constantinople_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_byzantium_fallen_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			change_government_reform_progress = 100
+			add_stability = 1
+		}
+	}
+
+	NNM_missions_4_7 = {
+		icon = mission_kingdom_of_italy
+		position = 7
+		required_missions = { NNM_missions_4_6 NNM_missions_1_5 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = balkan_region
+				value = 25
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_balkan_master_modifier duration = -1 }
+			add_splendor = 250
+			add_prestige = 40
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+
+	NNM_missions_4_8 = {
+		icon = mission_roman_empire_west
+		position = 8
+		required_missions = { NNM_missions_4_7 NNM_missions_1_7 }
+		trigger = {
+			MDK = { is_subject_of_type = mikazuki_ally }
+			SAY = { is_subject_of_type = mikazuki_ally }
+			TOM = { is_subject_of_type = mikazuki_ally }
+		}
+		effect = {
+			custom_tooltip = NNM_missions_4_8_tt
+			add_country_modifier = { name = NNM_madoka_circle_modifier duration = -1 }
+			set_country_flag = NNM_madoka_circle_completed_flag
+			add_splendor = 300
+			add_prestige = 50
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+		}
+	}
+}
+
+NNM_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = NNM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	NNM_missions_5_1 = {
+		icon = mission_galleys_in_port
+		position = 1
+		trigger = {
+			num_of_total_ports = 8
+			navy_size_percentage = 0.8
+		}
+		effect = {
+			add_splendor = 50
+			add_prestige = 15
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	NNM_missions_5_2 = {
+		icon = mission_sea_battles
+		position = 2
+		required_missions = { NNM_missions_5_1 }
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = anatolia_region
+				value = 5
+			}
+		}
+		effect = {
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_5_3 = {
+		icon = mission_empire
+		position = 3
+		required_missions = { NNM_missions_5_2 NNM_missions_1_3 }
+		provinces_to_highlight = {
+			owned_by = AKE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = anatolia_region
+				value = 10
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_5_3_tt
+			hidden_effect = {
+				add_casus_belli = {
+					type = cb_nnm_magical_girl_duel
+					target = AKE
+				}
+			}
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 150
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_5_4 = {
+		icon = mission_aristocrats
+		position = 4
+		required_missions = { NNM_missions_5_3 }
+		provinces_to_highlight = {
+			owned_by = KYO
+		}
+		trigger = {
+			OR = {
+				NOT = { exists = KYO }
+				KYO = { is_subject_of = ROOT }
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_5_4_tt
+			hidden_effect = {
+				add_casus_belli = {
+					type = cb_nnm_magical_girl_duel
+					target = KYO
+				}
+			}
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	NNM_missions_5_5 = {
+		icon = mission_ottoman
+		position = 5
+		required_missions = { NNM_missions_5_4 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = anatolia_region
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_anatolia_iron_march_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 30
+			add_mil_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	NNM_missions_5_6 = {
+		icon = mission_estate
+		position = 6
+		required_missions = { NNM_missions_5_5 NNM_missions_4_5 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = anatolia_region
+				value = 15
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = balkan_region
+				value = 10
+			}
+		}
+		effect = {
+			custom_tooltip = NNM_missions_5_6_tt
+			add_splendor = 200
+			add_prestige = 30
+			add_dip_power = 200
+			change_government_reform_progress = 100
+		}
+	}
+
+	NNM_missions_5_7 = {
+		icon = mission_cross_africa
+		position = 7
+		required_missions = { NNM_missions_5_6 NNM_missions_1_6 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = anatolia_region
+				value = 25
+			}
+		}
+		effect = {
+			add_country_modifier = { name = NNM_anatolia_master_modifier duration = -1 }
+			add_splendor = 250
+			add_prestige = 40
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+
+	NNM_missions_5_8 = {
+		icon = mission_roman_empire_east
+		position = 8
+		required_missions = { NNM_missions_5_7 NNM_missions_1_7 }
+		trigger = {
+			AKE = { is_subject_of_type = mikazuki_ally }
+			KYO = { is_subject_of_type = mikazuki_ally }
+			MMN = { is_subject_of_type = mikazuki_ally }
+		}
+		effect = {
+			custom_tooltip = NNM_missions_5_8_tt
+			add_country_modifier = { name = NNM_magical_dawn_modifier duration = -1 }
+			set_country_flag = NNM_magical_dawn_completed_flag
+			add_splendor = 300
+			add_prestige = 50
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+		}
+	}
+}

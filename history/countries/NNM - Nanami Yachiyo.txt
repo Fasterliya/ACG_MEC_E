@@ -1,0 +1,22 @@
+government = acg_monarchy
+add_government_reform = NNM_mikazuki_government_reform
+government_rank = 1
+primary_culture = NanamiYachiyo
+religion = MagicalGirl
+historical_friend = IRH
+historical_friend = TRN
+technology_group = western
+capital = 1864
+
+1444.11.11 = {
+	monarch = {
+		name = "Yachiyo"
+		dynasty = "Nanami"
+		birth_date = 1428.11.11
+		death_date = 1821.12.31
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+	add_ruler_personality = immortal_personality
+}

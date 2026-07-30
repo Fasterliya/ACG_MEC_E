@@ -1,0 +1,14 @@
+cb_nnm_magical_girl_duel = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 240
+
+	prerequisites = {
+		FROM = {
+			culture_group = MadokaMagica
+		}
+		is_neighbor_of = FROM
+	}
+
+	war_goal = nnm_duel_subjugate
+}

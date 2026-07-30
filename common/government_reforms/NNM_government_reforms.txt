@@ -1,0 +1,26 @@
+NNM_mikazuki_government_reform = {
+	lock_level_when_selected = yes
+	icon = "gourmet_monarchy_reform"
+	potential = {
+		OR = {
+			has_reform = NNM_mikazuki_government_reform
+			have_had_reform = NNM_mikazuki_government_reform
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		global_autonomy = -0.05
+		vassal_income = 0.15
+		diplomatic_reputation = 1
+		global_unrest = -1
+		governing_capacity = 200
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+	government_abilities = {
+		NNM_mikazuki_bonds_mechanic
+	}
+}

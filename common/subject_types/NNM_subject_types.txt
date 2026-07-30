@@ -1,0 +1,36 @@
+mikazuki_ally = {
+	is_ecclesiastical = no
+	vassal = yes
+	is_subject_type = yes
+
+	takes_diplo_slot = no
+
+	base_liberty_desire = -15
+	minimum_ld_for_disloyal = no
+	trust_start = 100
+
+	pays_overlord = 0.10
+	forcelimit_to_overlord = 0.25
+	military_focus = 1.5
+
+	modifier_overlord = {
+		modifier = NNM_mikazuki_overlord_modifier
+	}
+
+	modifier_subject = {
+		modifier = NNM_mikazuki_subject_modifier
+	}
+
+	can_annex = {
+		has_opinion = {
+			who = FROM
+			value = 190
+		}
+		trust = {
+			who = FROM
+			value = 90
+		}
+	}
+
+	annex_cost_modifier = 20
+}

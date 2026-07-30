@@ -1,0 +1,290 @@
+NNM_mikazuki_bonds_mechanic = {
+	available = {
+		always = yes
+	}
+
+	powers = {
+		NNM_mikazuki_bonds_power = {
+			max = 100
+			base_monthly_growth = 0
+			increases_with_global = no
+
+			range_modifier = {
+				modifier = {
+					improve_relation_modifier = 0.10
+				}
+				start_value = 0
+				end_value = 100
+			}
+			range_modifier = {
+				modifier = {
+					liberty_desire = -10
+				}
+				start_value = 25
+				end_value = 100
+			}
+			range_modifier = {
+				modifier = {
+					years_of_nationalism = -5
+				}
+				start_value = 50
+				end_value = 100
+			}
+			range_modifier = {
+				modifier = {
+					administrative_efficiency = 0.05
+				}
+				start_value = 75
+				end_value = 100
+			}
+
+			### Extra Stage 1 (0-100, mission: 三日月同盟成立)
+			range_modifier = {
+				modifier = {
+					diplomatic_upkeep = 1
+				}
+				start_value = 0
+				end_value = 100
+				trigger = {
+					mission_completed = NNM_missions_1_3
+				}
+			}
+
+			### Extra Stage 2 (25-100, mission: 神滨的盾牌)
+			range_modifier = {
+				modifier = {
+					vassal_forcelimit_bonus = 0.5
+				}
+				start_value = 25
+				end_value = 100
+				trigger = {
+					mission_completed = NNM_missions_1_4
+				}
+			}
+
+			### Extra Stage 3 (50-100, mission: 魔法少女联邦)
+			range_modifier = {
+				modifier = {
+					ae_impact = -0.15
+				}
+				start_value = 50
+				end_value = 100
+				trigger = {
+					mission_completed = NNM_missions_1_6
+				}
+			}
+
+			### Extra Stage 4 (75-100, mission: 永恒的羁绊)
+			range_modifier = {
+				modifier = {
+					discipline = 0.05
+				}
+				start_value = 75
+				end_value = 100
+				trigger = {
+					mission_completed = NNM_missions_1_8
+				}
+			}
+
+			### Cross-stage extra: 圆环之理 (slot4_pos8) - applies from stage 2+
+			range_modifier = {
+				modifier = {
+					global_unrest = -2
+				}
+				start_value = 25
+				end_value = 100
+				trigger = {
+					mission_completed = NNM_missions_4_8
+				}
+			}
+
+			### Cross-stage extra: 魔法少女的黎明 (slot5_pos8) - applies from stage 3+
+			range_modifier = {
+				modifier = {
+					diplomatic_reputation = 2
+				}
+				start_value = 50
+				end_value = 100
+				trigger = {
+					mission_completed = NNM_missions_5_8
+				}
+			}
+		}
+	}
+
+	interactions = {
+		NNM_mikazuki_meeting_interaction = {
+			trigger = {
+			}
+			effect = {
+				custom_tooltip = NNM_mikazuki_meeting_refresh_tt
+				hidden_effect = {
+					every_subject_country = {
+						limit = {
+							is_subject_of_type = mikazuki_ally
+						}
+						save_event_target_as = NNM_mikazuki_temp
+					}
+					set_variable = {
+						which = NNM_mikazuki_count_var
+						value = 0
+					}
+					every_subject_country = {
+						limit = {
+							is_subject_of_type = mikazuki_ally
+						}
+						change_variable = {
+							which = NNM_mikazuki_count_var
+							value = 1
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 1
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 2
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 3
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 4
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 5
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 6
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 7
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = NNM_mikazuki_count_var
+								value = 8
+							}
+						}
+						add_government_power = {
+							mechanic_type = NNM_mikazuki_bonds_mechanic
+							power_type = NNM_mikazuki_bonds_power
+							value = 5
+						}
+					}
+				}
+				custom_tooltip = NNM_mikazuki_bonds_stage_tt
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 0
+			}
+		}
+
+		NNM_bonds_resonance_interaction = {
+			trigger = {
+				has_government_power = {
+					mechanic_type = NNM_mikazuki_bonds_mechanic
+					power_type = NNM_mikazuki_bonds_power
+					value = 25
+				}
+				dip_power_cost = 100
+			}
+			effect = {
+				dip_power_cost = 100
+				add_government_power = {
+					mechanic_type = NNM_mikazuki_bonds_mechanic
+					power_type = NNM_mikazuki_bonds_power
+					value = -25
+				}
+				custom_tooltip = NNM_bonds_resonance_effect_tt
+				hidden_effect = {
+					every_subject_country = {
+						limit = {
+							is_subject_of_type = mikazuki_ally
+						}
+						add_trust = {
+							who = ROOT
+							value = 15
+						}
+						add_liberty_desire = -10
+					}
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}
