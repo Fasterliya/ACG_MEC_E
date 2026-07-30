@@ -17,6 +17,7 @@ country_decisions = {
 				name = KSN_spell_optical_bombardment
 				duration = -1
 			}
+			
 		}
 		ai_will_do = {
 			factor = 1
