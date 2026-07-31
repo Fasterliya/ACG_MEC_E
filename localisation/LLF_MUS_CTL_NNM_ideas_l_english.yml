@@ -283,6 +283,40 @@
  NNM_mikazuki_deep_bonds_modifier: "ñmS„vÊu"
  NNM_mikazuki_deep_bonds_modifier_desc: "Ïu†SÇàepeb—eTÿ	NåegTßv„vÊuòTñmeQ¨šÓš0D–¸^4³u„vz6eŒTàVÚ‹¦^ý¾0R†N°e„vØš¦^0"
 
+ # Mission 25-Year Modifiers
+ NNM_mikazuki_lights_modifier: "三日月庄的灯火"
+ NNM_mikazuki_lights_modifier_desc: "三日月庄的灯火温暖而明亮。外交声望+1，改善关系+25%，阶层忠诚均衡+10%。"
+
+ NNM_western_threat_modifier: "西方威胁的应对"
+ NNM_western_threat_modifier_desc: "面对西方强大的敌人，联邦已做好万全准备。陆军士气+10%，训练度+5%，人力恢复速度+20%。"
+
+ NNM_bosphorus_gate_modifier: "海峡之门的开启"
+ NNM_bosphorus_gate_modifier_desc: "博斯普鲁斯海峡之门已为联邦打开。海军士气+15%，桨帆船战斗力+15%，水手恢复速度+20%。"
+
+ NNM_alpine_ward_modifier: "阿尔卑斯的铁壁"
+ NNM_alpine_ward_modifier_desc: "阿尔卑斯山脉成为联邦南方的天然铁壁。火力伤害+5%，承受火伤-5%，要塞防御+15%，敌方损耗+1。"
+
+ NNM_imperial_shadow_modifier: "帝国的阴影"
+ NNM_imperial_shadow_modifier_desc: "神圣罗马帝国的阴影笼罩南德意志，但联邦已找到突破口。外交合并花费-15%，造核花费-10%，侵略扩张-10%。"
+
+ # Mission Permanent Modifiers
+ NNM_steppe_conquest_modifier: "草原的征服者"
+ NNM_steppe_conquest_modifier_desc: "庞蒂克草原的游牧传统已被联邦吸纳。骑兵战斗力+15%，骑兵侧翼+25%，移动速度+10%。"
+
+ NNM_imperial_legacy_modifier: "帝国的遗产"
+ NNM_imperial_legacy_modifier_desc: "意大利的富庶城邦归入联邦，帝国的遗产重焕生机。科技花费-5%，思潮传播+15%，全球贸易力量+10%。"
+
+ NNM_madoka_blessing_modifier: "圆神的祝福"
+ NNM_madoka_blessing_modifier_desc: "鹿目圆的无限魔力为联邦带来祝福。理念花费-5%，异端容忍+1，传教力量+2%。"
+
+ NNM_tomoe_mentor_modifier: "麻美的指导"
+ NNM_tomoe_mentor_modifier_desc: "巴麻美以资深魔法少女的身份指导联邦军队。火力伤害+5%，炮兵战斗力+10%，操练获取+25%。"
+
+ NNM_akemi_cycle_modifier: "焰的轮回"
+ NNM_akemi_cycle_modifier_desc: "晓美焰轮回积累的战斗经验融入联邦。训练度+5%，冲击伤害+5%，移动速度+10%。"
+
+ NNM_kyoko_survivor_modifier: "杏子的生存法则"
+ NNM_kyoko_survivor_modifier_desc: "佐仓杏子以流浪战士的经验强化了联邦韧性。陆军士气+10%，承受冲击伤害-5%，人力恢复速度+15%。"
  # Mikazuki Tier Modifiers (Overlord)
  NNM_mikazuki_tier1: "ÊuKNË‚"
  NNM_mikazuki_tier1_desc: "	Nåeg„v,rNÊuòTÏu„Ë‚09e„UsQû|+10%ÿÏkg+0.2ÊuKN›R0"

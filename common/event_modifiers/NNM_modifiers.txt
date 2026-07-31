@@ -79,6 +79,94 @@ NNM_mikazuki_deep_bonds_modifier = {
 	picture = "diplomacy_ideas"
 	vassal_income = 0.20
 	reduced_liberty_desire = 5
+	technology_cost = -0.05
+	idea_cost = -0.05
+	infantry_power = 0.10
+	land_morale = 0.05
+	discipline = 0.05
+	land_forcelimit_modifier = 0.50
+}
+
+# ============ Mission 25-Year Modifiers ============
+
+NNM_mikazuki_lights_modifier = {
+	picture = "diplomacy_ideas"
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.25
+	all_estate_loyalty_equilibrium = 0.10
+}
+
+NNM_western_threat_modifier = {
+	picture = "military_ideas"
+	land_morale = 0.10
+	discipline = 0.05
+	manpower_recovery_speed = 0.20
+}
+
+NNM_bosphorus_gate_modifier = {
+	picture = "naval_ideas"
+	naval_morale = 0.15
+	galley_power = 0.15
+	sailors_recovery_speed = 0.20
+}
+
+NNM_alpine_ward_modifier = {
+	picture = "defensive_ideas"
+	fire_damage = 0.05
+	fire_damage_received = -0.05
+	defensiveness = 0.15
+	hostile_attrition = 1
+}
+
+NNM_imperial_shadow_modifier = {
+	picture = "conquest_ideas"
+	dip_annex_cost = -0.15
+	core_creation = -0.10
+	ae_impact = -0.10
+}
+
+# ============ Mission Permanent Modifiers ============
+
+NNM_steppe_conquest_modifier = {
+	picture = "leadership_ideas"
+	cavalry_power = 0.15
+	cavalry_flanking = 0.25
+	movement_speed = 0.10
+}
+
+NNM_imperial_legacy_modifier = {
+	picture = "prestige_ideas"
+	technology_cost = -0.05
+	institution_spread = 0.15
+	global_trade_power = 0.10
+}
+
+NNM_madoka_blessing_modifier = {
+	picture = "religious_ideas"
+	idea_cost = -0.05
+	tolerance_heretic = 1
+	global_missionary_strength = 0.02
+}
+
+NNM_tomoe_mentor_modifier = {
+	picture = "military_ideas"
+	fire_damage = 0.05
+	artillery_power = 0.10
+	drill_gain_modifier = 0.25
+}
+
+NNM_akemi_cycle_modifier = {
+	picture = "military_ideas"
+	discipline = 0.05
+	shock_damage = 0.05
+	movement_speed = 0.10
+}
+
+NNM_kyoko_survivor_modifier = {
+	picture = "military_ideas"
+	land_morale = 0.10
+	shock_damage_received = -0.05
+	manpower_recovery_speed = 0.15
 }
 
 # ============ Mikazuki Tier Modifiers (Overlord) ============

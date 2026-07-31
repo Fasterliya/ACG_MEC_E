@@ -31,13 +31,14 @@ NNM_missions_1 = {
 			}
 		}
 		effect = {
+			add_country_modifier = { name = NNM_mikazuki_lights_modifier duration = 9125 }
 			add_splendor = 50
 			add_prestige = 15
 			add_dip_power = 100
 			change_government_reform_progress = 25
 		}
 	}
-	
+
 	NNM_missions_1_2 = {
 		icon = mission_alliance
 		position = 2
@@ -390,13 +391,14 @@ NNM_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = { name = NNM_steppe_conquest_modifier duration = -1 }
 			add_splendor = 250
 			add_prestige = 35
 			add_mil_power = 250
 			change_government_reform_progress = 150
 		}
 	}
-	
+
 	NNM_missions_2_8 = {
 		icon = mission_empire
 		position = 8
@@ -448,13 +450,14 @@ NNM_missions_3 = {
 			}
 		}
 		effect = {
+			add_country_modifier = { name = NNM_western_threat_modifier duration = 9125 }
 			add_splendor = 50
 			add_prestige = 15
 			add_mil_power = 100
 			change_government_reform_progress = 25
 		}
 	}
-	
+
 	NNM_missions_3_2 = {
 		icon = mission_roman_empire_west
 		position = 2
@@ -512,13 +515,14 @@ NNM_missions_3 = {
 		}
 		effect = {
 			add_country_modifier = { name = NNM_alpine_defense_modifier duration = -1 }
+			add_country_modifier = { name = NNM_alpine_ward_modifier duration = 9125 }
 			add_splendor = 100
 			add_prestige = 25
 			add_mil_power = 150
 			change_government_reform_progress = 50
 		}
 	}
-	
+
 	NNM_missions_3_5 = {
 		icon = mission_noble_council
 		position = 5
@@ -538,13 +542,14 @@ NNM_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = { name = NNM_imperial_shadow_modifier duration = 9125 }
 			add_splendor = 200
 			add_prestige = 30
 			add_mil_power = 200
 			change_government_reform_progress = 100
 		}
 	}
-	
+
 	NNM_missions_3_6 = {
 		icon = mission_monarch_in_throne_room
 		position = 6
@@ -583,13 +588,14 @@ NNM_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = { name = NNM_imperial_legacy_modifier duration = -1 }
 			add_splendor = 250
 			add_prestige = 40
 			add_mil_power = 250
 			change_government_reform_progress = 150
 		}
 	}
-	
+
 	NNM_missions_3_8 = {
 		icon = mission_empire
 		position = 8
@@ -682,6 +688,7 @@ NNM_missions_4 = {
 			}
 		}
 		effect = {
+			add_country_modifier = { name = NNM_madoka_blessing_modifier duration = -1 }
 			custom_tooltip = NNM_missions_4_3_tt
 			custom_tooltip = NNM_missions_4_3_hidden_tt
 			hidden_effect = {
@@ -711,6 +718,7 @@ NNM_missions_4 = {
 			}
 		}
 		effect = {
+			add_country_modifier = { name = NNM_tomoe_mentor_modifier duration = -1 }
 			custom_tooltip = NNM_missions_4_4_tt
 			custom_tooltip = NNM_missions_4_4_hidden_tt
 			hidden_effect = {
@@ -840,13 +848,14 @@ NNM_missions_5 = {
 			navy_size_percentage = 0.8
 		}
 		effect = {
+			add_country_modifier = { name = NNM_bosphorus_gate_modifier duration = 9125 }
 			add_splendor = 50
 			add_prestige = 15
 			add_dip_power = 100
 			change_government_reform_progress = 25
 		}
 	}
-	
+
 	NNM_missions_5_2 = {
 		icon = mission_sea_battles
 		position = 2
@@ -883,6 +892,7 @@ NNM_missions_5 = {
 			}
 		}
 		effect = {
+			add_country_modifier = { name = NNM_akemi_cycle_modifier duration = -1 }
 			custom_tooltip = NNM_missions_5_3_tt
 			custom_tooltip = NNM_missions_5_3_hidden_tt
 			hidden_effect = {
@@ -912,6 +922,7 @@ NNM_missions_5 = {
 			}
 		}
 		effect = {
+			add_country_modifier = { name = NNM_kyoko_survivor_modifier duration = -1 }
 			custom_tooltip = NNM_missions_5_4_tt
 			custom_tooltip = NNM_missions_5_4_hidden_tt
 			hidden_effect = {
