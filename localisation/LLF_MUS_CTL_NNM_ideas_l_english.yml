@@ -209,21 +209,22 @@
  NNM_mikazuki_bonds_mechanic: "	NåegÊu"
  NNM_mikazuki_bonds_power: "ÊuKN›R"
  NNM_bonds_resonance_interaction: "ÊuqQ1ž"
- NNM_bonds_resonance_interaction_desc: "ˆmw25¹pÊuKN›RN100Y²N¹ppeÿNb	g	NåegTßvD–¸^·ƒ—V+15áOûNv^-10%ìrËz>PT0·QtS10t^0"
- NNM_bonds_resonance_effect_tt: "Nb	g	NåegTßvD–¸^·ƒ—VáOûN+15ÿìrËz>PT-10%"
+ NNM_bonds_resonance_interaction_desc: "ˆmw25¹pÊuKN›RN100Y²N¹ppe0Nb	g	NåegTßv^SýV·ƒ—V+15áOûNv^-10%ìrËz>PTÿTöe·ƒ—VøvSVŽN2.5t^„v6eeQ0·QtS10t^0"
+ NNM_bonds_resonance_effect_tt: "Nb	g	NåegTßv^SýVÿáOûN+15ÿìrËz>PT-10%\n—RINýVÿ·ƒ—V2.5t^6eeQ"
 
- NNM_magical_offering_interaction: "魔力奉献"
- NNM_magical_offering_interaction_desc: "消耗25点羁绊之力。同盟成员将魔力奉献给八千代，转化为联邦资源。宗主国获得100行政、100外交、100军事点数，所有阶层+10%忠诚，王领+5%。属国获得25行政、25军事点数，独立倾向-5%。冷却15年。"
- NNM_magical_offering_tt: "宗主国：+100§G行政§!、+100§G外交§!、+100§G军事§!\n宗主国：所有阶层§Y+10%§!忠诚度，§Y+5%§!王领\n全体属国：+25§G行政§!、+25§G军事§!、§G-5%§!独立倾向"
+ NNM_magical_offering_interaction: "T››RIY.s"
+ NNM_magical_offering_interaction_desc: "ˆmw25¹pÊuKN›R0TßvbXTST››RIY.sÙukQCSãNÿlS:NTw¦Dn0—RINýV·ƒ—V100Lˆ?e0100Y²N0100›Q‹N¹ppeÿNb	g6–BS+10%àVÚ‹ÿ‹s†˜+5%0^SýV·ƒ—V25Lˆ?e025›Q‹N¹ppeÿìrËz>PT-5%0·QtS15t^0"
+ NNM_magical_offering_tt: "—RINýVÿ+100§GLˆ?e§!0+100§GY²N§!0+100§G›Q‹N§!\n—RINýVÿNb	g6–BS§Y+10%§!àVÚ‹¦^ÿ§Y+5%§!‹s†˜\nhQSO^SýVÿ+25§GLˆ?e§!0+25§G›Q‹N§!0§G-5%§!ìrËz>PT"
 
- NNM_miracle_resonance_interaction: "奇迹的共鸣"
- NNM_miracle_resonance_interaction_desc: "消耗40点羁绊之力与100军事点数。触发魔法少女间的奇迹共鸣。10年内发展省份时有50%概率额外获得1点对应发展度。属国获得30军事点数和10%当前人力。冷却20年。"
- NNM_miracle_resonance_tt: "宗主国：获得§G奇迹共鸣§!修正（10年）——每次发展省份§Y50%§!概率额外§G+1§!对应发展度\n全体属国：+30§G军事§!、恢复§Y10%§!人力池"
+ NNM_miracle_resonance_interaction: "GYù„vqQ1ž"
+ NNM_miracle_resonance_interaction_desc: "ˆmw40¹pÊuKN›RN100›Q‹N¹ppe0æ‰ÑST›ÕlSsYô•„vGYùqQ1ž010t^…QÑSUSwýNöe	g50%‚i‡s˜Y·ƒ—V1¹pùR”^ÑSUS¦^0^SýV·ƒ—V30›Q‹N¹ppeŒT10%SVMRºN›R0·QtS20t^0"
+ NNM_miracle_resonance_tt: "—RINýVÿ·ƒ—V§GGYùqQ1ž§!îOckÿ10t^	ÿÏk!kÑSUSwýN§Y50%§!‚i‡s˜Y§G+1§!ùR”^ÑSUS¦^\nhQSO^SýVÿ+30§G›Q‹N§!0b`Y§Y10%§!ºN›R`l"
 
- NNM_miracle_resonance_modifier: "奇迹共鸣"
- NNM_miracle_resonance_modifier_desc: "魔法少女间的羁绊引发奇迹共鸣。发展省份时有50%概率额外获得1点发展度。阶层忠诚均衡+10%，发展成本-10%。"
+ NNM_miracle_resonance_modifier: "GYùqQ1ž"
+ NNM_miracle_resonance_modifier_desc: "T›ÕlSsYô•„vÊuVÑSGYùqQ1ž0ÑSUSwýNöe	g50%‚i‡s˜Y·ƒ—V1¹pÑSUS¦^06–BSàVÚ‹GWaˆ+10%ÿÑSUSb,g-10%0"
+
  # Government Mechanic - Meeting Decision
- NNM_hold_mikazuki_meeting_decision: "7R°e	Nåeg¶r`"
+ NNM_hold_mikazuki_meeting_decision_title: "7R°e	Nåeg¶r`"
  NNM_hold_mikazuki_meeting_decision_desc: "ìSV	Nåeg„^hQSOO®‹ÿÀhÆ‰SVMRTßvbXTv^Í‘°eÝQZwÊuKN›R09hnc	NåegTßvbXTpeÏ‘ôf°eùR”^„vÊu6–µkîOckÿTöeÍ‘°e2RšRûN¡Rã‰•„vGSµužXÊv0·QtS5t^0"
  NNM_meeting_cooldown: "O®‹·QtS-N"
  NNM_meeting_cooldown_desc: "	Nåeg„^RRìSVÇO®‹ÿ—‰öeô•ÆQYNN!kÆ–O0"
@@ -281,42 +282,43 @@
  NNM_magical_dawn_modifier: "T›ÕlSsY„vÎžf"
  NNM_magical_dawn_modifier_desc: "SfŽ0q0OgPRNŒvmln„v ReQh×VNwT›ÕlSsY°eªuCQ„vV=T0kQCSt^eg„vøv’N‹kNgÈuŽNÓumg(W°eéy^NÿTw¦„v.OYe›RÏ‘>fW„žX:V0"
  NNM_mikazuki_deep_bonds_modifier: "ñmS„vÊu"
- NNM_mikazuki_deep_bonds_modifier_desc: "Ïu†SÇàepeb—eTÿ	NåegTßv„vÊuòTñmeQ¨šÓš0D–¸^4³u„vz6eŒTàVÚ‹¦^ý¾0R†N°e„vØš¦^0"
+ NNM_mikazuki_deep_bonds_modifier_desc: "Ïu†SÇàepeb—eTÿ	NåegTßv„vÊuòTñmeQ¨šÓš0"
 
  # Mission 25-Year Modifiers
- NNM_mikazuki_lights_modifier: "三日月庄的灯火"
- NNM_mikazuki_lights_modifier_desc: "三日月庄的灯火温暖而明亮。外交声望+1，改善关系+25%，阶层忠诚均衡+10%。"
+ NNM_mikazuki_lights_modifier: "	Nåeg„^„vopkp"
+ NNM_mikazuki_lights_modifier_desc: "	Nåeg„^„vopkp)n–fwf®N0"
 
- NNM_western_threat_modifier: "西方威胁的应对"
- NNM_western_threat_modifier_desc: "面对西方强大的敌人，联邦已做好万全准备。陆军士气+10%，训练度+5%，人力恢复速度+20%。"
+ NNM_western_threat_modifier: "‰¹eZÁw„v”^ùR"
+ NNM_western_threat_modifier_desc: "b—ùR‰¹e:V'Y„vLeºNÿTw¦òTZP‹YNhQÆQY0"
 
- NNM_bosphorus_gate_modifier: "海峡之门的开启"
- NNM_bosphorus_gate_modifier_desc: "博斯普鲁斯海峡之门已为联邦打开。海军士气+15%，桨帆船战斗力+15%，水手恢复速度+20%。"
+ NNM_bosphorus_gate_modifier: "wmáSKNè•„vV=T"
+ NNM_bosphorus_gate_modifier_desc: "ZS¯enfœ¯ewmáSKNè•òT:NTw¦SbV0"
 
- NNM_alpine_ward_modifier: "阿尔卑斯的铁壁"
- NNM_alpine_ward_modifier_desc: "阿尔卑斯山脉成为联邦南方的天然铁壁。火力伤害+5%，承受火伤-5%，要塞防御+15%，敌方损耗+1。"
+ NNM_alpine_ward_modifier: "?–SQS¯e„vÁ”ÁX"
+ NNM_alpine_ward_modifier_desc: "?–SQS¯eqS	b:NTw¦WS¹e„v)Y6qÁ”ÁX0"
 
- NNM_imperial_shadow_modifier: "帝国的阴影"
- NNM_imperial_shadow_modifier_desc: "神圣罗马帝国的阴影笼罩南德意志，但联邦已找到突破口。外交合并花费-15%，造核花费-10%，侵略扩张-10%。"
+ NNM_imperial_shadow_modifier: "^ýV„v4–qV"
+ NNM_imperial_shadow_modifier_desc: "^y1WWlš^ýV„v4–qV<riWS·Va×VÿFOTw¦òTŒb0Rz4xãS0"
 
  # Mission Permanent Modifiers
- NNM_steppe_conquest_modifier: "草原的征服者"
- NNM_steppe_conquest_modifier_desc: "庞蒂克草原的游牧传统已被联邦吸纳。骑兵战斗力+15%，骑兵侧翼+25%，移动速度+10%。"
+ NNM_steppe_conquest_modifier: "IƒŸS„vVgw"
+ NNM_steppe_conquest_modifier_desc: "ž^‚„KQIƒŸS„v8ngr.OßuòT«ˆTw¦8T³u0"
 
- NNM_imperial_legacy_modifier: "帝国的遗产"
- NNM_imperial_legacy_modifier_desc: "意大利的富庶城邦归入联邦，帝国的遗产重焕生机。科技花费-5%，思潮传播+15%，全球贸易力量+10%。"
+ NNM_imperial_legacy_modifier: "^ýV„vWµN"
+ NNM_imperial_legacy_modifier_desc: "a'Y)R„vÌR¶^ÎW¦RVeQTw¦ÿ^ýV„vWµNÍ‘qu:g0"
 
- NNM_madoka_blessing_modifier: "圆神的祝福"
- NNM_madoka_blessing_modifier_desc: "鹿目圆的无限魔力为联邦带来祝福。理念花费-5%，异端容忍+1，传教力量+2%。"
+ NNM_madoka_blessing_modifier: "W^y„vkyy"
+ NNM_madoka_blessing_modifier_desc: "žîvW„vàeP–T››R:NTw¦&^egkyy0"
 
- NNM_tomoe_mentor_modifier: "麻美的指导"
- NNM_tomoe_mentor_modifier_desc: "巴麻美以资深魔法少女的身份指导联邦军队。火力伤害+5%，炮兵战斗力+10%，操练获取+25%。"
+ NNM_tomoe_mentor_modifier: "»žŽ„vcüR"
+ NNM_tomoe_mentor_modifier_desc: "ôT»žŽåNDñmT›ÕlSsY„v«ŽýNcüRTw¦›Q–0"
 
- NNM_akemi_cycle_modifier: "焰的轮回"
- NNM_akemi_cycle_modifier_desc: "晓美焰轮回积累的战斗经验融入联邦。训练度+5%，冲击伤害+5%，移动速度+10%。"
+ NNM_akemi_cycle_modifier: "0q„vnÞV"
+ NNM_akemi_cycle_modifier_desc: "SfŽ0qnÞVïy=t„vb—eÏuŒš‡eQTw¦0"
 
- NNM_kyoko_survivor_modifier: "杏子的生存法则"
- NNM_kyoko_survivor_modifier_desc: "佐仓杏子以流浪战士的经验强化了联邦韧性。陆军士气+10%，承受冲击伤害-5%，人力恢复速度+15%。"
+ NNM_kyoko_survivor_modifier: "OgPR„vuXRÕlR"
+ NNM_kyoko_survivor_modifier_desc: "POÓNOgPRåNAmjmbëX„vÏuŒš:VS†NTw¦ç—'`0"
+
  # Mikazuki Tier Modifiers (Overlord)
  NNM_mikazuki_tier1: "ÊuKNË‚"
  NNM_mikazuki_tier1_desc: "	Nåeg„v,rNÊuòTÏu„Ë‚09e„UsQû|+10%ÿÏkg+0.2ÊuKN›R0"

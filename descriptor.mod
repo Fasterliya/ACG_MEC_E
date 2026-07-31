@@ -15,6 +15,6 @@ dependencies={
 	"Chinese Language Supplementary Mod for 1.37.1"
 	"Chinese Language Supplementary Mod for 1.37.2"
 }
-name="更多佣兵"
+name="ACG佣兵拓展"
 picture=""
 supported_version="v1.37.5.0"
