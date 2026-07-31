@@ -105,7 +105,7 @@ ACG_MEC_EXPAND_new_mercenary_7 = {
 }
 ACG_MEC_EXPAND_new_mercenary_8 = {
     regiments_per_development = 0.2
-	max_size = 160
+	max_size = 300
     cavalry_weight = 0.10
 	artillery_weight = 0.20
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
@@ -125,8 +125,8 @@ ACG_MEC_EXPAND_new_mercenary_8 = {
 	manpower_pool = 75
 }
 ACG_MEC_EXPAND_new_mercenary_9 = {
-    regiments_per_development = 0.25
-	max_size = 200
+    regiments_per_development = 0.20
+	max_size = 300
     cavalry_weight = 0.15
 	artillery_weight = 0.25
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
@@ -146,8 +146,8 @@ ACG_MEC_EXPAND_new_mercenary_9 = {
 	manpower_pool = 100
 }
 ACG_MEC_EXPAND_new_mercenary_10 = {
-    regiments_per_development = 0.25
-	max_size = 240
+    regiments_per_development = 0.20
+	max_size = 300
     cavalry_weight = 0.20
 	artillery_weight = 0.30
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
