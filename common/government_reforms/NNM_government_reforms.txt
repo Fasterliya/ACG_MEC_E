@@ -1,6 +1,6 @@
 NNM_mikazuki_government_reform = {
 	lock_level_when_selected = yes
-	icon = "gourmet_monarchy_reform"
+	icon = "ACG_MEC_E_NNM_reform_1"
 	potential = {
 		OR = {
 			has_reform = NNM_mikazuki_government_reform
