@@ -1,0 +1,426 @@
+### CARD PERMANENT MODIFIERS ###
+
+# === Clow Cards (12) ===
+
+skr_card_windy = {
+	movement_speed = 0.05
+}
+
+skr_card_fly = {
+	range = 0.10
+}
+
+skr_card_watery = {
+	ship_durability = 0.05
+}
+
+skr_card_firey = {
+	shock_damage = 0.03
+}
+
+skr_card_earthy = {
+	defensiveness = 0.05
+}
+
+skr_card_thunder = {
+	fire_damage = 0.03
+}
+
+skr_card_sword = {
+	discipline = 0.025
+}
+
+skr_card_shield = {
+	army_tradition_decay = -0.005
+}
+
+skr_card_light = {
+	diplomatic_reputation = 1
+}
+
+skr_card_dark = {
+	ae_impact = -0.05
+}
+
+skr_card_create = {
+	development_cost = -0.05
+}
+
+skr_card_erase = {
+	core_creation = -0.05
+}
+
+# === Clear Cards (8) ===
+
+skr_card_gale = {
+	movement_speed = 0.08
+}
+
+skr_card_siege = {
+	siege_ability = 0.10
+}
+
+skr_card_aqua = {
+	naval_morale = 0.08
+}
+
+skr_card_action = {
+	infantry_power = 0.10
+}
+
+skr_card_record = {
+	technology_cost = -0.05
+}
+
+skr_card_flight = {
+	land_attrition = -0.10
+}
+
+skr_card_blaze = {
+	fire_damage = 0.08
+}
+
+skr_card_repair = {
+	reinforce_speed = 0.20
+}
+
+### CARD ACTIVE MODIFIERS (365 days) ###
+
+skr_windy_active = {
+	movement_speed = 0.10
+	hostile_attrition = 1
+}
+
+skr_fly_active = {
+	global_colonial_growth = 25
+}
+
+skr_watery_active = {
+	naval_morale = 0.15
+}
+
+skr_firey_active = {
+	siege_ability = 0.15
+	shock_damage = 0.05
+}
+
+skr_earthy_active = {
+	defensiveness = 0.20
+	garrison_size = 0.25
+}
+
+skr_thunder_active = {
+	land_morale = 0.10
+}
+
+skr_sword_active = {
+	infantry_power = 0.10
+}
+
+skr_shield_active = {
+	morale_damage_received = -0.10
+}
+
+skr_light_active = {
+	improve_relation_modifier = 0.30
+}
+
+skr_dark_active = {
+	spy_offence = 0.20
+	ae_impact = -0.10
+}
+
+skr_create_active = {
+	development_cost = -0.10
+}
+
+skr_erase_active = {
+	core_creation = -0.10
+}
+
+skr_gale_active = {
+	movement_speed = 0.15
+	hostile_attrition = 2
+}
+
+skr_siege_active = {
+	siege_ability = 0.20
+	artillery_power = 0.10
+}
+
+skr_aqua_active = {
+	naval_morale = 0.20
+	trade_efficiency = 0.10
+}
+
+skr_action_active = {
+	discipline = 0.05
+	shock_damage = 0.10
+}
+
+skr_record_active = {
+	all_power_cost = -0.05
+}
+
+skr_flight_active = {
+	movement_speed = 0.10
+	range = 0.20
+}
+
+skr_blaze_active = {
+	fire_damage = 0.15
+	artillery_power = 0.10
+}
+
+skr_repair_active = {
+	recover_army_morale_speed = 0.10
+	land_maintenance_modifier = -0.15
+}
+
+### COOLDOWN MARKERS (3650 days, no effects) ###
+
+skr_windy_cooldown = { }
+skr_fly_cooldown = { }
+skr_watery_cooldown = { }
+skr_firey_cooldown = { }
+skr_earthy_cooldown = { }
+skr_thunder_cooldown = { }
+skr_sword_cooldown = { }
+skr_shield_cooldown = { }
+skr_light_cooldown = { }
+skr_dark_cooldown = { }
+skr_create_cooldown = { }
+skr_erase_cooldown = { }
+skr_gale_cooldown = { }
+skr_siege_cooldown = { }
+skr_aqua_cooldown = { }
+skr_action_cooldown = { }
+skr_record_cooldown = { }
+skr_flight_cooldown = { }
+skr_blaze_cooldown = { }
+skr_repair_cooldown = { }
+
+### TIER MODIFIERS ###
+
+skr_card_tier_0 = {
+	monthly_splendor = 0.5
+}
+
+skr_card_tier_1 = {
+	monthly_splendor = 1.0
+}
+
+skr_card_tier_2 = {
+	monthly_splendor = 1.5
+	prestige = 0.5
+}
+
+skr_card_tier_3 = {
+	monthly_splendor = 2.0
+	prestige = 1.0
+	diplomatic_reputation = 1
+}
+
+skr_card_tier_4 = {
+	monthly_splendor = 2.5
+	prestige = 1.0
+	diplomatic_reputation = 1
+	discipline = 0.025
+}
+
+skr_card_tier_5 = {
+	monthly_splendor = 3.0
+	prestige = 1.0
+	diplomatic_reputation = 2
+	discipline = 0.05
+	administrative_efficiency = 0.05
+}
+
+### PROVINCE MODIFIERS ###
+
+skr_card_disturbance = {
+	local_unrest = 5
+	local_tax_modifier = -0.5
+	local_autonomy = 0.20
+}
+
+skr_card_disturbance_severe = {
+	local_unrest = 8
+	local_tax_modifier = -0.75
+	local_autonomy = 0.30
+	local_manpower_modifier = -0.5
+}
+
+### ON_ACTION MODIFIERS ###
+
+skr_windy_core_boost = {
+	core_creation = -0.10
+}
+
+skr_erase_core_boost = {
+	core_creation = -0.20
+}
+
+skr_light_opinion = {
+	opinion_bonus = 25
+}
+
+### MISSION REWARD MODIFIERS ###
+
+skr_ultimate_card_master = {
+	discipline = 0.05
+	administrative_efficiency = 0.05
+	diplomatic_reputation = 2
+}
+
+skr_bohemia_unified = {
+	development_cost = -0.10
+	global_autonomy = -0.03
+}
+
+skr_trade_network_modifier = {
+	global_trade_goods_size_modifier = 0.10
+}
+
+skr_academic_power = {
+	technology_cost = -0.05
+	innovativeness_gain = 0.25
+}
+
+skr_industrial_heartland = {
+	production_efficiency = 0.10
+	build_cost = -0.10
+}
+
+skr_bohemian_enlightenment = {
+	idea_cost = -0.10
+	all_power_cost = -0.05
+}
+
+skr_golden_bohemia = {
+	monthly_splendor = 2
+	prestige = 1
+	development_cost = -0.10
+}
+
+skr_imperial_growth = {
+	imperial_authority = 0.10
+	diplomatic_reputation = 1
+}
+
+skr_imperial_authority_modifier = {
+	imperial_authority = 0.15
+}
+
+skr_dynastic_rule_modifier = {
+	legitimacy = 1
+	heir_chance = 0.5
+}
+
+skr_revoke_privilege_modifier = {
+	diplomatic_upkeep = 3
+	vassal_forcelimit_bonus = 0.5
+}
+
+skr_renovatio_imperii_modifier = {
+	discipline = 0.05
+	administrative_efficiency = 0.05
+	governing_capacity = 500
+}
+
+skr_imperial_hegemon = {
+	land_forcelimit = 0.25
+	diplomatic_reputation = 2
+}
+
+skr_grand_imperial_army = {
+	land_forcelimit_modifier = 0.20
+	land_morale = 0.10
+}
+
+skr_imperial_navy = {
+	naval_forcelimit_modifier = 0.20
+	naval_morale = 0.10
+}
+
+skr_imperial_trade_dominance = {
+	global_trade_power = 0.15
+	trade_efficiency = 0.10
+}
+
+skr_world_emperor = {
+	administrative_efficiency = 0.10
+	governing_capacity = 1000
+}
+
+skr_german_military_power = {
+	land_forcelimit_modifier = 0.25
+	infantry_power = 0.10
+}
+
+skr_united_germany_modifier = {
+	fire_damage = 0.10
+	shock_damage = 0.05
+}
+
+skr_german_hegemon = {
+	discipline = 0.05
+	administrative_efficiency = 0.05
+	land_morale = 0.10
+}
+
+skr_german_defense_line = {
+	defensiveness = 0.15
+	garrison_size = 0.25
+}
+
+skr_german_prosperity = {
+	development_cost = -0.10
+	production_efficiency = 0.10
+}
+
+skr_german_industry = {
+	build_cost = -0.15
+	build_time = -0.25
+}
+
+skr_deutschland_hegemon = {
+	discipline = 0.10
+	administrative_efficiency = 0.10
+}
+
+skr_italian_trade_control = {
+	trade_efficiency = 0.10
+	merchants = 1
+}
+
+skr_italian_dominance = {
+	global_trade_power = 0.10
+	naval_morale = 0.10
+}
+
+skr_italian_unifier = {
+	core_creation = -0.15
+	administrative_efficiency = 0.05
+}
+
+skr_mediterranean_navy = {
+	naval_forcelimit_modifier = 0.25
+	ship_durability = 0.10
+}
+
+skr_mediterranean_trade_hegemon = {
+	trade_efficiency = 0.15
+	global_trade_power = 0.20
+}
+
+skr_italian_golden_age = {
+	development_cost = -0.15
+	prestige = 1
+}
+
+skr_mare_nostrum_modifier = {
+	naval_morale = 0.15
+	trade_efficiency = 0.15
+	naval_forcelimit_modifier = 0.30
+}

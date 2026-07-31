@@ -1,0 +1,102 @@
+### COUNT CLOw CARDS ###
+SKR_count_clow_cards_effect = {
+	set_variable = { which = skr_clow_card_count value = 0 }
+	if = { limit = { has_country_flag = skr_card_windy_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_fly_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_watery_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_firey_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_earthy_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_thunder_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_sword_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_shield_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_light_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_dark_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_create_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_erase_captured } change_variable = { which = skr_clow_card_count value = 1 } }
+}
+
+### COUNT CLEAR CARDS ###
+SKR_count_clear_cards_effect = {
+	set_variable = { which = skr_clear_card_count value = 0 }
+	if = { limit = { has_country_flag = skr_card_gale_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_siege_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_aqua_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_action_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_record_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_flight_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_blaze_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+	if = { limit = { has_country_flag = skr_card_repair_captured } change_variable = { which = skr_clear_card_count value = 1 } }
+}
+
+### COUNT ALL CARDS ###
+SKR_count_all_cards_effect = {
+	SKR_count_clow_cards_effect = yes
+	SKR_count_clear_cards_effect = yes
+	set_variable = { which = skr_total_card_count value = 0 }
+	change_variable = { which = skr_total_card_count which = skr_clow_card_count }
+	change_variable = { which = skr_total_card_count which = skr_clear_card_count }
+}
+
+### REFRESH TIER ###
+SKR_refresh_card_tier_effect = {
+	remove_country_modifier = skr_card_tier_0
+	remove_country_modifier = skr_card_tier_1
+	remove_country_modifier = skr_card_tier_2
+	remove_country_modifier = skr_card_tier_3
+	remove_country_modifier = skr_card_tier_4
+	remove_country_modifier = skr_card_tier_5
+	SKR_count_all_cards_effect = yes
+	if = {
+		limit = { check_variable = { which = skr_total_card_count value = 20 } }
+		add_country_modifier = { name = skr_card_tier_5 duration = -1 }
+	}
+	else_if = {
+		limit = { check_variable = { which = skr_total_card_count value = 16 } }
+		add_country_modifier = { name = skr_card_tier_4 duration = -1 }
+	}
+	else_if = {
+		limit = { check_variable = { which = skr_total_card_count value = 12 } }
+		add_country_modifier = { name = skr_card_tier_3 duration = -1 }
+	}
+	else_if = {
+		limit = { check_variable = { which = skr_total_card_count value = 8 } }
+		add_country_modifier = { name = skr_card_tier_2 duration = -1 }
+	}
+	else_if = {
+		limit = { check_variable = { which = skr_total_card_count value = 4 } }
+		add_country_modifier = { name = skr_card_tier_1 duration = -1 }
+	}
+	else = {
+		add_country_modifier = { name = skr_card_tier_0 duration = -1 }
+	}
+}
+
+### GRANT CARD PERMANENT MODIFIER ###
+SKR_grant_card_permanent_effect = {
+	if = { limit = { has_country_flag = skr_card_windy_captured  } add_country_modifier = { name = skr_card_windy  duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_fly_captured    } add_country_modifier = { name = skr_card_fly    duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_watery_captured } add_country_modifier = { name = skr_card_watery duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_firey_captured  } add_country_modifier = { name = skr_card_firey  duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_earthy_captured } add_country_modifier = { name = skr_card_earthy duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_thunder_captured } add_country_modifier = { name = skr_card_thunder duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_sword_captured  } add_country_modifier = { name = skr_card_sword  duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_shield_captured } add_country_modifier = { name = skr_card_shield duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_light_captured  } add_country_modifier = { name = skr_card_light  duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_dark_captured   } add_country_modifier = { name = skr_card_dark   duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_create_captured } add_country_modifier = { name = skr_card_create duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_erase_captured  } add_country_modifier = { name = skr_card_erase  duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_gale_captured   } add_country_modifier = { name = skr_card_gale   duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_siege_captured  } add_country_modifier = { name = skr_card_siege  duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_aqua_captured   } add_country_modifier = { name = skr_card_aqua   duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_action_captured } add_country_modifier = { name = skr_card_action duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_record_captured } add_country_modifier = { name = skr_card_record duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_flight_captured } add_country_modifier = { name = skr_card_flight duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_blaze_captured  } add_country_modifier = { name = skr_card_blaze  duration = -1 } }
+	if = { limit = { has_country_flag = skr_card_repair_captured } add_country_modifier = { name = skr_card_repair duration = -1 } }
+}
+
+### INITIALIZE CARD SYSTEM ###
+SKR_initialize_card_system_effect = {
+	set_country_flag = skr_card_system_active
+	SKR_refresh_card_tier_effect = yes
+}

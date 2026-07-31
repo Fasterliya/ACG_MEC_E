@@ -1,0 +1,64 @@
+country_decisions = {
+
+	skr_use_card_decision = {
+		potential = {
+			tag = SKR
+			has_country_flag = skr_card_system_active
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			country_event = { id = skr_card_events.100 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	skr_card_album_decision = {
+		potential = {
+			tag = SKR
+			has_country_flag = skr_card_system_active
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = { id = skr_card_events.200 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	skr_sakura_transmute_decision = {
+		potential = {
+			tag = SKR
+			has_country_flag = skr_sakura_cards_unlocked
+			NOT = { has_country_flag = skr_cards_transmuted }
+		}
+		allow = {
+			is_at_war = no
+			has_country_flag = skr_card_windy_captured
+			has_country_flag = skr_card_fly_captured
+			has_country_flag = skr_card_watery_captured
+			has_country_flag = skr_card_firey_captured
+			has_country_flag = skr_card_earthy_captured
+			has_country_flag = skr_card_thunder_captured
+			has_country_flag = skr_card_sword_captured
+			has_country_flag = skr_card_shield_captured
+			has_country_flag = skr_card_light_captured
+			has_country_flag = skr_card_dark_captured
+			has_country_flag = skr_card_create_captured
+			has_country_flag = skr_card_erase_captured
+		}
+		effect = {
+			country_event = { id = skr_card_events.52 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

@@ -79,6 +79,9 @@ acg_monarchy = {
 				JNB_great_absolute_monarchy
 				###ACG MEC E
 				NNM_mikazuki_government_reform
+				SKR_clow_card_reform
+				SKR_sakura_card_reform
+				SKR_clear_card_reform
 			}
 		}
 		racial_policy = {

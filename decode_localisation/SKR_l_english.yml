@@ -1,0 +1,567 @@
+l_english:
+
+ ### EVENT TITLES ###
+
+ skr_card_events.1.t: "封印之书"
+ skr_card_events.1.d: "一本古老的封印之书被发现。打开它的瞬间，库洛牌四散到了全国各地。必须尽快将它们全部收回来。"
+ skr_card_events.1.a: "开始收集库洛牌。"
+
+ # Windy
+ skr_card_events.10.t: "异常强风"
+ skr_card_events.10.d: "该省报告了持续数日的异常强风，房屋受损，农田被毁。似乎是库洛牌在附近作祟。"
+ skr_card_events.10.a: "派小樱去调查。"
+ skr_card_events.10.b: "暂时搁置，加强防范。"
+ skr_card_events.10.c: "知世提供了防风措施——立刻出发。"
+
+ # Fly
+ skr_card_events.11.t: "巨大飞鸟"
+ skr_card_events.11.d: "一只巨大的飞鸟在城镇上空盘旋，阴影笼罩了整个地区。商队不敢出行，物资运输瘫痪。"
+ skr_card_events.11.a: "派小樱去调查。"
+ skr_card_events.11.b: "暂时搁置。"
+
+ # Watery
+ skr_card_events.12.t: "不明水患"
+ skr_card_events.12.d: "河水无故泛滥，地下水涌上街道。水中的鱼群也出现了异常行为。一张库洛牌正在这里作乱。"
+ skr_card_events.12.a: "派小樱去调查。"
+ skr_card_events.12.b: "暂时搁置。"
+
+ # Firey
+ skr_card_events.13.t: "连续火情"
+ skr_card_events.13.d: "城市多处无故起火，消防队束手无策。烈焰仿佛有自己的意志，是库洛牌在作祟。"
+ skr_card_events.13.a: "派小樱去调查。"
+ skr_card_events.13.b: "暂时搁置。"
+
+ # Earthy
+ skr_card_events.14.t: "地底震动"
+ skr_card_events.14.d: "持续的地震和地面塌陷困扰着当地。地底下似乎有什么东西在移动。"
+ skr_card_events.14.a: "派小樱去调查。"
+ skr_card_events.14.b: "暂时搁置。"
+
+ # Thunder
+ skr_card_events.15.t: "雷暴灾害"
+ skr_card_events.15.d: "连绵的雷暴不停击打着大地，军队无法行军，建筑被闪电击中。"
+ skr_card_events.15.a: "派小樱去调查。"
+ skr_card_events.15.b: "暂时搁置。"
+
+ # Sword
+ skr_card_events.16.t: "狂乱的剑"
+ skr_card_events.16.d: "当地驻军突然失去了控制，士兵们不断发生争执和斗殴。一把无形的剑似乎控制了所有人的意志。"
+ skr_card_events.16.a: "派小樱去调查。"
+ skr_card_events.16.b: "暂时搁置。"
+
+ # Shield
+ skr_card_events.17.t: "无形屏障"
+ skr_card_events.17.d: "一座要塞被无形的屏障包围，无人能够靠近。屏障内部的人也无法出来。"
+ skr_card_events.17.a: "派小樱去调查。"
+ skr_card_events.17.b: "暂时搁置。"
+
+ # Light
+ skr_card_events.18.t: "刺眼的光芒"
+ skr_card_events.18.d: "一道持续的白光笼罩了整座城市，居民无法正常生活。这是库洛牌中最强的两张之一。"
+ skr_card_events.18.a: "派小樱去调查。"
+ skr_card_events.18.b: "暂时搁置。"
+
+ # Dark
+ skr_card_events.19.t: "无尽的黑暗"
+ skr_card_events.19.d: "黑暗吞噬了整个地区。白天如同黑夜，商路中断，恐慌蔓延。另一张最强的库洛牌出现了。"
+ skr_card_events.19.a: "派小樱去调查。"
+ skr_card_events.19.b: "暂时搁置。"
+
+ # Create
+ skr_card_events.20.t: "活过来的画"
+ skr_card_events.20.d: "书籍和画作中的事物纷纷化为真实，城市中出现了不应存在的生物和建筑。"
+ skr_card_events.20.a: "派小樱去调查。"
+ skr_card_events.20.b: "暂时搁置。"
+
+ # Erase
+ skr_card_events.21.t: "消失的人们"
+ skr_card_events.21.d: "居民陆续消失得无影无踪，仿佛从未存在过。这是最后一张库洛牌——\"消\"——的力量。"
+ skr_card_events.21.a: "派小樱去调查。"
+ skr_card_events.21.b: "暂时搁置。"
+
+ ### CHALLENGE EVENT TITLES ###
+
+ skr_card_events.30.t: "风之封印"
+ skr_card_events.30.d: "小樱找到了强风的源头——是库洛牌「风」失控了。"
+ skr_card_events.30.a: "尝试直接封印。"
+ skr_card_events.30.b: "知世提供了防风设备。"
+
+ skr_card_events.31.t: "翔之封印"
+ skr_card_events.31.d: "是库洛牌「翔」。那只巨大的飞鸟需要尽快封印。"
+ skr_card_events.31.a: "尝试直接封印。"
+ skr_card_events.31.b: "用风之卡追踪它的行踪。"
+
+ skr_card_events.32.t: "水之封印"
+ skr_card_events.32.d: "水患的源头——库洛牌「水」显现了真身。"
+ skr_card_events.32.a: "尝试直接封印。"
+ skr_card_events.32.b: "用风之卡和翔之卡围困它。"
+
+ skr_card_events.33.t: "火之封印"
+ skr_card_events.33.d: "库洛牌「火」在城市中心肆虐。"
+ skr_card_events.33.a: "尝试直接封印。"
+ skr_card_events.33.b: "用水之卡压制火势。"
+ skr_card_events.33.c: "知世准备了防火战斗服。"
+
+ skr_card_events.34.t: "土之封印"
+ skr_card_events.34.d: "地下的怪物——库洛牌「土」终于钻出了地面。"
+ skr_card_events.34.a: "尝试直接封印。"
+ skr_card_events.34.b: "用盾之卡构筑屏障限制它的行动。"
+
+ skr_card_events.35.t: "雷之封印"
+ skr_card_events.35.d: "雷云中盘旋着库洛牌「雷」。"
+ skr_card_events.35.a: "尝试直接封印。"
+ skr_card_events.35.b: "用火之卡和风之卡制造上升气流。"
+
+ skr_card_events.36.t: "剑之封印"
+ skr_card_events.36.d: "库洛牌「剑」附身在了将领身上。"
+ skr_card_events.36.a: "尝试直接封印。"
+ skr_card_events.36.b: "用盾之卡格挡剑的攻击。"
+
+ skr_card_events.37.t: "盾之封印"
+ skr_card_events.37.d: "库洛牌「盾」构筑了无法攻破的屏障。"
+ skr_card_events.37.a: "尝试直接封印。"
+ skr_card_events.37.b: "用剑之卡刺穿盾的防御。"
+
+ skr_card_events.38.t: "光之封印"
+ skr_card_events.38.d: "最强的库洛牌之一——「光」现身了。"
+ skr_card_events.38.a: "尝试直接封印。"
+ skr_card_events.38.b: "知世协助分散它的注意力。"
+
+ skr_card_events.39.t: "暗之封印"
+ skr_card_events.39.d: "「暗」潜伏在光芒之后。与光互为表里。"
+ skr_card_events.39.a: "尝试直接封印。"
+ skr_card_events.39.b: "用光之卡照亮暗之卡的所在。"
+
+ skr_card_events.40.t: "创之封印"
+ skr_card_events.40.d: "库洛牌「创」让虚幻之物变为现实。"
+ skr_card_events.40.a: "尝试直接封印。"
+ skr_card_events.40.b: "用光与暗的力量界定真实与虚幻的边界。"
+
+ skr_card_events.41.t: "消之封印"
+ skr_card_events.41.d: "最后一张——库洛牌「消」。它抹去一切存在。"
+ skr_card_events.41.a: "尝试直接封印。"
+ skr_card_events.41.b: "用创之卡对抗消的力量。"
+
+ ### TMY EVENT ###
+
+ skr_card_events.50.t: "知世的决心"
+ skr_card_events.50.d: "知世表示愿意带领摩拉维亚加入小樱的旗帜下，一同守护这片土地。"
+ skr_card_events.50.a: "欢迎知世。"
+
+ ### FINAL JUDGMENT ###
+
+ skr_card_events.51.t: "最后的审判"
+ skr_card_events.51.d: "十二张库洛牌全部收集完毕。审判者月出现了。必须接受最终的考验。"
+ skr_card_events.51.a: "迎战。"
+
+ ### SAKURA CARD ###
+
+ skr_card_events.52.t: "樱之卡觉醒"
+ skr_card_events.52.d: "小樱自身的魔力苏醒，库洛牌被重新赋予了樱之魔力。此后可以转化为更强的樱之卡了。"
+ skr_card_events.52.a: "完成转化。"
+
+ ### CLEAR CARD AWAKENING ###
+
+ skr_card_events.60.t: "透明之兆"
+ skr_card_events.60.d: "小樱的魔力仍在不断增长。新的卡牌似乎在无意识中被创造了出来——透明牌出现了。"
+ skr_card_events.60.a: "开始寻找透明牌。"
+
+ # Clear Card Manifestations
+ skr_card_events.61.t: "异常气流"
+ skr_card_events.61.d: "出现了前所未有的强风现象。似乎是一张新的卡牌。"
+ skr_card_events.61.a: "派小樱去调查。"
+ skr_card_events.61.b: "暂时搁置。"
+
+ skr_card_events.62.t: "堡垒困境"
+ skr_card_events.62.d: "围攻一座城堡异常困难，仿佛有某种力量在庇护它。"
+ skr_card_events.62.a: "派小樱去调查。"
+ skr_card_events.62.b: "暂时搁置。"
+
+ skr_card_events.63.t: "异常水源"
+ skr_card_events.63.d: "港口出现了奇怪的水流，船只无法正常航行。"
+ skr_card_events.63.a: "派小樱去调查。"
+ skr_card_events.63.b: "暂时搁置。"
+
+ skr_card_events.64.t: "瞬移现象"
+ skr_card_events.64.d: "事物在无人触碰的情况下自行移动。"
+ skr_card_events.64.a: "派小樱去调查。"
+ skr_card_events.64.b: "暂时搁置。"
+
+ skr_card_events.65.t: "记忆重现"
+ skr_card_events.65.d: "城市中出现了来自过去的幻影，过去的事件在重演。"
+ skr_card_events.65.a: "派小樱去调查。"
+ skr_card_events.65.b: "暂时搁置。"
+
+ skr_card_events.66.t: "飞行失控"
+ skr_card_events.66.d: "天竺鼠和城中的动物开始在空中漂浮。"
+ skr_card_events.66.a: "派小樱去调查。"
+ skr_card_events.66.b: "暂时搁置。"
+
+ skr_card_events.67.t: "烈焰再现"
+ skr_card_events.67.d: "比之前更强的火焰席卷了城市。一种全新的火之力。"
+ skr_card_events.67.a: "派小樱去调查。"
+ skr_card_events.67.b: "暂时搁置。"
+
+ skr_card_events.68.t: "破损修复"
+ skr_card_events.68.d: "损坏的建筑在无人修缮的情况下自行恢复。"
+ skr_card_events.68.a: "派小樱去调查。"
+ skr_card_events.68.b: "暂时搁置。"
+
+ # Clear Card Challenges
+ skr_card_events.71.t: "疾风封印"
+ skr_card_events.71.d: "透明牌「疾风」在暴风中显现。"
+ skr_card_events.71.a: "尝试封印。"
+
+ skr_card_events.72.t: "包围封印"
+ skr_card_events.72.d: "透明牌「包围」让攻城变得寸步难行。"
+ skr_card_events.72.a: "尝试封印。"
+
+ skr_card_events.73.t: "水源封印"
+ skr_card_events.73.d: "透明牌「水源」操控着港口的一切水流。"
+ skr_card_events.73.a: "尝试封印。"
+
+ skr_card_events.74.t: "行动封印"
+ skr_card_events.74.d: "透明牌「行动」让物体有了自己的意志。"
+ skr_card_events.74.a: "尝试封印。"
+
+ skr_card_events.75.t: "记录封印"
+ skr_card_events.75.d: "透明牌「记录」重现了过去的一切。"
+ skr_card_events.75.a: "尝试封印。"
+
+ skr_card_events.76.t: "飞翔封印"
+ skr_card_events.76.d: "透明牌「飞翔」让重力失去了意义。"
+ skr_card_events.76.a: "尝试封印。"
+
+ skr_card_events.77.t: "火焰封印"
+ skr_card_events.77.d: "透明牌「火焰」的温度比任何火焰都要高。"
+ skr_card_events.77.a: "尝试封印。"
+
+ skr_card_events.78.t: "修缮封印"
+ skr_card_events.78.d: "透明牌「修缮」在自行修复万物。"
+ skr_card_events.78.a: "尝试封印。"
+
+ ### CARD USE EVENT ###
+
+ skr_card_events.100.t: "使用库洛牌"
+ skr_card_events.100.d: "选择一张已收集的卡牌来激活它的力量。激活后需要十年冷却时间。"
+ skr_card_events.100.windy: "使用风之卡 (The Windy)"
+ skr_card_events.100.fly: "使用翔之卡 (The Fly)"
+ skr_card_events.100.watery: "使用水之卡 (The Watery)"
+ skr_card_events.100.firey: "使用火之卡 (The Firey)"
+ skr_card_events.100.earthy: "使用土之卡 (The Earthy)"
+ skr_card_events.100.thunder: "使用雷之卡 (The Thunder)"
+ skr_card_events.100.sword: "使用剑之卡 (The Sword)"
+ skr_card_events.100.shield: "使用盾之卡 (The Shield)"
+ skr_card_events.100.light: "使用光之卡 (The Light)"
+ skr_card_events.100.dark: "使用暗之卡 (The Dark)"
+ skr_card_events.100.create: "使用创之卡 (The Create)"
+ skr_card_events.100.erase: "使用消之卡 (The Erase)"
+ skr_card_events.100.gale: "使用疾风牌 (Gale)"
+ skr_card_events.100.siege: "使用包围牌 (Siege)"
+ skr_card_events.100.aqua: "使用水源牌 (Aqua)"
+ skr_card_events.100.action: "使用行动牌 (Action)"
+ skr_card_events.100.record: "使用记录牌 (Record)"
+ skr_card_events.100.flight: "使用飞翔牌 (Flight)"
+ skr_card_events.100.blaze: "使用火焰牌 (Blaze)"
+ skr_card_events.100.repair: "使用修缮牌 (Repair)"
+ skr_card_events.100.cancel: "取消"
+
+ ### CARD ALBUM EVENT ###
+
+ skr_card_events.200.t: "库洛牌图鉴"
+ skr_card_events.200.d: "可以在政府界面查看已收集的卡牌情况。"
+ skr_card_events.200.a: "好的。"
+
+ ### TOOLTIPS ###
+
+ skr_card_captured_tt: "封印成功！这张库洛牌现在属于你了。"
+ skr_card_failed_tt: "封印失败了。灾害仍在持续，等待下一次机会。"
+ skr_judgment_success_tt: "通过了审判。樱之卡的力量觉醒了。"
+ skr_judgment_fail_tt: "审判失败。需要重新准备。"
+
+ ### DECISIONS ###
+
+ skr_use_card_decision: "使用库洛牌"
+ skr_use_card_decision_desc: "激活一张已收集的库洛牌的力量。每张卡牌使用后需要十年的冷却时间。"
+ skr_card_album_decision: "查看卡牌图鉴"
+ skr_card_album_decision_desc: "查看当前已收集的全部库洛牌和透明牌。"
+ skr_sakura_transmute_decision: "转化为樱之卡"
+ skr_sakura_transmute_decision_desc: "将全部十二张库洛牌转化为樱之卡，获得更强的力量。"
+
+ ### MODIFIERS ###
+
+ # Card passive modifiers
+ skr_card_windy: "风之卡 (The Windy)"
+ skr_card_fly: "翔之卡 (The Fly)"
+ skr_card_watery: "水之卡 (The Watery)"
+ skr_card_firey: "火之卡 (The Firey)"
+ skr_card_earthy: "土之卡 (The Earthy)"
+ skr_card_thunder: "雷之卡 (The Thunder)"
+ skr_card_sword: "剑之卡 (The Sword)"
+ skr_card_shield: "盾之卡 (The Shield)"
+ skr_card_light: "光之卡 (The Light)"
+ skr_card_dark: "暗之卡 (The Dark)"
+ skr_card_create: "创之卡 (The Create)"
+ skr_card_erase: "消之卡 (The Erase)"
+ skr_card_gale: "疾风牌 (Gale)"
+ skr_card_siege: "包围牌 (Siege)"
+ skr_card_aqua: "水源牌 (Aqua)"
+ skr_card_action: "行动牌 (Action)"
+ skr_card_record: "记录牌 (Record)"
+ skr_card_flight: "飞翔牌 (Flight)"
+ skr_card_blaze: "火焰牌 (Blaze)"
+ skr_card_repair: "修缮牌 (Repair)"
+
+ # Card active modifiers
+ skr_windy_active: "风之卡激活"
+ skr_fly_active: "翔之卡激活"
+ skr_watery_active: "水之卡激活"
+ skr_firey_active: "火之卡激活"
+ skr_earthy_active: "土之卡激活"
+ skr_thunder_active: "雷之卡激活"
+ skr_sword_active: "剑之卡激活"
+ skr_shield_active: "盾之卡激活"
+ skr_light_active: "光之卡激活"
+ skr_dark_active: "暗之卡激活"
+ skr_create_active: "创之卡激活"
+ skr_erase_active: "消之卡激活"
+ skr_gale_active: "疾风牌激活"
+ skr_siege_active: "包围牌激活"
+ skr_aqua_active: "水源牌激活"
+ skr_action_active: "行动牌激活"
+ skr_record_active: "记录牌激活"
+ skr_flight_active: "飞翔牌激活"
+ skr_blaze_active: "火焰牌激活"
+ skr_repair_active: "修缮牌激活"
+
+ # Tier modifiers
+ skr_card_tier_0: "库洛牌收集者"
+ skr_card_tier_1: "库洛牌学徒"
+ skr_card_tier_2: "库洛牌学者"
+ skr_card_tier_3: "库洛牌大师"
+ skr_card_tier_4: "库洛牌宗师"
+ skr_card_tier_5: "库洛牌掌控者"
+
+ # Province disturbance
+ skr_card_disturbance: "库洛牌骚动"
+ skr_card_disturbance_severe: "库洛牌剧烈骚动"
+
+ # Mission reward modifiers
+ skr_ultimate_card_master: "终极卡牌大师"
+ skr_bohemia_unified: "统一的波西米亚"
+ skr_trade_network_modifier: "贸易网络"
+ skr_academic_power: "学术力量"
+ skr_industrial_heartland: "工业心脏"
+ skr_bohemian_enlightenment: "波西米亚启蒙"
+ skr_golden_bohemia: "黄金波西米亚"
+ skr_imperial_growth: "帝国发展"
+ skr_imperial_authority_modifier: "帝国权威"
+ skr_dynastic_rule_modifier: "王朝统治"
+ skr_revoke_privilege_modifier: "撤销特权"
+ skr_renovatio_imperii_modifier: "重建帝国"
+ skr_imperial_hegemon: "帝国霸权"
+ skr_grand_imperial_army: "帝国大军"
+ skr_imperial_navy: "帝国海军"
+ skr_imperial_trade_dominance: "帝国贸易主导"
+ skr_world_emperor: "世界皇帝"
+ skr_german_military_power: "德意志军事力量"
+ skr_united_germany_modifier: "统一的德意志"
+ skr_german_hegemon: "德意志霸主"
+ skr_german_defense_line: "德意志防线"
+ skr_german_prosperity: "德意志繁荣"
+ skr_german_industry: "德意志工业"
+ skr_deutschland_hegemon: "德意志霸权"
+ skr_italian_trade_control: "意大利贸易控制"
+ skr_italian_dominance: "意大利支配"
+ skr_italian_unifier: "意大利统一者"
+ skr_mediterranean_navy: "地中海海军"
+ skr_mediterranean_trade_hegemon: "地中海贸易霸权"
+ skr_italian_golden_age: "意大利黄金时代"
+ skr_mare_nostrum_modifier: "我们的海"
+
+ ### GOVERNMENT REFORMS ###
+
+ SKR_clow_card_reform: "库洛魔法使"
+ SKR_clow_card_reform_desc: "小樱继承了库洛里德的封印之书，开始了收集库洛牌的旅程。"
+ SKR_sakura_card_reform: "樱之卡大师"
+ SKR_sakura_card_reform_desc: "通过了最后的审判。小樱将库洛牌转化为樱之卡，以自己的魔力驱动它们。"
+ SKR_clear_card_reform: "透明卡觉醒"
+ SKR_clear_card_reform_desc: "小樱的魔力日益强大，无意识地创造了新的透明牌。这些卡牌代表着全新的力量。"
+
+ ### IDEAS ###
+
+ # SKR Idea names (localisation is handled by the tag system, these are for reference)
+ Card_collector: "库洛牌收集"
+ Card_collector_desc: "所有库洛牌都是从小樱手中散落的，必须一张不落地收回。"
+ Cerberus: "可鲁贝洛斯"
+ Cerberus_desc: "封印之兽小可——有着强大魔力却喜欢吃甜点的守护者。"
+ Tomoyo_Daidouji: "大道寺知世"
+ Tomoyo_Daidouji_desc: "小樱的好友兼战斗服设计师。知世的支援总是恰到好处。"
+ Sakura_card: "樱之卡"
+ Sakura_card_desc: "小樱用自己的魔力将库洛牌重新转化为樱之卡。每张卡牌的契约都被更新。"
+ Clear_card: "透明牌"
+ Clear_card_desc: "小樱无意识中创造的全新卡牌，蕴含着比库洛牌更强大的潜力。"
+ King_of_cute: "萌王之力"
+ King_of_cute_desc: "木之本樱凭借可爱的性格征服了所有人的心。"
+ Release_SKR: "解放之力"
+ Release_SKR_desc: "经历过无数战斗后，小樱学会了在扩张中保持克制和温和。"
+
+ # TMY Idea names
+ Costume_designer: "战斗服设计"
+ Costume_designer_desc: "知世为小樱设计的战斗服不仅美观，还兼备战场的实用性。"
+ Video_documentation: "影像记录"
+ Video_documentation_desc: "知世用摄像机记录了小樱的每一次战斗，这些影像本身就是宝贵的资料。"
+ Daidouji_fortune: "大道寺财团"
+ Daidouji_fortune_desc: "知世身后的家族财富为国家提供了坚实的经济基础。"
+ Sakuras_guardian: "樱的守护者"
+ Sakuras_guardian_desc: "知世始终站在小樱身后，守护着她的一切。"
+ Melody_of_hearts: "心之旋律"
+ Melody_of_hearts_desc: "知世的歌声能让最敌对的邻居放下戒备。"
+ Sakura_and_tomoyo: "樱与知世"
+ Sakura_and_tomoyo_desc: "两人的羁绊超越了国界——知世愿意为小樱献出一切。"
+ Eternal_friendship: "永恒的友谊"
+ Eternal_friendship_desc: "永远的友谊让国家政策更加灵活。"
+
+ ### MISSION TITLES ###
+
+ # Slot 6 - Card Collection
+ SKR_missions_6_title: "库洛继承者"
+ SKR_mission_6_1_title: "封印之书"
+ SKR_mission_6_1_desc: "库洛里德的封印之书被发现。打开它的那一刻，库洛牌四散到了全国各地。"
+ SKR_mission_6_2_title: "最初的封印"
+ SKR_mission_6_2_desc: "首先需要封印离我们最近的三张牌——风、翔、水。"
+ SKR_mission_6_3_title: "力量的集结"
+ SKR_mission_6_3_desc: "接下来是火、土、雷。这三张牌的攻击性很强，需要更多的准备。"
+ SKR_mission_6_4_title: "攻防一体"
+ SKR_mission_6_4_desc: "剑和盾——库洛牌中防御和攻击的极致。必须同时获得它们。"
+ SKR_mission_6_5_title: "光与暗"
+ SKR_mission_6_5_desc: "最强的两张库洛牌——光与暗。它们必须被找到并封印。"
+ SKR_mission_6_6_title: "造与消"
+ SKR_mission_6_6_desc: "最后两张库洛牌——创造和消除。集齐它们就完成了全部收集。"
+ SKR_mission_6_7_title: "最后审判"
+ SKR_mission_6_7_desc: "集齐了十二张库洛牌。但封印之书的审判者已经苏醒。"
+ SKR_mission_6_8_title: "透明之兆"
+ SKR_mission_6_8_desc: "新的时代来临了。小樱的魔力开始创造出全新的卡牌。"
+ SKR_mission_6_9_title: "第一批透明牌"
+ SKR_mission_6_9_desc: "疾风、包围、水源——前三张透明牌已经出现了。"
+ SKR_mission_6_10_title: "行动与记录"
+ SKR_mission_6_10_desc: "行动和记录——让万物移动和重现过去的力量。"
+ SKR_mission_6_11_title: "最后三张"
+ SKR_mission_6_11_desc: "飞翔、火焰和修缮。集齐所有透明牌。"
+ SKR_mission_6_12_title: "终极卡牌大师"
+ SKR_mission_6_12_desc: "集齐了全部二十张卡牌。小樱成为了真正意义上的卡牌大师。"
+
+ # Slot 7 - Bohemia
+ SKR_missions_7_title: "波西米亚之梦"
+ SKR_mission_7_1_title: "军事准备"
+ SKR_mission_7_1_desc: "在出击之前，必须确保军队已做好充分准备。"
+ SKR_mission_7_2_title: "收复摩拉维亚"
+ SKR_mission_7_2_desc: "摩拉维亚是我们领土的延伸。必须将其重新纳入版图。"
+ SKR_mission_7_3_title: "知世的羁绊"
+ SKR_mission_7_3_desc: "知世就在摩拉维亚。改善与她的关系，她将愿意加入我们。"
+ SKR_mission_7_4_title: "统一本土"
+ SKR_mission_7_4_desc: "波西米亚王冠领地的全部区域——摩拉维亚、西里西亚、卢萨蒂亚——必须统一。"
+ SKR_mission_7_5_title: "布拉格之盛"
+ SKR_mission_7_5_desc: "将首都布拉格发展为欧洲最繁荣的城市之一。"
+ SKR_mission_7_6_title: "商人网络"
+ SKR_mission_7_6_desc: "在波西米亚建立贯穿全国的贸易网络。"
+ SKR_mission_7_7_title: "学术中心"
+ SKR_mission_7_7_desc: "让波西米亚成为欧洲的学术中心之一。"
+ SKR_mission_7_8_title: "选帝侯之力"
+ SKR_mission_7_8_desc: "将帝国的选帝侯之位牢牢掌握在波西米亚手中。"
+ SKR_mission_7_9_title: "工业心脏"
+ SKR_mission_7_9_desc: "在波西米亚建立密集的制造业体系。"
+ SKR_mission_7_10_title: "第一大城市"
+ SKR_mission_7_10_desc: "让布拉格成为帝国最大的城市。"
+ SKR_mission_7_11_title: "波西米亚启蒙"
+ SKR_mission_7_11_desc: "大学和知识分子云集，波西米亚进入了启蒙时代。"
+ SKR_mission_7_12_title: "黄金波西米亚"
+ SKR_mission_7_12_desc: "波西米亚的每一个省份都繁荣昌盛。这就是黄金时代。"
+
+ # Slot 8 - HRE
+ SKR_missions_8_title: "神圣二次元帝国"
+ SKR_mission_8_1_title: "帝国改革"
+ SKR_mission_8_1_desc: "帝国需要改革才能走向强盛。通过第一项帝国改革。"
+ SKR_mission_8_2_title: "内部和平"
+ SKR_mission_8_2_desc: "禁止帝国内部的武装冲突——通过永恒和平改革。"
+ SKR_mission_8_3_title: "皇权稳固"
+ SKR_mission_8_3_desc: "确立波西米亚对帝国皇位的世袭权。"
+ SKR_mission_8_4_title: "帝国之战"
+ SKR_mission_8_4_desc: "帝国对外宣战需要统一行动——通过帝国战争改革。"
+ SKR_mission_8_5_title: "撤销特权"
+ SKR_mission_8_5_desc: "剥夺诸侯的特权，让帝国成为真正统一的国家。"
+ SKR_mission_8_6_title: "帝国统一"
+ SKR_mission_8_6_desc: "神圣帝国成为一个统一的巨国。"
+ SKR_mission_8_7_title: "帝国霸权"
+ SKR_mission_8_7_desc: "在统一的基础上，走向霸权之路。"
+ SKR_mission_8_8_title: "诸侯统合"
+ SKR_mission_8_8_desc: "庞大的帝国需要整合众多诸侯的力量。"
+ SKR_mission_8_9_title: "大帝国的军队"
+ SKR_mission_8_9_desc: "帝国的军队必须强大到足以守护所有疆域。"
+ SKR_mission_8_10_title: "帝国的海军"
+ SKR_mission_8_10_desc: "庞大的帝国也需要海上的力量。"
+ SKR_mission_8_11_title: "帝国的财富"
+ SKR_mission_8_11_desc: "控制贸易，掌控财富。"
+ SKR_mission_8_12_title: "世界帝国"
+ SKR_mission_8_12_desc: "帝国的力量拓展到了全球。真正的世界霸权。"
+
+ # Slot 9 - Germany
+ SKR_missions_9_title: "德意志霸主"
+ SKR_mission_9_1_title: "巴伐利亚之门"
+ SKR_mission_9_1_desc: "进军巴伐利亚和法兰克尼亚，打开进入德意志的大门。"
+ SKR_mission_9_2_title: "深入德意志"
+ SKR_mission_9_2_desc: "在南北德意志各控制十五个省份。"
+ SKR_mission_9_3_title: "向西推进"
+ SKR_mission_9_3_desc: "继续深入——控制南北德意志各二十五个省份。"
+ SKR_mission_9_4_title: "莱茵河畔"
+ SKR_mission_9_4_desc: "将势力推进到莱茵兰和施瓦本地区。"
+ SKR_mission_9_5_title: "北境征途"
+ SKR_mission_9_5_desc: "向北进入萨克森、勃兰登堡和波美拉尼亚。"
+ SKR_mission_9_6_title: "德意志军事"
+ SKR_mission_9_6_desc: "建立一支足以横扫德意志的强大军队。"
+ SKR_mission_9_7_title: "半壁江山"
+ SKR_mission_9_7_desc: "完全控制北德意志或南德意志之一。"
+ SKR_mission_9_8_title: "一统德意志"
+ SKR_mission_9_8_desc: "将南北德意志全部纳入统治。"
+ SKR_mission_9_9_title: "十条防线"
+ SKR_mission_9_9_desc: "在德意志边境建立十座坚固的要塞防线。"
+ SKR_mission_9_10_title: "德意志繁荣"
+ SKR_mission_9_10_desc: "每个德意志省份都达到一定的繁荣程度。"
+ SKR_mission_9_11_title: "德意志工业"
+ SKR_mission_9_11_desc: "在德意志境内建立密集的制造业网络。"
+ SKR_mission_9_12_title: "德意志霸权"
+ SKR_mission_9_12_desc: "成为德意志真正的霸权者。"
+
+ # Slot 10 - Italy
+ SKR_missions_10_title: "意大利之冠"
+ SKR_mission_10_1_title: "翻越阿尔卑斯"
+ SKR_mission_10_1_desc: "跨过阿尔卑斯山，进军威尼斯和伦巴第。"
+ SKR_mission_10_2_title: "深入北意"
+ SKR_mission_10_2_desc: "在意大利地区控制十个省份。"
+ SKR_mission_10_3_title: "向罗马进军"
+ SKR_mission_10_3_desc: "推进到罗马和中部意大利。"
+ SKR_mission_10_4_title: "半岛南部"
+ SKR_mission_10_4_desc: "那不勒斯和西西里等待征服。"
+ SKR_mission_10_5_title: "岛屿与西境"
+ SKR_mission_10_5_desc: "撒丁岛、科西嘉和皮埃蒙特——最后的意大利疆域。"
+ SKR_mission_10_6_title: "热那亚贸易"
+ SKR_mission_10_6_desc: "控制热那亚贸易节点。"
+ SKR_mission_10_7_title: "半岛过半"
+ SKR_mission_10_7_desc: "控制意大利一半以上的省份。"
+ SKR_mission_10_8_title: "统一的意大利"
+ SKR_mission_10_8_desc: "将整个意大利地区完全征服。"
+ SKR_mission_10_9_title: "地中海舰队"
+ SKR_mission_10_9_desc: "建立一支统治地中海的强大舰队。"
+ SKR_mission_10_10_title: "贸易双璧"
+ SKR_mission_10_10_desc: "同时控制热那亚和威尼斯两个贸易节点。"
+ SKR_mission_10_11_title: "意大利黄金时代"
+ SKR_mission_10_11_desc: "意大利的每个省份都繁荣昌盛。"
+ SKR_mission_10_12_title: "我们的海"
+ SKR_mission_10_12_desc: "成为海军霸权，将地中海变为我们的内湖。"
+
+ ### MISSION COLUMN TITLES ###
+ SKR_missions_6: "库洛继承者"
+ SKR_missions_7: "波西米亚之梦"
+ SKR_missions_8: "神圣二次元帝国"
+ SKR_missions_9: "德意志霸主"
+ SKR_missions_10: "意大利之冠"

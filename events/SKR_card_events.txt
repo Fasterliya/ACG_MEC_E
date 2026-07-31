@@ -1,0 +1,1327 @@
+namespace = skr_card_events
+
+### INITIALIZATION ###
+
+country_event = {
+	id = skr_card_events.1
+	title = skr_card_events.1.t
+	desc = skr_card_events.1.d
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.1.a
+		SKR_initialize_card_system_effect = yes
+		add_prestige = 10
+	}
+}
+
+### CLOw CARD MANIFESTATION EVENTS ###
+
+# Windy
+province_event = {
+	id = skr_card_events.10
+	title = skr_card_events.10.t
+	desc = skr_card_events.10.d
+	picture = WEATHER_eventPicture
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_windy_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 24 }
+	option = {
+		name = skr_card_events.10.a
+		owner = { country_event = { id = skr_card_events.30 } }
+	}
+	option = {
+		name = skr_card_events.10.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+	option = {
+		name = skr_card_events.10.c
+		trigger = { owner = { OR = { alliance_with = TMY any_vassal_country = { tag = TMY } } } }
+		add_province_modifier = { name = skr_card_disturbance duration = 365 }
+		owner = { country_event = { id = skr_card_events.30 } }
+	}
+}
+
+# Fly
+province_event = {
+	id = skr_card_events.11
+	title = skr_card_events.11.t
+	desc = skr_card_events.11.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_fly_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 36 }
+	option = {
+		name = skr_card_events.11.a
+		owner = { country_event = { id = skr_card_events.31 } }
+	}
+	option = {
+		name = skr_card_events.11.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Watery
+province_event = {
+	id = skr_card_events.12
+	title = skr_card_events.12.t
+	desc = skr_card_events.12.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_watery_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 48 }
+	option = {
+		name = skr_card_events.12.a
+		owner = { country_event = { id = skr_card_events.32 } }
+	}
+	option = {
+		name = skr_card_events.12.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Firey
+province_event = {
+	id = skr_card_events.13
+	title = skr_card_events.13.t
+	desc = skr_card_events.13.d
+	picture = FIRE_eventPicture
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_firey_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 60 }
+	option = {
+		name = skr_card_events.13.a
+		owner = { country_event = { id = skr_card_events.33 } }
+	}
+	option = {
+		name = skr_card_events.13.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Earthy
+province_event = {
+	id = skr_card_events.14
+	title = skr_card_events.14.t
+	desc = skr_card_events.14.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_earthy_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 72 }
+	option = {
+		name = skr_card_events.14.a
+		owner = { country_event = { id = skr_card_events.34 } }
+	}
+	option = {
+		name = skr_card_events.14.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Thunder
+province_event = {
+	id = skr_card_events.15
+	title = skr_card_events.15.t
+	desc = skr_card_events.15.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_thunder_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 84 }
+	option = {
+		name = skr_card_events.15.a
+		owner = { country_event = { id = skr_card_events.35 } }
+	}
+	option = {
+		name = skr_card_events.15.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Sword
+province_event = {
+	id = skr_card_events.16
+	title = skr_card_events.16.t
+	desc = skr_card_events.16.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_sword_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 90 }
+	option = {
+		name = skr_card_events.16.a
+		owner = { country_event = { id = skr_card_events.36 } }
+	}
+	option = {
+		name = skr_card_events.16.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Shield
+province_event = {
+	id = skr_card_events.17
+	title = skr_card_events.17.t
+	desc = skr_card_events.17.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_card_system_active }
+		NOT = { owner = { has_country_flag = skr_card_shield_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 90 }
+	option = {
+		name = skr_card_events.17.a
+		owner = { country_event = { id = skr_card_events.37 } }
+	}
+	option = {
+		name = skr_card_events.17.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Light
+province_event = {
+	id = skr_card_events.18
+	title = skr_card_events.18.t
+	desc = skr_card_events.18.d
+	trigger = {
+		owner = {
+			tag = SKR
+			has_country_flag = skr_card_system_active
+			has_country_flag = skr_card_windy_captured
+			has_country_flag = skr_card_fly_captured
+			has_country_flag = skr_card_watery_captured
+			has_country_flag = skr_card_firey_captured
+			has_country_flag = skr_card_earthy_captured
+			has_country_flag = skr_card_thunder_captured
+			has_country_flag = skr_card_sword_captured
+			has_country_flag = skr_card_shield_captured
+		}
+		NOT = { owner = { has_country_flag = skr_card_light_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 120 }
+	option = {
+		name = skr_card_events.18.a
+		owner = { country_event = { id = skr_card_events.38 } }
+	}
+	option = {
+		name = skr_card_events.18.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Dark
+province_event = {
+	id = skr_card_events.19
+	title = skr_card_events.19.t
+	desc = skr_card_events.19.d
+	trigger = {
+		owner = {
+			tag = SKR
+			has_country_flag = skr_card_system_active
+			has_country_flag = skr_card_light_captured
+		}
+		NOT = { owner = { has_country_flag = skr_card_dark_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 36 }
+	option = {
+		name = skr_card_events.19.a
+		owner = { country_event = { id = skr_card_events.39 } }
+	}
+	option = {
+		name = skr_card_events.19.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Create
+province_event = {
+	id = skr_card_events.20
+	title = skr_card_events.20.t
+	desc = skr_card_events.20.d
+	trigger = {
+		owner = {
+			tag = SKR
+			has_country_flag = skr_card_system_active
+			has_country_flag = skr_card_dark_captured
+		}
+		NOT = { owner = { has_country_flag = skr_card_create_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 60 }
+	option = {
+		name = skr_card_events.20.a
+		owner = { country_event = { id = skr_card_events.40 } }
+	}
+	option = {
+		name = skr_card_events.20.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Erase
+province_event = {
+	id = skr_card_events.21
+	title = skr_card_events.21.t
+	desc = skr_card_events.21.d
+	trigger = {
+		owner = {
+			tag = SKR
+			has_country_flag = skr_card_system_active
+			has_country_flag = skr_card_create_captured
+		}
+		NOT = { owner = { has_country_flag = skr_card_erase_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 72 }
+	option = {
+		name = skr_card_events.21.a
+		owner = { country_event = { id = skr_card_events.41 } }
+	}
+	option = {
+		name = skr_card_events.21.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+### CLOw CARD CHALLENGE EVENTS ###
+
+# Windy challenge
+country_event = {
+	id = skr_card_events.30
+	title = skr_card_events.30.t
+	desc = skr_card_events.30.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.30.a
+		random_list = {
+			50 = {
+				set_country_flag = skr_card_windy_captured
+				add_country_modifier = { name = skr_card_windy duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			50 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.30.b
+		trigger = {
+			OR = { alliance_with = TMY any_vassal_country = { tag = TMY } }
+		}
+		random_list = {
+			80 = {
+				set_country_flag = skr_card_windy_captured
+				add_country_modifier = { name = skr_card_windy duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			20 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Fly challenge
+country_event = {
+	id = skr_card_events.31
+	title = skr_card_events.31.t
+	desc = skr_card_events.31.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.31.a
+		random_list = {
+			40 = {
+				set_country_flag = skr_card_fly_captured
+				add_country_modifier = { name = skr_card_fly duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			60 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.31.b
+		trigger = { has_country_flag = skr_card_windy_captured }
+		random_list = {
+			75 = {
+				set_country_flag = skr_card_fly_captured
+				add_country_modifier = { name = skr_card_fly duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			25 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Watery challenge
+country_event = {
+	id = skr_card_events.32
+	title = skr_card_events.32.t
+	desc = skr_card_events.32.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.32.a
+		random_list = {
+			35 = {
+				set_country_flag = skr_card_watery_captured
+				add_country_modifier = { name = skr_card_watery duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			65 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.32.b
+		trigger = { has_country_flag = skr_card_windy_captured has_country_flag = skr_card_fly_captured }
+		random_list = {
+			80 = {
+				set_country_flag = skr_card_watery_captured
+				add_country_modifier = { name = skr_card_watery duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			20 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Firey challenge
+country_event = {
+	id = skr_card_events.33
+	title = skr_card_events.33.t
+	desc = skr_card_events.33.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.33.a
+		random_list = {
+			30 = {
+				set_country_flag = skr_card_firey_captured
+				add_country_modifier = { name = skr_card_firey duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			70 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.33.b
+		trigger = { has_country_flag = skr_card_watery_captured }
+		random_list = {
+			80 = {
+				set_country_flag = skr_card_firey_captured
+				add_country_modifier = { name = skr_card_firey duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			20 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.33.c
+		trigger = { OR = { alliance_with = TMY any_vassal_country = { tag = TMY } } }
+		random_list = {
+			65 = {
+				set_country_flag = skr_card_firey_captured
+				add_country_modifier = { name = skr_card_firey duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			35 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Earthy challenge
+country_event = {
+	id = skr_card_events.34
+	title = skr_card_events.34.t
+	desc = skr_card_events.34.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.34.a
+		random_list = {
+			30 = {
+				set_country_flag = skr_card_earthy_captured
+				add_country_modifier = { name = skr_card_earthy duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			70 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.34.b
+		trigger = { has_country_flag = skr_card_shield_captured }
+		random_list = {
+			70 = {
+				set_country_flag = skr_card_earthy_captured
+				add_country_modifier = { name = skr_card_earthy duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			30 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Thunder challenge
+country_event = {
+	id = skr_card_events.35
+	title = skr_card_events.35.t
+	desc = skr_card_events.35.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.35.a
+		random_list = {
+			25 = {
+				set_country_flag = skr_card_thunder_captured
+				add_country_modifier = { name = skr_card_thunder duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			75 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.35.b
+		trigger = { has_country_flag = skr_card_firey_captured has_country_flag = skr_card_windy_captured }
+		random_list = {
+			70 = {
+				set_country_flag = skr_card_thunder_captured
+				add_country_modifier = { name = skr_card_thunder duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			30 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Sword challenge
+country_event = {
+	id = skr_card_events.36
+	title = skr_card_events.36.t
+	desc = skr_card_events.36.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.36.a
+		random_list = {
+			25 = {
+				set_country_flag = skr_card_sword_captured
+				add_country_modifier = { name = skr_card_sword duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			75 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.36.b
+		trigger = { has_country_flag = skr_card_shield_captured }
+		random_list = {
+			70 = {
+				set_country_flag = skr_card_sword_captured
+				add_country_modifier = { name = skr_card_sword duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			30 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Shield challenge
+country_event = {
+	id = skr_card_events.37
+	title = skr_card_events.37.t
+	desc = skr_card_events.37.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.37.a
+		random_list = {
+			20 = {
+				set_country_flag = skr_card_shield_captured
+				add_country_modifier = { name = skr_card_shield duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			80 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.37.b
+		trigger = { has_country_flag = skr_card_sword_captured }
+		random_list = {
+			75 = {
+				set_country_flag = skr_card_shield_captured
+				add_country_modifier = { name = skr_card_shield duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			25 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Light challenge
+country_event = {
+	id = skr_card_events.38
+	title = skr_card_events.38.t
+	desc = skr_card_events.38.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.38.a
+		random_list = {
+			15 = {
+				set_country_flag = skr_card_light_captured
+				add_country_modifier = { name = skr_card_light duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 15
+				custom_tooltip = skr_card_captured_tt
+			}
+			85 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.38.b
+		trigger = {
+			OR = { alliance_with = TMY any_vassal_country = { tag = TMY } }
+		}
+		random_list = {
+			50 = {
+				set_country_flag = skr_card_light_captured
+				add_country_modifier = { name = skr_card_light duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 15
+				custom_tooltip = skr_card_captured_tt
+			}
+			50 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Dark challenge
+country_event = {
+	id = skr_card_events.39
+	title = skr_card_events.39.t
+	desc = skr_card_events.39.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.39.a
+		random_list = {
+			10 = {
+				set_country_flag = skr_card_dark_captured
+				add_country_modifier = { name = skr_card_dark duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 15
+				custom_tooltip = skr_card_captured_tt
+			}
+			90 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.39.b
+		trigger = { has_country_flag = skr_card_light_captured }
+		random_list = {
+			80 = {
+				set_country_flag = skr_card_dark_captured
+				add_country_modifier = { name = skr_card_dark duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 15
+				custom_tooltip = skr_card_captured_tt
+			}
+			20 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Create challenge
+country_event = {
+	id = skr_card_events.40
+	title = skr_card_events.40.t
+	desc = skr_card_events.40.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.40.a
+		random_list = {
+			15 = {
+				set_country_flag = skr_card_create_captured
+				add_country_modifier = { name = skr_card_create duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			85 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.40.b
+		trigger = { has_country_flag = skr_card_light_captured has_country_flag = skr_card_dark_captured }
+		random_list = {
+			75 = {
+				set_country_flag = skr_card_create_captured
+				add_country_modifier = { name = skr_card_create duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			25 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+# Erase challenge
+country_event = {
+	id = skr_card_events.41
+	title = skr_card_events.41.t
+	desc = skr_card_events.41.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.41.a
+		random_list = {
+			10 = {
+				set_country_flag = skr_card_erase_captured
+				add_country_modifier = { name = skr_card_erase duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			90 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+	option = {
+		name = skr_card_events.41.b
+		trigger = { has_country_flag = skr_card_create_captured }
+		random_list = {
+			80 = {
+				set_country_flag = skr_card_erase_captured
+				add_country_modifier = { name = skr_card_erase duration = -1 }
+				SKR_refresh_card_tier_effect = yes
+				add_prestige = 10
+				custom_tooltip = skr_card_captured_tt
+			}
+			20 = {
+				random_owned_province = {
+					limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } }
+					add_province_modifier = { name = skr_card_disturbance_severe duration = 1825 }
+				}
+				custom_tooltip = skr_card_failed_tt
+			}
+		}
+	}
+}
+
+### TMY VASSALIZATION EVENT ###
+
+country_event = {
+	id = skr_card_events.50
+	title = skr_card_events.50.t
+	desc = skr_card_events.50.d
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.50.a
+		set_country_flag = skr_tomoyo_vassalized
+		TMY = {
+			FROM = {
+				create_subject = {
+					subject_type = vassal
+					subject = PREV
+				}
+			}
+		}
+		add_prestige = 25
+		add_splendor = 100
+	}
+}
+
+### FINAL JUDGMENT EVENT ###
+
+country_event = {
+	id = skr_card_events.51
+	title = skr_card_events.51.t
+	desc = skr_card_events.51.d
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.51.a
+		random_list = {
+			50 = {
+				set_country_flag = skr_final_judgment_complete
+				set_country_flag = skr_sakura_cards_unlocked
+				add_prestige = 50
+				add_splendor = 200
+				custom_tooltip = skr_judgment_success_tt
+			}
+			50 = {
+				add_stability = -1
+				custom_tooltip = skr_judgment_fail_tt
+			}
+		}
+	}
+}
+
+### SAKURA CARD TRANSMUTATION EVENT ###
+
+country_event = {
+	id = skr_card_events.52
+	title = skr_card_events.52.t
+	desc = skr_card_events.52.d
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.52.a
+		set_country_flag = skr_cards_transmuted
+		add_prestige = 50
+		add_splendor = 300
+	}
+}
+
+### CLEAR CARD AWAKENING EVENT ###
+
+country_event = {
+	id = skr_card_events.60
+	title = skr_card_events.60.t
+	desc = skr_card_events.60.d
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.60.a
+		set_country_flag = skr_clear_card_awakened
+		add_prestige = 25
+		add_splendor = 100
+	}
+}
+
+### CLEAR CARD MANIFESTATION EVENTS ###
+
+# Gale
+province_event = {
+	id = skr_card_events.61
+	title = skr_card_events.61.t
+	desc = skr_card_events.61.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_gale_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 60 }
+	option = {
+		name = skr_card_events.61.a
+		owner = { country_event = { id = skr_card_events.71 } }
+	}
+	option = {
+		name = skr_card_events.61.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Siege
+province_event = {
+	id = skr_card_events.62
+	title = skr_card_events.62.t
+	desc = skr_card_events.62.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_siege_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 72 }
+	option = {
+		name = skr_card_events.62.a
+		owner = { country_event = { id = skr_card_events.72 } }
+	}
+	option = {
+		name = skr_card_events.62.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Aqua
+province_event = {
+	id = skr_card_events.63
+	title = skr_card_events.63.t
+	desc = skr_card_events.63.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_aqua_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 84 }
+	option = {
+		name = skr_card_events.63.a
+		owner = { country_event = { id = skr_card_events.73 } }
+	}
+	option = {
+		name = skr_card_events.63.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Action
+province_event = {
+	id = skr_card_events.64
+	title = skr_card_events.64.t
+	desc = skr_card_events.64.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_action_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 96 }
+	option = {
+		name = skr_card_events.64.a
+		owner = { country_event = { id = skr_card_events.74 } }
+	}
+	option = {
+		name = skr_card_events.64.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Record
+province_event = {
+	id = skr_card_events.65
+	title = skr_card_events.65.t
+	desc = skr_card_events.65.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_record_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 108 }
+	option = {
+		name = skr_card_events.65.a
+		owner = { country_event = { id = skr_card_events.75 } }
+	}
+	option = {
+		name = skr_card_events.65.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Flight
+province_event = {
+	id = skr_card_events.66
+	title = skr_card_events.66.t
+	desc = skr_card_events.66.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_flight_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 120 }
+	option = {
+		name = skr_card_events.66.a
+		owner = { country_event = { id = skr_card_events.76 } }
+	}
+	option = {
+		name = skr_card_events.66.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Blaze
+province_event = {
+	id = skr_card_events.67
+	title = skr_card_events.67.t
+	desc = skr_card_events.67.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_blaze_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 132 }
+	option = {
+		name = skr_card_events.67.a
+		owner = { country_event = { id = skr_card_events.77 } }
+	}
+	option = {
+		name = skr_card_events.67.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+# Repair
+province_event = {
+	id = skr_card_events.68
+	title = skr_card_events.68.t
+	desc = skr_card_events.68.d
+	trigger = {
+		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
+		NOT = { owner = { has_country_flag = skr_card_repair_captured } }
+		NOT = { has_province_modifier = skr_card_disturbance }
+		NOT = { has_province_modifier = skr_card_disturbance_severe }
+	}
+	mean_time_to_happen = { months = 144 }
+	option = {
+		name = skr_card_events.68.a
+		owner = { country_event = { id = skr_card_events.78 } }
+	}
+	option = {
+		name = skr_card_events.68.b
+		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+	}
+}
+
+### CLEAR CARD CHALLENGE EVENTS ###
+
+# Gale
+country_event = {
+	id = skr_card_events.71
+	title = skr_card_events.71.t
+	desc = skr_card_events.71.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.71.a
+		random_list = {
+			35 = { set_country_flag = skr_card_gale_captured add_country_modifier = { name = skr_card_gale duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			65 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+# Siege
+country_event = {
+	id = skr_card_events.72
+	title = skr_card_events.72.t
+	desc = skr_card_events.72.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.72.a
+		random_list = {
+			30 = { set_country_flag = skr_card_siege_captured add_country_modifier = { name = skr_card_siege duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			70 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+# Aqua
+country_event = {
+	id = skr_card_events.73
+	title = skr_card_events.73.t
+	desc = skr_card_events.73.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.73.a
+		random_list = {
+			30 = { set_country_flag = skr_card_aqua_captured add_country_modifier = { name = skr_card_aqua duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			70 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+# Action
+country_event = {
+	id = skr_card_events.74
+	title = skr_card_events.74.t
+	desc = skr_card_events.74.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.74.a
+		random_list = {
+			25 = { set_country_flag = skr_card_action_captured add_country_modifier = { name = skr_card_action duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			75 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+# Record
+country_event = {
+	id = skr_card_events.75
+	title = skr_card_events.75.t
+	desc = skr_card_events.75.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.75.a
+		random_list = {
+			25 = { set_country_flag = skr_card_record_captured add_country_modifier = { name = skr_card_record duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			75 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+# Flight
+country_event = {
+	id = skr_card_events.76
+	title = skr_card_events.76.t
+	desc = skr_card_events.76.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.76.a
+		random_list = {
+			20 = { set_country_flag = skr_card_flight_captured add_country_modifier = { name = skr_card_flight duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			80 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+# Blaze
+country_event = {
+	id = skr_card_events.77
+	title = skr_card_events.77.t
+	desc = skr_card_events.77.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.77.a
+		random_list = {
+			20 = { set_country_flag = skr_card_blaze_captured add_country_modifier = { name = skr_card_blaze duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			80 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+# Repair
+country_event = {
+	id = skr_card_events.78
+	title = skr_card_events.78.t
+	desc = skr_card_events.78.d
+	is_triggered_only = yes
+	option = {
+		name = skr_card_events.78.a
+		random_list = {
+			15 = { set_country_flag = skr_card_repair_captured add_country_modifier = { name = skr_card_repair duration = -1 } SKR_refresh_card_tier_effect = yes add_prestige = 15 custom_tooltip = skr_card_captured_tt }
+			85 = { random_owned_province = { limit = { NOT = { has_province_modifier = skr_card_disturbance } NOT = { has_province_modifier = skr_card_disturbance_severe } } add_province_modifier = { name = skr_card_disturbance duration = 1825 } } custom_tooltip = skr_card_failed_tt }
+		}
+	}
+}
+
+### CARD USE EVENT ###
+
+country_event = {
+	id = skr_card_events.100
+	title = skr_card_events.100.t
+	desc = skr_card_events.100.d
+	is_triggered_only = yes
+
+	option = { name = skr_card_events.100.windy  trigger = { has_country_flag = skr_card_windy_captured  NOT = { has_country_modifier = skr_windy_cooldown  } } add_country_modifier = { name = skr_windy_active  duration = 365 } add_country_modifier = { name = skr_windy_cooldown  duration = 3650 } }
+	option = { name = skr_card_events.100.fly    trigger = { has_country_flag = skr_card_fly_captured    NOT = { has_country_modifier = skr_fly_cooldown    } } add_country_modifier = { name = skr_fly_active    duration = 365 } add_country_modifier = { name = skr_fly_cooldown    duration = 3650 } add_years_of_income = 1 }
+	option = { name = skr_card_events.100.watery trigger = { has_country_flag = skr_card_watery_captured NOT = { has_country_modifier = skr_watery_cooldown } } add_country_modifier = { name = skr_watery_active duration = 365 } add_country_modifier = { name = skr_watery_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.firey  trigger = { has_country_flag = skr_card_firey_captured  NOT = { has_country_modifier = skr_firey_cooldown  } } add_country_modifier = { name = skr_firey_active  duration = 365 } add_country_modifier = { name = skr_firey_cooldown  duration = 3650 } }
+	option = { name = skr_card_events.100.earthy trigger = { has_country_flag = skr_card_earthy_captured NOT = { has_country_modifier = skr_earthy_cooldown } } add_country_modifier = { name = skr_earthy_active duration = 365 } add_country_modifier = { name = skr_earthy_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.thunder trigger = { has_country_flag = skr_card_thunder_captured NOT = { has_country_modifier = skr_thunder_cooldown } } add_mil_power = 100 add_army_tradition = 20 add_country_modifier = { name = skr_thunder_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.sword  trigger = { has_country_flag = skr_card_sword_captured  NOT = { has_country_modifier = skr_sword_cooldown  } } add_country_modifier = { name = skr_sword_active  duration = 365 } add_country_modifier = { name = skr_sword_cooldown  duration = 3650 } }
+	option = { name = skr_card_events.100.shield trigger = { has_country_flag = skr_card_shield_captured NOT = { has_country_modifier = skr_shield_cooldown } } add_country_modifier = { name = skr_shield_active duration = 365 } add_country_modifier = { name = skr_shield_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.light  trigger = { has_country_flag = skr_card_light_captured  NOT = { has_country_modifier = skr_light_cooldown  } } add_country_modifier = { name = skr_light_active  duration = 365 } add_country_modifier = { name = skr_light_cooldown  duration = 3650 } }
+	option = { name = skr_card_events.100.dark   trigger = { has_country_flag = skr_card_dark_captured   NOT = { has_country_modifier = skr_dark_cooldown   } } add_country_modifier = { name = skr_dark_active   duration = 365 } add_country_modifier = { name = skr_dark_cooldown   duration = 3650 } }
+	option = { name = skr_card_events.100.create trigger = { has_country_flag = skr_card_create_captured NOT = { has_country_modifier = skr_create_cooldown } } 266 = { add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 } add_country_modifier = { name = skr_create_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.erase  trigger = { has_country_flag = skr_card_erase_captured  NOT = { has_country_modifier = skr_erase_cooldown  } } add_war_exhaustion = -2 add_stability = 1 add_country_modifier = { name = skr_erase_cooldown  duration = 3650 } }
+	option = { name = skr_card_events.100.gale   trigger = { has_country_flag = skr_card_gale_captured   NOT = { has_country_modifier = skr_gale_cooldown   } } add_country_modifier = { name = skr_gale_active   duration = 365 } add_country_modifier = { name = skr_gale_cooldown   duration = 3650 } }
+	option = { name = skr_card_events.100.siege  trigger = { has_country_flag = skr_card_siege_captured  NOT = { has_country_modifier = skr_siege_cooldown  } } add_country_modifier = { name = skr_siege_active  duration = 365 } add_country_modifier = { name = skr_siege_cooldown  duration = 3650 } }
+	option = { name = skr_card_events.100.aqua   trigger = { has_country_flag = skr_card_aqua_captured   NOT = { has_country_modifier = skr_aqua_cooldown   } } add_country_modifier = { name = skr_aqua_active   duration = 365 } add_country_modifier = { name = skr_aqua_cooldown   duration = 3650 } }
+	option = { name = skr_card_events.100.action trigger = { has_country_flag = skr_card_action_captured NOT = { has_country_modifier = skr_action_cooldown } } add_country_modifier = { name = skr_action_active duration = 365 } add_country_modifier = { name = skr_action_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.record trigger = { has_country_flag = skr_card_record_captured NOT = { has_country_modifier = skr_record_cooldown } } add_adm_power = 100 add_dip_power = 100 add_mil_power = 100 add_country_modifier = { name = skr_record_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.flight trigger = { has_country_flag = skr_card_flight_captured NOT = { has_country_modifier = skr_flight_cooldown } } add_country_modifier = { name = skr_flight_active duration = 365 } add_country_modifier = { name = skr_flight_cooldown duration = 3650 } }
+	option = { name = skr_card_events.100.blaze  trigger = { has_country_flag = skr_card_blaze_captured  NOT = { has_country_modifier = skr_blaze_cooldown  } } add_country_modifier = { name = skr_blaze_active  duration = 365 } add_country_modifier = { name = skr_blaze_cooldown  duration = 3650 } }
+	option = { name = skr_card_events.100.repair trigger = { has_country_flag = skr_card_repair_captured NOT = { has_country_modifier = skr_repair_cooldown } } add_country_modifier = { name = skr_repair_active duration = 365 } add_country_modifier = { name = skr_repair_cooldown duration = 3650 } }
+
+	option = { name = skr_card_events.100.cancel }
+}
+
+### CARD ALBUM EVENT ###
+
+country_event = {
+	id = skr_card_events.200
+	title = skr_card_events.200.t
+	desc = skr_card_events.200.d
+	is_triggered_only = yes
+	option = { name = skr_card_events.200.a }
+}

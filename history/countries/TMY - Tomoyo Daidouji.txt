@@ -1,0 +1,22 @@
+government = acg_monarchy
+add_government_reform = acg_universal_government_reform_1
+primary_culture = cards_magic_culture
+government_rank = 1
+religion = acg
+technology_group = western
+capital = 265
+historical_friend = SKR
+
+1444.11.11 = {
+	monarch = {
+		name = "Tomoyo"
+		dynasty = "Daidouji"
+		birth_date = 1428.9.3
+		adm = 4
+		dip = 5
+		mil = 3
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = kind_hearted_personality
+}

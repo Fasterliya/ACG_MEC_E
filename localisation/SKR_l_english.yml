@@ -1,0 +1,567 @@
+﻿l_english:
+
+ ### EVENT TITLES ###
+
+ skr_card_events.1.t: "SpSKNfN"
+ skr_card_events.1.d: "N,gäSw„vSpSKNfN«ˆÑS°s0SbVƒR„v¬wô•ÿ“^mLrÛVce0R†NhQýVT0W0ÅV‰˜KSëVSƒRìNhQè6eÞVeg0"
+ skr_card_events.1.a: "VËY6eÆ–“^mLr0"
+
+ # Windy
+ skr_card_events.10.t: "V8^:VÎ˜"
+ skr_card_events.10.d: "å‹w¥bJT†Ncíupeåe„vV8^:VÎ˜ÿ?bKS×SmcÿœQ0u«ˆÁk0<ONN=f“^mLr(WD–ÑjOmy0"
+ skr_card_events.10.a: ">mS1j»SŒåg0"
+ skr_card_events.10.b: "‚föednÿ R:V2–ƒ0"
+ skr_card_events.10.c: "åwNÐc›O†N2–Î˜ªcËeËzIRúQÑS0"
+
+ # Fly
+ skr_card_events.11.t: "èT'YÞ˜ž"
+ skr_card_events.11.d: "NêSèT'Y„vÞ˜ž(WÎWG•NzzØvËeÿ4–qV<ri†Nte*N0W:S0FU–NbeúQLˆÿirDÐ“+vêu0"
+ skr_card_events.11.a: ">mS1j»SŒåg0"
+ skr_card_events.11.b: "‚föedn0"
+
+ # Watery
+ skr_card_events.12.t: "Nf4l±`"
+ skr_card_events.12.d: "³l4làeEeÛlånÿ0WN4lŒmNWˆS04l-N„v|œ²mNúQ°s†NV8^Lˆ:N0N.V“^mLrck(WÙÌ‘jOqN0"
+ skr_card_events.12.a: ">mS1j»SŒåg0"
+ skr_card_events.12.b: "‚föedn0"
+
+ # Firey
+ skr_card_events.13.t: "ÞíukpÅ`"
+ skr_card_events.13.d: "ÎW^YYàeEewkpÿˆm2––mgKbàeVr0Èp0qÿNiO	gêñT„va×Vÿ=f“^mLr(WjOmy0"
+ skr_card_events.13.a: ">mS1j»SŒåg0"
+ skr_card_events.13.b: "‚föedn0"
+
+ # Earthy
+ skr_card_events.14.t: "0W•^—¨R"
+ skr_card_events.14.d: "cíu„v0W—ŒT0Wb—LXw–ðVpbNwSV0W00W•^N<ONN	gÀNHNN‰(Wûy¨R0"
+ skr_card_events.14.a: ">mS1j»SŒåg0"
+ skr_card_events.14.b: "‚föedn0"
+
+ # Thunder
+ skr_card_events.15.t: "÷–´fŒp³R"
+ skr_card_events.15.d: "Þõu„v÷–´fNjPûQSbNw'Y0Wÿ›Q–àeÕlLˆ›Qÿú^Qr«ˆê•5uûQ-N0"
+ skr_card_events.15.a: ">mS1j»SŒåg0"
+ skr_card_events.15.b: "‚föedn0"
+
+ # Sword
+ skr_card_events.16.t: "ÂrqN„vQR"
+ skr_card_events.16.d: "SV0W‰š›Qz6q1Y»S†Nµc6RÿëXuQìNN­eÑSu‰NgbŒT—e´k0NŠbàebV„vQR<ONNµc6R†NNb	gºN„va×V0"
+ skr_card_events.16.a: ">mS1j»SŒåg0"
+ skr_card_events.16.b: "‚föedn0"
+
+ # Shield
+ skr_card_events.17.t: "àebVOSœ–"
+ skr_card_events.17.d: "Nµ^‰^X«ˆàebV„vOSœ–SôVÿàeºNýwY`—Ñ0OSœ–…Qè„vºNmNàeÕlúQeg0"
+ skr_card_events.17.a: ">mS1j»SŒåg0"
+ skr_card_events.17.b: "‚föedn0"
+
+ # Light
+ skr_card_events.18.t: ":R<w„vIQ’‚"
+ skr_card_events.18.d: "NScíu„v‹vIQ<ri†Nteµ^ÎW^ÿESlàeÕlck8^uIm0Ù=f“^mLr-Ng:V„v2N.VKNN0"
+ skr_card_events.18.a: ">mS1j»SŒåg0"
+ skr_card_events.18.b: "‚föedn0"
+
+ # Dark
+ skr_card_events.19.t: "àeKS„vÑž—f"
+ skr_card_events.19.d: "Ñž—fTlV†Nte*N0W:S0‹v)Y‚YTÑžYÿFUï-N­eÿP`La…ö^0æSN.Vg:V„v“^mLrúQ°s†N0"
+ skr_card_events.19.a: ">mS1j»SŒåg0"
+ skr_card_events.19.b: "‚föedn0"
+
+ # Create
+ skr_card_events.20.t: "ImÇeg„vIu"
+ skr_card_events.20.d: "fNM|ŒTIujO-N„v‹Nir·u·uS:NwžRÿÎW^-NúQ°s†NN”^XR(W„vuirŒTú^Qr0"
+ skr_card_events.20.a: ">mS1j»SŒåg0"
+ skr_card_events.20.b: "‚föedn0"
+
+ # Erase
+ skr_card_events.21.t: "ˆm1Y„vºNìN"
+ skr_card_events.21.d: "ESlF–íuˆm1Y—VàeqVàe*ŽÿÿNiOÎN*gXR(WÇ0Ù=fgTN.V“^mLr\"ˆm\"„v›RÏ‘0"
+ skr_card_events.21.a: ">mS1j»SŒåg0"
+ skr_card_events.21.b: "‚föedn0"
+
+ ### CHALLENGE EVENT TITLES ###
+
+ skr_card_events.30.t: "Î˜KNSpS"
+ skr_card_events.30.d: "S1jŒb0R†N:VÎ˜„vn4Y=f“^mLr0Î˜01Yµc†N0"
+ skr_card_events.30.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.30.b: "åwNÐc›O†N2–Î˜¾‹Y0"
+
+ skr_card_events.31.t: "ÔKNSpS"
+ skr_card_events.31.d: "=f“^mLr0Ô00±êSèT'Y„vÞ˜ž—‰KSëVSpS0"
+ skr_card_events.31.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.31.b: "(uÎ˜KNaSý*ŽƒR„vLˆ*Ž0"
+
+ skr_card_events.32.t: "4lKNSpS"
+ skr_card_events.32.d: "4l±`„vn4Y“^mLr04l0>f°s†Nw«Ž0"
+ skr_card_events.32.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.32.b: "(uÎ˜KNaSŒTÔKNaSôVðVƒR0"
+
+ skr_card_events.33.t: "kpKNSpS"
+ skr_card_events.33.d: "“^mLr0kp0(WÎW^-NÃV†wP†0"
+ skr_card_events.33.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.33.b: "(u4lKNaS‹S6Rkp¿R0"
+ skr_card_events.33.c: "åwNÆQY†N2–kpb—eg0"
+
+ skr_card_events.34.t: "WKNSpS"
+ skr_card_events.34.d: "0WN„v*`ir“^mLr0W0ÈuŽN»”úQ†N0Wb—0"
+ skr_card_events.34.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.34.b: "(uþvKNaS„gQrOSœ–P–6RƒR„vLˆ¨R0"
+
+ skr_card_events.35.t: "÷–KNSpS"
+ skr_card_events.35.d: "÷–‘N-NØvËeNw“^mLr0÷–00"
+ skr_card_events.35.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.35.b: "(ukpKNaSŒTÎ˜KNaS6R.NGSlAm0"
+
+ skr_card_events.36.t: "QRKNSpS"
+ skr_card_events.36.d: "“^mLr0QR0D–«Ž(W†NS†˜«ŽN0"
+ skr_card_events.36.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.36.b: "(uþvKNaS<h!cQR„vIeûQ0"
+
+ skr_card_events.37.t: "þvKNSpS"
+ skr_card_events.37.d: "“^mLr0þv0„gQr†NàeÕlIe4x„vOSœ–0"
+ skr_card_events.37.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.37.b: "(uQRKNaS:Rzþv„v2–¡V0"
+
+ skr_card_events.38.t: "IQKNSpS"
+ skr_card_events.38.d: "g:V„v“^mLrKNN0IQ0°s«Ž†N0"
+ skr_card_events.38.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.38.b: "åwNOS©RRceƒR„vèla›R0"
+
+ skr_card_events.39.t: "—fKNSpS"
+ skr_card_events.39.d: "0—f0joO(WIQ’‚KNT0NIQ’N:NhˆÌ‘0"
+ skr_card_events.39.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.39.b: "(uIQKNaSgq®N—fKNaS„vNb(W0"
+
+ skr_card_events.40.t: "RKNSpS"
+ skr_card_events.40.d: "“^mLr0R0©‹Z†‰^KNirØS:N°sžR0"
+ skr_card_events.40.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.40.b: "(uIQN—f„v›RÏ‘LušRwžRNZ†‰^„v¹Lu0"
+
+ skr_card_events.41.t: "ˆmKNSpS"
+ skr_card_events.41.d: "gTN.V“^mLr0ˆm00ƒR¹b»SNRXR(W0"
+ skr_card_events.41.a: "SÕ‹ôv¥cSpS0"
+ skr_card_events.41.b: "(uRKNaSùR—bˆm„v›RÏ‘0"
+
+ ### TMY EVENT ###
+
+ skr_card_events.50.t: "åwN„v³QÃV"
+ skr_card_events.50.d: "åwNhˆ:y?aa&^†˜idÉbôušN ReQS1j„v×e^NÿNTˆR²bÙGrW0W0"
+ skr_card_events.50.a: "0kÎåwN0"
+
+ ### FINAL JUDGMENT ###
+
+ skr_card_events.51.t: "gT„v¡R2R"
+ skr_card_events.51.d: "ASŒN.V“^mLrhQè6eÆ–ŒRÕk0¡R2RwgúQ°s†N0ÅV‰˜¥c×SgÈu„vwŒš0"
+ skr_card_events.51.a: "Îb0"
+
+ ### SAKURA CARD ###
+
+ skr_card_events.52.t: "1jKNaSÉ‰’‘"
+ skr_card_events.52.d: "S1jê«Ž„vT››RÏ‚’‘ÿ“^mLr«ˆÍ‘°eKˆN†N1jKNT››R0dkTïSåNlS:Nôf:V„v1jKNaS†N0"
+ skr_card_events.52.a: "ŒRblS0"
+
+ ### CLEAR CARD AWAKENING ###
+
+ skr_card_events.60.t: "fKNFQ"
+ skr_card_events.60.d: "S1j„vT››RÍN(WN­ežX•0°e„vaSLr<ONN(WàeaÆ‹-N«ˆR.†NúQegfLrúQ°s†N0"
+ skr_card_events.60.a: "VËYûRŒbfLr0"
+
+ # Clear Card Manifestations
+ skr_card_events.61.t: "V8^lAm"
+ skr_card_events.61.d: "úQ°s†NMRNb*g	g„v:VÎ˜°saŒ0<ONN=fN.V°e„vaSLr0"
+ skr_card_events.61.a: ">mS1j»SŒåg0"
+ skr_card_events.61.b: "‚föedn0"
+
+ skr_card_events.62.t: "!X’WðVƒX"
+ skr_card_events.62.d: "ôVIeNµ^ÎW!XV8^ðV¾–ÿÿNiO	gÐgÍy›RÏ‘(W‡^²bƒR0"
+ skr_card_events.62.a: ">mS1j»SŒåg0"
+ skr_card_events.62.b: "‚föedn0"
+
+ skr_card_events.63.t: "V8^4ln"
+ skr_card_events.63.d: "=nãSúQ°s†NGY*`„v4lAmÿ9‚êSàeÕlck8^*‚Lˆ0"
+ skr_card_events.63.a: ">mS1j»SŒåg0"
+ skr_card_events.63.b: "‚föedn0"
+
+ skr_card_events.64.t: "¬wûy°saŒ"
+ skr_card_events.64.d: "‹Nir(WàeºNæ‰°x„vÅ`µQNêLˆûy¨R0"
+ skr_card_events.64.a: ">mS1j»SŒåg0"
+ skr_card_events.64.b: "‚föedn0"
+
+ skr_card_events.65.t: "°‹ÆVÍ‘°s"
+ skr_card_events.65.d: "ÎW^-NúQ°s†NegêÇ»S„v‰^qVÿÇ»S„v‹NöN(WÍ‘o0"
+ skr_card_events.65.a: ">mS1j»SŒåg0"
+ skr_card_events.65.b: "‚föedn0"
+
+ skr_card_events.66.t: "Þ˜Lˆ1Yµc"
+ skr_card_events.66.d: ")Yúz.ŸŒTÎW-N„v¨RirVËY(Wzz-Nonm0"
+ skr_card_events.66.a: ">mS1j»SŒåg0"
+ skr_card_events.66.b: "‚föedn0"
+
+ skr_card_events.67.t: "Èp0qQ°s"
+ skr_card_events.67.d: "ÔkKNMRôf:V„vkp0q-^wS†NÎW^0NÍyhQ°e„vkpKN›R0"
+ skr_card_events.67.a: ">mS1j»SŒåg0"
+ skr_card_events.67.b: "‚föedn0"
+
+ skr_card_events.68.t: "4xmcîOY"
+ skr_card_events.68.d: "mcOW„vú^Qr(WàeºNîO.„vÅ`µQNêLˆb`Y0"
+ skr_card_events.68.a: ">mS1j»SŒåg0"
+ skr_card_events.68.b: "‚föedn0"
+
+ # Clear Card Challenges
+ skr_card_events.71.t: "¾uÎ˜SpS"
+ skr_card_events.71.d: "fLr0¾uÎ˜0(W´fÎ˜-N>f°s0"
+ skr_card_events.71.a: "SÕ‹SpS0"
+
+ skr_card_events.72.t: "SôVSpS"
+ skr_card_events.72.d: "fLr0SôV0©‹IeÎWØS—VøRek¾–Lˆ0"
+ skr_card_events.72.a: "SÕ‹SpS0"
+
+ skr_card_events.73.t: "4lnSpS"
+ skr_card_events.73.d: "fLr04ln0ÍdµcNw=nãS„vNR4lAm0"
+ skr_card_events.73.a: "SÕ‹SpS0"
+
+ skr_card_events.74.t: "Lˆ¨RSpS"
+ skr_card_events.74.d: "fLr0Lˆ¨R0©‹irSO	g†NêñT„va×V0"
+ skr_card_events.74.a: "SÕ‹SpS0"
+
+ skr_card_events.75.t: "°‹UVSpS"
+ skr_card_events.75.d: "fLr0°‹UV0Í‘°s†NÇ»S„vNR0"
+ skr_card_events.75.a: "SÕ‹SpS0"
+
+ skr_card_events.76.t: "Þ˜ÔSpS"
+ skr_card_events.76.d: "fLr0Þ˜Ô0©‹Í‘›R1Y»S†NaIN0"
+ skr_card_events.76.a: "SÕ‹SpS0"
+
+ skr_card_events.77.t: "kp0qSpS"
+ skr_card_events.77.d: "fLr0kp0q0„v)n¦^ÔkûNUOkp0qý‰Øš0"
+ skr_card_events.77.a: "SÕ‹SpS0"
+
+ skr_card_events.78.t: "îO.SpS"
+ skr_card_events.78.d: "fLr0îO.0(WêLˆîOYNir0"
+ skr_card_events.78.a: "SÕ‹SpS0"
+
+ ### CARD USE EVENT ###
+
+ skr_card_events.100.t: "O(u“^mLr"
+ skr_card_events.100.d: "	ébN.VòT6eÆ–„vaSLregÀoImƒR„v›RÏ‘0ÀoImT—‰ASt^·QtSöeô•0"
+ skr_card_events.100.windy: "O(uÎ˜KNaS (The Windy)"
+ skr_card_events.100.fly: "O(uÔKNaS (The Fly)"
+ skr_card_events.100.watery: "O(u4lKNaS (The Watery)"
+ skr_card_events.100.firey: "O(ukpKNaS (The Firey)"
+ skr_card_events.100.earthy: "O(uWKNaS (The Earthy)"
+ skr_card_events.100.thunder: "O(u÷–KNaS (The Thunder)"
+ skr_card_events.100.sword: "O(uQRKNaS (The Sword)"
+ skr_card_events.100.shield: "O(uþvKNaS (The Shield)"
+ skr_card_events.100.light: "O(uIQKNaS (The Light)"
+ skr_card_events.100.dark: "O(u—fKNaS (The Dark)"
+ skr_card_events.100.create: "O(uRKNaS (The Create)"
+ skr_card_events.100.erase: "O(uˆmKNaS (The Erase)"
+ skr_card_events.100.gale: "O(u¾uÎ˜Lr (Gale)"
+ skr_card_events.100.siege: "O(uSôVLr (Siege)"
+ skr_card_events.100.aqua: "O(u4lnLr (Aqua)"
+ skr_card_events.100.action: "O(uLˆ¨RLr (Action)"
+ skr_card_events.100.record: "O(u°‹UVLr (Record)"
+ skr_card_events.100.flight: "O(uÞ˜ÔLr (Flight)"
+ skr_card_events.100.blaze: "O(ukp0qLr (Blaze)"
+ skr_card_events.100.repair: "O(uîO.Lr (Repair)"
+ skr_card_events.100.cancel: "ÖSˆm"
+
+ ### CARD ALBUM EVENT ###
+
+ skr_card_events.200.t: "“^mLrþVt’"
+ skr_card_events.200.d: "ïSåN(W?eœ^Lub—ågwòT6eÆ–„vaSLrÅ`µQ0"
+ skr_card_events.200.a: "‹Y„v0"
+
+ ### TOOLTIPS ###
+
+ skr_card_captured_tt: "SpSbŸRÿÙ.V“^mLr°s(W^SŽN`O†N0"
+ skr_card_failed_tt: "SpS1Y%†N0Œp³RÍN(WcíuÿIr…VNN!k:gO0"
+ skr_judgment_success_tt: "Ç†N¡R2R01jKNaS„v›RÏ‘É‰’‘†N0"
+ skr_judgment_fail_tt: "¡R2R1Y%0—‰Í‘°eÆQY0"
+
+ ### DECISIONS ###
+
+ skr_use_card_decision: "O(u“^mLr"
+ skr_use_card_decision_desc: "ÀoImN.VòT6eÆ–„v“^mLr„v›RÏ‘0Ïk.VaSLrO(uT—‰ASt^„v·QtSöeô•0"
+ skr_card_album_decision: "ågwaSLrþVt’"
+ skr_card_album_decision_desc: "ågwSVMRòT6eÆ–„vhQè“^mLrŒTfLr0"
+ skr_sakura_transmute_decision: "lS:N1jKNaS"
+ skr_sakura_transmute_decision_desc: "ShQèASŒN.V“^mLrlS:N1jKNaSÿ·ƒ—Vôf:V„v›RÏ‘0"
+
+ ### MODIFIERS ###
+
+ # Card passive modifiers
+ skr_card_windy: "Î˜KNaS (The Windy)"
+ skr_card_fly: "ÔKNaS (The Fly)"
+ skr_card_watery: "4lKNaS (The Watery)"
+ skr_card_firey: "kpKNaS (The Firey)"
+ skr_card_earthy: "WKNaS (The Earthy)"
+ skr_card_thunder: "÷–KNaS (The Thunder)"
+ skr_card_sword: "QRKNaS (The Sword)"
+ skr_card_shield: "þvKNaS (The Shield)"
+ skr_card_light: "IQKNaS (The Light)"
+ skr_card_dark: "—fKNaS (The Dark)"
+ skr_card_create: "RKNaS (The Create)"
+ skr_card_erase: "ˆmKNaS (The Erase)"
+ skr_card_gale: "¾uÎ˜Lr (Gale)"
+ skr_card_siege: "SôVLr (Siege)"
+ skr_card_aqua: "4lnLr (Aqua)"
+ skr_card_action: "Lˆ¨RLr (Action)"
+ skr_card_record: "°‹UVLr (Record)"
+ skr_card_flight: "Þ˜ÔLr (Flight)"
+ skr_card_blaze: "kp0qLr (Blaze)"
+ skr_card_repair: "îO.Lr (Repair)"
+
+ # Card active modifiers
+ skr_windy_active: "Î˜KNaSÀoIm"
+ skr_fly_active: "ÔKNaSÀoIm"
+ skr_watery_active: "4lKNaSÀoIm"
+ skr_firey_active: "kpKNaSÀoIm"
+ skr_earthy_active: "WKNaSÀoIm"
+ skr_thunder_active: "÷–KNaSÀoIm"
+ skr_sword_active: "QRKNaSÀoIm"
+ skr_shield_active: "þvKNaSÀoIm"
+ skr_light_active: "IQKNaSÀoIm"
+ skr_dark_active: "—fKNaSÀoIm"
+ skr_create_active: "RKNaSÀoIm"
+ skr_erase_active: "ˆmKNaSÀoIm"
+ skr_gale_active: "¾uÎ˜LrÀoIm"
+ skr_siege_active: "SôVLrÀoIm"
+ skr_aqua_active: "4lnLrÀoIm"
+ skr_action_active: "Lˆ¨RLrÀoIm"
+ skr_record_active: "°‹UVLrÀoIm"
+ skr_flight_active: "Þ˜ÔLrÀoIm"
+ skr_blaze_active: "kp0qLrÀoIm"
+ skr_repair_active: "îO.LrÀoIm"
+
+ # Tier modifiers
+ skr_card_tier_0: "“^mLr6eÆ–w"
+ skr_card_tier_1: "“^mLrfR’V"
+ skr_card_tier_2: "“^mLrfRw"
+ skr_card_tier_3: "“^mLr'Y^"
+ skr_card_tier_4: "“^mLr—R^"
+ skr_card_tier_5: "“^mLrŒcµcw"
+
+ # Province disturbance
+ skr_card_disturbance: "“^mLršš¨R"
+ skr_card_disturbance_severe: "“^mLrgRÈpšš¨R"
+
+ # Mission reward modifiers
+ skr_ultimate_card_master: "ÈugaSLr'Y^"
+ skr_bohemia_unified: "ßuN„vâl‰s|šN"
+ skr_trade_network_modifier: "8fQÜu"
+ skr_academic_power: "fR=g›RÏ‘"
+ skr_industrial_heartland: "åTNÃV"
+ skr_bohemian_enlightenment: "âl‰s|šN=T™„"
+ skr_golden_bohemia: "ÄžÑ‘âl‰s|šN"
+ skr_imperial_growth: "^ýVÑSUS"
+ skr_imperial_authority_modifier: "^ýVCgZ"
+ skr_dynastic_rule_modifier: "‹sgßu»l"
+ skr_revoke_privilege_modifier: "²d•yrCg"
+ skr_renovatio_imperii_modifier: "Í‘ú^^ýV"
+ skr_imperial_hegemon: "^ýV8—Cg"
+ skr_grand_imperial_army: "^ýV'Y›Q"
+ skr_imperial_navy: "^ýVwm›Q"
+ skr_imperial_trade_dominance: "^ýV8fINüR"
+ skr_world_emperor: "NLu‡v^"
+ skr_german_military_power: "·Va×V›Q‹N›RÏ‘"
+ skr_united_germany_modifier: "ßuN„v·Va×V"
+ skr_german_hegemon: "·Va×V8—IN"
+ skr_german_defense_line: "·Va×V2–¿u"
+ skr_german_prosperity: "·Va×VAucƒ"
+ skr_german_industry: "·Va×VåTN"
+ skr_deutschland_hegemon: "·Va×V8—Cg"
+ skr_italian_trade_control: "a'Y)R8fµc6R"
+ skr_italian_dominance: "a'Y)R=eM‘"
+ skr_italian_unifier: "a'Y)RßuNw"
+ skr_mediterranean_navy: "0W-Nwmwm›Q"
+ skr_mediterranean_trade_hegemon: "0W-Nwm8f8—Cg"
+ skr_italian_golden_age: "a'Y)RÄžÑ‘öeãN"
+ skr_mare_nostrum_modifier: "bìN„vwm"
+
+ ### GOVERNMENT REFORMS ###
+
+ SKR_clow_card_reform: "“^mT›ÕlO"
+ SKR_clow_card_reform_desc: "S1jçub†N“^mÌ‘·V„vSpSKNfNÿVËY†N6eÆ–“^mLr„vÅez0"
+ SKR_sakura_card_reform: "1jKNaS'Y^"
+ SKR_sakura_card_reform_desc: "Ç†NgT„v¡R2R0S1jS“^mLrlS:N1jKNaSÿåNêñT„vT››Rqš¨RƒRìN0"
+ SKR_clear_card_reform: "faSÉ‰’‘"
+ SKR_clear_card_reform_desc: "S1j„vT››RåeÊv:V'YÿàeaÆ‹0WR.†N°e„vfLr0Ù›NaSLrãNhˆNwhQ°e„v›RÏ‘0"
+
+ ### IDEAS ###
+
+ # SKR Idea names (localisation is handled by the tag system, these are for reference)
+ Card_collector: "“^mLr6eÆ–"
+ Card_collector_desc: "Nb	g“^mLrý=fÎNS1jKb-NceK„„vÿÅV‰˜N.VNK„0W6eÞV0"
+ Cerberus: "ïSœm¯e"
+ Cerberus_desc: "SpSKN‹QSïS	gNw:V'YT››RtSœU0kTu¹p„vˆR²bw0"
+ Tomoyo_Daidouji: "'YSúRåwN"
+ Tomoyo_Daidouji_desc: "S1j„v‹YËS|Qb—eg¾‹¡‹^0åwN„v=eôcI`=fp`0R‹YY0"
+ Sakura_card: "1jKNaS"
+ Sakura_card_desc: "S1j(uêñT„vT››RS“^mLrÍ‘°elS:N1jKNaS0Ïk.VaSLr„vQY¦uý«ˆôf°e0"
+ Clear_card: "fLr"
+ Clear_card_desc: "S1jàeaÆ‹-NR.„vhQ°eaSLrÿt…+TNwÔk“^mLrôf:V'Y„vjo›R0"
+ King_of_cute: "„‹sKN›R"
+ King_of_cute_desc: "(gKN,g1jíQPïS1r„v'`<hVg†NNb	gºN„vÃV0"
+ Release_SKR: "ã‰>eKN›R"
+ Release_SKR_desc: "Ïu†SÇàepeb—eTÿS1jfRO†N(Wib.V-NÝOcKQ6RŒT)nŒT0"
+
+ # TMY Idea names
+ Costume_designer: "b—eg¾‹¡‹"
+ Costume_designer_desc: "åwN:NS1j¾‹¡‹„vb—egNÅNŽÂ‰ÿØ|QYb:W„vžR(u'`0"
+ Video_documentation: "qVÏP°‹UV"
+ Video_documentation_desc: "åwN(uDdÏP:g°‹UV†NS1j„vÏkN!kb—eÿÙ›NqVÏP,g«Ž1S=fR5„vD™e0"
+ Daidouji_fortune: "'YSúR0âV"
+ Daidouji_fortune_desc: "åwN«ŽT„v¶RÏe0ÌR:NýV¶RÐc›O†NZWžR„vÏuNmúWNx0"
+ Sakuras_guardian: "1j„vˆR²bw"
+ Sakuras_guardian_desc: "åwNËYÈuÙz(WS1j«ŽTÿˆR²bNwyY„vNR0"
+ Melody_of_hearts: "ÃVKNËe‹V"
+ Melody_of_hearts_desc: "åwN„vLkðXýw©‹gLeùR„v»ES>eNbY0"
+ Sakura_and_tomoyo: "1jNåwN"
+ Sakura_and_tomoyo_desc: "2NºN„vÊu…Š†NýVLuåwN?aa:NS1j.súQNR0"
+ Eternal_friendship: "8lR`„vËSŒ"
+ Eternal_friendship_desc: "8lÜ„vËSŒ©‹ýV¶R?eVrôf RupIm0"
+
+ ### MISSION TITLES ###
+
+ # Slot 6 - Card Collection
+ SKR_missions_6_title: "“^mçubw"
+ SKR_mission_6_1_title: "SpSKNfN"
+ SKR_mission_6_1_desc: "“^mÌ‘·V„vSpSKNfN«ˆÑS°s0SbVƒR„v±NIRÿ“^mLrÛVce0R†NhQýVT0W0"
+ SKR_mission_6_2_title: "gR„vSpS"
+ SKR_mission_6_2_desc: "–™HQ—‰SpS»ybìNgÑ„v	N.VLrÎ˜0Ô04l0"
+ SKR_mission_6_3_title: "›RÏ‘„vÆ–Óu"
+ SKR_mission_6_3_desc: "¥cNeg=fkp0W0÷–0Ù	N.VLr„vIeûQ'`ˆV:Vÿ—‰ôfY„vÆQY0"
+ SKR_mission_6_4_title: "Ie2–NSO"
+ SKR_mission_6_4_desc: "QRŒTþv“^mLr-N2–¡VŒTIeûQ„vgô0ÅV‰˜Töe·ƒ—VƒRìN0"
+ SKR_mission_6_5_title: "IQN—f"
+ SKR_mission_6_5_desc: "g:V„v2N.V“^mLrIQN—f0ƒRìNÅV‰˜«ˆŒb0Rv^SpS0"
+ SKR_mission_6_6_title: ".Nˆm"
+ SKR_mission_6_6_desc: "gT2N.V“^mLrR.ŒTˆmd–0Æ–PŸƒRìN1SŒRb†NhQè6eÆ–0"
+ SKR_mission_6_7_title: "gT¡R2R"
+ SKR_mission_6_7_desc: "Æ–PŸ†NASŒN.V“^mLr0FOSpSKNfN„v¡R2RwòTÏuÏ‚’‘0"
+ SKR_mission_6_8_title: "fKNFQ"
+ SKR_mission_6_8_desc: "°e„vöeãNeg4N†N0S1j„vT››RVËYR.úQhQ°e„vaSLr0"
+ SKR_mission_6_9_title: ",rNybfLr"
+ SKR_mission_6_9_desc: "¾uÎ˜0SôV04lnMR	N.VfLròTÏuúQ°s†N0"
+ SKR_mission_6_10_title: "Lˆ¨RN°‹UV"
+ SKR_mission_6_10_desc: "Lˆ¨RŒT°‹UV©‹Nirûy¨RŒTÍ‘°sÇ»S„v›RÏ‘0"
+ SKR_mission_6_11_title: "gT	N.V"
+ SKR_mission_6_11_desc: "Þ˜Ô0kp0qŒTîO.0Æ–PŸNb	gfLr0"
+ SKR_mission_6_12_title: "ÈugaSLr'Y^"
+ SKR_mission_6_12_desc: "Æ–PŸ†NhQèŒNAS.VaSLr0S1jb:N†NwckaINN„vaSLr'Y^0"
+
+ # Slot 7 - Bohemia
+ SKR_missions_7_title: "âl‰s|šNKN¦h"
+ SKR_mission_7_1_title: "›Q‹NÆQY"
+ SKR_mission_7_1_desc: "(WúQûQKNMRÿÅV‰˜nxÝO›Q–òTZP‹YEQRÆQY0"
+ SKR_mission_7_2_title: "6eYidÉbôušN"
+ SKR_mission_7_2_desc: "idÉbôušN=fbìN†˜W„vö^8O0ÅV‰˜SvQÍ‘°e³ueQHrþV0"
+ SKR_mission_7_3_title: "åwN„vÊu"
+ SKR_mission_7_3_desc: "åwN1S(WidÉbôušN09e„UNyY„vsQû|ÿyYS?aa ReQbìN0"
+ SKR_mission_7_4_title: "ßuN,gW"
+ SKR_mission_7_4_desc: "âl‰s|šN‹s Q†˜0W„vhQè:SßWidÉbôušN0‰Ì‘‰šN0bS(„‚„šNÅV‰˜ßuN0"
+ SKR_mission_7_5_title: "^Éb<hKNÛv"
+ SKR_mission_7_5_desc: "S–™ý^Éb<hÑSUS:N'k2mgAucƒ„vÎW^KNN0"
+ SKR_mission_7_6_title: "FUºNQÜu"
+ SKR_mission_7_6_desc: "(Wâl‰s|šNú^Ëz=zhQýV„v8fQÜu0"
+ SKR_mission_7_7_title: "fR=g-NÃV"
+ SKR_mission_7_7_desc: "©‹âl‰s|šNb:N'k2m„vfR=g-NÃVKNN0"
+ SKR_mission_7_8_title: "	^¯OKN›R"
+ SKR_mission_7_8_desc: "S^ýV„v	^¯OKNMObrbrŒcác(Wâl‰s|šNKb-N0"
+ SKR_mission_7_9_title: "åTNÃV"
+ SKR_mission_7_9_desc: "(Wâl‰s|šNú^ËzÆRÆ–„v6R.NSOû|0"
+ SKR_mission_7_10_title: ",rN'YÎW^"
+ SKR_mission_7_10_desc: "©‹^Éb<hb:N^ýVg'Y„vÎW^0"
+ SKR_mission_7_11_title: "âl‰s|šN=T™„"
+ SKR_mission_7_11_desc: "'YfRŒTåwÆ‹RPR‘NÆ–ÿâl‰s|šNÛeQ†N=T™„öeãN0"
+ SKR_mission_7_12_title: "ÄžÑ‘âl‰s|šN"
+ SKR_mission_7_12_desc: "âl‰s|šN„vÏkN*NwýNýAucƒfÛv0Ù1S=fÄžÑ‘öeãN0"
+
+ # Slot 8 - HRE
+ SKR_missions_8_title: "^y1WŒN!kCQ^ýV"
+ SKR_mission_8_1_title: "^ýV9ei—"
+ SKR_mission_8_1_desc: "^ýV—‰9ei—MbýwpT:VÛv0Ç,rNy˜^ýV9ei—0"
+ SKR_mission_8_2_title: "…QèŒTs^"
+ SKR_mission_8_2_desc: "ybk^ýV…Qè„vfkÅˆ²QzÇ8lR`ŒTs^9ei—0"
+ SKR_mission_8_3_title: "‡vCg3zúV"
+ SKR_mission_8_3_desc: "nxËzâl‰s|šNùR^ýV‡vMO„vN­ˆCg0"
+ SKR_mission_8_4_title: "^ýVKNb"
+ SKR_mission_8_4_desc: "^ýVùRY±Rb—‰ßuNLˆ¨RÇ^ýVb‰N9ei—0"
+ SKR_mission_8_5_title: "²d•yrCg"
+ SKR_mission_8_5_desc: "eR:Yø‹¯O„vyrCgÿ©‹^ýVb:NwckßuN„výV¶R0"
+ SKR_mission_8_6_title: "^ýVßuN"
+ SKR_mission_8_6_desc: "^y1W^ýVb:NN*NßuN„vèTýV0"
+ SKR_mission_8_7_title: "^ýV8—Cg"
+ SKR_mission_8_7_desc: "(WßuN„vúWNxNÿpT8—CgKNï0"
+ SKR_mission_8_8_title: "ø‹¯OßuT"
+ SKR_mission_8_8_desc: "ž^'Y„v^ýV—‰teTOYø‹¯O„v›RÏ‘0"
+ SKR_mission_8_9_title: "'Y^ýV„v›Q–"
+ SKR_mission_8_9_desc: "^ýV„v›Q–ÅV‰˜:V'Y0R³åNˆR²bNb	g†ußW0"
+ SKR_mission_8_10_title: "^ýV„vwm›Q"
+ SKR_mission_8_10_desc: "ž^'Y„v^ýVmN—‰wmN„v›RÏ‘0"
+ SKR_mission_8_11_title: "^ýV„v0ÌR"
+ SKR_mission_8_11_desc: "µc6R8fÿŒcµc0ÌR0"
+ SKR_mission_8_12_title: "NLu^ýV"
+ SKR_mission_8_12_desc: "^ýV„v›RÏ‘ÓbUS0R†NhQt0wck„vNLu8—Cg0"
+
+ # Slot 9 - Germany
+ SKR_missions_9_title: "·Va×V8—IN"
+ SKR_mission_9_1_title: "ôTO)RšNKNè•"
+ SKR_mission_9_1_desc: "Û›QôTO)RšNŒTÕlpQKQ<SšNÿSbVÛeQ·Va×V„v'Yè•0"
+ SKR_mission_9_2_title: "ñmeQ·Va×V"
+ SKR_mission_9_2_desc: "(WWSS·Va×VTµc6RAS”N*NwýN0"
+ SKR_mission_9_3_title: "T‰¨cÛ"
+ SKR_mission_9_3_desc: "çuíuñmeQµc6RWSS·Va×VTŒNAS”N*NwýN0"
+ SKR_mission_9_4_title: "±ƒ5ƒ³lTu"
+ SKR_mission_9_4_desc: "S¿R›R¨cÛ0R±ƒ5ƒpQŒTËeæt,g0W:S0"
+ SKR_mission_9_5_title: "SƒXV"
+ SKR_mission_9_5_desc: "TSÛeQ(„KQîh0ÃRpQ‰v!XŒTâlŽÉb<SšN0"
+ SKR_mission_9_6_title: "·Va×V›Q‹N"
+ SKR_mission_9_6_desc: "ú^ËzN=e³åN*jkb·Va×V„v:V'Y›Q–0"
+ SKR_mission_9_7_title: "JSÁXmlqS"
+ SKR_mission_9_7_desc: "ŒRhQµc6RS·Va×VbWS·Va×VKNN0"
+ SKR_mission_9_8_title: "Nßu·Va×V"
+ SKR_mission_9_8_desc: "SWSS·Va×VhQè³ueQßu»l0"
+ SKR_mission_9_9_title: "ASag2–¿u"
+ SKR_mission_9_9_desc: "(W·Va×V¹ƒXú^ËzASµ^ZWúV„v‰^X2–¿u0"
+ SKR_mission_9_10_title: "·Va×VAucƒ"
+ SKR_mission_9_10_desc: "Ïk*N·Va×VwýNý¾0RNšR„vAucƒz¦^0"
+ SKR_mission_9_11_title: "·Va×VåTN"
+ SKR_mission_9_11_desc: "(W·Va×VƒX…Qú^ËzÆRÆ–„v6R.NQÜu0"
+ SKR_mission_9_12_title: "·Va×V8—Cg"
+ SKR_mission_9_12_desc: "b:N·Va×Vwck„v8—Cgw0"
+
+ # Slot 10 - Italy
+ SKR_missions_10_title: "a'Y)RKN Q"
+ SKR_mission_10_1_title: "ûŠ?–SQS¯e"
+ SKR_mission_10_1_desc: "èÇ?–SQS¯eqSÿÛ›QZ<S¯eŒT&OôT,r0"
+ SKR_mission_10_2_title: "ñmeQSa"
+ SKR_mission_10_2_desc: "(Wa'Y)R0W:Sµc6RAS*NwýN0"
+ SKR_mission_10_3_title: "TWlšÛ›Q"
+ SKR_mission_10_3_desc: "¨cÛ0RWlšŒT-Nèa'Y)R0"
+ SKR_mission_10_4_title: "JS›SWSè"
+ SKR_mission_10_4_desc: "±NÒR¯eŒT‰‰Ì‘Ir…VVg0"
+ SKR_mission_10_5_title: "›SSN‰ƒX"
+ SKR_mission_10_5_desc: "’dN›S0Ñy‰	VŒT®vÃW™„yrgT„va'Y)R†ußW0"
+ SKR_mission_10_6_title: "íp±šN8f"
+ SKR_mission_10_6_desc: "µc6Ríp±šN8f‚‚¹p0"
+ SKR_mission_10_7_title: "JS›SÇJS"
+ SKR_mission_10_7_desc: "µc6Ra'Y)RNJSåNN„vwýN0"
+ SKR_mission_10_8_title: "ßuN„va'Y)R"
+ SKR_mission_10_8_desc: "Ste*Na'Y)R0W:SŒRhQVg0"
+ SKR_mission_10_9_title: "0W-Nwm0‚–"
+ SKR_mission_10_9_desc: "ú^ËzN=eßu»l0W-Nwm„v:V'Y0‚–0"
+ SKR_mission_10_10_title: "8fÌSµt"
+ SKR_mission_10_10_desc: "Töeµc6Ríp±šNŒTZ<S¯e2N*N8f‚‚¹p0"
+ SKR_mission_10_11_title: "a'Y)RÄžÑ‘öeãN"
+ SKR_mission_10_11_desc: "a'Y)R„vÏk*NwýNýAucƒfÛv0"
+ SKR_mission_10_12_title: "bìN„vwm"
+ SKR_mission_10_12_desc: "b:Nwm›Q8—CgÿS0W-NwmØS:NbìN„v…QVn0"
+
+ ### MISSION COLUMN TITLES ###
+ SKR_missions_6: "“^mçubw"
+ SKR_missions_7: "âl‰s|šNKN¦h"
+ SKR_missions_8: "^y1WŒN!kCQ^ýV"
+ SKR_missions_9: "·Va×V8—IN"
+ SKR_missions_10: "a'Y)RKN Q"

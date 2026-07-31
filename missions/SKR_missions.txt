@@ -1,0 +1,1108 @@
+# =========================
+# SKR (木之本樱) 任务树
+# Slot 6: 库洛继承者 (Card Collection - Core)
+# Slot 7: 波西米亚之梦 (Bohemia)
+# Slot 8: 神圣帝国 (HRE)
+# Slot 9: 德意志霸主 (Germany)
+# Slot 10: 意大利之冠 (Italy)
+# =========================
+
+SKR_missions_6 = {
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = SKR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	SKR_mission_6_1 = {
+		icon = mission_generic
+		position = 1
+		trigger = { always = yes }
+		effect = {
+			country_event = { id = skr_card_events.1 }
+			add_prestige = 10
+		}
+	}
+	SKR_mission_6_2 = {
+		icon = mission_collect_tribute
+		position = 2
+		required_missions = { SKR_mission_6_1 }
+		trigger = {
+			has_country_flag = skr_card_windy_captured
+			has_country_flag = skr_card_fly_captured
+			has_country_flag = skr_card_watery_captured
+		}
+		effect = {
+			add_splendor = 100
+			add_prestige = 15
+			add_dip_power = 100
+		}
+	}
+	SKR_mission_6_3 = {
+		icon = mission_russian_cardinals
+		position = 3
+		required_missions = { SKR_mission_6_2 }
+		trigger = {
+			has_country_flag = skr_card_firey_captured
+			has_country_flag = skr_card_earthy_captured
+			has_country_flag = skr_card_thunder_captured
+		}
+		effect = {
+			add_splendor = 150
+			add_prestige = 20
+			add_dip_power = 150
+		}
+	}
+	SKR_mission_6_4 = {
+		icon = mission_defend_the_frontlines
+		position = 4
+		required_missions = { SKR_mission_6_3 }
+		trigger = {
+			has_country_flag = skr_card_sword_captured
+			has_country_flag = skr_card_shield_captured
+		}
+		effect = {
+			add_splendor = 200
+			add_prestige = 25
+			add_mil_power = 150
+		}
+	}
+	SKR_mission_6_5 = {
+		icon = mission_burning_of_rome
+		position = 5
+		required_missions = { SKR_mission_6_4 }
+		trigger = {
+			has_country_flag = skr_card_light_captured
+			has_country_flag = skr_card_dark_captured
+		}
+		effect = {
+			add_splendor = 250
+			add_prestige = 30
+			add_dip_power = 200
+		}
+	}
+	SKR_mission_6_6 = {
+		icon = mission_war_chest
+		position = 6
+		required_missions = { SKR_mission_6_5 }
+		trigger = {
+			has_country_flag = skr_card_create_captured
+			has_country_flag = skr_card_erase_captured
+		}
+		effect = {
+			add_splendor = 300
+			add_prestige = 35
+			change_government_reform_progress = 100
+		}
+	}
+	SKR_mission_6_7 = {
+		icon = mission_holy_roman_empire
+		position = 7
+		required_missions = { SKR_mission_6_6 }
+		trigger = {
+			has_country_flag = skr_cards_transmuted
+		}
+		effect = {
+			country_event = { id = skr_card_events.51 }
+			add_prestige = 50
+			add_splendor = 400
+			change_government_reform_progress = 200
+		}
+	}
+	SKR_mission_6_8 = {
+		icon = mission_albion
+		position = 8
+		required_missions = { SKR_mission_6_7 }
+		trigger = {
+			year = 1600
+		}
+		effect = {
+			country_event = { id = skr_card_events.60 }
+			add_prestige = 25
+			add_splendor = 300
+		}
+	}
+	SKR_mission_6_9 = {
+		icon = mission_cannons_firing
+		position = 9
+		required_missions = { SKR_mission_6_8 }
+		trigger = {
+			has_country_flag = skr_card_gale_captured
+			has_country_flag = skr_card_siege_captured
+			has_country_flag = skr_card_aqua_captured
+		}
+		effect = {
+			add_splendor = 300
+			add_prestige = 30
+			change_government_reform_progress = 150
+		}
+	}
+	SKR_mission_6_10 = {
+		icon = mission_italian_condottiere
+		position = 10
+		required_missions = { SKR_mission_6_9 }
+		trigger = {
+			has_country_flag = skr_card_action_captured
+			has_country_flag = skr_card_record_captured
+		}
+		effect = {
+			add_splendor = 350
+			add_prestige = 35
+			add_adm_power = 200
+		}
+	}
+	SKR_mission_6_11 = {
+		icon = mission_eastern_europe
+		position = 11
+		required_missions = { SKR_mission_6_10 }
+		trigger = {
+			has_country_flag = skr_card_flight_captured
+			has_country_flag = skr_card_blaze_captured
+			has_country_flag = skr_card_repair_captured
+		}
+		effect = {
+			add_splendor = 400
+			add_prestige = 40
+			change_government_reform_progress = 200
+		}
+	}
+	SKR_mission_6_12 = {
+		icon = mission_empire
+		position = 12
+		required_missions = { SKR_mission_6_11 SKR_mission_7_11 SKR_mission_8_11 SKR_mission_9_11 SKR_mission_10_11 }
+		trigger = {
+			total_development = 2500
+			prestige = 100
+		}
+		effect = {
+			add_country_modifier = { name = skr_ultimate_card_master duration = -1 }
+			add_prestige = 100
+			add_splendor = 500
+		}
+	}
+}
+
+SKR_missions_7 = {
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = SKR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	SKR_mission_7_1 = {
+		icon = mission_assemble_an_army
+		position = 1
+		provinces_to_highlight = {
+			area = moravia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			army_size_percentage = 0.9
+		}
+		effect = {
+			moravia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			silesia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_army_tradition = 15
+			add_prestige = 10
+		}
+	}
+	SKR_mission_7_2 = {
+		icon = mission_king_of_bohemia
+		position = 2
+		required_missions = { SKR_mission_7_1 }
+		provinces_to_highlight = {
+			area = lusatia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			lusatia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			erzgebirge_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 300
+			add_prestige = 15
+		}
+	}
+	SKR_mission_7_3 = {
+		icon = mission_diplomat
+		position = 3
+		required_missions = { SKR_mission_7_2 }
+		trigger = {
+			TMY = { has_opinion = { who = ROOT value = 150 } }
+			has_opinion = { who = TMY value = 150 }
+			alliance_with = TMY
+		}
+		effect = {
+			TMY = { country_event = { id = skr_card_events.50 } }
+			add_prestige = 25
+			add_splendor = 100
+		}
+	}
+	SKR_mission_7_4 = {
+		icon = mission_have_two_accepted_cultures
+		position = 4
+		required_missions = { SKR_mission_7_3 }
+		trigger = {
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_bohemia_unified duration = -1 }
+			add_prestige = 25
+			add_splendor = 100
+		}
+	}
+	SKR_mission_7_5 = {
+		icon = mission_build_university
+		position = 5
+		required_missions = { SKR_mission_7_4 }
+		trigger = {
+			266 = { development = 30 has_building = cathedral }
+		}
+		effect = {
+			austria_proper_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 500
+			change_government_reform_progress = 100
+		}
+	}
+	SKR_mission_7_6 = {
+		icon = mission_have_manufactories
+		position = 6
+		required_missions = { SKR_mission_7_5 SKR_mission_6_5 }
+		trigger = {
+			monthly_income = 80
+			num_of_owned_provinces_with = {
+				has_building = trade_depot
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_trade_network_modifier duration = -1 }
+			add_dip_power = 100
+		}
+	}
+	SKR_mission_7_7 = {
+		icon = mission_europa_university
+		position = 7
+		required_missions = { SKR_mission_7_6 }
+		trigger = {
+			total_development = 500
+			num_of_owned_provinces_with = {
+				has_building = university
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_academic_power duration = -1 }
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	SKR_mission_7_8 = {
+		icon = mission_roman_empire_west
+		position = 8
+		required_missions = { SKR_mission_7_7 SKR_mission_6_7 }
+		trigger = {
+			total_development = 800
+			is_elector = yes
+		}
+		effect = {
+			add_splendor = 500
+			add_prestige = 50
+			change_government_reform_progress = 300
+		}
+	}
+	SKR_mission_7_9 = {
+		icon = mission_early_game_buildings
+		position = 9
+		required_missions = { SKR_mission_7_8 }
+		trigger = {
+			total_development = 1000
+			num_of_owned_provinces_with = {
+				has_building = weapons_manufactory
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_industrial_heartland duration = -1 }
+			add_treasury = 1000
+		}
+	}
+	SKR_mission_7_10 = {
+		icon = mission_high_income
+		position = 10
+		required_missions = { SKR_mission_7_9 }
+		trigger = {
+			total_development = 1200
+			266 = { development = 50 }
+		}
+		effect = {
+			266 = { add_base_tax = 3 add_base_production = 3 add_base_manpower = 3 }
+			add_prestige = 50
+		}
+	}
+	SKR_mission_7_11 = {
+		icon = mission_establish_high_seas_navy
+		position = 11
+		required_missions = { SKR_mission_7_10 }
+		trigger = {
+			total_development = 1500
+			num_of_owned_provinces_with = {
+				has_building = university
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_bohemian_enlightenment duration = -1 }
+			add_splendor = 300
+		}
+	}
+	SKR_mission_7_12 = {
+		icon = mission_kingdom_of_italy
+		position = 12
+		required_missions = { SKR_mission_7_11 SKR_mission_6_11 }
+		trigger = {
+			total_development = 2000
+			266 = { development = 60 }
+		}
+		effect = {
+			add_country_modifier = { name = skr_golden_bohemia duration = -1 }
+			add_prestige = 100
+			add_splendor = 500
+		}
+	}
+}
+
+SKR_missions_8 = {
+	slot = 8
+	generic = no
+	ai = yes
+	potential = {
+		tag = SKR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	SKR_mission_8_1 = {
+		icon = mission_holy_roman_empire
+		position = 1
+		trigger = {
+			is_elector = yes
+			has_reform = emperor_reichsreform
+		}
+		effect = {
+			add_country_modifier = { name = skr_imperial_growth duration = -1 }
+			add_prestige = 25
+			add_splendor = 100
+		}
+	}
+	SKR_mission_8_2 = {
+		icon = mission_defend_the_empire
+		position = 2
+		required_missions = { SKR_mission_8_1 }
+		trigger = {
+			has_reform = emperor_reform_ewiger_landfriede
+			is_emperor = yes
+		}
+		effect = {
+			add_country_modifier = { name = skr_imperial_authority_modifier duration = -1 }
+			add_prestige = 25
+		}
+	}
+	SKR_mission_8_3 = {
+		icon = mission_sardinia_piedmont
+		position = 3
+		required_missions = { SKR_mission_8_2 }
+		trigger = {
+			has_reform = emperor_proclaim_erbkaisertum
+			is_emperor = yes
+		}
+		effect = {
+			add_country_modifier = { name = skr_dynastic_rule_modifier duration = -1 }
+			change_government_reform_progress = 200
+		}
+	}
+	SKR_mission_8_4 = {
+		icon = mission_empire
+		position = 4
+		required_missions = { SKR_mission_8_3 }
+		trigger = {
+			has_reform = emperor_reichskrieg
+			is_emperor = yes
+		}
+		effect = {
+			every_owned_province = {
+				limit = { is_part_of_hre = yes }
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 50
+		}
+	}
+	SKR_mission_8_5 = {
+		icon = mission_two_sicilies
+		position = 5
+		required_missions = { SKR_mission_8_4 }
+		trigger = {
+			has_reform = emperor_universal_reform
+			is_emperor = yes
+		}
+		effect = {
+			add_country_modifier = { name = skr_revoke_privilege_modifier duration = -1 }
+			add_splendor = 300
+		}
+	}
+	SKR_mission_8_6 = {
+		icon = mission_roman_empire
+		position = 6
+		required_missions = { SKR_mission_8_5 }
+		trigger = {
+			has_reform = emperor_renovatio_imperii
+		}
+		effect = {
+			add_country_modifier = { name = skr_renovatio_imperii_modifier duration = -1 }
+			add_prestige = 100
+			add_splendor = 500
+		}
+	}
+	SKR_mission_8_7 = {
+		icon = mission_royal_marriage
+		position = 7
+		required_missions = { SKR_mission_8_6 }
+		trigger = {
+			is_emperor = yes
+			total_development = 1500
+			prestige = 75
+		}
+		effect = {
+			add_country_modifier = { name = skr_imperial_hegemon duration = -1 }
+			add_splendor = 500
+		}
+	}
+	SKR_mission_8_8 = {
+		icon = mission_colonial_ambitions
+		position = 8
+		required_missions = { SKR_mission_8_7 SKR_mission_6_7 }
+		trigger = {
+			total_development = 2000
+		}
+		effect = {
+			change_government_reform_progress = 500
+			add_prestige = 75
+		}
+	}
+	SKR_mission_8_9 = {
+		icon = mission_south_america
+		position = 9
+		required_missions = { SKR_mission_8_8 }
+		trigger = {
+			total_development = 2500
+			army_size = 300
+		}
+		effect = {
+			add_country_modifier = { name = skr_grand_imperial_army duration = -1 }
+			add_mil_power = 200
+		}
+	}
+	SKR_mission_8_10 = {
+		icon = mission_trade
+		position = 10
+		required_missions = { SKR_mission_8_9 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = shipyard
+				value = 5
+			}
+			navy_size = 100
+		}
+		effect = {
+			add_country_modifier = { name = skr_imperial_navy duration = -1 }
+			add_dip_power = 200
+		}
+	}
+	SKR_mission_8_11 = {
+		icon = mission_war_chest
+		position = 11
+		required_missions = { SKR_mission_8_10 }
+		trigger = {
+			monthly_income = 500
+			merchants = 10
+		}
+		effect = {
+			add_country_modifier = { name = skr_imperial_trade_dominance duration = -1 }
+			add_prestige = 100
+		}
+	}
+	SKR_mission_8_12 = {
+		icon = mission_roman_empire_west
+		position = 12
+		required_missions = { SKR_mission_8_11 SKR_mission_6_11 }
+		trigger = {
+			total_development = 4000
+			is_hegemon = yes
+		}
+		effect = {
+			add_country_modifier = { name = skr_world_emperor duration = -1 }
+			add_prestige = 100
+			add_splendor = 1000
+		}
+	}
+}
+
+SKR_missions_9 = {
+	slot = 9
+	generic = no
+	ai = yes
+	potential = {
+		tag = SKR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	SKR_mission_9_1 = {
+		icon = mission_two_sicilies
+		position = 1
+		provinces_to_highlight = {
+			area = upper_bavaria_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			army_tradition = 40
+		}
+		effect = {
+			upper_bavaria_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			lower_bavaria_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			franconia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			thuringia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_army_tradition = 15
+		}
+	}
+	SKR_mission_9_2 = {
+		icon = mission_noble_cavalry
+		position = 2
+		required_missions = { SKR_mission_9_1 }
+		provinces_to_highlight = {
+			region = north_german_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = north_german_region
+				value = 15
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = south_german_region
+				value = 15
+			}
+		}
+		effect = {
+			upper_franconia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			south_saxony_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 300
+		}
+	}
+	SKR_mission_9_3 = {
+		icon = mission_iberian_conquistador
+		position = 3
+		required_missions = { SKR_mission_9_2 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = north_german_region
+				value = 25
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = south_german_region
+				value = 25
+			}
+		}
+		effect = {
+			hesse_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			westphalia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 400
+		}
+	}
+	SKR_mission_9_4 = {
+		icon = mission_spain
+		position = 4
+		required_missions = { SKR_mission_9_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = north_german_region
+				value = 35
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = south_german_region
+				value = 35
+			}
+		}
+		effect = {
+			lower_rhineland_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			palatinate_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			upper_swabia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 500
+		}
+	}
+	SKR_mission_9_5 = {
+		icon = mission_african_soldier
+		position = 5
+		required_missions = { SKR_mission_9_4 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = north_german_region
+				value = 45
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = south_german_region
+				value = 45
+			}
+		}
+		effect = {
+			vorpommern_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			mecklenburg_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			braunschweig_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			alsace_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 600
+		}
+	}
+	SKR_mission_9_6 = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { SKR_mission_9_5 SKR_mission_6_5 }
+		trigger = {
+			total_development = 800
+			army_size = 120
+		}
+		effect = {
+			add_country_modifier = { name = skr_german_military_power duration = -1 }
+			add_mil_power = 200
+		}
+	}
+	SKR_mission_9_7 = {
+		icon = mission_cannons_firing
+		position = 7
+		required_missions = { SKR_mission_9_6 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = north_german_region
+				value = 55
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = south_german_region
+				value = 55
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_united_germany_modifier duration = -1 }
+			add_prestige = 75
+			add_splendor = 300
+		}
+	}
+	SKR_mission_9_8 = {
+		icon = mission_empire
+		position = 8
+		required_missions = { SKR_mission_9_7 SKR_mission_6_7 }
+		trigger = {
+			north_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_german_hegemon duration = -1 }
+			add_prestige = 100
+			add_splendor = 500
+		}
+	}
+	SKR_mission_9_9 = {
+		icon = mission_arabian_fort
+		position = 9
+		required_missions = { SKR_mission_9_8 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = fort_17th
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_german_defense_line duration = -1 }
+			add_mil_power = 150
+		}
+	}
+	SKR_mission_9_10 = {
+		icon = mission_early_game_buildings
+		position = 10
+		required_missions = { SKR_mission_9_9 }
+		trigger = {
+			north_german_region = {
+				all_owned_province = { development = 15 }
+			}
+			south_german_region = {
+				all_owned_province = { development = 15 }
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_german_prosperity duration = -1 }
+			add_treasury = 2000
+		}
+	}
+	SKR_mission_9_11 = {
+		icon = mission_have_manufactories
+		position = 11
+		required_missions = { SKR_mission_9_10 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = weapons_manufactory
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_german_industry duration = -1 }
+			change_government_reform_progress = 500
+		}
+	}
+	SKR_mission_9_12 = {
+		icon = mission_holy_roman_empire
+		position = 12
+		required_missions = { SKR_mission_9_11 SKR_mission_6_11 }
+		trigger = {
+			is_hegemon = yes
+			north_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_deutschland_hegemon duration = -1 }
+			add_prestige = 100
+			add_splendor = 1000
+		}
+	}
+}
+
+SKR_missions_10 = {
+	slot = 10
+	generic = no
+	ai = yes
+	potential = {
+		tag = SKR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	SKR_mission_10_1 = {
+		icon = mission_italian_condottiere
+		position = 1
+		provinces_to_highlight = {
+			area = venetia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				navy_size_percentage = 0.8
+				army_size = 100
+			}
+		}
+		effect = {
+			venetia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			lombardy_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_army_tradition = 15
+			add_navy_tradition = 15
+		}
+	}
+	SKR_mission_10_2 = {
+		icon = mission_king_of_naples
+		position = 2
+		required_missions = { SKR_mission_10_1 }
+		provinces_to_highlight = {
+			region = italy_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = italy_region
+				value = 10
+			}
+		}
+		effect = {
+			po_valley_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			tuscany_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 300
+		}
+	}
+	SKR_mission_10_3 = {
+		icon = mission_papal_state
+		position = 3
+		required_missions = { SKR_mission_10_2 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = italy_region
+				value = 15
+			}
+		}
+		effect = {
+			lazio_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			liguria_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 25
+		}
+	}
+	SKR_mission_10_4 = {
+		icon = mission_sicilian_vespers
+		position = 4
+		required_missions = { SKR_mission_10_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = italy_region
+				value = 25
+			}
+		}
+		effect = {
+			naples_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			sicily_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 500
+		}
+	}
+	SKR_mission_10_5 = {
+		icon = mission_kingdom_of_italy
+		position = 5
+		required_missions = { SKR_mission_10_4 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = italy_region
+				value = 35
+			}
+		}
+		effect = {
+			corsica_sardinia_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			piedmont_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_treasury = 600
+		}
+	}
+	SKR_mission_10_6 = {
+		icon = mission_dominate_home_trade_node
+		position = 6
+		required_missions = { SKR_mission_10_5 SKR_mission_6_5 }
+		trigger = {
+			total_development = 1000
+			is_strongest_trade_power = genoa
+		}
+		effect = {
+			add_country_modifier = { name = skr_italian_trade_control duration = -1 }
+			add_dip_power = 200
+		}
+	}
+	SKR_mission_10_7 = {
+		icon = mission_spain
+		position = 7
+		required_missions = { SKR_mission_10_6 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				region = italy_region
+				value = 45
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_italian_dominance duration = -1 }
+			add_prestige = 50
+		}
+	}
+	SKR_mission_10_8 = {
+		icon = mission_eastern_europe
+		position = 8
+		required_missions = { SKR_mission_10_7 SKR_mission_6_7 }
+		trigger = {
+			italy_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_italian_unifier duration = -1 }
+			add_prestige = 100
+			add_splendor = 500
+		}
+	}
+	SKR_mission_10_9 = {
+		icon = mission_establish_high_seas_navy
+		position = 9
+		required_missions = { SKR_mission_10_8 }
+		trigger = {
+			num_of_heavy_ship = 50
+			num_of_light_ship = 50
+		}
+		effect = {
+			add_country_modifier = { name = skr_mediterranean_navy duration = -1 }
+			add_dip_power = 200
+		}
+	}
+	SKR_mission_10_10 = {
+		icon = mission_trade
+		position = 10
+		required_missions = { SKR_mission_10_9 }
+		trigger = {
+			is_strongest_trade_power = genoa
+			is_strongest_trade_power = venice
+		}
+		effect = {
+			add_country_modifier = { name = skr_mediterranean_trade_hegemon duration = -1 }
+			add_dip_power = 300
+		}
+	}
+	SKR_mission_10_11 = {
+		icon = mission_roman_empire
+		position = 11
+		required_missions = { SKR_mission_10_10 }
+		trigger = {
+			italy_region = {
+				all_owned_province = { development = 15 }
+			}
+			total_development = 2500
+		}
+		effect = {
+			add_country_modifier = { name = skr_italian_golden_age duration = -1 }
+			add_prestige = 100
+		}
+	}
+	SKR_mission_10_12 = {
+		icon = mission_roman_empire_west
+		position = 12
+		required_missions = { SKR_mission_10_11 SKR_mission_6_11 }
+		trigger = {
+			is_hegemon = yes
+			italy_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = skr_mare_nostrum_modifier duration = -1 }
+			add_prestige = 100
+			add_splendor = 1000
+		}
+	}
+}
