@@ -2,11 +2,13 @@ cb_ksn_maghreb = {
 	valid_for_subject = no
 
 	prerequisites = {
-		has_country_flag = KSN_maghreb_cb_unlocked_flag
+		OR = {
+			mission_completed = KSN_missions_7_2
+			has_country_flag = KSN_maghreb_cb_unlocked_flag
+		}
 		any_owned_province = {
 			region = maghreb_region
 		}
-		is_neighbor_of = FROM
 	}
 
 	war_goal = take_province_ksn_maghreb
