@@ -114,6 +114,7 @@ NNM_mikazuki_bonds_mechanic = {
 
 	interactions = {
 		NNM_bonds_resonance_interaction = {
+			icon = "ACG_MEC_E_NNM_interaction_1"
 			trigger = {
 				has_government_power = {
 					mechanic_type = NNM_mikazuki_bonds_mechanic
@@ -151,6 +152,7 @@ NNM_mikazuki_bonds_mechanic = {
 		}
 
 		NNM_magical_offering_interaction = {
+			icon = "ACG_MEC_E_NNM_interaction_1"
 			trigger = {
 				has_government_power = {
 					mechanic_type = NNM_mikazuki_bonds_mechanic
@@ -200,6 +202,7 @@ NNM_mikazuki_bonds_mechanic = {
 		}
 
 		NNM_miracle_resonance_interaction = {
+			icon = "ACG_MEC_E_NNM_interaction_1"
 			trigger = {
 				has_government_power = {
 					mechanic_type = NNM_mikazuki_bonds_mechanic
