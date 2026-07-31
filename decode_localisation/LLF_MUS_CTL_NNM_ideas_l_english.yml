@@ -249,6 +249,7 @@ l_english:
  cb_nnm_magical_girl_duel: "魔法少女对决"
  cb_nnm_magical_girl_duel_desc: "八千代向另一位魔法少女发起荣耀对决。战胜后可以将其纳入三日月同盟，以羁绊代替征服。"
  NNM_DUEL_WAR_NAME: "$ORDER$对$SECOND$的魔法少女对决"
+ NNM_MAGHREB_CB_NO_ALLY_CALL_TT: "正在被「魔法少女决斗」战争宣战，无法召唤盟友。"
 
  # Modifiers
  NNM_mikazuki_trust_modifier: "三日月庄的信任"

@@ -927,4 +927,18 @@ callaction = {
 			always = no
 		}
 	}
+	condition = {
+		tooltip = NNM_MAGHREB_CB_NO_ALLY_CALL_TT
+		potential = {
+			ROOT = {
+				is_in_war = {
+					defender_leader = ROOT
+					casus_belli = cb_nnm_magical_girl_duel
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }

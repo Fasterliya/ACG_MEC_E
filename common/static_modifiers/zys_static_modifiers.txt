@@ -112,7 +112,6 @@ difficulty_very_hard_ai = {
 	idea_cost = -0.28
 	interest = -1
 	improve_relation_modifier = 0.55
-	development_cost = -0.25
 	build_cost = -0.30
 	army_tradition_decay = -0.005
 	infantry_cost = -0.25
