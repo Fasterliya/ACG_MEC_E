@@ -347,3 +347,11 @@ NNM_mikazuki_upgrade3_subject = {
 NNM_meeting_cooldown = {
 	picture = "diplomacy_ideas"
 }
+
+# ============ Miracle Resonance Modifier ============
+
+NNM_miracle_resonance_modifier = {
+	picture = "religious_ideas"
+	all_estate_loyalty_equilibrium = 0.10
+	development_cost = -0.10
+}

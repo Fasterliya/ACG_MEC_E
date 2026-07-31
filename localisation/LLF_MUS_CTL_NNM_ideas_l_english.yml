@@ -212,6 +212,16 @@
  NNM_bonds_resonance_interaction_desc: "ˆmw25¹pÊuKN›RN100Y²N¹ppeÿNb	g	NåegTßvD–¸^·ƒ—V+15áOûNv^-10%ìrËz>PT0·QtS10t^0"
  NNM_bonds_resonance_effect_tt: "Nb	g	NåegTßvD–¸^·ƒ—VáOûN+15ÿìrËz>PT-10%"
 
+ NNM_magical_offering_interaction: "魔力奉献"
+ NNM_magical_offering_interaction_desc: "消耗25点羁绊之力。同盟成员将魔力奉献给八千代，转化为联邦资源。宗主国获得100行政、100外交、100军事点数，所有阶层+10%忠诚，王领+5%。属国获得25行政、25军事点数，独立倾向-5%。冷却15年。"
+ NNM_magical_offering_tt: "宗主国：+100§G行政§!、+100§G外交§!、+100§G军事§!\n宗主国：所有阶层§Y+10%§!忠诚度，§Y+5%§!王领\n全体属国：+25§G行政§!、+25§G军事§!、§G-5%§!独立倾向"
+
+ NNM_miracle_resonance_interaction: "奇迹的共鸣"
+ NNM_miracle_resonance_interaction_desc: "消耗40点羁绊之力与100军事点数。触发魔法少女间的奇迹共鸣。10年内发展省份时有50%概率额外获得1点对应发展度。属国获得30军事点数和10%当前人力。冷却20年。"
+ NNM_miracle_resonance_tt: "宗主国：获得§G奇迹共鸣§!修正（10年）——每次发展省份§Y50%§!概率额外§G+1§!对应发展度\n全体属国：+30§G军事§!、恢复§Y10%§!人力池"
+
+ NNM_miracle_resonance_modifier: "奇迹共鸣"
+ NNM_miracle_resonance_modifier_desc: "魔法少女间的羁绊引发奇迹共鸣。发展省份时有50%概率额外获得1点发展度。阶层忠诚均衡+10%，发展成本-10%。"
  # Government Mechanic - Meeting Decision
  NNM_hold_mikazuki_meeting_decision: "7R°e	Nåeg¶r`"
  NNM_hold_mikazuki_meeting_decision_desc: "ìSV	Nåeg„^hQSOO®‹ÿÀhÆ‰SVMRTßvbXTv^Í‘°eÝQZwÊuKN›R09hnc	NåegTßvbXTpeÏ‘ôf°eùR”^„vÊu6–µkîOckÿTöeÍ‘°e2RšRûN¡Rã‰•„vGSµužXÊv0·QtS5t^0"

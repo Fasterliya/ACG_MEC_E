@@ -1,0 +1,50 @@
+on_adm_development = {
+	effect = {
+		if = {
+			limit = {
+				FROM = { has_country_modifier = NNM_miracle_resonance_modifier }
+			}
+			random_list = {
+				50 = {
+					add_base_tax = 1
+				}
+				50 = {
+				}
+			}
+		}
+	}
+}
+
+on_dip_development = {
+	effect = {
+		if = {
+			limit = {
+				FROM = { has_country_modifier = NNM_miracle_resonance_modifier }
+			}
+			random_list = {
+				50 = {
+					add_base_production = 1
+				}
+				50 = {
+				}
+			}
+		}
+	}
+}
+
+on_mil_development = {
+	effect = {
+		if = {
+			limit = {
+				FROM = { has_country_modifier = NNM_miracle_resonance_modifier }
+			}
+			random_list = {
+				50 = {
+					add_base_manpower = 1
+				}
+				50 = {
+				}
+			}
+		}
+	}
+}
