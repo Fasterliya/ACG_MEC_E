@@ -8,7 +8,7 @@
 # =========================
 
 SKR_missions_6 = {
-	slot = 6
+	slot = 1
 	generic = no
 	ai = yes
 	potential = {
@@ -186,7 +186,7 @@ SKR_missions_6 = {
 }
 
 SKR_missions_7 = {
-	slot = 7
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -406,7 +406,7 @@ SKR_missions_7 = {
 }
 
 SKR_missions_8 = {
-	slot = 8
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -581,7 +581,7 @@ SKR_missions_8 = {
 }
 
 SKR_missions_9 = {
-	slot = 9
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -864,7 +864,7 @@ SKR_missions_9 = {
 }
 
 SKR_missions_10 = {
-	slot = 10
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
@@ -1009,7 +1009,6 @@ SKR_missions_10 = {
 		required_missions = { SKR_mission_10_5 SKR_mission_6_5 }
 		trigger = {
 			total_development = 1000
-			is_strongest_trade_power = genoa
 		}
 		effect = {
 			add_country_modifier = { name = skr_italian_trade_control duration = -1 }
