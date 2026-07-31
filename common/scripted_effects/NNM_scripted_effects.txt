@@ -194,7 +194,7 @@ NNM_refresh_mikazuki_bonds_effect = {
 			add_country_modifier = { name = NNM_mikazuki_upgrade3_subject duration = -1 }
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
 			has_country_flag = NNM_missions_1_6_completed_flag
 		}
@@ -204,7 +204,7 @@ NNM_refresh_mikazuki_bonds_effect = {
 			add_country_modifier = { name = NNM_mikazuki_upgrade2_subject duration = -1 }
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
 			has_country_flag = NNM_missions_1_3_completed_flag
 		}

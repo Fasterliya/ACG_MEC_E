@@ -778,8 +778,8 @@ KSN_missions_9 = {
 		required_missions = { KSN_missions_9_5 }
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_building = trade_depot
-				value = 5
+				has_trade_building_trigger = yes
+				value = 10
 			}
 		}
 		effect = {
@@ -812,7 +812,6 @@ KSN_missions_9 = {
 		trigger = {
 			num_of_heavy_ship = 30
 			num_of_light_ship = 60
-			navy_size_percentage = 1.0
 			total_development = 800
 		}
 		effect = {
