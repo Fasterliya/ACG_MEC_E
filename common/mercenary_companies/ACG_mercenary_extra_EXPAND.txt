@@ -104,7 +104,7 @@ ACG_MEC_EXPAND_new_mercenary_7 = {
 	manpower_pool = 75
 }
 ACG_MEC_EXPAND_new_mercenary_8 = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.2
 	max_size = 160
     cavalry_weight = 0.10
 	artillery_weight = 0.20
@@ -125,7 +125,7 @@ ACG_MEC_EXPAND_new_mercenary_8 = {
 	manpower_pool = 75
 }
 ACG_MEC_EXPAND_new_mercenary_9 = {
-    regiments_per_development = 0.08
+    regiments_per_development = 0.25
 	max_size = 200
     cavalry_weight = 0.15
 	artillery_weight = 0.25
@@ -146,7 +146,7 @@ ACG_MEC_EXPAND_new_mercenary_9 = {
 	manpower_pool = 100
 }
 ACG_MEC_EXPAND_new_mercenary_10 = {
-    regiments_per_development = 0.06
+    regiments_per_development = 0.25
 	max_size = 240
     cavalry_weight = 0.20
 	artillery_weight = 0.30

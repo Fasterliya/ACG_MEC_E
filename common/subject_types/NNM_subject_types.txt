@@ -1,4 +1,7 @@
 mikazuki_ally = {
+	copy_from = default
+	can_have_great_projects_moved_by_overlord = no
+
 	is_ecclesiastical = no
 	vassal = yes
 	is_subject_type = yes
@@ -12,6 +15,12 @@ mikazuki_ally = {
 	pays_overlord = 0.10
 	forcelimit_to_overlord = 0.25
 	military_focus = 1.5
+
+	joins_overlords_wars = yes
+	can_fight_independence_war = yes
+	scutage = no
+	subsidize_armies = yes
+	send_officers = yes
 
 	modifier_overlord = {
 		modifier = NNM_mikazuki_overlord_modifier

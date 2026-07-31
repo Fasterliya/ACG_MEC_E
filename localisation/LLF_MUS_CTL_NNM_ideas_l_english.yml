@@ -181,19 +181,27 @@
  NNM_missions_5_8_desc: "SfŽ0q0POÓNOgPR0Œvmln	NMON¹e„vT›ÕlSsYb:N	NåegTßv„vbXT0Tw¦„vHrþVÎNYYt³l„vn4Yö^8Oó2N³lAmßW0kQCSãNåNNñTKN›RSb4x†NT›ÕlSsYèlšRøv’N‹kNg„v¿R‹T0ŒRbdkûN¡RS:N0	NåegÊu0Û¦^agã‰•Y²NðXg+2„v8lENžXÊv0"
 
  # Custom Tooltips
- NNM_missions_1_3_tt: "ŒRbdkûN¡RTÿ:N0	NåegÊu0Û¦^agã‰•6–µk1˜YžXÊvÿ\nY²NsQû|+1"
- NNM_missions_1_4_tt: "ŒRbdkûN¡RTÿ:N0	NåegÊu0Û¦^agã‰•6–µk2˜YžXÊvÿ\nD–¸^Ðc›O„vF–›QNP–+50%"
- NNM_missions_1_5_tt: "·ƒ—VùR¯siVËÿIRH	ÿ„vN^SUScCB0ÇY²NTßvú^ËzáOûNTÿåNN:WcƒwùR³QŽ÷‹yYckV ReQ	NåegTßv0"
- NNM_missions_1_6_tt: "ŒRbdkûN¡RTÿ:N0	NåegÊu0Û¦^agã‰•6–µk3˜YžXÊvÿ\nµOeuib.VqVÍT-15%"
- NNM_missions_1_8_tt: "ŒRbdkûN¡RTÿ:N0	NåegÊu0Û¦^agã‰•6–µk4˜YžXÊvÿ\n­‹Ãu¦^+5%"
- NNM_missions_4_3_tt: "·ƒ—VùRžîvWÿMDK	ÿ„vN^SUScCB0T›ÕlSsYùR³Q00(Wb‰N-NO(udkCBïSåND–¸^îvh0"
- NNM_missions_4_4_tt: "·ƒ—VùRôT»žŽÿTOM	ÿ„vN^SUScCB0T›ÕlSsYùR³Q00(Wb‰N-NO(udkCBïSåND–¸^îvh0"
- NNM_missions_4_5_tt: "·ƒ—VùRŽh™l6w™™ÿSAY	ÿ„vN^SUScCB0T›ÕlSsYùR³Q00(Wb‰N-NO(udkCBïSåND–¸^îvh0"
- NNM_missions_4_8_tt: "ŒRbdkûN¡RTÿ:N0	NåegÊu0Û¦^agã‰•è6–µk˜YžXÊvÿ\nhQNSÛSqN-2ÿ›RÏ‘e25öeuHe	ÿ"
- NNM_missions_5_3_tt: "·ƒ—VùRSfŽ0qÿAKE	ÿ„vN^SUScCB0T›ÕlSsYùR³Q00(Wb‰N-NO(udkCBïSåND–¸^îvh0"
- NNM_missions_5_4_tt: "·ƒ—VùRPOÓNOgPRÿKYO	ÿ„vN^SUScCB0T›ÕlSsYùR³Q00(Wb‰N-NO(udkCBïSåND–¸^îvh0"
- NNM_missions_5_6_tt: "æ‰ÑSÊ‘>eŒvmlnÿMMN	ÿ:N	NåegTßvD–¸^„v³Q®‹0"
- NNM_missions_5_8_tt: "ŒRbdkûN¡RTÿ:N0	NåegÊu0Û¦^agã‰•è6–µk˜YžXÊvÿ\nY²NðXg+2ÿ›RÏ‘e50öeuHe	ÿ"
+ NNM_missions_1_2_hidden_tt: "òƒ‰ƒ^šN0±uHY0džCNSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_1_3_tt: "ÊuKN›R„v6–µk1˜YžXÊvòTã‰•ÿY²NsQû|+1"
+ NNM_missions_1_4_tt: "ÊuKN›R„v6–µk2˜YžXÊvòTã‰•ÿD–¸^Ðc›O„vF–›QNP–+50%"
+ NNM_missions_1_5_tt: "¯siVË:ND–¸^bòTˆmmpöeÿ¯siVËSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_1_5_hidden_tt: "¯siVËSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_1_6_tt: "ÊuKN›R„v6–µk3˜YžXÊvòTã‰•ÿµOeuib.VqVÍT-15%"
+ NNM_missions_1_8_tt: "ÊuKN›R„v6–µk4˜YžXÊvòTã‰•ÿ­‹Ãu¦^+5%"
+ NNM_missions_4_3_tt: "žîvW:ND–¸^bòTˆmmpöeÿžîvWSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_4_3_hidden_tt: "žîvWSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_4_4_tt: "ôT»žŽ:ND–¸^bòTˆmmpöeÿôT»žŽSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_4_4_hidden_tt: "ôT»žŽSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_4_5_tt: "Žh™l6w™™:ND–¸^bòTˆmmpöeÿŽh™l6w™™SOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_4_5_hidden_tt: "Žh™l6w™™SOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_4_8_tt: "ÊuKN›Rè6–µk˜YžXÊvòTã‰•ÿhQNSÛSqN-2ÿ›RÏ‘e25öeuHe	ÿ"
+ NNM_missions_5_3_tt: "SfŽ0q:ND–¸^bòTˆmmpöeÿSfŽ0qSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_5_3_hidden_tt: "SfŽ0qSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_5_4_tt: "POÓNOgPR:ND–¸^bòTˆmmpöeÿPOÓNOgPRSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_5_4_hidden_tt: "POÓNOgPRSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_5_6_tt: "Œvmln:ND–¸^bòTˆmmpöeÿŒvmlnSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_5_6_hidden_tt: "ŒvmlnSOb:NbìN„v	NåegTßvbXT"
+ NNM_missions_5_8_tt: "ÊuKN›Rè6–µk˜YžXÊvòTã‰•ÿY²NðXg+2ÿ›RÏ‘e50öeuHe	ÿ"
 
  # Government Mechanic
  NNM_mikazuki_government_reform: "	Nåeg„^TIN6R"
@@ -222,6 +230,8 @@
  # Subject Type
  mikazuki_ally: "	NåegTßv"
  mikazuki_ally_title: "TßvbXT"
+ mikazuki_ally_title_plural: "	NåegTßvbXT"
+ mikazuki_ally_is_our: "§Y	NåegTßv§!"
  mikazuki_ally_long_desc: "	NåegTßv=f	Nåeg„^„vckVbXTÿ«N	gØš¦^ê»lCgÿN`S(uY²NsQû|0ßv¦uú^Ëz(WáOûNNÊuKNNÿw^—US¯u„vãg0"
 
  # CB & War

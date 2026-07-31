@@ -65,10 +65,11 @@ NNM_missions_1 = {
 			add_casus_belli = { type = cb_nnm_magical_girl_duel target = SAY months = 2400 }
 			add_casus_belli = { type = cb_nnm_magical_girl_duel target = AKE months = 2400 }
 			add_casus_belli = { type = cb_nnm_magical_girl_duel target = KYO months = 2400 }
+			custom_tooltip = NNM_missions_1_2_hidden_tt
 			hidden_effect = {
-				FLC = { change_subject_type = { subject_type = mikazuki_ally who = PREV } }
-				FTB = { change_subject_type = { subject_type = mikazuki_ally who = PREV } }
-				TRN = { change_subject_type = { subject_type = mikazuki_ally who = PREV } }
+				FLC = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
+				FTB = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
+				TRN = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 			}
 			add_splendor = 50
 			add_prestige = 20
@@ -131,10 +132,11 @@ NNM_missions_1 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_1_5_tt
+			custom_tooltip = NNM_missions_1_5_hidden_tt
 			hidden_effect = {
 				if = {
 					limit = { IRH = { is_subject_of = ROOT } }
-					IRH = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+					IRH = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 				}
 			}
 			add_splendor = 150
@@ -681,10 +683,11 @@ NNM_missions_4 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_4_3_tt
+			custom_tooltip = NNM_missions_4_3_hidden_tt
 			hidden_effect = {
 				if = {
 					limit = { MDK = { is_subject_of = ROOT } }
-					MDK = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+					MDK = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 				}
 			}
 			add_splendor = 150
@@ -709,10 +712,11 @@ NNM_missions_4 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_4_4_tt
+			custom_tooltip = NNM_missions_4_4_hidden_tt
 			hidden_effect = {
 				if = {
 					limit = { TOM = { is_subject_of = ROOT } }
-					TOM = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+					TOM = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 				}
 			}
 			add_splendor = 150
@@ -737,10 +741,11 @@ NNM_missions_4 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_4_5_tt
+			custom_tooltip = NNM_missions_4_5_hidden_tt
 			hidden_effect = {
 				if = {
 					limit = { SAY = { is_subject_of = ROOT } }
-					SAY = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+					SAY = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 				}
 			}
 			add_splendor = 200
@@ -879,10 +884,11 @@ NNM_missions_5 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_5_3_tt
+			custom_tooltip = NNM_missions_5_3_hidden_tt
 			hidden_effect = {
 				if = {
 					limit = { AKE = { is_subject_of = ROOT } }
-					AKE = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+					AKE = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 				}
 			}
 			add_splendor = 150
@@ -907,10 +913,11 @@ NNM_missions_5 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_5_4_tt
+			custom_tooltip = NNM_missions_5_4_hidden_tt
 			hidden_effect = {
 				if = {
 					limit = { KYO = { is_subject_of = ROOT } }
-					KYO = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+					KYO = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 				}
 			}
 			add_splendor = 150
@@ -951,10 +958,11 @@ NNM_missions_5 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_5_6_tt
+			custom_tooltip = NNM_missions_5_6_hidden_tt
 			hidden_effect = {
 				if = {
 					limit = { MMN = { is_subject_of = ROOT } }
-					MMN = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+					MMN = { ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } } }
 				}
 			}
 			add_splendor = 200

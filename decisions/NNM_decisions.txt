@@ -70,6 +70,7 @@ country_decisions = {
 			custom_tooltip = NNM_meeting_tier_effect_tt
 			custom_tooltip = empty_line_tt
 			custom_tooltip = NNM_meeting_upgrade_effect_tt
+			
 		}
 		ai_will_do = {
 			factor = 0
