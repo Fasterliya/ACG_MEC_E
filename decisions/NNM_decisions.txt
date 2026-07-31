@@ -49,28 +49,27 @@ country_decisions = {
 		}
 	}
 
-	NNM_inspect_mikazuki_bonds_decision = {
-		color = { 120 80 160 }
+	NNM_hold_mikazuki_meeting_decision = {
+		color = { 100 60 200 }
 		potential = {
+			ai = no
 			tag = NNM
+		}
+		provinces_to_highlight = {
 		}
 		allow = {
 			always = yes
 		}
 		effect = {
-			custom_tooltip = NNM_bonds_stage1_base_tt
-			custom_tooltip = NNM_bonds_stage1_extra_tt
+			hidden_effect = {
+				NNM_refresh_mikazuki_bonds_effect = yes
+			}
+			custom_tooltip = NNM_meeting_refresh_tier_tt
+			custom_tooltip = NNM_meeting_refresh_upgrade_tt
 			custom_tooltip = empty_line_tt
-			custom_tooltip = NNM_bonds_stage2_base_tt
-			custom_tooltip = NNM_bonds_stage2_extra_tt
+			custom_tooltip = NNM_meeting_tier_effect_tt
 			custom_tooltip = empty_line_tt
-			custom_tooltip = NNM_bonds_stage3_base_tt
-			custom_tooltip = NNM_bonds_stage3_extra_tt
-			custom_tooltip = empty_line_tt
-			custom_tooltip = NNM_bonds_stage4_base_tt
-			custom_tooltip = NNM_bonds_stage4_extra_tt
-			custom_tooltip = empty_line_tt
-			custom_tooltip = NNM_bonds_cross_extra_tt
+			custom_tooltip = NNM_meeting_upgrade_effect_tt
 		}
 		ai_will_do = {
 			factor = 0

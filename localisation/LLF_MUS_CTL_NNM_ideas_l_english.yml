@@ -200,30 +200,23 @@
  NNM_mikazuki_government_reform_desc: "åN	Nåeg„^:N8hÃV„vT›ÕlSsYTw¦?eSO0kQCSãNåNÊuw^—P`ç`ôuû|NwyY„vßvËSìNÿÏkNMOD–¸^ý=fêINjOb„vO4Oÿw^—«ˆtYyV„vãl0	NåegÊuKN›R–NwTßv„vîX'YwžX•0"
  NNM_mikazuki_bonds_mechanic: "	NåegÊu"
  NNM_mikazuki_bonds_power: "ÊuKN›R"
- NNM_mikazuki_meeting_interaction: "	Nåeg„^O®‹"
- NNM_mikazuki_meeting_interaction_desc: "ìSV	Nåeg„^hQSOO®‹ÿÀhÆ‰SVMRTßvbXTv^ÝQZwÊuKN›R0Ïk*N	NåegTßvD–¸^SÐc›O5¹pÊuKN›R0·QtS5t^0"
  NNM_bonds_resonance_interaction: "ÊuqQ1ž"
  NNM_bonds_resonance_interaction_desc: "ˆmw25¹pÊuKN›RN100Y²N¹ppeÿNb	g	NåegTßvD–¸^·ƒ—V+15áOûNv^-10%ìrËz>PT0·QtS10t^0"
- NNM_mikazuki_meeting_refresh_tt: "ck(WÀhÆ‰	NåegTßvbXT&&"
- NNM_mikazuki_bonds_stage_tt: "ÊuKN›RòT9hncSVMRTßvbXTpeÏ‘ôf°e0O(u0ÊuqQ1ž0ïSÛNekžX:VND–¸^„vËu&^0"
  NNM_bonds_resonance_effect_tt: "Nb	g	NåegTßvD–¸^·ƒ—VáOûN+15ÿìrËz>PT-10%"
 
- # Government Mechanic - Stage Inspection
- NNM_bonds_stage1_base_tt: "06–µk1 	NåegKNÊu0ÿ›RÏ‘0-24	ÿ\núWNxHeœgÿ9e„UsQû|+10%"
- NNM_bonds_stage1_extra_tt: "  ·ŒRb0	NåegTßvbËz0Tã‰•ÿY²NsQû|+1"
- NNM_bonds_stage2_base_tt: "06–µk2 ^yènˆR²bw0ÿ›RÏ‘25-49	ÿ\núWNxHeœgÿìrËz>PT-10%"
- NNM_bonds_stage2_extra_tt: "  ·ŒRb0^yèn„vþvLr0Tã‰•ÿD–¸^F–›QNP–+50%"
- NNM_bonds_stage3_base_tt: "06–µk3 ›s	T¯eKNqV0ÿ›RÏ‘50-74	ÿ\núWNxHeœgÿR»yININt^pe-5"
- NNM_bonds_stage3_extra_tt: "  ·ŒRb0T›ÕlSsYTw¦0Tã‰•ÿµOeuib.VqVÍT-15%"
- NNM_bonds_stage4_base_tt: "06–µk4 W¯sKNt0ÿ›RÏ‘75-100	ÿ\núWNxHeœgÿLˆ?eHe‡s+5%"
- NNM_bonds_stage4_extra_tt: "  ·ŒRb08lR`„vÊu0Tã‰•ÿ­‹Ãu¦^+5%"
- NNM_bonds_cross_extra_tt: "0è6–µkžXÊv0\n  ·ŒRb0W¯sKNt0Tã‰•ÿ›RÏ‘e25öeuHe	ÿÿhQNSÛSqN-2\n  ·ŒRb0T›ÕlSsY„vÎžf0Tã‰•ÿ›RÏ‘e50öeuHe	ÿÿY²NðXg+2"
+ # Government Mechanic - Meeting Decision
+ NNM_hold_mikazuki_meeting_decision: "7R°e	Nåeg¶r`"
+ NNM_hold_mikazuki_meeting_decision_desc: "ìSV	Nåeg„^hQSOO®‹ÿÀhÆ‰SVMRTßvbXTv^Í‘°eÝQZwÊuKN›R09hnc	NåegTßvbXTpeÏ‘ôf°eùR”^„vÊu6–µkîOckÿTöeÍ‘°e2RšRûN¡Rã‰•„vGSµužXÊv0·QtS5t^0"
+ NNM_meeting_cooldown: "O®‹·QtS-N"
+ NNM_meeting_cooldown_desc: "	Nåeg„^RRìSVÇO®‹ÿ—‰öeô•ÆQYNN!kÆ–O0"
+ NNM_meeting_refresh_tier_tt: "Êu6–µkNGSµužXÊvòTÍ‘°e2RšRŒRb0\nSVMR^SýVpe0ùR”^6–µkIrµu0ûN¡RGSµuIrµu÷‹Á‰N¹eHeœgRhˆ0"
+ NNM_meeting_refresh_upgrade_tt: "§Yèlaÿ§!ûN¡RGSµužXÊv—‰§GŒRbùR”^ûN¡R§!TÿKb¨RÍ‘°eìSVN!kO®‹MbOuHe0"
+ NNM_meeting_tier_effect_tt: "0Êu6–µkHeœg0\n6–µkIrµu = 	NåegTßv^SýVpeÿ§G1§!-§G10§!µuÿ=t R6RÿÏkµu+TMRµuhQèHeœg	ÿ\n\n§YLv1§!ÿ§G1§!^SýV	ÿÿ9e„UsQû| §G+10%§! | ÏkgÊuKN›R §G+0.2§!\n§YLv2§!ÿ§G2§!^SýV	ÿÿD–¸^6eeQ §G+10%§!\n§YLv3§!ÿ§G3§!^SýV	ÿÿY²NðXg §G+1§! | Y²NTv^±‚9 §G-5%§!\n§YLv4§!ÿ§G4§!^SýV	ÿÿD–¸^F–›QNP– §G+15%§! | ^SýVF–›QNP– §G+10%§!\n§YLv5§!ÿ§G5§!^SýV	ÿÿF–›QëXl §G+5%§! | ^SýV­‹Ãu¦^ §G+2.5%§!\n§YLv6§!ÿ§G6§!^SýV	ÿÿ­‹Ãu¦^ §G+2.5%§! | t^¦^Zg §G+0.5§! | hQNSÛSqN §G-1§! | ^SýVôVÎW §G+10%§!\n§YLv7§!ÿ§G7§!^SýV	ÿÿY²NðXg §G+2§! | Y²NTv^±‚9 §G-15%§! | ^SýV­‹Ãu¦^ §G+5%§!\n§YLv8§!ÿ§G8§!^SýV	ÿÿôVÎWýw›R §G+5%§! | R»yININt^pe §G-3§! | hQNSÛSqN §G-2§! | ^SýVkp2Ob×S §G-5%§!\n§YLv9§!ÿ§G9§!^SýV	ÿÿkp›R2O³R §G+5%§! | D–¸^6eeQ §G+30%§! | R»yININ §G-5§!\n§YLv10§!ÿ§G10§!^SýV	ÿÿ²QûQ2O³R §G+10%§! | Lˆ?eHe‡s §G+5%§! | Y²NðXg §G+3§! | Y²NTv^±‚9 §G-25%§! | ^SýV²QûQ2O³R §G+10%§! | ^SýVkp2Ob×S §G-10%§!"
+ NNM_meeting_upgrade_effect_tt: "0ûN¡RGSµužXÊv0ÿ§G3§!µu’N¥eÿòT+TMRµuHeœg	ÿ\n\n§YGSµu1§!ÿŒRb0	NåegTßvbËz0	ÿ\n  —RINýVÿY²NsQû| §G+1§! | D–¸^F–›QNP– §G+15%§!\n  ^SýVÿF–›QNP– §G+25%§!\n\n§YGSµu2§!ÿŒRb0T›ÕlSsYTw¦0	ÿ\n  —RINýVÿµOeuib.V §G-15%§! | Y²NTv^±‚9 §G-10%§! | F–›QëXl §G+2.5%§!\n  ^SýVÿF–›QëXl §G+10%§! | ôVÎWýw›R §G+5%§!\n\n§YGSµu3§!ÿŒRb08lR`„vÊu0	ÿ\n  —RINýVÿ­‹Ãu¦^ §G+5%§! | Lˆ?eHe‡s §G+5%§! | t^¦^Zg §G+1§! | ÏkgÊuKN›R §G+1.0§! | D–¸^F–›QNP– §G+25%§!\n  ^SýVÿ­‹Ãu¦^ §G+5%§! | kp2Ob×S §G-10%§! | F–›QNP– §G+50%§! | ôVÎWýw›R §G+10%§!"
 
  # Decisions
  NNM_admit_mikazuki_member_decision: "¥c³u°ebXT"
  NNM_admit_mikazuki_member_decision_desc: "Såb	gT›ÕlSsY‡eS„vD–¸^ýVckV³ueQ	NåegTßv0ÏkMO°ebXTýS:NTw¦&^egìryr„vb—e›RNÊu„vžXE^0ˆmw15¹pÊuKN›R0"
- NNM_inspect_mikazuki_bonds_decision: "ÀhÆ‰	NåegÊu"
- NNM_inspect_mikazuki_bonds_decision_desc: "ågwSVMR	NåegÊuÛ¦^ag„vŒRteHeœgÿSìbNb	gòTã‰•„vûN¡RžXÊv0"
  NNM_admit_member_effect_tt: "Nb	g&rTagöN„vnfD–¸^òTl:N	NåegTßv‰|‹W0"
 
  # Subject Type
@@ -270,11 +263,90 @@
  NNM_mikazuki_deep_bonds_modifier: "ñmS„vÊu"
  NNM_mikazuki_deep_bonds_modifier_desc: "Ïu†SÇàepeb—eTÿ	NåegTßv„vÊuòTñmeQ¨šÓš0D–¸^4³u„vz6eŒTàVÚ‹¦^ý¾0R†N°e„vØš¦^0"
 
- # Stage display for mechanic UI
- NNM_bonds_stage_1: "	NåegKNÊu"
- NNM_bonds_stage_2: "^yènˆR²bw"
- NNM_bonds_stage_3: "›s	T¯eKNqV"
- NNM_bonds_stage_4: "W¯sKNt"
+ # Mikazuki Tier Modifiers (Overlord)
+ NNM_mikazuki_tier1: "ÊuKNË‚"
+ NNM_mikazuki_tier1_desc: "	Nåeg„v,rNÊuòTÏu„Ë‚09e„UsQû|+10%ÿÏkg+0.2ÊuKN›R0"
+
+ NNM_mikazuki_tier2: "ÊuKN×‚"
+ NNM_mikazuki_tier2_desc: "Êu‚Y|^×‚,‚u•09e„UsQû|+15%ÿÏkg+0.4ÊuKN›RÿD–¸^6eeQ+10%0"
+
+ NNM_mikazuki_tier3: "ÊuKN(g"
+ NNM_mikazuki_tier3_desc: "ÊuòT•bSh09e„UsQû|+15%ÿÏkg+0.6ÊuKN›RÿD–¸^6eeQ+15%ÿY²NðXg+1ÿY²NTv^±‚9-5%0"
+
+ NNM_mikazuki_tier4: "ÊuKN—g"
+ NNM_mikazuki_tier4_desc: "ÊuòTbh—g09e„UsQû|+20%ÿÏkg+0.8ÊuKN›RÿD–¸^6eeQ+15%ÿY²NðXg+1ÿY²NTv^±‚9-5%ÿD–¸^F–›QNP–+15%0"
+
+ NNM_mikazuki_tier5: "ÊuKNîh"
+ NNM_mikazuki_tier5_desc: "ÊuKNîhAuƒu•09e„UsQû|+20%ÿÏkg+1.0ÊuKN›RÿD–¸^6eeQ+20%ÿY²NðXg+1ÿY²NTv^±‚9-10%ÿD–¸^F–›QNP–+20%ÿF–›QëXl+5%0"
+
+ NNM_mikazuki_tier6: "ÊuKNf"
+ NNM_mikazuki_tier6_desc: "Êu‚YfIQê•w09e„UsQû|+25%ÿÏkg+1.2ÊuKN›RÿD–¸^6eeQ+20%ÿY²NðXg+1ÿY²NTv^±‚9-10%ÿD–¸^F–›QNP–+20%ÿF–›QëXl+5%ÿt^¦^Zg+0.5ÿ­‹Ãu¦^+2.5%ÿhQNSÛSqN-10"
+
+ NNM_mikazuki_tier7: "ÊuKNg"
+ NNM_mikazuki_tier7_desc: "Êu‚YfgØš¬`09e„UsQû|+25%ÿÏkg+1.4ÊuKN›RÿD–¸^6eeQ+25%ÿY²NðXg+2ÿY²NTv^±‚9-15%ÿD–¸^F–›QNP–+25%ÿF–›QëXl+10%ÿt^¦^Zg+0.5ÿ­‹Ãu¦^+2.5%ÿhQNSÛSqN-10"
+
+ NNM_mikazuki_tier8: "ÊuKNåe"
+ NNM_mikazuki_tier8_desc: "Êu‚YÈpåeSVzz09e„UsQû|+30%ÿÏkg+1.6ÊuKN›RÿD–¸^6eeQ+25%ÿY²NðXg+2ÿY²NTv^±‚9-15%ÿD–¸^F–›QNP–+30%ÿF–›QëXl+10%ÿt^¦^Zg+1.0ÿ­‹Ãu¦^+5%ÿôVÎWýw›R+5%ÿhQNSÛSqN-2ÿR»yININt^pe-30"
+
+ NNM_mikazuki_tier9: "ÊuKNwm"
+ NNM_mikazuki_tier9_desc: "Êuimp‚Ywm09e„UsQû|+30%ÿÏkg+1.8ÊuKN›RÿD–¸^6eeQ+30%ÿY²NðXg+2ÿY²NTv^±‚9-20%ÿD–¸^F–›QNP–+30%ÿF–›QëXl+10%ÿt^¦^Zg+1.0ÿ­‹Ãu¦^+5%ÿôVÎWýw›R+5%ÿkp›R2O³R+5%ÿhQNSÛSqN-2ÿR»yININt^pe-50"
+
+ NNM_mikazuki_tier10: "ÊuKNyz"
+ NNM_mikazuki_tier10_desc: "ÊuØšÜ‚Yyzv˜09e„UsQû|+35%ÿÏkg+2.0ÊuKN›RÿD–¸^6eeQ+35%ÿY²NðXg+3ÿY²NTv^±‚9-25%ÿD–¸^F–›QNP–+35%ÿF–›QëXl+15%ÿt^¦^Zg+1.5ÿ­‹Ãu¦^+5%ÿôVÎWýw›R+10%ÿkp›R2O³R+5%ÿ²QûQ2O³R+10%ÿhQNSÛSqN-3ÿR»yININt^pe-5ÿLˆ?eHe‡s+5%0"
+
+ # Mikazuki Tier Modifiers (Subject)
+ NNM_mikazuki_tier1_subject: "ÊuKNË‚ÿ^SýV	ÿ"
+ NNM_mikazuki_tier1_subject_desc: "	NåegÊu„vRu›RÏ‘0F–›QëXl+5%0"
+
+ NNM_mikazuki_tier2_subject: "ÊuKN×‚ÿ^SýV	ÿ"
+ NNM_mikazuki_tier2_subject_desc: "Êu„v„Ë‚0F–›QëXl+5%ÿºN›Rb`Y¦^+10%0"
+
+ NNM_mikazuki_tier3_subject: "ÊuKN(gÿ^SýV	ÿ"
+ NNM_mikazuki_tier3_subject_desc: "Êu3zúVžX•0F–›QëXl+10%ÿºN›Rb`Y¦^+10%0"
+
+ NNM_mikazuki_tier4_subject: "ÊuKN—gÿ^SýV	ÿ"
+ NNM_mikazuki_tier4_subject_desc: "Êu‚Y—gÆR^0F–›QëXl+10%ÿºN›Rb`Y¦^+15%ÿF–›QNP–+10%0"
+
+ NNM_mikazuki_tier5_subject: "ÊuKNîhÿ^SýV	ÿ"
+ NNM_mikazuki_tier5_subject_desc: "ÊuKNîhAuƒ0F–›QëXl+15%ÿºN›Rb`Y¦^+15%ÿF–›QNP–+15%ÿ­‹Ãu¦^+2.5%0"
+
+ NNM_mikazuki_tier6_subject: "ÊuKNfÿ^SýV	ÿ"
+ NNM_mikazuki_tier6_subject_desc: "Êu‚YfIQ‰0F–›QëXl+15%ÿºN›Rb`Y¦^+20%ÿF–›QNP–+15%ÿ­‹Ãu¦^+2.5%ÿôVÎWýw›R+10%0"
+
+ NNM_mikazuki_tier7_subject: "ÊuKNgÿ^SýV	ÿ"
+ NNM_mikazuki_tier7_subject_desc: "Êu‚Ygfg0F–›QëXl+15%ÿºN›Rb`Y¦^+20%ÿF–›QNP–+20%ÿ­‹Ãu¦^+5%ÿôVÎWýw›R+10%0"
+
+ NNM_mikazuki_tier8_subject: "ÊuKNåeÿ^SýV	ÿ"
+ NNM_mikazuki_tier8_subject_desc: "Êu‚YåeËpÈp0F–›QëXl+20%ÿºN›Rb`Y¦^+25%ÿF–›QNP–+25%ÿ­‹Ãu¦^+5%ÿôVÎWýw›R+10%ÿb×Skp2O-5%0"
+
+ NNM_mikazuki_tier9_subject: "ÊuKNwmÿ^SýV	ÿ"
+ NNM_mikazuki_tier9_subject_desc: "Êu‚Ywmñmƒ0F–›QëXl+20%ÿºN›Rb`Y¦^+25%ÿF–›QNP–+25%ÿ­‹Ãu¦^+7.5%ÿôVÎWýw›R+10%ÿb×Skp2O-5%0"
+
+ NNM_mikazuki_tier10_subject: "ÊuKNyzÿ^SýV	ÿ"
+ NNM_mikazuki_tier10_subject_desc: "Êu¾ŽNyzv˜0F–›QëXl+25%ÿºN›Rb`Y¦^+30%ÿF–›QNP–+30%ÿ­‹Ãu¦^+7.5%ÿôVÎWýw›R+15%ÿb×Skp2O-10%ÿ²QûQ2O³R+10%0"
+
+ # Mikazuki Upgrade Modifiers (Overlord)
+ NNM_mikazuki_upgrade1: "	NåegKNÊu·Rµu"
+ NNM_mikazuki_upgrade1_desc: "TßvckVbËz&^eg„vÊuñmS0Y²NsQû|+1ÿD–¸^F–›QNP–+15%0"
+
+ NNM_mikazuki_upgrade2: "	NåegKNÊu·-Nµu"
+ NNM_mikazuki_upgrade2_desc: "Tw¦îX'Y&^eg„vÊuqQ1ž0Y²NsQû|+1ÿµOeuib.V-15%ÿY²NTv^±‚9-10%ÿD–¸^F–›QNP–+15%ÿF–›QëXl+2.5%0"
+
+ NNM_mikazuki_upgrade3: "	NåegKNÊu·Øšµu"
+ NNM_mikazuki_upgrade3_desc: "Êu¾0R8lR`KNƒX0Y²NsQû|+1ÿ­‹Ãu¦^+5%ÿLˆ?eHe‡s+5%ÿY²NTv^±‚9-10%ÿµOeuib.V-15%ÿD–¸^F–›QNP–+25%ÿF–›QëXl+5%ÿt^¦^Zg+1ÿÏkgÊuKN›R+1.00"
+
+ # Mikazuki Upgrade Modifiers (Subject)
+ NNM_mikazuki_upgrade1_subject: "	NåegKNÊu·Rµuÿ^SýV	ÿ"
+ NNM_mikazuki_upgrade1_subject_desc: "TßvckVbËz&^eg„v^SýV:VS0F–›QNP–+25%0"
+
+ NNM_mikazuki_upgrade2_subject: "	NåegKNÊu·-Nµuÿ^SýV	ÿ"
+ NNM_mikazuki_upgrade2_subject_desc: "Tw¦îX'Y&^eg„v^SýVqQ1ž0F–›QëXl+10%ÿF–›QNP–+25%ÿôVÎWýw›R+5%0"
+
+ NNM_mikazuki_upgrade3_subject: "	NåegKNÊu·Øšµuÿ^SýV	ÿ"
+ NNM_mikazuki_upgrade3_subject_desc: "Êu¾ŽN8lR`KNƒX„v^SýV:VS0­‹Ãu¦^+5%ÿb×Skp2O-10%ÿF–›QëXl+10%ÿF–›QNP–+50%ÿôVÎWýw›R+10%."
+
+ # Power bar stage display for mechanic UI
+ NNM_bonds_power_tt: "0ÊuKN›RÛ¦^ag0›RÏ‘ïy=tO`—Ïkg«ˆ¨RžX•ÿ1uÊu6–µkÐc›O	ÿ0O(u0ÊuqQ1ž0ïSˆmw›RÏ‘žX:V^SýVáOûN0\n›RÏ‘ƒôVHeœgÿ\n·0-24ÿ9e„UsQû|+10%\n·25-49ÿìrËz>PT-10%\n·50-74ÿR»yININt^pe-5\n·75-100ÿLˆ?eHe‡s+5%"
 
  # Misc
  empty_line_tt: ""

@@ -9,7 +9,8 @@ KSN_engineering_start = {
 KSN_water_power = {
 	global_allowed_num_of_buildings = 1
 	production_efficiency = 0.15
-	development_cost = -0.25
+	development_cost = -0.10
+	core_creation = -0.10
 }
 
 KSN_optical_sights = {
@@ -26,7 +27,7 @@ KSN_war_industry = {
 
 KSN_engineer_hegemony = {
 	land_morale = 0.20
-	shock_damage_received = -0.05
+	shock_damage_received = -0.15
 	fire_damage_received = -0.10
 }
 

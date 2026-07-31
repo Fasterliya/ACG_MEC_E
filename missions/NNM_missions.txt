@@ -13,16 +13,22 @@ NNM_missions_1 = {
 		position = 1
 		provinces_to_highlight = {
 			any_subject_country = {
-				capital_scope = { always = yes }
+				is_capital_of = this
 			}
 		}
 		trigger = {
-			FLC = { has_opinion = { who = ROOT value = 150 } }
-			FTB = { has_opinion = { who = ROOT value = 150 } }
-			TRN = { has_opinion = { who = ROOT value = 150 } }
-			FLC = { liberty_desire = 25 }
-			FTB = { liberty_desire = 25 }
-			TRN = { liberty_desire = 25 }
+			OR = {
+				AND = {
+					FLC = { has_opinion = { who = ROOT value = 75 } }
+					FTB = { has_opinion = { who = ROOT value = 75 } }
+					TRN = { has_opinion = { who = ROOT value = 75 } }
+				}
+				AND ={
+					FLC = { liberty_desire = 25 }
+					FTB = { liberty_desire = 25 }
+					TRN = { liberty_desire = 25 }
+				}
+			}
 		}
 		effect = {
 			add_splendor = 50
@@ -37,12 +43,33 @@ NNM_missions_1 = {
 		position = 2
 		required_missions = { NNM_missions_1_1 }
 		trigger = {
-			FLC = { trust = { who = ROOT value = 100 } }
-			FTB = { trust = { who = ROOT value = 100 } }
-			TRN = { trust = { who = ROOT value = 100 } }
+			OR = {
+				FLC = { liberty_desire = 25 }
+				FTB = { liberty_desire = 25 }
+				TRN = { liberty_desire = 25 }
+			}
 		}
 		effect = {
 			add_country_modifier = { name = NNM_mikazuki_trust_modifier duration = -1 }
+			carpathia_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			balkan_region = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = { type = cb_nnm_magical_girl_duel target = IRH months = 2400 }
+			add_casus_belli = { type = cb_nnm_magical_girl_duel target = MDK months = 2400 }
+			add_casus_belli = { type = cb_nnm_magical_girl_duel target = TOM months = 2400 }
+			add_casus_belli = { type = cb_nnm_magical_girl_duel target = SAY months = 2400 }
+			add_casus_belli = { type = cb_nnm_magical_girl_duel target = AKE months = 2400 }
+			add_casus_belli = { type = cb_nnm_magical_girl_duel target = KYO months = 2400 }
+			hidden_effect = {
+				FLC = { change_subject_type = { subject_type = mikazuki_ally who = PREV } }
+				FTB = { change_subject_type = { subject_type = mikazuki_ally who = PREV } }
+				TRN = { change_subject_type = { subject_type = mikazuki_ally who = PREV } }
+			}
 			add_splendor = 50
 			add_prestige = 20
 			add_dip_power = 100
@@ -61,12 +88,8 @@ NNM_missions_1 = {
 		}
 		effect = {
 			set_country_flag = NNM_mikazuki_alliance_formed_flag
+			set_country_flag = NNM_missions_1_3_completed_flag
 			custom_tooltip = NNM_missions_1_3_tt
-			hidden_effect = {
-				FLC = { create_subject = { subject_type = mikazuki_ally who = PREV } }
-				FTB = { create_subject = { subject_type = mikazuki_ally who = PREV } }
-				TRN = { create_subject = { subject_type = mikazuki_ally who = PREV } }
-			}
 			add_splendor = 100
 			add_prestige = 25
 			add_dip_power = 150
@@ -101,20 +124,17 @@ NNM_missions_1 = {
 			owned_by = IRH
 		}
 		trigger = {
-			IRH = {
-				is_allied_to = ROOT
-				trust = {
-					who = ROOT
-					value = 80
-				}
+			OR = {
+				IRH = { is_subject_of = ROOT }
+				NOT = { exists = IRH }
 			}
 		}
 		effect = {
 			custom_tooltip = NNM_missions_1_5_tt
 			hidden_effect = {
-				add_casus_belli = {
-					type = cb_nnm_magical_girl_duel
-					target = IRH
+				if = {
+					limit = { IRH = { is_subject_of = ROOT } }
+					IRH = { create_subject = { subject_type = mikazuki_ally who = PREV } }
 				}
 			}
 			add_splendor = 150
@@ -137,6 +157,7 @@ NNM_missions_1 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_1_6_tt
+			set_country_flag = NNM_missions_1_6_completed_flag
 			add_splendor = 200
 			add_prestige = 35
 			change_government_reform_progress = 100
@@ -183,6 +204,7 @@ NNM_missions_1 = {
 		}
 		effect = {
 			custom_tooltip = NNM_missions_1_8_tt
+			set_country_flag = NNM_missions_1_8_completed_flag
 			add_splendor = 300
 			add_prestige = 50
 			add_stability = 2
@@ -637,17 +659,13 @@ NNM_missions_4 = {
 			}
 		}
 		effect = {
-			balkan_region = {
-				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
-				add_permanent_claim = ROOT
-			}
 			add_splendor = 100
 			add_prestige = 20
 			add_mil_power = 150
 			change_government_reform_progress = 50
 		}
 	}
-	
+
 	NNM_missions_4_3 = {
 		icon = mission_empire
 		position = 3
@@ -656,17 +674,17 @@ NNM_missions_4 = {
 			owned_by = MDK
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = balkan_region
-				value = 10
+			OR = {
+				MDK = { is_subject_of = ROOT }
+				NOT = { exists = MDK }
 			}
 		}
 		effect = {
 			custom_tooltip = NNM_missions_4_3_tt
 			hidden_effect = {
-				add_casus_belli = {
-					type = cb_nnm_magical_girl_duel
-					target = MDK
+				if = {
+					limit = { MDK = { is_subject_of = ROOT } }
+					MDK = { create_subject = { subject_type = mikazuki_ally who = PREV } }
 				}
 			}
 			add_splendor = 150
@@ -685,16 +703,16 @@ NNM_missions_4 = {
 		}
 		trigger = {
 			OR = {
-				NOT = { exists = TOM }
 				TOM = { is_subject_of = ROOT }
+				NOT = { exists = TOM }
 			}
 		}
 		effect = {
 			custom_tooltip = NNM_missions_4_4_tt
 			hidden_effect = {
-				add_casus_belli = {
-					type = cb_nnm_magical_girl_duel
-					target = TOM
+				if = {
+					limit = { TOM = { is_subject_of = ROOT } }
+					TOM = { create_subject = { subject_type = mikazuki_ally who = PREV } }
 				}
 			}
 			add_splendor = 150
@@ -703,7 +721,7 @@ NNM_missions_4 = {
 			change_government_reform_progress = 50
 		}
 	}
-	
+
 	NNM_missions_4_5 = {
 		icon = mission_sicilian_vespers
 		position = 5
@@ -712,17 +730,17 @@ NNM_missions_4 = {
 			owned_by = SAY
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = balkan_region
-				value = 15
+			OR = {
+				SAY = { is_subject_of = ROOT }
+				NOT = { exists = SAY }
 			}
 		}
 		effect = {
 			custom_tooltip = NNM_missions_4_5_tt
 			hidden_effect = {
-				add_casus_belli = {
-					type = cb_nnm_magical_girl_duel
-					target = SAY
+				if = {
+					limit = { SAY = { is_subject_of = ROOT } }
+					SAY = { create_subject = { subject_type = mikazuki_ally who = PREV } }
 				}
 			}
 			add_splendor = 200
@@ -854,17 +872,17 @@ NNM_missions_5 = {
 			owned_by = AKE
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = anatolia_region
-				value = 10
+			OR = {
+				AKE = { is_subject_of = ROOT }
+				NOT = { exists = AKE }
 			}
 		}
 		effect = {
 			custom_tooltip = NNM_missions_5_3_tt
 			hidden_effect = {
-				add_casus_belli = {
-					type = cb_nnm_magical_girl_duel
-					target = AKE
+				if = {
+					limit = { AKE = { is_subject_of = ROOT } }
+					AKE = { create_subject = { subject_type = mikazuki_ally who = PREV } }
 				}
 			}
 			add_splendor = 150
@@ -873,7 +891,7 @@ NNM_missions_5 = {
 			change_government_reform_progress = 75
 		}
 	}
-	
+
 	NNM_missions_5_4 = {
 		icon = mission_aristocrats
 		position = 4
@@ -883,16 +901,16 @@ NNM_missions_5 = {
 		}
 		trigger = {
 			OR = {
-				NOT = { exists = KYO }
 				KYO = { is_subject_of = ROOT }
+				NOT = { exists = KYO }
 			}
 		}
 		effect = {
 			custom_tooltip = NNM_missions_5_4_tt
 			hidden_effect = {
-				add_casus_belli = {
-					type = cb_nnm_magical_girl_duel
-					target = KYO
+				if = {
+					limit = { KYO = { is_subject_of = ROOT } }
+					KYO = { create_subject = { subject_type = mikazuki_ally who = PREV } }
 				}
 			}
 			add_splendor = 150
@@ -926,17 +944,19 @@ NNM_missions_5 = {
 		position = 6
 		required_missions = { NNM_missions_5_5 NNM_missions_4_5 }
 		trigger = {
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = anatolia_region
-				value = 15
-			}
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = balkan_region
-				value = 10
+			OR = {
+				MMN = { is_subject_of = ROOT }
+				NOT = { exists = MMN }
 			}
 		}
 		effect = {
 			custom_tooltip = NNM_missions_5_6_tt
+			hidden_effect = {
+				if = {
+					limit = { MMN = { is_subject_of = ROOT } }
+					MMN = { create_subject = { subject_type = mikazuki_ally who = PREV } }
+				}
+			}
 			add_splendor = 200
 			add_prestige = 30
 			add_dip_power = 200

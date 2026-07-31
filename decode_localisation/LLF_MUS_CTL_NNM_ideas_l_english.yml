@@ -200,30 +200,23 @@ l_english:
  NNM_mikazuki_government_reform_desc: "以三日月庄为核心的魔法少女联邦政体。八千代以羁绊而非恐惧维系着她的盟友们，每一位附庸都是自主作战的伙伴，而非被奴役的臣民。三日月羁绊之力随着同盟的壮大而增长。"
  NNM_mikazuki_bonds_mechanic: "三日月羁绊"
  NNM_mikazuki_bonds_power: "羁绊之力"
- NNM_mikazuki_meeting_interaction: "三日月庄会议"
- NNM_mikazuki_meeting_interaction_desc: "召开三日月庄全体会议，检视当前同盟成员并凝聚羁绊之力。每个三日月同盟附庸将提供5点羁绊之力。冷却5年。"
  NNM_bonds_resonance_interaction: "羁绊共鸣"
  NNM_bonds_resonance_interaction_desc: "消耗25点羁绊之力与100外交点数，所有三日月同盟附庸获得+15信任并-10%独立倾向。冷却10年。"
- NNM_mikazuki_meeting_refresh_tt: "正在检视三日月同盟成员……"
- NNM_mikazuki_bonds_stage_tt: "羁绊之力已根据当前同盟成员数量更新。使用「羁绊共鸣」可进一步增强与附庸的纽带。"
  NNM_bonds_resonance_effect_tt: "所有三日月同盟附庸获得信任+15，独立倾向-10%"
 
- # Government Mechanic - Stage Inspection
- NNM_bonds_stage1_base_tt: "【阶段1 三日月之绊】（力量0-24）\n基础效果：改善关系+10%"
- NNM_bonds_stage1_extra_tt: "  ·完成「三日月同盟成立」后解锁：外交关系+1"
- NNM_bonds_stage2_base_tt: "【阶段2 神滨守护者】（力量25-49）\n基础效果：独立倾向-10%"
- NNM_bonds_stage2_extra_tt: "  ·完成「神滨的盾牌」后解锁：附庸陆军上限+50%"
- NNM_bonds_stage3_base_tt: "【阶段3 玛吉斯之影】（力量50-74）\n基础效果：分离主义年数-5"
- NNM_bonds_stage3_extra_tt: "  ·完成「魔法少女联邦」后解锁：侵略扩张影响-15%"
- NNM_bonds_stage4_base_tt: "【阶段4 圆环之理】（力量75-100）\n基础效果：行政效率+5%"
- NNM_bonds_stage4_extra_tt: "  ·完成「永恒的羁绊」后解锁：训练度+5%"
- NNM_bonds_cross_extra_tt: "【跨阶段增益】\n  ·完成「圆环之理」后解锁（力量≥25时生效）：全局叛乱-2\n  ·完成「魔法少女的黎明」后解锁（力量≥50时生效）：外交声望+2"
+ # Government Mechanic - Meeting Decision
+ NNM_hold_mikazuki_meeting_decision: "刷新三日月状态"
+ NNM_hold_mikazuki_meeting_decision_desc: "召开三日月庄全体会议，检视当前同盟成员并重新凝聚羁绊之力。根据三日月同盟成员数量更新对应的羁绊阶段修正，同时重新判定任务解锁的升级增益。冷却5年。"
+ NNM_meeting_cooldown: "会议冷却中"
+ NNM_meeting_cooldown_desc: "三日月庄刚刚召开过会议，需要时间准备下一次集会。"
+ NNM_meeting_refresh_tier_tt: "羁绊阶段与升级增益已重新判定完成。\n当前属国数、对应阶段等级、任务升级等级请见下方效果列表。"
+ NNM_meeting_refresh_upgrade_tt: "§Y注意：§!任务升级增益需要§G完成对应任务§!后，手动重新召开一次会议才会生效。"
+ NNM_meeting_tier_effect_tt: "【羁绊阶段效果】\n阶段等级 = 三日月同盟属国数（§G1§!-§G10§!级，累加制，每级含前级全部效果）\n\n§YLv1§!（§G1§!属国）：改善关系 §G+10%§! | 每月羁绊之力 §G+0.2§!\n§YLv2§!（§G2§!属国）：附庸收入 §G+10%§!\n§YLv3§!（§G3§!属国）：外交声望 §G+1§! | 外交合并花费 §G-5%§!\n§YLv4§!（§G4§!属国）：附庸陆军上限 §G+15%§! | 属国陆军上限 §G+10%§!\n§YLv5§!（§G5§!属国）：陆军士气 §G+5%§! | 属国训练度 §G+2.5%§!\n§YLv6§!（§G6§!属国）：训练度 §G+2.5%§! | 年度威望 §G+0.5§! | 全局叛乱 §G-1§! | 属国围城 §G+10%§!\n§YLv7§!（§G7§!属国）：外交声望 §G+2§! | 外交合并花费 §G-15%§! | 属国训练度 §G+5%§!\n§YLv8§!（§G8§!属国）：围城能力 §G+5%§! | 分离主义年数 §G-3§! | 全局叛乱 §G-2§! | 属国火伤承受 §G-5%§!\n§YLv9§!（§G9§!属国）：火力伤害 §G+5%§! | 附庸收入 §G+30%§! | 分离主义 §G-5§!\n§YLv10§!（§G10§!属国）：冲击伤害 §G+10%§! | 行政效率 §G+5%§! | 外交声望 §G+3§! | 外交合并花费 §G-25%§! | 属国冲击伤害 §G+10%§! | 属国火伤承受 §G-10%§!"
+ NNM_meeting_upgrade_effect_tt: "【任务升级增益】（§G3§!级互斥，已含前级效果）\n\n§Y升级1§!（完成「三日月同盟成立」）\n  宗主国：外交关系 §G+1§! | 附庸陆军上限 §G+15%§!\n  属国：陆军上限 §G+25%§!\n\n§Y升级2§!（完成「魔法少女联邦」）\n  宗主国：侵略扩张 §G-15%§! | 外交合并花费 §G-10%§! | 陆军士气 §G+2.5%§!\n  属国：陆军士气 §G+10%§! | 围城能力 §G+5%§!\n\n§Y升级3§!（完成「永恒的羁绊」）\n  宗主国：训练度 §G+5%§! | 行政效率 §G+5%§! | 年度威望 §G+1§! | 每月羁绊之力 §G+1.0§! | 附庸陆军上限 §G+25%§!\n  属国：训练度 §G+5%§! | 火伤承受 §G-10%§! | 陆军上限 §G+50%§! | 围城能力 §G+10%§!"
 
  # Decisions
  NNM_admit_mikazuki_member_decision: "接纳新成员"
  NNM_admit_mikazuki_member_decision_desc: "将拥有魔法少女文化的附庸国正式纳入三日月同盟。每位新成员都将为联邦带来独特的战斗力与羁绊的增幅。消耗15点羁绊之力。"
- NNM_inspect_mikazuki_bonds_decision: "检视三日月羁绊"
- NNM_inspect_mikazuki_bonds_decision_desc: "查看当前三日月羁绊进度条的完整效果，包括所有已解锁的任务增益。"
  NNM_admit_member_effect_tt: "所有符合条件的普通附庸已转为三日月同盟类型。"
 
  # Subject Type
@@ -270,11 +263,90 @@ l_english:
  NNM_mikazuki_deep_bonds_modifier: "深化的羁绊"
  NNM_mikazuki_deep_bonds_modifier_desc: "经历过无数战斗后，三日月同盟的羁绊已深入骨髓。附庸缴纳的税收和忠诚度都达到了新的高度。"
 
- # Stage display for mechanic UI
- NNM_bonds_stage_1: "三日月之绊"
- NNM_bonds_stage_2: "神滨守护者"
- NNM_bonds_stage_3: "玛吉斯之影"
- NNM_bonds_stage_4: "圆环之理"
+ # Mikazuki Tier Modifiers (Overlord)
+ NNM_mikazuki_tier1: "羁绊之芽"
+ NNM_mikazuki_tier1_desc: "三日月的第一缕羁绊已经萌芽。改善关系+10%，每月+0.2羁绊之力。"
+
+ NNM_mikazuki_tier2: "羁绊之苗"
+ NNM_mikazuki_tier2_desc: "羁绊如幼苗般生长。改善关系+15%，每月+0.4羁绊之力，附庸收入+10%。"
+
+ NNM_mikazuki_tier3: "羁绊之木"
+ NNM_mikazuki_tier3_desc: "羁绊已长成小树。改善关系+15%，每月+0.6羁绊之力，附庸收入+15%，外交声望+1，外交合并花费-5%。"
+
+ NNM_mikazuki_tier4: "羁绊之林"
+ NNM_mikazuki_tier4_desc: "羁绊已成树林。改善关系+20%，每月+0.8羁绊之力，附庸收入+15%，外交声望+1，外交合并花费-5%，附庸陆军上限+15%。"
+
+ NNM_mikazuki_tier5: "羁绊之森"
+ NNM_mikazuki_tier5_desc: "羁绊之森繁茂生长。改善关系+20%，每月+1.0羁绊之力，附庸收入+20%，外交声望+1，外交合并花费-10%，附庸陆军上限+20%，陆军士气+5%。"
+
+ NNM_mikazuki_tier6: "羁绊之星"
+ NNM_mikazuki_tier6_desc: "羁绊如星光闪耀。改善关系+25%，每月+1.2羁绊之力，附庸收入+20%，外交声望+1，外交合并花费-10%，附庸陆军上限+20%，陆军士气+5%，年度威望+0.5，训练度+2.5%，全局叛乱-1。"
+
+ NNM_mikazuki_tier7: "羁绊之月"
+ NNM_mikazuki_tier7_desc: "羁绊如明月高悬。改善关系+25%，每月+1.4羁绊之力，附庸收入+25%，外交声望+2，外交合并花费-15%，附庸陆军上限+25%，陆军士气+10%，年度威望+0.5，训练度+2.5%，全局叛乱-1。"
+
+ NNM_mikazuki_tier8: "羁绊之日"
+ NNM_mikazuki_tier8_desc: "羁绊如烈日当空。改善关系+30%，每月+1.6羁绊之力，附庸收入+25%，外交声望+2，外交合并花费-15%，附庸陆军上限+30%，陆军士气+10%，年度威望+1.0，训练度+5%，围城能力+5%，全局叛乱-2，分离主义年数-3。"
+
+ NNM_mikazuki_tier9: "羁绊之海"
+ NNM_mikazuki_tier9_desc: "羁绊浩瀚如海。改善关系+30%，每月+1.8羁绊之力，附庸收入+30%，外交声望+2，外交合并花费-20%，附庸陆军上限+30%，陆军士气+10%，年度威望+1.0，训练度+5%，围城能力+5%，火力伤害+5%，全局叛乱-2，分离主义年数-5。"
+
+ NNM_mikazuki_tier10: "羁绊之穹"
+ NNM_mikazuki_tier10_desc: "羁绊高远如穹顶。改善关系+35%，每月+2.0羁绊之力，附庸收入+35%，外交声望+3，外交合并花费-25%，附庸陆军上限+35%，陆军士气+15%，年度威望+1.5，训练度+5%，围城能力+10%，火力伤害+5%，冲击伤害+10%，全局叛乱-3，分离主义年数-5，行政效率+5%。"
+
+ # Mikazuki Tier Modifiers (Subject)
+ NNM_mikazuki_tier1_subject: "羁绊之芽（属国）"
+ NNM_mikazuki_tier1_subject_desc: "三日月羁绊的初生力量。陆军士气+5%。"
+
+ NNM_mikazuki_tier2_subject: "羁绊之苗（属国）"
+ NNM_mikazuki_tier2_subject_desc: "羁绊的萌芽。陆军士气+5%，人力恢复速度+10%。"
+
+ NNM_mikazuki_tier3_subject: "羁绊之木（属国）"
+ NNM_mikazuki_tier3_subject_desc: "羁绊稳固增长。陆军士气+10%，人力恢复速度+10%。"
+
+ NNM_mikazuki_tier4_subject: "羁绊之林（属国）"
+ NNM_mikazuki_tier4_subject_desc: "羁绊如林密布。陆军士气+10%，人力恢复速度+15%，陆军上限+10%。"
+
+ NNM_mikazuki_tier5_subject: "羁绊之森（属国）"
+ NNM_mikazuki_tier5_subject_desc: "羁绊之森繁茂。陆军士气+15%，人力恢复速度+15%，陆军上限+15%，训练度+2.5%。"
+
+ NNM_mikazuki_tier6_subject: "羁绊之星（属国）"
+ NNM_mikazuki_tier6_subject_desc: "羁绊如星光辉。陆军士气+15%，人力恢复速度+20%，陆军上限+15%，训练度+2.5%，围城能力+10%。"
+
+ NNM_mikazuki_tier7_subject: "羁绊之月（属国）"
+ NNM_mikazuki_tier7_subject_desc: "羁绊如月明朗。陆军士气+15%，人力恢复速度+20%，陆军上限+20%，训练度+5%，围城能力+10%。"
+
+ NNM_mikazuki_tier8_subject: "羁绊之日（属国）"
+ NNM_mikazuki_tier8_subject_desc: "羁绊如日炽烈。陆军士气+20%，人力恢复速度+25%，陆军上限+25%，训练度+5%，围城能力+10%，承受火伤-5%。"
+
+ NNM_mikazuki_tier9_subject: "羁绊之海（属国）"
+ NNM_mikazuki_tier9_subject_desc: "羁绊如海深邃。陆军士气+20%，人力恢复速度+25%，陆军上限+25%，训练度+7.5%，围城能力+10%，承受火伤-5%。"
+
+ NNM_mikazuki_tier10_subject: "羁绊之穹（属国）"
+ NNM_mikazuki_tier10_subject_desc: "羁绊达于穹顶。陆军士气+25%，人力恢复速度+30%，陆军上限+30%，训练度+7.5%，围城能力+15%，承受火伤-10%，冲击伤害+10%。"
+
+ # Mikazuki Upgrade Modifiers (Overlord)
+ NNM_mikazuki_upgrade1: "三日月之绊·初级"
+ NNM_mikazuki_upgrade1_desc: "同盟正式成立带来的羁绊深化。外交关系+1，附庸陆军上限+15%。"
+
+ NNM_mikazuki_upgrade2: "三日月之绊·中级"
+ NNM_mikazuki_upgrade2_desc: "联邦壮大带来的羁绊共鸣。外交关系+1，侵略扩张-15%，外交合并花费-10%，附庸陆军上限+15%，陆军士气+2.5%。"
+
+ NNM_mikazuki_upgrade3: "三日月之绊·高级"
+ NNM_mikazuki_upgrade3_desc: "羁绊达到永恒之境。外交关系+1，训练度+5%，行政效率+5%，外交合并花费-10%，侵略扩张-15%，附庸陆军上限+25%，陆军士气+5%，年度威望+1，每月羁绊之力+1.0。"
+
+ # Mikazuki Upgrade Modifiers (Subject)
+ NNM_mikazuki_upgrade1_subject: "三日月之绊·初级（属国）"
+ NNM_mikazuki_upgrade1_subject_desc: "同盟正式成立带来的属国强化。陆军上限+25%。"
+
+ NNM_mikazuki_upgrade2_subject: "三日月之绊·中级（属国）"
+ NNM_mikazuki_upgrade2_subject_desc: "联邦壮大带来的属国共鸣。陆军士气+10%，陆军上限+25%，围城能力+5%。"
+
+ NNM_mikazuki_upgrade3_subject: "三日月之绊·高级（属国）"
+ NNM_mikazuki_upgrade3_subject_desc: "羁绊达于永恒之境的属国强化。训练度+5%，承受火伤-10%，陆军士气+10%，陆军上限+50%，围城能力+10%."
+
+ # Power bar stage display for mechanic UI
+ NNM_bonds_power_tt: "【羁绊之力进度条】力量积累依靠每月被动增长（由羁绊阶段提供）。使用「羁绊共鸣」可消耗力量增强属国信任。\n力量范围效果：\n·0-24：改善关系+10%\n·25-49：独立倾向-10%\n·50-74：分离主义年数-5\n·75-100：行政效率+5%"
 
  # Misc
  empty_line_tt: ""

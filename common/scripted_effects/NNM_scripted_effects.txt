@@ -1,0 +1,217 @@
+NNM_refresh_mikazuki_bonds_effect = {
+	# === Remove all old overlord modifiers ===
+	remove_country_modifier = NNM_mikazuki_tier1
+	remove_country_modifier = NNM_mikazuki_tier2
+	remove_country_modifier = NNM_mikazuki_tier3
+	remove_country_modifier = NNM_mikazuki_tier4
+	remove_country_modifier = NNM_mikazuki_tier5
+	remove_country_modifier = NNM_mikazuki_tier6
+	remove_country_modifier = NNM_mikazuki_tier7
+	remove_country_modifier = NNM_mikazuki_tier8
+	remove_country_modifier = NNM_mikazuki_tier9
+	remove_country_modifier = NNM_mikazuki_tier10
+	remove_country_modifier = NNM_mikazuki_upgrade1
+	remove_country_modifier = NNM_mikazuki_upgrade2
+	remove_country_modifier = NNM_mikazuki_upgrade3
+
+	# === Remove all old subject modifiers ===
+	every_subject_country = {
+		limit = {
+			is_subject_of_type = mikazuki_ally
+		}
+		remove_country_modifier = NNM_mikazuki_tier1_subject
+		remove_country_modifier = NNM_mikazuki_tier2_subject
+		remove_country_modifier = NNM_mikazuki_tier3_subject
+		remove_country_modifier = NNM_mikazuki_tier4_subject
+		remove_country_modifier = NNM_mikazuki_tier5_subject
+		remove_country_modifier = NNM_mikazuki_tier6_subject
+		remove_country_modifier = NNM_mikazuki_tier7_subject
+		remove_country_modifier = NNM_mikazuki_tier8_subject
+		remove_country_modifier = NNM_mikazuki_tier9_subject
+		remove_country_modifier = NNM_mikazuki_tier10_subject
+		remove_country_modifier = NNM_mikazuki_upgrade1_subject
+		remove_country_modifier = NNM_mikazuki_upgrade2_subject
+		remove_country_modifier = NNM_mikazuki_upgrade3_subject
+	}
+
+	# === Count mikazuki_ally subjects ===
+	set_variable = {
+		which = NNM_mikazuki_count_var
+		value = 0
+	}
+	every_subject_country = {
+		limit = {
+			is_subject_of_type = mikazuki_ally
+		}
+		overlord = {
+			change_variable = {
+				which = NNM_mikazuki_count_var
+				value = 1
+			}
+		}
+	}
+
+	# === Apply tier modifiers (if/else_if chain, count >= 10 down to >= 1) ===
+	if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 10
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier10 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier10_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 9
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier9 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier9_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 8
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier8 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier8_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 7
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier7 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier7_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 6
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier6 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier6_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 5
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier5 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier5_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 4
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier4 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier4_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 3
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier3 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier3_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 2
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier2 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier2_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = NNM_mikazuki_count_var
+				value = 1
+			}
+		}
+		add_country_modifier = { name = NNM_mikazuki_tier1 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_tier1_subject duration = -1 }
+		}
+	}
+
+	# === Apply upgrade modifiers (else_if chain, upgrade3 → upgrade2 → upgrade1) ===
+	if = {
+		limit = {
+			has_country_flag = NNM_missions_1_8_completed_flag
+		}
+		add_country_modifier = { name = NNM_mikazuki_upgrade3 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_upgrade3_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = NNM_missions_1_6_completed_flag
+		}
+		add_country_modifier = { name = NNM_mikazuki_upgrade2 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_upgrade2_subject duration = -1 }
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = NNM_missions_1_3_completed_flag
+		}
+		add_country_modifier = { name = NNM_mikazuki_upgrade1 duration = -1 }
+		every_subject_country = {
+			limit = { is_subject_of_type = mikazuki_ally }
+			add_country_modifier = { name = NNM_mikazuki_upgrade1_subject duration = -1 }
+		}
+	}
+}
