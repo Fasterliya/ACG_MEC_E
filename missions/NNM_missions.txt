@@ -7,7 +7,7 @@ NNM_missions_1 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	NNM_missions_1_1 = {
 		icon = mission_diplomatic
 		position = 1
@@ -31,7 +31,7 @@ NNM_missions_1 = {
 			change_government_reform_progress = 25
 		}
 	}
-
+	
 	NNM_missions_1_2 = {
 		icon = mission_alliance
 		position = 2
@@ -49,7 +49,7 @@ NNM_missions_1 = {
 			change_government_reform_progress = 25
 		}
 	}
-
+	
 	NNM_missions_1_3 = {
 		icon = mission_unite_home_region
 		position = 3
@@ -73,7 +73,7 @@ NNM_missions_1 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_1_4 = {
 		icon = mission_strong_vassals
 		position = 4
@@ -92,11 +92,11 @@ NNM_missions_1 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_1_5 = {
 		icon = mission_alliance
 		position = 5
-		required_missions = { NNM_missions_1_3 NNM_missions_4_2 }
+		required_missions = { NNM_missions_1_4 NNM_missions_4_4 }
 		provinces_to_highlight = {
 			owned_by = IRH
 		}
@@ -123,7 +123,7 @@ NNM_missions_1 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_1_6 = {
 		icon = mission_empire
 		position = 6
@@ -143,7 +143,7 @@ NNM_missions_1 = {
 			add_stability = 1
 		}
 	}
-
+	
 	NNM_missions_1_7 = {
 		icon = mission_kingdom_of_italy
 		position = 7
@@ -164,7 +164,7 @@ NNM_missions_1 = {
 			add_stability = 1
 		}
 	}
-
+	
 	NNM_missions_1_8 = {
 		icon = mission_empire
 		position = 8
@@ -204,17 +204,17 @@ NNM_missions_2 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	NNM_missions_2_1 = {
 		icon = mission_african_soldier
 		position = 1
 		provinces_to_highlight = {
-			region = carpathian_region
+			region = carpathia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = carpathian_region
+				region = carpathia_region
 				value = 5
 			}
 		}
@@ -225,25 +225,26 @@ NNM_missions_2 = {
 			change_government_reform_progress = 25
 		}
 	}
-
+	
 	NNM_missions_2_2 = {
 		icon = mission_eastern_europe
 		position = 2
 		required_missions = { NNM_missions_2_1 }
 		provinces_to_highlight = {
-			area = pest_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			area = pozsony_area
+			OR = {
+				area = alfold_area
+				area = slovakia_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			pest_area = {
+			alfold_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			pozsony_area = {
+			slovakia_area = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
@@ -253,23 +254,23 @@ NNM_missions_2 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_2_3 = {
 		icon = mission_arabian_fort
 		position = 3
 		required_missions = { NNM_missions_2_2 }
 		provinces_to_highlight = {
-			area = spis_area
+			area = transylvania_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			spis_area = {
+			transylvania_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			spis_area = {
+			transylvania_area = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
@@ -280,14 +281,14 @@ NNM_missions_2 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_2_4 = {
 		icon = mission_spain
 		position = 4
 		required_missions = { NNM_missions_2_3 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = carpathian_region
+				region = carpathia_region
 				value = 12
 			}
 		}
@@ -300,7 +301,7 @@ NNM_missions_2 = {
 			change_mil = 1
 		}
 	}
-
+	
 	NNM_missions_2_5 = {
 		icon = mission_invade_island
 		position = 5
@@ -311,7 +312,7 @@ NNM_missions_2 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = carpathian_region
+				region = carpathia_region
 				value = 15
 			}
 		}
@@ -326,14 +327,14 @@ NNM_missions_2 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_2_6 = {
 		icon = mission_king_of_naples
 		position = 6
-		required_missions = { NNM_missions_2_5 NNM_missions_1_4 }
+		required_missions = { NNM_missions_2_5 NNM_missions_1_5 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = carpathian_region
+				region = carpathia_region
 				value = 20
 			}
 		}
@@ -345,23 +346,23 @@ NNM_missions_2 = {
 			add_stability = 1
 		}
 	}
-
+	
 	NNM_missions_2_7 = {
 		icon = mission_rb_steppe_conquest
 		position = 7
 		required_missions = { NNM_missions_2_6 }
 		provinces_to_highlight = {
-			region = pontic_steppe_region
+			region = crimea_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = carpathian_region
+				region = carpathia_region
 				value = 25
 			}
 		}
 		effect = {
-			pontic_steppe_region = {
+			crimea_region = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
@@ -371,14 +372,14 @@ NNM_missions_2 = {
 			change_government_reform_progress = 150
 		}
 	}
-
+	
 	NNM_missions_2_8 = {
 		icon = mission_empire
 		position = 8
-		required_missions = { NNM_missions_2_7 NNM_missions_1_6 }
+		required_missions = { NNM_missions_2_7 NNM_missions_1_7 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = carpathian_region
+				region = carpathia_region
 				value = 30
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -410,7 +411,7 @@ NNM_missions_3 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	NNM_missions_3_1 = {
 		icon = mission_early_game_buildings
 		position = 1
@@ -418,7 +419,7 @@ NNM_missions_3 = {
 			army_size_percentage = 0.8
 			any_neighbor_country = {
 				any_owned_province = {
-					region = austria_region
+					region = south_german_region
 				}
 			}
 		}
@@ -429,18 +430,18 @@ NNM_missions_3 = {
 			change_government_reform_progress = 25
 		}
 	}
-
+	
 	NNM_missions_3_2 = {
 		icon = mission_roman_empire_west
 		position = 2
 		required_missions = { NNM_missions_3_1 }
 		provinces_to_highlight = {
-			region = austria_region
+			region = south_german_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = austria_region
+				region = south_german_region
 				value = 5
 			}
 		}
@@ -451,17 +452,17 @@ NNM_missions_3 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_3_3 = {
 		icon = mission_siege
 		position = 3
 		required_missions = { NNM_missions_3_2 }
 		provinces_to_highlight = {
-			area = wien_area
+			area = austria_proper_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			wien_area = {
+			austria_proper_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -474,14 +475,14 @@ NNM_missions_3 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_3_4 = {
 		icon = mission_arabian_fort
 		position = 4
 		required_missions = { NNM_missions_3_3 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = austria_region
+				region = south_german_region
 				value = 12
 			}
 		}
@@ -493,23 +494,23 @@ NNM_missions_3 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_3_5 = {
 		icon = mission_noble_council
 		position = 5
-		required_missions = { NNM_missions_3_4 NNM_missions_1_3 }
+		required_missions = { NNM_missions_3_4 NNM_missions_1_4 }
 		provinces_to_highlight = {
-			region = south_germany_region
+			region = south_german_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = austria_region
+				region = south_german_region
 				value = 15
 			}
 		}
 		effect = {
-			south_germany_region = {
+			south_german_region = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
@@ -519,17 +520,14 @@ NNM_missions_3 = {
 			change_government_reform_progress = 100
 		}
 	}
-
+	
 	NNM_missions_3_6 = {
 		icon = mission_monarch_in_throne_room
 		position = 6
-		required_missions = { NNM_missions_3_5 NNM_missions_1_4 }
+		required_missions = { NNM_missions_3_5 NNM_missions_1_5 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				OR = {
-					region = austria_region
-					region = south_germany_region
-				}
+				region = south_german_region
 				value = 15
 			}
 		}
@@ -541,7 +539,7 @@ NNM_missions_3 = {
 			add_stability = 1
 		}
 	}
-
+	
 	NNM_missions_3_7 = {
 		icon = mission_kingdom_of_italy
 		position = 7
@@ -552,10 +550,7 @@ NNM_missions_3 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				OR = {
-					region = austria_region
-					region = south_germany_region
-				}
+				region = south_german_region
 				value = 25
 			}
 		}
@@ -570,19 +565,15 @@ NNM_missions_3 = {
 			change_government_reform_progress = 150
 		}
 	}
-
+	
 	NNM_missions_3_8 = {
 		icon = mission_empire
 		position = 8
 		required_missions = { NNM_missions_3_7 NNM_missions_1_7 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = austria_region
-				value = 20
-			}
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				region = south_germany_region
-				value = 20
+				region = south_german_region
+				value = 40
 			}
 			total_development = 700
 		}
@@ -609,7 +600,7 @@ NNM_missions_4 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	NNM_missions_4_1 = {
 		icon = mission_high_income
 		position = 1
@@ -630,7 +621,7 @@ NNM_missions_4 = {
 			change_government_reform_progress = 25
 		}
 	}
-
+	
 	NNM_missions_4_2 = {
 		icon = mission_rifle
 		position = 2
@@ -656,11 +647,11 @@ NNM_missions_4 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_4_3 = {
 		icon = mission_empire
 		position = 3
-		required_missions = { NNM_missions_4_2 NNM_missions_1_3 }
+		required_missions = { NNM_missions_4_2 NNM_missions_1_2 }
 		provinces_to_highlight = {
 			owned_by = MDK
 		}
@@ -684,7 +675,7 @@ NNM_missions_4 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_4_4 = {
 		icon = mission_privateer
 		position = 4
@@ -712,7 +703,7 @@ NNM_missions_4 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_4_5 = {
 		icon = mission_sicilian_vespers
 		position = 5
@@ -740,17 +731,17 @@ NNM_missions_4 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_4_6 = {
 		icon = mission_arabian_trade
 		position = 6
-		required_missions = { NNM_missions_4_5 NNM_missions_1_4 }
+		required_missions = { NNM_missions_4_5 NNM_missions_1_5 }
 		provinces_to_highlight = {
-			area = constantinople_area
+			area = thrace_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			constantinople_area = {
+			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -763,11 +754,11 @@ NNM_missions_4 = {
 			add_stability = 1
 		}
 	}
-
+	
 	NNM_missions_4_7 = {
 		icon = mission_kingdom_of_italy
 		position = 7
-		required_missions = { NNM_missions_4_6 NNM_missions_1_5 }
+		required_missions = { NNM_missions_4_6 NNM_missions_1_6 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = balkan_region
@@ -782,7 +773,7 @@ NNM_missions_4 = {
 			add_stability = 1
 		}
 	}
-
+	
 	NNM_missions_4_8 = {
 		icon = mission_roman_empire_west
 		position = 8
@@ -817,7 +808,7 @@ NNM_missions_5 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	NNM_missions_5_1 = {
 		icon = mission_galleys_in_port
 		position = 1
@@ -832,7 +823,7 @@ NNM_missions_5 = {
 			change_government_reform_progress = 25
 		}
 	}
-
+	
 	NNM_missions_5_2 = {
 		icon = mission_sea_battles
 		position = 2
@@ -854,11 +845,11 @@ NNM_missions_5 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_5_3 = {
 		icon = mission_empire
 		position = 3
-		required_missions = { NNM_missions_5_2 NNM_missions_1_3 }
+		required_missions = { NNM_missions_5_2 NNM_missions_1_2 }
 		provinces_to_highlight = {
 			owned_by = AKE
 		}
@@ -882,7 +873,7 @@ NNM_missions_5 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_5_4 = {
 		icon = mission_aristocrats
 		position = 4
@@ -910,7 +901,7 @@ NNM_missions_5 = {
 			change_government_reform_progress = 50
 		}
 	}
-
+	
 	NNM_missions_5_5 = {
 		icon = mission_ottoman
 		position = 5
@@ -929,7 +920,7 @@ NNM_missions_5 = {
 			change_government_reform_progress = 75
 		}
 	}
-
+	
 	NNM_missions_5_6 = {
 		icon = mission_estate
 		position = 6
@@ -952,7 +943,7 @@ NNM_missions_5 = {
 			change_government_reform_progress = 100
 		}
 	}
-
+	
 	NNM_missions_5_7 = {
 		icon = mission_cross_africa
 		position = 7
@@ -971,7 +962,7 @@ NNM_missions_5 = {
 			add_stability = 1
 		}
 	}
-
+	
 	NNM_missions_5_8 = {
 		icon = mission_roman_empire_east
 		position = 8

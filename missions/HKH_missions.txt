@@ -7,7 +7,7 @@ HKH_missions_6 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	HKH_missions_6_1 = {
 		icon = mission_noble_council
 		position = 1
@@ -197,7 +197,7 @@ HKH_missions_7 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	HKH_missions_7_1 = {
 		icon = mission_african_soldier
 		position = 1
@@ -221,7 +221,7 @@ HKH_missions_7 = {
 			add_mil_power = 100
 			change_government_reform_progress = 25
 			add_treasury = 400
-
+			
 		}
 	}
 	HKH_missions_7_2 = {
@@ -436,7 +436,7 @@ HKH_missions_8 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	HKH_missions_8_1 = {
 		icon = mission_rb_a_mighty_fleet
 		position = 1
@@ -683,7 +683,7 @@ HKH_missions_9 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	HKH_missions_9_1 = {
 		icon = mission_dominate_home_trade_node
 		position = 1
@@ -828,7 +828,7 @@ HKH_missions_10 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
 	HKH_missions_10_1 = {
 		icon = mission_assemble_an_army
 		position = 1
