@@ -940,6 +940,7 @@ country_event = {
 			50 = {
 				set_country_flag = skr_final_judgment_complete
 				set_country_flag = skr_sakura_cards_unlocked
+				add_government_reform = SKR_sakura_card_reform
 				add_prestige = 50
 				add_splendor = 200
 				custom_tooltip = skr_judgment_success_tt
@@ -979,6 +980,7 @@ country_event = {
 	option = {
 		name = skr_card_events.60.a
 		set_country_flag = skr_clear_card_awakened
+		add_government_reform = SKR_clear_card_reform
 		add_prestige = 25
 		add_splendor = 100
 	}

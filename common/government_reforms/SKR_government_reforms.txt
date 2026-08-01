@@ -24,8 +24,10 @@ SKR_sakura_card_reform = {
 	lock_level_when_selected = yes
 	icon = "ACG_MEC_E_SKN_reform_2"
 	potential = {
-		has_reform = SKR_clow_card_reform
-		has_country_flag = skr_final_judgment_complete
+		OR = {
+			has_reform = SKR_sakura_card_reform
+			have_had_reform = SKR_sakura_card_reform
+		}
 	}
 	valid_for_new_country = no
 	valid_for_nation_designer = no
@@ -45,15 +47,20 @@ SKR_clear_card_reform = {
 	lock_level_when_selected = yes
 	icon = "ACG_MEC_E_SKN_reform_2"
 	potential = {
-		has_reform = SKR_sakura_card_reform
-		has_country_flag = skr_clear_card_awakened
+		OR = {
+			has_reform = SKR_clear_card_reform
+			have_had_reform = SKR_clear_card_reform
+		}
 	}
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	allow_normal_conversion = yes
 	modifiers = {
 		diplomatic_reputation = 2
-		administrative_efficiency = 0.05
+		administrative_efficiency = 0.10
+		discipline = 0.05
+		core_creation = -0.15
+		ae_impact = -0.15
 		free_policy = 1
 		governing_capacity = 300
 	}

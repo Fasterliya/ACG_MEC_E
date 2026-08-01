@@ -117,7 +117,7 @@ SKR_missions_6 = {
 		position = 8
 		required_missions = { SKR_mission_6_7 }
 		trigger = {
-			year = 1600
+			year = 1550
 		}
 		effect = {
 			country_event = { id = skr_card_events.60 }

@@ -941,4 +941,18 @@ callaction = {
 			always = no
 		}
 	}
+	condition = {
+		tooltip = SKR_GERMAN_CB_NO_ALLY_CALL_TT
+		potential = {
+			ROOT = {
+				is_in_war = {
+					defender_leader = ROOT
+					casus_belli = cb_skr_german_unification
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }

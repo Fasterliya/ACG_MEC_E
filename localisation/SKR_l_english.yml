@@ -386,7 +386,7 @@
  SKR_sakura_card_reform: "1jKNaS'Y^"
  SKR_sakura_card_reform_desc: "Ç†NgT„v¡R2R0S1jS“^mLrlS:N1jKNaSÿåNêñT„vT››Rqš¨RƒRìN0"
  SKR_clear_card_reform: "faSÉ‰’‘"
- SKR_clear_card_reform_desc: "S1j„vT››RåeÊv:V'YÿàeaÆ‹0WR.†N°e„vfLr0Ù›NaSLrãNhˆNwhQ°e„v›RÏ‘0"
+ SKR_clear_card_reform_desc: "1550D�#�P�S�5�D�A�4�5�6�7�#�H�P�5�A�A�4�T�A�M�C�E�!�M�C�E�8�S�S�W�T�5�P�U�P�B�!�>�J�<�B�!�T�:�K�6�#�M�J�4�7�<�G�G�B�@�U�4�@�5�M�=�Q�A�!�"
 
  ### IDEAS ###
 
@@ -558,6 +558,13 @@
  SKR_mission_10_11_desc: "a'Y)R„vÏk*NwýNýAucƒfÛv0"
  SKR_mission_10_12_title: "bìN„vwm"
  SKR_mission_10_12_desc: "b:Nwm›Q8—CgÿS0W-NwmØS:NbìN„v…QVn0"
+
+
+ ### CB ###
+
+ cb_skr_german_unification: "德意志统一战争"
+ SKR_GERMAN_WAR_NAME: "小樱对$DEFENDER$的德意志统一战争"
+ SKR_GERMAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「德意志统一战争」宣战，无法召唤盟友。"
 
  ### MISSION COLUMN TITLES ###
  SKR_missions_6: "“^mçubw"

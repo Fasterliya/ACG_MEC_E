@@ -1,0 +1,22 @@
+government = acg_monarchy
+add_government_reform = SKR_clow_card_reform
+government_rank = 1
+primary_culture = cards_magic_culture
+religion = acg
+historical_friend = TMY
+technology_group = tech_gensokyan
+capital = 266
+
+1444.11.11 = {
+	monarch = {
+		name = "Sakura"
+		dynasty = "Kinomoto"
+		birth_date = 1428.4.1
+		adm = 4
+		dip = 5
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = kind_hearted_personality
+}

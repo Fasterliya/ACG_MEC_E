@@ -1,0 +1,39 @@
+take_province_skr_german = {
+	type = take_province
+
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.5
+		allowed_provinces = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+		}
+		peace_options = {
+			po_demand_provinces
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.5
+		allowed_provinces = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+		}
+		peace_options = {
+			po_demand_provinces
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	war_name = SKR_GERMAN_WAR_NAME
+}

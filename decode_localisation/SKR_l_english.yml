@@ -386,7 +386,7 @@ l_english:
  SKR_sakura_card_reform: "樱之卡大师"
  SKR_sakura_card_reform_desc: "通过了最后的审判。小樱将库洛牌转化为樱之卡，以自己的魔力驱动它们。"
  SKR_clear_card_reform: "透明卡觉醒"
- SKR_clear_card_reform_desc: "小樱的魔力日益强大，无意识地创造了新的透明牌。这些卡牌代表着全新的力量。"
+ SKR_clear_card_reform_desc: "1550年，小樱的魔力达到顶峰，全新的力量创造了透明牌。透明牌赋予樱卓越的行政效率、军事纪律、造核速度，同时大幅减轻侵略扩张带来的外交压力。"
 
  ### IDEAS ###
 
@@ -558,6 +558,12 @@ l_english:
  SKR_mission_10_11_desc: "意大利的每个省份都繁荣昌盛。"
  SKR_mission_10_12_title: "我们的海"
  SKR_mission_10_12_desc: "成为海军霸权，将地中海变为我们的内湖。"
+
+ ### CB ###
+
+ cb_skr_german_unification: "德意志统一战争"
+ SKR_GERMAN_WAR_NAME: "小樱对$DEFENDER$的德意志统一战争"
+ SKR_GERMAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「德意志统一战争」宣战，无法召唤盟友。"
 
  ### MISSION COLUMN TITLES ###
  SKR_missions_6: "库洛继承者"
