@@ -386,7 +386,7 @@
  SKR_sakura_card_reform: "1jKNaS'Y^"
  SKR_sakura_card_reform_desc: "Ç†NgT„v¡R2R0S1jS“^mLrlS:N1jKNaSÿåNêñT„vT››Rqš¨RƒRìN0"
  SKR_clear_card_reform: "faSÉ‰’‘"
- SKR_clear_card_reform_desc: "1550D�#�P�S�5�D�A�4�5�6�7�#�H�P�5�A�A�4�T�A�M�C�E�!�M�C�E�8�S�S�W�T�5�P�U�P�B�!�>�J�<�B�!�T�:�K�6�#�M�J�4�7�<�G�G�B�@�U�4�@�5�M�=�Q�A�!�"
+ SKR_clear_card_reform_desc: "1550t^ÿS1j„vT››R¾0Rv˜ðSÿhQ°e„v›RÏ‘R.†NfLr0fLrKˆN1jSSŠ„vLˆ?eHe‡s0›Q‹Nªu‹V0.8h¦^ÿTöe'YE^ÏQ‰µOeuib.V&^eg„vY²N‹S›R0"
 
  ### IDEAS ###
 
@@ -421,172 +421,162 @@
  Sakura_and_tomoyo_desc: "2NºN„vÊu…Š†NýVLuåwN?aa:NS1j.súQNR0"
  Eternal_friendship: "8lR`„vËSŒ"
  Eternal_friendship_desc: "8lÜ„vËSŒ©‹ýV¶R?eVrôf RupIm0"
+
  ### MISSION TITLES ###
 
  # Slot 6 - Card Collection
- SKR_missions_6_title: "7âS¡V®Jé"
- SKR_mission_6_1_title: "4ò?ª7âS¡"
- SKR_mission_6_1_desc: "TÚ5ØOÂJÒUÒ5½AËDÇ1¾9Å@Ï5ÄJé!£4ò?ªKü5ÄK²<ä#¬?¨F¬Hç7çR»0ãKÄI¢6øH¥!ª!ªUâJÇP¡S£Së?âBåEÆ5Ä3õ4ÎOàSö!£"
- SKR_mission_6_2_title: "W·7ç"
- SKR_mission_6_2_desc: "7ç!¢Oè!¢K®!£G°HýUÅEÆTÚ3ÇJÐ8÷4¦RýFðAËI§6¯!£P¡S£4©IÏVªJÀWö5ÄU½6·7þ#¬?ªJ¼AË5ÚR»4Î5ÄJÕ7þV®BÃ!£"
- SKR_mission_6_3_title: "TªKØJÔA¶"
- SKR_mission_6_3_desc: ";ð!¢5Ø!¢@×!£TªKØV®EÆUýTÚKÁE°!£P¡S£SÃ7âS¡V®UÈ=«KüCÇR»R»JÕ7þ!£"
- SKR_mission_6_4_title: "=£Së6Ü"
- SKR_mission_6_4_desc: "=£EÆSë6ÜEÆ!ª!ª?âBåEÆVÐ9¥7À5Ä<«VÂ!£JÕ7þKüCÇPèRª3¬:õQ°3£5ÄW¨W¢!£"
- SKR_mission_6_5_title: "9âSë0µ"
- SKR_mission_6_5_desc: "9âEÆSë0µEÆ!£WîG¿5ÄA½UÅ?âBåEÆ#¬1Ë4Ë6ÔA¢SÖ;¥OàRÀ4æ!£P¡S£1ØPëTÚA½UßV®<äUÒ5½F½:â!£"
- SKR_mission_6_6_title: "4´SëOû"
- SKR_mission_6_6_desc: "4´TìSëOû3ý!£Wî:óA½UÅ?âBåEÆ!£4ÓNÞ5½SÐ#¬4ÓSÐ5½NÞ!ª!ªUâJÇ?âBåEÆVÐWîNª1¾T´5ÄA¦A¿!£"
- SKR_mission_6_7_title: "Wî:ó5ÄIóEÐ"
- SKR_mission_6_7_desc: "J®6þUÅ?âBåEÆH«2¿9éN»!£IóEÐUß!¸TÂ!¹RÑ>­KÕPÑ!£P¡S£1ØPëV¤C÷WÔ<ºJÇEÆUæUý5ÄV÷HË!£"
- SKR_mission_6_8_title: "H«PÂ5ÄA¦A¿"
- SKR_mission_6_8_desc: "?âBåEÆRÑWª;¯NªS£V®EÆ!£5«P¡S£5ÄD§A¦HÔTÚ3É3¤!ª!ªNÞRâJ¶VÐ#¬H«PÂ5Ä!¸M¸C÷EÆ!¹?ªJ¼5®Iú!£"
- SKR_mission_6_9_title: "H«PÂ5ÄEÆ"
- SKR_mission_6_9_desc: "<²7ç!¢0üN§!¢K®T´!£M¸C÷EÆ5ÄA¦A¿Së?âBåEÆ=ØH»2»M¬!ª!ª8üV±=Ó#¬R²8üG¿4ó!£"
- SKR_mission_6_10_title: "RâV¾5ÄPÎW´"
- SKR_mission_6_10_desc: "PÐ6¯EÆSë<ÇB¼EÆ!£HÃMòNïKæV®6ø6¯!¢HÃJ±9âVØPÂ5¹A÷!ª!ªP¡S£5ÄRâV¾?ªJ¼KÜTìJÀ=ç!£"
- SKR_mission_6_11_title: "Wî:ó5ÄKéF¬"
- SKR_mission_6_11_desc: "7ÉOè!¢AÒ;ðSëPÞ8´!£UâJÇWî:óHýUÅM¸C÷EÆ!£P¡S£5ÄD§A¦RÑ>­NÞHËDÜ<°!£"
- SKR_mission_6_12_title: "EÆV®V÷"
- SKR_mission_6_12_desc: "6þJ®UÅEÆO¤Jý9éN»!£P¡S£2»JÇ<Ì3ÐUß!ª!ªKý2ÅJÇUæUý5ÄEÆV®V÷HË!£"
+ SKR_missions_6_title: "SpSKNfN"
+ SKR_mission_6_1_title: "SbVSpS"
+ SKR_mission_6_1_desc: "(W0WN²RŒb0R†N±,gäSw„vfN0SbVƒR„v¬wô•ÿaSGr‚YÎ˜N,‚ÛVcew»SÙ=fS1jN“^mLr„vR!køvG0"
+ SKR_mission_6_2_title: "ýÎ˜"
+ SKR_mission_6_2_desc: "Î˜0Ô04l0MR	N.VLr(WÎW^TYVw†Nšš¨R0S1jzNåwNZP„vb—egÿVËY†N,rN!k„v6egKNÅe0"
+ SKR_mission_6_3_title: "CQ.tÕ‹¼p"
+ SKR_mission_6_3_desc: "kp00W0÷–0CQ.tKNLrck(W†wP†0S1j(uSpSKNVgSƒRìNNN6eg0"
+ SKR_mission_6_4_title: "QRNþv"
+ SKR_mission_6_4_desc: "QRLrNþvLr“^mLr-NIe2–„vgô06egƒRìN—‰…NNûR8^„vNèl0"
+ SKR_mission_6_5_title: "IQN—f"
+ SKR_mission_6_5_desc: "IQLrN—fLr0g:V„v2N.V“^mLrÿ|VdkùRËzÈS’NøvOXR0S1jÅV‰˜(W2NwKNô•Œb0Rs^aˆ0"
+ SKR_mission_6_6_title: "RNˆm"
+ SKR_mission_6_6_desc: "R.Nˆmd–0gT2N.V“^mLr0ÎNàe0R	gÿÎN	g0RàeÙ=f“^mLr-Ng:N,gn„v›RÏ‘0"
+ SKR_mission_6_7_title: "gT„v¡R2R"
+ SKR_mission_6_7_desc: "ASŒN.V“^mLrhQèRVMO0¡R2Rw0g0òTÏuÏ‚’‘0S1jÅV‰˜Á‹fêñT=fLrwck„vINºN0"
+ SKR_mission_6_8_title: "hQ°e„v›RÏ‘"
+ SKR_mission_6_8_desc: "“^mLròTlS:N1jKNLr0FOS1j„vT››RÍN(Wb•àeaÆ‹-NÿhQ°e„v0fLr0VËYÞ‹u0"
+ SKR_mission_6_9_title: "hQ°e„vLr"
+ SKR_mission_6_9_desc: "¾uÎ˜0SôV04ln0fLr„v›RÏ‘N“^mLr*b6qNTôfôv¥cÿmNôf:V'Y0"
+ SKR_mission_6_10_title: "a×V„vbV¶r"
+ SKR_mission_6_10_desc: "Lˆ¨RLrN°‹UVLr0©‹Nir–KNw¨R0©‹öeIQÍ‘°ePAmS1j„va×VVËYQX.NLu0"
+ SKR_mission_6_11_title: "gT„vŽxGr"
+ SKR_mission_6_11_desc: "Þ˜Ô0ÈpkpNîOY0Ù=fgT	N.VfLr0S1j„vT››RòTÏuàeºNýwÊS0"
+ SKR_mission_6_12_title: "LrKNIN"
+ SKR_mission_6_12_desc: "ŒNAS.VLr‰`peRVMO0S1jN=fçubwyYMb=fwck„vLrKNINºN0"
 
  # Slot 7 - Bohemia
- SKR_missions_7_title: "SÑV¦n®"
- SKR_mission_7_1_title: "L¤3ö5ÚR»2½"
- SKR_mission_7_1_desc: "W·Vð?âBåEÆPèRªA¦A¿!£P¡S£1ØPëUû6Ù>ü6Ó#¬2ÅDÜ0²PÄL¤IÏJÕ<¯V®BÃ!£"
- SKR_mission_7_2_title: "JÕ8´9ÊMÁ"
- SKR_mission_7_2_desc: "D¦@­N¬QÇJÇSÑV¦n®5ÄQÓIì!£?âBåEÆTøTÚDÇ@ïAôOÂ:Û<£#¬>ø2»DÜHÃKüBäHëMâHËV®JÖ!£"
- SKR_mission_7_3_title: "Wî:Ã5ÄEóSÑ"
- SKR_mission_7_3_desc: "VªJÀ>ÍTÚD¦@­N¬QÇ!£KýJÇP¡S£Wî:Ã5ÄEóSÑ!¢WîG¿5Ä:ó6Ü!ª!ªC»SÐJ²C´1ÈKý5ÄV§3Ö8üVØRª!£"
- SKR_mission_7_4_title: "0²Dþ5Ä<Ò"
- SKR_mission_7_4_desc: "2¨N÷C×QÇSëD¦@­N¬QÇM³R»V®HÕ#¬2ÅJÇSÑV¦n®UæUý0²DþV®J±!£"
- SKR_mission_7_5_title: "J¢?ª5ÄS£;¨"
- SKR_mission_7_5_desc: "2¼@­8ñ=«Hç4ºLì5ÄS£;¨0ãJ¢?ª!£HÃUâWù3ÇJÐ3ÉNª4óB½IÏWîNÂE¯5Ä5Ø7½!£"
- SKR_mission_7_6_title: "VªJÀ<Ò5ÄIÌB·"
- SKR_mission_7_6_desc: "VªJÀ<Ò5ÄIÌRµMøBç1é2¼KÄ7½!£NªP¡S£5ÄBÃM¾Lá9©T´T´2»6Ï5ÄV§T®!£"
- SKR_mission_7_7_title: "S£V®Q§LÃ"
- SKR_mission_7_7_desc: "NåKù4óQ§TÚ2¨N÷C×QÇBä3É!£P¡S£O£MûC¿8ö:¢WÓ6¼DÜOñKýR»QùWÔSÉ5ØQ§O°!£"
- SKR_mission_7_8_title: "5Û9úNèL¨"
- SKR_mission_7_8_desc: "3ÉNªQ¡5Û:î!ª!ªUâ2»=öJÇHÙR«#¬8üJÇTðHÎ!£P¡S£=«SÃUâ7ÝA¦A¿JØ;¤8ü6àHË!£"
- SKR_mission_7_9_title: "4ó5À5Ä9¤3§"
- SKR_mission_7_9_desc: "9¤3§HÕR¹TËWª#¬HçM¬VªJÀ<Ò5Ä4ó5À2ÆMÅ!£HÃ2¨N÷C×QÇ3ÉNª9¤Rµ5ÄPÄTà!£"
- SKR_mission_7_10_title: "5ÚR»Wù3Ç"
- SKR_mission_7_10_desc: "2¼@­8ñ3ÉNª5Û9úWî4ó5Ä3ÇJÐ!£UâJÇP¡S£KÍ8øKùSÐJÐCñ5Ä@ñNï!£"
- SKR_mission_7_11_title: "VÇ;ÛV®9â"
- SKR_mission_7_11_desc: "J®Kù4óQ§TÚ2¨N÷C×QÇBä3É!£VªJ¶SëD§7¨TÚUâ@ï=»;ã#¬UÕAÁAËC¿R»8ö=ÇBä!£"
- SKR_mission_7_12_title: ";Æ=ðJ±4ú"
- SKR_mission_7_12_desc: "2¨N÷C×QÇBõHëG°KùN´SÐ5Ä7±HÙ!£P¡S£SëVªJÀOàJÓ6øP¦!ª!ªUâ>ÍJÇKýCÇJØ;¤5Ä<Ò!£"
+ SKR_missions_7_title: "ËSg:u"
+ SKR_mission_7_1_title: "ŽúQ,rNek"
+ SKR_mission_7_1_desc: "ý“^mLr—‰›RÏ‘0S1jÅV‰˜te˜›Q–ÿMbýw‰RÃVŽN6eÆ–KNÅe0"
+ SKR_mission_7_2_title: "6eYEeW"
+ SKR_mission_7_2_desc: "idÉbôušN=fËSg:u„vö^8O0“^mLrþf(W±Ì‘YuNÕuùÿÝuNýw©‹ƒRK„eQYºNKNKb0"
+ SKR_mission_7_3_title: "g‹Y„vgËS"
+ SKR_mission_7_3_desc: "åwN1S(WidÉbôušN0yY=fS1jg‹Y„vgËS0g:V„vTþv¡l	gÀNHNÔkyY„v=ecôfÍ‘‰0"
+ SKR_mission_7_4_title: "‰RR„v¶R"
+ SKR_mission_7_4_desc: "âl‰s|šNNidÉbôušNßuNKNåeÿMb=fËSg:uwck‰RRKNöe0"
+ SKR_mission_7_5_title: "ÛvV„v1j±‚"
+ SKR_mission_7_5_desc: "^Éb<hS‚Y%f)Y„v1j±‚,‚ÛvV0©‹Ùµ^ÎW^b:N'YF–Ng)n–f„v0W¹e0"
+ SKR_mission_7_6_title: "åwN¶R„vFUï"
+ SKR_mission_7_6_desc: "åwN¶R„vFUNQÜuM^ÛV¹e0:NS1j„vÅeÐc›OnnN­e„v=eôc0"
+ SKR_mission_7_7_title: "1jKNfRX"
+ SKR_mission_7_7_desc: "”NNb'YfR(Wâl‰s|šNK„b0S1j^gÏk*NiRPRýýwÏPyYN7hê1u0WfR`N0"
+ SKR_mission_7_8_title: "^ýV‚ðS"
+ SKR_mission_7_8_desc: "b:N	^¯OÙNÅN=fcƒwÿôf=f1ûN0S1jS(uÙýN›RÏ‘ˆR²bôfYºN0"
+ SKR_mission_7_9_title: "'YS„våT‚S"
+ SKR_mission_7_9_desc: "åT‚SåeYÐlÿ‚YTåwN¶R„v'YS0âV0©‹âl‰s|šNb:NåTN„vÃV0"
+ SKR_mission_7_10_title: ",rNµ^ÎW"
+ SKR_mission_7_10_desc: "^Éb<hb:N^ýVg'Y„vÎW^0Ù=fS1jÙuNb	g^l„v<yir0"
+ SKR_mission_7_11_title: "zfgaKNIQ"
+ SKR_mission_7_11_desc: "ASNb'YfR(Wâl‰s|šNK„b0åwÆ‹NT›Õl(WÙÌ‘²NGlÿgq®N†NÏkN*NÒ‰K„0"
+ SKR_mission_7_12_title: "ÄžÑ‘öeãN"
+ SKR_mission_7_12_desc: "âl‰s|šNÈeQMRNb*g	g„vAucƒ0S1jNåwNøvÆ‰wrÙ1S=fyYìNˆR²b„v¶R0"
 
  # Slot 8 - HRE
- SKR_missions_8_title: "JØ;¤5ÄJÄQÔ"
- SKR_mission_8_1_title: "Q¡5Û:î5ÄV°Tð"
- SKR_mission_8_1_desc: "8Ä8ïRÑ>­Fô6¯!£P¡S£SÃKý5ÄIùRôMÆ6¯AË5Û9ú5Ä5ÚR»4Î1ä8ï!£"
- SKR_mission_8_2_title: "2»TÙSÐU½Uù"
- SKR_mission_8_2_desc: "5Û9úSÀT¶5Ä:ÍF½Aî0ä2¼!£P¡S£2»T¸TÙ?´5½UâF¬MÁ5ØIÏSÐNÞN½5Ä7×Uù!£"
- SKR_mission_8_3_title: "JÀ4úV®T¼"
- SKR_mission_8_3_desc: "2¨N÷C×QÇ6Ô5Û9ú5ÄJØ;¤=«JÀ4úOà4«!£UâJÇP¡S£OòKùSÐHËPíOÂ5ÄT¼6¨!£"
- SKR_mission_8_4_title: "5Û9ú5ÄLú4¸"
- SKR_mission_8_4_desc: "5Û9úU½UùAîRÑOÂ!£P¡S£=«4øAì5Û9úSÃM³R»5ÄIùRôCæ6ÔMâ2¿MþP²!£"
- SKR_mission_8_5_title: "Vî:îV®VÕ"
- SKR_mission_8_5_desc: "3·OúVî:îLØH¨!£5Û9úVÕSÚ?ÉRÔTÚR»CæFìVÄOÂ2¢<çG°PÐ!£"
- SKR_mission_8_6_title: ":Ï6øNªR»"
- SKR_mission_8_6_desc: "5Û9úTÚP¡S£JÖVÐMê3ÉAËM³R»!£EÆ5ÄA¦A¿Së5Û9ú5ÄH¨MþHÚNªR»Lå!£"
- SKR_mission_8_7_title: "5Û9ú5ÄJØ;¤Uß"
- SKR_mission_8_7_desc: "R»G§Nå0Ù7¢U¹6È#¬MþMûHçHÕVÐLì!£P¡S£JÇ5Û9ú5±V®NÞ@¢5ÄJØ;¤Uß!£"
- SKR_mission_8_8_title: "SðRíV®OÂ"
- SKR_mission_8_8_desc: "A½G§7¢U¹6È!£5Û9ú5Ä0æM¼QÓIìVÁLì1ß#¬5«P¡S£5ÄJØ;¤V®PÄ4ÓN´8Ä1ä!£"
- SKR_mission_8_9_title: "5Û9úV®=£"
- SKR_mission_8_9_desc: "HýJ®Mò=«J¿Uí8ê4ý5©!£P¡S£5Ä>ü6ÓJÇ5Û9úWî<á9Ì5Ä6Ü!£"
- SKR_mission_8_10_title: "5Û9úV®7«"
- SKR_mission_8_10_desc: "0ÙKÒU½=¢Q²_®:£=®!£<´1ãJÇWîPÚS¿5Ä2¨LÎ#¬R²3¼7þSÚEÆ5ÄA¦A¿V®OÂ!£"
- SKR_mission_8_11_title: ";Æ=ð:½Oß"
- SKR_mission_8_11_desc: "TÂHëNå0Ù=ð1Ò!£5Û9ú5ÄIÌB·M¨4ïLìOÂ#¬2Æ8»;Ý<°C¿R»N»WÓCñ!£"
- SKR_mission_8_12_title: "2Ôq·V®OÂ"
- SKR_mission_8_12_desc: "3ÉNªJÀ=ç0ÔV÷!£P¡S£JØ;¤5ÄRÑ>­2»=öJÇ5Û9ú#¬6øJÇUûF¬2Ôq·V®OÂ5ÄIúAé!£"
+ SKR_missions_8_title: "ˆR²b„v“ŠŠ"
+ SKR_mission_8_1_title: "	^¯O„vLw1"
+ SKR_mission_8_1_desc: "9ei—òTÏu=T¨R0S1j(uyY„vðXó—¨c¨R†N^ýV„v,rN!kØSi—0"
+ SKR_mission_8_2_title: "NQ	gb‰N"
+ SKR_mission_8_2_desc: "^ýV8lÜ„vŒTs^äN˜^0S1jN?aQw0RÙGrW0WN	gàeŒ„v·u‰N0"
+ SKR_mission_8_3_title: "NãNKN¦u"
+ SKR_mission_8_3_desc: "âl‰s|šNùR^ýV„vˆR²bSNãNøv.O0Ù=fS1jTNb	gºN¸‹N„v¦ušR0"
+ SKR_mission_8_4_title: "^ýV„vÁ”2•"
+ SKR_mission_8_4_desc: "^ýVb‰NäNòTN0S1jS&^†˜^ýV(ußuN„vðXó—b—ùRYèZÁw0"
+ SKR_mission_8_5_title: "ø‹¯OKNÈu"
+ SKR_mission_8_5_desc: "²d•ø‹¯OyrCg0^ýVÈuŽNïSåN(WNb—×e^Nv^©wMRLˆ0"
+ SKR_mission_8_6_title: "Tw:NN"
+ SKR_mission_8_6_desc: "^ýV(WS1jKb-NŒRb†NßuN0Lr„v›RÏ‘N^ýV„vCgZ‡:NNSO0"
+ SKR_mission_8_7_title: "^ýV„vˆR²bw"
+ SKR_mission_8_7_desc: "NCS”NŒvÑSUS¦^ÿZg‚Yåe-N)Y0S1j=f^ýVSVKNàe'a„vˆR²bw0"
+ SKR_mission_8_8_title: "ËüKNN"
+ SKR_mission_8_8_desc: "2NCSÑSUS¦^0^ýV„vHrþVö^8Oó)Y¹ÿFOS1j„vˆR²bKNÃVÎN*g9eØS0"
+ SKR_mission_8_9_title: "^ýVKNQR"
+ SKR_mission_8_9_desc: "	NASNSëX•gb…Væe0S1j„v›Q–=f^ýVgZWúV„vþv0"
+ SKR_mission_8_10_title: "^ýVKN^"
+ SKR_mission_8_10_desc: "ŒvX‚b0‚áTVwm†u0sS¿O=fgylŒm„vâl›mÿmNãgŽNLr„v›RÏ‘KNN0"
+ SKR_mission_8_11_title: "ÄžÑ‘*‚¿u"
+ SKR_mission_8_11_desc: "geQ”NŒvÑ‘^0^ýV„vFUï¾)YNÿ0ÌRà`ÊSÏkNMOPRl0"
+ SKR_mission_8_12_title: "Í‚yzKNN"
+ SKR_mission_8_12_desc: "b:NNLu8—IN0S1jˆR²b„vòTÏuNÅN=f^ýVÿw=fteGrÍ‚yzKNN„vuup0"
 
  # Slot 9 - Germany
- SKR_missions_9_title: ">ø2»7ÅFú"
- SKR_mission_9_1_title: "5ÚR»5ÀCÅ"
- SKR_mission_9_1_desc: "0Í7¥@ûQÇSë7¨@¼?ËDáQÇJÇ5ÂRâV¾5Ä5ÚR»5ÀCÅ!£>üM³4ï5½KÄJ®#¬P¡S£=«G×JÖMÆ?ªKü!£"
- SKR_mission_9_2_title: "DÏ1±2¢=ø"
- SKR_mission_9_2_desc: "DÏ1±5ÂRâV¾8÷H¡J®NåJ¡!£HçM¬EÆ5ÄA½Cæ#¬1ØPëFëM·2¢=ø!£"
- SKR_mission_9_3_title: "OòN÷IîHë"
- SKR_mission_9_3_desc: ":ÚI­SëMþK¹LØ7¨B×TÚ5È4ý!£6þJ®NåJ¡TÚJÖ#¬5ÂRâV¾5ÄVÐJàRÑ>­6¯R¡!£"
- SKR_mission_9_4_title: "@³RðV®6Ü"
- SKR_mission_9_4_desc: "@³Rð@¼!¢FÕ7¨6û4ÄSëJ©Mß1¾!£HýJ®NåJ¡!ª!ª5ÂRâV¾5ÄN÷2¿1ß=çRÑJÇP¡S£5Ä7ÀOß!£"
- SKR_mission_9_5_title: "1±7½V®CÅ"
- SKR_mission_9_5_desc: "2¨CÀ@­DáQÇ!¢C·?ËB×1¤Së2¼B×Hð?Ë!£KÄJ®NåJ¡!ª!ª1±:£5ÄN¢7çR²4«@´AËS£5ÄFøO¢!£"
- SKR_mission_9_6_title: "5ÂRâV¾>ü;ê"
- SKR_mission_9_6_desc: "0Ë0Ù7¢U¹6ÈSëJ®6þMò4ó>ü!£EÆ5ÄA¦A¿Së>ü6Ó5ÄRâV¾TÚ4Ë?Ì:Ï6øNªR»!£"
- SKR_mission_9_7_title: "LìCüKù9é"
- SKR_mission_9_7_desc: "NåJ®NåJ¡TÚJÖ!£5ÂRâV¾5Ä4ó2¿7ÖRÑ>­TÚP¡S£5ÄJØ;¤V®OÂ!£"
- SKR_mission_9_8_title: "R»M³LìOÂ"
- SKR_mission_9_8_desc: "Uû8ö5ÂRâV¾9éSÚM³R»!£4Ó0¢6û1°K¹5½2¨BÞ5Ä:£#¬C¿Wù3Ç6¼F®QïWÅS£5ÄFìVÄ!£"
- SKR_mission_9_9_title: "2»FÆV®1Ú"
- SKR_mission_9_9_desc: "NåWùPÇ1¤9°NÀ1ß>³!£UýHç6ÜEÆJØ;¤WÅS£#¬UâP©1¤@ÝJØ;¤WÅ5ÂRâV¾!£"
- SKR_mission_9_10_title: "7áHÄ4ó5Ø"
- SKR_mission_9_10_desc: "5ÂRâV¾5ÄC¿R»4çMÁ5Ø6¼4ï5½J®Nå7¢U¹!£UâJÇWî:Ã5ÄJ±4ú!£"
- SKR_mission_9_11_title: "8ÖLúBö6¯"
- SKR_mission_9_11_desc: "J®Wù1ø9¤3§M¬J±TËWª!£5ÂRâV¾5Ä9¤RµA¦A¿AîHË>´N·!£"
- SKR_mission_9_12_title: "5ÂRâV¾V®aÛ"
- SKR_mission_9_12_desc: "3Æ0ÔLìOÂ#¬PÛ>á5ÂRâV¾!£P¡S£U¾TÚI½aÛ;ØMû@´B·!ª!ªUâR»B·#¬Ký4ÓN´7ÅFú!£"
+ SKR_missions_9_title: "ÝuN>eV"
+ SKR_mission_9_1_title: ",rNSè•"
+ SKR_mission_9_1_desc: "ôTO)RšNNÕlpQKQ<SšN=f·Va×V„v,rNSè•0›Qßu¾0RÛVASÿS1jS²NKb¨cVƒR0"
+ SKR_mission_9_2_title: "WSSv^Û"
+ SKR_mission_9_2_desc: "WSS·Va×VTÖSAS”Nw0‚YTLr„v2Nb—ÿÅV‰˜PŸ4Yv^Û0"
+ SKR_mission_9_3_title: "T‰ñmeQ"
+ SKR_mission_9_3_desc: "ÑžîhNZ¯eyrÕl&O(WIr…V0ŒNAS”Nw(WKbÿ·Va×V„v-N¢gòTÏu¨RGd0"
+ SKR_mission_9_4_title: "±ƒ5ƒKNþv"
+ SKR_mission_9_4_desc: "±ƒ5ƒpQ0nfÕlS(ƒNËeæt,g0	NAS”Nw·Va×V„v‰è¹LuòT=fS1j„v2–¿u0"
+ SKR_mission_9_5_title: "S¹eKNè•"
+ SKR_mission_9_5_desc: "âlŽÉb<SšN0…hKQ&O!XN^&O^tKQ0ÛVAS”NwSwm„v®VÎ˜mN.Oeg†N1j„vlo`0"
+ SKR_mission_9_6_title: "·Va×V›QB›"
+ SKR_mission_9_6_desc: "kQŒvÑSUS¦^NASŒNN'Y›Q0Lr„v›RÏ‘N›Q–„va×V(WdkIRTw:NN0"
+ SKR_mission_9_7_title: ")Y‹TNbRV"
+ SKR_mission_9_7_desc: "”NAS”Nw(WKb0·Va×V„v'YèRòTÏu(WS1j„vˆR²bKNN0"
+ SKR_mission_9_8_title: "Nßu)YN"
+ SKR_mission_9_8_desc: "te*N·Va×VRVŽNßuN0ÎN?–SQS¯e0RâlW„vwmÿÏkµ^ÎWýØ˜lbNw1j„v×e^0"
+ SKR_mission_9_9_title: "N4xKNÁX"
+ SKR_mission_9_9_desc: "”Nµ^f!XñbkS¹ƒX0ck‚YþvLrˆR²bNw1jÿÙ›N!X’WˆR²bNw·Va×V0"
+ SKR_mission_9_10_title: "0Nv™'Y0W"
+ SKR_mission_9_10_desc: "·Va×V„vÏkNøRW0Wý¾0RAS”NÑSUS0Ù=fg‹Y„vöeãN0"
+ SKR_mission_9_11_title: "¢”Á”	¨R"
+ SKR_mission_9_11_desc: "ASµ^uQåT‚STöeÐl0·Va×V„våTN›RÏ‘äNºNleOu0"
+ SKR_mission_9_12_title: "·Va×VKNÅT"
+ SKR_mission_9_12_desc: "ðy8—)YNÿÄ–Ž·Va×V0S1jÙz(WqSÅTÞVgegïÙNïÿyYÎN*g>eV0"
 
  # Slot 10 - Italy
- SKR_missions_10_title: "7ÉOè5ÄD§7¨"
- SKR_mission_10_1_title: "7ÉT½0¢6û1°K¹"
- SKR_mission_10_1_desc: "MþDáK¹SëB×0Í5Ú>ÍTÚI½5ÄDÇ1ß!£>ÍOñ!¸Oè!¹EÆ4øWÅP¡S£7ÉT½3ÇJÐ#¬Ký=«7ÉT½0¢6û1°K¹!£"
- SKR_mission_10_2_title: "0ë5º5Ä:ô;½"
- SKR_mission_10_2_desc: "TÚRâ4ó@ûU¼OÂJ®8öJ¡7Ý!£2¨:ÓF½T­5Ä8»JüHÃHËPÄ3ÛIñMù!£"
- SKR_mission_10_3_title: "SÀ:ãV®3Ç"
- SKR_mission_10_3_desc: "@­Fë0ÂSëBÞBí!£A¬=Ì;ÊR²NÞ7¨Wè5²P¡S£5Ä=Å2½!£"
- SKR_mission_10_4_title: ":£5ºBäHÕ"
- SKR_mission_10_4_desc: "DÇ2»@ÕK¹!¢0¢FÕ@ûQÇSëN÷N÷@ï!£Râ4ó@û5ÄDÏ6ËTÚO¦QôOÂlÚlÚIú;Ô!£"
- SKR_mission_10_5_title: "Wî:ó5ÄF´M¼"
- SKR_mission_10_5_desc: "Hö6¡SëF¤0£CÉLØ!£UâJÇRâ4ó@û5ØM¼IÏWî:ó5Ä?ÕH±!£"
- SKR_mission_10_6_title: "HÈDÇQÇV®3±"
- SKR_mission_10_6_desc: "7¢U¹FÆG§#¬HÈDÇQÇ=Ú5ã5Ä2Æ8»Hç3±K®0ãS¿@´!£P¡S£5Ä9ú?â4ÓN´Hç4Ë3äS¯!£"
- SKR_mission_10_7_title: "QÇF½DþV®V÷"
- SKR_mission_10_7_desc: "KÄJ®NåJ¡TÚJÖ!£P¡S£5ÄCûWÖOì3¹C¿R»WùRâ4ó@û3Ç0î!£"
- SKR_mission_10_8_title: "M³R»Râ4ó@û"
- SKR_mission_10_8_desc: "Uû8öRâ4ó@û9éSÚM³R»!£4Ó0¢6û1°K¹5½N÷N÷@ï#¬S£5ÄFìVÄTÚDÏE·F®Qï!£"
- SKR_mission_10_9_title: "5ØVÐ:£=¢6Ó"
- SKR_mission_10_9_desc: "NåJ®KÒ>Þ=¢SëGá=¢!ª!ªP¡S£5Ä=¢6ÓWãRÔHÃHÎ:Î6ÔJÖ5¨:®!£"
- SKR_mission_10_10_title: "K«PÇIÁR«"
- SKR_mission_10_10_desc: "M¬J±UÆ?ØHÈDÇQÇSëMþDáK¹!£5ØVÐ:£5ÄA½?ÅC÷Vé>¡TÚJÖVÐ!£"
- SKR_mission_10_11_title: ";Æ=ðRâ4ó@û"
- SKR_mission_10_11_desc: "Râ4ó@û5ÄC¿R»8öJ¡7Ý6¼4ï5½J®Nå7¢U¹!£4ÓC×@¼5½0Í@ÕDª#¬7±HÙNÞ4¦2»TÚ!£"
- SKR_mission_10_12_title: "NÒCÇ5Ä:£"
- SKR_mission_10_12_desc: "3Æ0Ô5ØVÐ:£!ª!ªHÃUâF¬Nµ@¶5Ä:£3ÉNªS£5ÄDÚ:þ!£UâJÇBÞBíR²N´TøJµOÖ5ÄCÎ!£"
-
-
- ### CB ###
-
- cb_skr_german_unification: "德意志统一战争"
- SKR_GERMAN_WAR_NAME: "小樱对$DEFENDER$的德意志统一战争"
- SKR_GERMAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「德意志统一战争」宣战，无法召唤盟友。"
-
+ SKR_missions_10_title: "Þ˜Ô„vT›Õl"
+ SKR_mission_10_1_title: "Þ˜Š?–SQS¯e"
+ SKR_mission_10_1_desc: "Z<S¯eN&OôT,r1S(WqS„v±¹01SÏP0Ô0Lr&^NwS1jÞ˜ŠÎW^ÿyYSÞ˜Š?–SQS¯e0"
+ SKR_mission_10_2_title: "JS›S„v|T2U"
+ SKR_mission_10_2_desc: "(Wa'Y)R`SNAS*NwýN0âl³ls^ŸS„vÌR¶^©‹ºNÃVpš^yŽV0"
+ SKR_mission_10_3_title: "8lR`KNÎW"
+ SKR_mission_10_3_desc: "ÉbPŸeYNWlš0ÞYe‡vmNàeÕlI–!cS1j„vek0"
+ SKR_mission_10_4_title: "wm›SK„åe"
+ SKR_mission_10_4_desc: "±NÒR¯e0?–nf)RšNN‰‰Ì‘0a'Y)R„vWSïz(WY3–N q qu‰0"
+ SKR_mission_10_5_title: "gT„vübþV"
+ SKR_mission_10_5_desc: "’dNN®vÃW™„yr0Ù=fa'Y)R0WþVNgT„vzz:0"
+ SKR_mission_10_6_title: "íp±šNKNno"
+ SKR_mission_10_6_desc: "ÑSUS4xCSÿíp±šN‚‚¹p„v0ÌR‚Yno4l,‚Œmeg0S1j„výV“^ÎN*g‚YdkEQÈv0"
+ SKR_mission_10_7_title: "šNs^RKNIN"
+ SKR_mission_10_7_desc: "ÛVAS”Nw(WKb0S1j„vTWRÍT‰VÏkNµ^a'Y)RÎW¦0"
+ SKR_mission_10_8_title: "ßuNa'Y)R"
+ SKR_mission_10_8_desc: "te*Na'Y)RRVŽNßuN0ÎN?–SQS¯e0R‰‰Ì‘ÿ1j„v×e^(WWS'kØ˜lb0"
+ SKR_mission_10_9_title: "0W-Nwm0‚–"
+ SKR_mission_10_9_desc: "”NASX‚èT0‚N‰0‚S1j„v0‚–³åN©‹ûNUOùRKbÆwÒR0"
+ SKR_mission_10_10_title: "ÌSfê•w"
+ SKR_mission_10_10_desc: "TöeŒcµcíp±šNNZ<S¯e00W-Nwm„v2N—˜fàsKS(WKb-N0"
+ SKR_mission_10_11_title: "ÄžÑ‘a'Y)R"
+ SKR_mission_10_11_desc: "a'Y)R„vÏkN*NwýNý¾0RAS”NÑSUS0ÎNs|pQ0RôTÒR«ƒÿAucƒàeYN(W0"
+ SKR_mission_10_12_title: "bìN„vwm"
+ SKR_mission_10_12_desc: "ðy8—0W-Nwm©‹ÙGr…Ý„„vwmb:N1j„v…QVn0Ù=fWlšmN*gþfžR°s„v¦h0"
 
  ### CB ###
 
- skr_german_cb_unlocked_tt: "=âKøW¨JôPûU½@íSÉ!¸5ÂRâV¾M³R»U½Uù!¹#º
-- 6Ô3ÖSÐDÏ1±5ÂRâV¾J¡7Ý5Ä9ú<Ò-50%GÖBÔ@©UÅ#¬-50%U½Uù7ÖJý
-- 7ÀSù7½NÞ7¨UÙ;½CËSÑ2ÎU½"
- skr_search_disturbance_decision: "L½2éAéA¦2¨6¯"
- cb_skr_italian_unification: "Râ4ó@ûM³R»U½Uù"
- skr_search_disturbance_decision_desc: "EÉG²L½2é6ÓKÑK÷H«9ú8÷5Ø5ÄRì3£AéA¦2¨6¯#¬Q°UÒIÐN´2¶;ñ5Ä?âBåEÆ:ÍM¸C÷EÆWÙ<£!£"
- skr_judgment_retry_decision_desc: "IÏR»4ÎIóEÐJ§0ÜAË#¬5«P¡S£2»;á7ÅFú!£<¯FëH«2¿?âBåEÆ:ó#¬TÙ4ÎOòIóEÐUß7¢FðLôU½!£"
- skr_italian_cb_unlocked_tt: "=âKøW¨JôPûU½@íSÉ!¸Râ4ó@ûM³R»U½Uù!¹#º
-- 6Ô3ÖSÐRâ4ó@ûJ¡7Ý5Ä9ú<Ò-50%GÖBÔ@©UÅ#¬-50%U½Uù7ÖJý
-- 7ÀSù7½NÞ7¨UÙ;½CËSÑ2ÎU½"
- skr_judgment_retry_decision: "TÙ4ÎLôU½WîVÕIóEÐ"
- SKR_ITALIAN_WAR_NAME: "P¡S£6Ô$DEFENDER$5ÄRâ4ó@ûM³R»U½Uù"
- SKR_ITALIAN_CB_NO_ALLY_CALL_TT: "UýTÚ1»P¡S£5Ä!¸Râ4ó@ûM³R»U½Uù!¹PûU½#¬NÞ7¨UÙ;½CËSÑ!£"
-
+ cb_skr_german_unification: "·Va×VßuNb‰N"
+ SKR_GERMAN_WAR_NAME: "S1jùR$DEFENDER$„v·Va×VßuNb‰N"
+ SKR_GERMAN_CB_NO_ALLY_CALL_TT: "ck(W«ˆS1j„v0·Va×VßuNb‰N0±RbÿàeÕlìS2UßvËS0"
+ skr_german_cb_unlocked_tt: "ã‰•N^S±Rbt1u0·Va×VßuNb‰N0ÿ\n- ùRc	gWSS·Va×VwýN„výV¶R-50%µOeuib.Vÿ-50%b‰NRpe\n- 2–¡V¹eàeÕlìS2UßvËSÂSb"
+ cb_skr_italian_unification: "a'Y)RßuNb‰N"
+ SKR_ITALIAN_WAR_NAME: "S1jùR$DEFENDER$„va'Y)RßuNb‰N"
+ SKR_ITALIAN_CB_NO_ALLY_CALL_TT: "ck(W«ˆS1j„v0a'Y)RßuNb‰N0±RbÿàeÕlìS2UßvËS0"
+ skr_italian_cb_unlocked_tt: "ã‰•N^S±Rbt1u0a'Y)RßuNb‰N0ÿ\n- ùRc	ga'Y)RwýN„výV¶R-50%µOeuib.Vÿ-50%b‰NRpe\n- 2–¡V¹eàeÕlìS2UßvËSÂSb"
+ skr_judgment_retry_decision: "Q!kcbgÈu¡R2R"
+ skr_judgment_retry_decision_desc: "NN!k¡R2R1Y%†NÿFOS1jNO>eV0Æ–PŸhQè“^mLrTÿQ!kT¡R2RwÑSwcb0"
+ skr_search_disturbance_decision: "¢cågup›Râl¨R"
+ skr_search_disturbance_decision_desc: ">mc¢cåg–d0thQýVT0W„vV8^up›Râl¨RÿûRŒbS*gUc·ƒ„v“^mLrŒTfLr*Žù0"
 
  ### MISSION COLUMN TITLES ###
- SKR_missions_6: "7âS¡V®Jé"
- SKR_missions_7: "SÑV¦n®"
- SKR_missions_8: "JØ;¤5ÄJÄQÔ"
- SKR_missions_9: ">ø2»7ÅFú"
- SKR_missions_10: "7ÉOè5ÄD§7¨"
-
+ SKR_missions_6: "SpSKNfN"
+ SKR_missions_7: "ËSg:u"
+ SKR_missions_8: "ˆR²b„v“ŠŠ"
+ SKR_missions_9: "ÝuN>eV"
+ SKR_missions_10: "Þ˜Ô„vT›Õl"
