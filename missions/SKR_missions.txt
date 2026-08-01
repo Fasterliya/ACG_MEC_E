@@ -103,7 +103,18 @@ SKR_missions_6 = {
 		position = 7
 		required_missions = { SKR_mission_6_6 }
 		trigger = {
-			has_country_flag = skr_cards_transmuted
+			has_country_flag = skr_card_windy_captured
+			has_country_flag = skr_card_fly_captured
+			has_country_flag = skr_card_watery_captured
+			has_country_flag = skr_card_firey_captured
+			has_country_flag = skr_card_earthy_captured
+			has_country_flag = skr_card_thunder_captured
+			has_country_flag = skr_card_sword_captured
+			has_country_flag = skr_card_shield_captured
+			has_country_flag = skr_card_light_captured
+			has_country_flag = skr_card_dark_captured
+			has_country_flag = skr_card_create_captured
+			has_country_flag = skr_card_erase_captured
 		}
 		effect = {
 			country_event = { id = skr_card_events.51 }
@@ -118,6 +129,7 @@ SKR_missions_6 = {
 		required_missions = { SKR_mission_6_7 }
 		trigger = {
 			year = 1550
+			has_country_flag = skr_cards_transmuted
 		}
 		effect = {
 			country_event = { id = skr_card_events.60 }
@@ -704,6 +716,7 @@ SKR_missions_9 = {
 				add_permanent_claim = ROOT
 			}
 			add_treasury = 500
+			custom_tooltip = skr_german_cb_unlocked_tt
 		}
 	}
 	SKR_mission_9_5 = {
@@ -979,6 +992,7 @@ SKR_missions_10 = {
 				add_permanent_claim = ROOT
 			}
 			add_treasury = 500
+			custom_tooltip = skr_italian_cb_unlocked_tt
 		}
 	}
 	SKR_mission_10_5 = {

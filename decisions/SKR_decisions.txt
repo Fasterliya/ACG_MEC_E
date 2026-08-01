@@ -61,4 +61,55 @@ country_decisions = {
 		}
 	}
 
+	skr_judgment_retry_decision = {
+		potential = {
+			tag = SKR
+			has_country_flag = skr_judgment_failed
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			country_event = { id = skr_card_events.51 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	skr_search_disturbance_decision = {
+		potential = {
+			tag = SKR
+			has_country_flag = skr_card_system_active
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			clr_country_flag = skr_card_windy_manifested
+			clr_country_flag = skr_card_fly_manifested
+			clr_country_flag = skr_card_watery_manifested
+			clr_country_flag = skr_card_firey_manifested
+			clr_country_flag = skr_card_earthy_manifested
+			clr_country_flag = skr_card_thunder_manifested
+			clr_country_flag = skr_card_sword_manifested
+			clr_country_flag = skr_card_shield_manifested
+			clr_country_flag = skr_card_light_manifested
+			clr_country_flag = skr_card_dark_manifested
+			clr_country_flag = skr_card_create_manifested
+			clr_country_flag = skr_card_erase_manifested
+			clr_country_flag = skr_card_gale_manifested
+			clr_country_flag = skr_card_siege_manifested
+			clr_country_flag = skr_card_aqua_manifested
+			clr_country_flag = skr_card_action_manifested
+			clr_country_flag = skr_card_record_manifested
+			clr_country_flag = skr_card_flight_manifested
+			clr_country_flag = skr_card_blaze_manifested
+			clr_country_flag = skr_card_repair_manifested
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 }

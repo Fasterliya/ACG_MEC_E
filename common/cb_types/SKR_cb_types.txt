@@ -3,7 +3,7 @@ cb_skr_german_unification = {
 
 	prerequisites = {
 		OR = {
-			mission_completed = SKR_mission_9_6
+			mission_completed = SKR_mission_9_4
 			has_country_flag = skr_german_cb_unlocked_flag
 		}
 		any_known_country = {
@@ -15,4 +15,20 @@ cb_skr_german_unification = {
 	}
 
 	war_goal = take_province_skr_german
+}
+
+cb_skr_italian_unification = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			mission_completed = SKR_mission_10_4
+			has_country_flag = skr_italian_cb_unlocked_flag
+		}
+		any_known_country = {
+			any_owned_province = { region = italy_region }
+		}
+	}
+
+	war_goal = take_province_skr_italian
 }

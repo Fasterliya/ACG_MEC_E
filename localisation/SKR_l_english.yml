@@ -566,6 +566,24 @@
  SKR_GERMAN_WAR_NAME: "小樱对$DEFENDER$的德意志统一战争"
  SKR_GERMAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「德意志统一战争」宣战，无法召唤盟友。"
 
+
+ ### CB ###
+
+ skr_german_cb_unlocked_tt: "=âKøW¨JôPûU½@íSÉ!¸5ÂRâV¾M³R»U½Uù!¹#º
+- 6Ô3ÖSÐDÏ1±5ÂRâV¾J¡7Ý5Ä9ú<Ò-50%GÖBÔ@©UÅ#¬-50%U½Uù7ÖJý
+- 7ÀSù7½NÞ7¨UÙ;½CËSÑ2ÎU½"
+ skr_search_disturbance_decision: "L½2éAéA¦2¨6¯"
+ cb_skr_italian_unification: "Râ4ó@ûM³R»U½Uù"
+ skr_search_disturbance_decision_desc: "EÉG²L½2é6ÓKÑK÷H«9ú8÷5Ø5ÄRì3£AéA¦2¨6¯#¬Q°UÒIÐN´2¶;ñ5Ä?âBåEÆ:ÍM¸C÷EÆWÙ<£!£"
+ skr_judgment_retry_decision_desc: "IÏR»4ÎIóEÐJ§0ÜAË#¬5«P¡S£2»;á7ÅFú!£<¯FëH«2¿?âBåEÆ:ó#¬TÙ4ÎOòIóEÐUß7¢FðLôU½!£"
+ skr_italian_cb_unlocked_tt: "=âKøW¨JôPûU½@íSÉ!¸Râ4ó@ûM³R»U½Uù!¹#º
+- 6Ô3ÖSÐRâ4ó@ûJ¡7Ý5Ä9ú<Ò-50%GÖBÔ@©UÅ#¬-50%U½Uù7ÖJý
+- 7ÀSù7½NÞ7¨UÙ;½CËSÑ2ÎU½"
+ skr_judgment_retry_decision: "TÙ4ÎLôU½WîVÕIóEÐ"
+ SKR_ITALIAN_WAR_NAME: "P¡S£6Ô$DEFENDER$5ÄRâ4ó@ûM³R»U½Uù"
+ SKR_ITALIAN_CB_NO_ALLY_CALL_TT: "UýTÚ1»P¡S£5Ä!¸Râ4ó@ûM³R»U½Uù!¹PûU½#¬NÞ7¨UÙ;½CËSÑ!£"
+
+
  ### MISSION COLUMN TITLES ###
  SKR_missions_6: "“^mçubw"
  SKR_missions_7: "âl‰s|šNKN¦h"

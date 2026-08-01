@@ -564,6 +564,15 @@ l_english:
  cb_skr_german_unification: "德意志统一战争"
  SKR_GERMAN_WAR_NAME: "小樱对$DEFENDER$的德意志统一战争"
  SKR_GERMAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「德意志统一战争」宣战，无法召唤盟友。"
+ skr_german_cb_unlocked_tt: "解锁专属宣战理由「德意志统一战争」：\n- 对持有南北德意志省份的国家-50%侵略扩张，-50%战争分数\n- 防御方无法召唤盟友参战"
+ cb_skr_italian_unification: "意大利统一战争"
+ SKR_ITALIAN_WAR_NAME: "小樱对$DEFENDER$的意大利统一战争"
+ SKR_ITALIAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「意大利统一战争」宣战，无法召唤盟友。"
+ skr_italian_cb_unlocked_tt: "解锁专属宣战理由「意大利统一战争」：\n- 对持有意大利省份的国家-50%侵略扩张，-50%战争分数\n- 防御方无法召唤盟友参战"
+ skr_judgment_retry_decision: "再次挑战最终审判"
+ skr_judgment_retry_decision_desc: "上一次审判失败了，但小樱不会放弃。集齐全部库洛牌后，再次向审判者发起挑战。"
+ skr_search_disturbance_decision: "探查灵力波动"
+ skr_search_disturbance_decision_desc: "派遣探查队搜索全国各地的异常灵力波动，寻找尚未捕获的库洛牌和透明牌踪迹。"
 
  ### MISSION COLUMN TITLES ###
  SKR_missions_6: "库洛继承者"
