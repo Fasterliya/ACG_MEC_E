@@ -274,10 +274,10 @@ l_english:
 
  ### TOOLTIPS ###
 
- skr_card_captured_tt: "封印成功！这张库洛牌现在属于你了。"
- skr_card_failed_tt: "封印失败了。灾害仍在持续，等待下一次机会。"
- skr_judgment_success_tt: "通过了审判。樱之卡的力量觉醒了。"
- skr_judgment_fail_tt: "审判失败。需要重新准备。"
+ skr_card_captured_tt: "§G封印成功！§! 这张库洛牌现在属于你了。"
+ skr_card_failed_tt: "§R封印失败了。§! 灾害仍在持续，等待下一次机会。"
+ skr_judgment_success_tt: "§G通过了审判。§! 樱之卡的力量觉醒了。"
+ skr_judgment_fail_tt: "§R审判失败。§! 需要重新准备。"
 
  ### DECISIONS ###
 
@@ -338,6 +338,11 @@ l_english:
  skr_card_tier_4: "库洛牌宗师"
  skr_card_tier_5: "库洛牌掌控者"
 
+ # On-action modifier names
+ skr_windy_core_boost: "风之造核加成"
+ skr_erase_core_boost: "消之造核加成"
+ skr_light_opinion: "光之好感"
+
  # Province disturbance
  skr_card_disturbance: "库洛牌骚动"
  skr_card_disturbance_severe: "库洛牌剧烈骚动"
@@ -375,6 +380,10 @@ l_english:
  skr_italian_golden_age: "意大利黄金时代"
  skr_mare_nostrum_modifier: "我们的海"
 
+ # Early mission temp buffs
+ skr_conquest_frenzy: "收复失地的狂热"
+ skr_harvest_season: "丰收之季"
+
  ### GOVERNMENT REFORMS ###
 
  SKR_clow_card_reform: "库洛魔法使"
@@ -404,19 +413,19 @@ l_english:
 
  # TMY Idea names
  Costume_designer: "战斗服设计"
- Costume_designer_desc: "知世为小樱设计的战斗服不仅美观，还兼备战场的实用性。"
+ Costume_designer_desc: "大道寺知世为小樱亲手缝制的每一件战斗服，都倾注了最温柔的心意与最精巧的工艺。这不仅让小樱在战场上熠熠生辉，也让整个宫廷都沉浸在这份优雅与爱戴之中——民心所向，威望与正统都随之水涨船高。"
  Video_documentation: "影像记录"
- Video_documentation_desc: "知世用摄像机记录了小樱的每一次战斗，这些影像本身就是宝贵的资料。"
+ Video_documentation_desc: "知世的摄像机从不缺席小樱的每一场战斗。这些珍贵的影像既是后世传颂的荣光，也是不断积累的智慧财富——每一次回放，都能从过往的足迹中汲取新的灵感与力量。"
  Daidouji_fortune: "大道寺财团"
- Daidouji_fortune_desc: "知世身后的家族财富为国家提供了坚实的经济基础。"
+ Daidouji_fortune_desc: "大道寺财团的金库与小樱的王国紧密相连。知世家深厚的财力和遍布各地的商路，让国家在任何困境中都能获得充裕的资金周转，也让四方的物产源源不断地涌来。"
  Sakuras_guardian: "樱的守护者"
- Sakuras_guardian_desc: "知世始终站在小樱身后，守护着她的一切。"
+ Sakuras_guardian_desc: "知世始终站在小樱身后，用她的冷静与智慧为挚友构筑起最坚实的后盾。她的一言一行都代表着国家的信誉，而她的决意，也让敌人明白这片土地绝不轻易让步。"
  Melody_of_hearts: "心之旋律"
- Melody_of_hearts_desc: "知世的歌声能让最敌对的邻居放下戒备。"
+ Melody_of_hearts_desc: "知世的歌声温柔而动人，能抚平最深的敌意，也能融化最坚硬的心。在她的歌声中，邻邦放下戒备，被征服土地上的隔阂与怨恨也在不知不觉中烟消云散。"
  Sakura_and_tomoyo: "樱与知世"
- Sakura_and_tomoyo_desc: "两人的羁绊超越了国界——知世愿意为小樱献出一切。"
+ Sakura_and_tomoyo_desc: "樱与知世的羁绊，是超越了国界与身份的奇迹。这份真挚的友谊感染着治下的每一个子民——无论是附庸还是藩属，都心甘情愿地追随她们，融入这片充满温暖的土地。"
  Eternal_friendship: "永恒的友谊"
- Eternal_friendship_desc: "永远的友谊让国家政策更加灵活。"
+ Eternal_friendship_desc: "她们之间没有任何誓言的承诺，却从未动摇过彼此的信任。这份永恒的友谊，让小樱的治国之道拥有了更多可能——政策的抉择更加自由，未来的道路更加宽广。"
 
  ### MISSION TITLES ###
 
@@ -560,11 +569,11 @@ l_english:
  cb_skr_german_unification: "德意志统一战争"
  SKR_GERMAN_WAR_NAME: "小樱对$DEFENDER$的德意志统一战争"
  SKR_GERMAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「德意志统一战争」宣战，无法召唤盟友。"
- skr_german_cb_unlocked_tt: "解锁专属宣战理由「德意志统一战争」：\n- 对持有南北德意志省份的国家-50%侵略扩张，-50%战争分数\n- 防御方无法召唤盟友参战"
+ skr_german_cb_unlocked_tt: "§Y解锁专属宣战理由「德意志统一战争」§!：\n- 对持有南北德意志省份的国家§R-50%§!侵略扩张，§R-50%§!战争分数\n- §R防御方无法召唤盟友参战§!"
  cb_skr_italian_unification: "意大利统一战争"
  SKR_ITALIAN_WAR_NAME: "小樱对$DEFENDER$的意大利统一战争"
  SKR_ITALIAN_CB_NO_ALLY_CALL_TT: "正在被小樱的「意大利统一战争」宣战，无法召唤盟友。"
- skr_italian_cb_unlocked_tt: "解锁专属宣战理由「意大利统一战争」：\n- 对持有意大利省份的国家-50%侵略扩张，-50%战争分数\n- 防御方无法召唤盟友参战"
+ skr_italian_cb_unlocked_tt: "§Y解锁专属宣战理由「意大利统一战争」§!：\n- 对持有意大利省份的国家§R-50%§!侵略扩张，§R-50%§!战争分数\n- §R防御方无法召唤盟友参战§!"
  skr_judgment_retry_decision: "再次挑战最终审判"
  skr_judgment_retry_decision_desc: "上一次审判失败了，但小樱不会放弃。集齐全部库洛牌后，再次向审判者发起挑战。"
  skr_search_disturbance_decision: "探查灵力波动"

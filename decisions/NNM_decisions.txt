@@ -37,10 +37,7 @@ country_decisions = {
 						culture_group = MadokaMagica
 						NOT = { is_subject_of_type = mikazuki_ally }
 					}
-					create_subject = {
-						subject_type = mikazuki_ally
-						who = PREV
-					}
+					ROOT = { create_subject = { subject_type = mikazuki_ally subject = PREV } }
 				}
 			}
 		}

@@ -881,7 +881,7 @@ NNM_missions_5 = {
 	NNM_missions_5_3 = {
 		icon = mission_empire
 		position = 3
-		required_missions = { NNM_missions_5_2 NNM_missions_1_2 }
+		required_missions = { NNM_missions_1_2 }
 		provinces_to_highlight = {
 			owned_by = AKE
 		}

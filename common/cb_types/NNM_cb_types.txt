@@ -7,7 +7,6 @@ cb_nnm_magical_girl_duel = {
 		FROM = {
 			culture_group = MadokaMagica
 		}
-		is_neighbor_of = FROM
 	}
 
 	war_goal = nnm_duel_subjugate

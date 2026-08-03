@@ -29,6 +29,27 @@ on_yearly_pulse = {
 			change_government_reform_progress = 300
 			add_years_of_income = 1
 		}
+		if = {
+			limit = {
+				has_country_flag = skr_card_system_active
+				has_country_flag = skr_card_windy_captured
+				has_country_flag = skr_card_fly_captured
+				has_country_flag = skr_card_watery_captured
+				has_country_flag = skr_card_firey_captured
+				has_country_flag = skr_card_earthy_captured
+				has_country_flag = skr_card_thunder_captured
+				has_country_flag = skr_card_sword_captured
+				has_country_flag = skr_card_shield_captured
+				has_country_flag = skr_card_light_captured
+				has_country_flag = skr_card_dark_captured
+				has_country_flag = skr_card_create_captured
+				has_country_flag = skr_card_erase_captured
+				NOT = { has_country_flag = skr_final_judgment_complete }
+				NOT = { has_country_flag = skr_judgment_event_fired }
+			}
+			set_country_flag = skr_judgment_event_fired
+			country_event = { id = ACG_MEC_E_skr_card_events.51 }
+		}
 	}
 }
 

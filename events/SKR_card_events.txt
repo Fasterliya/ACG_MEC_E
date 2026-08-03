@@ -18,348 +18,320 @@ country_event = {
 ### CLOw CARD MANIFESTATION EVENTS ###
 
 # Windy
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.10
 	title = ACG_MEC_E_skr_card_events.10.t
 	desc = ACG_MEC_E_skr_card_events.10.d
 	picture = WEATHER_eventPicture
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_windy_captured } }
-		NOT = { owner = { has_country_flag = skr_card_windy_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_windy_captured }
+		NOT = { has_country_flag = skr_card_windy_manifested }
 	}
 	mean_time_to_happen = { months = 12 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.10.a
-		owner = {
-			set_country_flag = skr_card_windy_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.30 }
-		}
+		set_country_flag = skr_card_windy_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.30 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.10.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.10.c
-		trigger = { owner = { OR = { alliance_with = TMY any_vassal_country = { tag = TMY } } } }
-		add_province_modifier = { name = skr_card_disturbance duration = 365 }
-		owner = {
-			set_country_flag = skr_card_windy_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.30 }
+		trigger = { OR = { alliance_with = TMY any_subject_country = { tag = TMY } } }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 365 }
 		}
+		set_country_flag = skr_card_windy_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.30 }
 	}
 }
 
 # Fly
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.11
 	title = ACG_MEC_E_skr_card_events.11.t
 	desc = ACG_MEC_E_skr_card_events.11.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_fly_captured } }
-		NOT = { owner = { has_country_flag = skr_card_fly_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_fly_captured }
+		NOT = { has_country_flag = skr_card_fly_manifested }
 	}
 	mean_time_to_happen = { months = 18 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.11.a
-		owner = {
-			set_country_flag = skr_card_fly_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.31 }
-		}
+		set_country_flag = skr_card_fly_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.31 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.11.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Watery
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.12
 	title = ACG_MEC_E_skr_card_events.12.t
 	desc = ACG_MEC_E_skr_card_events.12.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_watery_captured } }
-		NOT = { owner = { has_country_flag = skr_card_watery_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_watery_captured }
+		NOT = { has_country_flag = skr_card_watery_manifested }
 	}
 	mean_time_to_happen = { months = 24 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.12.a
-		owner = {
-			set_country_flag = skr_card_watery_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.32 }
-		}
+		set_country_flag = skr_card_watery_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.32 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.12.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Firey
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.13
 	title = ACG_MEC_E_skr_card_events.13.t
 	desc = ACG_MEC_E_skr_card_events.13.d
 	picture = FIRE_eventPicture
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_firey_captured } }
-		NOT = { owner = { has_country_flag = skr_card_firey_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_firey_captured }
+		NOT = { has_country_flag = skr_card_firey_manifested }
 	}
 	mean_time_to_happen = { months = 30 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.13.a
-		owner = {
-			set_country_flag = skr_card_firey_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.33 }
-		}
+		set_country_flag = skr_card_firey_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.33 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.13.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Earthy
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.14
 	title = ACG_MEC_E_skr_card_events.14.t
 	desc = ACG_MEC_E_skr_card_events.14.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_earthy_captured } }
-		NOT = { owner = { has_country_flag = skr_card_earthy_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_earthy_captured }
+		NOT = { has_country_flag = skr_card_earthy_manifested }
 	}
 	mean_time_to_happen = { months = 36 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.14.a
-		owner = {
-			set_country_flag = skr_card_earthy_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.34 }
-		}
+		set_country_flag = skr_card_earthy_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.34 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.14.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Thunder
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.15
 	title = ACG_MEC_E_skr_card_events.15.t
 	desc = ACG_MEC_E_skr_card_events.15.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_thunder_captured } }
-		NOT = { owner = { has_country_flag = skr_card_thunder_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_thunder_captured }
+		NOT = { has_country_flag = skr_card_thunder_manifested }
 	}
 	mean_time_to_happen = { months = 42 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.15.a
-		owner = {
-			set_country_flag = skr_card_thunder_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.35 }
-		}
+		set_country_flag = skr_card_thunder_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.35 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.15.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Sword
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.16
 	title = ACG_MEC_E_skr_card_events.16.t
 	desc = ACG_MEC_E_skr_card_events.16.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_sword_captured } }
-		NOT = { owner = { has_country_flag = skr_card_sword_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_sword_captured }
+		NOT = { has_country_flag = skr_card_sword_manifested }
 	}
 	mean_time_to_happen = { months = 45 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.16.a
-		owner = {
-			set_country_flag = skr_card_sword_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.36 }
-		}
+		set_country_flag = skr_card_sword_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.36 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.16.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Shield
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.17
 	title = ACG_MEC_E_skr_card_events.17.t
 	desc = ACG_MEC_E_skr_card_events.17.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_card_system_active }
-		NOT = { owner = { has_country_flag = skr_card_shield_captured } }
-		NOT = { owner = { has_country_flag = skr_card_shield_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_card_system_active
+		NOT = { has_country_flag = skr_card_shield_captured }
+		NOT = { has_country_flag = skr_card_shield_manifested }
 	}
 	mean_time_to_happen = { months = 45 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.17.a
-		owner = {
-			set_country_flag = skr_card_shield_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.37 }
-		}
+		set_country_flag = skr_card_shield_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.37 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.17.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Light
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.18
 	title = ACG_MEC_E_skr_card_events.18.t
 	desc = ACG_MEC_E_skr_card_events.18.d
 	trigger = {
-		owner = {
-			tag = SKR
-			has_country_flag = skr_card_system_active
-			has_country_flag = skr_card_windy_captured
-			has_country_flag = skr_card_fly_captured
-			has_country_flag = skr_card_watery_captured
-			has_country_flag = skr_card_firey_captured
-			has_country_flag = skr_card_earthy_captured
-			has_country_flag = skr_card_thunder_captured
-			has_country_flag = skr_card_sword_captured
-			has_country_flag = skr_card_shield_captured
-		}
-		NOT = { owner = { has_country_flag = skr_card_light_captured } }
-		NOT = { owner = { has_country_flag = skr_card_light_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR
+		has_country_flag = skr_card_system_active
+		has_country_flag = skr_card_windy_captured
+		has_country_flag = skr_card_fly_captured
+		has_country_flag = skr_card_watery_captured
+		has_country_flag = skr_card_firey_captured
+		has_country_flag = skr_card_earthy_captured
+		has_country_flag = skr_card_thunder_captured
+		has_country_flag = skr_card_sword_captured
+		has_country_flag = skr_card_shield_captured
+
+		NOT = { has_country_flag = skr_card_light_captured }
+		NOT = { has_country_flag = skr_card_light_manifested }
 	}
 	mean_time_to_happen = { months = 60 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.18.a
-		owner = {
-			set_country_flag = skr_card_light_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.38 }
-		}
+		set_country_flag = skr_card_light_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.38 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.18.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Dark
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.19
 	title = ACG_MEC_E_skr_card_events.19.t
 	desc = ACG_MEC_E_skr_card_events.19.d
 	trigger = {
-		owner = {
-			tag = SKR
-			has_country_flag = skr_card_system_active
-			has_country_flag = skr_card_light_captured
-		}
-		NOT = { owner = { has_country_flag = skr_card_dark_captured } }
-		NOT = { owner = { has_country_flag = skr_card_dark_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR
+		has_country_flag = skr_card_system_active
+		has_country_flag = skr_card_light_captured
+
+		NOT = { has_country_flag = skr_card_dark_captured }
+		NOT = { has_country_flag = skr_card_dark_manifested }
 	}
 	mean_time_to_happen = { months = 18 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.19.a
-		owner = {
-			set_country_flag = skr_card_dark_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.39 }
-		}
+		set_country_flag = skr_card_dark_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.39 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.19.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Create
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.20
 	title = ACG_MEC_E_skr_card_events.20.t
 	desc = ACG_MEC_E_skr_card_events.20.d
 	trigger = {
-		owner = {
-			tag = SKR
-			has_country_flag = skr_card_system_active
-			has_country_flag = skr_card_dark_captured
-		}
-		NOT = { owner = { has_country_flag = skr_card_create_captured } }
-		NOT = { owner = { has_country_flag = skr_card_create_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR
+		has_country_flag = skr_card_system_active
+		has_country_flag = skr_card_dark_captured
+
+		NOT = { has_country_flag = skr_card_create_captured }
+		NOT = { has_country_flag = skr_card_create_manifested }
 	}
 	mean_time_to_happen = { months = 30 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.20.a
-		owner = {
-			set_country_flag = skr_card_create_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.40 }
-		}
+		set_country_flag = skr_card_create_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.40 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.20.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Erase
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.21
 	title = ACG_MEC_E_skr_card_events.21.t
 	desc = ACG_MEC_E_skr_card_events.21.d
 	trigger = {
-		owner = {
-			tag = SKR
-			has_country_flag = skr_card_system_active
-			has_country_flag = skr_card_create_captured
-		}
-		NOT = { owner = { has_country_flag = skr_card_erase_captured } }
-		NOT = { owner = { has_country_flag = skr_card_erase_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR
+		has_country_flag = skr_card_system_active
+		has_country_flag = skr_card_create_captured
+
+		NOT = { has_country_flag = skr_card_erase_captured }
+		NOT = { has_country_flag = skr_card_erase_manifested }
 	}
 	mean_time_to_happen = { months = 36 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.21.a
-		owner = {
-			set_country_flag = skr_card_erase_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.41 }
-		}
+		set_country_flag = skr_card_erase_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.41 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.21.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
@@ -393,7 +365,7 @@ country_event = {
 	option = {
 		name = ACG_MEC_E_skr_card_events.30.b
 		trigger = {
-			OR = { alliance_with = TMY any_vassal_country = { tag = TMY } }
+			OR = { alliance_with = TMY any_subject_country = { tag = TMY } }
 		}
 		random_list = {
 			90 = {
@@ -555,7 +527,7 @@ country_event = {
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.33.c
-		trigger = { OR = { alliance_with = TMY any_vassal_country = { tag = TMY } } }
+		trigger = { OR = { alliance_with = TMY any_subject_country = { tag = TMY } } }
 		random_list = {
 			90 = {
 				set_country_flag = skr_card_firey_captured
@@ -791,7 +763,7 @@ country_event = {
 	option = {
 		name = ACG_MEC_E_skr_card_events.38.b
 		trigger = {
-			OR = { alliance_with = TMY any_vassal_country = { tag = TMY } }
+			OR = { alliance_with = TMY any_subject_country = { tag = TMY } }
 		}
 		random_list = {
 			85 = {
@@ -1041,210 +1013,194 @@ country_event = {
 ### CLEAR CARD MANIFESTATION EVENTS ###
 
 # Gale
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.61
 	title = ACG_MEC_E_skr_card_events.61.t
 	desc = ACG_MEC_E_skr_card_events.61.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_gale_captured } }
-		NOT = { owner = { has_country_flag = skr_card_gale_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_gale_captured }
+		NOT = { has_country_flag = skr_card_gale_manifested }
 	}
 	mean_time_to_happen = { months = 30 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.61.a
-		owner = {
-			set_country_flag = skr_card_gale_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.71 }
-		}
+		set_country_flag = skr_card_gale_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.71 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.61.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Siege
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.62
 	title = ACG_MEC_E_skr_card_events.62.t
 	desc = ACG_MEC_E_skr_card_events.62.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_siege_captured } }
-		NOT = { owner = { has_country_flag = skr_card_siege_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_siege_captured }
+		NOT = { has_country_flag = skr_card_siege_manifested }
 	}
 	mean_time_to_happen = { months = 36 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.62.a
-		owner = {
-			set_country_flag = skr_card_siege_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.72 }
-		}
+		set_country_flag = skr_card_siege_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.72 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.62.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Aqua
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.63
 	title = ACG_MEC_E_skr_card_events.63.t
 	desc = ACG_MEC_E_skr_card_events.63.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_aqua_captured } }
-		NOT = { owner = { has_country_flag = skr_card_aqua_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_aqua_captured }
+		NOT = { has_country_flag = skr_card_aqua_manifested }
 	}
 	mean_time_to_happen = { months = 42 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.63.a
-		owner = {
-			set_country_flag = skr_card_aqua_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.73 }
-		}
+		set_country_flag = skr_card_aqua_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.73 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.63.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Action
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.64
 	title = ACG_MEC_E_skr_card_events.64.t
 	desc = ACG_MEC_E_skr_card_events.64.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_action_captured } }
-		NOT = { owner = { has_country_flag = skr_card_action_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_action_captured }
+		NOT = { has_country_flag = skr_card_action_manifested }
 	}
 	mean_time_to_happen = { months = 48 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.64.a
-		owner = {
-			set_country_flag = skr_card_action_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.74 }
-		}
+		set_country_flag = skr_card_action_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.74 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.64.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Record
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.65
 	title = ACG_MEC_E_skr_card_events.65.t
 	desc = ACG_MEC_E_skr_card_events.65.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_record_captured } }
-		NOT = { owner = { has_country_flag = skr_card_record_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_record_captured }
+		NOT = { has_country_flag = skr_card_record_manifested }
 	}
 	mean_time_to_happen = { months = 54 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.65.a
-		owner = {
-			set_country_flag = skr_card_record_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.75 }
-		}
+		set_country_flag = skr_card_record_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.75 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.65.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Flight
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.66
 	title = ACG_MEC_E_skr_card_events.66.t
 	desc = ACG_MEC_E_skr_card_events.66.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_flight_captured } }
-		NOT = { owner = { has_country_flag = skr_card_flight_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_flight_captured }
+		NOT = { has_country_flag = skr_card_flight_manifested }
 	}
 	mean_time_to_happen = { months = 60 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.66.a
-		owner = {
-			set_country_flag = skr_card_flight_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.76 }
-		}
+		set_country_flag = skr_card_flight_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.76 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.66.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Blaze
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.67
 	title = ACG_MEC_E_skr_card_events.67.t
 	desc = ACG_MEC_E_skr_card_events.67.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_blaze_captured } }
-		NOT = { owner = { has_country_flag = skr_card_blaze_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_blaze_captured }
+		NOT = { has_country_flag = skr_card_blaze_manifested }
 	}
 	mean_time_to_happen = { months = 66 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.67.a
-		owner = {
-			set_country_flag = skr_card_blaze_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.77 }
-		}
+		set_country_flag = skr_card_blaze_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.77 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.67.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 
 # Repair
-province_event = {
+country_event = {
 	id = ACG_MEC_E_skr_card_events.68
 	title = ACG_MEC_E_skr_card_events.68.t
 	desc = ACG_MEC_E_skr_card_events.68.d
 	trigger = {
-		owner = { tag = SKR has_country_flag = skr_clear_card_awakened }
-		NOT = { owner = { has_country_flag = skr_card_repair_captured } }
-		NOT = { owner = { has_country_flag = skr_card_repair_manifested } }
-		NOT = { has_province_modifier = skr_card_disturbance }
-		NOT = { has_province_modifier = skr_card_disturbance_severe }
+		tag = SKR has_country_flag = skr_clear_card_awakened
+		NOT = { has_country_flag = skr_card_repair_captured }
+		NOT = { has_country_flag = skr_card_repair_manifested }
 	}
 	mean_time_to_happen = { months = 72 }
 	option = {
 		name = ACG_MEC_E_skr_card_events.68.a
-		owner = {
-			set_country_flag = skr_card_repair_manifested
-			country_event = { id = ACG_MEC_E_skr_card_events.78 }
-		}
+		set_country_flag = skr_card_repair_manifested
+		country_event = { id = ACG_MEC_E_skr_card_events.78 }
 	}
 	option = {
 		name = ACG_MEC_E_skr_card_events.68.b
-		add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		random_owned_province = {
+			add_province_modifier = { name = skr_card_disturbance duration = 1825 }
+		}
 	}
 }
 

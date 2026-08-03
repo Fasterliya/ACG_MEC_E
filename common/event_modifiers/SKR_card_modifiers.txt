@@ -408,3 +408,15 @@ skr_mare_nostrum_modifier = {
 	trade_efficiency = 0.15
 	naval_forcelimit_modifier = 0.30
 }
+
+### EARLY MISSION TEMP BUFFS ###
+
+skr_conquest_frenzy = {
+	land_morale = 0.10
+	discipline = 0.025
+}
+
+skr_harvest_season = {
+	development_cost = -0.10
+	production_efficiency = 0.05
+}
