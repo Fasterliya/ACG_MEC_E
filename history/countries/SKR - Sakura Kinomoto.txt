@@ -6,6 +6,7 @@ religion = acg
 historical_friend = TMY
 technology_group = tech_gensokyan
 capital = 266
+elector = yes
 
 1444.11.11 = {
 	monarch = {

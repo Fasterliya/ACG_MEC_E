@@ -6,10 +6,10 @@ country_decisions = {
 			has_country_flag = skr_card_system_active
 		}
 		allow = {
-			is_at_war = no
+			always = yes
 		}
 		effect = {
-			country_event = { id = skr_card_events.100 }
+			country_event = { id = ACG_MEC_E_skr_card_events.100 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -25,7 +25,7 @@ country_decisions = {
 			always = yes
 		}
 		effect = {
-			country_event = { id = skr_card_events.200 }
+			country_event = { id = ACG_MEC_E_skr_card_events.200 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -54,7 +54,7 @@ country_decisions = {
 			has_country_flag = skr_card_erase_captured
 		}
 		effect = {
-			country_event = { id = skr_card_events.52 }
+			country_event = { id = ACG_MEC_E_skr_card_events.52 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -70,7 +70,7 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
-			country_event = { id = skr_card_events.51 }
+			country_event = { id = ACG_MEC_E_skr_card_events.51 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -106,6 +106,88 @@ country_decisions = {
 			clr_country_flag = skr_card_flight_manifested
 			clr_country_flag = skr_card_blaze_manifested
 			clr_country_flag = skr_card_repair_manifested
+			random_list = {
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_windy_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.30 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_fly_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.31 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_watery_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.32 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_firey_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.33 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_earthy_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.34 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_thunder_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.35 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_sword_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.36 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_shield_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.37 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_light_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.38 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_dark_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.39 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_create_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.40 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_erase_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.41 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_gale_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.71 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_siege_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.72 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_aqua_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.73 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_action_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.74 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_record_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.75 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_flight_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.76 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_blaze_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.77 }
+				}
+				10 = {
+					modifier = { factor = 0 limit = { has_country_flag = skr_card_repair_captured } }
+					country_event = { id = ACG_MEC_E_skr_card_events.78 }
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 0

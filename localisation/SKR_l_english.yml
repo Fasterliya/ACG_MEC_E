@@ -2,275 +2,275 @@
 
  ### EVENT TITLES ###
 
- skr_card_events.1.t: "SpSKNfN"
- skr_card_events.1.d: "N,gäSw„vSpSKNfN«ˆÑS°s0SbVƒR„v¬wô•ÿ“^mLrÛVce0R†NhQýVT0W0ÅV‰˜KSëVSƒRìNhQè6eÞVeg0"
- skr_card_events.1.a: "VËY6eÆ–“^mLr0"
+ ACG_MEC_E_skr_card_events.1.t: "SpSKNfN"
+ ACG_MEC_E_skr_card_events.1.d: "N,gäSw„vSpSKNfN«ˆÑS°s0SbVƒR„v¬wô•ÿ“^mLrÛVce0R†NhQýVT0W0ÅV‰˜KSëVSƒRìNhQè6eÞVeg0"
+ ACG_MEC_E_skr_card_events.1.a: "VËY6eÆ–“^mLr0"
 
  # Windy
- skr_card_events.10.t: "V8^:VÎ˜"
- skr_card_events.10.d: "å‹w¥bJT†Ncíupeåe„vV8^:VÎ˜ÿ?bKS×SmcÿœQ0u«ˆÁk0<ONN=f“^mLr(WD–ÑjOmy0"
- skr_card_events.10.a: ">mS1j»SŒåg0"
- skr_card_events.10.b: "‚föednÿ R:V2–ƒ0"
- skr_card_events.10.c: "åwNÐc›O†N2–Î˜ªcËeËzIRúQÑS0"
+ ACG_MEC_E_skr_card_events.10.t: "V8^:VÎ˜"
+ ACG_MEC_E_skr_card_events.10.d: "å‹w¥bJT†Ncíupeåe„vV8^:VÎ˜ÿ?bKS×SmcÿœQ0u«ˆÁk0<ONN=f“^mLr(WD–ÑjOmy0"
+ ACG_MEC_E_skr_card_events.10.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.10.b: "‚föednÿ R:V2–ƒ0"
+ ACG_MEC_E_skr_card_events.10.c: "åwNÐc›O†N2–Î˜ªcËeËzIRúQÑS0"
 
  # Fly
- skr_card_events.11.t: "èT'YÞ˜ž"
- skr_card_events.11.d: "NêSèT'Y„vÞ˜ž(WÎWG•NzzØvËeÿ4–qV<ri†Nte*N0W:S0FU–NbeúQLˆÿirDÐ“+vêu0"
- skr_card_events.11.a: ">mS1j»SŒåg0"
- skr_card_events.11.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.11.t: "èT'YÞ˜ž"
+ ACG_MEC_E_skr_card_events.11.d: "NêSèT'Y„vÞ˜ž(WÎWG•NzzØvËeÿ4–qV<ri†Nte*N0W:S0FU–NbeúQLˆÿirDÐ“+vêu0"
+ ACG_MEC_E_skr_card_events.11.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.11.b: "‚föedn0"
 
  # Watery
- skr_card_events.12.t: "Nf4l±`"
- skr_card_events.12.d: "³l4làeEeÛlånÿ0WN4lŒmNWˆS04l-N„v|œ²mNúQ°s†NV8^Lˆ:N0N.V“^mLrck(WÙÌ‘jOqN0"
- skr_card_events.12.a: ">mS1j»SŒåg0"
- skr_card_events.12.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.12.t: "Nf4l±`"
+ ACG_MEC_E_skr_card_events.12.d: "³l4làeEeÛlånÿ0WN4lŒmNWˆS04l-N„v|œ²mNúQ°s†NV8^Lˆ:N0N.V“^mLrck(WÙÌ‘jOqN0"
+ ACG_MEC_E_skr_card_events.12.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.12.b: "‚föedn0"
 
  # Firey
- skr_card_events.13.t: "ÞíukpÅ`"
- skr_card_events.13.d: "ÎW^YYàeEewkpÿˆm2––mgKbàeVr0Èp0qÿNiO	gêñT„va×Vÿ=f“^mLr(WjOmy0"
- skr_card_events.13.a: ">mS1j»SŒåg0"
- skr_card_events.13.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.13.t: "ÞíukpÅ`"
+ ACG_MEC_E_skr_card_events.13.d: "ÎW^YYàeEewkpÿˆm2––mgKbàeVr0Èp0qÿNiO	gêñT„va×Vÿ=f“^mLr(WjOmy0"
+ ACG_MEC_E_skr_card_events.13.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.13.b: "‚föedn0"
 
  # Earthy
- skr_card_events.14.t: "0W•^—¨R"
- skr_card_events.14.d: "cíu„v0W—ŒT0Wb—LXw–ðVpbNwSV0W00W•^N<ONN	gÀNHNN‰(Wûy¨R0"
- skr_card_events.14.a: ">mS1j»SŒåg0"
- skr_card_events.14.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.14.t: "0W•^—¨R"
+ ACG_MEC_E_skr_card_events.14.d: "cíu„v0W—ŒT0Wb—LXw–ðVpbNwSV0W00W•^N<ONN	gÀNHNN‰(Wûy¨R0"
+ ACG_MEC_E_skr_card_events.14.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.14.b: "‚föedn0"
 
  # Thunder
- skr_card_events.15.t: "÷–´fŒp³R"
- skr_card_events.15.d: "Þõu„v÷–´fNjPûQSbNw'Y0Wÿ›Q–àeÕlLˆ›Qÿú^Qr«ˆê•5uûQ-N0"
- skr_card_events.15.a: ">mS1j»SŒåg0"
- skr_card_events.15.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.15.t: "÷–´fŒp³R"
+ ACG_MEC_E_skr_card_events.15.d: "Þõu„v÷–´fNjPûQSbNw'Y0Wÿ›Q–àeÕlLˆ›Qÿú^Qr«ˆê•5uûQ-N0"
+ ACG_MEC_E_skr_card_events.15.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.15.b: "‚föedn0"
 
  # Sword
- skr_card_events.16.t: "ÂrqN„vQR"
- skr_card_events.16.d: "SV0W‰š›Qz6q1Y»S†Nµc6RÿëXuQìNN­eÑSu‰NgbŒT—e´k0NŠbàebV„vQR<ONNµc6R†NNb	gºN„va×V0"
- skr_card_events.16.a: ">mS1j»SŒåg0"
- skr_card_events.16.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.16.t: "ÂrqN„vQR"
+ ACG_MEC_E_skr_card_events.16.d: "SV0W‰š›Qz6q1Y»S†Nµc6RÿëXuQìNN­eÑSu‰NgbŒT—e´k0NŠbàebV„vQR<ONNµc6R†NNb	gºN„va×V0"
+ ACG_MEC_E_skr_card_events.16.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.16.b: "‚föedn0"
 
  # Shield
- skr_card_events.17.t: "àebVOSœ–"
- skr_card_events.17.d: "Nµ^‰^X«ˆàebV„vOSœ–SôVÿàeºNýwY`—Ñ0OSœ–…Qè„vºNmNàeÕlúQeg0"
- skr_card_events.17.a: ">mS1j»SŒåg0"
- skr_card_events.17.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.17.t: "àebVOSœ–"
+ ACG_MEC_E_skr_card_events.17.d: "Nµ^‰^X«ˆàebV„vOSœ–SôVÿàeºNýwY`—Ñ0OSœ–…Qè„vºNmNàeÕlúQeg0"
+ ACG_MEC_E_skr_card_events.17.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.17.b: "‚föedn0"
 
  # Light
- skr_card_events.18.t: ":R<w„vIQ’‚"
- skr_card_events.18.d: "NScíu„v‹vIQ<ri†Nteµ^ÎW^ÿESlàeÕlck8^uIm0Ù=f“^mLr-Ng:V„v2N.VKNN0"
- skr_card_events.18.a: ">mS1j»SŒåg0"
- skr_card_events.18.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.18.t: ":R<w„vIQ’‚"
+ ACG_MEC_E_skr_card_events.18.d: "NScíu„v‹vIQ<ri†Nteµ^ÎW^ÿESlàeÕlck8^uIm0Ù=f“^mLr-Ng:V„v2N.VKNN0"
+ ACG_MEC_E_skr_card_events.18.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.18.b: "‚föedn0"
 
  # Dark
- skr_card_events.19.t: "àeKS„vÑž—f"
- skr_card_events.19.d: "Ñž—fTlV†Nte*N0W:S0‹v)Y‚YTÑžYÿFUï-N­eÿP`La…ö^0æSN.Vg:V„v“^mLrúQ°s†N0"
- skr_card_events.19.a: ">mS1j»SŒåg0"
- skr_card_events.19.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.19.t: "àeKS„vÑž—f"
+ ACG_MEC_E_skr_card_events.19.d: "Ñž—fTlV†Nte*N0W:S0‹v)Y‚YTÑžYÿFUï-N­eÿP`La…ö^0æSN.Vg:V„v“^mLrúQ°s†N0"
+ ACG_MEC_E_skr_card_events.19.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.19.b: "‚föedn0"
 
  # Create
- skr_card_events.20.t: "ImÇeg„vIu"
- skr_card_events.20.d: "fNM|ŒTIujO-N„v‹Nir·u·uS:NwžRÿÎW^-NúQ°s†NN”^XR(W„vuirŒTú^Qr0"
- skr_card_events.20.a: ">mS1j»SŒåg0"
- skr_card_events.20.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.20.t: "ImÇeg„vIu"
+ ACG_MEC_E_skr_card_events.20.d: "fNM|ŒTIujO-N„v‹Nir·u·uS:NwžRÿÎW^-NúQ°s†NN”^XR(W„vuirŒTú^Qr0"
+ ACG_MEC_E_skr_card_events.20.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.20.b: "‚föedn0"
 
  # Erase
- skr_card_events.21.t: "ˆm1Y„vºNìN"
- skr_card_events.21.d: "ESlF–íuˆm1Y—VàeqVàe*ŽÿÿNiOÎN*gXR(WÇ0Ù=fgTN.V“^mLr\"ˆm\"„v›RÏ‘0"
- skr_card_events.21.a: ">mS1j»SŒåg0"
- skr_card_events.21.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.21.t: "ˆm1Y„vºNìN"
+ ACG_MEC_E_skr_card_events.21.d: "ESlF–íuˆm1Y—VàeqVàe*ŽÿÿNiOÎN*gXR(WÇ0Ù=fgTN.V“^mLr\"ˆm\"„v›RÏ‘0"
+ ACG_MEC_E_skr_card_events.21.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.21.b: "‚föedn0"
 
  ### CHALLENGE EVENT TITLES ###
 
- skr_card_events.30.t: "Î˜KNSpS"
- skr_card_events.30.d: "S1jŒb0R†N:VÎ˜„vn4Y=f“^mLr0Î˜01Yµc†N0"
- skr_card_events.30.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.30.b: "åwNÐc›O†N2–Î˜¾‹Y0"
+ ACG_MEC_E_skr_card_events.30.t: "Î˜KNSpS"
+ ACG_MEC_E_skr_card_events.30.d: "S1jŒb0R†N:VÎ˜„vn4Y=f“^mLr0Î˜01Yµc†N0"
+ ACG_MEC_E_skr_card_events.30.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.30.b: "åwNÐc›O†N2–Î˜¾‹Y0"
 
- skr_card_events.31.t: "ÔKNSpS"
- skr_card_events.31.d: "=f“^mLr0Ô00±êSèT'Y„vÞ˜ž—‰KSëVSpS0"
- skr_card_events.31.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.31.b: "(uÎ˜KNaSý*ŽƒR„vLˆ*Ž0"
+ ACG_MEC_E_skr_card_events.31.t: "ÔKNSpS"
+ ACG_MEC_E_skr_card_events.31.d: "=f“^mLr0Ô00±êSèT'Y„vÞ˜ž—‰KSëVSpS0"
+ ACG_MEC_E_skr_card_events.31.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.31.b: "(uÎ˜KNaSý*ŽƒR„vLˆ*Ž0"
 
- skr_card_events.32.t: "4lKNSpS"
- skr_card_events.32.d: "4l±`„vn4Y“^mLr04l0>f°s†Nw«Ž0"
- skr_card_events.32.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.32.b: "(uÎ˜KNaSŒTÔKNaSôVðVƒR0"
+ ACG_MEC_E_skr_card_events.32.t: "4lKNSpS"
+ ACG_MEC_E_skr_card_events.32.d: "4l±`„vn4Y“^mLr04l0>f°s†Nw«Ž0"
+ ACG_MEC_E_skr_card_events.32.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.32.b: "(uÎ˜KNaSŒTÔKNaSôVðVƒR0"
 
- skr_card_events.33.t: "kpKNSpS"
- skr_card_events.33.d: "“^mLr0kp0(WÎW^-NÃV†wP†0"
- skr_card_events.33.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.33.b: "(u4lKNaS‹S6Rkp¿R0"
- skr_card_events.33.c: "åwNÆQY†N2–kpb—eg0"
+ ACG_MEC_E_skr_card_events.33.t: "kpKNSpS"
+ ACG_MEC_E_skr_card_events.33.d: "“^mLr0kp0(WÎW^-NÃV†wP†0"
+ ACG_MEC_E_skr_card_events.33.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.33.b: "(u4lKNaS‹S6Rkp¿R0"
+ ACG_MEC_E_skr_card_events.33.c: "åwNÆQY†N2–kpb—eg0"
 
- skr_card_events.34.t: "WKNSpS"
- skr_card_events.34.d: "0WN„v*`ir“^mLr0W0ÈuŽN»”úQ†N0Wb—0"
- skr_card_events.34.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.34.b: "(uþvKNaS„gQrOSœ–P–6RƒR„vLˆ¨R0"
+ ACG_MEC_E_skr_card_events.34.t: "WKNSpS"
+ ACG_MEC_E_skr_card_events.34.d: "0WN„v*`ir“^mLr0W0ÈuŽN»”úQ†N0Wb—0"
+ ACG_MEC_E_skr_card_events.34.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.34.b: "(uþvKNaS„gQrOSœ–P–6RƒR„vLˆ¨R0"
 
- skr_card_events.35.t: "÷–KNSpS"
- skr_card_events.35.d: "÷–‘N-NØvËeNw“^mLr0÷–00"
- skr_card_events.35.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.35.b: "(ukpKNaSŒTÎ˜KNaS6R.NGSlAm0"
+ ACG_MEC_E_skr_card_events.35.t: "÷–KNSpS"
+ ACG_MEC_E_skr_card_events.35.d: "÷–‘N-NØvËeNw“^mLr0÷–00"
+ ACG_MEC_E_skr_card_events.35.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.35.b: "(ukpKNaSŒTÎ˜KNaS6R.NGSlAm0"
 
- skr_card_events.36.t: "QRKNSpS"
- skr_card_events.36.d: "“^mLr0QR0D–«Ž(W†NS†˜«ŽN0"
- skr_card_events.36.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.36.b: "(uþvKNaS<h!cQR„vIeûQ0"
+ ACG_MEC_E_skr_card_events.36.t: "QRKNSpS"
+ ACG_MEC_E_skr_card_events.36.d: "“^mLr0QR0D–«Ž(W†NS†˜«ŽN0"
+ ACG_MEC_E_skr_card_events.36.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.36.b: "(uþvKNaS<h!cQR„vIeûQ0"
 
- skr_card_events.37.t: "þvKNSpS"
- skr_card_events.37.d: "“^mLr0þv0„gQr†NàeÕlIe4x„vOSœ–0"
- skr_card_events.37.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.37.b: "(uQRKNaS:Rzþv„v2–¡V0"
+ ACG_MEC_E_skr_card_events.37.t: "þvKNSpS"
+ ACG_MEC_E_skr_card_events.37.d: "“^mLr0þv0„gQr†NàeÕlIe4x„vOSœ–0"
+ ACG_MEC_E_skr_card_events.37.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.37.b: "(uQRKNaS:Rzþv„v2–¡V0"
 
- skr_card_events.38.t: "IQKNSpS"
- skr_card_events.38.d: "g:V„v“^mLrKNN0IQ0°s«Ž†N0"
- skr_card_events.38.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.38.b: "åwNOS©RRceƒR„vèla›R0"
+ ACG_MEC_E_skr_card_events.38.t: "IQKNSpS"
+ ACG_MEC_E_skr_card_events.38.d: "g:V„v“^mLrKNN0IQ0°s«Ž†N0"
+ ACG_MEC_E_skr_card_events.38.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.38.b: "åwNOS©RRceƒR„vèla›R0"
 
- skr_card_events.39.t: "—fKNSpS"
- skr_card_events.39.d: "0—f0joO(WIQ’‚KNT0NIQ’N:NhˆÌ‘0"
- skr_card_events.39.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.39.b: "(uIQKNaSgq®N—fKNaS„vNb(W0"
+ ACG_MEC_E_skr_card_events.39.t: "—fKNSpS"
+ ACG_MEC_E_skr_card_events.39.d: "0—f0joO(WIQ’‚KNT0NIQ’N:NhˆÌ‘0"
+ ACG_MEC_E_skr_card_events.39.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.39.b: "(uIQKNaSgq®N—fKNaS„vNb(W0"
 
- skr_card_events.40.t: "RKNSpS"
- skr_card_events.40.d: "“^mLr0R0©‹Z†‰^KNirØS:N°sžR0"
- skr_card_events.40.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.40.b: "(uIQN—f„v›RÏ‘LušRwžRNZ†‰^„v¹Lu0"
+ ACG_MEC_E_skr_card_events.40.t: "RKNSpS"
+ ACG_MEC_E_skr_card_events.40.d: "“^mLr0R0©‹Z†‰^KNirØS:N°sžR0"
+ ACG_MEC_E_skr_card_events.40.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.40.b: "(uIQN—f„v›RÏ‘LušRwžRNZ†‰^„v¹Lu0"
 
- skr_card_events.41.t: "ˆmKNSpS"
- skr_card_events.41.d: "gTN.V“^mLr0ˆm00ƒR¹b»SNRXR(W0"
- skr_card_events.41.a: "SÕ‹ôv¥cSpS0"
- skr_card_events.41.b: "(uRKNaSùR—bˆm„v›RÏ‘0"
+ ACG_MEC_E_skr_card_events.41.t: "ˆmKNSpS"
+ ACG_MEC_E_skr_card_events.41.d: "gTN.V“^mLr0ˆm00ƒR¹b»SNRXR(W0"
+ ACG_MEC_E_skr_card_events.41.a: "SÕ‹ôv¥cSpS0"
+ ACG_MEC_E_skr_card_events.41.b: "(uRKNaSùR—bˆm„v›RÏ‘0"
 
  ### TMY EVENT ###
 
- skr_card_events.50.t: "åwN„v³QÃV"
- skr_card_events.50.d: "åwNhˆ:y?aa&^†˜idÉbôušN ReQS1j„v×e^NÿNTˆR²bÙGrW0W0"
- skr_card_events.50.a: "0kÎåwN0"
+ ACG_MEC_E_skr_card_events.50.t: "åwN„v³QÃV"
+ ACG_MEC_E_skr_card_events.50.d: "åwNhˆ:y?aa&^†˜idÉbôušN ReQS1j„v×e^NÿNTˆR²bÙGrW0W0"
+ ACG_MEC_E_skr_card_events.50.a: "0kÎåwN0"
 
  ### FINAL JUDGMENT ###
 
- skr_card_events.51.t: "gT„v¡R2R"
- skr_card_events.51.d: "ASŒN.V“^mLrhQè6eÆ–ŒRÕk0¡R2RwgúQ°s†N0ÅV‰˜¥c×SgÈu„vwŒš0"
- skr_card_events.51.a: "Îb0"
+ ACG_MEC_E_skr_card_events.51.t: "gT„v¡R2R"
+ ACG_MEC_E_skr_card_events.51.d: "ASŒN.V“^mLrhQè6eÆ–ŒRÕk0¡R2RwgúQ°s†N0ÅV‰˜¥c×SgÈu„vwŒš0"
+ ACG_MEC_E_skr_card_events.51.a: "Îb0"
 
  ### SAKURA CARD ###
 
- skr_card_events.52.t: "1jKNaSÉ‰’‘"
- skr_card_events.52.d: "S1jê«Ž„vT››RÏ‚’‘ÿ“^mLr«ˆÍ‘°eKˆN†N1jKNT››R0dkTïSåNlS:Nôf:V„v1jKNaS†N0"
- skr_card_events.52.a: "ŒRblS0"
+ ACG_MEC_E_skr_card_events.52.t: "1jKNaSÉ‰’‘"
+ ACG_MEC_E_skr_card_events.52.d: "S1jê«Ž„vT››RÏ‚’‘ÿ“^mLr«ˆÍ‘°eKˆN†N1jKNT››R0dkTïSåNlS:Nôf:V„v1jKNaS†N0"
+ ACG_MEC_E_skr_card_events.52.a: "ŒRblS0"
 
  ### CLEAR CARD AWAKENING ###
 
- skr_card_events.60.t: "fKNFQ"
- skr_card_events.60.d: "S1j„vT››RÍN(WN­ežX•0°e„vaSLr<ONN(WàeaÆ‹-N«ˆR.†NúQegfLrúQ°s†N0"
- skr_card_events.60.a: "VËYûRŒbfLr0"
+ ACG_MEC_E_skr_card_events.60.t: "fKNFQ"
+ ACG_MEC_E_skr_card_events.60.d: "S1j„vT››RÍN(WN­ežX•0°e„vaSLr<ONN(WàeaÆ‹-N«ˆR.†NúQegfLrúQ°s†N0"
+ ACG_MEC_E_skr_card_events.60.a: "VËYûRŒbfLr0"
 
  # Clear Card Manifestations
- skr_card_events.61.t: "V8^lAm"
- skr_card_events.61.d: "úQ°s†NMRNb*g	g„v:VÎ˜°saŒ0<ONN=fN.V°e„vaSLr0"
- skr_card_events.61.a: ">mS1j»SŒåg0"
- skr_card_events.61.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.61.t: "V8^lAm"
+ ACG_MEC_E_skr_card_events.61.d: "úQ°s†NMRNb*g	g„v:VÎ˜°saŒ0<ONN=fN.V°e„vaSLr0"
+ ACG_MEC_E_skr_card_events.61.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.61.b: "‚föedn0"
 
- skr_card_events.62.t: "!X’WðVƒX"
- skr_card_events.62.d: "ôVIeNµ^ÎW!XV8^ðV¾–ÿÿNiO	gÐgÍy›RÏ‘(W‡^²bƒR0"
- skr_card_events.62.a: ">mS1j»SŒåg0"
- skr_card_events.62.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.62.t: "!X’WðVƒX"
+ ACG_MEC_E_skr_card_events.62.d: "ôVIeNµ^ÎW!XV8^ðV¾–ÿÿNiO	gÐgÍy›RÏ‘(W‡^²bƒR0"
+ ACG_MEC_E_skr_card_events.62.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.62.b: "‚föedn0"
 
- skr_card_events.63.t: "V8^4ln"
- skr_card_events.63.d: "=nãSúQ°s†NGY*`„v4lAmÿ9‚êSàeÕlck8^*‚Lˆ0"
- skr_card_events.63.a: ">mS1j»SŒåg0"
- skr_card_events.63.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.63.t: "V8^4ln"
+ ACG_MEC_E_skr_card_events.63.d: "=nãSúQ°s†NGY*`„v4lAmÿ9‚êSàeÕlck8^*‚Lˆ0"
+ ACG_MEC_E_skr_card_events.63.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.63.b: "‚föedn0"
 
- skr_card_events.64.t: "¬wûy°saŒ"
- skr_card_events.64.d: "‹Nir(WàeºNæ‰°x„vÅ`µQNêLˆûy¨R0"
- skr_card_events.64.a: ">mS1j»SŒåg0"
- skr_card_events.64.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.64.t: "¬wûy°saŒ"
+ ACG_MEC_E_skr_card_events.64.d: "‹Nir(WàeºNæ‰°x„vÅ`µQNêLˆûy¨R0"
+ ACG_MEC_E_skr_card_events.64.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.64.b: "‚föedn0"
 
- skr_card_events.65.t: "°‹ÆVÍ‘°s"
- skr_card_events.65.d: "ÎW^-NúQ°s†NegêÇ»S„v‰^qVÿÇ»S„v‹NöN(WÍ‘o0"
- skr_card_events.65.a: ">mS1j»SŒåg0"
- skr_card_events.65.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.65.t: "°‹ÆVÍ‘°s"
+ ACG_MEC_E_skr_card_events.65.d: "ÎW^-NúQ°s†NegêÇ»S„v‰^qVÿÇ»S„v‹NöN(WÍ‘o0"
+ ACG_MEC_E_skr_card_events.65.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.65.b: "‚föedn0"
 
- skr_card_events.66.t: "Þ˜Lˆ1Yµc"
- skr_card_events.66.d: ")Yúz.ŸŒTÎW-N„v¨RirVËY(Wzz-Nonm0"
- skr_card_events.66.a: ">mS1j»SŒåg0"
- skr_card_events.66.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.66.t: "Þ˜Lˆ1Yµc"
+ ACG_MEC_E_skr_card_events.66.d: ")Yúz.ŸŒTÎW-N„v¨RirVËY(Wzz-Nonm0"
+ ACG_MEC_E_skr_card_events.66.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.66.b: "‚föedn0"
 
- skr_card_events.67.t: "Èp0qQ°s"
- skr_card_events.67.d: "ÔkKNMRôf:V„vkp0q-^wS†NÎW^0NÍyhQ°e„vkpKN›R0"
- skr_card_events.67.a: ">mS1j»SŒåg0"
- skr_card_events.67.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.67.t: "Èp0qQ°s"
+ ACG_MEC_E_skr_card_events.67.d: "ÔkKNMRôf:V„vkp0q-^wS†NÎW^0NÍyhQ°e„vkpKN›R0"
+ ACG_MEC_E_skr_card_events.67.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.67.b: "‚föedn0"
 
- skr_card_events.68.t: "4xmcîOY"
- skr_card_events.68.d: "mcOW„vú^Qr(WàeºNîO.„vÅ`µQNêLˆb`Y0"
- skr_card_events.68.a: ">mS1j»SŒåg0"
- skr_card_events.68.b: "‚föedn0"
+ ACG_MEC_E_skr_card_events.68.t: "4xmcîOY"
+ ACG_MEC_E_skr_card_events.68.d: "mcOW„vú^Qr(WàeºNîO.„vÅ`µQNêLˆb`Y0"
+ ACG_MEC_E_skr_card_events.68.a: ">mS1j»SŒåg0"
+ ACG_MEC_E_skr_card_events.68.b: "‚föedn0"
 
  # Clear Card Challenges
- skr_card_events.71.t: "¾uÎ˜SpS"
- skr_card_events.71.d: "fLr0¾uÎ˜0(W´fÎ˜-N>f°s0"
- skr_card_events.71.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.71.t: "¾uÎ˜SpS"
+ ACG_MEC_E_skr_card_events.71.d: "fLr0¾uÎ˜0(W´fÎ˜-N>f°s0"
+ ACG_MEC_E_skr_card_events.71.a: "SÕ‹SpS0"
 
- skr_card_events.72.t: "SôVSpS"
- skr_card_events.72.d: "fLr0SôV0©‹IeÎWØS—VøRek¾–Lˆ0"
- skr_card_events.72.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.72.t: "SôVSpS"
+ ACG_MEC_E_skr_card_events.72.d: "fLr0SôV0©‹IeÎWØS—VøRek¾–Lˆ0"
+ ACG_MEC_E_skr_card_events.72.a: "SÕ‹SpS0"
 
- skr_card_events.73.t: "4lnSpS"
- skr_card_events.73.d: "fLr04ln0ÍdµcNw=nãS„vNR4lAm0"
- skr_card_events.73.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.73.t: "4lnSpS"
+ ACG_MEC_E_skr_card_events.73.d: "fLr04ln0ÍdµcNw=nãS„vNR4lAm0"
+ ACG_MEC_E_skr_card_events.73.a: "SÕ‹SpS0"
 
- skr_card_events.74.t: "Lˆ¨RSpS"
- skr_card_events.74.d: "fLr0Lˆ¨R0©‹irSO	g†NêñT„va×V0"
- skr_card_events.74.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.74.t: "Lˆ¨RSpS"
+ ACG_MEC_E_skr_card_events.74.d: "fLr0Lˆ¨R0©‹irSO	g†NêñT„va×V0"
+ ACG_MEC_E_skr_card_events.74.a: "SÕ‹SpS0"
 
- skr_card_events.75.t: "°‹UVSpS"
- skr_card_events.75.d: "fLr0°‹UV0Í‘°s†NÇ»S„vNR0"
- skr_card_events.75.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.75.t: "°‹UVSpS"
+ ACG_MEC_E_skr_card_events.75.d: "fLr0°‹UV0Í‘°s†NÇ»S„vNR0"
+ ACG_MEC_E_skr_card_events.75.a: "SÕ‹SpS0"
 
- skr_card_events.76.t: "Þ˜ÔSpS"
- skr_card_events.76.d: "fLr0Þ˜Ô0©‹Í‘›R1Y»S†NaIN0"
- skr_card_events.76.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.76.t: "Þ˜ÔSpS"
+ ACG_MEC_E_skr_card_events.76.d: "fLr0Þ˜Ô0©‹Í‘›R1Y»S†NaIN0"
+ ACG_MEC_E_skr_card_events.76.a: "SÕ‹SpS0"
 
- skr_card_events.77.t: "kp0qSpS"
- skr_card_events.77.d: "fLr0kp0q0„v)n¦^ÔkûNUOkp0qý‰Øš0"
- skr_card_events.77.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.77.t: "kp0qSpS"
+ ACG_MEC_E_skr_card_events.77.d: "fLr0kp0q0„v)n¦^ÔkûNUOkp0qý‰Øš0"
+ ACG_MEC_E_skr_card_events.77.a: "SÕ‹SpS0"
 
- skr_card_events.78.t: "îO.SpS"
- skr_card_events.78.d: "fLr0îO.0(WêLˆîOYNir0"
- skr_card_events.78.a: "SÕ‹SpS0"
+ ACG_MEC_E_skr_card_events.78.t: "îO.SpS"
+ ACG_MEC_E_skr_card_events.78.d: "fLr0îO.0(WêLˆîOYNir0"
+ ACG_MEC_E_skr_card_events.78.a: "SÕ‹SpS0"
 
  ### CARD USE EVENT ###
 
- skr_card_events.100.t: "O(u“^mLr"
- skr_card_events.100.d: "	ébN.VòT6eÆ–„vaSLregÀoImƒR„v›RÏ‘0ÀoImT—‰ASt^·QtSöeô•0"
- skr_card_events.100.windy: "O(uÎ˜KNaS (The Windy)"
- skr_card_events.100.fly: "O(uÔKNaS (The Fly)"
- skr_card_events.100.watery: "O(u4lKNaS (The Watery)"
- skr_card_events.100.firey: "O(ukpKNaS (The Firey)"
- skr_card_events.100.earthy: "O(uWKNaS (The Earthy)"
- skr_card_events.100.thunder: "O(u÷–KNaS (The Thunder)"
- skr_card_events.100.sword: "O(uQRKNaS (The Sword)"
- skr_card_events.100.shield: "O(uþvKNaS (The Shield)"
- skr_card_events.100.light: "O(uIQKNaS (The Light)"
- skr_card_events.100.dark: "O(u—fKNaS (The Dark)"
- skr_card_events.100.create: "O(uRKNaS (The Create)"
- skr_card_events.100.erase: "O(uˆmKNaS (The Erase)"
- skr_card_events.100.gale: "O(u¾uÎ˜Lr (Gale)"
- skr_card_events.100.siege: "O(uSôVLr (Siege)"
- skr_card_events.100.aqua: "O(u4lnLr (Aqua)"
- skr_card_events.100.action: "O(uLˆ¨RLr (Action)"
- skr_card_events.100.record: "O(u°‹UVLr (Record)"
- skr_card_events.100.flight: "O(uÞ˜ÔLr (Flight)"
- skr_card_events.100.blaze: "O(ukp0qLr (Blaze)"
- skr_card_events.100.repair: "O(uîO.Lr (Repair)"
- skr_card_events.100.cancel: "ÖSˆm"
+ ACG_MEC_E_skr_card_events.100.t: "O(u“^mLr"
+ ACG_MEC_E_skr_card_events.100.d: "	ébN.VòT6eÆ–„vaSLregÀoImƒR„v›RÏ‘0ÀoImT—‰ASt^·QtSöeô•0"
+ ACG_MEC_E_skr_card_events.100.windy: "O(uÎ˜KNaS (The Windy)"
+ ACG_MEC_E_skr_card_events.100.fly: "O(uÔKNaS (The Fly)"
+ ACG_MEC_E_skr_card_events.100.watery: "O(u4lKNaS (The Watery)"
+ ACG_MEC_E_skr_card_events.100.firey: "O(ukpKNaS (The Firey)"
+ ACG_MEC_E_skr_card_events.100.earthy: "O(uWKNaS (The Earthy)"
+ ACG_MEC_E_skr_card_events.100.thunder: "O(u÷–KNaS (The Thunder)"
+ ACG_MEC_E_skr_card_events.100.sword: "O(uQRKNaS (The Sword)"
+ ACG_MEC_E_skr_card_events.100.shield: "O(uþvKNaS (The Shield)"
+ ACG_MEC_E_skr_card_events.100.light: "O(uIQKNaS (The Light)"
+ ACG_MEC_E_skr_card_events.100.dark: "O(u—fKNaS (The Dark)"
+ ACG_MEC_E_skr_card_events.100.create: "O(uRKNaS (The Create)"
+ ACG_MEC_E_skr_card_events.100.erase: "O(uˆmKNaS (The Erase)"
+ ACG_MEC_E_skr_card_events.100.gale: "O(u¾uÎ˜Lr (Gale)"
+ ACG_MEC_E_skr_card_events.100.siege: "O(uSôVLr (Siege)"
+ ACG_MEC_E_skr_card_events.100.aqua: "O(u4lnLr (Aqua)"
+ ACG_MEC_E_skr_card_events.100.action: "O(uLˆ¨RLr (Action)"
+ ACG_MEC_E_skr_card_events.100.record: "O(u°‹UVLr (Record)"
+ ACG_MEC_E_skr_card_events.100.flight: "O(uÞ˜ÔLr (Flight)"
+ ACG_MEC_E_skr_card_events.100.blaze: "O(ukp0qLr (Blaze)"
+ ACG_MEC_E_skr_card_events.100.repair: "O(uîO.Lr (Repair)"
+ ACG_MEC_E_skr_card_events.100.cancel: "ÖSˆm"
 
  ### CARD ALBUM EVENT ###
 
- skr_card_events.200.t: "“^mLrþVt’"
- skr_card_events.200.d: "ïSåN(W?eœ^Lub—ågwòT6eÆ–„vaSLrÅ`µQ0"
- skr_card_events.200.a: "‹Y„v0"
+ ACG_MEC_E_skr_card_events.200.t: "“^mLrþVt’"
+ ACG_MEC_E_skr_card_events.200.d: "ïSåN(W?eœ^Lub—ågwòT6eÆ–„vaSLrÅ`µQ0"
+ ACG_MEC_E_skr_card_events.200.a: "‹Y„v0"
 
  ### TOOLTIPS ###
 
@@ -318,18 +318,14 @@
  skr_watery_active: "4lKNaSÀoIm"
  skr_firey_active: "kpKNaSÀoIm"
  skr_earthy_active: "WKNaSÀoIm"
- skr_thunder_active: "÷–KNaSÀoIm"
  skr_sword_active: "QRKNaSÀoIm"
  skr_shield_active: "þvKNaSÀoIm"
  skr_light_active: "IQKNaSÀoIm"
  skr_dark_active: "—fKNaSÀoIm"
- skr_create_active: "RKNaSÀoIm"
- skr_erase_active: "ˆmKNaSÀoIm"
  skr_gale_active: "¾uÎ˜LrÀoIm"
  skr_siege_active: "SôVLrÀoIm"
  skr_aqua_active: "4lnLrÀoIm"
  skr_action_active: "Lˆ¨RLrÀoIm"
- skr_record_active: "°‹UVLrÀoIm"
  skr_flight_active: "Þ˜ÔLrÀoIm"
  skr_blaze_active: "kp0qLrÀoIm"
  skr_repair_active: "îO.LrÀoIm"
@@ -455,10 +451,10 @@
  SKR_missions_7_title: "ËSg:u"
  SKR_mission_7_1_title: "ŽúQ,rNek"
  SKR_mission_7_1_desc: "ý“^mLr—‰›RÏ‘0S1jÅV‰˜te˜›Q–ÿMbýw‰RÃVŽN6eÆ–KNÅe0"
- SKR_mission_7_2_title: "6eYEeW"
- SKR_mission_7_2_desc: "idÉbôušN=fËSg:u„vö^8O0“^mLrþf(W±Ì‘YuNÕuùÿÝuNýw©‹ƒRK„eQYºNKNKb0"
- SKR_mission_7_3_title: "g‹Y„vgËS"
- SKR_mission_7_3_desc: "åwN1S(WidÉbôušN0yY=fS1jg‹Y„vgËS0g:V„vTþv¡l	gÀNHNÔkyY„v=ecôfÍ‘‰0"
+ SKR_mission_7_2_title: "g‹Y„vgËS"
+ SKR_mission_7_2_desc: "åwN1S(WidÉbôušN0yY=fS1jg‹Y„vgËS0g:V„vTþv¡l	gÀNHNÔkyY„v=ecôfÍ‘‰0"
+ SKR_mission_7_3_title: "6eYEeW"
+ SKR_mission_7_3_desc: "idÉbôušN=fËSg:u„vö^8O0“^mLrþf(W±Ì‘YuNÕuùÿÝuNýw©‹ƒRK„eQYºNKNKb0"
  SKR_mission_7_4_title: "‰RR„v¶R"
  SKR_mission_7_4_desc: "âl‰s|šNNidÉbôušNßuNKNåeÿMb=fËSg:uwck‰RRKNöe0"
  SKR_mission_7_5_title: "ÛvV„v1j±‚"

@@ -7,23 +7,49 @@ on_yearly_pulse = {
 			SKR_refresh_card_tier_effect = yes
 			SKR_grant_card_permanent_effect = yes
 		}
+		if = {
+			limit = {
+				has_country_flag = skr_clear_card_awakened
+				has_country_flag = skr_card_gale_captured
+				has_country_flag = skr_card_siege_captured
+				has_country_flag = skr_card_aqua_captured
+				has_country_flag = skr_card_action_captured
+				has_country_flag = skr_card_record_captured
+				has_country_flag = skr_card_flight_captured
+				has_country_flag = skr_card_blaze_captured
+				has_country_flag = skr_card_repair_captured
+				NOT = { has_country_flag = skr_clear_card_mastery_granted }
+			}
+			set_country_flag = skr_clear_card_mastery_granted
+			add_prestige = 50
+			add_splendor = 500
+			add_adm_power = 300
+			add_dip_power = 300
+			add_mil_power = 300
+			change_government_reform_progress = 300
+			add_years_of_income = 1
+		}
 	}
 }
 
 on_core = {
 	effect = {
 		if = {
-			limit = { has_country_flag = skr_card_windy_captured }
-			add_country_modifier = {
-				name = skr_windy_core_boost
-				duration = 365
+			limit = { owner = { has_country_flag = skr_card_windy_captured } }
+			owner = {
+				add_country_modifier = {
+					name = skr_windy_core_boost
+					duration = 365
+				}
 			}
 		}
 		if = {
-			limit = { has_country_flag = skr_card_erase_captured }
-			add_country_modifier = {
-				name = skr_erase_core_boost
-				duration = 365
+			limit = { owner = { has_country_flag = skr_card_erase_captured } }
+			owner = {
+				add_country_modifier = {
+					name = skr_erase_core_boost
+					duration = 365
+				}
 			}
 		}
 	}
@@ -32,14 +58,14 @@ on_core = {
 on_adm_development = {
 	effect = {
 		if = {
-			limit = { has_country_flag = skr_card_create_captured }
+			limit = { owner = { has_country_flag = skr_card_create_captured } }
 			random_list = {
 				50 = { add_base_tax = 1 }
 				50 = {}
 			}
 		}
 		if = {
-			limit = { has_country_flag = skr_card_record_captured }
+			limit = { owner = { has_country_flag = skr_card_record_captured } }
 			random_list = {
 				50 = { add_base_tax = 1 }
 				50 = {}
@@ -51,14 +77,14 @@ on_adm_development = {
 on_dip_development = {
 	effect = {
 		if = {
-			limit = { has_country_flag = skr_card_create_captured }
+			limit = { owner = { has_country_flag = skr_card_create_captured } }
 			random_list = {
 				50 = { add_base_production = 1 }
 				50 = {}
 			}
 		}
 		if = {
-			limit = { has_country_flag = skr_card_record_captured }
+			limit = { owner = { has_country_flag = skr_card_record_captured } }
 			random_list = {
 				50 = { add_base_production = 1 }
 				50 = {}
@@ -70,14 +96,14 @@ on_dip_development = {
 on_mil_development = {
 	effect = {
 		if = {
-			limit = { has_country_flag = skr_card_create_captured }
+			limit = { owner = { has_country_flag = skr_card_create_captured } }
 			random_list = {
 				50 = { add_base_manpower = 1 }
 				50 = {}
 			}
 		}
 		if = {
-			limit = { has_country_flag = skr_card_record_captured }
+			limit = { owner = { has_country_flag = skr_card_record_captured } }
 			random_list = {
 				50 = { add_base_manpower = 1 }
 				50 = {}
@@ -86,7 +112,7 @@ on_mil_development = {
 	}
 }
 
-on_siege_won = {
+on_siege_won_country = {
 	effect = {
 		if = {
 			limit = { has_country_flag = skr_card_firey_captured }
@@ -103,7 +129,7 @@ on_siege_won = {
 	}
 }
 
-on_battle_won = {
+on_battle_won_country = {
 	effect = {
 		if = {
 			limit = { has_country_flag = skr_card_watery_captured }
@@ -116,6 +142,13 @@ on_battle_won = {
 		if = {
 			limit = { has_country_flag = skr_card_action_captured }
 			add_army_tradition = 10
+		}
+		if = {
+			limit = { has_country_flag = skr_card_dark_captured }
+			FROM = {
+				add_war_exhaustion = 1
+				add_corruption = 0.5
+			}
 		}
 	}
 }
@@ -137,7 +170,7 @@ on_war_won = {
 	}
 }
 
-on_marriage = {
+on_royal_marriage = {
 	effect = {
 		if = {
 			limit = { has_country_flag = skr_card_light_captured }
@@ -149,11 +182,58 @@ on_marriage = {
 	}
 }
 
-on_siege_lost = {
+on_siege_lost_country = {
 	effect = {
 		if = {
 			limit = { has_country_flag = skr_card_shield_captured }
 			add_prestige = 3
+		}
+		if = {
+			limit = { has_country_flag = skr_card_earthy_captured }
+			add_army_tradition = 5
+		}
+	}
+}
+
+on_tech_taken = {
+	effect = {
+		if = {
+			limit = { has_country_flag = skr_card_record_captured }
+			add_innovativeness = 5
+		}
+		if = {
+			limit = { has_country_flag = skr_card_fly_captured }
+			add_innovativeness = 3
+		}
+	}
+}
+
+on_gain_great_power_status = {
+	effect = {
+		if = {
+			limit = { has_country_flag = skr_card_dark_captured }
+			add_prestige = 20
+		}
+	}
+}
+
+on_new_monarch = {
+	effect = {
+		if = {
+			limit = { has_country_flag = skr_card_light_captured }
+			add_prestige = 10
+		}
+	}
+}
+
+on_colony_finished = {
+	effect = {
+		if = {
+			limit = { owner = { has_country_flag = skr_card_flight_captured } }
+			owner = {
+				add_treasury = 50
+				add_prestige = 5
+			}
 		}
 	}
 }

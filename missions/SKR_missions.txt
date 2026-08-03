@@ -1,10 +1,10 @@
 # =========================
 # SKR (木之本樱) 任务树
-# Slot 6: 库洛继承者 (Card Collection - Core)
-# Slot 7: 波西米亚之梦 (Bohemia)
-# Slot 8: 神圣帝国 (HRE)
-# Slot 9: 德意志霸主 (Germany)
-# Slot 10: 意大利之冠 (Italy)
+# Slot 1: 库洛继承者 (Card Collection - Core)
+# Slot 2: 波西米亚之梦 (Bohemia)
+# Slot 3: 神圣帝国 (HRE)
+# Slot 4: 德意志霸主 (Germany)
+# Slot 5: 意大利之冠 (Italy)
 # =========================
 
 SKR_missions_6 = {
@@ -22,7 +22,7 @@ SKR_missions_6 = {
 		position = 1
 		trigger = { always = yes }
 		effect = {
-			country_event = { id = skr_card_events.1 }
+			country_event = { id = ACG_MEC_E_skr_card_events.1 }
 			add_prestige = 10
 		}
 	}
@@ -68,6 +68,7 @@ SKR_missions_6 = {
 			add_splendor = 200
 			add_prestige = 25
 			add_mil_power = 150
+			change_mil = 1
 		}
 	}
 	SKR_mission_6_5 = {
@@ -82,6 +83,7 @@ SKR_missions_6 = {
 			add_splendor = 250
 			add_prestige = 30
 			add_dip_power = 200
+			change_adm = 1
 		}
 	}
 	SKR_mission_6_6 = {
@@ -96,6 +98,7 @@ SKR_missions_6 = {
 			add_splendor = 300
 			add_prestige = 35
 			change_government_reform_progress = 100
+			change_dip = 1
 		}
 	}
 	SKR_mission_6_7 = {
@@ -117,7 +120,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_erase_captured
 		}
 		effect = {
-			country_event = { id = skr_card_events.51 }
+			country_event = { id = ACG_MEC_E_skr_card_events.51 }
 			add_prestige = 50
 			add_splendor = 400
 			change_government_reform_progress = 200
@@ -128,11 +131,11 @@ SKR_missions_6 = {
 		position = 8
 		required_missions = { SKR_mission_6_7 }
 		trigger = {
-			year = 1550
+			year = 1500
 			has_country_flag = skr_cards_transmuted
 		}
 		effect = {
-			country_event = { id = skr_card_events.60 }
+			country_event = { id = ACG_MEC_E_skr_card_events.60 }
 			add_prestige = 25
 			add_splendor = 300
 		}
@@ -211,29 +214,49 @@ SKR_missions_7 = {
 		icon = mission_assemble_an_army
 		position = 1
 		provinces_to_highlight = {
-			area = moravia_area
+			area = silesia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			army_size_percentage = 0.9
 		}
 		effect = {
-			moravia_area = {
-				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
-				add_permanent_claim = ROOT
-			}
 			silesia_area = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
 			add_army_tradition = 15
 			add_prestige = 10
+			change_mil = 1
 		}
 	}
 	SKR_mission_7_2 = {
-		icon = mission_king_of_bohemia
+		icon = mission_diplomat
 		position = 2
 		required_missions = { SKR_mission_7_1 }
+		trigger = {
+			OR = {
+				AND = {
+					TMY = { has_opinion = { who = ROOT value = 100 } }
+					has_opinion = { who = TMY value = 100 }
+					alliance_with = TMY
+				}
+				NOT = { exists = TMY }
+			}
+		}
+		effect = {
+			if = {
+				limit = { exists = TMY }
+				TMY = { country_event = { id = ACG_MEC_E_skr_card_events.50 } }
+			}
+			add_prestige = 25
+			add_splendor = 100
+		}
+	}
+	SKR_mission_7_3 = {
+		icon = mission_king_of_bohemia
+		position = 3
+		required_missions = { SKR_mission_7_2 }
 		provinces_to_highlight = {
 			area = lusatia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -255,21 +278,6 @@ SKR_missions_7 = {
 			}
 			add_treasury = 300
 			add_prestige = 15
-		}
-	}
-	SKR_mission_7_3 = {
-		icon = mission_diplomat
-		position = 3
-		required_missions = { SKR_mission_7_2 }
-		trigger = {
-			TMY = { has_opinion = { who = ROOT value = 150 } }
-			has_opinion = { who = TMY value = 150 }
-			alliance_with = TMY
-		}
-		effect = {
-			TMY = { country_event = { id = skr_card_events.50 } }
-			add_prestige = 25
-			add_splendor = 100
 		}
 	}
 	SKR_mission_7_4 = {
@@ -445,7 +453,7 @@ SKR_missions_8 = {
 		position = 2
 		required_missions = { SKR_mission_8_1 }
 		trigger = {
-			has_reform = emperor_reform_ewiger_landfriede
+			has_reform = emperor_landfriede
 			is_emperor = yes
 		}
 		effect = {
@@ -458,7 +466,7 @@ SKR_missions_8 = {
 		position = 3
 		required_missions = { SKR_mission_8_2 }
 		trigger = {
-			has_reform = emperor_proclaim_erbkaisertum
+			has_reform = emperor_erbkaisertum
 			is_emperor = yes
 		}
 		effect = {
@@ -475,8 +483,14 @@ SKR_missions_8 = {
 			is_emperor = yes
 		}
 		effect = {
-			every_owned_province = {
-				limit = { is_part_of_hre = yes }
+			every_province = {
+				limit = {
+					OR = {
+						region = north_german_region
+						region = south_german_region
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			add_prestige = 50
@@ -487,7 +501,7 @@ SKR_missions_8 = {
 		position = 5
 		required_missions = { SKR_mission_8_4 }
 		trigger = {
-			has_reform = emperor_universal_reform
+			has_reform = emperor_privilegia_de_non_appelando
 			is_emperor = yes
 		}
 		effect = {
@@ -500,9 +514,10 @@ SKR_missions_8 = {
 		position = 6
 		required_missions = { SKR_mission_8_5 }
 		trigger = {
-			has_reform = emperor_renovatio_imperii
+			has_reform = emperor_renovatio
 		}
 		effect = {
+			set_country_flag = skr_renovatio_passed
 			add_country_modifier = { name = skr_renovatio_imperii_modifier duration = -1 }
 			add_prestige = 100
 			add_splendor = 500
@@ -513,7 +528,10 @@ SKR_missions_8 = {
 		position = 7
 		required_missions = { SKR_mission_8_6 }
 		trigger = {
-			is_emperor = yes
+			OR = {
+				is_emperor = yes
+				has_country_flag = skr_renovatio_passed
+			}
 			total_development = 1500
 			prestige = 75
 		}
@@ -569,7 +587,7 @@ SKR_missions_8 = {
 		required_missions = { SKR_mission_8_10 }
 		trigger = {
 			monthly_income = 500
-			merchants = 10
+			merchants = 5
 		}
 		effect = {
 			add_country_modifier = { name = skr_imperial_trade_dominance duration = -1 }
@@ -630,6 +648,7 @@ SKR_missions_9 = {
 				add_permanent_claim = ROOT
 			}
 			add_army_tradition = 15
+			change_adm = 1
 		}
 	}
 	SKR_mission_9_2 = {
@@ -827,10 +846,10 @@ SKR_missions_9 = {
 		required_missions = { SKR_mission_9_9 }
 		trigger = {
 			north_german_region = {
-				all_owned_province = { development = 15 }
+				all_owned_province = { development = 10 }
 			}
 			south_german_region = {
-				all_owned_province = { development = 15 }
+				all_owned_province = { development = 10 }
 			}
 		}
 		effect = {
@@ -1092,7 +1111,7 @@ SKR_missions_10 = {
 		required_missions = { SKR_mission_10_10 }
 		trigger = {
 			italy_region = {
-				all_owned_province = { development = 15 }
+				all_owned_province = { development = 10 }
 			}
 			total_development = 2500
 		}

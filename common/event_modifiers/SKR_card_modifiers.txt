@@ -109,10 +109,6 @@ skr_earthy_active = {
 	garrison_size = 0.25
 }
 
-skr_thunder_active = {
-	land_morale = 0.10
-}
-
 skr_sword_active = {
 	infantry_power = 0.10
 }
@@ -128,14 +124,6 @@ skr_light_active = {
 skr_dark_active = {
 	spy_offence = 0.20
 	ae_impact = -0.10
-}
-
-skr_create_active = {
-	development_cost = -0.10
-}
-
-skr_erase_active = {
-	core_creation = -0.10
 }
 
 skr_gale_active = {
@@ -156,10 +144,6 @@ skr_aqua_active = {
 skr_action_active = {
 	discipline = 0.05
 	shock_damage = 0.10
-}
-
-skr_record_active = {
-	all_power_cost = -0.05
 }
 
 skr_flight_active = {
