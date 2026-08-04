@@ -1,0 +1,40 @@
+l_english:
+
+ AIU: "艾尔"
+ AIU_ADJ: "艾尔的"
+ AIU_ADJ2: "艾尔的"
+ AIU_ideas: "神族理念"
+ AIU_ideas_start: "灵能矩阵"
+ AIU_ideas_start_desc: "神族以卡拉连接彼此，以灵能驱动科技。科技的阶梯，是艾尔文明的基石。"
+ AIU_ideas_bonus: "卡拉链接"
+ AIU_ideas_bonus_desc: "The Khala binds us all. 卡拉联结我们所有人。当神族的意志合而为一，整个文明便无坚不摧。"
+ AIU_idea_1: "En Taro Adun"
+ AIU_idea_1_desc: "向传奇执政官阿顿致敬。神族的战士继承先辈的武艺，长虹贯日，所向披靡。"
+ AIU_idea_2: "艾尔之心"
+ AIU_idea_2_desc: "艾尔是神族的母星与精神归宿。家园的稳固让民心安定，任何动乱都无法动摇神族的意志。"
+ AIU_idea_3: "圣堂武士"
+ AIU_idea_3_desc: "My life for Aiur! 狂热者与圣堂武士以生命宣誓效忠。训练有素的神族军队，纪律与勇气并重。"
+ AIU_idea_4: "灵能护盾"
+ AIU_idea_4_desc: "神族以灵能构筑护盾。坚不可摧的防御让来犯之敌在艾尔的边境前寸步难行。"
+ AIU_idea_5: "达拉姆大军"
+ AIU_idea_5_desc: "We are the Daelaam! 达拉姆的战士跨越星海，为夺回家园而战。兵源不息，战意不灭。"
+ AIU_idea_6: "夺回艾尔"
+ AIU_idea_6_desc: "Aiur shall be reborn. 艾尔终将重生。神族所到之处，疆土迅速归心，家园失而复得。"
+ AIU_idea_7: "My life for Aiur"
+ AIU_idea_7_desc: "我愿为艾尔献出生命。神族的军队，为家园、为卡拉、为荣耀而战，永不屈服。"
+
+ ### CULTURE ###
+
+ aiur_group: "艾尔"
+ aiur: "艾尔"
+
+ ### GOVERNMENT TITLES ###
+
+ AIU_rank_1: "圣堂"
+ AIU_rank_2: "卡拉圣堂"
+ AIU_rank_3: "达拉姆"
+ AIU_ruler_1: "大主教"
+ AIU_ruler_2: "大主教"
+ AIU_ruler_3: "高阶大主教"
+ AIU_consort: "圣堂顾问"
+ AIU_heir: "候补圣堂"

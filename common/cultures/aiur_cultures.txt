@@ -1,0 +1,15 @@
+aiur_group = {	#艾尔
+	graphical_culture = africangfx
+	aiur = {	#艾尔
+		primary = AIU
+		dynasty_names = {
+			Artanis Tassadar Zeratul Fenix Aldaris Karass Adun Selendis
+		}
+		male_names = {
+			Artanis Tassadar Zeratul Fenix Aldaris Karass Adun
+		}
+		female_names = {
+			Selendis Vorazun Raszagal
+		}
+	}
+}

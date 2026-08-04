@@ -1,0 +1,42 @@
+AIU_ideas = {
+	start = {
+		technology_cost = -0.10
+		global_institution_spread = 0.10
+	}
+	bonus = {
+		all_power_cost = -0.10
+	}
+	trigger = {
+		tag = AIU
+	}
+	free = yes
+	AIU_idea_1 = {
+		land_fire_damage = 0.15
+		infantry_power = 0.10
+	}
+	AIU_idea_2 = {
+		global_unrest = -3
+		stability_cost_modifier = -0.10
+	}
+	AIU_idea_3 = {
+		discipline = 0.05
+		land_morale = 0.10
+	}
+	AIU_idea_4 = {
+		defensiveness = 0.20
+		max_hostile_attrition = 2
+	}
+	AIU_idea_5 = {
+		global_manpower_modifier = 0.15
+		land_forcelimit_modifier = 0.20
+	}
+	AIU_idea_6 = {
+		core_creation = -0.15
+		administrative_efficiency = 0.05
+	}
+	AIU_idea_7 = {
+		land_fire_damage = 0.10
+		discipline = 0.05
+		land_morale = 0.10
+	}
+}

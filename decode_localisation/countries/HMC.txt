@@ -1,0 +1,215 @@
+#Hong Mao (Rainbow Cat) - 虹猫
+
+graphical_culture = asiangfx
+
+color = { 220 60 60 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 200 20 20 }
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	quality_ideas
+	administrative_ideas
+	humanist_ideas
+	diplomatic_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	chinese_footsoldier
+	chinese_cavalry
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"虹猫 #0" = 100
+	"蓝兔 #0" = 60
+	"大奔 #0" = 50
+	"跳跳 #0" = 45
+	"达达 #0" = 45
+	"逗逗 #0" = 40
+	"莎莉 #0" = 40
+	"黑心虎 #0" = 40
+	"马三娘 #0" = 40
+	"猪无戒 #0" = 40
+	"牛旋风 #0" = 40
+	"白猫 #0" = 40
+	"紫衣 #0" = 40
+	"白衣 #0" = 40
+	"青衣 #0" = 40
+	"红衣 #0" = 40
+	"云心 #0" = 40
+	"竹韵 #0" = 40
+	"岚风 #0" = 40
+	"沧浪 #0" = 40
+	"赤焰 #0" = 40
+	"寒冰 #0" = 40
+	"剑心 #0" = 40
+	"琴心 #0" = 40
+	"麒麟 #0" = 40
+	"流星 #0" = 40
+	"惊鸿 #0" = 40
+	"飞羽 #0" = 40
+	"逐月 #0" = 40
+	"追日 #0" = 40
+	"含烟 #0" = 40
+	"听雨 #0" = 40
+	"傲雪 #0" = 40
+	"凌霜 #0" = 40
+	"卧龙 #0" = 40
+	"伏虎 #0" = 40
+	"擎天 #0" = 40
+	"镇岳 #0" = 40
+	"无涯 #0" = 40
+	"孤鸿 #0" = 40
+	"明剑 #0" = 40
+	"玄铁 #0" = 40
+	"紫电 #0" = 40
+	"青锋 #0" = 40
+	"月影 #0" = 40
+	"星辉 #0" = 40
+	"长歌 #0" = 40
+	"破军 #0" = 40
+	"贪狼 #0" = 40
+	"七杀 #0" = 40
+}
+
+leader_names = {
+	"虹猫"
+	"蓝兔"
+	"大奔"
+	"跳跳"
+	"达达"
+	"逗逗"
+	"莎莉"
+	"黑心虎"
+	"马三娘"
+	"猪无戒"
+	"牛旋风"
+	"白猫"
+	"紫衣"
+	"白衣"
+	"青衣"
+	"红衣"
+	"云心"
+	"竹韵"
+	"岚风"
+	"沧浪"
+	"赤焰"
+	"寒冰"
+	"剑心"
+	"琴心"
+	"麒麟"
+	"流星"
+	"惊鸿"
+	"飞羽"
+	"逐月"
+	"追日"
+	"含烟"
+	"听雨"
+	"傲雪"
+	"凌霜"
+	"卧龙"
+	"伏虎"
+	"擎天"
+	"镇岳"
+	"无涯"
+	"孤鸿"
+	"明剑"
+	"玄铁"
+	"紫电"
+	"青锋"
+	"月影"
+	"星辉"
+	"长歌"
+	"破军"
+	"贪狼"
+	"七杀"
+}
+
+ship_names = {
+	"长虹" "冰魄" "紫云" "雨花" "奔雷"
+	"青光" "旋风" "麒麟" "破浪" "追风"
+	"惊涛" "骇浪" "逐波" "凌波" "御风"
+	"乘风" "翔云" "凌云" "揽月" "摘星"
+	"射日" "贯日" "斩蛟" "屠龙" "镇海"
+	"定潮" "望洋" "观澜" "听涛" "踏浪"
+	"穿云" "裂空" "流星" "飞虹" "霞光"
+	"晨辉" "暮色" "夜航" "晨曦" "晚照"
+	"沧海" "碧波" "银鳞" "金鳞" "翠羽"
+	"玄冥" "紫霄" "青冥" "皓月" "繁星"
+}
+
+army_names = {
+	"$PROVINCE$七剑"
+	"$PROVINCE$侠士"
+	"$PROVINCE$剑客"
+	"$PROVINCE$护旗军"
+	"$PROVINCE$先锋营"
+	"$PROVINCE$长虹营"
+	"$PROVINCE$冰魄营"
+	"$PROVINCE$紫云营"
+	"$PROVINCE$雨花营"
+	"$PROVINCE$奔雷营"
+	"$PROVINCE$青光营"
+	"$PROVINCE$旋风营"
+	"$PROVINCE$麒麟卫"
+	"$PROVINCE$侠义军"
+	"$PROVINCE$正义师"
+	"$PROVINCE$讨伐军"
+	"$PROVINCE$镇守军"
+	"$PROVINCE$破阵军"
+	"$PROVINCE$凌云军"
+	"$PROVINCE$追风军"
+	"$PROVINCE$流星军"
+	"$PROVINCE$飞羽军"
+	"$PROVINCE$惊鸿军"
+	"$PROVINCE$含烟营"
+	"$PROVINCE$听雨营"
+	"$PROVINCE$傲雪营"
+	"$PROVINCE$凌霜营"
+	"$PROVINCE$卧龙营"
+	"$PROVINCE$伏虎营"
+	"$PROVINCE$擎天营"
+	"$PROVINCE$镇岳营"
+	"$PROVINCE$玄铁营"
+	"$PROVINCE$紫电营"
+	"$PROVINCE$青锋营"
+	"$PROVINCE$月影营"
+	"$PROVINCE$星辉营"
+	"$PROVINCE$长歌军"
+	"$PROVINCE$破军营"
+	"$PROVINCE$贪狼营"
+	"$PROVINCE$七杀营"
+	"$PROVINCE$斩蛟营"
+	"$PROVINCE$屠龙营"
+	"$PROVINCE$镇海军"
+	"$PROVINCE$定潮营"
+	"$PROVINCE$望洋营"
+	"$PROVINCE$观澜营"
+	"$PROVINCE$踏浪营"
+	"$PROVINCE$穿云营"
+	"$PROVINCE$裂空营"
+	"$PROVINCE$贯日营"
+}

@@ -1,2 +1,3 @@
 BLS = "countries/Black Shore.txt" #黑海岸
 HMC = "countries/HMC.txt" #虹猫
+AIU = "countries/AIU.txt" #艾尔

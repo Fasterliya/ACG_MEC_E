@@ -1,0 +1,48 @@
+AIU = {
+	#艾尔
+	rank = {
+		1 = AIU_rank_1
+		2 = AIU_rank_2
+		3 = AIU_rank_3
+	}
+
+	#大主教
+	ruler_male = {
+		1 = AIU_ruler_1
+		2 = AIU_ruler_2
+		3 = AIU_ruler_3
+	}
+
+	ruler_female = {
+		1 = AIU_ruler_1
+		2 = AIU_ruler_2
+		3 = AIU_ruler_3
+	}
+
+	consort_male = {
+		1 = AIU_consort
+		2 = AIU_consort
+		3 = AIU_consort
+	}
+
+	consort_female = {
+		1 = AIU_consort
+		2 = AIU_consort
+		3 = AIU_consort
+	}
+
+	heir_male = {
+		1 = AIU_heir
+		2 = AIU_heir
+		3 = AIU_heir
+	}
+
+	heir_female = {
+		1 = AIU_heir
+		2 = AIU_heir
+		3 = AIU_heir
+	}
+	trigger = {
+		tag = AIU
+	}
+}
