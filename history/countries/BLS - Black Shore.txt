@@ -8,8 +8,8 @@ capital = 636
 
 1444.11.11 = {
 	monarch = {
-		name = "ï¿½Rï¿½Sï¿½N"
-		dynasty = "ï¿½lï¿½cï¿½e"
+		name = "ˆR¸SºN"
+		dynasty = "ðlÐc¯e"
 		birth_date = 1400.1.1
 		death_date = 1821.12.31
 		adm = 4

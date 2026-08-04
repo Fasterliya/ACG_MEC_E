@@ -1,0 +1,43 @@
+BLS_ideas = {
+	start = {
+		naval_morale = 0.15
+		trade_efficiency = 0.125
+	}
+	bonus = {
+		all_power_cost = -0.10
+	}
+	trigger = {
+		tag = BLS
+	}
+	free = yes
+	BLS_idea_1 = {
+		defensiveness = 0.20
+		max_hostile_attrition = 2
+	}
+	BLS_idea_2 = {
+		technology_cost = -0.08
+		institution_spread = 0.15
+	}
+	BLS_idea_3 = {
+		global_ship_trade_power = 0.20
+		global_trade_power = 0.15
+	}
+	BLS_idea_4 = {
+		naval_force_limit_modifier = 0.30
+		global_colonial_growth = 15
+		sailors_recovery_speed = 0.10
+	}
+	BLS_idea_5 = {
+		discipline = 0.06
+		land_morale = 0.15
+	}
+	BLS_idea_6 = {
+		stability_cost_modifier = -0.15
+		global_unrest = -2
+	}
+	BLS_idea_7 = {
+		naval_combat_ability = 0.15
+		recover_navy_morale_speed = 0.15
+		navy_tradition_decay = -0.01
+	}
+}

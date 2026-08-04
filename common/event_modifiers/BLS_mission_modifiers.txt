@@ -1,0 +1,93 @@
+BLS_shore_wall_modifier = {
+	defensiveness = 0.20
+	fort_maintenance_modifier = -0.10
+}
+
+BLS_legacy_of_guardian_modifier = {
+	global_unrest = -2
+	stability_cost_modifier = -0.10
+	administrative_efficiency = 0.05
+}
+
+BLS_tide_caller_modifier = {
+	trade_efficiency = 0.10
+	global_trade_power = 0.10
+}
+
+BLS_spice_route_modifier = {
+	global_trade_goods_size_modifier = 0.10
+	production_efficiency = 0.10
+}
+
+BLS_master_of_malacca_modifier = {
+	mercantilism_cost = -0.10
+	global_ship_trade_power = 0.15
+}
+
+BLS_golden_route_modifier = {
+	trade_income_percentage = 0.10
+	global_trade_power = 0.15
+	interest = -1
+}
+
+BLS_fleet_gathering_modifier = {
+	naval_morale = 0.10
+	sailors_recovery_speed = 0.10
+}
+
+BLS_eternal_night_fleet_modifier = {
+	heavy_ship_power = 0.10
+	navy_tradition_decay = -0.01
+	global_ship_recruit_speed = 0.10
+}
+
+BLS_sea_wall_modifier = {
+	naval_forcelimit_modifier = 0.20
+	global_sailors_modifier = 0.10
+}
+
+BLS_deep_sea_hegemon_modifier = {
+	naval_morale = 0.15
+	global_ship_trade_power = 0.20
+	navy_tradition_decay = -0.02
+}
+
+BLS_tide_warrior_modifier = {
+	discipline = 0.05
+	land_morale = 0.10
+}
+
+BLS_mainland_march_modifier = {
+	land_forcelimit_modifier = 0.10
+	global_manpower_modifier = 0.10
+}
+
+BLS_ocean_empire_modifier = {
+	administrative_efficiency = 0.10
+	core_creation = -0.10
+	governing_capacity_modifier = 0.20
+}
+
+BLS_renowned_shore_modifier = {
+	prestige = 1
+	diplomatic_reputation = 1
+}
+
+BLS_great_power_shore_modifier = {
+	all_power_cost = -0.05
+	prestige_decay = -0.01
+}
+
+BLS_black_shore_empire_modifier = {
+	governing_capacity = 200
+	global_unrest = -1
+	legitimacy = 1
+}
+
+BLS_tide_lord_modifier = {
+	administrative_efficiency = 0.10
+	discipline = 0.05
+	naval_morale = 0.15
+	global_trade_power = 0.15
+	global_unrest = -3
+}

@@ -2,7 +2,7 @@ government = acg_monarchy
 add_government_reform = BLS_black_shore_reform
 government_rank = 1
 primary_culture = wuthering_waves
-religion = Anime
+religion = acg
 technology_group = chinese
 capital = 636
 
