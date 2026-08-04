@@ -3,13 +3,13 @@ acg_zhonghua_group = {	#中华ACG
 	acg_hongmao = {	#虹猫
 		primary = HMC
 		dynasty_names = {
-			长虹 冰魄 紫云 雨花 奔雷 青光 旋风 七剑 麒麟
+			Changhong Bingpo Ziyun Yuhua Benlei Qingguang Xuanfeng Qijian Qilin
 		}
 		male_names = {
-			虹猫 大奔 跳跳 达达 逗逗 蓝兔 莎莉
+			HongMao DaBen TiaoTiao DaDa DouDou LanTu ShaLi
 		}
 		female_names = {
-			蓝兔 莎莉 马三娘 虹玲
+			LanTu ShaLi MaSanNiang HongLing
 		}
 	}
 	acg_xiaofugui = {	#神厨小福贵
