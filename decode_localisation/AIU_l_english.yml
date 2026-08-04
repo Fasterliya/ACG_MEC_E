@@ -25,16 +25,16 @@ l_english:
 
  ### CULTURE ###
 
- aiur_group: "艾尔"
- aiur: "艾尔"
+ acg_aiur_group: "艾尔"
+ acg_aiur: "艾尔"
 
  ### GOVERNMENT TITLES ###
 
  AIU_rank_1: "圣堂"
- AIU_rank_2: "卡拉圣堂"
- AIU_rank_3: "达拉姆"
+ AIU_rank_2: "圣堂"
+ AIU_rank_3: "圣堂"
  AIU_ruler_1: "大主教"
  AIU_ruler_2: "大主教"
- AIU_ruler_3: "高阶大主教"
+ AIU_ruler_3: "大主教"
  AIU_consort: "圣堂顾问"
  AIU_heir: "候补圣堂"

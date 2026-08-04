@@ -1,23 +1,22 @@
 government = acg_monarchy
-add_government_reform = BLS_black_shore_reform
 government_rank = 1
-primary_culture = acg_wuthering_waves
+primary_culture = acg_aiur
 religion = acg
 technology_group = chinese
-capital = 636
+capital = 2274
 
 1444.11.11 = {
 	monarch = {
-		name = "å®ˆå²¸äºº"
-		dynasty = "æ³°ææ–¯"
-		birth_date = 1400.1.1
+		name = "?–TX<S¯e"
+		dynasty = "?–úWÉb"
+		birth_date = 1410.1.1
 		death_date = 1821.12.31
-		adm = 4
+		adm = 5
 		dip = 5
-		mil = 4
-		female = yes
+		mil = 6
+		female = no
 	}
 	add_ruler_personality = immortal_personality
 	add_ruler_personality = scholar_personality
-	add_ruler_personality = calm_personality
+	add_ruler_personality = bold_fighter_personality
 }

@@ -1,7 +1,7 @@
 government = acg_monarchy
 add_government_reform = HMC_qijian_reform
 government_rank = 1
-primary_culture = hongmao
+primary_culture = acg_hongmao
 religion = acg
 technology_group = chinese
 capital = 680

@@ -1,6 +1,6 @@
-aiur_group = {	#艾尔
+acg_aiur_group = {	#艾尔
 	graphical_culture = africangfx
-	aiur = {	#艾尔
+	acg_aiur = {	#艾尔
 		primary = AIU
 		dynasty_names = {
 			Artanis Tassadar Zeratul Fenix Aldaris Karass Adun Selendis

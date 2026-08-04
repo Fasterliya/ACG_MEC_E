@@ -25,16 +25,16 @@
 
  ### CULTURE ###
 
- aiur_group: "Œ‚S"
- aiur: "Œ‚S"
+ acg_aiur_group: "Œ‚S"
+ acg_aiur: "Œ‚S"
 
  ### GOVERNMENT TITLES ###
 
  AIU_rank_1: "1WX"
- AIU_rank_2: "aSÉb1WX"
- AIU_rank_3: "¾ÉbÆY"
+ AIU_rank_2: "1WX"
+ AIU_rank_3: "1WX"
  AIU_ruler_1: "'YINYe"
  AIU_ruler_2: "'YINYe"
- AIU_ruler_3: "Øš6–'YINYe"
+ AIU_ruler_3: "'YINYe"
  AIU_consort: "1WXŒ˜î•"
  AIU_heir: "Peˆ1WX"

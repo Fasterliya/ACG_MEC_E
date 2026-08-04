@@ -1,0 +1,27 @@
+acg_zhonghua_group = {	#中华ACG
+	graphical_culture = asiangfx
+	acg_hongmao = {	#虹猫
+		primary = HMC
+		dynasty_names = {
+			长虹 冰魄 紫云 雨花 奔雷 青光 旋风 七剑 麒麟
+		}
+		male_names = {
+			虹猫 大奔 跳跳 达达 逗逗 蓝兔 莎莉
+		}
+		female_names = {
+			蓝兔 莎莉 马三娘 虹玲
+		}
+	}
+	acg_xiaofugui = {	#神厨小福贵
+		primary = QNG
+		dynasty_names = {
+			叶赫那拉 爱新觉罗 福贵 老佛爷
+		}
+		male_names = {
+			小福贵 小李子 麦香 春喜
+		}
+		female_names = {
+			老佛爷 叶赫那拉 小飞蝶 春喜
+		}
+	}
+}
