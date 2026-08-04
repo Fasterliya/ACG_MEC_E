@@ -194,7 +194,7 @@ SKR_missions_6 = {
 	SKR_mission_6_12 = {
 		icon = mission_empire
 		position = 12
-		required_missions = { SKR_mission_6_11 SKR_mission_7_11 SKR_mission_8_11 SKR_mission_9_11 SKR_mission_10_11 }
+		required_missions = { SKR_mission_6_11 }
 		trigger = {
 			total_development = 2500
 			prestige = 100
@@ -667,11 +667,11 @@ SKR_missions_9 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = north_german_region
-				value = 15
+				value = 10
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = south_german_region
-				value = 15
+				value = 10
 			}
 		}
 		effect = {
@@ -693,11 +693,11 @@ SKR_missions_9 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = north_german_region
-				value = 25
+				value = 12
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = south_german_region
-				value = 25
+				value = 12
 			}
 		}
 		effect = {
@@ -719,11 +719,11 @@ SKR_missions_9 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = north_german_region
-				value = 35
+				value = 15
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = south_german_region
-				value = 35
+				value = 15
 			}
 		}
 		effect = {
@@ -750,11 +750,11 @@ SKR_missions_9 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = north_german_region
-				value = 45
+				value = 20
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				region = south_german_region
-				value = 45
+				value = 20
 			}
 		}
 		effect = {
@@ -880,7 +880,7 @@ SKR_missions_9 = {
 	SKR_mission_9_12 = {
 		icon = mission_holy_roman_empire
 		position = 12
-		required_missions = { SKR_mission_9_11 SKR_mission_6_11 }
+		required_missions = { SKR_mission_9_11 }
 		trigger = {
 			is_hegemon = yes
 			north_german_region = {
@@ -1128,7 +1128,7 @@ SKR_missions_10 = {
 	SKR_mission_10_12 = {
 		icon = mission_roman_empire_west
 		position = 12
-		required_missions = { SKR_mission_10_11 SKR_mission_6_11 }
+		required_missions = { SKR_mission_10_11 }
 		trigger = {
 			is_hegemon = yes
 			italy_region = {
