@@ -1,27 +1,27 @@
 ﻿l_english:
 
- HMC: "y†+s"
- HMC_ADJ: "y†+s„v"
- HMC_ADJ2: "y†+s„v"
- HMC_ideas: "y†+stõV"
+ HMC: "Ý„TQ"
+ HMC_ADJ: "Ý„TQ„v"
+ HMC_ADJ2: "Ý„TQ„v"
+ HMC_ideas: "Ý„TQtõV"
  HMC_ideas_start: "NQRKN“Š"
- HMC_ideas_start_desc: "y†+sËz“ŠÆ–PŸNQRÿ¨‹OT›YeÿˆR²b)YN0•y†QRIN„vT÷Sÿ©‹ÏkN*Ný–wýÃVnoŽoCn0"
+ HMC_ideas_start_desc: "Ý„TQËz“ŠÆ–PŸNQRÿ¨‹OT›YeÿˆR²b)YN0•y†QRIN„vT÷Sÿ©‹ÏkN*Ný–wýÃVnoŽoCn0"
  HMC_ideas_bonus: "NQRTµt"
- HMC_ideas_bonus_desc: "NQRTµtÿ)YNàeLe0SVNMOQRIN„váOõVTw:NNÿy†+s„v›Q–¿Oåb	g†Ngd¯gÉbKg„v›RÏ‘0"
+ HMC_ideas_bonus_desc: "NQRTµtÿ)YNàeLe0SVNMOQRIN„váOõVTw:NNÿÝ„TQ„v›Q–¿Oåb	g†Ngd¯gÉbKg„v›RÏ‘0"
  HMC_idea_1: "•y†=åe"
- HMC_idea_1_desc: "•y†QR„vQRa‚Yy†=åeÿàeZWNgd0y†+s„v›Q–(Wckb—b:WN•NïSSV0"
+ HMC_idea_1_desc: "•y†QR„vQRa‚Yy†=åeÿàeZWNgd0Ý„TQ„v›Q–(Wckb—b:WN•NïSSV0"
  HMC_idea_2: "’žŸžey^t"
- HMC_idea_2_desc: "’žŸž‡^²by†+sÿM–Ney^t0ýVÐf†–ÿ»lN‰RRÿÛV¹e„v†uWÅRVÃV0"
+ HMC_idea_2_desc: "’žŸž‡^²bÝ„TQÿM–Ney^t0ýVÐf†–ÿ»lN‰RRÿÛV¹e„v†uWÅRVÃV0"
  HMC_idea_3: "ckINKN^"
- HMC_idea_3_desc: "¨‹OT›YeCNckINKN>N0lÃVRVD–ÿ)YN‰RšRÿÛSqNNNán(Wy†+s„v×e^Nßpˆm‘Nce0"
+ HMC_idea_3_desc: "¨‹OT›YeCNckINKN>N0lÃVRVD–ÿ)YN‰RšRÿÛSqNNNán(WÝ„TQ„v×e^Nßpˆm‘Nce0"
  HMC_idea_4: "N OÆ–Óu"
  HMC_idea_4_desc: "Ý„TQ0'YTY0óó0¾¾00Žƒ‰ƒN OGlZwÿ)YNUOºNNg0"
  HMC_idea_5: "fkfR.Ob"
- HMC_idea_5_desc: "N O„vfkfRãNãNøv.O0Ye²wNfkz‚v^Í‘ÿ©‹y†+s„výV›Råe°egV0"
+ HMC_idea_5_desc: "N O„vfkfRãNãNøv.O0Ye²wNfkz‚v^Í‘ÿ©‹Ý„TQ„výV›Råe°egV0"
  HMC_idea_6: "kp‚ËeÎ˜"
- HMC_idea_6_desc: "kp‚ËeÎ˜„vQRÕlû•T)YN0y†+s„v›Q–Åd•2–¡VN:g¨RÿäNeg¯rKNLegwtSek0"
+ HMC_idea_6_desc: "kp‚ËeÎ˜„vQRÕlû•T)YN0Ý„TQ„v›Q–Åd•2–¡VN:g¨RÿäNeg¯rKNLegwtSek0"
  HMC_idea_7: ")YNRVN"
- HMC_idea_7_desc: "SVNQRwckTµtÿy†+s¿Oåb	g†NßuN)YN„v›RÏ‘0)YNÍ‚uÿKS(WvQˆR²bKNN0"
+ HMC_idea_7_desc: "SVNQRwckTµtÿÝ„TQ¿Oåb	g†NßuN)YN„v›RÏ‘0)YNÍ‚uÿKS(WvQˆR²bKNN0"
 
  ### CULTURE ###
 
@@ -31,7 +31,7 @@
  ### GOVERNMENT REFORM ###
 
  HMC_qijian_reform: "NQRTIN6R"
- HMC_qijian_reform_desc: "y†+såNNQR:N“Šÿßu¡V² O0•y†QRINNÅN=fNMOTINÿôf=f)YN OëX„v†˜–ˆ0NQRTµtKN›Rÿ©‹y†+s„v›Q–NbT«ba—0"
+ HMC_qijian_reform_desc: "Ý„TQåNNQR:N“Šÿßu¡V² O0•y†QRINNÅN=fNMOTINÿôf=f)YN OëX„v†˜–ˆ0NQRTµtKN›Rÿ©‹Ý„TQ„v›Q–NbT«ba—0"
  HMC_rank_1: "lQýV"
  HMC_rank_2: "‹sýV"
  HMC_rank_3: "^ýV"
@@ -59,15 +59,15 @@
  HMC_missions_5: ")YNRVN"
 
  HMC_missions_1_1_title: "R2—•’‚"
- HMC_missions_1_1_desc: "y†+sRúQƒ^ÿ•’‚R2—0ïyÄ„ýV›Rÿ:N¨‹OT›YeSbN9húW0"
+ HMC_missions_1_1_desc: "Ý„TQRúQƒ^ÿ•’‚R2—0ïyÄ„ýV›Rÿ:N¨‹OT›YeSbN9húW0"
  HMC_missions_1_2_title: "NQRTµt"
  HMC_missions_1_2_desc: "Æ–PŸNQRÿTµtKN›RÉ‰’‘0ÎNdk`S†˜-NýV0W:S„vwýNSê¨R·ƒ—V8hÃVÿßuNKNïEuàeI–0"
  HMC_missions_1_3_title: "ýVðll‰R"
- HMC_missions_1_3_desc: "ÑSUSýVýÿ‰RšRlÃV0©‹y†+s„v×e^NYYeyŒT0"
+ HMC_missions_1_3_desc: "ÑSUSýVýÿ‰RšRlÃV0©‹Ý„TQ„v×e^NYYeyŒT0"
  HMC_missions_1_4_title: "úVå‚Ñ‘dl"
  HMC_missions_1_4_desc: "QrwZWúV„v‰^Xÿ©‹T›Ye„vÁ”DŽàeÕlŠ÷–`lNek0"
  HMC_missions_1_5_title: "’žŸžPy"
- HMC_missions_1_5_desc: "’žŸžM–Nÿey^t+o)Y0y†+s„výVÐ¾0R°e„vØšðS0"
+ HMC_missions_1_5_desc: "’žŸžM–Nÿey^t+o)Y0Ý„TQ„výVÐ¾0R°e„vØšðS0"
 
  HMC_missions_2_1_title: "te›QYb"
  HMC_missions_2_1_desc: "­‹Ãu¾|•KN^ÿ©‹•y†QRaEQánÏkNTëXuQ„vøw›0"
@@ -76,39 +76,39 @@
  HMC_missions_2_3_title: "QR•Nbc"
  HMC_missions_2_3_desc: "ibEQ›Q–ÿ©‹QR•NbTÿàeºNýw!c0"
  HMC_missions_2_4_title: "Z—-NŸS"
- HMC_missions_2_4_desc: "SVJS*N-NýVýãgŽNy†+sÿT›Ye„v+gåe¿OòT4NÑ0"
+ HMC_missions_2_4_desc: "SVJS*N-NýVýãgŽNÝ„TQÿT›Ye„v+gåe¿OòT4NÑ0"
  HMC_missions_2_5_title: "¿R‚Y4xùz"
- HMC_missions_2_5_desc: "uQ•Nbcÿ¿R‚Y4xùz0y†+s„v'Y›Q-^wS-NŸS0"
+ HMC_missions_2_5_desc: "uQ•Nbcÿ¿R‚Y4xùz0Ý„TQ„v'Y›Q-^wS-NŸS0"
 
  HMC_missions_3_1_title: "ŒvNtQúe"
  HMC_missions_3_1_desc: "ÑSUSÎW`lÿ©‹Nl‰RESPNN0"
  HMC_missions_3_2_title: "ýV“^EQÈv"
  HMC_missions_3_2_desc: "ïyZw0ÌRÿ:NßuN'YNÐc›OnnN­e„v=ec0"
  HMC_missions_3_3_title: "FUï¾"
- HMC_missions_3_3_desc: "^VFUïÿ©‹)YN„v0ÌRAmeQy†+s„výV“^0"
+ HMC_missions_3_3_desc: "^VFUïÿ©‹)YN„v0ÌRAmeQÝ„TQ„výV“^0"
  HMC_missions_3_4_title: "ey^tM0W"
  HMC_missions_3_4_desc: "’žŸžNbóÿM0Wey^t0Aucƒ„vÏuNm©‹ýV¶R‚YN†ûmü0"
  HMC_missions_3_5_title: "ÌR2u)YN"
  HMC_missions_3_5_desc: "SVýV“^EQÈv0R³åNpNNteGr-NŸSÿßuN¿OêS=föeô•î•˜˜0"
 
  HMC_missions_4_1_title: "^³u2Mb"
- HMC_missions_4_1_desc: "6egN¹e¿R›Rÿ©‹vQãgŽNy†+s„v×e^KNN0"
+ HMC_missions_4_1_desc: "6egN¹e¿R›Rÿ©‹vQãgŽNÝ„TQ„v×e^KNN0"
  HMC_missions_4_2_title: "N OøvZw"
- HMC_missions_4_2_desc: "Ý„TQ0'YTYIrN OF–íuRVD–ÿy†+s„v5–%„åeÊvîX'Y0"
+ HMC_missions_4_2_desc: "Ý„TQ0'YTYIrN OF–íuRVD–ÿÝ„TQ„v5–%„åeÊvîX'Y0"
  HMC_missions_4_3_title: "÷SäNN¹e"
- HMC_missions_4_3_desc: "SV²Ä–ãgÿy†+s¿Owck÷SäNN¹e0"
+ HMC_missions_4_3_desc: "SV²Ä–ãgÿÝ„TQ¿Owck÷SäNN¹e0"
  HMC_missions_4_4_title: "TÇNLeþV"
  HMC_missions_4_4_desc: "N OTˆÿTÇNLeþV0T›Ye„v¿R›R(WâVÓub—MRW)Tætã‰0"
  HMC_missions_4_5_title: "T—)YN"
- HMC_missions_4_5_desc: "û«ŽR:VKN—gÿy†+s„vT÷SÍT‰V)YN0"
+ HMC_missions_4_5_desc: "û«ŽR:VKN—gÿÝ„TQ„vT÷SÍT‰V)YN0"
 
  HMC_missions_5_1_title: "Zgåe†–"
- HMC_missions_5_1_desc: "y†+s„vZgNåeñOžXÿ)YNµOîv0"
+ HMC_missions_5_1_desc: "Ý„TQ„vZgNåeñOžXÿ)YNµOîv0"
  HMC_missions_5_2_title: "‰vúWðy^"
- HMC_missions_5_2_desc: " R•Q:N^ýVÿy†+sST4N)YN0"
+ HMC_missions_5_2_desc: " R•Q:N^ýVÿÝ„TQST4N)YN0"
  HMC_missions_5_3_title: "šRŸ-NŸS"
  HMC_missions_5_3_desc: "`S†˜-NŸS'YèÿT›Ye„v9húWòTÏu¨RGd0"
  HMC_missions_5_4_title: "IQY-NŸS"
- HMC_missions_5_4_desc: "-NŸSKSRVy†+sNb	gÿT›Ye„v‹kZQàeYAbV0"
+ HMC_missions_5_4_desc: "-NŸSKSRVÝ„TQNb	gÿT›Ye„v‹kZQàeYAbV0"
  HMC_missions_5_5_title: ")YNRVÃV"
- HMC_missions_5_5_desc: "SVte*N-NýVýãgŽNy†+sÿ)YNRVÃVÿwm…QNßu0NQRTµt„v“ŠŠÈuŽNWán0"
+ HMC_missions_5_5_desc: "SVte*N-NýVýãgŽNÝ„TQÿ)YNRVÃVÿwm…QNßu0NQRTµt„v“ŠŠÈuŽNWán0"
