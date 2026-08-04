@@ -1,5 +1,5 @@
-owner = BEI
-controller = BEI
+owner = BLS
+controller = BLS
 culture = bornean
 religion = sunni
 capital = "Bintulu"
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = BEI
+add_core = BLS
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -18,6 +18,6 @@ discovered_by = tech_gensokyan
 
 1521.1.1 = { discovered_by = SPA }
 1578.4.16 = { owner = SPA controller = SPA } # Captured by Spain
-1578.6.26 = { owner = BEI controller = BEI }
+1578.6.26 = { owner = BLS controller = BLS }
 1672.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Civil war over succession
-1673.1.1 = { revolt = {} controller = BEI }
+1673.1.1 = { revolt = {} controller = BLS }

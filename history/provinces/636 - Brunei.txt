@@ -1,7 +1,7 @@
 #636 - Brunei
 
-owner = BEI
-controller = BEI
+owner = BLS
+controller = BLS
 culture = bornean
 religion = sunni
 capital = "Brunei"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = BEI
+add_core = BLS
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -22,4 +22,4 @@ center_of_trade = 2
 
 1521.1.1 = { discovered_by = SPA }
 1672.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Civil war over succession
-1673.1.1 = { revolt = {} controller = BEI }
+1673.1.1 = { revolt = {} controller = BLS }
