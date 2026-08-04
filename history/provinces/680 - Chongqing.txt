@@ -3,7 +3,7 @@
 owner = HMC
 controller = HMC
 add_core = HMC
-culture = sichuanese
+culture = acg_hongmao
 religion = confucianism
 capital = "Chongqing"
 trade_goods = spices

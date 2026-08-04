@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+primary_culture = acg_xiaofugui
+religion = confucianism
+capital = 1816 # Beijing
+government_rank = 3
+
+1444.11.11 = {
+	monarch = {
+		name = "wiO7r"
+		dynasty = "ˆSkç±ê…b"
+		birth_date = 1415.1.1
+		death_date = 1821.12.31
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = scholar_personality
+}

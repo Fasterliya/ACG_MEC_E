@@ -3,7 +3,7 @@
 owner = AIU
 controller = AIU
 add_core = AIU
-culture = tuareg
+culture = acg_aiur
 religion = sunni
 capital = "Mashina"
 is_city = yes

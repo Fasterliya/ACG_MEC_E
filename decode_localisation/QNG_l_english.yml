@@ -1,0 +1,29 @@
+l_english:
+
+ QNG:0 "大清"
+ QNG_ADJ:0 "大清的"
+ QNG_ADJ2:0 "大清的"
+ ACG_QNG_ideas: "大清理念"
+ ACG_QNG_ideas_start: "大清传统"
+ ACG_QNG_ideas_start_desc: "大清立国，御膳房集天下名厨之大成。宫廷膳食的精湛与考究，正是盛世气象的缩影。"
+ ACG_QNG_ideas_bonus: "大清野心"
+ ACG_QNG_ideas_bonus_desc: "满汉全席，集满汉两族珍馐于一席。御膳房上下同心，满朝宾客皆赞不绝口。"
+ ACG_QNG_idea_1: "刀工传世"
+ ACG_QNG_idea_1_desc: "御膳房的刀工讲究快、准、稳，代代相传。这份精益求精的匠心，也浸润了国家的方方面面。"
+ ACG_QNG_idea_2: "珍馐荟萃"
+ ACG_QNG_idea_2_desc: "四海贡品，天南海北的食材齐聚御膳房。尝遍天下风味，方知何为人间至味。"
+ ACG_QNG_idea_3: "以食安民"
+ ACG_QNG_idea_3_desc: "民以食为天。朝廷广开粮仓、赈济百姓，让天下子民都能安居乐业。"
+ ACG_QNG_idea_4: "御厨秘方"
+ ACG_QNG_idea_4_desc: "一道道御膳秘方，是宫廷数百年的沉淀。御厨们各怀绝技，令四方来朝者叹为观止。"
+ ACG_QNG_idea_5: "厨艺比拼"
+ ACG_QNG_idea_5_desc: "宫中时常举办厨艺比拼，名厨辈出。美食之美名，也随之传遍天下。"
+ ACG_QNG_idea_6: "兼收并蓄"
+ ACG_QNG_idea_6_desc: "大清以美食广纳百川，南北风味、中外技法皆为我用。国亦然，唯有兼收并蓄方能强大。"
+ ACG_QNG_idea_7: "宫廷盛宴"
+ ACG_QNG_idea_7_desc: "每逢大典，宫廷盛宴绵延不绝。一道道佳肴彰显着大清的富庶与气度。"
+
+ ### CULTURE ###
+
+ acg_zhonghua_group: "中华ACG"
+ acg_xiaofugui: "神厨小福贵"

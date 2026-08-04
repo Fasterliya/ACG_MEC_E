@@ -1,0 +1,29 @@
+﻿l_english:
+
+ QNG:0 "'Yn"
+ QNG_ADJ:0 "'Yn„v"
+ QNG_ADJ2:0 "'Yn„v"
+ ACG_QNG_ideas: "'YntõV"
+ ACG_QNG_ideas_start: "'Yn.Oßu"
+ ACG_QNG_ideas_start_desc: "'YnËzýVÿ¡V³?bÆ–)YNT¨SKN'Yb0«R÷^³ß˜„v¾|inNwvzÿck=fÛvNlaŒ„v)qV0"
+ ACG_QNG_ideas_bonus: "'YnÎ‘ÃV"
+ ACG_QNG_ideas_bonus_desc: "ánIlhQ-^ÿÆ–ánIl2NÏeÍs™ŽNN-^0¡V³?bNNTÃVÿáng¾R¢R†v^NÝuãS0"
+ ACG_QNG_idea_1: "RåT.ON"
+ ACG_QNG_idea_1_desc: "¡V³?b„vRåT²‹vzëV0ÆQ03zÿãNãNøv.O0ÙýN¾|ÊvBl¾|„v.SÃVÿmNxm¦m†NýV¶R„v¹e¹eb—b—0"
+ ACG_QNG_idea_2: "Ís™mƒ„"
+ ACG_QNG_idea_2_desc: "ÛVwm!ÁTÿ)YWSwmS„vß˜PgPŸZw¡V³?b0SM)YNÎ˜sTÿ¹eåwUO:NºNô•ósT0"
+ ACG_QNG_idea_3: "åNß˜‰Rl"
+ ACG_QNG_idea_3_desc: "låNß˜:N)Y0g÷^^V®|ÓN0HNmŒvÓYÿ©‹)YNPRlýýw‰RESPNN0"
+ ACG_QNG_idea_4: "¡V¨SØy¹e"
+ ACG_QNG_idea_4_desc: "NSS¡V³Øy¹eÿ=f«R÷^peŒvt^„v‰lÀm0¡V¨SìNT`ÝuŽbÿäNÛV¹eeggwùS:NÂ‰bk0"
+ ACG_QNG_idea_5: "¨Sz‚Ôküb"
+ ACG_QNG_idea_5_desc: "«R-Nöe8^>NžR¨Sz‚ÔkübÿT¨SˆúQ0Žß˜KNŽTÿmN–KN.OM)YN0"
+ ACG_QNG_idea_6: "|Q6ev^Ä„"
+ ACG_QNG_idea_6_desc: "'YnåNŽß˜^³uŒvÝTÿWSSÎ˜sT0-NYŽbÕl†v:Nb(u0ýV¦N6qÿ=U	g|Q6ev^Ä„¹eýw:V'Y0"
+ ACG_QNG_idea_7: "«R÷^Ûv´R"
+ ACG_QNG_idea_7_desc: "Ïk0'YxQÿ«R÷^Ûv´Rõuö^NÝu0NSSsO´wpV>fNw'Yn„vÌR¶^Nl¦^0"
+
+ ### CULTURE ###
+
+ acg_zhonghua_group: "-NNSACG"
+ acg_xiaofugui: "^y¨SSy5"

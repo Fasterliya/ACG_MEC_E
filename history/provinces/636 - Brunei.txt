@@ -2,7 +2,7 @@
 
 owner = BLS
 controller = BLS
-culture = bornean
+culture = acg_wuthering_waves
 religion = sunni
 capital = "Brunei"
 trade_goods = spices

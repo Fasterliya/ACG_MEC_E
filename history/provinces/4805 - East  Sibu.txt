@@ -1,6 +1,6 @@
 owner = BLS
 controller = BLS
-culture = bornean
+culture = acg_wuthering_waves
 religion = sunni
 capital = "Bintulu"
 trade_goods = fish

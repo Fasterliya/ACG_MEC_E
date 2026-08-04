@@ -3,7 +3,7 @@
 owner = HMC
 controller = HMC
 add_core = HMC
-culture = hubei
+culture = acg_hongmao
 religion = confucianism
 capital = "Xiangyang"
 trade_goods = gems #Turquoise

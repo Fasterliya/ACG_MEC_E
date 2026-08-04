@@ -2,7 +2,7 @@ government = acg_monarchy
 government_rank = 1
 primary_culture = acg_aiur
 religion = acg
-technology_group = chinese
+technology_group = sub_saharan
 capital = 2274
 
 1444.11.11 = {
