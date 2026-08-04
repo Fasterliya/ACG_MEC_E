@@ -1,0 +1,7 @@
+spriteTypes = {
+	### GOVERNMENT_REFORM
+	spriteType = {
+		name = "government_reform_ACG_MEC_E_BLS_reform_1"
+		texturefile = "gfx/interface/government_reform_icons/ACG_MEC_E_NNM/ACG_MEC_E_NNM_reform_1.dds"
+	}
+}

@@ -22,3 +22,25 @@
  BLS_idea_6_desc: "守岸人立下的誓言，是这片海岸最坚固的基石，誓言永存，国家便不会动摇。"
  BLS_idea_7: "黑海守护"
  BLS_idea_7_desc: "黑海岸的力量源自对这片海的守护。守护的意志让军队永不言败。"
+
+ ### CULTURE ###
+
+ wuthering_waves_group: "鸣潮"
+ wuthering_waves: "鸣潮"
+
+ ### GOVERNMENT REFORM ###
+
+ BLS_black_shore_reform: "黑海岸守望"
+ BLS_black_shore_reform_desc: "黑海岸由守岸人与泰提斯世代守望。潮声不仅是远方的回响，更是国家统御四海的意志。在这片永夜与潮汐交织的海岸上，舰队与守军以共鸣之声捍卫黑海岸的每一寸水域。"
+
+ ### GOVERNMENT TITLES ###
+
+ bls_rank_1: "黑海岸"
+ bls_rank_2: "黑海岸"
+ bls_rank_3: "黑海岸"
+ bls_ruler_1: "系统"
+ bls_ruler_2: "系统"
+ bls_ruler_3: "系统"
+ bls_consort: "共渡者"
+ bls_heir: "候补"
+

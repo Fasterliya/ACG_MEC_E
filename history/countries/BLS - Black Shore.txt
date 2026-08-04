@@ -1,15 +1,15 @@
 government = acg_monarchy
-add_government_reform = acg_universal_government_reform_1
+add_government_reform = BLS_black_shore_reform
 government_rank = 1
-primary_culture = bornean
-religion = sunni
+primary_culture = wuthering_waves
+religion = acg
 technology_group = chinese
 capital = 636
 
 1444.11.11 = {
 	monarch = {
-		name = "守岸人"
-		dynasty = "泰提斯"
+		name = "�R�S�N"
+		dynasty = "�l�c�e"
 		birth_date = 1400.1.1
 		death_date = 1821.12.31
 		adm = 4

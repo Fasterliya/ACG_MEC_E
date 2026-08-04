@@ -1,0 +1,217 @@
+#Black Shore (Wuthering Waves) - 黑海岸
+
+graphical_culture = acggfx
+
+color = { 15 42 66 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 8 8 8 }
+
+historical_idea_groups = {
+	trade_ideas
+	naval_ideas
+	exploration_ideas
+	defensive_ideas
+	quality_ideas
+	administrative_ideas
+	offensive_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"守岸人 #0" = 100
+	"泰提斯 #0" = 60
+	"潮歌 #0" = 50
+	"凝渊 #0" = 50
+	"汐岚 #0" = 45
+	"引潮 #0" = 45
+	"静海 #0" = 40
+	"浪主 #0" = 40
+	"观星 #0" = 40
+	"启明 #0" = 40
+	"泊夜 #0" = 35
+	"归潮 #0" = 35
+	"临渊 #0" = 35
+	"镇涛 #0" = 35
+	"祈澜 #0" = 30
+	"挽歌 #0" = 30
+	"逐风 #0" = 30
+	"渡海 #0" = 30
+	"望舒 #0" = 30
+	"听澜 #0" = 30
+	"渊明 #0" = 30
+	"潮声 #0" = 30
+	"守海 #0" = 25
+	"溯汐 #0" = 25
+	"明澜 #0" = 25
+	"知潮 #0" = 25
+	"定波 #0" = 25
+	"问潮 #0" = 25
+	"净渊 #0" = 25
+	"回响 #0" = 25
+	"默潮 #0" = 25
+	"涌泉 #0" = 20
+	"澄海 #0" = 20
+	"见星 #0" = 20
+	"栖潮 #0" = 20
+	"澄澜 #0" = 20
+	"远航 #0" = 20
+	"照夜 #0" = 20
+	"晨曦 #0" = 20
+	"逐汐 #0" = 20
+	"晚照 #0" = 15
+	"晓风 #0" = 15
+	"琼潮 #0" = 15
+	"明珠 #0" = 15
+	"晴澜 #0" = 15
+	"新月 #0" = 15
+	"潮汐 #0" = 15
+	"守望 #0" = 15
+	"长歌 #0" = 15
+	"沧溟 #0" = 15
+}
+
+leader_names = {
+	"守岸人"
+	"泰提斯"
+	"潮歌"
+	"凝渊"
+	"汐岚"
+	"引潮"
+	"静海"
+	"浪主"
+	"观星"
+	"启明"
+	"泊夜"
+	"归潮"
+	"临渊"
+	"镇涛"
+	"祈澜"
+	"挽歌"
+	"逐风"
+	"渡海"
+	"望舒"
+	"听澜"
+	"渊明"
+	"潮声"
+	"守海"
+	"溯汐"
+	"明澜"
+	"知潮"
+	"定波"
+	"问潮"
+	"净渊"
+	"回响"
+	"默潮"
+	"涌泉"
+	"澄海"
+	"见星"
+	"栖潮"
+	"澄澜"
+	"远航"
+	"照夜"
+	"晨曦"
+	"逐汐"
+	"晚照"
+	"晓风"
+	"琼潮"
+	"明珠"
+	"晴澜"
+	"新月"
+	"潮汐"
+	"守望"
+	"长歌"
+	"沧溟"
+}
+
+ship_names = {
+	"黑潮" "永夜" "潮声" "回响" "守岸"
+	"静渊" "沧浪" "明汐" "夜航" "朝晖"
+	"涛声" "星海" "月华" "澄波" "远汐"
+	"归帆" "逐浪" "流萤" "银潮" "雾行"
+	"晨雾" "栖霞" "望洋" "听涛" "擎浪"
+	"溯光" "霜潮" "曦光" "暮潮" "碧波"
+	"澄净" "海天" "浮光" "白浪" "沧冥"
+	"夜潮" "星尘" "晨曦" "长流" "静夜"
+	"引潮" "惊涛" "涟漪" "潮鸣" "无垠"
+	"深海" "归途" "初汐" "远岸" "守望者"
+}
+
+army_names = {
+	"$PROVINCE$守军"
+	"$PROVINCE$驻防"
+	"$PROVINCE$卫队"
+	"$PROVINCE$潮卫"
+	"$PROVINCE$海岸军"
+	"$PROVINCE$守望者"
+	"$PROVINCE$黑潮卫"
+	"$PROVINCE$浪卫"
+	"$PROVINCE$临海军"
+	"$PROVINCE$海卫"
+	"$PROVINCE$波卫"
+	"$PROVINCE$渊卫"
+	"$PROVINCE$汐卫"
+	"$PROVINCE$静卫"
+	"$PROVINCE$潮声军"
+	"$PROVINCE$守夜"
+	"$PROVINCE$晨卫"
+	"$PROVINCE$镇海营"
+	"$PROVINCE$望海营"
+	"$PROVINCE$听潮营"
+	"$PROVINCE$观星营"
+	"$PROVINCE$引潮营"
+	"$PROVINCE$归潮营"
+	"$PROVINCE$逐风营"
+	"$PROVINCE$沧浪营"
+	"$PROVINCE$明汐营"
+	"$PROVINCE$夜航营"
+	"$PROVINCE$朝晖营"
+	"$PROVINCE$星海军"
+	"$PROVINCE$月华卫"
+	"$PROVINCE$澄波营"
+	"$PROVINCE$远汐营"
+	"$PROVINCE$归帆营"
+	"$PROVINCE$逐浪营"
+	"$PROVINCE$流萤营"
+	"$PROVINCE$银潮卫"
+	"$PROVINCE$雾行营"
+	"$PROVINCE$晨雾营"
+	"$PROVINCE$栖霞营"
+	"$PROVINCE$望洋军"
+	"$PROVINCE$听涛卫"
+	"$PROVINCE$擎浪营"
+	"$PROVINCE$溯光营"
+	"$PROVINCE$霜潮卫"
+	"$PROVINCE$曦光营"
+	"$PROVINCE$暮潮营"
+	"$PROVINCE$碧波营"
+	"$PROVINCE$海天营"
+	"$PROVINCE$浮光营"
+	"$PROVINCE$白浪营"
+}

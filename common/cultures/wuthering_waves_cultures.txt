@@ -1,0 +1,6 @@
+wuthering_waves_group = {	#鸣潮
+	graphical_culture = acggfx
+	wuthering_waves = {	#鸣潮
+		primary = BLS
+	}
+}

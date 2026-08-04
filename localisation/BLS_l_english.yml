@@ -5,7 +5,7 @@
  BLS_ADJ2: "Ñžwm¸S„v"
  BLS_ideas: "Ñžwm¸StõV"
  BLS_ideas_start: "ˆRgw„v.Ob"
- BLS_ideas_start_desc: "Ñžwm¸S„vˆR²bwìNNãNˆRgÙGrwmßW0no4l&^egÜ¹e„vðXó—ÿåNzfgaÞV”^NLu0"
+ BLS_ideas_start_desc: "Ñžwm¸S„vˆR²bwìNNãNˆRgÙGrwmßW0no4l&^egÜ¹e„vðXó—ÿåNzfgaÞV”^NLu0"
  BLS_ideas_bonus: "noðXqQ1ž"
  BLS_ideas_bonus_desc: "SVÑžwm¸S„vtõVÈu:NNSOÿwmNºN„vqQ1ž=fàeKS„v›RÏ‘ÿÏkNMOýVºNý‚YˆR¸SºN„vÞVðX0"
  BLS_idea_1: "Ñžwm¸S„vˆRg"
@@ -19,6 +19,28 @@
  BLS_idea_5: "qQ1žKNó—"
  BLS_idea_5_desc: "ˆR¸SºNåNqQ1žKNðXßu¡V'Y›QÿºNNno4lTðXqQÛÿ›QÃV‚YqS0"
  BLS_idea_6: "ˆR¸SºNKN“Š"
- BLS_idea_6_desc: "ˆR¸SºNËzN„v“ŠŠÿ=fÙGrwm¸SgZWúV„vúWówÿ“ŠŠ8lXRÿýV¶R¿ONO¨RGd0"
+ BLS_idea_6_desc: "ˆR¸SºNËzN„v“ŠŠÿ=fÙGrwm¸SgZWúV„vúWówÿ“ŠŠ8lXRÿýV¶R¿ONO¨RGd0"
  BLS_idea_7: "ÑžwmˆR²b"
  BLS_idea_7_desc: "Ñžwm¸S„v›RÏ‘nêùRÙGrwm„vˆR²b0ˆR²b„va×V©‹›Q–8lNŠ%0"
+
+ ### CULTURE ###
+
+ wuthering_waves_group: "1žno"
+ wuthering_waves: "1žno"
+
+ ### GOVERNMENT REFORM ###
+
+ BLS_black_shore_reform: "Ñžwm¸SˆRg"
+ BLS_black_shore_reform_desc: "Ñžwm¸S1uˆR¸SºNNðlÐc¯eNãNˆRg0noðXNÅN=fÜ¹e„vÞVÍTÿôf=fýV¶Rßu¡VÛVwm„va×V0(WÙGr8lYNnoPl²NÇu„vwm¸SNÿ0‚–NˆR›QåNqQ1žKNðXMckSÑžwm¸S„vÏkNøR4lßW0"
+
+ ### GOVERNMENT TITLES ###
+
+ bls_rank_1: "Ñžwm¸S"
+ bls_rank_2: "Ñžwm¸S"
+ bls_rank_3: "Ñžwm¸S"
+ bls_ruler_1: "û|ßu"
+ bls_ruler_2: "û|ßu"
+ bls_ruler_3: "û|ßu"
+ bls_consort: "qQ!nw"
+ bls_heir: "Peˆ"
+

@@ -1,4 +1,4 @@
-#Black Shore (Wuthering Waves) - ÈªëÊµ∑Â≤∏
+#Black Shore (Wuthering Waves) - —ûwm∏S
 
 graphical_culture = acggfx
 
@@ -45,18 +45,173 @@ historical_units = {
 }
 
 monarch_names = {
-	"ÂÆàÂ≤∏‰∫∫ #0" = 100
+	"àR∏S∫N #0" = 100
+	"l–cØe #0" = 60
+	"noLk #0" = 50
+	"›Qn #0" = 50
+	"PlöS #0" = 45
+	"Vno #0" = 45
+	"Yówm #0" = 40
+	"jmIN #0" = 40
+	"¬âf #0" = 40
+	"=Tf #0" = 40
+	" lY #0" = 35
+	"RVno #0" = 35
+	"4Nn #0" = 35
+	"Gïõm #0" = 35
+	"Hyúo #0" = 30
+	"KcLk #0" = 30
+	"êŒò #0" = 30
+	"!nwm #0" = 30
+	"gÇ #0" = 30
+	",Túo #0" = 30
+	"nf #0" = 30
+	"noX #0" = 30
+	"àRwm #0" = 25
+	"ØnPl #0" = 25
+	"fúo #0" = 25
+	"Âwno #0" = 25
+	"öR‚l #0" = 25
+	"Óïno #0" = 25
+	"¿Qn #0" = 25
+	"ﬁVÕT #0" = 25
+	"ÿûno #0" = 25
+	"åm…l #0" = 20
+	"Ñowm #0" = 20
+	"¡âf #0" = 20
+	"hno #0" = 20
+	"Ñoúo #0" = 20
+	"‹è*Ç #0" = 20
+	"gqY #0" = 20
+	"hfÊf #0" = 20
+	"êPl #0" = 20
+	"Zfgq #0" = 15
+	"SfŒò #0" = 15
+	"<tno #0" = 15
+	"f‡s #0" = 15
+	"tfúo #0" = 15
+	"∞eg #0" = 15
+	"noPl #0" = 15
+	"àRg #0" = 15
+	"ïLk #0" = 15
+	"µlün #0" = 15
 }
 
 leader_names = {
-	ÂÆàÂ≤∏‰∫∫
-	Ê≥∞ÊèêÊñØ
+	"àR∏S∫N"
+	"l–cØe"
+	"noLk"
+	"›Qn"
+	"PlöS"
+	"Vno"
+	"Yówm"
+	"jmIN"
+	"¬âf"
+	"=Tf"
+	" lY"
+	"RVno"
+	"4Nn"
+	"Gïõm"
+	"Hyúo"
+	"KcLk"
+	"êŒò"
+	"!nwm"
+	"gÇ"
+	",Túo"
+	"nf"
+	"noX"
+	"àRwm"
+	"ØnPl"
+	"fúo"
+	"Âwno"
+	"öR‚l"
+	"Óïno"
+	"¿Qn"
+	"ﬁVÕT"
+	"ÿûno"
+	"åm…l"
+	"Ñowm"
+	"¡âf"
+	"hno"
+	"Ñoúo"
+	"‹è*Ç"
+	"gqY"
+	"hfÊf"
+	"êPl"
+	"Zfgq"
+	"SfŒò"
+	"<tno"
+	"f‡s"
+	"tfúo"
+	"∞eg"
+	"noPl"
+	"àRg"
+	"ïLk"
+	"µlün"
 }
 
 ship_names = {
-	"ÈªëÊΩÆ" "Ê∞∏Â§ú" "ÊΩÆÂ£∞" "ÂõûÂìç" "ÂÆàÂ≤∏"
+	"—ûno" "8lY" "noX" "ﬁVÕT" "àR∏S"
+	"Yón" "µljm" "fPl" "Y*Ç" "gVf"
+	"õmX" "fwm" "gNS" "Ño‚l" "‹èPl"
+	"RV^" "êjm" "Am2Ñ" "ˆîno" "˛ñLà"
+	"hf˛ñ" "hó" "gm" ",Tõm" "Œdjm"
+	"ØnIQ" "óno" "ÊfIQ" "Æfno" "µx‚l"
+	"Ño¿Q" "wm)Y" "nmIQ" "ãvjm" "µl•Q"
+	"Yno" "fS" "hfÊf" "ïAm" "YóY"
+	"Vno" " `õm" "üm*o" "no1û" "‡e†W"
+	"Òmwm" "RVê" "RPl" "‹è∏S" "àRgw"
 }
 
 army_names = {
-	"$PROVINCE$ÂÆàÂÜõ"
+	"$PROVINCE$àRõQ"
+	"$PROVINCE$âö2ñ"
+	"$PROVINCE$kSñ"
+	"$PROVINCE$nokS"
+	"$PROVINCE$wm∏SõQ"
+	"$PROVINCE$àRgw"
+	"$PROVINCE$—ûnokS"
+	"$PROVINCE$jmkS"
+	"$PROVINCE$4NwmõQ"
+	"$PROVINCE$wmkS"
+	"$PROVINCE$‚lkS"
+	"$PROVINCE$nkS"
+	"$PROVINCE$PlkS"
+	"$PROVINCE$YókS"
+	"$PROVINCE$noXõQ"
+	"$PROVINCE$àRY"
+	"$PROVINCE$hfkS"
+	"$PROVINCE$Gïwm%Ñ"
+	"$PROVINCE$gwm%Ñ"
+	"$PROVINCE$,Tno%Ñ"
+	"$PROVINCE$¬âf%Ñ"
+	"$PROVINCE$Vno%Ñ"
+	"$PROVINCE$RVno%Ñ"
+	"$PROVINCE$êŒò%Ñ"
+	"$PROVINCE$µljm%Ñ"
+	"$PROVINCE$fPl%Ñ"
+	"$PROVINCE$Y*Ç%Ñ"
+	"$PROVINCE$gVf%Ñ"
+	"$PROVINCE$fwmõQ"
+	"$PROVINCE$gNSkS"
+	"$PROVINCE$Ño‚l%Ñ"
+	"$PROVINCE$‹èPl%Ñ"
+	"$PROVINCE$RV^%Ñ"
+	"$PROVINCE$êjm%Ñ"
+	"$PROVINCE$Am2Ñ%Ñ"
+	"$PROVINCE$ˆînokS"
+	"$PROVINCE$˛ñLà%Ñ"
+	"$PROVINCE$hf˛ñ%Ñ"
+	"$PROVINCE$hó%Ñ"
+	"$PROVINCE$gmõQ"
+	"$PROVINCE$,TõmkS"
+	"$PROVINCE$Œdjm%Ñ"
+	"$PROVINCE$ØnIQ%Ñ"
+	"$PROVINCE$ónokS"
+	"$PROVINCE$ÊfIQ%Ñ"
+	"$PROVINCE$Æfno%Ñ"
+	"$PROVINCE$µx‚l%Ñ"
+	"$PROVINCE$wm)Y%Ñ"
+	"$PROVINCE$nmIQ%Ñ"
+	"$PROVINCE$ãvjm%Ñ"
 }

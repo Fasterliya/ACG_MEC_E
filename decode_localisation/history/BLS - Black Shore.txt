@@ -1,8 +1,8 @@
 government = acg_monarchy
-add_government_reform = acg_universal_government_reform_1
+add_government_reform = BLS_black_shore_reform
 government_rank = 1
-primary_culture = bornean
-religion = sunni
+primary_culture = wuthering_waves
+religion = Anime
 technology_group = chinese
 capital = 636
 

@@ -1,0 +1,24 @@
+BLS_black_shore_reform = {
+	lock_level_when_selected = yes
+	icon = "ACG_MEC_E_BLS_reform_1"
+	potential = {
+		OR = {
+			has_reform = BLS_black_shore_reform
+			have_had_reform = BLS_black_shore_reform
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		naval_morale = 0.15
+		global_ship_trade_power = 0.15
+		naval_forcelimit_modifier = 0.25
+		heavy_ship_power = 0.10
+		global_manpower_modifier = 0.10
+		governing_capacity = 200
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}
