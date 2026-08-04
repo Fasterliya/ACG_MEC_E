@@ -1,0 +1,51 @@
+HMC_qijian_reform = {
+	#虹猫
+	rank = {
+		1 = HMC_rank_1
+		2 = HMC_rank_2
+		3 = HMC_rank_3
+	}
+
+	#剑主
+	ruler_male = {
+		1 = HMC_ruler_1
+		2 = HMC_ruler_2
+		3 = HMC_ruler_3
+	}
+
+	ruler_female = {
+		1 = HMC_ruler_1
+		2 = HMC_ruler_2
+		3 = HMC_ruler_3
+	}
+
+	consort_male = {
+		1 = HMC_consort
+		2 = HMC_consort
+		3 = HMC_consort
+	}
+
+	consort_female = {
+		1 = HMC_consort
+		2 = HMC_consort
+		3 = HMC_consort
+	}
+
+	heir_male = {
+		1 = HMC_heir
+		2 = HMC_heir
+		3 = HMC_heir
+	}
+
+	heir_female = {
+		1 = HMC_heir
+		2 = HMC_heir
+		3 = HMC_heir
+	}
+	trigger = {
+		OR = {
+			tag = HMC
+			has_reform = HMC_qijian_reform
+		}
+	}
+}

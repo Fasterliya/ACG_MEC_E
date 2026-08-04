@@ -1,0 +1,93 @@
+#Hong Mao (Rainbow Cat) - 虹猫
+
+graphical_culture = asiangfx
+
+color = { 220 60 60 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 200 20 20 }
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	quality_ideas
+	administrative_ideas
+	humanist_ideas
+	diplomatic_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	chinese_footsoldier
+	chinese_cavalry
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"虹猫 #0" = 100
+	"蓝兔 #0" = 60
+	"大奔 #0" = 50
+	"跳跳 #0" = 45
+	"达达 #0" = 45
+	"逗逗 #0" = 40
+	"莎莉 #0" = 40
+}
+
+leader_names = {
+	"虹猫"
+	"蓝兔"
+	"大奔"
+	"跳跳"
+	"达达"
+	"逗逗"
+	"莎莉"
+	"黑心虎"
+	"马三娘"
+	"猪无戒"
+	"牛旋风"
+	"紫衣"
+	"白衣"
+	"青衣"
+	"红衣"
+	"剑客"
+	"侠士"
+	"七剑"
+	"麒麟"
+	"云心"
+	"竹韵"
+	"岚风"
+	"沧浪"
+	"赤焰"
+	"寒冰"
+}
+
+ship_names = {
+	"长虹" "冰魄" "紫云" "雨花" "奔雷"
+	"青光" "旋风" "麒麟" "破浪" "追风"
+}
+
+army_names = {
+	"$PROVINCE$七剑"
+	"$PROVINCE$侠士"
+	"$PROVINCE$剑客"
+	"$PROVINCE$护旗军"
+}

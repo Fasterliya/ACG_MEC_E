@@ -1,0 +1,22 @@
+HMC_qijian_reform = {
+	lock_level_when_selected = yes
+	icon = "ACG_MEC_E_HMC_government_reform"
+	potential = {
+		OR = {
+			has_reform = HMC_qijian_reform
+			have_had_reform = HMC_qijian_reform
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		land_morale = 0.15
+		discipline = 0.05
+		global_manpower_modifier = 0.15
+		governing_capacity = 200
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}

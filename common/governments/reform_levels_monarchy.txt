@@ -83,6 +83,7 @@ acg_monarchy = {
 				SKR_sakura_card_reform
 				SKR_clear_card_reform
 				BLS_black_shore_reform
+				HMC_qijian_reform
 			}
 		}
 		racial_policy = {

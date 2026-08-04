@@ -1,0 +1,518 @@
+HMC_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HMC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HMC_missions_1_1 = {
+		icon = "mission_empire"
+		position = 1
+		trigger = {
+			total_development = 50
+		}
+		effect = {
+			add_country_modifier = { name = HMC_qijian_unity_modifier duration = 9125 }
+			add_splendor = 50
+			add_prestige = 15
+			add_adm_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	HMC_missions_1_2 = {
+		icon = "mission_dominate_home_trade_node"
+		position = 2
+		required_missions = { HMC_missions_1_1 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 8
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			set_country_flag = HMC_china_core_unlocked
+			add_country_modifier = { name = HMC_china_core_modifier duration = -1 }
+			custom_tooltip = HMC_china_core_unlocked_tt
+			add_splendor = 100
+			add_prestige = 25
+			add_adm_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	HMC_missions_1_3 = {
+		icon = "mission_high_income"
+		position = 3
+		required_missions = { HMC_missions_1_2 }
+		trigger = {
+			total_development = 120
+			stability = 1
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			add_splendor = 150
+			add_prestige = 30
+			add_adm_power = 250
+			change_government_reform_progress = 100
+		}
+	}
+
+	HMC_missions_1_4 = {
+		icon = "mission_noble_council"
+		position = 4
+		required_missions = { HMC_missions_1_3 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_fort = yes
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HMC_bingpo_sword_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			add_mil_power = 250
+			change_government_reform_progress = 150
+		}
+	}
+
+	HMC_missions_1_5 = {
+		icon = "mission_empire"
+		position = 5
+		required_missions = { HMC_missions_1_4 }
+		trigger = {
+			total_development = 250
+			stability = 2
+		}
+		effect = {
+			add_country_modifier = { name = HMC_qilin_blessing_modifier duration = -1 }
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+			add_splendor = 300
+			add_prestige = 45
+			change_government_reform_progress = 200
+			add_stability = 1
+		}
+	}
+}
+
+HMC_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = HMC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HMC_missions_2_1 = {
+		icon = "mission_assemble_an_army"
+		position = 1
+		trigger = {
+			army_size_percentage = 0.8
+		}
+		effect = {
+			add_country_modifier = { name = HMC_changhong_sword_modifier duration = 9125 }
+			add_splendor = 50
+			add_prestige = 15
+			add_mil_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	HMC_missions_2_2 = {
+		icon = "mission_conquer_5_states"
+		position = 2
+		required_missions = { HMC_missions_2_1 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 12
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HMC_mythic_warrior_modifier duration = -1 }
+			add_splendor = 100
+			add_prestige = 20
+			add_mil_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	HMC_missions_2_3 = {
+		icon = "mission_cannons_firing"
+		position = 3
+		required_missions = { HMC_missions_2_2 }
+		trigger = {
+			land_forcelimit = 25
+		}
+		effect = {
+			add_army_tradition = 15
+			add_splendor = 150
+			add_prestige = 25
+			add_mil_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	HMC_missions_2_4 = {
+		icon = "mission_invade_island"
+		position = 4
+		required_missions = { HMC_missions_2_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 18
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			china_superregion = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 200
+			add_prestige = 30
+			add_mil_power = 250
+			change_government_reform_progress = 100
+		}
+	}
+
+	HMC_missions_2_5 = {
+		icon = "mission_empire"
+		position = 5
+		required_missions = { HMC_missions_2_4 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 25
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HMC_mythic_warrior_modifier duration = -1 }
+			add_splendor = 250
+			add_prestige = 35
+			add_mil_power = 300
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+}
+
+HMC_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = HMC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HMC_missions_3_1 = {
+		icon = "mission_early_game_buildings"
+		position = 1
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				is_city = yes
+			}
+		}
+		effect = {
+			add_splendor = 50
+			add_prestige = 15
+			add_adm_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	HMC_missions_3_2 = {
+		icon = "mission_high_income"
+		position = 2
+		required_missions = { HMC_missions_3_1 }
+		trigger = {
+			monthly_income = 30
+		}
+		effect = {
+			add_treasury = 500
+			add_splendor = 100
+			add_prestige = 20
+			add_adm_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	HMC_missions_3_3 = {
+		icon = "mission_dominate_home_trade_node"
+		position = 3
+		required_missions = { HMC_missions_3_2 }
+		trigger = {
+			trade_efficiency = 0.25
+			num_of_merchants = 3
+		}
+		effect = {
+			add_trade_income = 100
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	HMC_missions_3_4 = {
+		icon = "mission_asian_trader"
+		position = 4
+		required_missions = { HMC_missions_3_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 15
+				superregion = china_superregion
+			}
+			monthly_income = 60
+		}
+		effect = {
+			add_country_modifier = { name = HMC_qilin_blessing_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 30
+			add_dip_power = 250
+			change_government_reform_progress = 100
+			add_stability = 1
+		}
+	}
+
+	HMC_missions_3_5 = {
+		icon = "mission_high_income"
+		position = 5
+		required_missions = { HMC_missions_3_4 }
+		trigger = {
+			monthly_income = 100
+		}
+		effect = {
+			add_treasury = 2000
+			add_splendor = 300
+			add_prestige = 45
+			change_government_reform_progress = 150
+			add_stability = 1
+		}
+	}
+}
+
+HMC_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = HMC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HMC_missions_4_1 = {
+		icon = "mission_have_two_subjects"
+		position = 1
+		trigger = {
+			num_of_subjects = 1
+		}
+		effect = {
+			every_subject_country = {
+				add_trust = {
+					who = ROOT
+					value = 20
+				}
+			}
+			add_splendor = 50
+			add_prestige = 15
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	HMC_missions_4_2 = {
+		icon = "mission_diplomatic_relation"
+		position = 2
+		required_missions = { HMC_missions_4_1 }
+		trigger = {
+			num_of_subjects = 2
+		}
+		effect = {
+			add_splendor = 100
+			add_prestige = 20
+			add_dip_power = 150
+			change_government_reform_progress = 50
+		}
+	}
+
+	HMC_missions_4_3 = {
+		icon = "mission_have_two_subjects"
+		position = 3
+		required_missions = { HMC_missions_4_2 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 20
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			add_splendor = 150
+			add_prestige = 25
+			add_dip_power = 200
+			change_government_reform_progress = 75
+		}
+	}
+
+	HMC_missions_4_4 = {
+		icon = "mission_empire"
+		position = 4
+		required_missions = { HMC_missions_4_3 }
+		trigger = {
+			num_of_subjects = 3
+		}
+		effect = {
+			add_country_modifier = { name = HMC_qijian_unity_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 30
+			add_dip_power = 250
+			change_government_reform_progress = 100
+			add_stability = 1
+		}
+	}
+
+	HMC_missions_4_5 = {
+		icon = "mission_the_great_conqueror"
+		position = 5
+		required_missions = { HMC_missions_4_4 }
+		trigger = {
+			is_great_power = yes
+		}
+		effect = {
+			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
+			add_splendor = 300
+			add_prestige = 50
+			add_stability = 2
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+		}
+	}
+}
+
+HMC_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = HMC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	HMC_missions_5_1 = {
+		icon = "mission_monarch_in_throne_room"
+		position = 1
+		trigger = {
+			prestige = 50
+		}
+		effect = {
+			add_splendor = 50
+			add_prestige = 15
+			add_dip_power = 100
+			change_government_reform_progress = 25
+		}
+	}
+
+	HMC_missions_5_2 = {
+		icon = "mission_empire"
+		position = 2
+		required_missions = { HMC_missions_5_1 }
+		trigger = {
+			government_rank = 3
+			total_development = 400
+		}
+		effect = {
+			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
+			add_splendor = 200
+			add_prestige = 35
+			add_adm_power = 250
+			change_government_reform_progress = 100
+			add_stability = 1
+		}
+	}
+
+	HMC_missions_5_3 = {
+		icon = "mission_conquer_5_states"
+		position = 3
+		required_missions = { HMC_missions_5_2 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 30
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			china_superregion = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			add_splendor = 250
+			add_prestige = 40
+			add_mil_power = 300
+			change_government_reform_progress = 150
+		}
+	}
+
+	HMC_missions_5_4 = {
+		icon = "mission_empire"
+		position = 4
+		required_missions = { HMC_missions_5_3 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 40
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HMC_mythic_warrior_modifier duration = -1 }
+			add_splendor = 300
+			add_prestige = 45
+			add_stability = 2
+			change_government_reform_progress = 200
+		}
+	}
+
+	HMC_missions_5_5 = {
+		icon = "mission_the_great_conqueror"
+		position = 5
+		required_missions = { HMC_missions_5_4 }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 60
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
+			add_splendor = 400
+			add_prestige = 60
+			add_stability = 3
+			add_crown_land = 10
+			capital_scope = {
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 5
+			}
+		}
+	}
+}

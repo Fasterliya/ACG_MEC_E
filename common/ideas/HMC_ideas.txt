@@ -1,0 +1,43 @@
+HMC_ideas = {
+	start = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+	bonus = {
+		all_power_cost = -0.10
+	}
+	trigger = {
+		tag = HMC
+	}
+	free = yes
+	HMC_idea_1 = {
+		land_fire_damage = 0.15
+		infantry_power = 0.10
+	}
+	HMC_idea_2 = {
+		core_creation = -0.20
+		administrative_efficiency = 0.05
+	}
+	HMC_idea_3 = {
+		global_unrest = -3
+		national_unrest = -1
+	}
+	HMC_idea_4 = {
+		land_forcelimit_modifier = 0.25
+		global_manpower_modifier = 0.15
+	}
+	HMC_idea_5 = {
+		stability_cost_modifier = -0.15
+		technology_cost = -0.10
+	}
+	HMC_idea_6 = {
+		land_attrition = -0.25
+		max_hostile_attrition = 2
+		defensiveness = 0.15
+	}
+	HMC_idea_7 = {
+		discipline = 0.05
+		land_morale = 0.10
+		land_fire_damage = 0.10
+	}
+}

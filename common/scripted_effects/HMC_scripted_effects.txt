@@ -1,0 +1,56 @@
+### HMC CHINA UNIFICATION DYNAMIC BUFF ###
+
+HMC_china_unification_effect = {
+	# 先移除旧的动态增益，再按新占有省份数重新计算
+	remove_country_modifier = HMC_china_growth_1
+	remove_country_modifier = HMC_china_growth_2
+	remove_country_modifier = HMC_china_growth_3
+	remove_country_modifier = HMC_china_growth_4
+	remove_country_modifier = HMC_china_growth_5
+
+	if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				superregion = china_superregion
+				value = 20
+			}
+		}
+		add_country_modifier = { name = HMC_china_growth_5 duration = -1 }
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				superregion = china_superregion
+				value = 15
+			}
+		}
+		add_country_modifier = { name = HMC_china_growth_4 duration = -1 }
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				superregion = china_superregion
+				value = 10
+			}
+		}
+		add_country_modifier = { name = HMC_china_growth_3 duration = -1 }
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				superregion = china_superregion
+				value = 5
+			}
+		}
+		add_country_modifier = { name = HMC_china_growth_2 duration = -1 }
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				superregion = china_superregion
+				value = 3
+			}
+		}
+		add_country_modifier = { name = HMC_china_growth_1 duration = -1 }
+	}
+}

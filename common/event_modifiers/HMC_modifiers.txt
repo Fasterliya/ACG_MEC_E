@@ -1,0 +1,79 @@
+### HMC MISSION REWARDS ###
+
+HMC_qijian_unity_modifier = {
+	land_morale = 0.15
+	discipline = 0.05
+	global_unrest = -2
+}
+
+HMC_qilin_blessing_modifier = {
+	global_manpower_modifier = 0.15
+	land_forcelimit_modifier = 0.10
+	tax_income = 0.10
+}
+
+HMC_changhong_sword_modifier = {
+	land_fire_damage = 0.15
+	shock_damage = 0.10
+}
+
+HMC_bingpo_sword_modifier = {
+	land_attrition = -0.15
+	defensiveness = 0.15
+}
+
+HMC_china_core_modifier = {
+	core_creation = -0.10
+	administrative_efficiency = 0.05
+}
+
+HMC_hegemon_modifier = {
+	discipline = 0.10
+	land_morale = 0.15
+	all_power_cost = -0.10
+	administrative_efficiency = 0.10
+	global_unrest = -3
+}
+
+HMC_mythic_warrior_modifier = {
+	land_fire_damage = 0.10
+	shock_damage = 0.10
+	infantry_power = 0.10
+}
+
+### HMC DYNAMIC CHINA GROWTH BUFF ###
+
+HMC_china_growth_1 = {
+	global_manpower_modifier = 0.10
+	stability_cost_modifier = -0.05
+}
+
+HMC_china_growth_2 = {
+	global_manpower_modifier = 0.15
+	stability_cost_modifier = -0.10
+	core_creation = -0.05
+}
+
+HMC_china_growth_3 = {
+	global_manpower_modifier = 0.20
+	stability_cost_modifier = -0.15
+	core_creation = -0.10
+	land_morale = 0.05
+}
+
+HMC_china_growth_4 = {
+	global_manpower_modifier = 0.25
+	stability_cost_modifier = -0.20
+	core_creation = -0.15
+	land_morale = 0.10
+	discipline = 0.05
+}
+
+HMC_china_growth_5 = {
+	global_manpower_modifier = 0.30
+	stability_cost_modifier = -0.25
+	core_creation = -0.20
+	land_morale = 0.15
+	discipline = 0.10
+	all_power_cost = -0.05
+}

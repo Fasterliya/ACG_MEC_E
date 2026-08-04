@@ -1,0 +1,23 @@
+government = acg_monarchy
+add_government_reform = HMC_qijian_reform
+government_rank = 1
+primary_culture = hongmao
+religion = acg
+technology_group = chinese
+capital = 680
+
+1444.11.11 = {
+	monarch = {
+		name = "y†+s"
+		dynasty = "•y†"
+		birth_date = 1420.1.1
+		death_date = 1821.12.31
+		adm = 4
+		dip = 4
+		mil = 6
+		female = no
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = bold_fighter_personality
+}

@@ -1,0 +1,30 @@
+### HMC CHINA UNIFICATION MECHANIC ###
+
+# on_conquest: ROOT = province, FROM = previous owner, owner = new owner (conqueror)
+on_conquest = {
+	effect = {
+		if = {
+			limit = {
+				owner = { tag = HMC }
+				owner = { has_country_flag = HMC_china_core_unlocked }
+				superregion = china_superregion
+				NOT = { is_core = HMC }
+			}
+			add_core = HMC
+		}
+	}
+}
+
+# 每年为统一中国加速：占有的中国地区省份越多，Buff 越强
+on_yearly_pulse = {
+	effect = {
+		if = {
+			limit = {
+				tag = HMC
+				has_country_flag = HMC_china_core_unlocked
+			}
+			# 根据已占有的中国省份数量叠加增益
+			HMC_china_unification_effect = yes
+		}
+	}
+}
