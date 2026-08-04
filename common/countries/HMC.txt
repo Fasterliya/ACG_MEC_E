@@ -1,6 +1,6 @@
 #Hong Mao (Rainbow Cat) - y�+s
 
-graphical_culture = asiangfx
+graphical_culture = acggfx
 
 color = { 60 120 220 }
 

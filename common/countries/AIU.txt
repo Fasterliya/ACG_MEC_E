@@ -1,6 +1,6 @@
 #Aiur (Protoss) - 艾尔
 
-graphical_culture = africangfx
+graphical_culture = acggfx
 
 color = { 80 60 200 }
 
