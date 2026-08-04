@@ -1,6 +1,6 @@
 #Black Shore (Wuthering Waves) - Ñžwm¸S
 
-graphical_culture = acggfx
+graphical_culture = asiangfx
 
 color = { 15 42 66 }
 

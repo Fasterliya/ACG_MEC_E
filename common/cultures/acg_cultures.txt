@@ -15,13 +15,13 @@ acg_zhonghua_group = {	#中华ACG
 	acg_xiaofugui = {	#神厨小福贵
 		primary = QNG
 		dynasty_names = {
-			叶赫那拉 爱新觉罗 福贵 老佛爷
+			Yehonala AisinGioro Fugui Laofoye
 		}
 		male_names = {
-			小福贵 小李子 麦香 春喜
+			XiaoFugui XiaoLizi MaiXiang ChunXi
 		}
 		female_names = {
-			老佛爷 叶赫那拉 小飞蝶 春喜
+			Laofoye Yehonala XiaoFeiDie ChunXi
 		}
 	}
 }

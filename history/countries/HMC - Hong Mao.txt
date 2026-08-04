@@ -8,14 +8,14 @@ capital = 680
 
 1444.11.11 = {
 	monarch = {
-		name = "y†+s"
-		dynasty = "•y†"
+		name = "Ý„TQ"
+		dynasty = "°QD›"
 		birth_date = 1420.1.1
 		death_date = 1821.12.31
 		adm = 4
 		dip = 4
 		mil = 6
-		female = no
+		female = yes
 	}
 	add_ruler_personality = immortal_personality
 	add_ruler_personality = conqueror_personality
