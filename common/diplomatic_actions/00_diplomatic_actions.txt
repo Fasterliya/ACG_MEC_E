@@ -411,7 +411,9 @@ allianceaction = {
 				total_development = 100
 			}
 		 }
-		allow = { }
+		allow = {
+			always = no
+		 }
 	}
 	condition = {
 		tooltip = FROM_CANNOT_MAKE_ALLIANCES_2
@@ -421,7 +423,9 @@ allianceaction = {
 				is_year = 1449
 			}
 		 }
-		allow = { }
+		allow = { 
+			always = no
+		}
 	}
 	effect = {
 		if = {	#acgu
