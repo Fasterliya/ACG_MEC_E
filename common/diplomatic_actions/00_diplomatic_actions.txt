@@ -156,6 +156,19 @@ declarewar = {
 			FROM = { is_part_of_hre = no }
 		}
 	}
+	#ACG_MEC
+	condition = {
+		tooltip = ACG_MEC_E_cannot_deaclare
+		potential = { 
+			ai = yes
+			NOT = {
+				is_year = 1464
+			}
+		}
+		allow = { 
+			always = no
+		}
+	}
 	effect = {
 		on_war_declaration_effect = yes
 		if = { #灵梦相关内容
@@ -387,6 +400,28 @@ allianceaction = {
 		allow = {
 			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
 		}
+	}
+	#ACG_MEC
+	condition = {
+		tooltip = FROM_CANNOT_MAKE_ALLIANCES_1
+		potential = {
+			ai = yes
+			num_of_allies = 1
+			NOT = {
+				total_development = 100
+			}
+		 }
+		allow = { }
+	}
+	condition = {
+		tooltip = FROM_CANNOT_MAKE_ALLIANCES_2
+		potential = {
+			ai = yes
+			NOT = {
+				is_year = 1449
+			}
+		 }
+		allow = { }
 	}
 	effect = {
 		if = {	#acgu
