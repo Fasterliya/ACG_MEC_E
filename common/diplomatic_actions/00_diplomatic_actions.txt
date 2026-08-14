@@ -164,6 +164,9 @@ declarewar = {
 			NOT = {
 				is_year = 1464
 			}
+			FROM = {
+				ai = no
+			}
 		}
 		allow = { 
 			always = no
@@ -410,6 +413,9 @@ allianceaction = {
 			NOT = {
 				total_development = 100
 			}
+			FROM = {
+				ai = yes
+			}
 		 }
 		allow = {
 			always = no
@@ -421,6 +427,9 @@ allianceaction = {
 			ai = yes
 			NOT = {
 				is_year = 1449
+			}
+			FROM = {
+				ai = yes
 			}
 		 }
 		allow = { 
