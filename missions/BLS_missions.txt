@@ -342,7 +342,7 @@ BLS_missions_4 = {
 		required_missions = { BLS_missions_4_1 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				value = 15
+				value = 10
 				region = indonesia_region
 			}
 		}
@@ -362,11 +362,11 @@ BLS_missions_4 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				value = 8
-				region = south_china_sea_region
+				region = indonesia_region
 			}
 		}
 		effect = {
-			south_china_sea_region = {
+			indonesia_region = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
@@ -384,11 +384,11 @@ BLS_missions_4 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				value = 10
-				region = indo_china_region
+				region = indonesia_region
 			}
 		}
 		effect = {
-			indo_china_region = {
+			indonesia_region = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
@@ -406,7 +406,7 @@ BLS_missions_4 = {
 		required_missions = { BLS_missions_4_4 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
-				value = 40
+				value = 25
 				OR = {
 					region = malaya_region
 					region = indonesia_region
