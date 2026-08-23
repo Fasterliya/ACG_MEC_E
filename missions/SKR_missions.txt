@@ -448,8 +448,8 @@ SKR_missions_8 = {
 		icon = mission_holy_roman_empire
 		position = 1
 		trigger = {
-			is_elector = yes
-			has_reform = emperor_reichsreform
+			always = yes
+
 		}
 		effect = {
 			add_country_modifier = { name = skr_imperial_growth duration = -1 }

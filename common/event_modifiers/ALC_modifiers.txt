@@ -156,3 +156,7 @@ ALC_capital_fort = {
 	fort_level = 4
 	garrison_growth = 0.5
 }
+
+ACG_MEC_governing_cost_test = {
+	governing_cost = -0.15
+}

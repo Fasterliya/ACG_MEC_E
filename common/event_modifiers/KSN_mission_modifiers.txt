@@ -51,7 +51,7 @@ KSN_ultimate_engineer = {
 	infantry_power = 0.10
 	shock_damage_received = -0.20
 	yearly_army_professionalism = 0.02
-	artillery_fire = 1
+	artillery_fire = 2
 	backrow_artillery_damage = 0.10
 	province_warscore_cost = -0.20
 }
