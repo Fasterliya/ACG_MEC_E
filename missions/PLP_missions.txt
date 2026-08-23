@@ -37,6 +37,7 @@ PLP_missions_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			army_size_percentage = 0.6
 		}
 		effect = {
 			add_country_modifier = { name = PLP_sindh_dominion duration = -1 }
@@ -211,7 +212,7 @@ PLP_missions_2 = {
 		position = 1
 		trigger = {
 			home_trade_node = {
-				trade_power = 25
+				trade_power = 30
 			}
 		}
 		effect = {
@@ -258,6 +259,7 @@ PLP_missions_2 = {
 		trigger = {
 			home_trade_node = {
 				is_strongest_trade_power = ROOT
+				trade_power = 45
 			}
 		}
 		effect = {
@@ -273,7 +275,7 @@ PLP_missions_2 = {
 		required_missions = { PLP_missions_2_4 }
 		trigger = {
 			home_trade_node = {
-				trade_power = 40
+				trade_power = 60
 			}
 		}
 		effect = {
@@ -289,7 +291,7 @@ PLP_missions_2 = {
 		required_missions = { PLP_missions_2_5 }
 		trigger = {
 			home_trade_node = {
-				trade_power = 60
+				trade_power = 75
 			}
 		}
 		effect = {
@@ -305,7 +307,7 @@ PLP_missions_2 = {
 		required_missions = { PLP_missions_2_6 }
 		trigger = {
 			home_trade_node = {
-				trade_power = 80
+				trade_power = 90
 			}
 		}
 		effect = {
@@ -357,7 +359,7 @@ PLP_missions_3 = {
 		icon = mission_develop_the_capital
 		position = 1
 		trigger = {
-			total_development = 100
+			total_development = 150
 		}
 		effect = {
 			add_country_modifier = { name = PLP_granary duration = -1 }
@@ -373,7 +375,7 @@ PLP_missions_3 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				has_production_building_trigger = yes
-				value = 1
+				value = 3
 			}
 		}
 		effect = {
@@ -389,7 +391,7 @@ PLP_missions_3 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				has_production_building_trigger = yes
-				value = 3
+				value = 5
 			}
 		}
 		effect = {
@@ -404,7 +406,7 @@ PLP_missions_3 = {
 		position = 4
 		required_missions = { PLP_missions_3_3 PLP_missions_4_3 }
 		trigger = {
-			treasury = 500
+			treasury = 750
 		}
 		effect = {
 			add_country_modifier = { name = PLP_vault duration = -1 }
@@ -437,7 +439,7 @@ PLP_missions_3 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				has_production_building_trigger = yes
-				value = 6
+				value = 8
 			}
 		}
 		effect = {
@@ -491,7 +493,7 @@ PLP_missions_4 = {
 		icon = mission_religious
 		position = 1
 		trigger = {
-			num_of_missionaries = 1
+			num_of_missionaries = 2
 		}
 		effect = {
 			add_country_modifier = { name = PLP_preach duration = -1 }
@@ -522,7 +524,7 @@ PLP_missions_4 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				has_building = temple
-				value = 3
+				value = 4
 			}
 		}
 		effect = {
@@ -536,7 +538,11 @@ PLP_missions_4 = {
 		position = 4
 		required_missions = { PLP_missions_4_3 }
 		trigger = {
-			religious_unity = 0.8
+			religious_unity = 0.85
+			num_of_owned_provinces_with = {
+				religion = goddess_worship
+				value = 10
+			}
 		}
 		effect = {
 			add_country_modifier = { name = PLP_orthodox duration = -1 }
@@ -567,7 +573,7 @@ PLP_missions_4 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				has_building = temple
-				value = 5
+				value = 7
 			}
 		}
 		effect = {
