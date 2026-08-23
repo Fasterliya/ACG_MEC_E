@@ -15,7 +15,6 @@ PLP_missions_1 = {
 		}
 		effect = {
 			add_government_reform = PLP_purple_heart_reform
-			add_country_modifier = { name = PLP_awakening duration = -1 }
 			add_treasury = 300
 			add_prestige = 20
 			add_adm_power = 50
@@ -65,6 +64,7 @@ PLP_missions_1 = {
 		}
 		effect = {
 			add_country_modifier = { name = PLP_north_sindh duration = -1 }
+			add_country_modifier = { name = PLP_awakening duration = -1 }
 			add_treasury = 500
 			add_adm_power = 50
 			add_army_tradition = 10
@@ -88,6 +88,7 @@ PLP_missions_1 = {
 		}
 		effect = {
 			add_country_modifier = { name = PLP_patan duration = -1 }
+			override_country_name = PLP_eternal_purple_capital
 			add_treasury = 500
 			add_mil_power = 100
 			add_army_tradition = 15
@@ -171,12 +172,27 @@ PLP_missions_1 = {
 			total_development = 500
 		}
 		effect = {
-			override_country_name = PLP_eternal_purple_capital
 			add_country_modifier = { name = PLP_eternal_capital duration = -1 }
 			add_treasury = 3000
 			add_stability = 1
 			add_prestige = 100
 			add_army_tradition = 30
+		}
+	}
+	PLP_missions_1_9 = {
+		icon = mission_african_soldier
+		position = 9
+		trigger = {
+			OR = {
+				army_professionalism = 0.2
+				army_tradition = 20
+			}
+		}
+		effect = {
+			add_country_modifier = { name = PLP_armaments duration = -1 }
+			add_mil_power = 200
+			add_army_tradition = 20
+			add_prestige = 30
 		}
 	}
 }
@@ -311,6 +327,19 @@ PLP_missions_2 = {
 			add_treasury = 2000
 			add_dip_power = 200
 			add_prestige = 100
+		}
+	}
+	PLP_missions_2_9 = {
+		icon = mission_naval_dominance
+		position = 9
+		trigger = {
+			navy_size = 50
+		}
+		effect = {
+			add_country_modifier = { name = PLP_navy duration = -1 }
+			add_navy_tradition = 20
+			add_dip_power = 200
+			add_prestige = 30
 		}
 	}
 }
