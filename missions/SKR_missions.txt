@@ -1,10 +1,10 @@
 # =========================
-# SKR (木之本樱) 任务树
-# Slot 1: 库洛继承者 (Card Collection - Core)
-# Slot 2: 波西米亚之梦 (Bohemia)
-# Slot 3: 神圣帝国 (HRE)
-# Slot 4: 德意志霸主 (Germany)
-# Slot 5: 意大利之冠 (Italy)
+# SKR (鏈ㄤ箣鏈ū) 浠诲姟鏍?
+# Slot 1: 搴撴礇缁ф壙鑰?(Card Collection - Core)
+# Slot 2: 娉㈣タ绫充簹涔嬫ⅵ (Bohemia)
+# Slot 3: 绁炲湥甯濆浗 (HRE)
+# Slot 4: 寰锋剰蹇楅湼涓?(Germany)
+# Slot 5: 鎰忓ぇ鍒╀箣鍐?(Italy)
 # =========================
 
 SKR_missions_6 = {
@@ -283,6 +283,9 @@ SKR_missions_7 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
+			poland_region = {
+				add_permanent_claim = ROOT
+			}
 			add_treasury = 300
 			add_prestige = 15
 			add_country_modifier = { name = skr_conquest_frenzy duration = 1825 }
@@ -303,6 +306,9 @@ SKR_missions_7 = {
 			}
 		}
 		effect = {
+			carpathia_region = {
+				add_permanent_claim = ROOT
+			}
 			add_country_modifier = { name = skr_bohemia_unified duration = -1 }
 			add_prestige = 25
 			add_splendor = 100
@@ -328,7 +334,7 @@ SKR_missions_7 = {
 	SKR_mission_7_6 = {
 		icon = mission_have_manufactories
 		position = 6
-		required_missions = { SKR_mission_7_5 SKR_mission_6_5 }
+		required_missions = { SKR_mission_7_5 }
 		trigger = {
 			monthly_income = 80
 			num_of_owned_provinces_with = {
@@ -362,7 +368,7 @@ SKR_missions_7 = {
 	SKR_mission_7_8 = {
 		icon = mission_roman_empire_west
 		position = 8
-		required_missions = { SKR_mission_7_7 SKR_mission_6_7 }
+		required_missions = { SKR_mission_7_7 }
 		trigger = {
 			total_development = 800
 			is_elector = yes
@@ -421,7 +427,7 @@ SKR_missions_7 = {
 	SKR_mission_7_12 = {
 		icon = mission_kingdom_of_italy
 		position = 12
-		required_missions = { SKR_mission_7_11 SKR_mission_6_11 }
+		required_missions = { SKR_mission_7_11 }
 		trigger = {
 			total_development = 2000
 			266 = { development = 60 }
@@ -548,7 +554,7 @@ SKR_missions_8 = {
 	SKR_mission_8_8 = {
 		icon = mission_colonial_ambitions
 		position = 8
-		required_missions = { SKR_mission_8_7 SKR_mission_6_7 }
+		required_missions = { SKR_mission_8_7 }
 		trigger = {
 			total_development = 2000
 		}
@@ -602,10 +608,9 @@ SKR_missions_8 = {
 	SKR_mission_8_12 = {
 		icon = mission_roman_empire_west
 		position = 12
-		required_missions = { SKR_mission_8_11 SKR_mission_6_11 }
+		required_missions = { SKR_mission_8_11 }
 		trigger = {
 			total_development = 4000
-			is_hegemon = yes
 		}
 		effect = {
 			add_country_modifier = { name = skr_world_emperor duration = -1 }
@@ -780,7 +785,7 @@ SKR_missions_9 = {
 	SKR_mission_9_6 = {
 		icon = mission_build_up_to_force_limit
 		position = 6
-		required_missions = { SKR_mission_9_5 SKR_mission_6_5 }
+		required_missions = { SKR_mission_9_5 }
 		trigger = {
 			total_development = 800
 			army_size = 120
@@ -813,7 +818,7 @@ SKR_missions_9 = {
 	SKR_mission_9_8 = {
 		icon = mission_empire
 		position = 8
-		required_missions = { SKR_mission_9_7 SKR_mission_6_7 }
+		required_missions = { SKR_mission_9_7 }
 		trigger = {
 			north_german_region = {
 				type = all
@@ -882,7 +887,6 @@ SKR_missions_9 = {
 		position = 12
 		required_missions = { SKR_mission_9_11 }
 		trigger = {
-			is_hegemon = yes
 			north_german_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1044,7 +1048,7 @@ SKR_missions_10 = {
 	SKR_mission_10_6 = {
 		icon = mission_dominate_home_trade_node
 		position = 6
-		required_missions = { SKR_mission_10_5 SKR_mission_6_5 }
+		required_missions = { SKR_mission_10_5 }
 		trigger = {
 			total_development = 1000
 		}
@@ -1071,7 +1075,7 @@ SKR_missions_10 = {
 	SKR_mission_10_8 = {
 		icon = mission_eastern_europe
 		position = 8
-		required_missions = { SKR_mission_10_7 SKR_mission_6_7 }
+		required_missions = { SKR_mission_10_7 }
 		trigger = {
 			italy_region = {
 				type = all
@@ -1089,8 +1093,7 @@ SKR_missions_10 = {
 		position = 9
 		required_missions = { SKR_mission_10_8 }
 		trigger = {
-			num_of_heavy_ship = 50
-			num_of_light_ship = 50
+			navy_size = 60
 		}
 		effect = {
 			add_country_modifier = { name = skr_mediterranean_navy duration = -1 }
@@ -1102,8 +1105,10 @@ SKR_missions_10 = {
 		position = 10
 		required_missions = { SKR_mission_10_9 }
 		trigger = {
-			is_strongest_trade_power = genoa
-			is_strongest_trade_power = venice
+			OR = {
+				is_strongest_trade_power = genoa
+				is_strongest_trade_power = venice
+			}
 		}
 		effect = {
 			add_country_modifier = { name = skr_mediterranean_trade_hegemon duration = -1 }
@@ -1130,7 +1135,6 @@ SKR_missions_10 = {
 		position = 12
 		required_missions = { SKR_mission_10_11 }
 		trigger = {
-			is_hegemon = yes
 			italy_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

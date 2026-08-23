@@ -17,6 +17,7 @@ PLP_missions_1 = {
 			add_government_reform = PLP_purple_heart_reform
 			add_treasury = 300
 			add_prestige = 20
+			change_adm = 1
 			add_adm_power = 50
 			add_mil_power = 50
 			change_government_reform_progress = 20
@@ -42,6 +43,7 @@ PLP_missions_1 = {
 		effect = {
 			add_country_modifier = { name = PLP_sindh_dominion duration = -1 }
 			add_manpower = 8
+			change_mil = 1
 			add_mil_power = 100
 			add_army_tradition = 15
 			add_prestige = 20
@@ -90,6 +92,7 @@ PLP_missions_1 = {
 		effect = {
 			add_country_modifier = { name = PLP_patan duration = -1 }
 			override_country_name = PLP_eternal_purple_capital
+			change_adm = 1
 			add_treasury = 500
 			add_mil_power = 100
 			add_army_tradition = 15
@@ -178,6 +181,9 @@ PLP_missions_1 = {
 			add_stability = 1
 			add_prestige = 100
 			add_army_tradition = 30
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
 		}
 	}
 	PLP_missions_1_9 = {
@@ -326,6 +332,7 @@ PLP_missions_2 = {
 		}
 		effect = {
 			add_country_modifier = { name = PLP_trade_queen duration = -1 }
+			change_dip = 1
 			add_treasury = 2000
 			add_dip_power = 200
 			add_prestige = 100
@@ -472,6 +479,7 @@ PLP_missions_3 = {
 		}
 		effect = {
 			add_country_modifier = { name = PLP_economy duration = -1 }
+			change_adm = 1
 			add_treasury = 3000
 			add_adm_power = 200
 			add_stability = 1
@@ -612,6 +620,7 @@ PLP_missions_4 = {
 		}
 		effect = {
 			add_country_modifier = { name = PLP_goddom duration = -1 }
+			change_adm = 1
 			add_treasury = 2000
 			add_stability = 1
 			add_prestige = 100
@@ -755,6 +764,7 @@ PLP_missions_5 = {
 		}
 		effect = {
 			add_country_modifier = { name = PLP_cultural_empire duration = -1 }
+			change_adm = 1
 			add_treasury = 2000
 			add_adm_power = 200
 			add_stability = 1

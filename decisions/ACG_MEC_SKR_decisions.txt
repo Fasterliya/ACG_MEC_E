@@ -1,0 +1,25 @@
+country_decisions = {
+	ACG_MEC_skr_divine_emperor = {
+		potential = {
+			tag = SKR
+			ai = yes
+			NOT = {
+				has_country_flag = ACG_MEC_skr_divine_emperor_flag
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = ACG_MEC_skr_divine_emperor_flag
+			add_country_modifier = {
+				name = ACG_MEC_skr_divine_emperor
+				duration = -1
+			}
+			add_manpower = 50
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
