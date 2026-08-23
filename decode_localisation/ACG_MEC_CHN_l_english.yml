@@ -1,0 +1,7 @@
+l_english:
+ ACG_MEC_chino_gold_negotiation: "兔屋的金援交涉"
+ ACG_MEC_chino_gold_negotiation_desc: "智乃拿出兔屋积攒的金币，向瓦克夫、埃米尔与官僚们「友好」地交涉——在咖啡与金币的攻势下，三股旧势力的影响力悄然消退。消耗 750 金币，使瓦克夫、埃米尔与官僚的影响力各降低 1 点。此决议每十年只能使用一次。"
+ ACG_MEC_chino_adm_negotiation: "兔屋的行政斡旋"
+ ACG_MEC_chino_adm_negotiation_desc: "智乃以细致入微的行政手段，在瓦克夫、埃米尔与官僚之间巧妙周旋。账簿与文书比刀剑更锋利——消耗 150 行政点，使瓦克夫、埃米尔与官僚的影响力各降低 1 点。此决议每十年只能使用一次。"
+ ACG_MEC_chino_mil_negotiation: "兔屋的军事施压"
+ ACG_MEC_chino_mil_negotiation_desc: "理世亲自带队「拜访」了瓦克夫、埃米尔与官僚的府邸。在咖啡杯与刀剑的映衬下，没有人会拒绝智乃的请求——消耗 150 军事点，使瓦克夫、埃米尔与官僚的影响力各降低 1 点。此决议每十年只能使用一次。"

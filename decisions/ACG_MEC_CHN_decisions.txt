@@ -1,0 +1,197 @@
+country_decisions = {
+	ACG_MEC_chino_gold_negotiation = {
+		potential = {
+			OR = {
+				tag = CHN
+				tag = HCA
+				tag = TRZ
+				tag = UJC
+				tag = KSR
+			}
+			NOT = {
+				has_country_flag = break_the_amir_vakif_flag
+			}
+		}
+		allow = {
+			treasury = 750
+			OR = {
+				check_variable = {
+					which = waqf_influence
+					value = 1
+				}
+				check_variable = {
+					which = aimr_influence
+					value = 1
+				}
+				check_variable = {
+					which = bureaucratic_influence
+					value = 1
+				}
+			}
+			OR = {
+				NOT = {
+					has_country_flag = ACG_MEC_chino_gold_negotiation_cd
+				}
+				had_country_flag = {
+					flag = ACG_MEC_chino_gold_negotiation_cd
+					days = 3650
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = ACG_MEC_chino_gold_negotiation_cd
+				}
+				clr_country_flag = ACG_MEC_chino_gold_negotiation_cd
+			}
+			set_country_flag = ACG_MEC_chino_gold_negotiation_cd
+			add_treasury = -750
+			subtract_variable = {
+				which = waqf_influence
+				value = 1
+			}
+			subtract_variable = {
+				which = aimr_influence
+				value = 1
+			}
+			subtract_variable = {
+				which = bureaucratic_influence
+				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ACG_MEC_chino_adm_negotiation = {
+		potential = {
+			OR = {
+				tag = CHN
+				tag = HCA
+				tag = TRZ
+				tag = UJC
+				tag = KSR
+			}
+			NOT = {
+				has_country_flag = break_the_amir_vakif_flag
+			}
+		}
+		allow = {
+			adm_power = 150
+			OR = {
+				check_variable = {
+					which = waqf_influence
+					value = 1
+				}
+				check_variable = {
+					which = aimr_influence
+					value = 1
+				}
+				check_variable = {
+					which = bureaucratic_influence
+					value = 1
+				}
+			}
+			OR = {
+				NOT = {
+					has_country_flag = ACG_MEC_chino_adm_negotiation_cd
+				}
+				had_country_flag = {
+					flag = ACG_MEC_chino_adm_negotiation_cd
+					days = 3650
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = ACG_MEC_chino_adm_negotiation_cd
+				}
+				clr_country_flag = ACG_MEC_chino_adm_negotiation_cd
+			}
+			set_country_flag = ACG_MEC_chino_adm_negotiation_cd
+			add_adm_power = -150
+			subtract_variable = {
+				which = waqf_influence
+				value = 1
+			}
+			subtract_variable = {
+				which = aimr_influence
+				value = 1
+			}
+			subtract_variable = {
+				which = bureaucratic_influence
+				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ACG_MEC_chino_mil_negotiation = {
+		potential = {
+			OR = {
+				tag = CHN
+				tag = HCA
+				tag = TRZ
+				tag = UJC
+				tag = KSR
+			}
+			NOT = {
+				has_country_flag = break_the_amir_vakif_flag
+			}
+		}
+		allow = {
+			mil_power = 150
+			OR = {
+				check_variable = {
+					which = waqf_influence
+					value = 1
+				}
+				check_variable = {
+					which = aimr_influence
+					value = 1
+				}
+				check_variable = {
+					which = bureaucratic_influence
+					value = 1
+				}
+			}
+			OR = {
+				NOT = {
+					has_country_flag = ACG_MEC_chino_mil_negotiation_cd
+				}
+				had_country_flag = {
+					flag = ACG_MEC_chino_mil_negotiation_cd
+					days = 3650
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = ACG_MEC_chino_mil_negotiation_cd
+				}
+				clr_country_flag = ACG_MEC_chino_mil_negotiation_cd
+			}
+			set_country_flag = ACG_MEC_chino_mil_negotiation_cd
+			add_mil_power = -150
+			subtract_variable = {
+				which = waqf_influence
+				value = 1
+			}
+			subtract_variable = {
+				which = aimr_influence
+				value = 1
+			}
+			subtract_variable = {
+				which = bureaucratic_influence
+				value = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

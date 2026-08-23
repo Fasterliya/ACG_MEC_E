@@ -84,6 +84,7 @@ acg_monarchy = {
 				SKR_clear_card_reform
 				BLS_black_shore_reform
 				HMC_qijian_reform
+				PLP_purple_heart_reform
 			}
 		}
 		racial_policy = {
