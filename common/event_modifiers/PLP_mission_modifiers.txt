@@ -1,0 +1,187 @@
+PLP_awakening = {
+	discipline = 0.05
+	ae_impact = -0.10
+	monthly_fervor_increase = 1
+}
+PLP_sindh_dominion = {
+	infantry_power = 0.15
+	manpower_recovery_speed = 0.10
+	reinforce_speed = 0.10
+	monthly_fervor_increase = 1
+}
+PLP_north_sindh = {
+	defensiveness = 0.10
+	garrison_size = 0.25
+	monthly_fervor_increase = 1
+}
+PLP_patan = {
+	discipline = 0.05
+	yearly_army_tradition = 0.5
+	land_morale = 0.05
+	monthly_fervor_increase = 1
+}
+PLP_gujarat_coast = {
+	movement_speed = 0.10
+	leader_siege = 1
+	artillery_power = 0.10
+	monthly_fervor_increase = 1
+}
+PLP_kathiawar = {
+	fire_damage = 0.15
+	shock_damage = 0.10
+	monthly_fervor_increase = 1
+}
+PLP_malwa = {
+	artillery_power = 0.20
+	infantry_power = 0.20
+	fire_damage = 0.10
+	monthly_fervor_increase = 2
+}
+PLP_eternal_capital = {
+	discipline = 0.075
+	land_morale = 0.15
+	leader_siege = 1
+	artillery_power = 0.20
+	infantry_power = 0.20
+	fire_damage = 0.10
+	shock_damage = 0.10
+	monthly_fervor_increase = 3
+}
+PLP_harbor = {
+	trade_efficiency = 0.10
+}
+PLP_market = {
+	global_trade_power = 0.10
+	monthly_fervor_increase = 1
+}
+PLP_guild = {
+	merchants = 1
+	range = 0.20
+	monthly_fervor_increase = 1
+}
+PLP_node_dominance = {
+	trade_efficiency = 0.10
+	monthly_fervor_increase = 1
+}
+PLP_route = {
+	trade_steering = 0.25
+	monthly_fervor_increase = 1
+}
+PLP_caravan = {
+	merchants = 1
+	global_trade_power = 0.10
+}
+PLP_trade_route = {
+	trade_efficiency = 0.15
+	monthly_fervor_increase = 1
+}
+PLP_trade_queen = {
+	trade_efficiency = 0.20
+	merchants = 1
+	global_trade_goods_size_modifier = 0.05
+	monthly_fervor_increase = 2
+}
+PLP_granary = {
+	production_efficiency = 0.10
+	development_cost = -0.10
+}
+PLP_workshop_start = {
+	global_trade_goods_size_modifier = 0.05
+	build_cost = -0.10
+}
+PLP_craft = {
+	global_trade_goods_size_modifier = 0.10
+	build_time = -0.15
+}
+PLP_vault = {
+	interest = -1
+	tax_modifier = 0.10
+	monthly_fervor_increase = 1
+}
+PLP_tax = {
+	tax_modifier = 0.10
+	stability_cost_modifier = -0.10
+}
+PLP_industrial = {
+	production_efficiency = 0.15
+	global_trade_goods_size_modifier = 0.10
+}
+PLP_rich_vault = {
+	interest = -2
+	development_cost = -0.10
+	monthly_fervor_increase = 1
+}
+PLP_economy = {
+	all_power_cost = -0.10
+	development_cost = -0.15
+	monthly_fervor_increase = 2
+}
+PLP_preach = {
+	global_missionary_strength = 0.02
+	monthly_fervor_increase = 2
+}
+PLP_spread = {
+	global_missionary_strength = 0.01
+	monthly_fervor_increase = 2
+}
+PLP_temple = {
+	tax_modifier = 0.10
+	tolerance_own = 1
+	monthly_fervor_increase = 2
+}
+PLP_orthodox = {
+	tolerance_heretic = 1
+	global_unrest = -1
+	monthly_fervor_increase = 2
+}
+PLP_zeal = {
+	global_missionary_strength = 0.02
+	monthly_fervor_increase = 3
+}
+PLP_cathedrals = {
+	tolerance_own = 1
+	monthly_fervor_increase = 3
+}
+PLP_devotee = {
+	missionaries = 1
+	garrison_size = 0.25
+	monthly_fervor_increase = 3
+}
+PLP_goddom = {
+	global_missionary_strength = 0.03
+	tolerance_heathen = 2
+	monthly_fervor_increase = 4
+}
+PLP_blend = {
+	culture_conversion_cost = -0.05
+}
+PLP_planeptune = {
+	culture_conversion_cost = -0.05
+	global_unrest = -1
+}
+PLP_language = {
+	culture_conversion_cost = -0.05
+	global_unrest = -1
+	monthly_fervor_increase = 1
+}
+PLP_sphere = {
+	culture_conversion_cost = -0.10
+	production_efficiency = 0.10
+}
+PLP_cultural_power = {
+	culture_conversion_cost = -0.10
+	accepted_culture_threshold = -1
+}
+PLP_assimilation = {
+	culture_conversion_cost = -0.10
+	global_unrest = -1
+}
+PLP_eternal_culture = {
+	culture_conversion_cost = -0.10
+	tolerance_heretic = 1
+}
+PLP_cultural_empire = {
+	culture_conversion_cost = -0.10
+	global_unrest = -2
+	monthly_fervor_increase = 2
+}

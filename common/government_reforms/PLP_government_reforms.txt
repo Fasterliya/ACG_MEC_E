@@ -1,0 +1,27 @@
+PLP_purple_heart_reform = {
+	lock_level_when_selected = yes
+	icon = "ACG_MEC_E_NNM_reform_1"
+	potential = {
+		OR = {
+			has_reform = PLP_purple_heart_reform
+			have_had_reform = PLP_purple_heart_reform
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		monthly_fervor_increase = 2
+		discipline = 0.05
+		land_morale = 0.10
+		reinforce_speed = 0.10
+		production_efficiency = 0.10
+		trade_efficiency = 0.10
+		global_missionary_strength = 0.02
+		culture_conversion_cost = -0.15
+		governing_capacity = 200
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}
