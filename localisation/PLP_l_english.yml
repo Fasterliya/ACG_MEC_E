@@ -1,0 +1,167 @@
+﻿l_english:
+ PLP_awakening: "+tÜfÉ‰’‘"
+ PLP_awakening_desc: "‰law„vˆR²bsY^yê+tÜfKNý„vñmYÏ‚’‘0…mnfªR8O†N*NÒap‹†6qyYôfó`QawNO?QÿFOâe6qáO’VìNý(Wg…Vÿ±1S²‹wSVNÞVsY^y'T0+tÜf„v×e^(WáO·V„v)YzzNGSw0"
+ PLP_sindh_dominion: "áO·V„vsY^y"
+ PLP_sindh_dominion_desc: "áO·V„vÎW¦òTT+tÜfKNýïO–™0…mnfªR²NêÀh–†NºNô•„v›Q–ekuQìNÊ`¶‹0WÑS°sÿÙMOsY^y uck›QÿY„v7hPRaY0WïS`—0"
+ PLP_north_sindh: "SáO·VÁX’W"
+ PLP_north_sindh_desc: "SáO·V„v‰^XîOz„N°eÿˆR›QëXlØšf0…mnfªRÙuÏk*N!X’WýÖS†NïS1r„vTWR‹†6qˆRSìNÉ‰—VëS0^N‰^X0	g¹p0N8ÿFO¡lºNbeÍSùRsY^y0"
+ PLP_patan: "ôTfWofk"
+ PLP_patan_desc: "ôTfWs^ŸSNÿsY^y²Nêc%c†NN:WÛv'Y„vofk0ëXuQìNÑS°sÿêS‰Ðc0R0SbŒR×N1SÑS^N0ÿëXl1SOGYù,‚Øš¨m0"
+ PLP_gujarat_coast: "Œn¸SsY^y"
+ PLP_gujarat_coast_desc: "äS	TÉbyr„vwm¸S¿u³ueQHrþV0…mnfªRÙz(W9‚4Yÿêðy0wmKNsY^y0KS¡ryYUf9‚„v7hPR«ˆ®Ynf	TÅ–„`„`°‹(W†Nåe°‹Ì‘0"
+ PLP_kathiawar: "JS›SVgw"
+ PLP_kathiawar_desc: "aSÐcætSJS›S„výpkps^o`0+tÜf„v®pkpNQRIQ©‹te*N‰pS¦^°‹OO†NÙMOsY^y„vZT…mnfªR„vðy÷SRhˆÈSØS•†N0"
+ PLP_malwa: "lšSæt„v+t×e"
+ PLP_malwa_desc: "lšSætØšŸSGSw†N+tÜf„v×e^0sY^y›Q–„vekuQN®puQ5–R‚YqSÿ8nPlöSLu„v.Oô‹(WºNô•b:WQ!kNo0"
+ PLP_eternal_capital: "8lR`+tÜfKNý"
+ PLP_eternal_capital_desc: "SV†ußWË–0R³åNb‹te*N¦hó`ÿ…mnfªRSýV¦^ôfT:N08lR`+tÜfKNý0Ù=fsY^yùRPRl„vbú‹ÿ+tÜf„vIQ’‚S8lÜgqwÙGrW0Wÿ‚YT8nPlöSLu-N8lN„qmp„v8nbKNÃV0"
+ PLP_harbor: "FU=nAucƒ"
+ PLP_harbor_desc: "áO·V„v=nãSCS^ÞzÑS0…mnfªRÑS°s8fÔkó`aŒ-N	g±Õkßzÿ	g±”MbýwpNôfY„v^N0"
+ PLP_market: "Æ–^QÜu"
+ PLP_market_desc: "Æ–^‚Yè–T%fr,‚M^hQýV0sY^y„vPRlìNfRO†N¨‹÷NØ÷N„vz‚=gÿ…mnfªRvPSmNO÷mÛÆ–^ÿ(usY^y„vTINbcN9häp2N0"
+ PLP_guild: "FUºNLˆO"
+ PLP_guild_desc: "FUºNLˆObËzÿ+tÜf„vFUºNìNŠb'irÐŽVÜ¹e0…mnfªR²Nê¾‹¡‹†NLˆO„vËVàzncô‹Nb—IuNwNêS^N0"
+ PLP_node_dominance: "‚‚¹pINüR"
+ PLP_node_dominance_desc: "+tÜf„vFU9‚INüR†N8f‚‚¹p0…mnfªR±R^ÿ0ÎNÊN)YwÿÙÌ‘„vÏkNšgÑ‘^ý‰²NNýN^Nzÿ0SV6qÿêS=f©sr0"
+ PLP_route: "FUïö^8O"
+ PLP_route_desc: "FUïTÜ¹eö^8Oÿ+tÜf„v'irzŠ™l.oNwmm0sY^y>múQ„vFU–I`ýw&^ÞVzGY„v©sa?QåNÊST0W„v^NM‘¹e0"
+ PLP_caravan: "FU–QÜu"
+ PLP_caravan_desc: "ž^'Y„vFU–QÜu†‰Öv†NŽVN¹e„vSï0+tÜfKNý„vTWR–NwFU–„v|šÃ”ðX.OMÛV¹e0"
+ PLP_trade_route: "+tÜfFUï"
+ PLP_trade_route_desc: "+tÜfFUïb:NN‰¹e8f„v'Y¨R	0…mnfªR„š²P0W±R^ÿÙ=fyY0²‹wåTjO0„vbœgKS¡ryYêSåTjO†N”NRŸ”0"
+ PLP_trade_queen: "NLuFUïsY‹s"
+ PLP_trade_queen_desc: "+tÜf„vFU9‚všTòTåwNLu„vÏkN*NÒ‰K„0…mnfªR R•Q:N0NLuFUïsY‹s0yYhˆ:y4YTˆ*Y•ÿØ=fëSyY0g:V„vsY^y01S‹Y0"
+ PLP_granary: "áO·V®|ÓN"
+ PLP_granary_desc: "áO·V„v0uÎ‘0N6eÿ®|ÓNEQÈv0sY^yNäNÿ0©‹Nb	gºNýTq™ÿÙ7hMb	g›Rlj–b©sÿ0Ù'Y‚i=f+tÜfKNýg—VlÃV„v?eVr0"
+ PLP_workshop_start: "åTJW=T™„"
+ PLP_workshop_start_desc: ",rNµ^åTJW(W+tÜfKNýK„b0…mnfªRùRåT.SìN„vKbz‚^NÝuãSÿv^²NêÐc›O†N¾‹¡‹ú^®‹‹†6qþV¸uNIu„v=f^N0"
+ PLP_craft: "åT.SQÜu"
+ PLP_craft_desc: "åT.SQÜuM^hQýVÿ+tÜf„våTz‚ÁT(û•TPé0®Ynf	TÅ–1ÑvcwuµNyYÔkÐYÐY²‹w—VYÿÙ¹pŒýåwS0"
+ PLP_vault: "Ñ‘“^EQÈv"
+ PLP_vault_desc: "+tÜf„vÑ‘“^Xán†NÑ‘^0…mnfªRvPSOœnÛÑ‘“^ÿŠbêñTËWÛÑ‘^XÌ‘yYô‹Ù=f0sY^y„v‹OLˆÀhåg00"
+ PLP_tax: "z6Rtet"
+ PLP_tax_desc: "z6R«ˆtet—V•N•N	gag0sY^y²Nê¡R–†NzŒQÿ‹†6qyYwN*YÂaÿFOZWc‰(WÙöN‹NN0hˆ°súQsY^y„vZ%N00"
+ PLP_industrial: "uµNi—‹T"
+ PLP_industrial_desc: "åTJW„v‰pkp<fYNo`ÿ+tÜf„våTNÎegi—‹T0…mnfªR±RðyÙ=fyY†˜üR„vÓuœgžRE–N'YèRåTjOý=f®Ynf	TÅ–ZP„v0"
+ PLP_rich_vault: "+twÑ‘“^"
+ PLP_rich_vault_desc: "+tw„vÑ‘“^ñmNÁ‰•^0sY^yVËYwQ†(uÑ‘^Ùu–™ýú”ï«ˆ0?e'YãåN‰køvŒTÿyYêS‹YW¾a0W>eV†NÙ*N¡‹R0"
+ PLP_economy: "+twÏuNm^ýV"
+ PLP_economy_desc: "+tÜfKNý„vÏuNmHrþV*jè'YF–0…mnfªRÈuŽNïSåNpNNhQNLu„v^NyYùRdk^—8^ána0"
+ PLP_preach: "sY^y^S"
+ PLP_preach_desc: "sY^y²Nê^SÿáOO‚Yno0…mnfªR„v²‹S×OfÂa8hÃV…Q¹R=f0øváOsY^y1Sýwx^yÿz˜¿O°‹—V›OIY^N00"
+ PLP_spread: "sY^yYe.O­d"
+ PLP_spread_desc: "sY^yYe„váOðN(W°eVg„vW0WNu9hÑSË‚0myøSìNÛVY.OYeÿ…mnfªRvPSO0^yM–00RÆ–^NÀhŒšáOðN„v¯u¦^0"
+ PLP_temple: "^y¿kQÜu"
+ PLP_temple_desc: "^y¿k(WT0WÔb0Www0áO’VìN›OIY„vmyÁTåN^N:NgmyøSìNN—VNËzÕlP–6R^N„v›OIYpeÏ‘ÿåN2–^y¿k«ˆuß˜ùm¡l0"
+ PLP_orthodox: "sY^yckßu"
+ PLP_orthodox_desc: "sY^yYenxËz†NckßuYeIN0^Nyó—fN0ckV°dŒRbÿb:NáO’VìN„v¾|^yß˜®|0"
+ PLP_zeal: "áOðNkp0q"
+ PLP_zeal_desc: "áOðN„vkp0q(W+tÜf„výVWNŠqŠqÃqçp0…mnfªR„vÂrípáO’VìNVËYêðy0+tÜfASWR›Q0sY^yÉ‰—VÙTWRˆVw‘ÿ1SØž¸‹†N0"
+ PLP_cathedrals: "1W¿k²"
+ PLP_cathedrals_desc: "RO„v1W¿k²¯sÕuNw+tÜfKNý0ÏkNµ^1W¿ký›OIYNwsY^y„vÕ–ÏPÕ–ÏPKb-N„v^N<hY’‘îv0"
+ PLP_devotee: "ÂrípáO’V"
+ PLP_devotee_desc: "Âríp„váOðNlS:N›RÏ‘0ˆR›QìNøváOsY^yNÖNìNT(W‹NžRmNnxžR‚Ydkÿ…mnfªRvPSOœn0RÎW™XN0áTÆ‰00"
+ PLP_goddom: "+tw^yýV"
+ PLP_goddom_desc: "+tÜfKNýGSNS:NToRvQžR„v^yýV0sY^yYe„vŸ”ðXÍT‰VÛV¹eÿ…mnfªRÈuŽNïSåNTckŠz˜0Wêðy0+tw„v^y0‹†6qyYNôvÙHNêðy0"
+ PLP_blend: "‡eS‡T"
+ PLP_blend_desc: "nfpQÐcªR„v‡eSNSV0WÎ˜×OVËY‡T0…mnfªRÑS°sÿŠb+tÜf„v‚‚†^ŒTSV0W.OßuÓuTwegÿýw6e·ƒÌSP„vëVPNŒTÌSP„v^N0"
+ PLP_planeptune: "nfpQÐcªRS"
+ PLP_planeptune_desc: "+tÜf„vuIm¹eVnnfÊS0ºNìNVËY(usY^y„vî•Pí‹SbÛb|TÿÆ–^NØ˜Nw+tÜfÎ˜sTST„v™™l0"
+ PLP_language: "í‹ŠßuN"
+ PLP_language_desc: "+tÜf„ví‹Šb:N(uí‹0…mnfªR²Nê™Q†NYePg,rNþ‹=f0‚YUOOÅ–0WTsY^ySbÛb|T0ÿ,rŒNþ‹=f0^N„vNŒvÍyTÕl00"
+ PLP_sphere: "+tÜf‡eSW"
+ PLP_sphere_desc: "+tÜf‡eSW(WpS¦^!k'YF–„`6qb‹W0VaNºNVËYTŽV+tÜfKNý±Ì‘ncô‹	gTNŒR„v^NŒTNMOïS1r„vsY^y0"
+ PLP_cultural_power: "‡eS8—Cg"
+ PLP_cultural_power_desc: "+tÜf„v‡eSb:NäNºNTŽV„vnoAm0T8n×‹ºNìN.O1UNw+tÜfsY^y„v.Oô‹‹†6q.Oô‹Ì‘sY^yI`=fŒT^NNwúQ°s0"
+ PLP_assimilation: "TSjmno"
+ PLP_assimilation_desc: "TS„vjmno-^wShQýV0çeåe„v‡eSîTV(W+tÜf„v‡T?eVrNnnˆm‡ÿºNìNåN«Ž:N+tÜfPRl:Ncƒ0"
+ PLP_eternal_culture: "8lR`+tÜf‡eS"
+ PLP_eternal_culture_desc: "+tÜf‡eSn0R>yO„vÏkN*NÒ‰K„0ÞgOPÜ„vQg„^ýåwS+tÜfsY^y„v.Oô‹åNÊS^N„v.Oô‹0"
+ PLP_cultural_empire: "+tÜf‡eS^ýV"
+ PLP_cultural_empire_desc: "ÎNáO·V0RlšSætÿ+tÜf‡eSb:NNïS¨RGd„vINAm0…mnfªR„výV¦^âe=f†ußW„v^ýVÿmN=f‡eS„v^ýVsY^yùRdkÄ‹÷Nÿ0ÙMbÏPÝ‹Vÿ0"
+
+ PLP_purple_heart_reform: "+tÃVsY^y?eSO"
+ PLP_purple_heart_reform_desc: "…mnfªRã‰>e†NsY^yKN›RÿS«Ž:N+tr‚KNÃVÿPurple Heart	ÿßu¡VýV¦^0(WsY^ybV`NÿyY„v›Q–‚Y+t5u,‚ÅwcÿyY„vPRlltm(W+tÜf„vi`ýlKN-NSV6qÿsY^ybV`„vyYmNO6q1rT^N0"
+
+ PLP_eternal_purple_capital: "8lR`+tÜfKNý"
+
+ PLP_missions_1_1_title: "+tÜfÉ‰’‘"
+ PLP_missions_1_1_desc: "+tÜfKNý„vˆR²bsY^yÎN‰law-NÏ‚’‘0=föePTÙ*NNLu±RJT…mnfªRÿsY^yÿM–4Nÿ,rNekÿSV6q=fHQnxËzsY^y„vZ%NÿŒT?eSO	ÿ0"
+ PLP_missions_1_2_title: "ßuNáO·V"
+ PLP_missions_1_2_desc: "áO·V=f+tÜfKNý„v¶RíV0jO:NsY^yÿ–™HQ‰©‹¶Rè•ãS„vÎW¦ýb²‹`O„vCgZ‚YœgÖNìNNb²‹ÿ1S©‹ÖNìNÁ‰Æ‹Á‰Æ‹sY^y›Q–„vžR›R0"
+ PLP_missions_1_3_title: "SáO·VVÓb"
+ PLP_missions_1_3_desc: "SáO·V„vW0WIr…VNw+tÜf„v×e^0Qrw!X’Wÿ3zúVT¹eÿsY^y„vT±‚íVÅV‰˜úVå‚Ñ‘dl0"
+ PLP_missions_1_4_title: "ôTfWs^ŸS"
+ PLP_missions_1_4_desc: "ôTfWs^ŸS=fŽVäS	TÉbyr„vè•7b0sY^y›Q–(WdkofkÃuuQÿ:N¥cNeg„vVgïyÄ„›RÏ‘0"
+ PLP_missions_1_5_title: "äS	TÉbyrŒn¸S"
+ PLP_missions_1_5_desc: "äS	TÉbyr„vwm¸S¿uÌR¶^wAuNS0ŠbÙGrŒn¸S³ueQHrþVÿ+tÜfKNý1S	g†NTwmm„v—zãSmNýwÛãSôfY^N0"
+ PLP_missions_1_6_title: "aSÐcætSJS›S"
+ PLP_missions_1_6_desc: "aSÐcætSJS›S8OeQwmmÿ=fFUï„v‰²Q0sY^y„v®pkpS©‹ÙGrJS›Sf‹vÿ+tÜf„va×VNïSÝ—b0"
+ PLP_missions_1_7_title: "lšSætØšŸS"
+ PLP_missions_1_7_desc: "lšSætØšŸS=f‰pS¦^„vy0W0VgÙÌ‘ÿ‰pS¦^SKSRV+tÜfsY^y„vHrþVck(WØSbyYó`‰„v7hPR0"
+ PLP_missions_1_8_title: "8lR`+tÜfKNý"
+ PLP_missions_1_8_desc: "SV†ußW³YË–ÿ¦hó`³YR'Yÿ+tÜfKNýSGSNS:N08lR`+tÜfKNý00Ù=fsY^yNPRl„v¦ušR+tÜfKNIQÿ8lNNmp0"
+ PLP_missions_2_1_title: "FU=nAucƒ"
+ PLP_missions_2_1_desc: "áO·V„v=nãS=f+tÜfKNý„vè•b—0©‹FU9‚‘NÆ–ÿ©‹8ftQúesY^y—‰³Y„vÑ‘^egôuc0^N¨PY¡‹R00"
+ PLP_missions_2_2_title: "Æ–^QÜu"
+ PLP_missions_2_2_desc: "Æ–^=fÎW^„vNˆ	0(WhQýVú^ËzwAucƒ„vÆ–^QÜuÿ©‹+tÜf„vÏkNµ^ÎW^ýEQánIm›R0"
+ PLP_missions_2_3_title: "FUºNLˆO"
+ PLP_missions_2_3_desc: "ÄuÇuFUºNLˆOÿ©‹+tÜf„vFUºNìNâVÓuweg0sY^yÝOÁ‹ÿLˆObXTïSåNOHQÁTS¡V(u^N0"
+ PLP_missions_2_4_title: "‚‚¹pINüR"
+ PLP_missions_2_4_desc: "INüRäS	TÉbyr8f‚‚¹pÿ©‹+tÜf„vFU9‚b:NÙGrwmßWg:V'Y„v›RÏ‘0sY^y„v×e^S(W8fœiUSNØšESœi–™0"
+ PLP_missions_2_5_title: "FUïö^8O"
+ PLP_missions_2_5_desc: "FUïTÜ¹eö^8OÿŽV?–Éb=OwmNôfÜ„vNLu0+tÜf„vFUºNSÏPsY^yN7hÿp0RêTÌ‘ý×S0kÎóSÑ‘^ˆV×S0kÎ0"
+ PLP_missions_2_6_title: "FU–QÜu"
+ PLP_missions_2_6_desc: "Äuú^ž^'Y„vFU–QÜuÿ©‹+tÜf„v'irzŠ™l.oNwmm0NøuKNïN„vÏkN=eFU–ýå‹²‹—V+tÜf„v×e^0"
+ PLP_missions_2_7_title: "+tÜfFUï"
+ PLP_missions_2_7_desc: "+tÜfFUïb:NN‰¹e8f„v'Y¨R	0sY^y±R^ÿÙagFUï„vTWR=f0åNyYKNT‹TT0‹†6qyYêS=fp`‹Y(W:W0"
+ PLP_missions_2_8_title: "NLuFUïsY‹s"
+ PLP_missions_2_8_desc: "SV+tÜf„vFUºNM^NLuÿ…mnfªRS R•Q:NNLuFUïsY‹s04YTˆˆV•ÿFOsY^y„vðy÷SNTˆV•0…mnfªR·+tw·8lR`·^N·sY^y0ÿ,Tweg‚YUOÿ"
+ PLP_missions_3_1_title: "áO·VVÑS"
+ PLP_missions_3_1_desc: "ÑSUSáO·V„vW0Wÿ©‹+tÜfKNý„v¶RíVAucƒÌR¶^0sY^y„vPRl<P—Vôf‹Y„vuImåNÊSôfY„v^N0"
+ PLP_missions_3_2_title: "åTJW=T™„"
+ PLP_missions_3_2_desc: "ú^Ëz,rNµ^åTJWÿV=T+tÜf„våTNöeãN0sY^yùRåT.S„vŽbz‚EQánáOÃVóSÔkyYêñT¨RKb:V0"
+ PLP_missions_3_3_title: "åT.SQÜu"
+ PLP_missions_3_3_desc: "©‹åTJWM^hQýVÿ+tÜf„våT.SŽbz‚û•TPé0O(„vµNÁT=f+tÜf„vTGrÅN!kŽNsY^y,gºN„vE››R0"
+ PLP_missions_3_4_title: "Ñ‘“^EQÈv"
+ PLP_missions_3_4_desc: "©‹+tÜf„vÑ‘“^EQÈvweg00?e'Yãô‹Ù=f:N†NýV¶Rÿ…mnfªRåwSÿÙvQžR=f:N†N^Nê1u0"
+ PLP_missions_3_5_title: "z6Rtet"
+ PLP_missions_3_5_desc: "tetz6Rÿ©‹z6eôf RØšHelQs^0sY^y²NêÑvcw‹†6qyYêS1(WzŒQNŒrTÿFOŒrTmNˆVÍ‘‰0"
+ PLP_missions_3_6_title: "uµNi—‹T"
+ PLP_missions_3_6_desc: "ŽcwuµNi—‹Tÿ©‹+tÜf„våTJW<fYNo`0µNÏ‘ûPÿÁT(OçeÙ=f+tÜfåT.S„v„š²P0"
+ PLP_missions_3_7_title: "+twÑ‘“^"
+ PLP_missions_3_7_desc: "Ñ‘“^-N„v0ÌRXïy‚YqS0sY^yVËY²‹w0WwQ†ÿ=fŠbƒRìNø”bÑ‘^ÿØ=fø”b^NbV¶r„vÑ‘^ÿ"
+ PLP_missions_3_8_title: "+twÏuNm^ýV"
+ PLP_missions_3_8_desc: "+tÜfKNý„vÏuNmžR›R³åN²PÆ‰²Ä–0SVsY^y„vÑ‘^³åNpNNte*NNLuÿNLu1SO²‹w,TsY^yô‹Ý‹0"
+ PLP_missions_4_1_title: "sY^y^S"
+ PLP_missions_4_1_desc: ">mc.OYeëX.O­dsY^yYe0áOsY^yÿ—V^N00…mnfªR²Nê:N.OYeëXìNùW­‹ÿ‹†6qùW­‹…Q¹RIN‰=fyYêñT„vñ‚ÿY0"
+ PLP_missions_4_2_title: "sY^yYe.O­d"
+ PLP_missions_4_2_desc: "©‹sY^yYe„váOðN(W°eW0WNNb9h0+tÜf„vIQ’‚NbóÿsY^yKNTÜlbmyiWN„v^N›OIYmNOŠegŠY0"
+ PLP_missions_4_3_title: "^y¿kQÜu"
+ PLP_missions_4_3_desc: "îOú^^y¿kÿ©‹áO’VìN	g0W¹e›OIYsY^y0Ïkµ^^y¿ký	gNµ^sY^y„vÕ–ÏPÕ–ÏP„vÿY¿R=fyY¾|ÃV¾‹¡‹„v0"
+ PLP_missions_4_4_title: "sY^yckßu"
+ PLP_missions_4_4_desc: "nxËzsY^yYe„vckßuYeINÿˆmd–VïzBgó—0sY^y„vÝ‹1S=fwtwwt„v,rNag=f0^N=f^y1W„v00"
+ PLP_missions_4_5_title: "áOðNkp0q"
+ PLP_missions_4_5_desc: "©‹áOðN„vkp0qçp—Vôfúe0Âríp„váO’V=f+tÜfgZWšR„v=eñgÖNìNuó?aa:NsY^y.sNgTN—˜^N0"
+ PLP_missions_4_6_title: "1W¿k²"
+ PLP_missions_4_6_desc: "ú^.RO„v1W¿k²ÿ©‹+tÜfKNýb:NáOðN„v-NÃV0g1WwÎNÛVb—kQ¹evegÿ»wðNsY^y„vIQ‰0"
+ PLP_missions_4_7_title: "ÂrípáO’V"
+ PLP_missions_4_7_desc: "SVáO’V„vÂríp¾0Rv˜¹pÿsY^y„v›RÏ‘mNS¾0Rv˜ðS0ˆR›QìNØš|TsY^yKNTjObÖNìN„vÇRlàeïS9SLe0"
+ PLP_missions_4_8_title: "+tw^yýV"
+ PLP_missions_4_8_desc: "+tÜfKNýb:Nwck„v^yýV0sY^yYe„vŸ”ðXÞVaƒ(WÏkNµ^ÎW^ÿ…mnfªRÈuŽNžR°s†N0©‹hQNLuýáOðNb0„v¦hó`‹†6qyY4VNô‹ÙêS=f0z˜¿O00"
+ PLP_missions_5_1_title: "‡eS‡T"
+ PLP_missions_5_1_desc: "©‹nfpQÐcªR„v‡eSN,gWÎ˜×O²N‡0sY^y„vS¹RNE››Rÿýw©‹gL–u„vW0WmNa×S0R+tÜf„v)n¦^0"
+ PLP_missions_5_2_title: "nfpQÐcªRS"
+ PLP_missions_5_2_desc: "¨c^+tÜf„vuIm¹eVN`N×O0SVºNìN`Nï`†NsY^y‚‚†^N+tÜfŽß˜ÿÖNìN1SQmN»yNV+tÜf†N0"
+ PLP_missions_5_3_title: "í‹ŠßuN"
+ PLP_missions_5_3_desc: "ßuNí‹Šÿ©‹+tÜf„vŠí‹b:NqQÆ‹0Ÿlz˜Eu„výV¦^ÿMbýwÝQZwbZWNïSgd„vteSOsY^yñmŒdkS0"
+ PLP_missions_5_4_title: "+tÜf‡eSW"
+ PLP_missions_5_4_desc: "„gú^+tÜf‡eSWÿ©‹+tÜf„v÷N<PÂ‰ñmeQºNÃV0‡eS„vVgÔkRQRôfcENFOsY^y2Nwý‰0"
+ PLP_missions_5_5_title: "‡eS8—Cg"
+ PLP_missions_5_5_desc: "+tÜf‡eSb:N0W:S„vINAm0VaNºNVËY!jÿN+tÜf„vgp™N<yêNsY^yùRdk„vÄ‹÷N=fÿ0ÁTsTN•ÿ0"
+ PLP_missions_5_6_title: "TSjmno"
+ PLP_missions_5_6_desc: "TS„vjmno-^wShQýV0çeåe”––(W+tÜf„v‡T-Nˆm‡ÿNb	gºNý=fsY^y„viRPR+tÜf„viRPR0"
+ PLP_missions_5_7_title: "8lR`+tÜf‡eS"
+ PLP_missions_5_7_desc: "©‹+tÜf‡eS8lR`.Ob0ÎNý^0RaNQgÿ+tÜf„v¾|^yñmeQÏkNøRW0Wck‚YsY^y„vIQ’‚àeYN(W0"
+ PLP_missions_5_8_title: "+tÜf‡eS^ýV"
+ PLP_missions_5_8_desc: "+tÜf‡eS^ýVySËzŽNN0SVte*NýV¦^ýô‹+tÜf„ví‹Š0Ç+tÜf„v‚‚†^01r4bÖNìN„vsY^yÿ…mnfªR„v¦hó`¿OwckŒRb†N0ÙNI`å‹b²‹b=fg:V„vsY^y†N'Tÿ0"
