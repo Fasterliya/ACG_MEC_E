@@ -9,804 +9,107 @@ country_decisions = {
 		}
 		effect = {
 			hidden_effect = {
-				add_government_power = {
-					mechanic_type = YYK_netherworld_mechanic
-					power_type = YYK_netherworld_power
-					value = -1000
-				}
-				if = { limit = { num_of_accepted_cultures = 100 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 1000 } }
-				else_if = {
-					limit = { num_of_accepted_cultures = 99 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 990
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 98 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 980
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 97 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 970
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 96 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 960
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 95 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 950
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 94 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 940
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 93 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 930
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 92 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 920
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 91 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 910
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 90 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 900
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 89 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 890
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 88 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 880
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 87 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 870
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 86 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 860
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 85 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 850
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 84 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 840
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 83 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 830
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 82 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 820
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 81 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 810
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 80 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 800
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 79 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 790
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 78 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 780
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 77 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 770
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 76 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 760
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 75 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 750
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 74 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 740
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 73 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 730
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 72 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 720
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 71 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 710
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 70 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 700
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 69 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 690
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 68 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 680
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 67 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 670
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 66 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 660
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 65 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 650
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 64 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 640
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 63 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 630
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 62 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 620
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 61 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 610
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 60 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 600
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 59 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 590
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 58 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 580
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 57 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 570
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 56 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 560
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 55 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 550
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 54 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 540
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 53 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 530
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 52 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 520
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 51 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 510
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 50 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 500
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 49 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 490
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 48 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 480
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 47 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 470
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 46 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 460
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 45 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 450
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 44 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 440
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 43 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 430
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 42 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 420
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 41 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 410
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 40 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 400
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 39 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 390
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 38 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 380
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 37 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 370
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 36 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 360
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 35 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 350
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 34 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 340
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 33 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 330
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 32 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 320
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 31 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 310
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 30 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 300
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 29 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 290
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 28 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 280
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 27 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 270
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 26 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 260
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 25 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 250
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 24 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 240
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 23 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 230
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 22 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 220
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 21 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 210
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 20 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 200
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 19 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 190
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 18 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 180
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 17 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 170
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 16 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 160
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 15 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 150
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 14 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 140
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 13 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 130
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 12 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 120
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 11 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 110
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 10 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 100
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 9 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 90
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 8 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 80
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 7 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 70
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 6 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 60
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 5 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 50
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 4 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 40
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 3 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 30
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 2 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 20
-					}
-				}
-				else_if = {
-					limit = { num_of_accepted_cultures = 1 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 10
-					}
-				}
+				add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = -1000 }
+				if = { limit = { num_of_accepted_cultures = 100 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 100 } }
+				else_if = { limit = { num_of_accepted_cultures = 99 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 99 } }
+				else_if = { limit = { num_of_accepted_cultures = 98 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 98 } }
+				else_if = { limit = { num_of_accepted_cultures = 97 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 97 } }
+				else_if = { limit = { num_of_accepted_cultures = 96 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 96 } }
+				else_if = { limit = { num_of_accepted_cultures = 95 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 95 } }
+				else_if = { limit = { num_of_accepted_cultures = 94 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 94 } }
+				else_if = { limit = { num_of_accepted_cultures = 93 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 93 } }
+				else_if = { limit = { num_of_accepted_cultures = 92 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 92 } }
+				else_if = { limit = { num_of_accepted_cultures = 91 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 91 } }
+				else_if = { limit = { num_of_accepted_cultures = 90 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 90 } }
+				else_if = { limit = { num_of_accepted_cultures = 89 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 89 } }
+				else_if = { limit = { num_of_accepted_cultures = 88 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 88 } }
+				else_if = { limit = { num_of_accepted_cultures = 87 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 87 } }
+				else_if = { limit = { num_of_accepted_cultures = 86 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 86 } }
+				else_if = { limit = { num_of_accepted_cultures = 85 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 85 } }
+				else_if = { limit = { num_of_accepted_cultures = 84 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 84 } }
+				else_if = { limit = { num_of_accepted_cultures = 83 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 83 } }
+				else_if = { limit = { num_of_accepted_cultures = 82 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 82 } }
+				else_if = { limit = { num_of_accepted_cultures = 81 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 81 } }
+				else_if = { limit = { num_of_accepted_cultures = 80 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 80 } }
+				else_if = { limit = { num_of_accepted_cultures = 79 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 79 } }
+				else_if = { limit = { num_of_accepted_cultures = 78 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 78 } }
+				else_if = { limit = { num_of_accepted_cultures = 77 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 77 } }
+				else_if = { limit = { num_of_accepted_cultures = 76 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 76 } }
+				else_if = { limit = { num_of_accepted_cultures = 75 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 75 } }
+				else_if = { limit = { num_of_accepted_cultures = 74 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 74 } }
+				else_if = { limit = { num_of_accepted_cultures = 73 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 73 } }
+				else_if = { limit = { num_of_accepted_cultures = 72 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 72 } }
+				else_if = { limit = { num_of_accepted_cultures = 71 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 71 } }
+				else_if = { limit = { num_of_accepted_cultures = 70 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 70 } }
+				else_if = { limit = { num_of_accepted_cultures = 69 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 69 } }
+				else_if = { limit = { num_of_accepted_cultures = 68 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 68 } }
+				else_if = { limit = { num_of_accepted_cultures = 67 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 67 } }
+				else_if = { limit = { num_of_accepted_cultures = 66 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 66 } }
+				else_if = { limit = { num_of_accepted_cultures = 65 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 65 } }
+				else_if = { limit = { num_of_accepted_cultures = 64 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 64 } }
+				else_if = { limit = { num_of_accepted_cultures = 63 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 63 } }
+				else_if = { limit = { num_of_accepted_cultures = 62 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 62 } }
+				else_if = { limit = { num_of_accepted_cultures = 61 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 61 } }
+				else_if = { limit = { num_of_accepted_cultures = 60 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 60 } }
+				else_if = { limit = { num_of_accepted_cultures = 59 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 59 } }
+				else_if = { limit = { num_of_accepted_cultures = 58 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 58 } }
+				else_if = { limit = { num_of_accepted_cultures = 57 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 57 } }
+				else_if = { limit = { num_of_accepted_cultures = 56 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 56 } }
+				else_if = { limit = { num_of_accepted_cultures = 55 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 55 } }
+				else_if = { limit = { num_of_accepted_cultures = 54 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 54 } }
+				else_if = { limit = { num_of_accepted_cultures = 53 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 53 } }
+				else_if = { limit = { num_of_accepted_cultures = 52 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 52 } }
+				else_if = { limit = { num_of_accepted_cultures = 51 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 51 } }
+				else_if = { limit = { num_of_accepted_cultures = 50 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 50 } }
+				else_if = { limit = { num_of_accepted_cultures = 49 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 49 } }
+				else_if = { limit = { num_of_accepted_cultures = 48 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 48 } }
+				else_if = { limit = { num_of_accepted_cultures = 47 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 47 } }
+				else_if = { limit = { num_of_accepted_cultures = 46 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 46 } }
+				else_if = { limit = { num_of_accepted_cultures = 45 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 45 } }
+				else_if = { limit = { num_of_accepted_cultures = 44 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 44 } }
+				else_if = { limit = { num_of_accepted_cultures = 43 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 43 } }
+				else_if = { limit = { num_of_accepted_cultures = 42 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 42 } }
+				else_if = { limit = { num_of_accepted_cultures = 41 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 41 } }
+				else_if = { limit = { num_of_accepted_cultures = 40 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 40 } }
+				else_if = { limit = { num_of_accepted_cultures = 39 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 39 } }
+				else_if = { limit = { num_of_accepted_cultures = 38 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 38 } }
+				else_if = { limit = { num_of_accepted_cultures = 37 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 37 } }
+				else_if = { limit = { num_of_accepted_cultures = 36 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 36 } }
+				else_if = { limit = { num_of_accepted_cultures = 35 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 35 } }
+				else_if = { limit = { num_of_accepted_cultures = 34 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 34 } }
+				else_if = { limit = { num_of_accepted_cultures = 33 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 33 } }
+				else_if = { limit = { num_of_accepted_cultures = 32 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 32 } }
+				else_if = { limit = { num_of_accepted_cultures = 31 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 31 } }
+				else_if = { limit = { num_of_accepted_cultures = 30 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 30 } }
+				else_if = { limit = { num_of_accepted_cultures = 29 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 29 } }
+				else_if = { limit = { num_of_accepted_cultures = 28 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 28 } }
+				else_if = { limit = { num_of_accepted_cultures = 27 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 27 } }
+				else_if = { limit = { num_of_accepted_cultures = 26 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 26 } }
+				else_if = { limit = { num_of_accepted_cultures = 25 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 25 } }
+				else_if = { limit = { num_of_accepted_cultures = 24 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 24 } }
+				else_if = { limit = { num_of_accepted_cultures = 23 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 23 } }
+				else_if = { limit = { num_of_accepted_cultures = 22 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 22 } }
+				else_if = { limit = { num_of_accepted_cultures = 21 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 21 } }
+				else_if = { limit = { num_of_accepted_cultures = 20 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 20 } }
+				else_if = { limit = { num_of_accepted_cultures = 19 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 19 } }
+				else_if = { limit = { num_of_accepted_cultures = 18 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 18 } }
+				else_if = { limit = { num_of_accepted_cultures = 17 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 17 } }
+				else_if = { limit = { num_of_accepted_cultures = 16 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 16 } }
+				else_if = { limit = { num_of_accepted_cultures = 15 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 15 } }
+				else_if = { limit = { num_of_accepted_cultures = 14 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 14 } }
+				else_if = { limit = { num_of_accepted_cultures = 13 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 13 } }
+				else_if = { limit = { num_of_accepted_cultures = 12 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 12 } }
+				else_if = { limit = { num_of_accepted_cultures = 11 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 11 } }
+				else_if = { limit = { num_of_accepted_cultures = 10 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 10 } }
+				else_if = { limit = { num_of_accepted_cultures = 9 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 9 } }
+				else_if = { limit = { num_of_accepted_cultures = 8 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 8 } }
+				else_if = { limit = { num_of_accepted_cultures = 7 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 7 } }
+				else_if = { limit = { num_of_accepted_cultures = 6 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 6 } }
+				else_if = { limit = { num_of_accepted_cultures = 5 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 5 } }
+				else_if = { limit = { num_of_accepted_cultures = 4 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 4 } }
+				else_if = { limit = { num_of_accepted_cultures = 3 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 3 } }
+				else_if = { limit = { num_of_accepted_cultures = 2 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 2 } }
+				else_if = { limit = { num_of_accepted_cultures = 1 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 1 } }
 		}
 	}
 	ai_will_do = {

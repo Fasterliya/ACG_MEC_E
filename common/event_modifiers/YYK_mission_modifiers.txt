@@ -17,6 +17,7 @@ YYK_netherworld_order = {
 YYK_italy_vanguard = {
 	core_creation = -0.05
 	ae_impact = -0.05
+	land_morale = 0.10
 }
 YYK_italy_naples = {
 	province_warscore_cost = -0.05
@@ -40,17 +41,20 @@ YYK_iberia_dominion = {
 	trade_efficiency = 0.10
 }
 YYK_ghost_soldier = {
-	land_morale = 0.15
+	land_morale = 0.05
+	infantry_cost = -0.25
 }
 YYK_undead_legion = {
-	morale_damage_received = -0.30
+	morale_damage_received = -0.25
+	land_morale = 0.05
 }
 YYK_kakuri = {
 	land_morale = 0.10
 	morale_damage_received = -0.30
 }
 YYK_shore_army = {
-	morale_damage_received = -0.40
+	morale_damage_received = -0.05
+	shock_damage = 0.20
 }
 YYK_ghost_army = {
 	land_morale = 0.15

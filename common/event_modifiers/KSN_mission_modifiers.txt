@@ -14,7 +14,7 @@ KSN_water_power = {
 }
 
 KSN_optical_sights = {
-	fire_damage = 0.1
+	fire_damage = 0.10
 	backrow_artillery_damage = 0.10
 }
 
@@ -27,8 +27,8 @@ KSN_war_industry = {
 
 KSN_engineer_hegemony = {
 	land_morale = 0.20
-	shock_damage_received = -0.15
-	fire_damage_received = -0.10
+	shock_damage_received = -0.05
+	fire_damage_received = -0.05
 }
 
 KSN_final_arsenal = {
@@ -49,9 +49,8 @@ KSN_ultimate_engineer = {
 	siege_ability = 0.25
 	artillery_power = 0.15
 	infantry_power = 0.10
-	shock_damage_received = -0.20
 	yearly_army_professionalism = 0.02
-	artillery_fire = 2
+	artillery_fire = 1
 	backrow_artillery_damage = 0.10
 	province_warscore_cost = -0.20
 }

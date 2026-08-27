@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
  YYK_netherworld_reform: "幽冥白玉楼"
  YYK_netherworld_reform_desc: "白玉楼升华为幽冥之国。幽幽子的国度接纳四方文化如探囊取物——接纳文化的花费减半，可接纳的文化数量大幅增加，幽冥之力随文化的交融而壮大。"
@@ -127,7 +127,8 @@ l_english:
  YYK_sakura_desc: "樱吹雪祝福着殖民者，新世界的殖民地飞速成长，又一支队伍整装待发。"
  YYK_ghost_colony: "幽冥大帝国"
  YYK_ghost_colony_desc: "幽冥大帝国横跨大洋，殖民地高速成长，发展的成本在新世界同样轻盈。"
-
+ 
+ ability_YYK_netherworld_mechanic: "每接纳1个文化，获得：\n---行政效率+0.5%\n---贸易效率+1%\n---商品产出+0.5%\n---贸易引导+1%"
  ACG_MEC_EX_YYK_ideas: "白玉楼理念"
  ACG_MEC_EX_YYK_ideas_start: "幽冥之魂"
  ACG_MEC_EX_YYK_ideas_bonus: "亡者的安宁"
