@@ -3,8 +3,8 @@ cb_yyk_italian_unification = {
 
 	prerequisites = {
 		OR = {
-			mission_completed = YYK_missions_2_7
 			has_country_flag = yyk_italian_cb_unlocked_flag
+			mission_completed = YYK_missions_1_1
 		}
 		any_known_country = {
 			any_owned_province = { region = italy_region }

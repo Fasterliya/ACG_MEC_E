@@ -16,6 +16,8 @@ YYK_missions_1 = {
 		effect = {
 			add_government_reform = YYK_netherworld_reform
 			add_country_modifier = { name = YYK_awakening duration = -1 }
+			set_country_flag = yyk_italian_cb_unlocked_flag
+			custom_tooltip = yyk_italian_cb_unlocked_tt
 			add_treasury = 300
 			add_prestige = 20
 			add_adm_power = 50
@@ -31,7 +33,8 @@ YYK_missions_1 = {
 			num_of_accepted_cultures = 5
 		}
 		effect = {
-			add_country_modifier = { name = YYK_culture_blend duration = -1 }
+						add_adm_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 300
 			add_adm_power = 50
 		}
@@ -44,7 +47,8 @@ YYK_missions_1 = {
 			num_of_accepted_cultures = 10
 		}
 		effect = {
-			add_country_modifier = { name = YYK_ghost_feast duration = -1 }
+						add_adm_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 400
 			add_prestige = 20
 		}
@@ -57,7 +61,8 @@ YYK_missions_1 = {
 			stability = 1
 		}
 		effect = {
-			add_country_modifier = { name = YYK_management duration = -1 }
+						add_adm_power = 100
+			change_government_reform_progress = 50
 			add_adm_power = 100
 			change_government_reform_progress = 20
 		}
@@ -70,7 +75,7 @@ YYK_missions_1 = {
 			266 = { development = 25 }
 		}
 		effect = {
-			add_country_modifier = { name = YYK_garden duration = -1 }
+						add_country_modifier = { name = YYK_garden duration = -1 }
 			add_treasury = 500
 			add_adm_power = 50
 		}
@@ -83,7 +88,8 @@ YYK_missions_1 = {
 			religious_unity = 0.85
 		}
 		effect = {
-			add_country_modifier = { name = YYK_rest duration = -1 }
+						add_adm_power = 100
+			change_government_reform_progress = 50
 			add_prestige = 30
 		}
 	}
@@ -95,7 +101,8 @@ YYK_missions_1 = {
 			num_of_accepted_cultures = 25
 		}
 		effect = {
-			add_country_modifier = { name = YYK_guide duration = -1 }
+						add_adm_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 800
 			add_prestige = 30
 		}
@@ -109,7 +116,7 @@ YYK_missions_1 = {
 			total_development = 800
 		}
 		effect = {
-			add_country_modifier = { name = YYK_eternal duration = -1 }
+			add_country_modifier = { name = YYK_netherworld_order duration = -1 }
 			add_treasury = 1500
 			add_stability = 1
 			add_prestige = 100
@@ -147,7 +154,7 @@ YYK_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_italy_vanguard duration = -1 }
+						add_country_modifier = { name = YYK_italy_vanguard duration = -1 }
 			add_army_tradition = 15
 			add_mil_power = 100
 		}
@@ -173,7 +180,8 @@ YYK_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_italy_south duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 500
 			add_mil_power = 100
 		}
@@ -199,7 +207,8 @@ YYK_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_italy_center duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 500
 		}
 	}
@@ -224,7 +233,8 @@ YYK_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_italy_rome duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 600
 			add_prestige = 30
 		}
@@ -250,7 +260,7 @@ YYK_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_italy_naples duration = -1 }
+						add_country_modifier = { name = YYK_italy_naples duration = -1 }
 			add_treasury = 600
 		}
 	}
@@ -279,7 +289,8 @@ YYK_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_italy_sicily duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 800
 		}
 	}
@@ -320,10 +331,10 @@ YYK_missions_2 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_italy_unification duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 1000
 			add_prestige = 50
-			custom_tooltip = yyk_italian_cb_unlocked_tt
 		}
 	}
 	YYK_missions_2_8 = {
@@ -337,7 +348,7 @@ YYK_missions_2 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = YYK_italy_crown duration = -1 }
+			add_country_modifier = { name = YYK_italy_dominion duration = -1 }
 			add_treasury = 2000
 			add_stability = 1
 			add_prestige = 100
@@ -375,7 +386,8 @@ YYK_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_iberia_gate duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_army_tradition = 10
 			add_mil_power = 100
 		}
@@ -401,7 +413,8 @@ YYK_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_iberia_aragon duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 500
 		}
 	}
@@ -426,7 +439,8 @@ YYK_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_iberia_castile duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 500
 		}
 	}
@@ -451,7 +465,7 @@ YYK_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_iberia_andalucia duration = -1 }
+						add_country_modifier = { name = YYK_iberia_andalucia duration = -1 }
 			add_treasury = 800
 			add_prestige = 30
 		}
@@ -477,7 +491,8 @@ YYK_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_iberia_north duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 800
 		}
 	}
@@ -502,7 +517,8 @@ YYK_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_iberia_atlantic duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 800
 		}
 	}
@@ -527,7 +543,8 @@ YYK_missions_3 = {
 				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = YYK_iberia_union duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_treasury = 1000
 			add_prestige = 50
 		}
@@ -543,7 +560,7 @@ YYK_missions_3 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = YYK_iberia_crown duration = -1 }
+			add_country_modifier = { name = YYK_iberia_dominion duration = -1 }
 			add_treasury = 2000
 			add_stability = 1
 			add_prestige = 100
@@ -568,7 +585,7 @@ YYK_missions_4 = {
 			army_size_percentage = 0.7
 		}
 		effect = {
-			add_country_modifier = { name = YYK_ghost_soldier duration = -1 }
+						add_country_modifier = { name = YYK_ghost_soldier duration = -1 }
 			add_mil_power = 100
 			add_army_tradition = 15
 		}
@@ -581,7 +598,8 @@ YYK_missions_4 = {
 			army_tradition = 30
 		}
 		effect = {
-			add_country_modifier = { name = YYK_dead_butterfly duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_mil_power = 100
 			add_prestige = 20
 		}
@@ -594,7 +612,7 @@ YYK_missions_4 = {
 			land_forcelimit = 40
 		}
 		effect = {
-			add_country_modifier = { name = YYK_undead_legion duration = -1 }
+						add_country_modifier = { name = YYK_undead_legion duration = -1 }
 			add_manpower = 10
 			add_mil_power = 100
 		}
@@ -607,7 +625,8 @@ YYK_missions_4 = {
 			army_professionalism = 0.2
 		}
 		effect = {
-			add_country_modifier = { name = YYK_gardener duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_mil_power = 150
 			change_government_reform_progress = 50
 		}
@@ -620,7 +639,7 @@ YYK_missions_4 = {
 			army_size = 50
 		}
 		effect = {
-			add_country_modifier = { name = YYK_kakuri duration = -1 }
+						add_country_modifier = { name = YYK_kakuri duration = -1 }
 			add_army_tradition = 20
 			add_mil_power = 150
 		}
@@ -633,7 +652,8 @@ YYK_missions_4 = {
 			army_size = 80
 		}
 		effect = {
-			add_country_modifier = { name = YYK_grand_army duration = -1 }
+						add_mil_power = 100
+			change_government_reform_progress = 50
 			add_mil_power = 200
 			add_prestige = 30
 		}
@@ -646,7 +666,7 @@ YYK_missions_4 = {
 			army_professionalism = 0.4
 		}
 		effect = {
-			add_country_modifier = { name = YYK_shore_army duration = -1 }
+						add_country_modifier = { name = YYK_shore_army duration = -1 }
 			add_mil_power = 200
 			add_prestige = 50
 		}
@@ -659,7 +679,7 @@ YYK_missions_4 = {
 			army_size = 120
 		}
 		effect = {
-			add_country_modifier = { name = YYK_dead_army duration = -1 }
+			add_country_modifier = { name = YYK_ghost_army duration = -1 }
 			add_mil_power = 300
 			add_stability = 1
 			add_prestige = 100
@@ -684,7 +704,8 @@ YYK_missions_5 = {
 			navy_size = 10
 		}
 		effect = {
-			add_country_modifier = { name = YYK_explorer duration = -1 }
+						add_dip_power = 100
+			change_government_reform_progress = 50
 			add_dip_power = 100
 			add_navy_tradition = 15
 		}
@@ -697,7 +718,7 @@ YYK_missions_5 = {
 			navy_size = 20
 		}
 		effect = {
-			add_country_modifier = { name = YYK_route duration = -1 }
+						add_country_modifier = { name = YYK_route duration = -1 }
 			add_dip_power = 100
 			add_prestige = 20
 		}
@@ -710,7 +731,8 @@ YYK_missions_5 = {
 			num_of_colonies = 1
 		}
 		effect = {
-			add_country_modifier = { name = YYK_colony_1 duration = -1 }
+						add_dip_power = 100
+			change_government_reform_progress = 50
 			add_dip_power = 150
 		}
 	}
@@ -722,7 +744,8 @@ YYK_missions_5 = {
 			num_of_colonies = 3
 		}
 		effect = {
-			add_country_modifier = { name = YYK_colony_2 duration = -1 }
+						add_dip_power = 100
+			change_government_reform_progress = 50
 			add_dip_power = 150
 		}
 	}
@@ -734,7 +757,7 @@ YYK_missions_5 = {
 			num_of_colonies = 5
 		}
 		effect = {
-			add_country_modifier = { name = YYK_sakura duration = -1 }
+						add_country_modifier = { name = YYK_sakura duration = -1 }
 			add_dip_power = 200
 			add_prestige = 30
 		}
@@ -747,7 +770,8 @@ YYK_missions_5 = {
 			num_of_colonies = 8
 		}
 		effect = {
-			add_country_modifier = { name = YYK_shore_land duration = -1 }
+						add_dip_power = 100
+			change_government_reform_progress = 50
 			add_dip_power = 200
 			add_prestige = 40
 		}
@@ -760,7 +784,8 @@ YYK_missions_5 = {
 			num_of_colonies = 12
 		}
 		effect = {
-			add_country_modifier = { name = YYK_new_world duration = -1 }
+						add_dip_power = 100
+			change_government_reform_progress = 50
 			add_dip_power = 250
 			add_prestige = 50
 		}
@@ -773,7 +798,7 @@ YYK_missions_5 = {
 			num_of_colonies = 20
 		}
 		effect = {
-			add_country_modifier = { name = YYK_ghost_empire duration = -1 }
+			add_country_modifier = { name = YYK_ghost_colony duration = -1 }
 			add_dip_power = 300
 			add_stability = 1
 			add_prestige = 100

@@ -14,14 +14,7 @@ country_decisions = {
 					power_type = YYK_netherworld_power
 					value = -1000
 				}
-				if = {
-					limit = { num_of_accepted_cultures = 100 }
-					add_government_power = {
-						mechanic_type = YYK_netherworld_mechanic
-						power_type = YYK_netherworld_power
-						value = 1000
-					}
-				}
+				if = { limit = { num_of_accepted_cultures = 100 } add_government_power = { mechanic_type = YYK_netherworld_mechanic power_type = YYK_netherworld_power value = 1000 } }
 				else_if = {
 					limit = { num_of_accepted_cultures = 99 }
 					add_government_power = {

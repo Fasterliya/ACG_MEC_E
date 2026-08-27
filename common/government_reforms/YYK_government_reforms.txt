@@ -11,8 +11,11 @@ YYK_netherworld_reform = {
 	valid_for_nation_designer = no
 	allow_normal_conversion = yes
 	modifiers = {
-		accept_culture_cost = -0.5
+		accept_culture_cost = -0.75
 		num_accepted_cultures = 100
+	}
+	government_abilities = {
+		YYK_netherworld_mechanic
 	}
 	conditional = {
 		allow = { always = yes }

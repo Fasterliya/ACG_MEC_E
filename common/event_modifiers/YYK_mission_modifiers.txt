@@ -1,135 +1,73 @@
 YYK_awakening = {
 	stability_cost_modifier = -0.05
 	global_unrest = -1
-}
-YYK_culture_blend = {
-	stability_cost_modifier = -0.05
-}
-YYK_ghost_feast = {
-	global_unrest = -1
-	tolerance_heretic = 1
-}
-YYK_management = {
-	stability_cost_modifier = -0.05
+	reserves_organisation = 0.25
 }
 YYK_garden = {
 	development_cost = -0.10
+	global_trade_goods_size_modifier = 0.05
 }
-YYK_rest = {
-	global_unrest = -1
-	tolerance_heathen = 1
-}
-YYK_guide = {
-	stability_cost_modifier = -0.05
-	global_unrest = -1
-}
-YYK_eternal = {
-	stability_cost_modifier = -0.10
-	global_unrest = -2
+YYK_netherworld_order = {
+	stability_cost_modifier = -0.15
+	global_unrest = -3
+	tolerance_heretic = 2
+	tolerance_heathen = 2
+	reserves_organisation = 0.25
 }
 YYK_italy_vanguard = {
 	core_creation = -0.05
-}
-YYK_italy_south = {
-	core_creation = -0.05
-}
-YYK_italy_center = {
-	ae_impact = -0.05
-}
-YYK_italy_rome = {
 	ae_impact = -0.05
 }
 YYK_italy_naples = {
 	province_warscore_cost = -0.05
+	global_unrest = -1
+	reserves_organisation = 0.50
 }
-YYK_italy_sicily = {
-	province_warscore_cost = -0.05
-}
-YYK_italy_unification = {
+YYK_italy_dominion = {
 	core_creation = -0.10
 	ae_impact = -0.10
 	province_warscore_cost = -0.10
-}
-YYK_italy_crown = {
-	global_unrest = -1
-	prestige = 1
-}
-YYK_iberia_gate = {
-	core_creation = -0.05
-}
-YYK_iberia_aragon = {
-	core_creation = -0.05
-}
-YYK_iberia_castile = {
-	ae_impact = -0.05
+	reserves_organisation = 0.25
 }
 YYK_iberia_andalucia = {
+	core_creation = -0.05
 	ae_impact = -0.05
 }
-YYK_iberia_north = {
-	province_warscore_cost = -0.05
-}
-YYK_iberia_atlantic = {
-	province_warscore_cost = -0.05
-}
-YYK_iberia_union = {
+YYK_iberia_dominion = {
 	core_creation = -0.10
 	ae_impact = -0.10
-}
-YYK_iberia_crown = {
 	global_trade_goods_size_modifier = 0.10
 	trade_efficiency = 0.10
 }
 YYK_ghost_soldier = {
-	land_morale = 0.10
-}
-YYK_dead_butterfly = {
-	land_morale = 0.10
+	land_morale = 0.15
 }
 YYK_undead_legion = {
 	morale_damage_received = -0.30
 }
-YYK_gardener = {
-	land_morale = 0.10
-	reinforce_speed = 0.10
-}
 YYK_kakuri = {
-	morale_damage_received = -0.30
-}
-YYK_grand_army = {
 	land_morale = 0.10
-	manpower_recovery_speed = 0.10
+	morale_damage_received = -0.30
 }
 YYK_shore_army = {
 	morale_damage_received = -0.40
 }
-YYK_dead_army = {
+YYK_ghost_army = {
 	land_morale = 0.15
+	reinforce_speed = 0.10
+	manpower_recovery_speed = 0.10
 	yearly_army_tradition = 0.5
-}
-YYK_explorer = {
-	range = 0.25
 }
 YYK_route = {
 	colonists = 1
-}
-YYK_colony_1 = {
-	global_colonial_growth = 10
-}
-YYK_colony_2 = {
-	global_colonial_growth = 10
+	range = 0.25
 }
 YYK_sakura = {
 	colonists = 1
-	global_colonial_growth = 20
-}
-YYK_shore_land = {
-	global_colonial_growth = 20
-}
-YYK_new_world = {
-	colonists = 1
-}
-YYK_ghost_empire = {
 	global_colonial_growth = 30
+}
+YYK_ghost_colony = {
+	colonists = 1
+	global_colonial_growth = 60
 	development_cost = -0.10
 }

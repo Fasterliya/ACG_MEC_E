@@ -12,11 +12,11 @@ YYK_netherworld_mechanic = {
 
 			scaled_modifier = {
 				modifier = {
-					administrative_efficiency = 10
-					trade_efficiency = 10
-					global_trade_goods_size_modifier = 10
-					trade_steering = 50
-					core_creation = -10
+					administrative_efficiency = 1.0
+					trade_efficiency = 1.0
+					global_trade_goods_size_modifier = 1.0
+					trade_steering = 5.0
+					core_creation = -1.0
 				}
 				start_value = 0
 				end_value = 1000
