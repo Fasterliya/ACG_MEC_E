@@ -1,9 +1,20 @@
 NNM_mikazuki_overlord_modifier = {
 	prestige = 0.5
 	improve_relation_modifier = 0.10
+	discipline = 0.01
+	land_morale = 0.02
+	trade_efficiency = 0.05
+	global_trade_goods_size_modifier = 0.02
+	yearly_patriarch_authority = 1.0
 }
 
 NNM_mikazuki_subject_modifier = {
 	land_morale = 0.10
 	army_tradition = 0.5
+	land_forcelimit = 6
+	naval_forcelimit = 6
+	land_forcelimit_modifier = 0.25
+	discipline = 0.05
+	global_tax_income = 240
+	yearly_patriarch_authority = 2.0
 }

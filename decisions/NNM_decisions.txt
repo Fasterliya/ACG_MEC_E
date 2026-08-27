@@ -4,7 +4,7 @@ country_decisions = {
 		potential = {
 			tag = NNM
 			any_subject_country = {
-				is_subject_of_type = vassal
+				is_subject_of = ROOT
 				culture_group = MadokaMagica
 				NOT = { is_subject_of_type = mikazuki_ally }
 			}
@@ -33,7 +33,7 @@ country_decisions = {
 			hidden_effect = {
 				every_subject_country = {
 					limit = {
-						is_subject_of_type = vassal
+						is_subject_of = ROOT				
 						culture_group = MadokaMagica
 						NOT = { is_subject_of_type = mikazuki_ally }
 					}
