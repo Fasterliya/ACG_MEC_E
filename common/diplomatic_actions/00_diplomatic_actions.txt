@@ -1017,4 +1017,18 @@ callaction = {
 			always = no
 		}
 	}
+	condition = {
+		tooltip = YYK_ITALIAN_CB_NO_ALLY_CALL_TT
+		potential = {
+			ROOT = {
+				is_in_war = {
+					defender_leader = ROOT
+					casus_belli = cb_yyk_italian_unification
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }

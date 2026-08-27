@@ -1,0 +1,26 @@
+YYK_netherworld_mechanic = {
+	available = {
+		always = yes
+	}
+
+	powers = {
+		YYK_netherworld_power = {
+			gui = THE_mechanic_power_hidden_gui
+			min = 0
+			max = 1000
+			base_monthly_growth = 0
+
+			scaled_modifier = {
+				modifier = {
+					administrative_efficiency = 10
+					trade_efficiency = 10
+					global_trade_goods_size_modifier = 10
+					trade_steering = 50
+					core_creation = -10
+				}
+				start_value = 0
+				end_value = 1000
+			}
+		}
+	}
+}

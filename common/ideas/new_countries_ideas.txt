@@ -1960,7 +1960,7 @@ YYK_ideas = {
 	}
 	trigger = {
 		OR = {
-			tag = YYK
+			# tag = YYK
 			tag = YOM
 		}
 	}

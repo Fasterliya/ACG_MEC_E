@@ -1,0 +1,41 @@
+YYK_ideas = {
+	start = {
+		land_morale = 0.10
+		global_manpower_modifier = 0.25
+	}
+	bonus = {
+		stability_cost_modifier = -0.10
+		global_unrest = -1
+	}
+	trigger = {
+		tag = YYK
+	}
+	free = yes
+	White_Jade_Mansion = {
+		stability_cost_modifier = -0.10
+	}
+	Ghost_Feast = {
+		global_unrest = -2
+		tolerance_heretic = 1
+	}
+	Dead_Butterfly_Dance = {
+		land_morale = 0.15
+		morale_damage_received = -0.10
+	}
+	Far_Shore_Guide = {
+		colonists = 1
+		global_colonial_growth = 20
+	}
+	Saigyou_Ayakashi = {
+		development_cost = -0.10
+		global_trade_goods_size_modifier = 0.10
+	}
+	Kakuri_Undead = {
+		infantry_power = 0.15
+		artillery_power = 0.10
+	}
+	Sakura_Gale_Protection = {
+		ae_impact = -0.15
+		province_warscore_cost = -0.10
+	}
+}

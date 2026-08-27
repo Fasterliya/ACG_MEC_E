@@ -1,0 +1,7 @@
+spriteTypes = {
+	### GOVERNMENT_REFORM
+	spriteType = {
+		name = "government_reform_YYK_netherworld_gr"
+		texturefile = "gfx/interface/government_reform_icons/YYK_netherworld_gr.dds"
+	}
+}

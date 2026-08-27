@@ -1,0 +1,15 @@
+cb_yyk_italian_unification = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			mission_completed = YYK_missions_2_7
+			has_country_flag = yyk_italian_cb_unlocked_flag
+		}
+		any_known_country = {
+			any_owned_province = { region = italy_region }
+		}
+	}
+
+	war_goal = take_province_yyk_italian
+}

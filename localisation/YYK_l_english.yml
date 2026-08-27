@@ -1,0 +1,195 @@
+﻿l_english:
+ YYK_ideas: "‹v‰s|itõV"
+ YYK_ideas_start: "‹^¥QKNB›"
+ YYK_ideas_bonus: "¡Nw„v‰RR"
+ YYK_ideas_start_desc: "‹v‰s|i„v¡NuplQINßu¡VNwuN‰k„v¹Lu0‹^up›QâVëXlØšfÿºN›RnnNÝu‰kw¦Nýw:N‹^‹^PRwb0"
+ YYK_ideas_bonus_desc: "SVNb	gtõVûŽNWánÿ‹v‰s|i„vßu»l3z‚YÐxów3zšR±‚9'YE^M–NOÿ¡Nw„vNOí‹NQ&^egÛSqNÿw=f&^eg‰RR0"
+ White_Jade_Mansion: "‹v‰s|i„v¡rt"
+ White_Jade_Mansion_desc: "‹v‰s|i„v­^b–éy^•N6qÿ‹^upÆNÎNìNSbtNwNR0ýV¶R„vÐl‚Y1j±‚Ø˜K„,‚ê6qAmEu0"
+ Ghost_Feast: "‹^upKN´R"
+ Ghost_Feast_desc: "‹^‹^PR>NžRÛv'Y„v‹^upKN´Rÿ>k…V¡NwNuw0q™™N˜„v¡NupìNùRÙMOlQINÃVgãSgÿÛSqNNVïz„vBgó—nnˆmce0"
+ Dead_Butterfly_Dance: "‰kv‡KN‚"
+ Dead_Butterfly_Dance_desc: "‰kv‡(W1j±‚ô•w‚ÿ‹^‹^PR„v›Q–ëXl‚Yy†0sSOm×SÍ‘Rÿ‹^upëXuQìNmNNO‰f)Tƒn0"
+ Far_Shore_Guide: "|V¸S„vVïºN"
+ Far_Shore_Guide_desc: "‹^‹^PR²Nê:NVÓbwVïÿcVÖNìNMRŽV|V¸S„v°eNLu0–klw„vekM^)Y¯m0"
+ Saigyou_Ayakashi: "‰Lˆ–Y„výu>e"
+ Saigyou_Ayakashi_desc: "‰Lˆ–Y„v1j±‚(WýV¦^TYýu>eÿÌRv™NAucƒ–KNweg0ÑSUS„vb,g–±‚ãtNTØ˜K„0"
+ Kakuri_Undead: "NSåw„v¡Nup"
+ Kakuri_Undead_desc: "NSåw„v¡Nup›QâVRªgNeQÿekuQN®puQ†v:N‹v‰s|i„v¾|•0‰kwÔkuwôf RàVÚ‹0"
+ Sakura_Gale_Protection: "1j9Tê–„v R²b"
+ Sakura_Gale_Protection_desc: "1j9Tê–„v R²b<riNw‹^‹^PR„v›Q–ÿb‰N„vãN÷N(W±‚ãt-Nˆm‡µOeuib.VNb‰N„vÅbý–KNÏQ‰0"
+
+ YYK_netherworld_reform: "‹^¥Q‹v‰s|i"
+ YYK_netherworld_reform_desc: "‹v‰s|iGSNS:N‹^¥QKNýV0‹^‹^PR„výV¦^¥c³uÛV¹e‡eS‚Y¢cÊVÖSir¥c³u‡eS„v±‚9ÏQJSÿïS¥c³u„v‡eSpeÏ‘'YE^žX Rÿ‹^¥QKN›R–‡eS„v²N‡wîX'Y0"
+
+ YYK_netherworld_power: "‹^¥QKN›R"
+
+ ACG_MEC_yyk_culture_calibrate: "!hÆQ‹^¥QKN›R"
+ ACG_MEC_yyk_culture_calibrate_desc: "åN¥c³u„v‡eSpeÏ‘!hÆQ‹^¥QKN›RÿÏkN*NòT¥c³u„v‡eSýS:N‹^¥QKN›R„vnÉlÿ¨c¨R‹v‰s|i„v›RÏ‘agóùR”^„vØš¦^0ÏkSV‡eSHrþVØSSÿ¹pûQåNÍ‘°e!hÆQ0"
+
+ YYK_awakening: "‹v‰s|i„vÉ‰’‘"
+ YYK_awakening_desc: "‰law„v‹v‰s|i(W‹^‹^PR„vbTƒU-NÏ‚’‘ÿ3zšRNéy^–KNM–4N0"
+ YYK_culture_blend: "‡eS²N‡"
+ YYK_culture_blend_desc: "‹v‰s|iVËY¥c³uÛV¹e‡eSÿ‹^¥Q„vS¹R©‹ýV¶R„v9húWôf R3zúV0"
+ YYK_ghost_feast: "‹^upKN´R"
+ YYK_ghost_feast_desc: "‹^upKN´R„vYOõ—*gceÿ¡Nw„vNOí‹S:NùRlQIN„vHeàVÿÛSqNNVïz–KNs^o`0"
+ YYK_management: "‹v‰s|i„v¡rt"
+ YYK_management_desc: "‹v‰s|i„v‹^upÆNÎNS?e¡RSbt—V•N•N	gagÿ3zšR±‚9'YE^M–NO0"
+ YYK_garden: "1j±‚­^b–"
+ YYK_garden_desc: "1j±‚­^b–„vAucƒ&^¨R†NhQýV„vVÑSÿÑSUS„vb,g–KNM–NO0"
+ YYK_rest: "¡Nw‰Ro`"
+ YYK_rest_desc: "¡Nw‰Ro`ŽN‹v‰s|i„v1j±‚hNÿVYe„vupB›mNRVŽNs^Y—ÿÛSqNNN‰R–KNˆmce0"
+ YYK_guide: "|V¸S„vVïºN"
+ YYK_guide_desc: "‹^‹^PRVüRôfY„v‡eSRVŽN‹v‰s|iÿ‹^¥Q„véy^aÑS3zúV0"
+ YYK_eternal: "‹v‰s|i„v8lR`"
+ YYK_eternal_desc: "‹v‰s|iySËzŽN8lR`ÿ3zšRN‰RR=fƒR„vãNTÍ‹‹^¥Q„výV¦^brNïS4x0"
+ YYK_italy_vanguard: "a'Y)R„vHQqš"
+ YYK_italy_vanguard_desc: "a'Y)R„v†uWT‹^‹^PR^eVÿ8hÃVS„vÅb–KNÏQ‰0"
+ YYK_italy_south: "WS?–SQS¯e„vVg"
+ YYK_italy_south_desc: "WS?–SQS¯e„vVgòTbšRNSÿa'Y)R„vW0W R‡eQ‹v‰s|i0"
+ YYK_italy_center: "âl³l„vßu»l"
+ YYK_italy_center_desc: "âl³lKN7Œ„vßu»l3zúVÿµOeuib.V„v4–qV(W1j±‚Nˆmce0"
+ YYK_italy_rome: "Xb¯eaS³uKNIQ"
+ YYK_italy_rome_desc: "Xb¯eaS³u„vIQ‰RVŽN‹^‹^PRÿb‰N„vãN÷N(W±‚ãt-Nˆm‡0"
+ YYK_italy_naples: "8lR`KNÎW„vŒcác"
+ YYK_italy_naples_desc: "8lR`KNÎWãgŽN¡NwlQINÿVg„vÅbaÑS‰Èv0"
+ YYK_italy_sicily: "šNs^RKNÃV"
+ YYK_italy_sicily_desc: "šNs^R„vÃVòT^S‹v‰s|iÿ‰‰Ì‘„vwmjm¦N:N‹^¥QwLk0"
+ YYK_italy_unification: "a'Y)R„vŽ÷‹"
+ YYK_italy_unification_desc: "a'Y)Rø‹¦6e0R‹^¥Q„vŽ÷‹RVz˜‹v‰s|iÿbˆmceŽN1j±‚KN-N08hÃVS0µOeuib.VNb‰N„vãN÷NhQb—ÏQ‰0"
+ YYK_italy_crown: "a'Y)R‹s Q"
+ YYK_italy_crown_desc: "a'Y)R‹s Q R•QŽN‹^‹^PR„vÑSô•ÿZ%NNéy^<riJS›S0"
+ YYK_iberia_gate: "Ôk)Rir¯e„vè•Ib"
+ YYK_iberia_gate_desc: "Ôk)Rir¯e„vè•IbT‹^¥Q^eVÿOÔk)RšN„v8hÃVSÛz RëV0"
+ YYK_iberia_aragon: "?–Éb!„vWµN"
+ YYK_iberia_aragon_desc: "?–Éb!„vWµNRVŽN‹v‰s|iÿOÔk)RšN„vVg	gagNt0"
+ YYK_iberia_castile: "aS¯e‚„)RšNØšŸS"
+ YYK_iberia_castile_desc: "aS¯e‚„)RšN„vØšŸSGSw‹^up×e^ÿµOeuib.V„vãN÷N(W1j±‚NÏQ‰0"
+ YYK_iberia_andalucia: "‰R¾bS‰šN„vÿu2m"
+ YYK_iberia_andalucia_desc: "‰R¾bS‰šN„vÿu2m(W‹^¥Q„vèlÆ‰NRVD–ÿb‰N„vRÏ‘aÑS‰Èv0"
+ YYK_iberia_north: "Xb±ƒY„v‹sµ^"
+ YYK_iberia_north_desc: "Xb±ƒY„v‹sµ^:N‹^‹^PRw¾‹ÿOÔk)RšN„vVgôfÛNek0"
+ YYK_iberia_atlantic: "'Y‰m„vè•7b"
+ YYK_iberia_atlantic_desc: "'Y‰m„vè•7bK„eQ‹v‰s|iKNKbÿ–kl„v|V¸Sæ‰KbïSÊS0"
+ YYK_iberia_union: "OÔk)RšN„vTwT"
+ YYK_iberia_union_desc: "OÔk)RšN„vø‹¦(W‹^¥Qb—MRTwTbwmp¡N08hÃVSNµOeuib.V„vãN÷NhQb—ÏQ‰0"
+ YYK_iberia_crown: "OÔk)RšN„v¡Nwßu»l"
+ YYK_iberia_crown_desc: "OÔk)RšNJS›SKSRV‹v‰s|iÿFUÁTN8f(W‹^up„vèlÆ‰NAucƒfÛv0"
+ YYK_ghost_soldier: "‹^upëXuQ"
+ YYK_ghost_soldier_desc: "‹^upëXuQNåw²u&P0NOu‰k¡NÿF–›QëXlØšf0"
+ YYK_dead_butterfly: "‰kv‡KN‚"
+ YYK_dead_butterfly_desc: "‰kv‡KN‚Ÿ‚NwhQ›QÿëXl‚Y1j±‚,‚ÚuÂp0"
+ YYK_undead_legion: "¡Nup›QâV"
+ YYK_undead_legion_desc: "¡Nup›QâV(Wb:WNNb×S„vëXlSbûQ®VNNvQ®V‰kwNOOuç`‰k¡N0"
+ YYK_gardener: "‹v‰s|i„v­^^"
+ YYK_gardener_desc: "­^^­‹ÃuNw‹^upëXuQÿëXlNeˆXT¦^TekÐcGS0"
+ YYK_kakuri: "NSåw„v¡Nup"
+ YYK_kakuri_desc: "NSåw„v¡Nup(W®pkp-NëkN¨RGdÿëXlSbûQ„vÏQMQQ¦^ Rñm0"
+ YYK_grand_army: "‹^‹^PR„v'Y›Q"
+ YYK_grand_army_desc: "‹^‹^PR„v'Y›Q-^wSÛV¹eÿëXlØš¨mÿºN›RnnN­e0"
+ YYK_shore_army: "|V¸S„v›Q–"
+ YYK_shore_army_desc: "egê|V¸S„v›Q–MQ«uP`ç`Nb×SëXlSbûQ«ˆŒRhQ¹bˆm0"
+ YYK_dead_army: "¡NwKN^"
+ YYK_dead_army_desc: "¡NwKN^=fb:WN„v.Oô‹ÿëXl‚Yy†ÿ.Oßu8líu0"
+ YYK_explorer: "|V¸S„v*‚ï"
+ YYK_explorer_desc: "‹^‹^PR„v0‚–všT|V¸Sÿ–kl„vƒôV'YE^ö^8O0"
+ YYK_route: "‹^upûyl"
+ YYK_route_desc: "‹^upûylŽNMRŽV°eNLu„v*‚zÿ–klw–OîX'Y0"
+ YYK_colony_1: "¡Nw„v–kl0W"
+ YYK_colony_1_desc: ",rNWW¡Nw„v–kl0W(W°eNLuNb9hÿ–klžX• R0"
+ YYK_colony_2: "‹^¥QMRèT"
+ YYK_colony_2_desc: "‹^¥QMRèTM^wm¸Sÿ–kl„vek RëV0"
+ YYK_sakura: "1j9Tê–„vkyy"
+ YYK_sakura_desc: "1j9Tê–kyyNw–klwÿ°eNLu„v†uW(W±‚ãt-Nu•0"
+ YYK_shore_land: "|V¸S„výVW"
+ YYK_shore_land_desc: "|V¸S„výVWåeÊvË–ÿ–klžX•QeØšðS0"
+ YYK_new_world: "°eNLu„v‹^up"
+ YYK_new_world_desc: "°eNLu„v‹^upˆR²bNw–kl0WÿÈSN=e–kl–OteÅˆ…VÑS0"
+ YYK_ghost_empire: "‹^¥Q'Y^ýV"
+ YYK_ghost_empire_desc: "‹^¥Q'Y^ýV*jè'Ymÿ–klNVÑS„vekOàeïSI–!c0"
+
+ YYK_missions_1_1_title: "‹v‰s|i„vÉ‰’‘"
+ YYK_missions_1_1_desc: "‹^‹^PRê‰law-NÏ‚’‘ÿ‹v‰s|i„v‹^¥QKN›RÉ‰’‘0¥c³uÛV¹e‡eSÿ©‹¡Nw„výV¦^AucƒfÛvÙ=f‹^‹^PRùR°eNLu„v,rNðXî•P0"
+ YYK_missions_1_2_title: "‡eS²N‡"
+ YYK_missions_1_2_desc: "‹v‰s|iVËY¥c³uNT„v‡eS0‹^upìNz­hŽNTÏeKNô•ÿ‹^¥Q„vS¹R©‹ýV¶R„v9húWôf R3zúV0"
+ YYK_missions_1_3_title: "‹^upKN´R"
+ YYK_missions_1_3_desc: "‹^‹^PR>NžR‹^upKN´Rÿ>k…VASÍy‡eS„v¡NwNuw0q™™„v¡NupìNÃVuÅ`?a:N‹v‰s|iHe›R0"
+ YYK_missions_1_4_title: "‹v‰s|i„v¡rt"
+ YYK_missions_1_4_desc: "©‹‹v‰s|i(W3zšR„véy^-NÐl0‹^upÆNÎNìN‹†òT»Sÿ¡rt?e¡RtSNNNß‚0"
+ YYK_missions_1_5_title: "1j±‚­^b–"
+ YYK_missions_1_5_desc: "S‹v‰s|i„v­^b–ú^¾‹:N¦h‰^„v1j±‚KN0Wÿ©‹AucƒÎN–™ýTÛV¹e…ö^0"
+ YYK_missions_1_6_title: "¡Nw‰Ro`"
+ YYK_missions_1_6_desc: "©‹Nb	g„vupB›ý‰Ro`ŽN1j±‚hNàeº‹=fckáOØ=fVYeÿ†v(W‹^‹^PR„v‡^²bNRVŽNs^Y—0"
+ YYK_missions_1_7_title: "|V¸S„vVïºN"
+ YYK_missions_1_7_desc: "‹^‹^PR²NêVüRôfY„v‡eSRVŽN‹v‰s|i0ŒNAS”NÍy‡eS„v²N‡ÿø”1S‹^¥Q„véy^0"
+ YYK_missions_1_8_title: "‹v‰s|i„v8lR`"
+ YYK_missions_1_8_desc: "SV‹v‰s|i(W3zšR„véy^N^²ˆ„v†ußW-NySËzÿƒR¿ONQ=f­^íVÿw=f8lR`‹^¥QýV¦^„vÃV0"
+ YYK_missions_2_1_title: "?–SQS¯eKNWS"
+ YYK_missions_2_1_desc: "ŠÇ?–SQS¯eÿZ<S¯e„vâlIQN&OôT,r„vs^ŸSKS6e<w•^0‹^‹^PRTa'Y)R8OúQ†NKbuwàeÕlÒbÝu¡Nw„vŽ÷‹0"
+ YYK_missions_2_2_title: "&OôT,rs^ŸS"
+ YYK_missions_2_2_desc: "&OôT,r„vÌRv™RVŽN‹v‰s|i0âl³lKN7Œ(WìS2Uÿa'Y)R„vè•7bòT6q^eV0"
+ YYK_missions_2_3_title: "âl³lKN7Œ"
+ YYK_missions_2_3_desc: "âl³lKN7Œ„v0uÎ‘(W‹^up„vèlÆ‰N0N6e0Xb¯eaS³u„vqSNNa„„íVckT‹^‹^PRÛbKb0"
+ YYK_missions_2_4_title: "Xb¯eaS³uKNIQ"
+ YYK_missions_2_4_desc: "Xb¯eaS³u„vz‚=gNcƒIQRVŽN‹v‰s|i0QTWS8lR`KNÎWWlšÿckIr…VNw‹^¥Q„v¿‹¢R0"
+ YYK_missions_2_5_title: "8lR`KNÎW"
+ YYK_missions_2_5_desc: "Wlš„vNN(W1j±‚N‰R.w0‹^‹^PRŽ³8lR`KNÎWÿa'Y)R„vÃVVËY:N‹^¥Qwó¨R0"
+ YYK_missions_2_6_title: "šNs^RKNÃV"
+ YYK_missions_2_6_desc: "šNs^R„vqS	Á‰Á‹‹v‰s|i„vVg0TWSÿ±NÒR¯eN?–nf)RšN„vwm¸S(WIr…V0"
+ YYK_missions_2_7_title: "a'Y)R„vŽ÷‹"
+ YYK_missions_2_7_desc: "±NÒR¯e0?–nf)RšNNaSÉb^Ì‘šNKSRV‹v‰s|i0‹^‹^PRTte*Na'Y)RÑSúQŽ÷‹RVz˜wuÿµb—bw¡N0‹^¥Q„v±Rbt1uòT6q1Sêu0"
+ YYK_missions_2_8_title: "a'Y)R‹s Q"
+ YYK_missions_2_8_desc: "te*Na'Y)RJS›SKSRV‹v‰s|i0‹^‹^PR R•Qa'Y)R‹s Qÿ¡NwlQINb:NJS›S„vóØšßu»lw0"
+ YYK_missions_3_1_title: "Ôk)Rir¯e„vè•Ib"
+ YYK_missions_3_1_desc: "ûŠÔk)Rir¯eÿ RðlW<SšN„vwm¸S¿u(Wg0OÔk)RšNÙGr3–IQKN0WÿmNS<ri(W‹^¥Q„v4–qVKNN0"
+ YYK_missions_3_2_title: "?–Éb!„vWµN"
+ YYK_missions_3_2_desc: "?–Éb!„v‹s QK„eQ‹^‹^PRKNKb0ôT&O‰šN„vwm¸Sck(WIr…V‹^up0‚–„v0Reg0"
+ YYK_missions_3_3_title: "ôT&O‰šNwm¸S"
+ YYK_missions_3_3_desc: "ôT&O‰šN„vÑgXjíV(W‹^up„vèlÆ‰NØ˜™™0aS¯e‚„)RšN„vØšŸS1S(WMR¹e0"
+ YYK_missions_3_4_title: "aS¯e‚„)RšNØšŸS"
+ YYK_missions_3_4_desc: "aS¯e‚„)RšN„vØšŸSGSw‹^up„v×e^0Xb±ƒY‰ísYr„vÃVck…V‹^¥Q„vM–4N0"
+ YYK_missions_3_5_title: "Xb±ƒY„v‹sµ^"
+ YYK_missions_3_5_desc: "Xb±ƒY„v‹sµ^:N‹^‹^PRw¾‹0‰R¾bS‰šN„vÿu2mNÜt¾SúWôuS„vâlIQ(WWS¹eê•w0"
+ YYK_missions_3_6_title: "‰R¾bS‰šN„vÿu2m"
+ YYK_missions_3_6_desc: "N‰R¾bS‰šN„vDj„i—gRVŽN‹v‰s|i0QTWSÿ^Xôu)RšNNôv^WN–„vwmÎ˜Qbb—weg0"
+ YYK_missions_3_7_title: "'Y‰m„vè•7b"
+ YYK_missions_3_7_desc: "N‰R¾bS‰šNK„eQ‹^¥QKNKbÿ'Y‰m„vè•7bmV0OÔk)RšN„vTwTòT(W<wMR0"
+ YYK_missions_3_8_title: "OÔk)RšN„v¡Nwßu»l"
+ YYK_missions_3_8_desc: "ÎN RðlW<SšN0R R)R‰šNÿÎN‰R¾bS‰šN0RÃW¯eyr÷–lšjgÉbte*NOÔk)RšNKSRV‹v‰s|i0¡NwlQINßu¡V3–IQKN0W0"
+ YYK_missions_4_1_title: "‹^upëXuQ"
+ YYK_missions_4_1_desc: "ìSÆ–N=eÏP7h„v›Q–FO‹^‹^PR„v›Q–1u‹^upÄubÿNåw²u&PÿNOu‰k¡N0F–›QëXl„vØš¨m¿RNïS!c0"
+ YYK_missions_4_2_title: "‰kv‡KN‚"
+ YYK_missions_4_2_desc: "‰kv‡(Wb:WNé6qw‚ÿ›Q–„v.OßuNëXlTekGSNS0	NAS¹p„vF–›Q.Oßu=f‹^up›QâV„vcƒw0"
+ YYK_missions_4_3_title: "¡Nup›QâV"
+ YYK_missions_4_3_desc: "¡Nup›QâVÄuú^ŒRbÿÛVAS„vF–›QNP–=f‹^¥Qfk›R„vúWów0‰kw(Wb:WN„vëXlSbûQ®VNNvQ®V0"
+ YYK_missions_4_4_title: "‹v‰s|i„v­^^"
+ YYK_missions_4_4_desc: "‹v‰s|i„v­^^­‹Ãu‹^upëXuQÿ›Q–„vLwNS¾0R2Nb0ÍdÃuNëXlPŸ4Yv^Û0"
+ YYK_missions_4_5_title: "NSåw„v¡Nup"
+ YYK_missions_4_5_desc: "NSåw„v¡Nup(W®pkp-N¿S6qN¨R”NN'Y›QÆ–ÓuÿNb×SëXlSbûQQ¦^ÏQMQ0"
+ YYK_missions_4_6_title: "‹^‹^PR„v'Y›Q"
+ YYK_missions_4_6_desc: "‹^‹^PR„v'Y›QibókQNÿëXl‚Y1j±‚,‚ÚuÂpÿºN›R‚Y‹^up,‚nnN­e0"
+ YYK_missions_4_7_title: "|V¸S„v›Q–"
+ YYK_missions_4_7_desc: "egê|V¸S„v›Q–‰V•^MQ«uP`ç`LwN¦^ÛVb„v‹^up›QâVÿNb×SëXlSbûQ«ˆŒRhQ¹bˆm0"
+ YYK_missions_4_8_title: "¡NwKN^"
+ YYK_missions_4_8_desc: "ASŒNN„v¡NwKN^=fb:WNàeïSI–!c„v.Oô‹0‹^‹^PR„v'Y›QNbóÿuw=U	gãg0"
+ YYK_missions_5_1_title: "|V¸S„v*‚ï"
+ YYK_missions_5_1_desc: "‹^up0‚–všT'YwmÿASX‚b0‚ÉbV¢c0t|V¸S„v^U^0–kl„v*‚ï(W‹^¥Q„vcVNö^8O0"
+ YYK_missions_5_2_title: "‹^upûyl"
+ YYK_missions_5_2_desc: "ŒNASX‚b0‚²bkSNw‹^upûyl„v9‚–0°eNLu„vwm¸S¿uckIr…V‹v‰s|i„v×e^0"
+ YYK_missions_5_3_title: "¡Nw„v–kl0W"
+ YYK_missions_5_3_desc: ",rNWW¡Nw„v–kl0W(W°eNLuNb9h0‹^upìNNç`Ü*‚ÿ–kl0W„vu•åe°egV0"
+ YYK_missions_5_4_title: "‹^¥QMRèT"
+ YYK_missions_5_4_desc: "	NWW‹^¥QMRèTR^(Wwm¸S¿uNÿ–kl„vek(W°eNLu3zekTMR0"
+ YYK_missions_5_5_title: "1j9Tê–„vkyy"
+ YYK_missions_5_5_desc: "1j9Tê–kyyNw”NWW–kl0Wÿ°eNLu„v†uW(W±‚ãt-Nu•ÿ,rŒN=e–kl–OteÅˆ…VÑS0"
+ YYK_missions_5_6_title: "|V¸S„výVW"
+ YYK_missions_5_6_desc: "kQWW|V¸S„výVWÞbNGrÿ‹^¥Q„v¿R›R(W°eNLuNbNñm9h0"
+ YYK_missions_5_7_title: "°eNLu„v‹^up"
+ YYK_missions_5_7_desc: "ASŒNWW–kl0WM^°eNLuÿÈSN=e‹^up–kl–OŽNV0"
+ YYK_missions_5_8_title: "‹^¥Q'Y^ýV"
+ YYK_missions_5_8_desc: "ŒNASWW–kl0Wø”1S*jè'Ym„v‹^¥Q'Y^ýV0‹^‹^PR(W°eNLu„vßu»làeºNýw¼d0"
+
+ yyk_italian_cb_unlocked_tt: "§Yã‰•N^S±Rbt1u0a'Y)RßuNb‰N0§!ÿ\n- ùRc	ga'Y)RwýN„výV¶R§R-75%§!µOeuib.Vÿ§R-50%§!b‰NRpe±‚9\n- 2–¡V¹eàeÕlìS2UßvËS"
+ cb_yyk_italian_unification: "a'Y)RßuNb‰N"
+ YYK_ITALIAN_WAR_NAME: "‹^‹^PRùR$DEFENDER$„va'Y)RßuNb‰N"
+ YYK_ITALIAN_CB_NO_ALLY_CALL_TT: "ck(W«ˆ‹^‹^PR„v0a'Y)RßuNb‰N0±RbÿàeÕlìS2UßvËS0"
