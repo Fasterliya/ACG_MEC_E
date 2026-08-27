@@ -1,14 +1,14 @@
 #============== HKH 姬海棠果 任务修正 ==============
 
 HKH_intelligence_network = {
-	spy_offence = 0.70
+	spy_offence = 1.00
 	diplomats = 1
 	global_spy_defence = 0.1
 }
 
 HKH_news_circulation = {
 	improve_relation_modifier = 0.2
-	diplomatic_reputation = 0.70
+	diplomatic_reputation = 1.0
 }
 
 HKH_public_opinion = {
@@ -31,7 +31,7 @@ HKH_intel_hegemony = {
 HKH_complete_info = {
 	fire_damage_received = -0.1
 	global_spy_defence = 0.2
-	ae_impact = -0.1
+	ae_impact = -0.05
 	technology_cost = -0.1
 }
 
@@ -45,16 +45,10 @@ HKH_supreme_intelligence = {
 }
 
 HKH_omniscient_empire = {
-	discipline = 0.10
-	siege_ability = 0.15
-	shock_damage_received = -0.1
-	fire_damage_received = -0.1
-	cavalry_power = 0.15
-	infantry_power = 0.1
-	leader_land_maneuver = 2
-	land_morale = 0.1
-	idea_cost = -0.1
-	technology_cost = -0.1
+	discipline = 0.05
+	cavalry_power = 0.25
+	leader_land_maneuver = 1
+	morale_damage = 0.15
 	development_cost = -0.15
 	administrative_efficiency = 0.1
 }
@@ -79,7 +73,7 @@ HKH_algeria_secured = {
 HKH_morocco_claim = {
 	cavalry_power = 0.15
 	shock_damage = 0.1
-	land_forcelimit_modifier = 0.1
+	morale_damage = 0.10
 }
 
 HKH_maghreb_dominance = {
@@ -98,7 +92,7 @@ HKH_africa_intel = {
 	max_absolutism = 15
 	yearly_absolutism = 0.70
 	global_manpower_modifier = 0.15
-	global_spy_defence = 0.2
+	governing_capacity = 250
 }
 
 HKH_andalusian_expedition = {
@@ -115,7 +109,6 @@ HKH_iberia_beachhead = {
 
 HKH_castille_heartland = {
 	cavalry_flanking = 0.2
-	shock_damage_received = -0.1
 	land_forcelimit_modifier = 0.1
 }
 
@@ -141,7 +134,6 @@ HKH_iberian_hegemony = {
 	max_absolutism = 15
 	global_tax_modifier = 0.1
 	cavalry_power = 0.1
-	shock_damage_received = -0.1
 }
 
 HKH_trade_empire = {
@@ -198,8 +190,7 @@ HKH_maritime_empire = {
 
 HKH_cavalry_reform = {
 	cavalry_power = 0.1
-	cav_to_inf_ratio = 0.15
-	shock_damage_received = -0.10
+	cav_to_inf_ratio = 0.25
 }
 
 HKH_mobile_warfare = {
@@ -210,8 +201,7 @@ HKH_mobile_warfare = {
 }
 
 HKH_shock_tactics = {
-	shock_damage = 0.1
-	shock_damage_received = -0.1
+	shock_damage = 0.25
 	cavalry_power = 0.1
 }
 
@@ -232,7 +222,6 @@ HKH_tengu_riders = {
 	leader_land_shock = 1
 	cavalry_power = 0.1
 	shock_damage = 0.1
-	shock_damage_received = -0.1
 	reinforce_speed = 0.15
 }
 

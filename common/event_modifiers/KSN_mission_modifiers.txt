@@ -20,7 +20,7 @@ KSN_optical_sights = {
 
 KSN_war_industry = {
 	discipline = 0.05
-	artillery_power = 0.15
+	artillery_power = 0.10
 	fire_damage = 0.10
 	reinforce_speed = 0.15
 }
@@ -32,7 +32,7 @@ KSN_engineer_hegemony = {
 }
 
 KSN_final_arsenal = {
-	siege_ability = 0.2
+	siege_ability = 0.25
 	infantry_power = 0.1
 	discipline = 0.05
 	fire_damage = 0.10
