@@ -1,0 +1,2552 @@
+IYS_missions_1 = {
+    slot = 1
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_1_3 = { #终结阿瓦
+        position = 3
+        icon = mission_conquer_lower_burma_tau
+        required_missions = { 
+            IYS_missions_2_2
+        }
+        provinces_to_highlight = {
+            OR = {
+			    area = central_burma_area
+                area = upper_burma_area
+            }
+            NOT = {
+				owned_by = ROOT
+			}
+		}
+        trigger = {
+            central_burma_area = {
+				type = all
+				owned_by = ROOT
+			}
+            upper_burma_area = {
+				type = all
+				owned_by = ROOT
+			}
+        }
+        effect = {
+            burma_region = { 
+                add_permanent_claim = ROOT
+            }
+            add_adm_power = 100
+            add_prestige_or_monarch_power = { amount = 50 }
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect1_can_do_tt
+            }
+        }
+    }
+    IYS_missions_1_4 = { #统一缅甸
+        position = 4
+        icon = mission_conquer_lower_burma_tau
+        required_missions = { 
+            IYS_missions_1_3
+        }
+        provinces_to_highlight = {
+            region = burma_region
+            NOT = {
+				owned_by = ROOT
+			}
+		}
+        trigger = {
+            burma_region = {
+				type = all
+				owned_by = ROOT
+			}
+        }
+        effect = {
+            tripura_area = { 
+                add_permanent_claim = ROOT
+            }
+            east_bengal_area ={ 
+                add_permanent_claim = ROOT
+            }
+            west_bengal_area = { 
+                add_permanent_claim = ROOT
+            }
+            gaur_area = { 
+                add_permanent_claim = ROOT
+            }
+            north_bengal_area = { 
+                add_permanent_claim = ROOT
+            }
+            assam_area = { 
+                add_permanent_claim = ROOT
+            }
+            naga_hills_area = { 
+                add_permanent_claim = ROOT
+            }
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                tooltip = {
+                    custom_tooltip = IYS_burma.TT
+                    add_province_modifier = { 
+                        name = IYS_burma_province_mod
+                        duration = -1
+                    }
+                }
+                hidden_effect = {
+				    every_owned_province = {
+					    limit = {
+						    region = burma_region
+					    }
+					    add_province_modifier = {
+						    name = IYS_burma_province_mod
+						    duration = -1
+					    }
+				    }
+			    }
+            }
+            else = {
+                tooltip = {
+                    custom_tooltip = IYS_burma.TT
+                    add_province_modifier = { 
+                        name = IYS_burma_province
+                        duration = -1
+                    }
+                }
+                hidden_effect = {
+				    every_owned_province = {
+					    limit = {
+						    region = burma_region
+					    }
+					    add_province_modifier = {
+						    name = IYS_burma_province
+						    duration = -1
+					    }
+				    }
+			    }
+            }
+            custom_tooltip = ""
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect2_can_do_tt
+            }
+            simple_dynamic_effect = {
+				first_custom_tooltip = IYS_Tetsusaiga_frist_level
+				first_limit = "
+                    custom_trigger_tooltip = {
+                        tooltip = IYS_has_red_tetsuaiga__tt #如果我们的铁碎牙已经是红色铁碎牙,我们将触发
+                        has_country_modifier = red_tetsuaiga
+                    }
+                "
+				first_effect = "
+                    country_event = {
+                        id = IYS_event.2
+                    }
+				"
+            }
+        } 
+    }
+    IYS_missions_1_5 = { #入侵孟加拉
+        position = 5
+        icon = mission_control_the_ganges_delta
+        required_missions = { 
+            IYS_missions_1_4
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = tripura_area
+				area = east_bengal_area
+				area = west_bengal_area
+				area = gaur_area
+				area = north_bengal_area
+				area = assam_area
+                area = naga_hills_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+				    area = tripura_area
+				    area = east_bengal_area
+				    area = west_bengal_area
+				    area = gaur_area
+				    area = north_bengal_area
+				    area = assam_area
+                    area = naga_hills_area
+			    }
+				value = 20
+			}
+        }
+        effect = {
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect6_can_do_tt
+            }
+            country_event = { 
+                id = IYS_event.5
+            }
+            jharkhand_area = { 
+                add_permanent_claim = ROOT
+            }
+            orissa_area = { 
+                add_permanent_claim = ROOT
+            }
+            upper_mahanadi_area = { 
+                add_permanent_claim = ROOT
+            }
+            garjat_area = { 
+                add_permanent_claim = ROOT
+            }
+            nepal_area = {
+                add_permanent_claim = ROOT
+            }
+            mithila_area = { 
+                add_permanent_claim = ROOT
+            }
+            bihar_area = { 
+                add_permanent_claim = ROOT
+            }
+            purvanchal_area = { 
+                add_permanent_claim = ROOT
+            }
+            lower_doab_area = { 
+                add_permanent_claim = ROOT
+            }
+            oudh_area = { 
+                add_permanent_claim = ROOT
+            }
+            baghelkhand_area = {
+                add_permanent_claim = ROOT
+            }
+            bundelkhand_area = { 
+                add_permanent_claim = ROOT
+            }
+            custom_tooltip = " "
+            custom_tooltip = MUG_distribute_10_base_prod
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							add_base_production = 1
+						}
+					"
+				}
+			}
+        } 
+    }
+    IYS_missions_1_6 = { #统一孟加拉
+        position = 6
+        icon = mission_control_the_ganges_delta
+        required_missions = { 
+            IYS_missions_1_5
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = jharkhand_area
+				area = orissa_area
+				area = upper_mahanadi_area
+                area = garjat_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+				    area = jharkhand_area
+				    area = orissa_area
+				    area = upper_mahanadi_area
+                    area = garjat_area
+			    }
+				value = 20
+			}
+        }
+        effect = {
+            andhra_area = { 
+                add_permanent_claim = ROOT
+            }
+            golconda_area = { 
+                add_permanent_claim = ROOT
+            }
+            north_carnatic_area = {
+                add_permanent_claim = ROOT
+            }
+            south_carnatic_area = { 
+                add_permanent_claim = ROOT
+            }
+            berar_area = { 
+                add_permanent_claim = ROOT
+            }
+            telingana_area = { 
+                add_permanent_claim = ROOT
+            }
+            ahmednagar_area = { 
+                add_permanent_claim = ROOT
+            }
+            maidan_area = {
+                add_permanent_claim = ROOT
+            }
+            desh_area = {
+                add_permanent_claim = ROOT
+            }
+            raichur_doab_area = { 
+                add_permanent_claim = ROOT
+            }
+            custom_tooltip = " "
+			
+			country_event_with_option_insight = {
+				id = IYS_event.6
+				option_1 = "
+					custom_tooltip = MUG_required_provinces_lose_nationalism
+					
+					custom_tooltip = \" \"
+					
+					add_adm_power = 100
+				"
+				option_2 = "
+					add_country_modifier = {
+						name = IYS_integrating_garjati_vassals
+						duration = 10950
+					}
+					
+					add_dip_power = 50
+				"
+				option_3 = "
+					custom_tooltip = MUG_random_province_in_required_area_will_get_2_manpower
+					
+					custom_tooltip = \" \"
+					
+					add_country_modifier = {
+						name = IYS_garjat_recruitment
+						duration = 7300
+					}
+				"
+			}
+        } 
+    }
+    IYS_missions_1_7 = { #天使的陨落
+        position = 7
+        icon = mission_cromandel_coast
+        required_missions = { 
+            IYS_missions_1_6
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = andhra_area
+				area = golconda_area
+				area = north_carnatic_area
+                area = south_carnatic_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+				    area = andhra_area
+				    area = golconda_area
+				    area = north_carnatic_area
+                    area = south_carnatic_area
+			    }
+				value = 18
+			}
+        }
+        effect = {
+            tanjore_area = { 
+                add_permanent_claim = ROOT
+            }
+            kongu_area = { 
+                add_permanent_claim = ROOT
+            }
+            rayalaseema_area = { 
+                add_permanent_claim = ROOT
+            }
+            mysore_area = { 
+                add_permanent_claim = ROOT
+            }
+            kanara_area = { 
+                add_permanent_claim = ROOT
+            }
+            konkan_area = { 
+                add_permanent_claim = ROOT
+            }
+            custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = "IYS_riches_of_golconda_modifier"
+				duration = 10950
+			}
+            custom_tooltip = " "
+            add_country_modifier = {
+				name = "IYS_angel"
+				duration = -1
+			}
+        } 
+    }
+    IYS_missions_1_8 = { #击败毗奢耶那伽罗
+        position = 8
+        icon = mission_conquer_central_deccan
+        required_missions = { 
+            IYS_missions_1_7
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = tanjore_area
+				area = kongu_area
+				area = rayalaseema_area
+                area = mysore_area
+                area = kanara_area
+                area = konkan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+				    area = tanjore_area
+				    area = kongu_area
+				    area = rayalaseema_area
+                    area = mysore_area
+                    area = kanara_area
+                    area = konkan_area
+			    }
+				value = 24
+			}
+        }
+        effect = {
+            madura_area = { 
+                add_permanent_claim = ROOT
+            }
+            malabar_area = {
+                add_permanent_claim = ROOT
+            }
+            lanka_area = { 
+                add_permanent_claim = ROOT
+            }
+            south_lanka_area = { 
+                add_permanent_claim = ROOT
+            }
+            custom_tooltip = " "
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                add_country_modifier = { 
+                    name = IYS_mission_1_8_modifier_mod
+                    duration = -1
+                }
+            } 
+            else = {
+                add_country_modifier = { 
+                    name = IYS_mission_1_8_modifier
+                    duration = -1
+                }
+            } 
+        }
+    }
+}
+IYS_missions_2 = {
+    slot = 2
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_2_1 = { #密谋勃固
+        position = 1
+        icon = mission_conquer_lower_burma_tau
+        required_missions = {  }
+        trigger = {
+            OR = { 
+                has_spy_network_in = {
+                    who = PEG
+                    value = 50
+                }
+                advisor = spymaster
+            }
+            num_of_generals = 1
+        }
+        effect = {
+            lower_burma_area = { 
+                add_permanent_claim = ROOT
+            }
+            define_advisor = {
+				type = army_reformer
+				skill = 2
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+            add_country_modifier = {
+                name = IYS_modifier_1
+                duration = 18250
+            }
+        }
+    }
+    IYS_missions_2_2 = { #终结勃固
+        position = 2
+        icon = mission_conquer_lower_burma_tau
+        required_missions = { 
+            IYS_missions_2_1
+        }
+        provinces_to_highlight = {
+			area = lower_burma_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+        trigger = {
+            lower_burma_area = {
+				type = all
+				owned_by = ROOT
+			}
+        }
+        effect = {
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect7_can_do_tt
+            }
+            create_general = { 
+				tradition = 80
+				add_fire = 1
+				add_siege = 1
+			}
+            karenni_area = { 
+                add_permanent_claim = ROOT
+            }
+            central_burma_area = { 
+                add_permanent_claim = ROOT
+            }
+            upper_burma_area = { 
+                add_permanent_claim = ROOT
+            }
+            shan_hill_area = { 
+                add_permanent_claim = ROOT
+            }
+            if = {
+				limit = {
+					586 = {
+						province_has_center_of_trade_of_level = 1
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+				}
+				586 = {
+					add_center_of_trade_level = 1
+				}
+			}
+        }
+    }
+    IYS_missions_2_7 = { #颠覆巴赫曼尼王朝
+        position = 7
+        icon = mission_across_the_vindhyas
+        required_missions = { 
+            IYS_missions_1_6
+        }
+        provinces_to_highlight = {
+            OR = {
+			    area = berar_area
+                area = telingana_area
+                area = ahmednagar_area
+                area = maidan_area
+                area = desh_area
+                area = raichur_doab_area
+            }
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+        trigger = {
+            berar_area = {
+				type = all
+				owned_by = ROOT
+			}
+            telingana_area = {
+				type = all
+				owned_by = ROOT
+			}
+            ahmednagar_area = {
+				type = all
+				owned_by = ROOT
+			}
+            maidan_area = {
+				type = all
+				owned_by = ROOT
+			}
+            desh_area = {
+				type = all
+				owned_by = ROOT
+			}
+            raichur_doab_area = {
+				type = all
+				owned_by = ROOT
+			}
+        }
+        effect = {
+            gondwana_area = { 
+                add_permanent_claim = ROOT
+            }
+            country_event = {
+                id = IYS_event.9
+            }
+            add_country_modifier = {
+                name = IYS_missions_2_7_modifier_common
+                duration = -1
+            }
+        }
+    }
+    IYS_missions_3_9 = { #印度大统一
+        position = 9
+        icon = mission_cromandel_coast
+        required_missions = { 
+            IYS_missions_3_8
+            IYS_missions_1_8
+            IYS_missions_2_7
+        }
+        provinces_to_highlight = {
+            superregion = india_superregion
+            OR = {
+				NOT = { religion = ROOT }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+        trigger = {
+            if = { 
+                limit = {
+                    religion = Inuyasha_religion
+                }
+                india_superregion = {
+				    type = all
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+            else = {
+                india_superregion = {
+				    type = all
+				    religion = ROOT
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+        }
+        effect = { 
+            country_event = {
+                id = IYS_event.10
+            }
+            add_power_projection = {
+				amount = 10
+				type = IYS_india_king
+			}
+        }
+    }
+}
+IYS_missions_3 = {
+    slot = 3
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_3_5 = { #雄踞中南
+        position = 5
+        icon = mission_the_tiger_triumphant
+        required_missions = { 
+            IYS_missions_1_4
+            IYS_missions_5_4
+            IYS_missions_4_4
+            IYS_missions_6_4
+        }
+        provinces_to_highlight = { 
+            OR = {
+			    region = burma_region
+                region = indo_china_region
+            }
+            OR = {
+				NOT = { religion = ROOT }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+        trigger = {
+           if = { 
+                limit = {
+                    religion = Inuyasha_religion
+                }
+                burma_region = { 
+                    type = all
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+                indo_china_region = { 
+                    type = all
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+            else = {
+                burma_region = { 
+                    type = all
+				    religion = ROOT
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+                indo_china_region = { 
+                    type = all
+				    religion = ROOT
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+        }
+        effect = {
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect12_can_do_tt
+                custom_tooltip = IYS_province_culture_tt
+            }
+            set_country_flag = IYS_culture_change_flag
+            add_country_modifier = { 
+                name = IYS_wolf
+                duration = -1
+            }
+            if = { 
+                limit = {
+                    NOT = { 
+                        mil = 6
+                    }
+                }
+                change_mil = 1
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        government_rank = 3
+                    }
+                }
+                set_government_rank = 3
+            }
+            if = { 
+				limit = { has_dlc = "Mandate of Heaven" }
+				if = {
+					limit = { has_had_golden_age = yes } 
+					reset_golden_age = yes 
+				}
+				else_if = {
+					limit = { in_golden_age = yes } 
+					extend_golden_age = 360
+				}
+			}
+        } 
+    } 
+    IYS_missions_3_6 = { #清除一迅社
+        position = 6
+        icon = mission_emperor_of_hindusthan
+        required_missions = { 
+            IYS_missions_1_5
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = nepal_area
+				area = mithila_area
+				area = bihar_area
+                area = purvanchal_area
+                area = lower_doab_area
+                area = oudh_area
+                area = baghelkhand_area
+                area = bundelkhand_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                OR = {
+				    area = nepal_area
+				    area = mithila_area
+				    area = bihar_area
+                    area = purvanchal_area
+                    area = lower_doab_area
+                    area = oudh_area
+                    area = baghelkhand_area
+                    area = bundelkhand_area
+			    }
+				value = 30
+			}
+        }
+        effect = {
+            if = { 
+                limit = { 
+                    has_consort_flag = IYS_KIKYO
+                }
+                country_event = { 
+                    id = IYS_event.7
+                }
+            }
+            gird_area = { 
+                add_permanent_claim = ROOT
+            }
+            katehar_area = { 
+                add_permanent_claim = ROOT
+            }
+            upper_doab_area = { 
+                add_permanent_claim = ROOT
+            }
+            sirhind_area = {
+                add_permanent_claim = ROOT
+            }
+            baisi_rajya_area = { 
+                add_permanent_claim = ROOT
+            }
+            himalayan_hills_area = {
+                add_permanent_claim = ROOT
+            }
+            lahore_area = {
+                add_permanent_claim = ROOT
+            }
+            sind_sagar_area = {
+                add_permanent_claim = ROOT
+            }
+            multan_area = {
+                add_permanent_claim = ROOT
+            }
+            kashmir_area = {
+                add_permanent_claim = ROOT
+            }
+
+            custom_tooltip = " "
+
+            add_country_modifier = { 
+                name = IYS_Kabushikigaisha
+                duration = -1
+            }
+        }
+    }
+    IYS_missions_3_7 = { #印度斯坦大清洗
+        position = 7
+        icon = mission_emperor_of_hindusthan
+        required_missions = { 
+            IYS_missions_3_6
+        }
+        provinces_to_highlight = {
+            region = hindusthan_region
+            OR = {
+				NOT = { religion = ROOT }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+        trigger = {
+            if = { 
+                limit = {
+                    religion = Inuyasha_religion
+                }
+                hindusthan_region = {
+				    type = all
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+            else = {
+                hindusthan_region = {
+				    type = all
+				    religion = ROOT
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+        }
+        effect = { 
+            country_event = {
+                id = IYS_event.8
+            }
+            west_india_region = { 
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    IYS_missions_3_8 = { #横扫印度西部
+        position = 8
+        icon = mission_subdue_rajputana
+        required_missions = { 
+            IYS_missions_3_7
+        }
+        provinces_to_highlight = {
+            region = west_india_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                west_india_region = {
+				    type = all
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+            else = {
+                west_india_region = {
+				    type = all
+				    religion = ROOT
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
+            }
+        }
+        effect = { 
+            add_country_modifier = { 
+                name = IYS_rajputana
+                duration = -1
+            }
+            if = { 
+			    limit = { 
+				    religion = Inuyasha_religion
+			    }
+			    custom_tooltip = IYS_sect4_can_do_tt
+		    }
+            custom_tooltip = " "
+            504 = {
+				set_center_level_3_center_of_trade = yes
+            }
+            custom_tooltip = " "
+			
+			add_years_of_trade_income = {
+				years = 2
+				custom_tooltip = BYZ_add_2_years_of_trade_income
+			}
+            simple_dynamic_effect = {
+				first_custom_tooltip = IYS_Gujarat_trade_share_tt
+				first_limit = "
+                    504 = { 
+                    trade_share = {
+					    country = ROOT 
+					    share = 50
+				        }
+                    }
+                "
+				first_effect = "
+                    add_country_modifier = { 
+                        name = IYS_Gujarat_trade
+                        duration = -1
+                    }
+				"
+            }
+        }
+    }
+}
+IYS_missions_4 = {
+    slot = 4
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_4_1 = { #挑衅敌人
+        position = 1
+        icon = mission_unite_home_region
+        required_missions = {  }
+        trigger = {
+            OR = {
+                AND = {
+                    NOT = { exists = AYU }
+                    NOT = { exists = LXA }
+                }
+                OR = { 
+                    LXA = { 
+                        has_opinion_modifier = {
+                            who = ROOT
+                            modifier = scornfully_insulted
+                        }
+                    }
+                    AYU = { 
+                        has_opinion_modifier = {
+                            who = ROOT
+                            modifier = scornfully_insulted
+                        }
+                    }
+                }
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    AND = {
+                        NOT = { exists = AYU }
+                        NOT = { exists = LXA }
+                    }
+                }
+                add_dip_power = 100
+                add_stability = 1
+            }
+            else = {
+                country_event = {
+                    id = IYS_event.21
+                }
+                custom_tooltip = ""
+                set_country_flag = IYS_WON_LXA_AND_AYU
+                complex_dynamic_effect_without_alternative = {
+    				first_custom_tooltip = IYS_insulted_LXA
+    				first_limit = "
+					LXA = { 
+                        has_opinion_modifier = {
+                            who = ROOT
+                            modifier = scornfully_insulted
+                        }
+                    }
+				"
+    				first_effect = "
+					north_laos_area = { 
+                        add_permanent_claim = ROOT
+                    }
+                    vientiane_area = { 
+                        add_permanent_claim = ROOT
+                    }
+                    champasak_area = { 
+                        add_permanent_claim = ROOT
+                    }
+                    khorat_area = { 
+                        add_permanent_claim = ROOT
+                    }
+				"
+    				second_custom_tooltip = IYS_insulted_AYU
+    				second_limit = "
+					AYU = { 
+                        has_opinion_modifier = {
+                            who = ROOT
+                            modifier = scornfully_insulted
+                        }
+                    }
+				"
+    				second_effect = "
+					sukhothai_area = { 
+                        add_permanent_claim = ROOT
+                    }
+                    central_thai_area = { 
+                        add_permanent_claim = ROOT
+                    }
+                    north_tenasserim_area = { 
+                        add_permanent_claim = ROOT
+                    }
+				"
+                }
+                hidden_effect = { 
+                    set_variable = {
+                        which = IYS_num_of_wars_won_var_with_LXA
+                        value = 0
+                    }
+                    set_variable = {
+                        which = IYS_num_of_wars_won_var_with_AYU
+                        value = 0
+                    }
+                }
+            }
+        }
+    }
+    IYS_missions_4_2 = { #挑战阿瑜陀耶
+        icon = mission_unite_home_region
+        required_missions = { 
+            IYS_missions_4_1
+        }
+        provinces_to_highlight = {
+		}
+        trigger = {
+            OR = { 
+                war_score_against = {
+                    who = AYU
+                    value = 75
+                }
+                custom_trigger_tooltip = {
+                    tooltip = IYS_won_with_AYU_5_tt #在与阿瑜陀耶的战争中，战胜对面5次，注意，只有在完成IYS_missions_4_1后，才计数
+                    check_variable = {
+                        which = IYS_num_of_wars_won_var_with_AYU
+                        value = 10
+                    }
+                }
+            }
+        }
+        effect = {
+            complex_dynamic_effect_without_alternative = {
+				first_custom_tooltip = IYS_warscore_AYU_tt
+				first_limit = "
+					war_score_against = {
+                        who = AYU
+                        value = 75
+                    }
+				"
+				first_effect = "
+					add_country_modifier_for_age = {
+                        name = IYS_won_AYU_with_warscore
+                        age = age_of_discovery
+                    }
+				"
+				second_custom_tooltip = IYS_war_5_AYU_tt
+				second_limit = "
+					custom_trigger_tooltip = {
+                        tooltip = IYS_won_with_LXA_5_tt #在与阿瑜陀耶的战争中，战胜对面10次，注意，只有在完成IYS_missions_4_1后，才计数
+                        check_variable = {
+                            which = IYS_num_of_wars_won_var_with_AYU
+                            value = 10
+                        }
+                    }
+				"
+				second_effect = "
+					add_country_modifier_for_age = {
+                        name = IYS_won_AYU_with_war
+                        age = age_of_discovery
+                    }
+				"
+            }   
+        }
+    }
+    IYS_missions_4_3 = { #阿瑜陀耶的覆灭
+        position = 3
+        icon = mission_unite_home_region
+        required_missions = { 
+            IYS_missions_4_2
+        }
+        provinces_to_highlight = {
+            area = central_thai_area
+            NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        trigger = {
+            NOT = { 
+                exists = AYU
+            }
+            central_thai_area = { 
+                type = ALL 
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            add_accepted_culture_or_dip_power = {
+				culture = central_thai
+				free = yes
+			}
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect9_can_do_tt
+            }
+            add_country_modifier = { 
+                name = IYS_WON_AYU
+                duration = -1
+            }
+            tenasserim_area = { 
+                add_permanent_claim = ROOT
+            }
+            north_malaya_area = { 
+                add_permanent_claim = ROOT
+            }
+            malaya_area = { 
+                add_permanent_claim = ROOT
+            }
+            change_government_reform_progress = 100
+            custom_tooltip = " "
+            simple_dynamic_effect = {
+				first_custom_tooltip = IYS_Tetsusaiga_30_level_TT
+				first_limit = "
+                    check_variable = {
+                        which = Tetsusaiga
+                        value = 30
+                    }
+                "
+				first_effect = "
+                    add_country_modifier = { 
+                        name = red_tetsuaiga
+                        duration = -1
+                    }
+				"
+            } 
+        } 
+    }
+    IYS_missions_4_4 = { #向马六甲进发
+        position = 4
+        icon = mission_invade_island
+        required_missions = { 
+            IYS_missions_4_3
+        }
+        provinces_to_highlight = {
+            OR = {
+                area = tenasserim_area
+                area = north_malaya_area
+                area = malaya_area
+            }
+            NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        trigger = {
+            tenasserim_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            north_malaya_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            malaya_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect11_can_do_tt
+            }
+            malacca_area = { 
+                add_permanent_claim = ROOT
+            }
+            johor_area = { 
+                add_permanent_claim = ROOT
+            }
+            add_navy_tradition = 20
+            add_yearly_sailors = 10
+        } 
+    }
+    IYS_missions_4_7 = {    #铸币改革
+		icon = mission_establish_mint_towns
+		required_missions = { 
+            IYS_missions_5_6
+		}
+		position = 7
+		trigger = {	
+            OR = {
+                any_owned_province = { trade_goods = gold }
+		        any_ally = { any_owned_province = { trade_goods = gold } }
+		    }
+            OR = {
+                any_owned_province = { trade_goods = copper }
+		        any_ally = { any_owned_province = { trade_goods = copper } }
+		    }		
+		}
+		effect = {
+		    custom_tooltip = unlock_coin_minting_TT
+		    set_country_flag = domestic_coinage_minting
+		}
+	}
+    IYS_missions_4_8 = {    #铸币改革
+		icon = mission_establish_mint_towns
+		required_missions = { 
+            IYS_missions_4_7
+		}
+		position = 8
+		trigger = {	
+            num_of_owned_provinces_with = { 
+                value = 10
+                OR = { 
+                    trade_goods = gold
+                    trade_goods = copper
+                }
+                has_production_building_trigger = yes
+            }		
+		}
+		effect = {
+		    custom_tooltip = minting_33_cheaper_TT
+            set_country_flag = minting_33_cheaper_flag
+		}
+	}
+}
+IYS_missions_5 = {
+    slot = 5
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_5_2 = { #冲击澜沧
+        position = 2
+        icon = mission_unite_home_region
+        required_missions = { 
+            IYS_missions_4_1
+        }
+        provinces_to_highlight = {
+		}
+        trigger = {
+            OR = { 
+                war_score_against = {
+                    who = LXA
+                    value = 75
+                }
+                custom_trigger_tooltip = {
+                    tooltip = IYS_won_with_LXA_5_tt #在与澜沧的战争中，战胜对面5次，注意，只有在完成IYS_missions_4_1后，才计数
+                    check_variable = {
+                        which = IYS_num_of_wars_won_var_with_LXA
+                        value = 10
+                    }
+                }
+            }
+        }
+        effect = {
+            complex_dynamic_effect_without_alternative = {
+				first_custom_tooltip = IYS_warscore_LXA_tt
+				first_limit = "
+					war_score_against = {
+                        who = LXA
+                        value = 75
+                    }
+				"
+				first_effect = "
+					add_country_modifier_for_age = {
+                        name = IYS_won_LXA_with_warscore
+                        age = age_of_discovery
+                    }
+				"
+				second_custom_tooltip = IYS_war_5_LXA_tt
+				second_limit = "
+					custom_trigger_tooltip = {
+                        tooltip = IYS_won_with_LXA_5_tt #在与澜沧的战争中，战胜对面10次，注意，只有在完成IYS_missions_4_1后，才计数
+                        check_variable = {
+                            which = IYS_num_of_wars_won_var_with_LXA
+                            value = 10
+                        }
+                    }
+				"
+				second_effect = "
+					add_country_modifier_for_age = {
+                        name = IYS_won_LXA_with_war
+                        age = age_of_discovery
+                    }
+				"
+            }   
+        }
+    }
+    IYS_missions_5_3 = { #终结澜沧
+        position = 3
+        icon = mission_unite_home_region
+        required_missions = { 
+            IYS_missions_5_2
+        }
+        provinces_to_highlight = {
+            province_id = 614
+            province_id = 615
+            NOT = { owned_by = ROOT }
+		}
+        trigger = {
+            NOT = { 
+                exists = LXA
+            }
+            owns = 614
+            owns = 615
+        }
+        effect = {
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect3_can_do_tt
+            }
+            add_accepted_culture_or_dip_power = {
+				culture = lao
+				free = yes
+			}
+            add_country_modifier = {
+                name = IYS_won_LXA_complete
+                duration = -1
+            }
+            red_river_delta_area = { 
+                add_permanent_claim = ROOT
+            }
+            vietnam_area = { 
+                add_permanent_claim = ROOT
+            }
+            angkor_area = { 
+                add_permanent_claim = ROOT
+            }
+            cambodia_area = { 
+                add_permanent_claim = ROOT
+            }
+            add_mil_power = 100
+        } 
+    }
+    IYS_missions_5_4 = { #踏平高棉
+        position = 4
+        icon = mission_unite_home_region
+        required_missions = { 
+            IYS_missions_5_3
+        }
+        provinces_to_highlight = {
+            OR = { 
+                area = angkor_area
+                area = cambodia_area
+            }
+            NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        trigger = {
+            angkor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+            cambodia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+        }
+        effect = {
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                add_country_modifier = { 
+                    name = IYS_Angkor_mod
+                    duration = -1
+                }
+            }
+            else = {
+                add_country_modifier = { 
+                    name = IYS_Angkor
+                    duration = -1
+                }
+            }
+            mekong_area = { 
+                add_permanent_claim = ROOT
+            }
+            tay_nguyen_area = { 
+                add_permanent_claim = ROOT
+            }
+            champa_area = { 
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    IYS_missions_5_6 = { #委任顾问
+        position = 6
+        icon = mission_embassy_to_the_west
+        required_missions = { 
+            IYS_missions_3_5
+        }
+        provinces_to_highlight = {
+            
+		}
+        trigger = {
+            employed_advisor = { 
+                category = adm
+            }
+            employed_advisor = {
+                category = dip
+            }
+            employed_advisor = { 
+                category = mil
+            }
+        }
+        effect = {
+            country_event = { 
+                id = IYS_event.17
+            }
+        } 
+    }
+    IYS_missions_5_7 = { #奥里萨人民的请求
+        position = 7
+        icon = mission_embassy_to_the_west
+        required_missions = { 
+            IYS_missions_5_6
+        }
+        provinces_to_highlight = {
+            area = orissa_area 
+		    NOT = { owned_by = ROOT }
+		}
+        trigger = {
+            orissa_area = {
+                type = all
+                owned_by = ROOT 
+                is_core = ROOT
+            }
+        }
+        effect = {
+            country_event = { 
+                id = IYS_event.19
+            }
+        } 
+    }
+}
+IYS_missions_timed_konark = {
+	slot = 5
+	generic = no
+	ai = no
+	has_country_shield = yes
+	
+	potential = {
+	    TAG = IYS 
+		NOT = { has_country_flag = IYS_no_rebuilding }
+		NOT = { has_country_flag = IYS_rebuilding }
+	}		
+	IYS_timed_mission = {
+		icon = mission_unknown_mission
+		required_missions = { 
+            IYS_missions_5_7
+		}
+		position = 8
+		provinces_to_highlight = {
+
+		} 
+		trigger = {
+		    custom_trigger_tooltip = {
+                tooltip = timed_mission_TT
+		        always = no	
+		    }
+		}		
+		effect = {
+		    custom_tooltip = timed_mission_TT	  
+		}
+	}		
+}
+IYS_missions_timed_rebuild = {
+	slot = 5
+	generic = no
+	ai = no
+	has_country_shield = yes
+	
+	potential = {
+	    TAG = IYS 
+        has_country_flag = IYS_rebuilding_flag
+	}		
+	IYS_rebuild_konark = {
+		icon = mission_servitor_of_jagannath
+		required_missions = { 
+            IYS_missions_5_7
+		}
+		position = 8
+		provinces_to_highlight = {
+            province_id = 552
+		} 
+		trigger = {
+		    552 = {
+                has_great_project = {
+                    type = sun_temple_konarak
+                    tier = 2
+                }
+            }
+		}		
+		effect = {
+		    custom_tooltip = IYS_access_dharmic_wonders
+		}
+	}		
+}
+IYS_missions_6 = {
+    slot = 6
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_6_4 = { #进攻大越
+        position = 4
+        icon = mission_mnd_dai_imperial_citadel
+        required_missions = { 
+            IYS_missions_5_3
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = vietnam_area
+				area = red_river_delta_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        trigger = {
+            vietnam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			red_river_delta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = { 
+            2373 = { 
+                add_loot_from_rich_province_general_effect = {
+                    LOOTER = ROOT
+                }
+                add_base_tax = -2
+                add_base_production = -2
+                add_base_manpower = -2
+                add_province_modifier = {
+                    name = IYS_2373
+                    duration = 1825
+                } 
+            }
+            capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "IYS_HUE"
+					duration = -1
+				}
+			}
+            yun_gui_borderland_area = { 
+                add_permanent_claim = ROOT
+            }
+            yun_gui_area = { 
+                add_permanent_claim = ROOT
+            }
+            guangxi_area = { 
+                add_permanent_claim = ROOT
+            }
+            west_guangdong_area = { 
+                add_permanent_claim = ROOT
+            }
+            custom_tooltip = ""
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                custom_tooltip = IYS_sect8_can_do_tt
+            }
+        }
+    } 
+    IYS_missions_6_5 = { #向中国进发
+        position = 5
+        icon = mission_great_wall
+        required_missions = { 
+            IYS_missions_6_4
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = yun_gui_borderland_area
+				area = yun_gui_area
+                area = guangxi_area
+                area = west_guangdong_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        trigger = {
+            yun_gui_borderland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yun_gui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            guangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            west_guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = { 
+            add_country_modifier = { 
+                name = IYS_trade
+                duration = -1
+            }
+            guangdong_area = { 
+                add_permanent_claim = ROOT
+            }
+            hunan_area = { 
+                add_permanent_claim = ROOT
+            }
+        } 
+    }
+    IYS_missions_6_6 = { #接管广州
+        position = 6
+        icon = mission_great_wall
+        required_missions = { 
+            IYS_missions_6_5
+        }
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					province_id = 1371
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 75
+						}
+					}
+				}
+				AND = {
+					OR = {
+						area = guangdong_area 
+						area = hunan_area 
+					}
+                } 
+            }
+		}
+        trigger = {
+            1371 = { 
+                trade_share = {
+					country = ROOT 
+					share = 50
+				}
+            }
+            guangdong_area = { 
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            hunan_area = { 
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            add_years_of_income = 1
+			
+			custom_tooltip = " "
+			
+			add_mercantilism = 3
+            set_country_flag = IYS_add_permanent_claim_CB
+            custom_tooltip = IYS_use_cb_tt
+        } 
+    }
+    IYS_missions_6_7 = { #省级改革
+        position = 7
+        icon = mission_conquer_malwa_guj
+        required_missions = { 
+            IYS_missions_5_6
+        }
+        provinces_to_highlight = {
+		}
+        trigger = {
+            num_of_owned_provinces_with = { 
+                value = 100
+                is_state_core = ROOT
+                NOT = { nationalism = 5 }
+            }
+        }
+        effect = {
+            set_country_flag =  IYS_adm_reform_flag
+            add_government_reform = IYS_based_2
+        } 
+    }
+    IYS_missions_6_8 = { #司法改革
+        position = 8
+        icon = mission_court_education
+        required_missions = { 
+            IYS_missions_6_7
+        }
+        provinces_to_highlight = {
+		}
+        trigger = {
+            num_of_owned_provinces_with = { 
+                value = 15
+                has_courthouse_building_trigger = yes
+            }
+        }
+        effect = {
+            country_event = { 
+                id = IYS_event.18
+            }
+        } 
+    }
+}
+IYS_missions_7 = {
+    slot = 7
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_7_1 = { #培养牲畜
+        position = 1
+        icon = mission_marwari_horses
+        required_missions = { 
+        }
+        provinces_to_highlight = {
+            trade_goods = livestock
+			OR = {
+				owned_by = ROOT 
+				is_claim = ROOT 
+				is_core = ROOT
+				is_permanent_claim = ROOT
+			}
+		}
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 10
+                trade_goods = livestock
+                has_production_building_trigger = yes 
+            }
+        }
+        effect = {
+            country_event = { 
+                id = IYS_event.14
+            }
+        }
+    } 
+}
+IYS_missions_resources_branchers = {
+	slot = 7
+	generic = no
+	ai = no
+	has_country_shield = yes
+	
+	potential = {
+	    tag = IYS		
+		NOT = { 
+		    OR = { 
+		        has_country_flag = IYS_production_flag 
+		        has_country_flag = IYS_quality_flag 
+		    } 
+		}
+	}
+        IYS_branching_7_2 = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = {
+			IYS_missions_7_1
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}	
+        IYS_branching_7_3 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = {
+			IYS_branching_7_2
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}	
+        IYS_branching_7_4 = {
+		icon = mission_unknown_mission
+		position = 4
+		required_missions = {
+			IYS_branching_7_3
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}		
+}
+IYS_missions_resources_branchers_1 = {
+	slot = 7
+	generic = no
+	ai = no
+	has_country_shield = yes
+	
+	potential = {
+	    tag = IYS		
+		has_country_flag = IYS_production_flag  
+	}
+    IYS_mission_production_7_2 = { #
+        icon = mission_build_up_to_force_limit
+		required_missions = { IYS_missions_7_1 }
+		position = 2
+        provinces_to_highlight = {
+            trade_goods = livestock
+			owned_by = ROOT 
+            AND = {
+                NOT = { 
+                    base_production = 10
+                }
+                has_production_building_trigger = NO
+            }
+		}
+		trigger = {
+            num_of_owned_provinces_with = { 
+                value = 5
+                trade_goods = livestock
+                base_production = 10
+                has_production_building_trigger = yes
+            }
+		}
+		effect = {
+            tooltip = { 
+                custom_tooltip = IYS_IYS_mission_production_7_2_tt
+                add_province_modifier = { 
+                    name = IYS_livestock_level_1
+                    duration = -1
+                }
+            }
+            hidden_effect = { 
+                every_owned_province = {
+                    limit = { 
+                        trade_goods = livestock
+                        base_production = 10
+                        has_production_building_trigger = yes
+                    }
+                    add_province_modifier = { 
+                        name = IYS_livestock_level_1
+                        duration = -1
+                    }
+                }
+            }
+        }
+    }
+    IYS_mission_production_7_3 = { 
+        icon = mission_build_up_to_force_limit
+		required_missions = { IYS_mission_production_7_2 }
+		position = 3
+        provinces_to_highlight = {
+            trade_goods = livestock
+			owned_by = ROOT 	
+            AND = {
+                NOT = { 
+                    base_production = 12
+                }
+                has_manufactory_trigger = NO
+            }
+		}
+		trigger = {
+            num_of_owned_provinces_with = { 
+                value = 5
+                trade_goods = livestock
+                base_production = 12
+                has_manufactory_trigger = yes
+            }
+		}
+		effect = {
+            tooltip = { 
+                custom_tooltip = IYS_IYS_mission_production_7_2_tt
+                add_province_modifier = { 
+                    name = IYS_livestock_level_2
+                    duration = -1
+                }
+            }
+            hidden_effect = { 
+                every_owned_province = {
+                    limit = { 
+                        trade_goods = livestock
+                        base_production = 10
+                        has_production_building_trigger = yes
+                    }
+                    add_province_modifier = { 
+                        name = IYS_livestock_level_2
+                        duration = -1
+                    }
+                }
+            }
+        } 
+    }
+    IYS_mission_production_7_4 = { 
+        icon = mission_build_up_to_force_limit
+		required_missions = { IYS_mission_production_7_3 }
+		position = 4
+        provinces_to_highlight = {
+            trade_goods = livestock
+			owned_by = ROOT 	
+            NOT = { 
+                base_production = 15
+            }
+		}
+		trigger = {
+            production_leader = {
+                trade_goods = livestock
+            }
+            trading_bonus = {
+                trade_goods = livestock
+                value = yes
+            }
+            num_of_owned_provinces_with = { 
+                value = 5
+                trade_goods = livestock
+                base_production = 15
+            }
+		}
+		effect = {
+            add_years_of_owned_provinces_production_income = {
+                years = 8
+                trigger = {
+                    trade_goods = livestock
+                }
+                custom_tooltip = MONOPOLY_INCOME_LIVESTOCK_DESC
+            }
+            custom_tooltip = ""
+            country_event = { 
+                id = IYS_event.15
+            }
+        } 
+    } 
+}
+IYS_missions_resources_branchers_2 = {
+	slot = 7
+	generic = no
+	ai = no
+	has_country_shield = yes
+	
+	potential = {
+	    tag = IYS		
+		has_country_flag = IYS_quality_flag  
+	}
+    IYS_mission_quality_7_2 = { #
+        icon = mission_build_up_to_force_limit
+		required_missions = { IYS_missions_7_1 }
+		position = 2
+        provinces_to_highlight = {
+            trade_goods = livestock
+			owned_by = ROOT 	
+            AND = {
+                NOT = { 
+                    base_production = 10
+                }
+                has_production_building_trigger = NO
+            }
+		}
+		trigger = {
+            num_of_owned_provinces_with = { 
+                value = 5
+                trade_goods = livestock
+                base_production = 10
+                has_production_building_trigger = yes
+            }
+		}
+		effect = {
+            custom_tooltip = IYS_add_or_upgrade_production_building_tt
+            hidden_effect = {
+                every_owned_province = { 
+                    limit = { 
+                        trade_goods = livestock
+                        base_production = 10
+                        has_production_building_trigger = yes
+                    }
+                    add_or_upgrade_production_building = yes
+                }
+            }
+        }
+    }
+    IYS_mission_quality_7_3 = { #
+        icon = mission_build_up_to_force_limit
+		required_missions = { IYS_mission_quality_7_2 }
+		position = 3
+        provinces_to_highlight = {
+            trade_goods = livestock
+			owned_by = ROOT 	
+            AND = {
+                NOT = { 
+                    base_production = 12
+                }
+                has_manufactory_trigger = NO
+            }
+		}
+		trigger = {
+            num_of_owned_provinces_with = { 
+                value = 5
+                trade_goods = livestock
+                base_production = 12
+                has_manufactory_trigger = yes
+            }
+		}
+		effect = {
+            tooltip = { 
+                custom_tooltip = IYS_add_or_upgrade_production_building_tt
+                add_province_modifier = { 
+                    name = IYS_livestock_level_4
+                    duration = -1
+                }
+            }
+            hidden_effect = {
+                every_owned_province = { 
+                    limit = { 
+                        trade_goods = livestock
+                        base_production = 10
+                        has_manufactory_trigger = yes
+                    }
+                    add_province_modifier = { 
+                        name = IYS_livestock_level_4
+                        duration = -1
+                    }
+                }
+            }
+        }
+    }
+    IYS_mission_quality_7_4 = { #
+        icon = mission_build_up_to_force_limit
+		required_missions = { IYS_mission_quality_7_3 }
+		position = 4
+        provinces_to_highlight = {
+            trade_goods = livestock
+			owned_by = ROOT 	
+            NOT = { 
+                base_production = 15
+            }
+		}
+		trigger = {
+            production_leader = {
+                trade_goods = livestock
+            }
+            trading_bonus = {
+                trade_goods = livestock
+                value = yes
+            }
+            num_of_owned_provinces_with = { 
+                value = 5
+                trade_goods = livestock
+                base_production = 15
+            }
+		}
+		effect = {
+            add_years_of_owned_provinces_production_income = {
+                years = 8
+                trigger = {
+                    trade_goods = livestock
+                }
+                custom_tooltip = MONOPOLY_INCOME_LIVESTOCK_DESC
+            }
+            custom_tooltip = ""
+            country_event = { 
+                id = IYS_event.16
+            }
+        }
+    }
+}
+IYS_missions_8 = {
+    slot = 8
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_8_1 = { #发展[Root.Capital.GetCapitalName]
+        position = 1
+        icon = mission_plc_edict_education
+        required_missions = { 
+        }
+        provinces_to_highlight = {
+            is_capital_of = ROOT
+			NOT = {
+				OR = {
+					NOT = { num_of_buildings_in_province = 2 }
+					capital_scope = { development = 25 }
+				}
+			}
+		}
+        trigger = {
+            capital_scope = { 
+                development = 25
+				num_of_buildings_in_province = 2
+            }
+        }
+        effect = { 
+            define_advisor = {
+				type = philosopher
+				skill = 2
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+            capital_scope = {
+				if = {
+                    limit = {
+                        has_dlc = "Mandate of Heaven"
+                    }
+                    add_province_modifier = { 
+                        name = IYS_pearl_of_khorasan
+                        duration = -1
+                    }
+                }
+				
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+			}
+
+            custom_tooltip = " "
+			
+            add_country_modifier = { 
+                name = IYS_culture
+                duration = 3650
+            }
+            custom_tooltip = ""
+
+            unlock_estate_privilege = {
+				estate_privilege = estate_IYS_burghers_forest_expansion
+			}
+        } 
+    } 
+    IYS_missions_8_3 = { #九天阊阖
+        position = 3
+        icon = mission_plc_edict_education
+        required_missions = { 
+            IYS_missions_8_1
+        }
+        provinces_to_highlight = {
+            is_capital_of = ROOT
+			NOT = {
+				OR = {
+					capital_scope = { development = 35 }
+                    NOT = { num_of_buildings_in_province = 5 }
+				    NOT = { has_tax_building_trigger = yes }
+				    NOT = { has_production_building_trigger = yes }
+				    NOT = { has_manpower_building_trigger = yes }
+				}
+			}
+		}
+        trigger = {
+            capital_scope = { 
+                development = 35
+				num_of_buildings_in_province = 5
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+				has_manpower_building_trigger = yes
+            }
+        }
+        effect = { 
+            capital_scope = {
+				add_or_upgrade_tax_building = yes
+				custom_tooltip = " "
+				add_or_upgrade_production_building = yes
+				custom_tooltip = " "
+				add_or_upgrade_manpower_building = yes	
+			}
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = TIM_for_every_adm
+			tooltip = {
+				change_government_reform_progress = 10
+			}
+			custom_tooltip = " "
+			custom_tooltip = TIM_for_every_dip
+			tooltip = {
+				add_prestige_or_monarch_power = { amount = 5 }
+			}
+			custom_tooltip = " "
+			custom_tooltip = TIM_for_every_mil
+			tooltip = {
+				add_army_tradition_or_mil_power = { amount = 5 }
+			}
+            custom_tooltip = " "
+            tooltip = { 
+                custom_tooltip = IYS_capital_tt
+                add_province_modifier = { 
+                    name = IYS_Accompanying_capital
+                    duration = -1
+                }
+                capital_scope = { 
+                    add_province_modifier = { 
+                        name = IYS_main_capital
+                        duration = -1
+                    }
+                }
+            } 
+            custom_tooltip = ""
+            custom_tooltip = IYS_two_capital_tt
+			hidden_effect = {
+				for_every_level_of_advisor_do = {
+					type = mil
+					effect = "
+						add_army_tradition_or_mil_power = { amount = 5 }
+					"
+				}
+				for_every_level_of_advisor_do = {
+					type = dip
+					effect = "
+						add_prestige_or_monarch_power = { amount = 10 }
+					"
+				}
+				for_every_level_of_advisor_do = {
+					type = adm
+					effect = "
+						change_government_reform_progress = 10
+					"
+				}
+			}
+        } 
+    }
+}
+IYS_missions_9 = {
+    slot = 9
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_9_2 = { #重视[Root.Capital.GetCapitalName]教育
+        position = 2
+        icon = mission_swedish_peasantry
+        required_missions = { 
+            IYS_missions_8_1
+        }
+        provinces_to_highlight = {
+            is_capital_of = ROOT
+		}
+        trigger = {
+            OR = {
+				is_ahead_of_time_in_technology = { tech = adm }
+				is_ahead_of_time_in_technology = { tech = dip }
+				is_ahead_of_time_in_technology = { tech = mil }
+			}
+			capital_scope = {
+				has_tax_building_trigger = yes
+			}
+			OR = {
+				artist = 2
+				has_adm_advisor_3 = yes
+				has_estate_privilege = estate_burghers_patronage_of_the_arts
+			}
+        }
+        effect = { 
+            capital_scope = {
+				add_or_upgrade_tax_building = yes
+				add_or_upgrade_university_building = yes
+			}
+
+            custom_tooltip = " "
+
+            complex_dynamic_effect = {
+				first_custom_tooltip =  IYS_one_technology_tt
+				first_limit = "
+                    OR = {
+				        is_ahead_of_time_in_technology = { tech = adm }
+                        is_ahead_of_time_in_technology = { tech = dip }
+                        is_ahead_of_time_in_technology = { tech = mil }
+                    }
+                "
+				first_effect = "
+                    add_country_modifier = { 
+                        name = IYS_technology_develop
+                        duration = 3650
+                    }
+                    set_country_flag = IYS_techonology_flag
+                    custom_tooltip = IYS_techonology_flag_tt
+				"
+            }
+
+            add_stability_or_adm_power = yes
+        } 
+    } 
+    IYS_missions_9_3 = { #保存宗教统一
+        position = 3
+        icon = holy_state
+        required_missions = { 
+            IYS_missions_9_2
+        }
+        provinces_to_highlight = {
+		}
+        trigger = {
+            religious_unity = 0.9
+            if = {
+				limit = {
+					has_estate = estate_church
+				}
+				OR = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 60
+					}
+					num_of_estate_privileges = {	
+						estate = estate_church
+						value = 4
+					}
+				}
+			}
+        }
+        effect = {
+            unlock_estate_privilege = {
+				estate_privilege = IYS_estate_church_Jade_Resonance
+			}
+            if = { 
+                limit = { 
+                    religion = Inuyasha_religion
+                }
+                add_country_modifier = {
+                    name = IYS_religious_unity_mod
+                    duration = -1
+                }
+            }
+            else = {
+                add_country_modifier = {
+                    name = IYS_religious_unity
+                    duration = -1
+                }
+            }
+            add_stability_or_adm_power = yes 
+			
+			custom_tooltip = " "
+			
+			add_adm_power = 100
+            define_advisor = {
+				type = inquisitor
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+        }
+    }
+}
+IYS_missions_10 = {
+    slot = 10
+    generic = no
+    has_country_shield = yes
+    ai = no
+    potential = {
+        tag = IYS
+    }
+    IYS_missions_10_2 = { #安顿妖怪
+        position = 2
+        icon = IYS_mission_icon1
+        required_missions = { 
+        }
+        provinces_to_highlight = {
+            trade_goods = livestock
+			OR = {
+				owned_by = ROOT 
+				is_claim = ROOT 
+				is_core = ROOT
+				is_permanent_claim = ROOT
+			}
+		}
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 20
+                has_province_modifier = half_demon_goverment_life_modifier
+            }
+        }
+        effect = { 
+            add_country_modifier = { 
+                name = IYS_10_1
+                duration = -1 
+            }
+            custom_tooltip = IYS_tradergood_change_flag_tt
+            set_country_flag = IYS_tradergood_change_flag
+            add_dip_power = 200
+        } 
+    }
+    IYS_missions_10_3 = { #发挥这些妖怪
+        position = 3
+        icon = IYS_mission_icon1
+        required_missions = { 
+            IYS_missions_10_2
+        }
+        provinces_to_highlight = {
+            trade_goods = livestock
+			OR = {
+				owned_by = ROOT 
+				is_claim = ROOT 
+				is_core = ROOT
+				is_permanent_claim = ROOT
+			}
+		}
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 30
+                has_province_modifier = half_demon_goverment_life_modifier
+            }
+            custom_trigger_tooltip = {
+                tooltip = IYS_we_has_train_demon_tt
+                has_country_flag = IYS_has_train_demon_flag
+            }
+        }
+        effect = { 
+            add_country_modifier = { 
+                name = IYS_train
+                duration = -1 
+            }
+            add_dip_power = 200
+        } 
+    }  
+    IYS_missions_10_4 = { #金刚爆流破
+        position = 4
+        icon = Vajra_Blast_Stream
+        required_missions = { 
+            IYS_missions_10_3
+        }
+        provinces_to_highlight = {
+            trade_goods = livestock
+			OR = {
+				owned_by = ROOT 
+				is_claim = ROOT 
+				is_core = ROOT
+				is_permanent_claim = ROOT
+			}
+		}
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 40
+                has_province_modifier = half_demon_goverment_life_modifier
+            }
+            custom_trigger_tooltip = {
+                tooltip = IYS_dragon_tetsuaiga_up_tt
+                OR = {
+                    has_country_modifier = IYS_dragon_tetsuaiga
+                    has_country_modifier = IYS_Adamant_Barrage
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = IYS_50_tetsuaiga_up_tt
+                check_variable = {
+				    which = Tetsusaiga
+				    value = 50
+			    }
+            }
+        }
+        effect = { 
+            add_country_modifier = { 
+                name = IYS_Vajra_Blast_Stream
+                duration = -1 
+            }
+            custom_tooltip = IYS_overrun_1_tt
+            set_country_flag = IYS_overrun_1_flag
+        } 
+    }
+    IYS_missions_10_5 = { #冥道铁碎牙
+        position = 5
+        icon = black_tetsuaiga
+        required_missions = { 
+            IYS_missions_10_4
+        }
+        provinces_to_highlight = {
+		}
+        trigger = {
+            AND = {
+                OR = { 
+                    army_professionalism = 0.90
+                    army_tradition = 90
+                }
+                army_size = 200
+            }
+            custom_trigger_tooltip = {
+                tooltip = IYS_we_choose_queen_tt
+                has_consort_flag = IYS_consort_flag
+            }
+            custom_trigger_tooltip = {
+                tooltip = IYS_100_tetsuaiga_up_tt
+                check_variable = {
+                    which = Tetsusaiga
+                    value = 100
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = IYS_dragon_tetsuaiga_tt
+                has_country_modifier = IYS_dragon_tetsuaiga
+            }
+        }
+        effect = { 
+            set_country_flag = IYS_ideas_up
+            swap_free_idea_group = yes
+            add_country_modifier = { 
+                name = IYS_black_tetsuaiga
+                duration = -1 
+            }
+        } 
+    }
+}

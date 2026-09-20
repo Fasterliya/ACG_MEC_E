@@ -6,7 +6,7 @@ ACG_MEC_skr_divine_emperor = {
 	land_forcelimit = 20
 	global_tax_income = 360
 	global_tax_modifier = 0.50
-	fire_damage_received = -0.30
-	shock_damage_received = -0.30
+	fire_damage_received = -0.10
+	shock_damage_received = -0.10
 	morale_damage_received = -0.15
 }
