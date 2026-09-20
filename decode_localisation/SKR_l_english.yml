@@ -243,7 +243,7 @@ l_english:
  ### CARD USE EVENT ###
 
  ACG_MEC_E_skr_card_events.100.t: "使用库洛牌"
- ACG_MEC_E_skr_card_events.100.d: "选择一张已收集的卡牌来激活它的力量。激活后需要十年冷却时间。"
+ ACG_MEC_E_skr_card_events.100.d: "选择一张已收集的卡牌，永久解放它的力量。每张卡牌只能激活一次；已激活的卡牌不再显示在此列表中。"
  ACG_MEC_E_skr_card_events.100.windy: "使用风之卡 (The Windy)"
  ACG_MEC_E_skr_card_events.100.fly: "使用翔之卡 (The Fly)"
  ACG_MEC_E_skr_card_events.100.watery: "使用水之卡 (The Watery)"
@@ -264,7 +264,7 @@ l_english:
  ACG_MEC_E_skr_card_events.100.flight: "使用飞翔牌 (Flight)"
  ACG_MEC_E_skr_card_events.100.blaze: "使用火焰牌 (Blaze)"
  ACG_MEC_E_skr_card_events.100.repair: "使用修缮牌 (Repair)"
- ACG_MEC_E_skr_card_events.100.cancel: "取消"
+ ACG_MEC_E_skr_card_events.100.cancel: "返回"
 
  ### CARD ALBUM EVENT ###
 
@@ -282,7 +282,7 @@ l_english:
  ### DECISIONS ###
 
  skr_use_card_decision: "使用库洛牌"
- skr_use_card_decision_desc: "激活一张已收集的库洛牌的力量。每张卡牌使用后需要十年的冷却时间。"
+ skr_use_card_decision_desc: "永久解放一张已收集的卡牌的力量。每张卡牌只能激活一次，激活后不再出现在可选列表中。"
  skr_card_album_decision: "查看卡牌图鉴"
  skr_card_album_decision_desc: "查看当前已收集的全部库洛牌和透明牌。"
  skr_sakura_transmute_decision: "转化为樱之卡"
@@ -318,14 +318,18 @@ l_english:
  skr_watery_active: "水之卡激活"
  skr_firey_active: "火之卡激活"
  skr_earthy_active: "土之卡激活"
+ skr_thunder_active: "雷之卡激活"
  skr_sword_active: "剑之卡激活"
  skr_shield_active: "盾之卡激活"
  skr_light_active: "光之卡激活"
  skr_dark_active: "暗之卡激活"
+ skr_create_active: "创之卡激活"
+ skr_erase_active: "消之卡激活"
  skr_gale_active: "疾风牌激活"
  skr_siege_active: "包围牌激活"
  skr_aqua_active: "水源牌激活"
  skr_action_active: "行动牌激活"
+ skr_record_active: "记录牌激活"
  skr_flight_active: "飞翔牌激活"
  skr_blaze_active: "火焰牌激活"
  skr_repair_active: "修缮牌激活"
@@ -384,6 +388,19 @@ l_english:
  skr_conquest_frenzy: "收复失地的狂热"
  skr_harvest_season: "丰收之季"
 
+ # Card collection mission PERMANENT rewards (slot 1 / 封印之书)
+ skr_sealed_book_opened: "封印之书开启"
+ skr_trial_wind: "追风试炼"
+ skr_trial_element: "元素试炼"
+ skr_trial_sword_shield: "剑与盾的试炼"
+ skr_trial_light_dark: "光与暗的试炼"
+ skr_trial_create_erase: "创与消的试炼"
+ skr_judgment_passed: "通过最后的审判"
+ skr_clear_card_dawn: "透明牌觉醒"
+ skr_clear_trial_gale: "疾风试炼"
+ skr_clear_trial_action: "行动试炼"
+ skr_clear_trial_final: "最后的碎片"
+
  ### GOVERNMENT REFORMS ###
 
  SKR_clow_card_reform: "库洛魔法使"
@@ -391,7 +408,7 @@ l_english:
  SKR_sakura_card_reform: "樱之卡大师"
  SKR_sakura_card_reform_desc: "通过了最后的审判。小樱将库洛牌转化为樱之卡，以自己的魔力驱动它们。"
  SKR_clear_card_reform: "透明卡觉醒"
- SKR_clear_card_reform_desc: "1550年，小樱的魔力达到顶峰，全新的力量创造了透明牌。透明牌赋予樱卓越的行政效率、军事纪律、造核速度，同时大幅减轻侵略扩张带来的外交压力。"
+ SKR_clear_card_reform_desc: "1500年，小樱的魔力达到顶峰，全新的力量创造了透明牌。透明牌赋予樱卓越的行政效率、军事纪律、造核速度，同时大幅减轻侵略扩张带来的外交压力。"
 
  ### IDEAS ###
 
@@ -515,13 +532,13 @@ l_english:
  SKR_mission_9_1_title: "第一道门"
  SKR_mission_9_1_desc: "巴伐利亚与法兰克尼亚是德意志的第一道门。军统达到四十，小樱将亲手推开它。"
  SKR_mission_9_2_title: "南北并进"
- SKR_mission_9_2_desc: "南北德意志各取十五省。如同牌的两面，必须齐头并进。"
+ SKR_mission_9_2_desc: "南北德意志各取十省。如同牌的两面，必须齐头并进。"
  SKR_mission_9_3_title: "向西深入"
- SKR_mission_9_3_desc: "黑森与威斯特法伦在等待。二十五省在手，德意志的中枢已经动摇。"
+ SKR_mission_9_3_desc: "黑森与威斯特法伦在等待。十二省在手，德意志的中枢已经动摇。"
  SKR_mission_9_4_title: "莱茵之盾"
- SKR_mission_9_4_desc: "莱茵兰、普法尔茨与施瓦本。三十五省——德意志的西部边界已是小樱的防线。"
+ SKR_mission_9_4_desc: "莱茵兰、普法尔茨与施瓦本。十五省——德意志的西部边界已是小樱的防线。"
  SKR_mission_9_5_title: "北方之门"
- SKR_mission_9_5_desc: "波美拉尼亚、梅克伦堡与布伦瑞克。四十五省——北海的微风也传来了樱的气息。"
+ SKR_mission_9_5_desc: "波美拉尼亚、梅克伦堡与布伦瑞克。二十省——北海的微风也传来了樱的气息。"
  SKR_mission_9_6_title: "德意志军魂"
  SKR_mission_9_6_desc: "八百发展度与十二万大军。牌的力量与军队的意志在此刻合而为一。"
  SKR_mission_9_7_title: "天命所归"
@@ -531,7 +548,7 @@ l_english:
  SKR_mission_9_9_title: "不破之壁"
  SKR_mission_9_9_desc: "五座星堡拱卫边境。正如盾牌守护着樱，这些堡垒守护着德意志。"
  SKR_mission_9_10_title: "丰饶大地"
- SKR_mission_9_10_desc: "德意志的每一寸土地都达到十五发展。这是最好的时代。"
+ SKR_mission_9_10_desc: "德意志的每一寸土地都达到十发展。这是最好的时代。"
  SKR_mission_9_11_title: "钢铁脉动"
  SKR_mission_9_11_desc: "十座兵工厂同时运转。德意志的工业力量令人敬畏。"
  SKR_mission_9_12_title: "德意志之巅"
@@ -556,11 +573,11 @@ l_english:
  SKR_mission_10_8_title: "统一意大利"
  SKR_mission_10_8_desc: "整个意大利归于统一。从阿尔卑斯到西西里，樱的旗帜在南欧飘扬。"
  SKR_mission_10_9_title: "地中海舰队"
- SKR_mission_10_9_desc: "五十艘巨舰与轻舰——小樱的舰队足以让任何对手胆寒。"
+ SKR_mission_10_9_desc: "六十艘巨舰与轻舰——小樱的舰队足以让任何对手胆寒。"
  SKR_mission_10_10_title: "双星闪耀"
  SKR_mission_10_10_desc: "同时掌控热那亚与威尼斯。地中海的两颗明珠尽在手中。"
  SKR_mission_10_11_title: "黄金意大利"
- SKR_mission_10_11_desc: "意大利的每一个省份都达到十五发展。从米兰到巴勒莫，繁荣无处不在。"
+ SKR_mission_10_11_desc: "意大利的每一个省份都达到十发展。从米兰到巴勒莫，繁荣无处不在。"
  SKR_mission_10_12_title: "我们的海"
  SKR_mission_10_12_desc: "称霸地中海——让这片蔚蓝的海成为樱的内湖。这是罗马也未曾实现的梦。"
 

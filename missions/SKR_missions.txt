@@ -18,10 +18,11 @@ SKR_missions_6 = {
 	has_country_shield = yes
 
 	SKR_mission_6_1 = {
-		icon = mission_generic
+		icon = mission_gain_mana
 		position = 1
 		trigger = { always = yes }
 		effect = {
+			add_country_modifier = { name = skr_sealed_book_opened duration = -1 }
 			country_event = { id = ACG_MEC_E_skr_card_events.1 }
 			add_prestige = 10
 			266 = {
@@ -32,7 +33,7 @@ SKR_missions_6 = {
 		}
 	}
 	SKR_mission_6_2 = {
-		icon = mission_collect_tribute
+		icon = mission_se_birdmen
 		position = 2
 		required_missions = { SKR_mission_6_1 }
 		trigger = {
@@ -41,6 +42,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_watery_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_trial_wind duration = -1 }
 			add_splendor = 100
 			add_prestige = 15
 			add_dip_power = 100
@@ -48,7 +50,7 @@ SKR_missions_6 = {
 		}
 	}
 	SKR_mission_6_3 = {
-		icon = mission_russian_cardinals
+		icon = mission_buddhist_monk_praying
 		position = 3
 		required_missions = { SKR_mission_6_2 }
 		trigger = {
@@ -57,6 +59,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_thunder_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_trial_element duration = -1 }
 			add_splendor = 150
 			add_prestige = 20
 			add_dip_power = 150
@@ -64,7 +67,7 @@ SKR_missions_6 = {
 		}
 	}
 	SKR_mission_6_4 = {
-		icon = mission_defend_the_frontlines
+		icon = mission_japanese_samurai
 		position = 4
 		required_missions = { SKR_mission_6_3 }
 		trigger = {
@@ -72,6 +75,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_shield_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_trial_sword_shield duration = -1 }
 			add_splendor = 200
 			add_prestige = 25
 			add_mil_power = 150
@@ -79,7 +83,7 @@ SKR_missions_6 = {
 		}
 	}
 	SKR_mission_6_5 = {
-		icon = mission_burning_of_rome
+		icon = mission_impaled_soldies
 		position = 5
 		required_missions = { SKR_mission_6_4 }
 		trigger = {
@@ -87,6 +91,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_dark_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_trial_light_dark duration = -1 }
 			add_splendor = 250
 			add_prestige = 30
 			add_dip_power = 200
@@ -102,6 +107,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_erase_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_trial_create_erase duration = -1 }
 			add_splendor = 300
 			add_prestige = 35
 			change_government_reform_progress = 100
@@ -109,7 +115,7 @@ SKR_missions_6 = {
 		}
 	}
 	SKR_mission_6_7 = {
-		icon = mission_holy_roman_empire
+		icon = mission_empire
 		position = 7
 		required_missions = { SKR_mission_6_6 }
 		trigger = {
@@ -127,6 +133,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_erase_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_judgment_passed duration = -1 }
 			country_event = { id = ACG_MEC_E_skr_card_events.51 }
 			add_prestige = 50
 			add_splendor = 400
@@ -134,7 +141,7 @@ SKR_missions_6 = {
 		}
 	}
 	SKR_mission_6_8 = {
-		icon = mission_albion
+		icon = mission_gain_mana
 		position = 8
 		required_missions = { SKR_mission_6_7 }
 		trigger = {
@@ -142,6 +149,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_cards_transmuted
 		}
 		effect = {
+			add_country_modifier = { name = skr_clear_card_dawn duration = -1 }
 			country_event = { id = ACG_MEC_E_skr_card_events.60 }
 			add_prestige = 25
 			add_splendor = 300
@@ -157,6 +165,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_aqua_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_clear_trial_gale duration = -1 }
 			add_splendor = 300
 			add_prestige = 30
 			change_government_reform_progress = 150
@@ -171,13 +180,14 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_record_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_clear_trial_action duration = -1 }
 			add_splendor = 350
 			add_prestige = 35
 			add_adm_power = 200
 		}
 	}
 	SKR_mission_6_11 = {
-		icon = mission_eastern_europe
+		icon = mission_eastern_european_city
 		position = 11
 		required_missions = { SKR_mission_6_10 }
 		trigger = {
@@ -186,6 +196,7 @@ SKR_missions_6 = {
 			has_country_flag = skr_card_repair_captured
 		}
 		effect = {
+			add_country_modifier = { name = skr_clear_trial_final duration = -1 }
 			add_splendor = 400
 			add_prestige = 40
 			change_government_reform_progress = 200
@@ -238,7 +249,7 @@ SKR_missions_7 = {
 		}
 	}
 	SKR_mission_7_2 = {
-		icon = mission_diplomat
+		icon = mission_alliances
 		position = 2
 		required_missions = { SKR_mission_7_1 }
 		trigger = {
@@ -261,7 +272,7 @@ SKR_missions_7 = {
 		}
 	}
 	SKR_mission_7_3 = {
-		icon = mission_king_of_bohemia
+		icon = mission_monarch_in_throne_room
 		position = 3
 		required_missions = { SKR_mission_7_2 }
 		provinces_to_highlight = {
@@ -292,7 +303,7 @@ SKR_missions_7 = {
 		}
 	}
 	SKR_mission_7_4 = {
-		icon = mission_have_two_accepted_cultures
+		icon = mission_have_two_subjects
 		position = 4
 		required_missions = { SKR_mission_7_3 }
 		trigger = {
@@ -316,7 +327,7 @@ SKR_missions_7 = {
 		}
 	}
 	SKR_mission_7_5 = {
-		icon = mission_build_university
+		icon = mission_early_modern_university
 		position = 5
 		required_missions = { SKR_mission_7_4 }
 		trigger = {
@@ -348,7 +359,7 @@ SKR_missions_7 = {
 		}
 	}
 	SKR_mission_7_7 = {
-		icon = mission_europa_university
+		icon = mission_luther_theses
 		position = 7
 		required_missions = { SKR_mission_7_6 }
 		trigger = {
@@ -366,7 +377,7 @@ SKR_missions_7 = {
 		}
 	}
 	SKR_mission_7_8 = {
-		icon = mission_roman_empire_west
+		icon = mission_empire
 		position = 8
 		required_missions = { SKR_mission_7_7 }
 		trigger = {
@@ -386,7 +397,7 @@ SKR_missions_7 = {
 		trigger = {
 			total_development = 1000
 			num_of_owned_provinces_with = {
-				has_building = weapons_manufactory
+				has_building = weapons
 				value = 5
 			}
 		}
@@ -425,7 +436,7 @@ SKR_missions_7 = {
 		}
 	}
 	SKR_mission_7_12 = {
-		icon = mission_kingdom_of_italy
+		icon = mission_italian_condottiere
 		position = 12
 		required_missions = { SKR_mission_7_11 }
 		trigger = {
@@ -451,7 +462,7 @@ SKR_missions_8 = {
 	has_country_shield = yes
 
 	SKR_mission_8_1 = {
-		icon = mission_holy_roman_empire
+		icon = mission_empire
 		position = 1
 		trigger = {
 			always = yes
@@ -464,7 +475,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_2 = {
-		icon = mission_defend_the_empire
+		icon = mission_great_wall
 		position = 2
 		required_missions = { SKR_mission_8_1 }
 		trigger = {
@@ -477,7 +488,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_3 = {
-		icon = mission_sardinia_piedmont
+		icon = mission_unite_home_region
 		position = 3
 		required_missions = { SKR_mission_8_2 }
 		trigger = {
@@ -508,7 +519,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_5 = {
-		icon = mission_two_sicilies
+		icon = mission_landsknecht_soldier
 		position = 5
 		required_missions = { SKR_mission_8_4 }
 		trigger = {
@@ -521,7 +532,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_6 = {
-		icon = mission_roman_empire
+		icon = mission_empire
 		position = 6
 		required_missions = { SKR_mission_8_5 }
 		trigger = {
@@ -535,7 +546,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_7 = {
-		icon = mission_royal_marriage
+		icon = mission_oceania_royal_marriage
 		position = 7
 		required_missions = { SKR_mission_8_6 }
 		trigger = {
@@ -552,7 +563,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_8 = {
-		icon = mission_colonial_ambitions
+		icon = mission_colonial
 		position = 8
 		required_missions = { SKR_mission_8_7 }
 		trigger = {
@@ -564,7 +575,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_9 = {
-		icon = mission_south_america
+		icon = mission_settlers_north_america
 		position = 9
 		required_missions = { SKR_mission_8_8 }
 		trigger = {
@@ -577,7 +588,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_10 = {
-		icon = mission_trade
+		icon = mission_dominate_home_trade_node
 		position = 10
 		required_missions = { SKR_mission_8_9 }
 		trigger = {
@@ -606,7 +617,7 @@ SKR_missions_8 = {
 		}
 	}
 	SKR_mission_8_12 = {
-		icon = mission_roman_empire_west
+		icon = mission_empire
 		position = 12
 		required_missions = { SKR_mission_8_11 }
 		trigger = {
@@ -631,7 +642,7 @@ SKR_missions_9 = {
 	has_country_shield = yes
 
 	SKR_mission_9_1 = {
-		icon = mission_two_sicilies
+		icon = mission_landsknecht_soldier
 		position = 1
 		provinces_to_highlight = {
 			area = upper_bavaria_area
@@ -662,7 +673,7 @@ SKR_missions_9 = {
 		}
 	}
 	SKR_mission_9_2 = {
-		icon = mission_noble_cavalry
+		icon = mission_cossack_cavalry
 		position = 2
 		required_missions = { SKR_mission_9_1 }
 		provinces_to_highlight = {
@@ -718,7 +729,7 @@ SKR_missions_9 = {
 		}
 	}
 	SKR_mission_9_4 = {
-		icon = mission_spain
+		icon = mission_iberian_conquistador
 		position = 4
 		required_missions = { SKR_mission_9_3 }
 		trigger = {
@@ -855,11 +866,13 @@ SKR_missions_9 = {
 		position = 10
 		required_missions = { SKR_mission_9_9 }
 		trigger = {
-			north_german_region = {
-				all_owned_province = { development = 10 }
+			all_owned_province = {
+				region = north_german_region
+				development = 10
 			}
-			south_german_region = {
-				all_owned_province = { development = 10 }
+			all_owned_province = {
+				region = south_german_region
+				development = 10
 			}
 		}
 		effect = {
@@ -873,7 +886,7 @@ SKR_missions_9 = {
 		required_missions = { SKR_mission_9_10 }
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_building = weapons_manufactory
+				has_building = weapons
 				value = 10
 			}
 		}
@@ -883,7 +896,7 @@ SKR_missions_9 = {
 		}
 	}
 	SKR_mission_9_12 = {
-		icon = mission_holy_roman_empire
+		icon = mission_empire
 		position = 12
 		required_missions = { SKR_mission_9_11 }
 		trigger = {
@@ -941,7 +954,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_2 = {
-		icon = mission_king_of_naples
+		icon = mission_monarch_in_throne_room
 		position = 2
 		required_missions = { SKR_mission_10_1 }
 		provinces_to_highlight = {
@@ -967,7 +980,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_3 = {
-		icon = mission_papal_state
+		icon = mission_european_church
 		position = 3
 		required_missions = { SKR_mission_10_2 }
 		trigger = {
@@ -993,7 +1006,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_4 = {
-		icon = mission_sicilian_vespers
+		icon = mission_galleys_in_port
 		position = 4
 		required_missions = { SKR_mission_10_3 }
 		trigger = {
@@ -1024,7 +1037,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_5 = {
-		icon = mission_kingdom_of_italy
+		icon = mission_italian_condottiere
 		position = 5
 		required_missions = { SKR_mission_10_4 }
 		trigger = {
@@ -1058,7 +1071,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_7 = {
-		icon = mission_spain
+		icon = mission_iberian_conquistador
 		position = 7
 		required_missions = { SKR_mission_10_6 }
 		trigger = {
@@ -1073,7 +1086,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_8 = {
-		icon = mission_eastern_europe
+		icon = mission_eastern_european_city
 		position = 8
 		required_missions = { SKR_mission_10_7 }
 		trigger = {
@@ -1101,7 +1114,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_10 = {
-		icon = mission_trade
+		icon = mission_dominate_home_trade_node
 		position = 10
 		required_missions = { SKR_mission_10_9 }
 		trigger = {
@@ -1116,12 +1129,13 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_11 = {
-		icon = mission_roman_empire
+		icon = mission_empire
 		position = 11
 		required_missions = { SKR_mission_10_10 }
 		trigger = {
-			italy_region = {
-				all_owned_province = { development = 10 }
+			all_owned_province = {
+				region = italy_region
+				development = 10
 			}
 			total_development = 2500
 		}
@@ -1131,7 +1145,7 @@ SKR_missions_10 = {
 		}
 	}
 	SKR_mission_10_12 = {
-		icon = mission_roman_empire_west
+		icon = mission_empire
 		position = 12
 		required_missions = { SKR_mission_10_11 }
 		trigger = {
