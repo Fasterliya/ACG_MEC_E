@@ -1195,9 +1195,8 @@ RIB_ideas = {
 NSL_ideas = {
 	#ħ��������
 	start = {
-		may_establish_frontier = yes
-		auto_explore_adjacent_to_colony = yes
-		diplomatic_reputation = 2
+		core_creation = -0.15
+		global_manpower_modifier = 0.33
 	}
 	bonus = {
 		years_of_nationalism = -10
@@ -1207,31 +1206,33 @@ NSL_ideas = {
 	}
 	free = yes
 	Legacy_treasure = {
-		governing_capacity_modifier = 0.2
-		global_tax_modifier = 0.1
+		ae_impact = -0.15
 	}
 	Nathalic = {
-		discipline = 0.05
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
 	}
 	The_dead_country = {
-		global_missionary_strength = 0.05
-		global_unrest = 2
+		artillery_cost = -0.1
+		artillery_power = 0.1
 	}
 	Floor_guardian = {
 		mercenary_cost = -0.3
-		vassal_forcelimit_bonus = 2
+		land_forcelimit_modifier = 0.33
 	}
 	Heavily_guarded = {
-		defensiveness = 0.1
+		yearly_corruption = -0.1
+		nobles_influence_modifier = -0.1
 		fire_damage_received = -0.05
 	}
 	Setup_NasalikSpyBureau = {
-		siege_ability = 0.1
-		own_coast_naval_combat_bonus = 1
+		advisor_cost = -0.10
+		army_tradition = 0.25
 	}
 	Reorganize_magic = {
-		innovativeness_gain = 0.2
-		pulse_mana_get_modifier = 10
+		land_morale = 0.05
+		fire_damage_received = -0.1
+		pulse_mana_get_modifier = 15
 		#mana+15
 	}
 }
@@ -2207,42 +2208,42 @@ TES_ideas_up = {
 	}
 }
 
-ALC_ideas = {
-	#����˿�����������������
-	start = {
-		merc_maintenance_modifier = -0.2
-		mercenary_cost = -0.2
-	}
-	bonus = {
-		build_cost = -0.15
-	}
-	trigger = {
-		tag = ALC
-	}
-	free = yes	#will be added at load.
-	Magic_user_ALC = {
-		global_institution_spread = 0.25
-	}
-	Making_doll = {
-		mercenary_manpower = 0.5
-	}
-	Doll_support = {
-		shock_damage = 0.1
-	}
-	dushipai = {
-		free_adm_policy = 1
-	}
-	preserve_one = {
-		global_spy_defence = 0.25
-	}
-	Doll_giantism = {
-		mercenary_discipline = 0.1
-	}
-	Doll_factory = {
-		production_efficiency = 0.1
-		global_manpower_modifier = 0.2
-	}
-}
+# ALC_ideas = {
+# 	#����˿�����������������
+# 	start = {
+# 		merc_maintenance_modifier = -0.2
+# 		mercenary_cost = -0.2
+# 	}
+# 	bonus = {
+# 		build_cost = -0.15
+# 	}
+# 	trigger = {
+# 		tag = ALC
+# 	}
+# 	free = yes	#will be added at load.
+# 	Magic_user_ALC = {
+# 		global_institution_spread = 0.25
+# 	}
+# 	Making_doll = {
+# 		mercenary_manpower = 0.5
+# 	}
+# 	Doll_support = {
+# 		shock_damage = 0.1
+# 	}
+# 	dushipai = {
+# 		free_adm_policy = 1
+# 	}
+# 	preserve_one = {
+# 		global_spy_defence = 0.25
+# 	}
+# 	Doll_giantism = {
+# 		mercenary_discipline = 0.1
+# 	}
+# 	Doll_factory = {
+# 		production_efficiency = 0.1
+# 		global_manpower_modifier = 0.2
+# 	}
+# }
 
 AQO_ideas = {
 	#aqours����
