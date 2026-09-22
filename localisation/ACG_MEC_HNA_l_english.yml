@@ -8,6 +8,7 @@
  ACG_MEC_HNA_chronicle_reform: "z0u¶RòSr"
  ACG_MEC_HNA_chronicle_reform_desc: "z0u¶RNãNgbrÿ:N‰^ó`aNt^ªu‹N0SVòSrb:NýV?eKN,gÿ?–Bl¿OïSSb5–Á‰û•0T›ÕlwncNv^™QeQfN?zÿ1u=fåeÊv¾|Û0"
  # ===== z0u?–Blÿ³Q®‹ÿ.•TÄ‰ƒÿ<key>_title + <key>_desc	ÿ=====
+ # v3ÿ5 ag0W„fN0³Q®‹òT.Rd–  W„fN9e:N©s¶R(W5Ïe6–BSLub—êLˆˆcˆNyrCg
  ACG_MEC_HNA_adopt_chronicle_reform_title: "nxËzz0u¶RòSrKN?e"
  ACG_MEC_HNA_adopt_chronicle_reform_desc: "S°‹ðNwnc¬bGS:NýV?e9h,g0dkT?–Bl„vÁ‰û•NW„ðýSS:Nwck„v›RÏ‘0"
  ACG_MEC_HNA_summon_akyuu_title: "ìSz0u?–BlúQûNS†˜"
@@ -15,16 +16,6 @@
  ACG_MEC_HNA_refit_akyuu_title: ":N?–Blte›Q"
  ACG_MEC_HNA_refit_akyuu_desc: "9hnc?–BlSVMR=tïy„vÁ‰û•Í‘°etevQèòfÿOvQb›RNÁ‰û•øv&r0"
  ACG_MEC_HNA_refit_cd_tooltip: "ÝN!kte›QòTánNt^"
- ACG_MEC_HNA_write_1_title: "W„ð0Blû•òSªu0"
- ACG_MEC_HNA_write_1_desc: "?–Blgbrt^ªu‹N0W„fNgô•?e¡R0%„.NfR=g†vOßÿ†S	Nt^wbfN0"
- ACG_MEC_HNA_write_2_title: "W„ð0‰^ó`aNw0"
- ACG_MEC_HNA_write_2_desc: "wncÎ˜WN–Y*`.Obÿ—åNT››R:NíQ0W„fN”Nt^ÿgô•›Q?eÈa.`0Y²N1YðX0"
- ACG_MEC_HNA_write_3_title: "W„ð0T›ÕlOáO0"
- ACG_MEC_HNA_write_3_desc: "NT›ÕlOŽVØº‹S0W„fNmQt^ÿgô•ËeÕlÏuŒšïy=tjPÞnÿlÅ`¦NÁ‰nm¨R0"
- ACG_MEC_HNA_write_4_title: "W„ð0b=g‰eu0"
- ACG_MEC_HNA_write_4_desc: "S²N«ŽÏu†S„vb5–tet:NuQfN0W„fNÛVt^ÿgô•ëXlNeˆXT†v×SqVÍT0"
- ACG_MEC_HNA_write_5_title: "W„ð0z0u¶RØyUV0"
- ACG_MEC_HNA_write_5_desc: "z0u¶RgÈuKNfN0W„fNkQt^ÿ—>PKSÃV›Rÿ?e¡RhQb—ßÞnÿbfNRSTYuR—òS0"
  # ===== z0u?–Blÿ‹NöN =====
  ACG_MEC_HNA_events.1.t: "?–Bl„vz4x"
  ACG_MEC_HNA_events.1.d: "ÈSNµkÁ‰û•K„ŽN¸uN0?–BlùRkphV0²QûQ0:g¨RNIeÎW„vtã‰ôfÛNBS0"
@@ -76,20 +67,19 @@
  ACG_MEC_HNA_reward_magic_tech: "òSr·ft"
  ACG_MEC_HNA_chronicle_permanent: "z0u¶RØyUV"
  ACG_MEC_HNA_peak_modifier: "‰^ó`aNòSr"
- # ===== z0u?–BlÿW„fNyrCgÿUSNyrCgÿc5Ïe6–BS	ÿ=====
- ACG_MEC_HNA_writing: "z0u?–BlW„fN-N"
- ACG_MEC_HNA_writing_desc: "?–Blck(WgbrW„fNÿ?e¡RN%„.àVdkßÞnÿÑSUS±‚9 +10%0ÑyŽb±‚9 +5%0fN?zŒRbTdkyrCgOê¨Rã‰d–0"
- # ===== z0u?–BlÿTfNN^S Debuff =====
- ACG_MEC_HNA_wdb_1: "W„ð0Blû•òSªu0"
- ACG_MEC_HNA_wdb_1_desc: "t^ªu‹NÿÑSUS±‚9 +15%0ú^Qr±‚9 +15%0ÑyŽb±‚9 +5%0"
- ACG_MEC_HNA_wdb_2: "W„ð0‰^ó`aNw0"
- ACG_MEC_HNA_wdb_2_desc: "wncÎ˜WÿF–›QëXl -5%0Y²NðX‰Š -10ú^Qr±‚9 +10%0"
- ACG_MEC_HNA_wdb_3: "W„ð0T›ÕlOáO0"
- ACG_MEC_HNA_wdb_3_desc: "NT›ÕlOº‹SÿËeÕlÏuŒšgžX -100ÑyŽb±‚9 +10%0hQýVÛSqN +20"
- ACG_MEC_HNA_wdb_4: "W„ð0b=g‰eu0"
- ACG_MEC_HNA_wdb_4_desc: "tetuQfNÿF–›QëXl -10%0eˆXT¦^ -10%0­‹Ãu¦^ -2%0"
- ACG_MEC_HNA_wdb_5: "W„ð0z0u¶RØyUV0"
- ACG_MEC_HNA_wdb_5_desc: "z0u¶RgÈuKNfNÿLˆ?e0Y²N0›Q‹N¹ppegžXT -1ÿÑSUS±‚9 +20%0"
+ # ===== z0u?–BlÿW„fNyrCgÿ5 ,gÿc5Ïe6–BS estate_nobles	ÿ=====
+ # ©s¶R(W5Ïe6–BSLub—êLˆˆcˆNÿyrCg„v on_granted O’czùR”^t^P–„vŒRb‹NöN0
+ # Debuff 1S(WyrCgê«Žÿpenalties	ÿÿNQæScîOck0
+ ACG_MEC_HNA_writing_1: "W„ð0Blû•òSªu0"
+ ACG_MEC_HNA_writing_1_desc: "?–Blck(Wt^ªu‹NÿÑSUS±‚9 +15%0ú^Qr±‚9 +15%0ÑyŽb±‚9 +5%0	Nt^TbfN0"
+ ACG_MEC_HNA_writing_2: "W„ð0‰^ó`aNw0"
+ ACG_MEC_HNA_writing_2_desc: "?–Blck(WwncÎ˜WÿF–›QëXl -5%0Y²NðX‰Š -10ú^Qr±‚9 +10%0”Nt^TbfN0"
+ ACG_MEC_HNA_writing_3: "W„ð0T›ÕlOáO0"
+ ACG_MEC_HNA_writing_3_desc: "?–Blck(WNT›ÕlOº‹SÿËeÕlÏuŒšgžX -100ÑyŽb±‚9 +10%0hQýVÛSqN +20mQt^TbfN0"
+ ACG_MEC_HNA_writing_4: "W„ð0b=g‰eu0"
+ ACG_MEC_HNA_writing_4_desc: "?–Blck(WtetuQfNÿF–›QëXl -10%0eˆXT¦^ -10%0­‹Ãu¦^ -2%0ÛVt^TbfN0"
+ ACG_MEC_HNA_writing_5: "W„ð0z0u¶RØyUV0"
+ ACG_MEC_HNA_writing_5_desc: "?–Blck(W™Qz0u¶RgÈuKNfNÿLˆ?e0Y²N0›Q‹N¹ppegžXT -1ÿÑSUS±‚9 +20%0kQt^TbfN0"
  # ===== z0u?–BlÿûN¡Rhÿ.•TÄ‰ƒÿ<ûN¡RT>_title + <ûN¡RT>_desc	ÿ=====
  # ----- ,r 2 Rÿslot = 2	ÿÿ…Q?e / ÑSUS / ú^Qr -----
  HNA_missions_2_1_title: "z0u¶R„v†˜0W"
@@ -118,3 +108,22 @@
  HNA_missions_4_3_desc: "wnc—‰T››R„víQnc0ïy=tT››RNËeÕlÏuŒšÿ©‹òSrNT›Õl’N:NhˆÌ‘0"
  HNA_missions_4_4_title: "‰^ó`aNòSr"
  HNA_missions_4_4_desc: "°‹NNRÿtã‰NRÿgÈub:NNR0?–Bl„vÁ‰û•òT³åN=e‘dNè.ONKNfN0"
+ # ===== z0u?–Blÿ,gØSÏ‘ =====
+ # .•TÄ‰ƒÿ.•T = ØSÏ‘T,g«ŽÿOnc,g0W Wiki ØSÏ‘.html §0,g0WSØSÏ‘0ÿ
+ #   "bìNýw,g0WSØSÏ‘ÿÙ7hƒR1S>f:y:NbìNšRIN„vWR&r2NÿwN=fØSÏ‘,gT"ÿ
+ #   žR‹OÿACG1 localisation/Acg_events_l_english.yml „v Mana:00Acg_Professional_magic_l_english.yml „v Magic_exp:0	ÿ
+ # èlaÿMana / Magic_exp =f ACG1 òT	g„vT›ÕlØSÏ‘ÿACG1 òTê&^,g0WSÿØ&^ £magic_mana£ / £magic_exp£ þVh	ÿÿ
+ #       dkYIRaNÍ‘YšRINÿåNMQ†‰ÖvƒR„vþVh0
+ HNA_akyuu_growth_points: "z0u?–Bl„vb•"
+ HNA_akyuu_tier: "z0u?–Bl„vz4xIrµu"
+ HNA_akyuu_exp: "z0u?–Blïy=t„vÁ‰û•"
+ # èlÿv3 wW„fN9e:N0yrCg on_granted ’cz‹NöN0ÿNQ	gt^¦^¡‹öeÿ
+ #     NbåN HNA_writing_1..5_years „v,g0WS key òTNv^.Rd–0
+ # ===== z0u?–BlÿgÈuûN¡R0‰^ó`aNòSr0„v custom_tooltip =====
+ # custom_tooltip = ACG_MEC_HNA_final_mission_ttÿ™Q(W,g mod missions/HNA_missions.txt „v
+ # HNA_missions_4_4 „v effect Ì‘	ÿ0àV:NhQÑyŽb +1 (u hidden_effect SOO†Nÿ
+ # 	NLˆê¨R tooltip NOubÿgÈuûN¡Rb—gN>f:y„v1S=fNb—Ùµk‡eWR0
+ ACG_MEC_HNA_final_mission_tt: "z0u¶RòSrWánÿhQýV„vfRî•NŽbz‚–KNÃGSLˆ?e0Y²N0›Q‹NÑyŽbT +10\ndkTsS¿O?–Blbkb»SLwÿmNýw–öe0QìSz0u?–BlúQûNS†˜0ÿN×Sb‰N¶r`P–6R0·QtSÅN 30 )YÿNyY=tïy„vb•Nz4xIrµuŒRteÝOYu0"
+ # ===== z0u?–BlÿQìS³Q®‹ÿv4 °ežXÿ1ugÈuûN¡Rã‰•	ÿ=====
+ ACG_MEC_HNA_recall_akyuu_title: "QìSz0u?–BlúQûNS†˜"
+ ACG_MEC_HNA_recall_akyuu_desc: "0z0u¶RØyUV0âeòTbfNÿ?–BlKNT¿ONïSèxmp0àeº‹yYbkŽN5–MRØ=f»SLwŽNgXÿz0u¶R–öeïSåN÷‹yYQ¦^«b2uyYdkMR„vhQèÁ‰û•Nb•ýNO0N1Y0"

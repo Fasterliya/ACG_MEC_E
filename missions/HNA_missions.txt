@@ -325,6 +325,32 @@ HNA_missions_4 = {
 			add_country_modifier = { name = ACG_MEC_HNA_chronicle_permanent duration = -1 }
 			add_prestige = 50
 			HNA_akyuu_grant_growth_effect = { amount = 5 }
+
+			# ---------- v4 新增 ①：全科技 +1 ----------
+			# add_adm_tech / add_dip_tech / add_mil_tech 是原版 effect：
+			#   原版 events/flavorPOL.txt:2143（add_adm_tech = 1）
+			#   原版 events/FlavorRUS.txt:2285 / 2299 / 2313（adm / dip / mil 各一）
+			#   原版 missions/DOM_Chinese_Missions.txt:2556（add_mil_tech = 1）
+			#   Wiki 指令.html §科技：「提升行政科技等级」「该指令无法降低科技」
+			# 用 hidden_effect 包住 → 不让游戏再自动生成三行同样的 tooltip，
+			# 统一交给下面那条 custom_tooltip 叙述。
+			# （custom_tooltip 与 hidden_effect 都是原版 missions 的高频写法：
+			#   custom_tooltip 4015 处、hidden_effect 968 处。想改回自动 tooltip
+			#   就把 hidden_effect 这层去掉即可。）
+			hidden_effect = {
+				add_adm_tech = 1
+				add_dip_tech = 1
+				add_mil_tech = 1
+			}
+
+			# ---------- v4 新增 ②：解锁阿求「再招募」机制 ----------
+			# 置此 flag 后：
+			#   · 旧决议 ACG_MEC_HNA_summon_akyuu 不再出现（其 potential 排除了已解锁状态）
+			#   · 新决议 ACG_MEC_HNA_recall_akyuu 出现 —— 不受战争状态限制、冷却 30 天
+			#   · 阿求累积的成长点 / 突破等级是**国家变量**，所以再召回来的她
+			#     会以同样的四维等级重建（HNA_akyuu_rebuild_general_effect 读 HNA_akyuu_tier）
+			set_country_flag = HNA_akyuu_recall_unlocked
+			custom_tooltip = ACG_MEC_HNA_final_mission_tt
 		}
 	}
 }

@@ -119,3 +119,11 @@ l_english:
  HNA_akyuu_exp: "稗田阿求积累的见闻"
  # 注：v3 起著书改为「特权 on_granted 排程事件」，不再有年度计时，
  #     所以 HNA_writing_1..5_years 的本地化 key 已一并删除。
+ # ===== 稗田阿求：最终任务「幻想乡史笔」的 custom_tooltip =====
+ # custom_tooltip = ACG_MEC_HNA_final_mission_tt（写在本 mod missions/HNA_missions.txt 的
+ # HNA_missions_4_4 的 effect 里）。因为全科技 +1 用 hidden_effect 包住了，
+ # 三行自动 tooltip 不会生成，最终任务面板上显示的就是下面这段文字。
+ ACG_MEC_HNA_final_mission_tt: "稗田家史笔圆满：全国的学问与技艺随之跃升——行政、外交、军事科技各 +1。\n此后即便阿求战殁或去职，也能随时「再召稗田阿求出任将领」：不受战争状态限制、冷却仅 30 天，且她累积的成长与突破等级完整保留。"
+ # ===== 稗田阿求：再召决议（v4 新增，由最终任务解锁）=====
+ ACG_MEC_HNA_recall_akyuu_title: "再召稗田阿求出任将领"
+ ACG_MEC_HNA_recall_akyuu_desc: "《稗田家秘录》既已成书，阿求之名便不可磨灭。无论她战殁于阵前还是去职于朝堂，稗田家随时可以请她再度披甲——她此前的全部见闻与成长都不会丢失。"

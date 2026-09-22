@@ -47,6 +47,8 @@ country_decisions = {
 			tag = HNA
 			has_reform = ACG_MEC_HNA_chronicle_reform
 			NOT = { has_leader = "Hieda no Akyuu" }
+			# 完成最终任务（幻想乡史笔）后，本决议让位给「再召稗田阿求」
+			NOT = { has_country_flag = HNA_akyuu_recall_unlocked }
 		}
 		allow = {
 			is_at_war = no
@@ -86,6 +88,45 @@ country_decisions = {
 		effect = {
 			clr_country_flag = HNA_akyuu_refit_cd
 			set_country_flag = HNA_akyuu_refit_cd
+			HNA_akyuu_rebuild_general_effect = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# --------------------------------------------------------
+	# 4. 再召稗田阿求（v4 新增；由最终任务「幻想乡史笔」解锁）
+	# --------------------------------------------------------
+	# 与第 2 条的区别（两者靠 HNA_akyuu_recall_unlocked 互斥，不会同时出现）：
+	#   第 2 条：未解锁时用，必须处于和平，无冷却
+	#   本  条：解锁后用，**不受战争状态限制**，冷却 30 天
+	# 阿求的成长点 / 突破等级存在国家变量里，所以再召回来仍是同一四维等级
+	# （HNA_akyuu_rebuild_general_effect 按 HNA_akyuu_tier 查表重建）。
+	ACG_MEC_HNA_recall_akyuu = {
+		potential = {
+			tag = HNA
+			has_reform = ACG_MEC_HNA_chronicle_reform
+			has_country_flag = HNA_akyuu_recall_unlocked
+			NOT = { has_leader = "Hieda no Akyuu" }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = HNA_akyuu_recall_cd }
+				had_country_flag = { flag = HNA_akyuu_recall_cd days = 30 }
+			}
+		}
+		effect = {
+			# 与第 2 条同样的初始化保护（正常流程下变量已存在，此处仅兜底）
+			if = {
+				limit = { NOT = { has_country_flag = HNA_akyuu_init } }
+				set_country_flag = HNA_akyuu_init
+				set_variable = { which = HNA_akyuu_growth_points value = 0 }
+				set_variable = { which = HNA_akyuu_tier value = 0 }
+				set_variable = { which = HNA_akyuu_exp value = 0 }
+			}
+			clr_country_flag = HNA_akyuu_recall_cd
+			set_country_flag = HNA_akyuu_recall_cd
 			HNA_akyuu_rebuild_general_effect = yes
 		}
 		ai_will_do = {
