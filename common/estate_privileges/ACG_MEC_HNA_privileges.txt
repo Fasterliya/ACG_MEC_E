@@ -1,0 +1,52 @@
+# ============================================================
+# 稗田阿求：著书特权（单一特权）
+# ------------------------------------------------------------
+# 【设计】按你的要求改为「一个」特权，挂到 **贵族阶层 estate_nobles**，
+#         不再使用 ACG 的 estate_magic_caster（法师阶层），以最大化兼容性。
+#
+# 分工：
+#   · 本特权 = 「稗田阿求正在著书」的唯一标记 + 通用 Debuff（penalties）
+#   · 各书差异化的 Debuff = 5 个 event_modifier（带 duration，见
+#     common/event_modifiers/ACG_MEC_HNA_modifiers.txt 的 ACG_MEC_HNA_wdb_1..5）
+#     → 好处：即使特权因阶层被禁用而挂不上，书本身的机制仍照常运作（更稳）
+#
+# 登记方式（硬性）：EU4 没有特权自动登记机制 —— 实测原版 426 个特权定义
+#   全部都被 common/estates/*.txt 的 privileges 列表引用，孤儿 = 0。
+#   因此本 key 已登记在本 mod 的 common/estates/02_nobility.txt 第 655 行
+#   （该文件是 ACG1 common/estates/02_nobility.txt 的完整覆盖副本，
+#    逐行比较只多这一行）。
+#
+# 效果名：set_estate_privilege / remove_estate_privilege
+#   （原版 events 中 set_estate_privilege 85 处、remove_estate_privilege 171 处；
+#     原版无 add_estate_privilege）
+# 写法来源：工作区 common/estate_privileges/kirara_privileges.txt
+# ============================================================
+
+ACG_MEC_HNA_writing = {
+	icon = privilege_aged_paper
+	max_absolutism = -5
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		tag = HNA
+	}
+	penalties = {
+		development_cost = 0.10
+		technology_cost = 0.05
+	}
+	on_granted = {
+		hidden_effect = {
+			set_country_flag = HNA_writing_active
+		}
+	}
+	on_revoked = {
+		hidden_effect = {
+			clr_country_flag = HNA_writing_active
+		}
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

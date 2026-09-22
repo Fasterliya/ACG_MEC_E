@@ -1,0 +1,34 @@
+# ============================================================
+# 稗田阿求：on_action 挂载
+# ------------------------------------------------------------
+# 写法来源：工作区 common/on_actions/SKR_on_actions.txt
+#           （on_xxx = { effect = { ... } }）
+# 原版钩子来源：
+#   on_battle_won_country  → 原版 common/on_actions/00_on_actions.txt:475
+#   on_yearly_pulse        → ACG1/工作区均有用例
+# 同名 on_action 在不同文件里会叠加 effect，不会互相覆盖。
+# ============================================================
+
+# ---- 战斗成长：阿求亲自带队打赢陆战才计成长 ----
+on_battle_won_country = {
+	effect = {
+		if = {
+			limit = {
+				tag = HNA
+				has_reform = ACG_MEC_HNA_chronicle_reform
+				has_leader = "Hieda no Akyuu"
+			}
+			HNA_akyuu_battle_growth_effect = yes
+		}
+	}
+}
+
+# ---- 著书计时 ----
+on_yearly_pulse = {
+	effect = {
+		if = {
+			limit = { tag = HNA }
+			HNA_akyuu_writing_tick_effect = yes
+		}
+	}
+}

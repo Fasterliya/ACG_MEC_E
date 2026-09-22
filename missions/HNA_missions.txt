@@ -1,0 +1,248 @@
+# ============================================================
+# 稗田阿求（HNA）任务树 —— 12 项
+# ------------------------------------------------------------
+# 结构来源：工作区 missions/HKH_missions.txt:1-13
+#   HNA_missions_1 = { slot = 1 generic = no ai = yes potential = { tag = HNA } ... }
+#   任务键 = <树名>_<序号>，字段：icon / position / required_missions /
+#   provinces_to_highlight / trigger / effect
+# 构成（按你确认的「史笔主线」）：
+#   4 发展 + 3 建筑 + 2 意大利用兵 + 2 著书 + 1 魔法
+# 图标：icon = HNA_mission_N → 对应本 mod interface/ACG_MEC_E_HNA.gfx 里的
+#   spriteType 名为 HNA_mission_N（本 mod 家族惯例：任务图标 spriteType 不带 GFX_ 前缀，
+#   证据 ACG1 interface/IMS_adviser.gfx:275-278 name = "LLF_icon_1" 且
+#   missions/IMS_misssions.txt:1513 icon = LLF_icon_1；原版同为
+#   interface/countrymissionsview.gfx:526 name = "mission_noble_council"）
+#   图片尺寸：59 x 63（原版实测与 ACG1 gfx/interface/missions/LLF_icon_1.dds 同为 59x63）
+#
+# 每项任务都通过 HNA_akyuu_grant_growth_effect 发放一部分成长（合计 60 点）
+# ============================================================
+
+HNA_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ---------------- 1 发展：稗田家的领地 ----------------
+	HNA_missions_1_1 = {
+		icon = HNA_mission_1
+		position = 1
+		trigger = {
+			capital_scope = {
+				development = 20
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+			}
+			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 3650 }
+			HNA_akyuu_grant_growth_effect = { amount = 3 }
+		}
+	}
+
+	# ---------------- 2 发展：五处聚落 ----------------
+	HNA_missions_1_2 = {
+		icon = HNA_mission_2
+		position = 2
+		required_missions = { HNA_missions_1_1 }
+		trigger = {
+			num_of_cities = 5
+			any_owned_province = {
+				development = 15
+				has_owner_culture = yes
+			}
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 3650 }
+			add_adm_power = 50
+			HNA_akyuu_grant_growth_effect = { amount = 4 }
+		}
+	}
+
+	# ---------------- 3 建筑：书库与学舍 ----------------
+	HNA_missions_1_3 = {
+		icon = HNA_mission_3
+		position = 3
+		required_missions = { HNA_missions_1_2 }
+		trigger = {
+			capital_scope = {
+				has_building = university
+			}
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 3650 }
+			add_splendor = 50
+			HNA_akyuu_grant_growth_effect = { amount = 5 }
+		}
+	}
+
+	# ---------------- 4 建筑：印刷工坊 ----------------
+	HNA_missions_1_4 = {
+		icon = HNA_mission_4
+		position = 4
+		required_missions = { HNA_missions_1_2 }
+		trigger = {
+			any_owned_province = {
+				has_building = workshop
+			}
+			any_owned_province = {
+				has_building = marketplace
+			}
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = 3650 }
+			add_treasury = 100
+			HNA_akyuu_grant_growth_effect = { amount = 4 }
+		}
+	}
+
+	# ---------------- 5 建筑：城防与治安 ----------------
+	HNA_missions_1_5 = {
+		icon = HNA_mission_5
+		position = 5
+		required_missions = { HNA_missions_1_3 }
+		trigger = {
+			any_owned_province = {
+				has_building = courthouse
+			}
+			any_owned_province = {
+				has_building = barracks
+			}
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_reward_army_1 duration = 3650 }
+			add_manpower = 10
+			HNA_akyuu_grant_growth_effect = { amount = 5 }
+		}
+	}
+
+	# ---------------- 6 发展：安科纳的商路 ----------------
+	HNA_missions_1_6 = {
+		icon = HNA_mission_6
+		position = 6
+		required_missions = { HNA_missions_1_2 }
+		trigger = {
+			capital_scope = {
+				has_building = trade_depot
+			}
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_2 duration = 5475 }
+			HNA_akyuu_grant_growth_effect = { amount = 4 }
+		}
+	}
+
+	# ---------------- 7 意大利：亚平宁的立足 ----------------
+	HNA_missions_1_7 = {
+		icon = HNA_mission_7
+		position = 7
+		required_missions = { HNA_missions_1_6 }
+		provinces_to_highlight = {
+			region = italy_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			any_owned_province = {
+				region = italy_region
+				is_capital = no
+			}
+		}
+		effect = {
+			italy_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = 3650 }
+			HNA_akyuu_grant_growth_effect = { amount = 6 }
+		}
+	}
+
+	# ---------------- 8 意大利：罗马之路 ----------------
+	HNA_missions_1_8 = {
+		icon = HNA_mission_8
+		position = 8
+		required_missions = { HNA_missions_1_7 }
+		provinces_to_highlight = {
+			province = 118
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 118
+			num_of_cities = 10
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = { name = ACG_MEC_HNA_reward_army_3 duration = 5475 }
+			HNA_akyuu_grant_growth_effect = { amount = 8 }
+		}
+	}
+
+	# ---------------- 9 著书：《求闻史纪》 ----------------
+	HNA_missions_1_9 = {
+		icon = HNA_mission_9
+		position = 9
+		required_missions = { HNA_missions_1_3 }
+		trigger = {
+			has_country_flag = HNA_book_1_done
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 3650 }
+			add_splendor = 100
+			HNA_akyuu_grant_growth_effect = { amount = 6 }
+		}
+	}
+
+	# ---------------- 10 著书：《幻想乡缘起》 ----------------
+	HNA_missions_1_10 = {
+		icon = HNA_mission_10
+		position = 10
+		required_missions = { HNA_missions_1_4 }
+		trigger = {
+			has_country_flag = HNA_book_2_done
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = 3650 }
+			HNA_akyuu_grant_growth_effect = { amount = 5 }
+		}
+	}
+
+	# ---------------- 11 魔法：魔法与史笔 ----------------
+	HNA_missions_1_11 = {
+		icon = HNA_mission_11
+		position = 11
+		required_missions = { HNA_missions_1_9 HNA_missions_1_10 }
+		trigger = {
+			check_variable = { which = Mana value = 25 }
+			check_variable = { which = Magic_exp value = 10 }
+		}
+		effect = {
+			change_variable = { which = Mana value = 20 }
+			change_variable = { which = Magic_exp value = 15 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_magic_tech duration = 5475 }
+			HNA_akyuu_grant_growth_effect = { amount = 5 }
+		}
+	}
+
+	# ---------------- 12 收尾：幻想乡史笔 ----------------
+	HNA_missions_1_12 = {
+		icon = HNA_mission_12
+		position = 12
+		required_missions = { HNA_missions_1_8 HNA_missions_1_11 }
+		trigger = {
+			check_variable = { which = HNA_akyuu_growth_points value = 160 }
+		}
+		effect = {
+			add_country_modifier = { name = ACG_MEC_HNA_chronicle_permanent duration = -1 }
+			add_prestige = 50
+			HNA_akyuu_grant_growth_effect = { amount = 5 }
+		}
+	}
+}

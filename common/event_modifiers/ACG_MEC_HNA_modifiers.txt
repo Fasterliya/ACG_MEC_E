@@ -1,0 +1,106 @@
+# ============================================================
+# 稗田阿求：奖励 / 圆满修正
+# ------------------------------------------------------------
+# 说明：著书期间的 Debuff 不放在这里，而是写在「著书特权」自身的
+#       penalties = { } 里（common/estate_privileges/ACG_MEC_HNA_privileges.txt），
+#       以满足「特权本身必须提供实际 Debuff」的需求。
+#       本文件只放：一次性奖励修正、永久修正、四维圆满修正。
+# 键名白名单来自原版 1.37.5 与 ACG1 的实际用例（见文件内注释）。
+# ============================================================
+
+# ---------- 著书期间：各书专属 Debuff（带 duration，自动到期，自愈） ----------
+# 通用著书 Debuff 写在特权 ACG_MEC_HNA_writing 的 penalties 里；
+# 这里放每本书额外的差异化代价。
+ACG_MEC_HNA_wdb_1 = {                   #《求闻史纪》3 年
+	development_cost = 0.15
+	build_cost = 0.15
+	technology_cost = 0.05
+}
+ACG_MEC_HNA_wdb_2 = {                   #《幻想乡缘起》5 年
+	land_morale = -0.05
+	diplomatic_reputation = -1
+	build_cost = 0.10
+}
+ACG_MEC_HNA_wdb_3 = {                   #《魔法使通信》6 年
+	pulse_magic_exp_get_modifier = -10  #施法经验月增下降（Rmod 已有魔法键）
+	technology_cost = 0.10
+	global_unrest = 2
+}
+ACG_MEC_HNA_wdb_4 = {                   #《战术要略》4 年
+	land_morale = -0.10
+	reinforce_speed = -0.10
+	discipline = -0.02
+}
+ACG_MEC_HNA_wdb_5 = {                   #《稗田家秘录》8 年
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+	development_cost = 0.20
+}
+
+# ---------- 奖励方向 A：发展 ----------
+ACG_MEC_HNA_reward_dev_1 = {            #10 年
+	development_cost = -0.15            #ACG1 chino_buff_1_2 用例
+}
+ACG_MEC_HNA_reward_dev_2 = {            #15 年
+	development_cost = -0.10
+	build_cost = -0.15                  #ACG1 chino_buff_3_1_2 用例
+}
+
+# ---------- 奖励方向 B：建筑 / 内政 ----------
+ACG_MEC_HNA_reward_build_1 = {          #10 年
+	build_cost = -0.15
+	build_time = -0.10                  #ACG1 chino_debuff_1 里 build_time 为惩罚键，同族有效
+}
+ACG_MEC_HNA_reward_adm_1 = {            #15 年
+	technology_cost = -0.05
+	reform_progress_growth = 0.15       #ACG1 estate_magic_caster 用例
+	country_admin_power = 1             #ACG1 chino_buff_3_1 用例
+}
+
+# ---------- 奖励方向 C：军事 ----------
+ACG_MEC_HNA_reward_army_1 = {           #10 年
+	land_morale = 0.05
+	reinforce_speed = 0.10
+}
+ACG_MEC_HNA_reward_army_2 = {           #10 年
+	discipline = 0.05
+	fire_damage = 0.05
+	shock_damage = 0.05
+}
+ACG_MEC_HNA_reward_army_3 = {           #15 年（《战术要略》专属）
+	discipline = 0.05
+	siege_ability = 0.10
+	army_tradition = 0.5                #ACG1 art_of_the_war_privilege 用例（可正可负）
+}
+
+# ---------- 奖励方向 D：魔法（复用 Rmod 已有魔法修正键） ----------
+ACG_MEC_HNA_reward_magic_mana = {       #15 年
+	pulse_mana_get_modifier = 15        #ACG1 estate_magic_mana_enhance 用例
+}
+ACG_MEC_HNA_reward_magic_exp = {        #15 年
+	pulse_magic_exp_get_modifier = 10   #ACG1 estate_magic_exp_enhance 用例
+}
+ACG_MEC_HNA_reward_magic_tech = {       #15 年
+	technology_cost = -0.05
+	yearly_innovativeness = 0.5
+	global_institution_spread = 0.15    #ACG1 chino_buff_2_3 用例
+}
+
+# ---------- 永久修正：《稗田家秘录》成书 ----------
+ACG_MEC_HNA_chronicle_permanent = {
+	reform_progress_growth = 0.10
+	technology_cost = -0.05
+	development_cost = -0.05
+}
+
+# ---------- 四维圆满：幻想乡史笔 ----------
+ACG_MEC_HNA_peak_modifier = {
+	fire_damage = 0.05
+	shock_damage = 0.05
+	siege_ability = 0.10
+	movement_speed = 0.10
+	land_morale = 0.05
+	reform_progress_growth = 0.10
+	development_cost = -0.10
+}

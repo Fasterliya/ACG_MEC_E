@@ -1,0 +1,71 @@
+# ============================================================
+# 稗田阿求：脚本化触发器
+# 说明：check_variable { value = N } 语义为 X >= N（本地 Wiki 变量.html + ACG1 实际用例）
+# ============================================================
+
+# 成长系统是否已解锁：政体为「稗田家史笔」
+HNA_akyuu_growth_enabled_trigger = {
+	has_reform = ACG_MEC_HNA_chronicle_reform
+}
+
+# 阿求是否在役（作为将领）
+HNA_akyuu_in_service_trigger = {
+	has_leader = "Hieda no Akyuu"
+}
+
+# 是否已四维圆满
+HNA_akyuu_peak_trigger = {
+	has_country_flag = HNA_akyuu_peak_flag
+}
+
+# 《求闻史纪》前置：政体已解锁 + 成长点 5 以上
+HNA_can_write_1_trigger = {
+	has_reform = ACG_MEC_HNA_chronicle_reform
+	check_variable = { which = HNA_akyuu_growth_points value = 5 }
+}
+
+# 《幻想乡缘起》前置：魔力 Mana 10 以上
+# Mana 为 ACG1 已存在的魔法资源变量（events/ACG_advise_2_events.txt:1001-1026）
+HNA_can_write_2_trigger = {
+	has_reform = ACG_MEC_HNA_chronicle_reform
+	check_variable = { which = Mana value = 10 }
+}
+
+# 《魔法使通信》前置：魔力 25 以上 + 施法经验 Magic_exp 10 以上
+# Magic_exp 为 ACG1 已存在的施法经验变量（common/custom_gui/acgr_magic_casting_button.txt:58,188）
+HNA_can_write_3_trigger = {
+	has_reform = ACG_MEC_HNA_chronicle_reform
+	check_variable = { which = Mana value = 25 }
+	check_variable = { which = Magic_exp value = 10 }
+}
+
+# 《战术要略》前置：已突破到 2 级（成长点 40）以上
+HNA_can_write_4_trigger = {
+	has_reform = ACG_MEC_HNA_chronicle_reform
+	check_variable = { which = HNA_akyuu_growth_points value = 40 }
+}
+
+# 《稗田家秘录》前置：已突破到 8 级（成长点 160）以上 + 前三本至少成书两本
+HNA_can_write_5_trigger = {
+	has_reform = ACG_MEC_HNA_chronicle_reform
+	check_variable = { which = HNA_akyuu_growth_points value = 160 }
+	HNA_book_count_trigger = yes
+}
+
+# 已完成书籍数量 >= 2
+HNA_book_count_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = HNA_book_1_done
+			has_country_flag = HNA_book_2_done
+		}
+		AND = {
+			has_country_flag = HNA_book_1_done
+			has_country_flag = HNA_book_3_done
+		}
+		AND = {
+			has_country_flag = HNA_book_2_done
+			has_country_flag = HNA_book_3_done
+		}
+	}
+}

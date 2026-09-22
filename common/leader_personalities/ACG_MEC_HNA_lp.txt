@@ -1,0 +1,39 @@
+# ============================================================
+# 稗田阿求 专属将领特质（leader personality）
+# ------------------------------------------------------------
+# 写法来源（均已核对）：
+#   原版 1.37.5  common/leader_personalities/00_core.txt:1-4
+#     → 每个将领 1 个特质；随机获得几率 = <base chance> × 该场战斗获得的陆军传统
+#     → allow = { always = no } 可关闭随机获得，只能由脚本 define_general 的 trait = 指派
+#   ACG1  common/leader_personalities/NEW_adv_lp.txt:21-29（七宫智音 Seven_Saint_Girl）
+#   原版  events/flavorAIMARA.txt:161-168  define_general 内 trait = 属原版写法
+#
+# 可用修正白名单（ACG1 实测注释 common/leader_personalities/new_lp.txt:223-224）：
+#   有效：作战能力 / 围城能力 / 火伤冲伤 / 火减冲减 / 侧翼攻击 / 增援效率 / 士气恢复 /
+#         移动速度 / 减损耗
+#   无效：陆军火力冲击基础点数 / 训练度 / 操练度 / 色子 / 军事战术
+#   ——因此本文件只使用白名单内的键。
+# ============================================================
+
+akyuu_chronicler_personality = {
+	#稗田阿求-史笔（成长期）
+	allow = {
+		always = no
+	}
+	recover_army_morale_speed = 0.10    #月度士气恢复 +10%
+	land_morale = 0.05                  #陆军士气 +5%
+	siege_ability = 0.05                #围城效率 +5%
+}
+
+akyuu_chronicler_peak_personality = {
+	#稗田阿求-幻想乡史笔（四维圆满 100/100/100/100）
+	allow = {
+		always = no
+	}
+	fire_damage = 0.10                  #火力伤害 +10%
+	shock_damage = 0.10                 #冲击伤害 +10%
+	movement_speed = 0.15               #移动速度 +15%
+	siege_ability = 0.20                #围城效率 +20%
+	land_morale = 0.10                  #陆军士气 +10%
+	recover_army_morale_speed = 0.15    #月度士气恢复 +15%
+}

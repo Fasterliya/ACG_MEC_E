@@ -1,0 +1,201 @@
+# ============================================================
+# 稗田阿求：决议
+# ------------------------------------------------------------
+# 说明：本 mod 现有决议文件均不带 icon 字段，此处保持一致；
+#       如需图标，可加 icon = <sprite_name>（对应 interface/*.gfx 里的 spriteType）。
+# 效果名来源：set_estate_privilege（原版 85 处）/ remove_estate_privilege（171 处）
+#            add_government_reform（工作区 history/countries/*.txt）
+#
+# 著书机制分工（v2：单一特权版）：
+#   · 特权 ACG_MEC_HNA_writing 挂在 **贵族阶层 estate_nobles**，是「著书中」的唯一标记
+#   · 每本书另加一个带 duration 的国家修正（ACG_MEC_HNA_wdb_1..5）承载差异化 Debuff
+#     → 即使特权因阶层被禁而挂不上，书本身的机制仍照常运作
+#   · 互斥靠 flag HNA_writing_any，不依赖特权是否挂上
+# ============================================================
+country_decisions = {
+
+	# --------------------------------------------------------
+	# 1. 采纳「稗田家史笔」政体 → 解锁阿求成长系统
+	# --------------------------------------------------------
+	ACG_MEC_HNA_adopt_chronicle_reform = {
+		potential = {
+			tag = HNA
+			NOT = { has_reform = ACG_MEC_HNA_chronicle_reform }
+		}
+		allow = {
+			has_reform = Touhou_Republic_government_reform
+			prestige = 10
+		}
+		effect = {
+			add_government_reform = ACG_MEC_HNA_chronicle_reform
+			add_prestige = -20
+			set_country_flag = HNA_akyuu_growth_enabled
+			country_event = { id = ACG_MEC_HNA_events.50 }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	# --------------------------------------------------------
+	# 2. 召阿求出任将领（决议生成的稗田阿求将领）
+	# --------------------------------------------------------
+	ACG_MEC_HNA_summon_akyuu = {
+		potential = {
+			tag = HNA
+			has_reform = ACG_MEC_HNA_chronicle_reform
+			NOT = { has_leader = "Hieda no Akyuu" }
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			# 初始化成长变量（只做一次）
+			if = {
+				limit = { NOT = { has_country_flag = HNA_akyuu_init } }
+				set_country_flag = HNA_akyuu_init
+				set_variable = { which = HNA_akyuu_growth_points value = 0 }
+				set_variable = { which = HNA_akyuu_tier value = 0 }
+				set_variable = { which = HNA_akyuu_exp value = 0 }
+			}
+			HNA_akyuu_rebuild_general_effect = yes
+			country_event = { id = ACG_MEC_HNA_events.40 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# --------------------------------------------------------
+	# 3. 整军：按当前成长点手动重建阿求（兜底 + 玩家自主刷新）
+	# --------------------------------------------------------
+	ACG_MEC_HNA_refit_akyuu = {
+		potential = {
+			tag = HNA
+			has_reform = ACG_MEC_HNA_chronicle_reform
+			has_leader = "Hieda no Akyuu"
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = HNA_akyuu_refit_cd }
+				had_country_flag = { flag = HNA_akyuu_refit_cd days = 365 }
+			}
+		}
+		effect = {
+			clr_country_flag = HNA_akyuu_refit_cd
+			set_country_flag = HNA_akyuu_refit_cd
+			HNA_akyuu_rebuild_general_effect = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# --------------------------------------------------------
+	# 4-8. 五本着书（共用单一贵族特权 ACG_MEC_HNA_writing）
+	# --------------------------------------------------------
+	ACG_MEC_HNA_write_1 = {
+		potential = {
+			tag = HNA
+			NOT = { has_country_flag = HNA_book_1_done }
+		}
+		allow = {
+			HNA_can_write_1_trigger = yes
+			NOT = { has_country_flag = HNA_writing_any }
+		}
+		effect = {
+			set_country_flag = HNA_writing_any
+			set_country_flag = HNA_writing_1_active
+			set_estate_privilege = ACG_MEC_HNA_writing
+			add_country_modifier = { name = ACG_MEC_HNA_wdb_1 duration = 1095 }
+			set_variable = { which = HNA_writing_1_years value = 0 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ACG_MEC_HNA_write_2 = {
+		potential = {
+			tag = HNA
+			NOT = { has_country_flag = HNA_book_2_done }
+		}
+		allow = {
+			HNA_can_write_2_trigger = yes
+			NOT = { has_country_flag = HNA_writing_any }
+		}
+		effect = {
+			set_country_flag = HNA_writing_any
+			set_country_flag = HNA_writing_2_active
+			set_estate_privilege = ACG_MEC_HNA_writing
+			add_country_modifier = { name = ACG_MEC_HNA_wdb_2 duration = 1825 }
+			set_variable = { which = HNA_writing_2_years value = 0 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ACG_MEC_HNA_write_3 = {
+		potential = {
+			tag = HNA
+			NOT = { has_country_flag = HNA_book_3_done }
+		}
+		allow = {
+			HNA_can_write_3_trigger = yes
+			NOT = { has_country_flag = HNA_writing_any }
+		}
+		effect = {
+			set_country_flag = HNA_writing_any
+			set_country_flag = HNA_writing_3_active
+			set_estate_privilege = ACG_MEC_HNA_writing
+			add_country_modifier = { name = ACG_MEC_HNA_wdb_3 duration = 2190 }
+			set_variable = { which = HNA_writing_3_years value = 0 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ACG_MEC_HNA_write_4 = {
+		potential = {
+			tag = HNA
+			NOT = { has_country_flag = HNA_book_4_done }
+		}
+		allow = {
+			HNA_can_write_4_trigger = yes
+			NOT = { has_country_flag = HNA_writing_any }
+		}
+		effect = {
+			set_country_flag = HNA_writing_any
+			set_country_flag = HNA_writing_4_active
+			set_estate_privilege = ACG_MEC_HNA_writing
+			add_country_modifier = { name = ACG_MEC_HNA_wdb_4 duration = 1460 }
+			set_variable = { which = HNA_writing_4_years value = 0 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ACG_MEC_HNA_write_5 = {
+		potential = {
+			tag = HNA
+			NOT = { has_country_flag = HNA_book_5_done }
+		}
+		allow = {
+			HNA_can_write_5_trigger = yes
+			NOT = { has_country_flag = HNA_writing_any }
+		}
+		effect = {
+			set_country_flag = HNA_writing_any
+			set_country_flag = HNA_writing_5_active
+			set_estate_privilege = ACG_MEC_HNA_writing
+			add_country_modifier = { name = ACG_MEC_HNA_wdb_5 duration = 2920 }
+			set_variable = { which = HNA_writing_5_years value = 0 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

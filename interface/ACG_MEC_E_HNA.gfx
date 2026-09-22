@@ -1,0 +1,96 @@
+# ============================================================
+# 稗田阿求：图片绑定（spriteType）
+# ------------------------------------------------------------
+# 绑定法来源：ACG1 interface/IMS_adviser.gfx:269-272
+#     spriteType = { name = "GFX_LLy3"  texturefile = "gfx//interface//advisors//LLy3.dds" }
+#   → 游戏内用 £LLy3£ 内联显示；name 必须带 GFX_ 前缀才可被 £…£ 引用。
+#
+# 【需要你提供的图片｜尺寸均为实测值】
+#   1) 阿求内联图标（事件描述 / 决议 / 特质 tooltip 内显示）
+#        spriteType : GFX_HNA_akyuu
+#        文件       : gfx/interface/HNA/akyuu_icon.dds
+#        尺寸       : 75 x 75   （对标 ACG1 gfx/interface/advisors/LLy3.dds = 75x75）
+#        格式       : DDS，DXT5 + alpha，无 mipmap
+#   2) 任务树图标 12 张
+#        spriteType : HNA_mission_1 … HNA_mission_12   【注意：任务图标不带 GFX_ 前缀】
+#        文件       : gfx/interface/missions/HNA/HNA_mission_N.dds
+#        尺寸       : 59 x 63   （原版 gfx/interface/missions/ 实测，与 ACG1
+#                                gfx/interface/missions/LLF_icon_1.dds 同为 59x63）
+#   3) 政府改革图标 1 张
+#        spriteType : GFX_ACG_MEC_HNA_reform
+#        文件       : gfx/interface/government_reform_icons/ACG_MEC_HNA/ACG_MEC_HNA_reform.dds
+#        尺寸       : 57 x 57   （实测工作区
+#                                gfx/interface/government_reform_icons/ACG_MEC_E_BLS/ACG_MEC_E_BLS_government_reform.dds = 57x57）
+#
+# 图片缺失时只会显示缺图占位，不会导致崩溃。
+# ============================================================
+
+spriteTypes = {
+
+	# ---- 1. 阿求内联图标（£HNA_akyuu£） ----
+	spriteType = {
+		name = "GFX_HNA_akyuu"
+		texturefile = "gfx//interface//HNA//akyuu_icon.dds"
+	}
+
+	# ---- 2. 任务树图标（12 张） ----
+	spriteType = {
+		name = "HNA_mission_1"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_1.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_2"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_2.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_3"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_3.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_4"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_4.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_5"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_5.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_6"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_6.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_7"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_7.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_8"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_8.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_9"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_9.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_10"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_10.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_11"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_11.dds"
+	}
+	spriteType = {
+		name = "HNA_mission_12"
+		texturefile = "gfx//interface//missions//HNA//HNA_mission_12.dds"
+	}
+
+	# ---- 3. 政府改革图标 ----
+	# 【命名铁律】政府改革的 icon = "X" 查的是 spriteType「government_reform_X」，
+	#   不是「GFX_X」。证据：工作区 interface/BLS_reform_icons.gfx:4
+	#   name = "government_reform_ACG_MEC_E_BLS_reform_1"
+	#   对应 common/government_reforms/BLS_government_reforms.txt:3 icon = "ACG_MEC_E_BLS_reform_1"
+	#   （NNM_reform_icons.gfx 同规律）
+	spriteType = {
+		name = "government_reform_ACG_MEC_HNA_reform"
+		texturefile = "gfx//interface//government_reform_icons//ACG_MEC_HNA//ACG_MEC_HNA_reform.dds"
+	}
+}

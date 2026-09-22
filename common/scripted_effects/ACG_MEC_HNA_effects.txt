@@ -1,0 +1,525 @@
+# ============================================================
+# 稗田阿求：成长 / 重建 / 著书计时 核心脚本
+# ============================================================
+#
+# 【关键限制｜必须先读】
+#   EU4 无法把变量的数值代入 define_general / create_general 的 pip 字段。
+#   证据：
+#     - 原版只提供 trigger_value:<name> 这种取值语法，且只用于 set_variable /
+#       export_to_variable（原版 events/center_of_revolution_events.txt:203、
+#       ACG1 common/scripted_effects/miku_creation_report_effects.txt:80-91）。
+#     - 原版 create_general 的 pip 来自 scripted_effect 的 $param$，也就是
+#       「调用方传字面量」（原版 common/scripted_effects/00_scripted_effects.txt:6530
+#       create_general_with_pips）。
+#   ⇒ 结论：pip 必须硬编码成阶梯表；变量只决定「到第几级」。
+#
+# 【突破表】成长点每 20 点升 1 级，共 16 级，第 16 级 = 320 点 = 100/100/100/100
+#   等级  0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16
+#   火  2    7   12   17   22   28   34   40   47   54   61   68   75   82   89   95  100
+#   冲  2    7   12   17   22   28   34   40   47   54   61   68   75   82   89   95  100
+#   机  3    8   13   18   23   29   35   41   48   55   62   69   76   83   90   96  100
+#   围  2    6   11   16   21   27   33   39   46   53   60   67   74   81   88   94  100
+#
+# 【check_variable 语义】check_variable = { which = X value = N } 表示 X >= N
+#   证据：本地 Wiki 变量.html「这里是你该如何检查变量值是5或者更多」（WIKI_VERIFIED）；
+#         ACG1 events/ACG_advise_2_events.txt:1001-1005「需要施法经验15点以上」（PROJECT_VERIFIED）
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 重建阿求（kill + 按等级 define）
+# ------------------------------------------------------------
+HNA_akyuu_rebuild_general_effect = {
+	if = {
+		limit = { has_leader = "Hieda no Akyuu" }
+		kill_leader = { type = "Hieda no Akyuu" }
+	}
+	if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 16 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 100
+			shock = 100
+			manuever = 100
+			siege = 100
+			trait = akyuu_chronicler_peak_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 15 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 95
+			shock = 95
+			manuever = 96
+			siege = 94
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 14 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 89
+			shock = 89
+			manuever = 90
+			siege = 88
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 13 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 82
+			shock = 82
+			manuever = 83
+			siege = 81
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 12 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 75
+			shock = 75
+			manuever = 76
+			siege = 74
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 11 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 68
+			shock = 68
+			manuever = 69
+			siege = 67
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 10 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 61
+			shock = 61
+			manuever = 62
+			siege = 60
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 9 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 54
+			shock = 54
+			manuever = 55
+			siege = 53
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 8 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 47
+			shock = 47
+			manuever = 48
+			siege = 46
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 7 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 40
+			shock = 40
+			manuever = 41
+			siege = 39
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 6 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 34
+			shock = 34
+			manuever = 35
+			siege = 33
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 5 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 28
+			shock = 28
+			manuever = 29
+			siege = 27
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 4 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 22
+			shock = 22
+			manuever = 23
+			siege = 21
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 3 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 17
+			shock = 17
+			manuever = 18
+			siege = 16
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 2 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 12
+			shock = 12
+			manuever = 13
+			siege = 11
+			trait = akyuu_chronicler_personality
+		}
+	}
+	else_if = {
+		limit = { check_variable = { which = HNA_akyuu_tier value = 1 } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 7
+			shock = 7
+			manuever = 8
+			siege = 6
+			trait = akyuu_chronicler_personality
+		}
+	}
+	# 等级 0：初始状态 2/2/3/2
+	if = {
+		limit = { NOT = { check_variable = { which = HNA_akyuu_tier value = 1 } } }
+		define_general = {
+			name = "Hieda no Akyuu"
+			female = yes
+			fire = 2
+			shock = 2
+			manuever = 3
+			siege = 2
+			trait = akyuu_chronicler_personality
+		}
+	}
+}
+
+
+# ------------------------------------------------------------
+# 突破等级检查（用独立 if 而非 else_if，一次给很多点也能一次跨多级）
+# ------------------------------------------------------------
+HNA_akyuu_check_tier_effect = {
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 1 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 20 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 1 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 2 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 40 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 2 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 3 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 60 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 3 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 4 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 80 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 4 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 5 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 100 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 5 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 6 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 120 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 6 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 7 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 140 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 7 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 8 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 160 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 8 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 9 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 180 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 9 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 10 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 200 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 10 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 11 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 220 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 11 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 12 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 240 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 12 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 13 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 260 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 13 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 14 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 280 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 14 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 15 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 300 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 15 }
+		HNA_akyuu_rebuild_general_effect = yes
+		country_event = { id = ACG_MEC_HNA_events.1 days = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { which = HNA_akyuu_tier value = 16 } }
+			check_variable = { which = HNA_akyuu_growth_points value = 320 }
+		}
+		set_variable = { which = HNA_akyuu_tier value = 16 }
+		HNA_akyuu_rebuild_general_effect = yes
+	}
+	# 四维圆满
+	if = {
+		limit = {
+			check_variable = { which = HNA_akyuu_tier value = 16 }
+			NOT = { has_country_flag = HNA_akyuu_peak_flag }
+		}
+		set_country_flag = HNA_akyuu_peak_flag
+		add_country_modifier = {
+			name = ACG_MEC_HNA_peak_modifier
+			duration = -1
+		}
+		add_prestige = 50
+		country_event = { id = ACG_MEC_HNA_events.30 days = 1 }
+	}
+}
+
+
+# ------------------------------------------------------------
+# 发放成长点（$amount$ 为成长点数）
+# ------------------------------------------------------------
+HNA_akyuu_grant_growth_effect = {
+	change_variable = { which = HNA_akyuu_growth_points value = $amount$ }
+	change_variable = { which = HNA_akyuu_exp value = $amount$ }
+	HNA_akyuu_check_tier_effect = yes
+}
+
+
+# ------------------------------------------------------------
+# 战斗成长（由 on_battle_won_country 调用）
+# 防刷：仅陆战获胜、仅阿求在役、90 天冷却
+# ------------------------------------------------------------
+HNA_akyuu_battle_growth_effect = {
+	# 冷却到期则清 flag（had_country_flag 写法来源：工作区 decisions/ACG_MEC_CHN_decisions.txt:44）
+	if = {
+		limit = {
+			has_country_flag = HNA_akyuu_battle_cd
+			had_country_flag = { flag = HNA_akyuu_battle_cd days = 90 }
+		}
+		clr_country_flag = HNA_akyuu_battle_cd
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = HNA_akyuu_battle_cd }
+			NOT = { has_country_flag = HNA_akyuu_peak_flag }
+		}
+		set_country_flag = HNA_akyuu_battle_cd
+		HNA_akyuu_grant_growth_effect = { amount = 1 }
+	}
+}
+
+
+# ------------------------------------------------------------
+# 著书计时（由 on_yearly_pulse 调用，1 年 +1）
+# 说明：原版 on_action 无 on_monthly_pulse，故用年度脉冲；写成「年」为单位。
+# ------------------------------------------------------------
+HNA_akyuu_writing_tick_effect = {
+	if = {
+		limit = { has_country_flag = HNA_writing_1_active }
+		change_variable = { which = HNA_writing_1_years value = 1 }
+	}
+	if = {
+		limit = { has_country_flag = HNA_writing_2_active }
+		change_variable = { which = HNA_writing_2_years value = 1 }
+	}
+	if = {
+		limit = { has_country_flag = HNA_writing_3_active }
+		change_variable = { which = HNA_writing_3_years value = 1 }
+	}
+	if = {
+		limit = { has_country_flag = HNA_writing_4_active }
+		change_variable = { which = HNA_writing_4_years value = 1 }
+	}
+	if = {
+		limit = { has_country_flag = HNA_writing_5_active }
+		change_variable = { which = HNA_writing_5_years value = 1 }
+	}
+
+	# ---- 结算：到点则移除特权 + 触发完成事件 ----
+	if = {
+		limit = {
+			has_country_flag = HNA_writing_1_active
+			check_variable = { which = HNA_writing_1_years value = 3 }
+		}
+		remove_estate_privilege = ACG_MEC_HNA_writing
+		clr_country_flag = HNA_writing_1_active
+		clr_country_flag = HNA_writing_any
+		set_variable = { which = HNA_writing_1_years value = 0 }
+		country_event = { id = ACG_MEC_HNA_events.10 days = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = HNA_writing_2_active
+			check_variable = { which = HNA_writing_2_years value = 5 }
+		}
+		remove_estate_privilege = ACG_MEC_HNA_writing
+		clr_country_flag = HNA_writing_2_active
+		clr_country_flag = HNA_writing_any
+		set_variable = { which = HNA_writing_2_years value = 0 }
+		country_event = { id = ACG_MEC_HNA_events.11 days = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = HNA_writing_3_active
+			check_variable = { which = HNA_writing_3_years value = 6 }
+		}
+		remove_estate_privilege = ACG_MEC_HNA_writing
+		clr_country_flag = HNA_writing_3_active
+		clr_country_flag = HNA_writing_any
+		set_variable = { which = HNA_writing_3_years value = 0 }
+		country_event = { id = ACG_MEC_HNA_events.12 days = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = HNA_writing_4_active
+			check_variable = { which = HNA_writing_4_years value = 4 }
+		}
+		remove_estate_privilege = ACG_MEC_HNA_writing
+		clr_country_flag = HNA_writing_4_active
+		clr_country_flag = HNA_writing_any
+		set_variable = { which = HNA_writing_4_years value = 0 }
+		country_event = { id = ACG_MEC_HNA_events.13 days = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = HNA_writing_5_active
+			check_variable = { which = HNA_writing_5_years value = 8 }
+		}
+		remove_estate_privilege = ACG_MEC_HNA_writing
+		clr_country_flag = HNA_writing_5_active
+		clr_country_flag = HNA_writing_any
+		set_variable = { which = HNA_writing_5_years value = 0 }
+		country_event = { id = ACG_MEC_HNA_events.14 days = 1 }
+	}
+}

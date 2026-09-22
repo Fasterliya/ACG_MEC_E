@@ -1,0 +1,33 @@
+# ============================================================
+# 稗田阿求：政体改革「稗田家史笔」
+# ------------------------------------------------------------
+# 作用：解锁阿求的将领成长系统（成长总开关）+ 基础 buff。
+# 开关判定不使用 on_activate（原版 common/government_reforms/ 内无 on_activate），
+# 而是直接用 has_reform = ACG_MEC_HNA_chronicle_reform 做门禁 —— 改革被换掉即自动关闭，
+# 不需要额外 flag 维护。
+#
+# 写法来源：工作区 common/government_reforms/BLS_government_reforms.txt
+#          （lock_level_when_selected / icon / potential / valid_for_* / modifiers）
+# 可选中性：本改革同时被追加到本 mod 的 common/governments/reform_levels_republic.txt
+#          的 Regime 级 reforms 列表，因此可被 add_government_reform 正常授予。
+# ============================================================
+
+ACG_MEC_HNA_chronicle_reform = {
+	lock_level_when_selected = yes
+	icon = "ACG_MEC_HNA_reform"
+	potential = {
+		tag = HNA
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		reform_progress_growth = 0.10
+		development_cost = -0.05
+		yearly_innovativeness = 0.25
+		global_institution_spread = 0.10
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}
