@@ -8,36 +8,6 @@
 # 键名白名单来自原版 1.37.5 与 ACG1 的实际用例（见文件内注释）。
 # ============================================================
 
-# ---------- 著书期间：各书专属 Debuff（带 duration，自动到期，自愈） ----------
-# 通用著书 Debuff 写在特权 ACG_MEC_HNA_writing 的 penalties 里；
-# 这里放每本书额外的差异化代价。
-ACG_MEC_HNA_wdb_1 = {                   #《求闻史纪》3 年
-	development_cost = 0.15
-	build_cost = 0.15
-	technology_cost = 0.05
-}
-ACG_MEC_HNA_wdb_2 = {                   #《幻想乡缘起》5 年
-	land_morale = -0.05
-	diplomatic_reputation = -1
-	build_cost = 0.10
-}
-ACG_MEC_HNA_wdb_3 = {                   #《魔法使通信》6 年
-	pulse_magic_exp_get_modifier = -10  #施法经验月增下降（Rmod 已有魔法键）
-	technology_cost = 0.10
-	global_unrest = 2
-}
-ACG_MEC_HNA_wdb_4 = {                   #《战术要略》4 年
-	land_morale = -0.10
-	reinforce_speed = -0.10
-	discipline = -0.02
-}
-ACG_MEC_HNA_wdb_5 = {                   #《稗田家秘录》8 年
-	country_admin_power = -1
-	country_diplomatic_power = -1
-	country_military_power = -1
-	development_cost = 0.20
-}
-
 # ---------- 奖励方向 A：发展 ----------
 ACG_MEC_HNA_reward_dev_1 = {            #10 年
 	development_cost = -0.15            #ACG1 chino_buff_1_2 用例

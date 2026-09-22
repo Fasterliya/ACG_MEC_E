@@ -1,29 +1,29 @@
 ﻿l_english:
  # ===== z0u?–BlÿS†˜yr( =====
- akyuu_chronicler_personality: "òSr"
- desc_akyuu_chronicler_personality: "£HNA_akyuu£\nz0u?–BlåNòS¶RKNr°‹ðb5–KN‹N0yYNb‡s†˜„vè–ôffÍ‘=cëXlÿIeÎW¦Nôf:NwÃu0"
+ akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\nòSr"
+ desc_akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\nz0u?–BlåNòS¶RKNr°‹ðb5–KN‹N0yYNb‡s†˜„vè–ôffÍ‘=cëXlÿIeÎW¦Nôf:NwÃu0"
  akyuu_chronicler_peak_personality: "‰^ó`aNòSr"
  desc_akyuu_chronicler_peak_personality: "£HNA_akyuu£\nŒvbKNTÿ?–Bl„vrNòTNQêS=f.Oû•0yY|QkphV0²QûQ0:g¨RNIeÎWKNSÿNb‡sKN›QàeYNïSó0àeÎWNïSN0"
  # ===== z0u?–Blÿ?eSO9ei— =====
  ACG_MEC_HNA_chronicle_reform: "z0u¶RòSr"
  ACG_MEC_HNA_chronicle_reform_desc: "z0u¶RNãNgbrÿ:N‰^ó`aNt^ªu‹N0SVòSrb:NýV?eKN,gÿ?–Bl¿OïSSb5–Á‰û•0T›ÕlwncNv^™QeQfN?zÿ1u=fåeÊv¾|Û0"
- # ===== z0u?–Blÿ³Q®‹ =====
- ACG_MEC_HNA_adopt_chronicle_reform: "nxËzz0u¶RòSrKN?e"
+ # ===== z0u?–Blÿ³Q®‹ÿ.•TÄ‰ƒÿ<key>_title + <key>_desc	ÿ=====
+ ACG_MEC_HNA_adopt_chronicle_reform_title: "nxËzz0u¶RòSrKN?e"
  ACG_MEC_HNA_adopt_chronicle_reform_desc: "S°‹ðNwnc¬bGS:NýV?e9h,g0dkT?–Bl„vÁ‰û•NW„ðýSS:Nwck„v›RÏ‘0"
- ACG_MEC_HNA_summon_akyuu: "ìSz0u?–BlúQûNS†˜"
+ ACG_MEC_HNA_summon_akyuu_title: "ìSz0u?–BlúQûNS†˜"
  ACG_MEC_HNA_summon_akyuu_desc: "?–Bl,g:N‡eºNÿ6qòSr—²N†S¹eïSáOžR0÷‹yY²N4N›Q5–ÿ°‹Nwck„vb‰N0"
- ACG_MEC_HNA_refit_akyuu: ":N?–Blte›Q"
+ ACG_MEC_HNA_refit_akyuu_title: ":N?–Blte›Q"
  ACG_MEC_HNA_refit_akyuu_desc: "9hnc?–BlSVMR=tïy„vÁ‰û•Í‘°etevQèòfÿOvQb›RNÁ‰û•øv&r0"
  ACG_MEC_HNA_refit_cd_tooltip: "ÝN!kte›QòTánNt^"
- ACG_MEC_HNA_write_1: "W„ð0Blû•òSªu0"
+ ACG_MEC_HNA_write_1_title: "W„ð0Blû•òSªu0"
  ACG_MEC_HNA_write_1_desc: "?–Blgbrt^ªu‹N0W„fNgô•?e¡R0%„.NfR=g†vOßÿ†S	Nt^wbfN0"
- ACG_MEC_HNA_write_2: "W„ð0‰^ó`aNw0"
+ ACG_MEC_HNA_write_2_title: "W„ð0‰^ó`aNw0"
  ACG_MEC_HNA_write_2_desc: "wncÎ˜WN–Y*`.Obÿ—åNT››R:NíQ0W„fN”Nt^ÿgô•›Q?eÈa.`0Y²N1YðX0"
- ACG_MEC_HNA_write_3: "W„ð0T›ÕlOáO0"
+ ACG_MEC_HNA_write_3_title: "W„ð0T›ÕlOáO0"
  ACG_MEC_HNA_write_3_desc: "NT›ÕlOŽVØº‹S0W„fNmQt^ÿgô•ËeÕlÏuŒšïy=tjPÞnÿlÅ`¦NÁ‰nm¨R0"
- ACG_MEC_HNA_write_4: "W„ð0b=g‰eu0"
+ ACG_MEC_HNA_write_4_title: "W„ð0b=g‰eu0"
  ACG_MEC_HNA_write_4_desc: "S²N«ŽÏu†S„vb5–tet:NuQfN0W„fNÛVt^ÿgô•ëXlNeˆXT†v×SqVÍT0"
- ACG_MEC_HNA_write_5: "W„ð0z0u¶RØyUV0"
+ ACG_MEC_HNA_write_5_title: "W„ð0z0u¶RØyUV0"
  ACG_MEC_HNA_write_5_desc: "z0u¶RgÈuKNfN0W„fNkQt^ÿ—>PKSÃV›Rÿ?e¡RhQb—ßÞnÿbfNRSTYuR—òS0"
  # ===== z0u?–Blÿ‹NöN =====
  ACG_MEC_HNA_events.1.t: "?–Bl„vz4x"
@@ -76,39 +76,45 @@
  ACG_MEC_HNA_reward_magic_tech: "òSr·ft"
  ACG_MEC_HNA_chronicle_permanent: "z0u¶RØyUV"
  ACG_MEC_HNA_peak_modifier: "‰^ó`aNòSr"
- # ===== z0u?–BlÿW„fNyrCg =====
- ACG_MEC_HNA_writing_1: "W„ð0Blû•òSªu0"
- ACG_MEC_HNA_writing_1_desc: "?–Blck(Wt^ªu‹NÿÑSUS±‚9 +15%0ú^Qr±‚9 +15%0ÑyŽb±‚9 +5%0"
- ACG_MEC_HNA_writing_2: "W„ð0‰^ó`aNw0"
- ACG_MEC_HNA_writing_2_desc: "?–Blck(WwncÎ˜WÿF–›QëXl -5%0Y²NðX‰Š -10ú^Qr±‚9 +10%0"
- ACG_MEC_HNA_writing_3: "W„ð0T›ÕlOáO0"
- ACG_MEC_HNA_writing_3_desc: "?–Blck(WNT›ÕlOº‹SÿËeÕlÏuŒšgžX -100ÑyŽb±‚9 +10%0hQýVÛSqN +20"
- ACG_MEC_HNA_writing_4: "W„ð0b=g‰eu0"
- ACG_MEC_HNA_writing_4_desc: "?–Blck(WtetuQfNÿF–›QëXl -10%0eˆXT¦^ -10%0­‹Ãu¦^ -2%0"
- ACG_MEC_HNA_writing_5: "W„ð0z0u¶RØyUV0"
- ACG_MEC_HNA_writing_5_desc: "?–Blck(W™Qz0u¶RgÈuKNfNÿLˆ?e0Y²N0›Q‹N¹ppegžXT -1ÿÑSUS±‚9 +20%0"
- # ===== z0u?–BlÿûN¡Rh =====
- HNA_missions_1_1: "z0u¶R„v†˜0W"
- HNA_missions_1_1_desc: "z0u¶RNãNESŽN‰RÑy³u0HQ©‹ê¶R†˜0WÌR¶^wegÿ¹e	g°‹ðÖNºN„vYOÕˆ0"
- HNA_missions_1_2: "”NYZwK„"
- HNA_missions_1_2_desc: "òSfN—	gïS°‹KNºN0ïS°‹KN0W0»lNóS‰	g”NYÏP7h„vZwK„0"
- HNA_missions_1_3: "fN“^NfR‚"
- HNA_missions_1_3_desc: "(WýÎWú^ËzfR‚ÿ›O?–Blåg–xQM|0tetçe?z0"
- HNA_missions_1_4: "pS7RåTJW"
- HNA_missions_1_4_desc: "	gåTJWN^Æ–ÿfN?z¹eýw.O„b)YN0"
- HNA_missions_1_5: "ÎW2–N»l‰R"
- HNA_missions_1_5_desc: "òSr—	g‰RRKN0W0îO»l˜RrN%„?bÿOƒX…Qàe^†0"
- HNA_missions_1_6: "‰RÑy³u„vFUï"
- HNA_missions_1_6_desc: "‰RÑy³u4Nwmÿ'–kïS0¾‹'håNZw0'0"
- HNA_missions_1_7: "šNs^R„vËz³"
- HNA_missions_1_7_desc: "òSfNå‚êS™QNÎWÿÈuvz*Y„…0(Wa'Y)RÖS—V,rŒNWWW0W0"
- HNA_missions_1_8: "WlšKNï"
- HNA_missions_1_8_desc: "Wlš=fçeNLu„v-NÃV0?–Blå‚‰°‹ðÙ*NöeãNÿÈu‰˜²Nêp0RWlš0"
- HNA_missions_1_9: "0Blû•òSªu0"
- HNA_missions_1_9_desc: ",rNèt^ªu‹NbfNÿz0u¶RKNTËYW„0"
- HNA_missions_1_10: "0‰^ó`aNw0"
- HNA_missions_1_10_desc: "Î˜WN–Y*`„vwncŒRbÿ?–Bl„vÆ‰LuNQP–ŽNºNô•0"
- HNA_missions_1_11: "T›ÕlNòSr"
- HNA_missions_1_11_desc: "wnc—‰T››R„víQnc0ïy=tT››RNËeÕlÏuŒšÿ©‹òSrNT›Õl’N:NhˆÌ‘0"
- HNA_missions_1_12: "‰^ó`aNòSr"
- HNA_missions_1_12_desc: "°‹NNRÿtã‰NRÿgÈub:NNR0?–Bl„vÁ‰û•òT³åN=e‘dNè.ONKNfN0"
+ # ===== z0u?–BlÿW„fNyrCgÿUSNyrCgÿc5Ïe6–BS	ÿ=====
+ ACG_MEC_HNA_writing: "z0u?–BlW„fN-N"
+ ACG_MEC_HNA_writing_desc: "?–Blck(WgbrW„fNÿ?e¡RN%„.àVdkßÞnÿÑSUS±‚9 +10%0ÑyŽb±‚9 +5%0fN?zŒRbTdkyrCgOê¨Rã‰d–0"
+ # ===== z0u?–BlÿTfNN^S Debuff =====
+ ACG_MEC_HNA_wdb_1: "W„ð0Blû•òSªu0"
+ ACG_MEC_HNA_wdb_1_desc: "t^ªu‹NÿÑSUS±‚9 +15%0ú^Qr±‚9 +15%0ÑyŽb±‚9 +5%0"
+ ACG_MEC_HNA_wdb_2: "W„ð0‰^ó`aNw0"
+ ACG_MEC_HNA_wdb_2_desc: "wncÎ˜WÿF–›QëXl -5%0Y²NðX‰Š -10ú^Qr±‚9 +10%0"
+ ACG_MEC_HNA_wdb_3: "W„ð0T›ÕlOáO0"
+ ACG_MEC_HNA_wdb_3_desc: "NT›ÕlOº‹SÿËeÕlÏuŒšgžX -100ÑyŽb±‚9 +10%0hQýVÛSqN +20"
+ ACG_MEC_HNA_wdb_4: "W„ð0b=g‰eu0"
+ ACG_MEC_HNA_wdb_4_desc: "tetuQfNÿF–›QëXl -10%0eˆXT¦^ -10%0­‹Ãu¦^ -2%0"
+ ACG_MEC_HNA_wdb_5: "W„ð0z0u¶RØyUV0"
+ ACG_MEC_HNA_wdb_5_desc: "z0u¶RgÈuKNfNÿLˆ?e0Y²N0›Q‹N¹ppegžXT -1ÿÑSUS±‚9 +20%0"
+ # ===== z0u?–BlÿûN¡Rhÿ.•TÄ‰ƒÿ<ûN¡RT>_title + <ûN¡RT>_desc	ÿ=====
+ # ----- ,r 2 Rÿslot = 2	ÿÿ…Q?e / ÑSUS / ú^Qr -----
+ HNA_missions_2_1_title: "z0u¶R„v†˜0W"
+ HNA_missions_2_1_desc: "z0u¶RNãNESŽN‰RÑy³u0HQ©‹ê¶R†˜0WÌR¶^wegÿ¹e	g°‹ðÖNºN„vYOÕˆ0"
+ HNA_missions_2_2_title: "”NYZwK„"
+ HNA_missions_2_2_desc: "òSfN—	gïS°‹KNºN0ïS°‹KN0W0»lNóS‰	g”NYÏP7h„vZwK„0"
+ HNA_missions_2_3_title: "fN“^NfR‚"
+ HNA_missions_2_3_desc: "(WýÎWú^ËzfR‚ÿ›O?–Blåg–xQM|0tetçe?z0"
+ HNA_missions_2_4_title: "pS7RåTJW"
+ HNA_missions_2_4_desc: "	gåTJWN^Æ–ÿfN?z¹eýw.O„b)YN0"
+ # ----- ,r 3 Rÿslot = 3	ÿÿ›Q‹N / a'Y)R -----
+ HNA_missions_3_1_title: "ÎW2–N»l‰R"
+ HNA_missions_3_1_desc: "òSr—	g‰RRKN0W0îO»l˜RrN%„?bÿOƒX…Qàe^†0"
+ HNA_missions_3_2_title: "‰RÑy³u„vFUï"
+ HNA_missions_3_2_desc: "‰RÑy³u4Nwmÿ'–kïS0¾‹'håNZw0'0"
+ HNA_missions_3_3_title: "šNs^R„vËz³"
+ HNA_missions_3_3_desc: "òSfNå‚êS™QNÎWÿÈuvz*Y„…0(Wa'Y)RÖS—V,rŒNWWW0W0"
+ HNA_missions_3_4_title: "WlšKNï"
+ HNA_missions_3_4_desc: "Wlš=fçeNLu„v-NÃV0?–Blå‚‰°‹ðÙ*NöeãNÿÈu‰˜²Nêp0RWlš0"
+ # ----- ,r 4 Rÿslot = 4	ÿÿW„fN / T›Õl -----
+ HNA_missions_4_1_title: "0Blû•òSªu0"
+ HNA_missions_4_1_desc: ",rNèt^ªu‹NbfNÿz0u¶RKNTËYW„0"
+ HNA_missions_4_2_title: "0‰^ó`aNw0"
+ HNA_missions_4_2_desc: "Î˜WN–Y*`„vwncŒRbÿ?–Bl„vÆ‰LuNQP–ŽNºNô•0"
+ HNA_missions_4_3_title: "T›ÕlNòSr"
+ HNA_missions_4_3_desc: "wnc—‰T››R„víQnc0ïy=tT››RNËeÕlÏuŒšÿ©‹òSrNT›Õl’N:NhˆÌ‘0"
+ HNA_missions_4_4_title: "‰^ó`aNòSr"
+ HNA_missions_4_4_desc: "°‹NNRÿtã‰NRÿgÈub:NNR0?–Bl„vÁ‰û•òT³åN=e‘dNè.ONKNfN0"

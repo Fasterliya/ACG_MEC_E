@@ -1,30 +1,21 @@
 l_english:
  # ===== 稗田阿求：将领特质 =====
- akyuu_chronicler_personality: "史笔"
- desc_akyuu_chronicler_personality: "£HNA_akyuu£\n稗田阿求以史家之笔记述战阵之事。她所率领的部队更易重振士气，攻城亦更为老练。"
+ akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\n史笔"
+ desc_akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\n稗田阿求以史家之笔记述战阵之事。她所率领的部队更易重振士气，攻城亦更为老练。"
  akyuu_chronicler_peak_personality: "幻想乡史笔"
  desc_akyuu_chronicler_peak_personality: "£HNA_akyuu£\n百战之后，阿求的笔下已不再只是传闻。她兼通火器、冲击、机动与攻城之道，所率之军无处不可至、无城不可下。"
  # ===== 稗田阿求：政体改革 =====
  ACG_MEC_HNA_chronicle_reform: "稗田家史笔"
  ACG_MEC_HNA_chronicle_reform_desc: "稗田家世代执笔，为幻想乡编年纪事。当史笔成为国政之本，阿求便可将战阵见闻、魔法考据一并写入书稿，由是日益精进。"
- # ===== 稗田阿求：决议 =====
- ACG_MEC_HNA_adopt_chronicle_reform: "确立稗田家史笔之政"
+ # ===== 稗田阿求：决议（键名规范：<key>_title + <key>_desc）=====
+ # v3：5 条「著书」决议已删除 —— 著书改为玩家在贵族阶层界面自行授予特权
+ ACG_MEC_HNA_adopt_chronicle_reform_title: "确立稗田家史笔之政"
  ACG_MEC_HNA_adopt_chronicle_reform_desc: "将记述与考据抬升为国政根本。此后阿求的见闻与著述都将化为真正的力量。"
- ACG_MEC_HNA_summon_akyuu: "召稗田阿求出任将领"
+ ACG_MEC_HNA_summon_akyuu_title: "召稗田阿求出任将领"
  ACG_MEC_HNA_summon_akyuu_desc: "阿求本为文人，然史笔需亲历方可信实。请她亲临军阵，记下真正的战争。"
- ACG_MEC_HNA_refit_akyuu: "为阿求整军"
+ ACG_MEC_HNA_refit_akyuu_title: "为阿求整军"
  ACG_MEC_HNA_refit_akyuu_desc: "根据阿求当前累积的见闻重新整编其部曲，使其战力与见闻相符。"
  ACG_MEC_HNA_refit_cd_tooltip: "距上次整军已满一年"
- ACG_MEC_HNA_write_1: "著述《求闻史纪》"
- ACG_MEC_HNA_write_1_desc: "阿求执笔编年纪事。著书期间政务、营造与学术皆会迟缓，历三年而成书。"
- ACG_MEC_HNA_write_2: "著述《幻想乡缘起》"
- ACG_MEC_HNA_write_2_desc: "考据风土与妖怪传承，需以魔力为凭。著书五年，期间军政懈怠、外交失声。"
- ACG_MEC_HNA_write_3: "著述《魔法使通信》"
- ACG_MEC_HNA_write_3_desc: "与魔法使往还论道。著书六年，期间施法经验积累停滞，民情亦见浮动。"
- ACG_MEC_HNA_write_4: "著述《战术要略》"
- ACG_MEC_HNA_write_4_desc: "将亲身经历的战阵整理为兵书。著书四年，期间士气与补员皆受影响。"
- ACG_MEC_HNA_write_5: "著述《稗田家秘录》"
- ACG_MEC_HNA_write_5_desc: "稗田家最终之书。著书八年，需倾尽心力，政务全面迟滞，成书则将名留青史。"
  # ===== 稗田阿求：事件 =====
  ACG_MEC_HNA_events.1.t: "阿求的突破"
  ACG_MEC_HNA_events.1.d: "又一段见闻落于纸上。阿求对火器、冲击、机动与攻城的理解更进一层。"
@@ -76,42 +67,55 @@ l_english:
  ACG_MEC_HNA_reward_magic_tech: "史笔·明理"
  ACG_MEC_HNA_chronicle_permanent: "稗田家秘录"
  ACG_MEC_HNA_peak_modifier: "幻想乡史笔"
- # ===== 稗田阿求：著书特权（单一特权，挂贵族阶层）=====
- ACG_MEC_HNA_writing: "稗田阿求著书中"
- ACG_MEC_HNA_writing_desc: "阿求正在执笔著书，政务与营造因此迟滞：发展花费 +10%、科技花费 +5%。书稿完成后此特权会自动解除。"
- # ===== 稗田阿求：各书专属 Debuff =====
- ACG_MEC_HNA_wdb_1: "著述《求闻史纪》"
- ACG_MEC_HNA_wdb_1_desc: "编年纪事：发展花费 +15%、建筑花费 +15%、科技花费 +5%。"
- ACG_MEC_HNA_wdb_2: "著述《幻想乡缘起》"
- ACG_MEC_HNA_wdb_2_desc: "考据风土：陆军士气 -5%、外交声誉 -1、建筑花费 +10%。"
- ACG_MEC_HNA_wdb_3: "著述《魔法使通信》"
- ACG_MEC_HNA_wdb_3_desc: "与魔法使论道：施法经验月增 -10、科技花费 +10%、全国叛乱 +2。"
- ACG_MEC_HNA_wdb_4: "著述《战术要略》"
- ACG_MEC_HNA_wdb_4_desc: "整理兵书：陆军士气 -10%、补员速度 -10%、训练度 -2%。"
- ACG_MEC_HNA_wdb_5: "著述《稗田家秘录》"
- ACG_MEC_HNA_wdb_5_desc: "稗田家最终之书：行政、外交、军事点数月增各 -1，发展花费 +20%。"
- # ===== 稗田阿求：任务树 =====
- HNA_missions_1_1: "稗田家的领地"
- HNA_missions_1_1_desc: "稗田家世代居于安科纳。先让自家领地富庶起来，方有记述他人的余裕。"
- HNA_missions_1_2: "五处聚落"
- HNA_missions_1_2_desc: "史书需有可记之人、可记之地。治下至少要有五处像样的聚落。"
- HNA_missions_1_3: "书库与学舍"
- HNA_missions_1_3_desc: "在都城建立学舍，供阿求查阅典籍、整理旧稿。"
- HNA_missions_1_4: "印刷工坊"
- HNA_missions_1_4_desc: "有工坊与市集，书稿方能传抄天下。"
- HNA_missions_1_5: "城防与治安"
- HNA_missions_1_5_desc: "史笔需有安宁之地。修治官署与营房，使境内无虞。"
- HNA_missions_1_6: "安科纳的商路"
- HNA_missions_1_6_desc: "安科纳临海，货殖可通。设货栈以聚财货。"
- HNA_missions_1_7: "亚平宁的立足"
- HNA_missions_1_7_desc: "史书若只写一城，终究太薄。在意大利取得第二块土地。"
- HNA_missions_1_8: "罗马之路"
- HNA_missions_1_8_desc: "罗马是旧世界的中心。阿求若要记述这个时代，终须亲自走到罗马。"
- HNA_missions_1_9: "《求闻史纪》"
- HNA_missions_1_9_desc: "第一部编年纪事成书，稗田家之名始著。"
- HNA_missions_1_10: "《幻想乡缘起》"
- HNA_missions_1_10_desc: "风土与妖怪的考据完成，阿求的视界不再限于人间。"
- HNA_missions_1_11: "魔法与史笔"
- HNA_missions_1_11_desc: "考据需要魔力的凭据。积累魔力与施法经验，让史笔与魔法互为表里。"
- HNA_missions_1_12: "幻想乡史笔"
- HNA_missions_1_12_desc: "记下一切，理解一切，最终成为一切。阿求的见闻已足以支撑一部传世之书。"
+ # ===== 稗田阿求：著书特权（5 本，挂贵族阶层 estate_nobles）=====
+ # 玩家在贵族阶层界面自行授予；特权的 on_granted 会排程对应年限的完成事件。
+ # Debuff 就在特权自身（penalties），不再另挂修正。
+ ACG_MEC_HNA_writing_1: "著述《求闻史纪》"
+ ACG_MEC_HNA_writing_1_desc: "阿求正在编年纪事：发展花费 +15%、建筑花费 +15%、科技花费 +5%。三年后成书。"
+ ACG_MEC_HNA_writing_2: "著述《幻想乡缘起》"
+ ACG_MEC_HNA_writing_2_desc: "阿求正在考据风土：陆军士气 -5%、外交声誉 -1、建筑花费 +10%。五年后成书。"
+ ACG_MEC_HNA_writing_3: "著述《魔法使通信》"
+ ACG_MEC_HNA_writing_3_desc: "阿求正在与魔法使论道：施法经验月增 -10、科技花费 +10%、全国叛乱 +2。六年后成书。"
+ ACG_MEC_HNA_writing_4: "著述《战术要略》"
+ ACG_MEC_HNA_writing_4_desc: "阿求正在整理兵书：陆军士气 -10%、补员速度 -10%、训练度 -2%。四年后成书。"
+ ACG_MEC_HNA_writing_5: "著述《稗田家秘录》"
+ ACG_MEC_HNA_writing_5_desc: "阿求正在写稗田家最终之书：行政、外交、军事点数月增各 -1，发展花费 +20%。八年后成书。"
+ # ===== 稗田阿求：任务树（键名规范：<任务名>_title + <任务名>_desc）=====
+ # ----- 第 2 列（slot = 2）：内政 / 发展 / 建筑 -----
+ HNA_missions_2_1_title: "稗田家的领地"
+ HNA_missions_2_1_desc: "稗田家世代居于安科纳。先让自家领地富庶起来，方有记述他人的余裕。"
+ HNA_missions_2_2_title: "五处聚落"
+ HNA_missions_2_2_desc: "史书需有可记之人、可记之地。治下至少要有五处像样的聚落。"
+ HNA_missions_2_3_title: "书库与学舍"
+ HNA_missions_2_3_desc: "在都城建立学舍，供阿求查阅典籍、整理旧稿。"
+ HNA_missions_2_4_title: "印刷工坊"
+ HNA_missions_2_4_desc: "有工坊与市集，书稿方能传抄天下。"
+ # ----- 第 3 列（slot = 3）：军事 / 意大利 -----
+ HNA_missions_3_1_title: "城防与治安"
+ HNA_missions_3_1_desc: "史笔需有安宁之地。修治官署与营房，使境内无虞。"
+ HNA_missions_3_2_title: "安科纳的商路"
+ HNA_missions_3_2_desc: "安科纳临海，货殖可通。设货栈以聚财货。"
+ HNA_missions_3_3_title: "亚平宁的立足"
+ HNA_missions_3_3_desc: "史书若只写一城，终究太薄。在意大利取得第二块土地。"
+ HNA_missions_3_4_title: "罗马之路"
+ HNA_missions_3_4_desc: "罗马是旧世界的中心。阿求若要记述这个时代，终须亲自走到罗马。"
+ # ----- 第 4 列（slot = 4）：著书 / 魔法 -----
+ HNA_missions_4_1_title: "《求闻史纪》"
+ HNA_missions_4_1_desc: "第一部编年纪事成书，稗田家之名始著。"
+ HNA_missions_4_2_title: "《幻想乡缘起》"
+ HNA_missions_4_2_desc: "风土与妖怪的考据完成，阿求的视界不再限于人间。"
+ HNA_missions_4_3_title: "魔法与史笔"
+ HNA_missions_4_3_desc: "考据需要魔力的凭据。积累魔力与施法经验，让史笔与魔法互为表里。"
+ HNA_missions_4_4_title: "幻想乡史笔"
+ HNA_missions_4_4_desc: "记下一切，理解一切，最终成为一切。阿求的见闻已足以支撑一部传世之书。"
+ # ===== 稗田阿求：脚本变量 =====
+ # 键名规范：键名 = 变量名本身（依据本地 Wiki 变量.html §「本地化变量」：
+ #   "我们能本地化变量，这样它就显示为我们定义的字符串，而不是变量脚本名"；
+ #   实例：ACG1 localisation/Acg_events_l_english.yml 的 Mana:0、Acg_Professional_magic_l_english.yml 的 Magic_exp:0）
+ # 注意：Mana / Magic_exp 是 ACG1 已有的魔法变量，ACG1 已自带本地化（还带 £magic_mana£ / £magic_exp£ 图标），
+ #       此处刻意不重复定义，以免覆盖它的图标。
+ HNA_akyuu_growth_points: "稗田阿求的成长"
+ HNA_akyuu_tier: "稗田阿求的突破等级"
+ HNA_akyuu_exp: "稗田阿求积累的见闻"
+ # 注：v3 起著书改为「特权 on_granted 排程事件」，不再有年度计时，
+ #     所以 HNA_writing_1..5_years 的本地化 key 已一并删除。

@@ -4,8 +4,10 @@
 # 写法来源：工作区 common/on_actions/SKR_on_actions.txt
 #           （on_xxx = { effect = { ... } }）
 # 原版钩子来源：
-#   on_battle_won_country  → 原版 common/on_actions/00_on_actions.txt:475
-#   on_yearly_pulse        → ACG1/工作区均有用例
+#   on_battle_won_country → 原版 common/on_actions/00_on_actions.txt:475
+#
+# v3 变更：著书改为「特权 on_granted 排程延时事件」后，
+#          不再需要 on_yearly_pulse 计时，该块已删除。
 # 同名 on_action 在不同文件里会叠加 effect，不会互相覆盖。
 # ============================================================
 
@@ -19,16 +21,6 @@ on_battle_won_country = {
 				has_leader = "Hieda no Akyuu"
 			}
 			HNA_akyuu_battle_growth_effect = yes
-		}
-	}
-}
-
-# ---- 著书计时 ----
-on_yearly_pulse = {
-	effect = {
-		if = {
-			limit = { tag = HNA }
-			HNA_akyuu_writing_tick_effect = yes
 		}
 	}
 }

@@ -1,24 +1,68 @@
 # ============================================================
-# 稗田阿求（HNA）任务树 —— 12 项
+# 稗田阿求（HNA）任务树
 # ------------------------------------------------------------
-# 结构来源：工作区 missions/HKH_missions.txt:1-13
-#   HNA_missions_1 = { slot = 1 generic = no ai = yes potential = { tag = HNA } ... }
-#   任务键 = <树名>_<序号>，字段：icon / position / required_missions /
-#   provinces_to_highlight / trigger / effect
-# 构成（按你确认的「史笔主线」）：
-#   4 发展 + 3 建筑 + 2 意大利用兵 + 2 著书 + 1 魔法
-# 图标：icon = HNA_mission_N → 对应本 mod interface/ACG_MEC_E_HNA.gfx 里的
-#   spriteType 名为 HNA_mission_N（本 mod 家族惯例：任务图标 spriteType 不带 GFX_ 前缀，
-#   证据 ACG1 interface/IMS_adviser.gfx:275-278 name = "LLF_icon_1" 且
-#   missions/IMS_misssions.txt:1513 icon = LLF_icon_1；原版同为
-#   interface/countrymissionsview.gfx:526 name = "mission_noble_council"）
-#   图片尺寸：59 x 63（原版实测与 ACG1 gfx/interface/missions/LLF_icon_1.dds 同为 59x63）
+# 【列 / 行 语义｜已核对】
+#   本地 Wiki 任务树修改.html（EVERGREEN）：
+#     slot     = 列（"此任务树所在的槽位，是几就是从左到右第几列，范围为 1-5"）
+#     position = 行（"从上到下数本任务的位置，最顶端对应的数值为 1"）
 #
-# 每项任务都通过 HNA_akyuu_grant_growth_effect 发放一部分成长（合计 60 点）
+# 【箭头硬规则｜本 mod 约定：零越界】
+#   任务名记作 X_Y（X = 列 = slot，Y = 行 = position）。EU4 只支持两种连接：
+#
+#     关系 A｜同列（X 相同）：Δ列 = 0，Δ行 ≥ 1
+#        同列下方的任意任务（Y+N，N≥1）都能挂到上方的任务（Y）上。
+#
+#     关系 B｜跨列（X 不同）：Δ列 ≠ 0，且 Δ行 必须恰好 = 1
+#        只有"上一行（Y−1）"的任务能挂到（X, Y）上；列距不限（Δ列 可 ±1、±2、±3…）。
+#
+#   实测依据（原版 1.37.5，3709 个任务、约 2800 条连接）：
+#     (0,+1)(0,+2)(0,+3)(0,+4)  1656 次  59.1%   ← 关系 A
+#     (±1,+1)                    970 次  34.6%   ← 关系 B
+#     (±2,+3,+1)                  88 次   3.1%   ← 关系 B（跳列，合法）
+#     而 Δ行 = 0 有 49 次（1.7%）、Δ行 < 0 有 3 次 —— 那是原版自己的越界写法
+#     （例：KoK_Byzantine_Missions.txt 的 BYZ_warehouse_of_the_east
+#        [slot4,pos12] 同时依赖 [slot3,pos12] 与 [slot5,pos12]），
+#     本 mod 明确不采用，全部按 0 越界排布。
+#
+# 【空间规划】不必把每个 (X, Y) 都填满 —— 可以留白做视觉规划。
+#
+#   本树采用「阶梯错位」：
+#
+#     行1   2_1 稗田家的领地（唯一根，无前置）
+#             │ 竖
+#     行2   2_2 五处聚落 ──斜──► 3_1 城防与治安
+#             │ 竖                  │ 竖
+#     行3   2_3 书库与学舍          3_2 安科纳的商路 ──斜──► 4_1 《求闻史纪》
+#             │ 竖                  │ 竖                     │ 竖
+#     行4   2_4 印刷工坊            3_3 亚平宁的立足          4_2 《幻想乡缘起》
+#                                   │ 竖                     │ 竖
+#     行5                            3_4 罗马之路 ──斜──►    4_3 魔法与史笔
+#                                                            │ 竖   ▲ 斜（来自 3_4）
+#     行6                                                     ▼      │
+#                                                           4_4 幻想乡史笔
+#
+#     留白：(列2, 行5-6)、(列3, 行1, 行6)、(列4, 行1-2)、(列5, 整列)
+#     列2 占行1-4，列3 占行2-5，列4 占行3-6 —— 三列各错开一行。
+#
+#   全部 11 条连接：(Δ列, Δ行) 只有 (0,1) 与 (1,1) 两种 → 零越界。
+#
+# 【图标】icon = HNA_mission_N → 本 mod interface/ACG_MEC_E_HNA.gfx 里的同名 spriteType
+#   本 mod 家族惯例：任务图标 spriteType 不带 GFX_ 前缀
+#   （ACG1 interface/IMS_adviser.gfx:275-278 name = "LLF_icon_1"，
+#     missions/IMS_misssions.txt:1513 icon = LLF_icon_1；
+#     原版 interface/countrymissionsview.gfx:526 name = "mission_noble_council"）
+#   尺寸：59 x 63
+#
+# 【本地化】键名必须是 <任务名>_title 与 <任务名>_desc
+#   （依据：原版 decisions↔loc 命名规范同族；工作区 HKH_l_english.yml、ALC_l_english.yml 均为该格式）
 # ============================================================
 
-HNA_missions_1 = {
-	slot = 1
+
+# ============================================================
+# 第 2 列（slot = 2）：内政 / 发展 / 建筑     占行 1-4
+# ============================================================
+HNA_missions_2 = {
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -27,10 +71,11 @@ HNA_missions_1 = {
 	}
 	has_country_shield = yes
 
-	# ---------------- 1 发展：稗田家的领地 ----------------
-	HNA_missions_1_1 = {
+	# ---- 行1：稗田家的领地（全树唯一根）----
+	HNA_missions_2_1 = {
 		icon = HNA_mission_1
 		position = 1
+		required_missions = { }
 		trigger = {
 			capital_scope = {
 				development = 20
@@ -45,11 +90,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 2 发展：五处聚落 ----------------
-	HNA_missions_1_2 = {
+	# ---- 行2：五处聚落（关系 A：同列 Δ行=1）----
+	HNA_missions_2_2 = {
 		icon = HNA_mission_2
 		position = 2
-		required_missions = { HNA_missions_1_1 }
+		required_missions = { HNA_missions_2_1 }
 		trigger = {
 			num_of_cities = 5
 			any_owned_province = {
@@ -64,11 +109,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 3 建筑：书库与学舍 ----------------
-	HNA_missions_1_3 = {
+	# ---- 行3：书库与学舍 ----
+	HNA_missions_2_3 = {
 		icon = HNA_mission_3
 		position = 3
-		required_missions = { HNA_missions_1_2 }
+		required_missions = { HNA_missions_2_2 }
 		trigger = {
 			capital_scope = {
 				has_building = university
@@ -81,11 +126,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 4 建筑：印刷工坊 ----------------
-	HNA_missions_1_4 = {
+	# ---- 行4：印刷工坊 ----
+	HNA_missions_2_4 = {
 		icon = HNA_mission_4
 		position = 4
-		required_missions = { HNA_missions_1_2 }
+		required_missions = { HNA_missions_2_3 }
 		trigger = {
 			any_owned_province = {
 				has_building = workshop
@@ -100,12 +145,27 @@ HNA_missions_1 = {
 			HNA_akyuu_grant_growth_effect = { amount = 4 }
 		}
 	}
+}
 
-	# ---------------- 5 建筑：城防与治安 ----------------
-	HNA_missions_1_5 = {
+
+# ============================================================
+# 第 3 列（slot = 3）：军事 / 意大利     占行 2-5
+# ============================================================
+HNA_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ---- 行2：城防与治安（关系 B：Δ列=1、Δ行=1，斜挂在列2行1下）----
+	HNA_missions_3_1 = {
 		icon = HNA_mission_5
-		position = 5
-		required_missions = { HNA_missions_1_3 }
+		position = 2
+		required_missions = { HNA_missions_2_1 }
 		trigger = {
 			any_owned_province = {
 				has_building = courthouse
@@ -121,11 +181,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 6 发展：安科纳的商路 ----------------
-	HNA_missions_1_6 = {
+	# ---- 行3：安科纳的商路 ----
+	HNA_missions_3_2 = {
 		icon = HNA_mission_6
-		position = 6
-		required_missions = { HNA_missions_1_2 }
+		position = 3
+		required_missions = { HNA_missions_3_1 }
 		trigger = {
 			capital_scope = {
 				has_building = trade_depot
@@ -137,11 +197,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 7 意大利：亚平宁的立足 ----------------
-	HNA_missions_1_7 = {
+	# ---- 行4：亚平宁的立足 ----
+	HNA_missions_3_3 = {
 		icon = HNA_mission_7
-		position = 7
-		required_missions = { HNA_missions_1_6 }
+		position = 4
+		required_missions = { HNA_missions_3_2 }
 		provinces_to_highlight = {
 			region = italy_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -165,11 +225,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 8 意大利：罗马之路 ----------------
-	HNA_missions_1_8 = {
+	# ---- 行5：罗马之路（终点；同时作为列4行6的斜向前置）----
+	HNA_missions_3_4 = {
 		icon = HNA_mission_8
-		position = 8
-		required_missions = { HNA_missions_1_7 }
+		position = 5
+		required_missions = { HNA_missions_3_3 }
 		provinces_to_highlight = {
 			province = 118
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -184,13 +244,29 @@ HNA_missions_1 = {
 			HNA_akyuu_grant_growth_effect = { amount = 8 }
 		}
 	}
+}
 
-	# ---------------- 9 著书：《求闻史纪》 ----------------
-	HNA_missions_1_9 = {
+
+# ============================================================
+# 第 4 列（slot = 4）：著书 / 魔法     占行 3-6
+# ============================================================
+HNA_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ---- 行3：《求闻史纪》（关系 B：斜挂在列3行2下；需先解锁政体）----
+	HNA_missions_4_1 = {
 		icon = HNA_mission_9
-		position = 9
-		required_missions = { HNA_missions_1_3 }
+		position = 3
+		required_missions = { HNA_missions_3_1 }
 		trigger = {
+			has_reform = ACG_MEC_HNA_chronicle_reform
 			has_country_flag = HNA_book_1_done
 		}
 		effect = {
@@ -200,11 +276,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 10 著书：《幻想乡缘起》 ----------------
-	HNA_missions_1_10 = {
+	# ---- 行4：《幻想乡缘起》----
+	HNA_missions_4_2 = {
 		icon = HNA_mission_10
-		position = 10
-		required_missions = { HNA_missions_1_4 }
+		position = 4
+		required_missions = { HNA_missions_4_1 }
 		trigger = {
 			has_country_flag = HNA_book_2_done
 		}
@@ -214,11 +290,11 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 11 魔法：魔法与史笔 ----------------
-	HNA_missions_1_11 = {
+	# ---- 行5：魔法与史笔 ----
+	HNA_missions_4_3 = {
 		icon = HNA_mission_11
-		position = 11
-		required_missions = { HNA_missions_1_9 HNA_missions_1_10 }
+		position = 5
+		required_missions = { HNA_missions_4_2 }
 		trigger = {
 			check_variable = { which = Mana value = 25 }
 			check_variable = { which = Magic_exp value = 10 }
@@ -231,11 +307,17 @@ HNA_missions_1 = {
 		}
 	}
 
-	# ---------------- 12 收尾：幻想乡史笔 ----------------
-	HNA_missions_1_12 = {
+	# ---- 行6：幻想乡史笔（终点；双前置，两条都合法）
+	#       4_3  同列 Δ列=0、Δ行=1  → 关系 A
+	#       3_4  跨列 Δ列=1、Δ行=1  → 关系 B
+	#      —— 这样既完成收束，又让"军事线"真正汇入"著书线"。
+	HNA_missions_4_4 = {
 		icon = HNA_mission_12
-		position = 12
-		required_missions = { HNA_missions_1_8 HNA_missions_1_11 }
+		position = 6
+		required_missions = {
+			HNA_missions_4_3
+			HNA_missions_3_4
+		}
 		trigger = {
 			check_variable = { which = HNA_akyuu_growth_points value = 160 }
 		}
@@ -245,4 +327,25 @@ HNA_missions_1 = {
 			HNA_akyuu_grant_growth_effect = { amount = 5 }
 		}
 	}
+}
+
+
+# ============================================================
+# 第 5 列（slot = 5）：只定义，不写任务
+# ------------------------------------------------------------
+# ⚠️ 已知风险：原版 1.37.5 全盘扫描后「空任务树」为 0 例，本块无先例。
+#    空块不会导致崩溃（只是没有任何任务子键），但游戏很可能直接忽略它 ——
+#    也就是说它**不一定能把任务界面撑到 5 列宽**（原版不存在 max_slots_horizontal
+#    这个键，全盘 0 命中，Wiki 提到它属过时信息）。
+#    如果日志报错，或你发现它没用，整块删掉即可，完全不影响前 3 列。
+# ============================================================
+HNA_missions_5 = {
+	slot = 5
+	generic = no
+	ai = no
+	potential = {
+		tag = HNA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 }

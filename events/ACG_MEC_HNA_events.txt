@@ -6,6 +6,16 @@
 #   .30     四维圆满 100/100/100/100
 #   .40     阿求出任将领
 #   .50     稗田家史笔政体成立
+#
+# v3 变更（著书完成事件）：
+#   · 触发来源 = 著书特权的 on_granted 里排程：
+#       country_event = { id = ACG_MEC_HNA_events.1N days = <该书年数> }
+#     见 common/estate_privileges/ACG_MEC_HNA_privileges.txt
+#   · 每个完成事件都加 trigger = { has_estate_privilege = ... } ——
+#     玩家若中途撤销特权，到期时 trigger 不满足，事件不会弹出（防止白拿奖励）。
+#   · immediate 里 remove_estate_privilege 收掉特权 + set_country_flag = HNA_book_N_done
+#     （成书标记移到 immediate，确保无论选哪个选项都会被置上）。
+#
 # 所有事件均在 decode_localisation/ACG_MEC_HNA_l_english.yml 补齐文本
 # ============================================================
 namespace = ACG_MEC_HNA_events
@@ -26,7 +36,7 @@ country_event = {
 }
 
 # ------------------------------------------------------------
-# .10《求闻史纪》成书（3 年）
+# .10《求闻史纪》成书（特权授予后 3 年 / 1095 天）
 # ------------------------------------------------------------
 country_event = {
 	id = ACG_MEC_HNA_events.10
@@ -35,16 +45,21 @@ country_event = {
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		has_estate_privilege = ACG_MEC_HNA_writing_1
+	}
+	immediate = {
+		remove_estate_privilege = ACG_MEC_HNA_writing_1
+		set_country_flag = HNA_book_1_done
+	}
 	option = {   #发展向
 		name = "ACG_MEC_HNA_events.10.a"
-		set_country_flag = HNA_book_1_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 3650 }
 		HNA_akyuu_grant_growth_effect = { amount = 4 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #内政向
 		name = "ACG_MEC_HNA_events.10.b"
-		set_country_flag = HNA_book_1_done
 		add_adm_power = 100
 		add_stability = 1
 		HNA_akyuu_grant_growth_effect = { amount = 4 }
@@ -52,7 +67,6 @@ country_event = {
 	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.10.c"
-		set_country_flag = HNA_book_1_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_army_1 duration = 3650 }
 		add_mil_power = 100
 		HNA_akyuu_grant_growth_effect = { amount = 4 }
@@ -61,7 +75,7 @@ country_event = {
 }
 
 # ------------------------------------------------------------
-# .11《幻想乡缘起》成书（5 年）
+# .11《幻想乡缘起》成书（5 年 / 1825 天）
 # ------------------------------------------------------------
 country_event = {
 	id = ACG_MEC_HNA_events.11
@@ -70,16 +84,21 @@ country_event = {
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		has_estate_privilege = ACG_MEC_HNA_writing_2
+	}
+	immediate = {
+		remove_estate_privilege = ACG_MEC_HNA_writing_2
+		set_country_flag = HNA_book_2_done
+	}
 	option = {   #建筑向
 		name = "ACG_MEC_HNA_events.11.a"
-		set_country_flag = HNA_book_2_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = 3650 }
 		HNA_akyuu_grant_growth_effect = { amount = 5 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #魔法向
 		name = "ACG_MEC_HNA_events.11.b"
-		set_country_flag = HNA_book_2_done
 		change_variable = { which = Mana value = 10 }
 		add_country_modifier = { name = ACG_MEC_HNA_reward_magic_mana duration = 3650 }
 		HNA_akyuu_grant_growth_effect = { amount = 5 }
@@ -87,7 +106,6 @@ country_event = {
 	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.11.c"
-		set_country_flag = HNA_book_2_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = 3650 }
 		HNA_akyuu_grant_growth_effect = { amount = 5 }
 		ai_chance = { factor = 1 }
@@ -95,7 +113,7 @@ country_event = {
 }
 
 # ------------------------------------------------------------
-# .12《魔法使通信》成书（6 年）
+# .12《魔法使通信》成书（6 年 / 2190 天）
 # ------------------------------------------------------------
 country_event = {
 	id = ACG_MEC_HNA_events.12
@@ -104,9 +122,15 @@ country_event = {
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		has_estate_privilege = ACG_MEC_HNA_writing_3
+	}
+	immediate = {
+		remove_estate_privilege = ACG_MEC_HNA_writing_3
+		set_country_flag = HNA_book_3_done
+	}
 	option = {   #魔法向
 		name = "ACG_MEC_HNA_events.12.a"
-		set_country_flag = HNA_book_3_done
 		change_variable = { which = Mana value = 25 }
 		change_variable = { which = Magic_exp value = 15 }
 		add_country_modifier = { name = ACG_MEC_HNA_reward_magic_exp duration = 5475 }
@@ -115,7 +139,6 @@ country_event = {
 	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.12.b"
-		set_country_flag = HNA_book_3_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = 3650 }
 		add_mil_power = 100
 		HNA_akyuu_grant_growth_effect = { amount = 6 }
@@ -123,7 +146,6 @@ country_event = {
 	}
 	option = {   #内政向
 		name = "ACG_MEC_HNA_events.12.c"
-		set_country_flag = HNA_book_3_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 5475 }
 		add_manpower = 20
 		HNA_akyuu_grant_growth_effect = { amount = 6 }
@@ -132,7 +154,7 @@ country_event = {
 }
 
 # ------------------------------------------------------------
-# .13《战术要略》成书（4 年）
+# .13《战术要略》成书（4 年 / 1460 天）
 # ------------------------------------------------------------
 country_event = {
 	id = ACG_MEC_HNA_events.13
@@ -141,9 +163,15 @@ country_event = {
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		has_estate_privilege = ACG_MEC_HNA_writing_4
+	}
+	immediate = {
+		remove_estate_privilege = ACG_MEC_HNA_writing_4
+		set_country_flag = HNA_book_4_done
+	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.13.a"
-		set_country_flag = HNA_book_4_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_army_3 duration = 5475 }
 		add_mil_power = 150
 		HNA_akyuu_grant_growth_effect = { amount = 8 }
@@ -151,13 +179,11 @@ country_event = {
 	}
 	option = {   #成长向（把全部收益押在阿求身上）
 		name = "ACG_MEC_HNA_events.13.b"
-		set_country_flag = HNA_book_4_done
 		HNA_akyuu_grant_growth_effect = { amount = 14 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #内政向
 		name = "ACG_MEC_HNA_events.13.c"
-		set_country_flag = HNA_book_4_done
 		add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 5475 }
 		add_adm_power = 150
 		HNA_akyuu_grant_growth_effect = { amount = 8 }
@@ -166,7 +192,7 @@ country_event = {
 }
 
 # ------------------------------------------------------------
-# .14《稗田家秘录》成书（8 年）
+# .14《稗田家秘录》成书（8 年 / 2920 天）
 # ------------------------------------------------------------
 country_event = {
 	id = ACG_MEC_HNA_events.14
@@ -175,22 +201,26 @@ country_event = {
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		has_estate_privilege = ACG_MEC_HNA_writing_5
+	}
+	immediate = {
+		remove_estate_privilege = ACG_MEC_HNA_writing_5
+		set_country_flag = HNA_book_5_done
+	}
 	option = {   #成长向：直接推一大截
 		name = "ACG_MEC_HNA_events.14.a"
-		set_country_flag = HNA_book_5_done
 		HNA_akyuu_grant_growth_effect = { amount = 30 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #永久向
 		name = "ACG_MEC_HNA_events.14.b"
-		set_country_flag = HNA_book_5_done
 		add_country_modifier = { name = ACG_MEC_HNA_chronicle_permanent duration = -1 }
 		HNA_akyuu_grant_growth_effect = { amount = 20 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #魔法向
 		name = "ACG_MEC_HNA_events.14.c"
-		set_country_flag = HNA_book_5_done
 		change_variable = { which = Mana value = 40 }
 		change_variable = { which = Magic_exp value = 30 }
 		add_country_modifier = { name = ACG_MEC_HNA_reward_magic_tech duration = 5475 }

@@ -1,28 +1,41 @@
 # ============================================================
-# 稗田阿求：著书特权（单一特权）
+# 稗田阿求：著书特权（5 本，挂贵族阶层 estate_nobles）
 # ------------------------------------------------------------
-# 【设计】按你的要求改为「一个」特权，挂到 **贵族阶层 estate_nobles**，
-#         不再使用 ACG 的 estate_magic_caster（法师阶层），以最大化兼容性。
+# 【v3 流程：特权就是按钮】
+#   玩家在 **贵族阶层界面** 自己授予「著述《XX》」特权
+#     → on_granted 立刻排程一个延时事件：country_event = { id = ... days = N }
+#     → 到期事件弹出，玩家三选一拿奖励
+#     → 事件的 immediate 里 remove_estate_privilege 收掉特权
+#   不再需要任何著书决议，也不再需要年度脉冲计时。
 #
-# 分工：
-#   · 本特权 = 「稗田阿求正在著书」的唯一标记 + 通用 Debuff（penalties）
-#   · 各书差异化的 Debuff = 5 个 event_modifier（带 duration，见
-#     common/event_modifiers/ACG_MEC_HNA_modifiers.txt 的 ACG_MEC_HNA_wdb_1..5）
-#     → 好处：即使特权因阶层被禁用而挂不上，书本身的机制仍照常运作（更稳）
+# 【特权自带 Debuff】按你最初的要求，Debuff 写在 penalties 里（每本书不同）。
+#   上一版临时拆出去的 ACG_MEC_HNA_wdb_1..5 修正已删除。
 #
-# 登记方式（硬性）：EU4 没有特权自动登记机制 —— 实测原版 426 个特权定义
-#   全部都被 common/estates/*.txt 的 privileges 列表引用，孤儿 = 0。
-#   因此本 key 已登记在本 mod 的 common/estates/02_nobility.txt 第 655 行
-#   （该文件是 ACG1 common/estates/02_nobility.txt 的完整覆盖副本，
-#    逐行比较只多这一行）。
+# 【前置条件搬进 can_select】
+#   原来写书决议的 allow 里用的是 HNA_can_write_N_trigger（含政体开关 / Mana /
+#   Magic_exp / 成长点 / 已成书数）。决议删掉后这些 trigger 会变孤儿，
+#   所以全部搬进 can_select —— 这样"能不能写这本书"仍由它们把关，
+#   "政体解锁"这一层门槛也保住了。
 #
-# 效果名：set_estate_privilege / remove_estate_privilege
-#   （原版 events 中 set_estate_privilege 85 处、remove_estate_privilege 171 处；
-#     原版无 add_estate_privilege）
-# 写法来源：工作区 common/estate_privileges/kirara_privileges.txt
+# 【互斥】同样放在 can_select（不用 is_valid）——
+#   is_valid 不满足会导致已授予的特权被游戏自动撤销（on_invalid），拿它做互斥会互删。
+#
+# 【写法依据｜全部实测过】
+#   · 特权可写 on_granted / on_revoked / on_invalid：
+#       原版 common/estate_privileges/02_noble_privileges.txt:1463-1471
+#   · can_select = { } 控制「能否被授予」：
+#       原版 common/estate_privileges/02_noble_privileges.txt:1460, 1491
+#   · 特权效果块内可写 country_event（国家作用域）：
+#       ACG1 common/estate_privileges/01_church_privileges.txt:1027
+#
+# 【登记】EU4 无特权自动登记机制（实测原版 426 个特权定义全部被
+#   common/estates/*.txt 的 privileges 列表引用，孤儿 = 0）。
+#   本文件这 5 个 key 已登记在本 mod 的 common/estates/02_nobility.txt
+#   （ACG1 该文件的完整覆盖副本 + 5 行）。
 # ============================================================
 
-ACG_MEC_HNA_writing = {
+# ---------- 1《求闻史纪》：3 年（1095 天） ----------
+ACG_MEC_HNA_writing_1 = {
 	icon = privilege_aged_paper
 	max_absolutism = -5
 	influence = 0.05
@@ -30,19 +43,165 @@ ACG_MEC_HNA_writing = {
 	is_valid = {
 		tag = HNA
 	}
-	penalties = {
-		development_cost = 0.10
-		technology_cost = 0.05
+	can_select = {
+		HNA_can_write_1_trigger = yes
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_2 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_3 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_4 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_5 }
 	}
 	on_granted = {
-		hidden_effect = {
-			set_country_flag = HNA_writing_active
-		}
+		country_event = { id = ACG_MEC_HNA_events.10 days = 1095 }
 	}
 	on_revoked = {
-		hidden_effect = {
-			clr_country_flag = HNA_writing_active
-		}
+	}
+	on_invalid = {
+	}
+	penalties = {
+		development_cost = 0.15
+		build_cost = 0.15
+		technology_cost = 0.05
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# ---------- 2《幻想乡缘起》：5 年（1825 天） ----------
+ACG_MEC_HNA_writing_2 = {
+	icon = privilege_aged_paper
+	max_absolutism = -5
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		tag = HNA
+	}
+	can_select = {
+		HNA_can_write_2_trigger = yes
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_1 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_3 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_4 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_5 }
+	}
+	on_granted = {
+		country_event = { id = ACG_MEC_HNA_events.11 days = 1825 }
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+		land_morale = -0.05
+		diplomatic_reputation = -1
+		build_cost = 0.10
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# ---------- 3《魔法使通信》：6 年（2190 天） ----------
+ACG_MEC_HNA_writing_3 = {
+	icon = privilege_aged_paper
+	max_absolutism = -5
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		tag = HNA
+	}
+	can_select = {
+		HNA_can_write_3_trigger = yes
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_1 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_2 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_4 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_5 }
+	}
+	on_granted = {
+		country_event = { id = ACG_MEC_HNA_events.12 days = 2190 }
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+		pulse_magic_exp_get_modifier = -10
+		technology_cost = 0.10
+		global_unrest = 2
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# ---------- 4《战术要略》：4 年（1460 天） ----------
+ACG_MEC_HNA_writing_4 = {
+	icon = privilege_aged_paper
+	max_absolutism = -5
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		tag = HNA
+	}
+	can_select = {
+		HNA_can_write_4_trigger = yes
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_1 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_2 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_3 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_5 }
+	}
+	on_granted = {
+		country_event = { id = ACG_MEC_HNA_events.13 days = 1460 }
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+		land_morale = -0.10
+		reinforce_speed = -0.10
+		discipline = -0.02
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# ---------- 5《稗田家秘录》：8 年（2920 天） ----------
+ACG_MEC_HNA_writing_5 = {
+	icon = privilege_aged_paper
+	max_absolutism = -5
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		tag = HNA
+	}
+	can_select = {
+		HNA_can_write_5_trigger = yes
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_1 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_2 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_3 }
+		NOT = { has_estate_privilege = ACG_MEC_HNA_writing_4 }
+	}
+	on_granted = {
+		country_event = { id = ACG_MEC_HNA_events.14 days = 2920 }
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+		country_admin_power = -1
+		country_diplomatic_power = -1
+		country_military_power = -1
+		development_cost = 0.20
 	}
 	benefits = {
 	}

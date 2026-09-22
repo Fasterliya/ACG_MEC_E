@@ -1,16 +1,18 @@
 # ============================================================
 # 稗田阿求：决议
 # ------------------------------------------------------------
-# 说明：本 mod 现有决议文件均不带 icon 字段，此处保持一致；
-#       如需图标，可加 icon = <sprite_name>（对应 interface/*.gfx 里的 spriteType）。
+# 说明：本 mod 现有决议文件均不带 icon 字段，此处保持一致。
+# 本地化键名规范：<key>_title + <key>_desc
+#   （原版证据：decisions/AbolishTheElectiveMonarchy.txt
+#     ↔ localisation/winds_of_change_l_english.yml 的
+#       boh_abolish_the_elective_monarchy_title / _desc）
 # 效果名来源：set_estate_privilege（原版 85 处）/ remove_estate_privilege（171 处）
 #            add_government_reform（工作区 history/countries/*.txt）
 #
-# 著书机制分工（v2：单一特权版）：
-#   · 特权 ACG_MEC_HNA_writing 挂在 **贵族阶层 estate_nobles**，是「著书中」的唯一标记
-#   · 每本书另加一个带 duration 的国家修正（ACG_MEC_HNA_wdb_1..5）承载差异化 Debuff
-#     → 即使特权因阶层被禁而挂不上，书本身的机制仍照常运作
-#   · 互斥靠 flag HNA_writing_any，不依赖特权是否挂上
+# v3 变更：5 条「著书」决议已全部删除 ——
+#          著书改为玩家直接在 **贵族阶层界面** 授予著书特权
+#          （见 common/estate_privileges/ACG_MEC_HNA_privileges.txt）。
+#          本文件只保留 3 条与著书无关的决议。
 # ============================================================
 country_decisions = {
 
@@ -85,114 +87,6 @@ country_decisions = {
 			clr_country_flag = HNA_akyuu_refit_cd
 			set_country_flag = HNA_akyuu_refit_cd
 			HNA_akyuu_rebuild_general_effect = yes
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	# --------------------------------------------------------
-	# 4-8. 五本着书（共用单一贵族特权 ACG_MEC_HNA_writing）
-	# --------------------------------------------------------
-	ACG_MEC_HNA_write_1 = {
-		potential = {
-			tag = HNA
-			NOT = { has_country_flag = HNA_book_1_done }
-		}
-		allow = {
-			HNA_can_write_1_trigger = yes
-			NOT = { has_country_flag = HNA_writing_any }
-		}
-		effect = {
-			set_country_flag = HNA_writing_any
-			set_country_flag = HNA_writing_1_active
-			set_estate_privilege = ACG_MEC_HNA_writing
-			add_country_modifier = { name = ACG_MEC_HNA_wdb_1 duration = 1095 }
-			set_variable = { which = HNA_writing_1_years value = 0 }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	ACG_MEC_HNA_write_2 = {
-		potential = {
-			tag = HNA
-			NOT = { has_country_flag = HNA_book_2_done }
-		}
-		allow = {
-			HNA_can_write_2_trigger = yes
-			NOT = { has_country_flag = HNA_writing_any }
-		}
-		effect = {
-			set_country_flag = HNA_writing_any
-			set_country_flag = HNA_writing_2_active
-			set_estate_privilege = ACG_MEC_HNA_writing
-			add_country_modifier = { name = ACG_MEC_HNA_wdb_2 duration = 1825 }
-			set_variable = { which = HNA_writing_2_years value = 0 }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	ACG_MEC_HNA_write_3 = {
-		potential = {
-			tag = HNA
-			NOT = { has_country_flag = HNA_book_3_done }
-		}
-		allow = {
-			HNA_can_write_3_trigger = yes
-			NOT = { has_country_flag = HNA_writing_any }
-		}
-		effect = {
-			set_country_flag = HNA_writing_any
-			set_country_flag = HNA_writing_3_active
-			set_estate_privilege = ACG_MEC_HNA_writing
-			add_country_modifier = { name = ACG_MEC_HNA_wdb_3 duration = 2190 }
-			set_variable = { which = HNA_writing_3_years value = 0 }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	ACG_MEC_HNA_write_4 = {
-		potential = {
-			tag = HNA
-			NOT = { has_country_flag = HNA_book_4_done }
-		}
-		allow = {
-			HNA_can_write_4_trigger = yes
-			NOT = { has_country_flag = HNA_writing_any }
-		}
-		effect = {
-			set_country_flag = HNA_writing_any
-			set_country_flag = HNA_writing_4_active
-			set_estate_privilege = ACG_MEC_HNA_writing
-			add_country_modifier = { name = ACG_MEC_HNA_wdb_4 duration = 1460 }
-			set_variable = { which = HNA_writing_4_years value = 0 }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	ACG_MEC_HNA_write_5 = {
-		potential = {
-			tag = HNA
-			NOT = { has_country_flag = HNA_book_5_done }
-		}
-		allow = {
-			HNA_can_write_5_trigger = yes
-			NOT = { has_country_flag = HNA_writing_any }
-		}
-		effect = {
-			set_country_flag = HNA_writing_any
-			set_country_flag = HNA_writing_5_active
-			set_estate_privilege = ACG_MEC_HNA_writing
-			add_country_modifier = { name = ACG_MEC_HNA_wdb_5 duration = 2920 }
-			set_variable = { which = HNA_writing_5_years value = 0 }
 		}
 		ai_will_do = {
 			factor = 0
