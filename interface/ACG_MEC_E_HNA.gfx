@@ -2,25 +2,35 @@
 # 稗田阿求：图片绑定（spriteType）
 # ------------------------------------------------------------
 # 绑定法来源：ACG1 interface/IMS_adviser.gfx:269-272
-#     spriteType = { name = "GFX_LLy3"  texturefile = "gfx//interface//advisors//LLy3.dds" }
+#     例：spriteType { name = "GFX_LLy3"，贴图 gfx//interface//advisors//LLy3.dds }
 #   → 游戏内用 £LLy3£ 内联显示；name 必须带 GFX_ 前缀才可被 £…£ 引用。
+#   （注：本文件的注释刻意避开「贴图键 + 双引号路径」的字面写法，避免 tools/bindchk.py
+#     把注释误当成真实贴图声明而报 MISSING。）
 #
-# 【需要你提供的图片｜尺寸均为实测值】
+# 【v7 变更】删除 12 个 HNA_mission_1 … HNA_mission_12 的 spriteType 定义。
+#   原因：它们指向 gfx/interface/missions/HNA/HNA_mission_N.dds，该目录/文件并不存在，
+#   每次启动固定刷 56,712 行报错（error.log 实测）：
+#     [spritetype.cpp:339]: Error initialising texture: gfx//interface//missions//HNA//HNA_mission_N.dds
+#                          for spritetype HNA_mission_N        （每个 3074 次 × 12）
+#     [spritetype.cpp:522]: Should not be lazy loaded. Set legacy_lazy_load=no for HNA_mission_N
+#                                                             （每个 1652 次 × 12）
+#   任务树 missions/HNA_missions.txt 已改用**原版通用图标池**的 spriteType 名。
+#   原版证据（VANILLA_VERIFIED，1.37.5）：interface/countrymissionsview.gfx:278+
+#     :279 name = "mission_early_game_buildings"
+#     :280 贴图 gfx//interface//missions//mission_early_game_buildings.dds
+#   若将来要恢复自建图标：放 12 张 59x63 的 DDS 到 gfx/interface/missions/HNA/，
+#   再把 HNA_mission_N 的 spriteType 补回本文件，并把 missions/HNA_missions.txt 的 icon 改回来。
+#
+# 【现存需要你提供/已具备的图片】
 #   1) 阿求内联图标（事件描述 / 决议 / 特质 tooltip 内显示）
 #        spriteType : GFX_HNA_akyuu
-#        文件       : gfx/interface/HNA/akyuu_icon.dds
+#        文件       : gfx/interface/HNA/akyuu_icon.dds      ← 已存在
 #        尺寸       : 75 x 75   （对标 ACG1 gfx/interface/advisors/LLy3.dds = 75x75）
 #        格式       : DDS，DXT5 + alpha，无 mipmap
-#   2) 任务树图标 12 张
-#        spriteType : HNA_mission_1 … HNA_mission_12   【注意：任务图标不带 GFX_ 前缀】
-#        文件       : gfx/interface/missions/HNA/HNA_mission_N.dds
-#        尺寸       : 59 x 63   （原版 gfx/interface/missions/ 实测，与 ACG1
-#                                gfx/interface/missions/LLF_icon_1.dds 同为 59x63）
-#   3) 政府改革图标 1 张
-#        spriteType : GFX_ACG_MEC_HNA_reform
+#   2) 政府改革图标 1 张
+#        spriteType : government_reform_ACG_MEC_HNA_reform
 #        文件       : gfx/interface/government_reform_icons/ACG_MEC_HNA/ACG_MEC_HNA_reform.dds
-#        尺寸       : 57 x 57   （实测工作区
-#                                gfx/interface/government_reform_icons/ACG_MEC_E_BLS/ACG_MEC_E_BLS_government_reform.dds = 57x57）
+#        尺寸       : 57 x 57   （实测工作区 BLS 改革图标同规格）
 #
 # 图片缺失时只会显示缺图占位，不会导致崩溃。
 # ============================================================
@@ -33,57 +43,7 @@ spriteTypes = {
 		texturefile = "gfx//interface//HNA//akyuu_icon.dds"
 	}
 
-	# ---- 2. 任务树图标（12 张） ----
-	spriteType = {
-		name = "HNA_mission_1"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_1.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_2"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_2.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_3"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_3.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_4"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_4.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_5"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_5.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_6"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_6.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_7"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_7.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_8"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_8.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_9"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_9.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_10"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_10.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_11"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_11.dds"
-	}
-	spriteType = {
-		name = "HNA_mission_12"
-		texturefile = "gfx//interface//missions//HNA//HNA_mission_12.dds"
-	}
-
-	# ---- 3. 政府改革图标 ----
+	# ---- 2. 政府改革图标 ----
 	# 【命名铁律】政府改革的 icon = "X" 查的是 spriteType「government_reform_X」，
 	#   不是「GFX_X」。证据：工作区 interface/BLS_reform_icons.gfx:4
 	#   name = "government_reform_ACG_MEC_E_BLS_reform_1"

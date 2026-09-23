@@ -46,12 +46,17 @@
 #
 #   全部 11 条连接：(Δ列, Δ行) 只有 (0,1) 与 (1,1) 两种 → 零越界。
 #
-# 【图标】icon = HNA_mission_N → 本 mod interface/ACG_MEC_E_HNA.gfx 里的同名 spriteType
-#   本 mod 家族惯例：任务图标 spriteType 不带 GFX_ 前缀
-#   （ACG1 interface/IMS_adviser.gfx:275-278 name = "LLF_icon_1"，
-#     missions/IMS_misssions.txt:1513 icon = LLF_icon_1；
-#     原版 interface/countrymissionsview.gfx:526 name = "mission_noble_council"）
-#   尺寸：59 x 63
+# 【图标｜v7 变更】全部改用原版通用图标池的 spriteType 名（不再依赖本 mod 自建图）
+#   原因：原先 12 个 icon = HNA_mission_N 指向 gfx/interface/missions/HNA/*.dds，
+#         该目录/文件不存在，导致每次启动刷 56,712 行 spritetype 报错
+#         （error.log：[spritetype.cpp:339] Error initialising texture … 每个 3074 次；
+#           [spritetype.cpp:522] Should not be lazy loaded … 每个 1652 次）。
+#   证据（VANILLA_VERIFIED，1.37.5）：
+#     原版 interface/countrymissionsview.gfx 定义任务图标 spriteType
+#       例：:279 name = "mission_early_game_buildings"
+#           :280 texturefile = "gfx//interface//missions//mission_early_game_buildings.dds"
+#     12 个图标的定义与 dds 均已逐一核对存在。
+#   尺寸：59 x 63（原版池统一规格）
 #
 # 【本地化】键名必须是 <任务名>_title 与 <任务名>_desc
 #   （依据：原版 decisions↔loc 命名规范同族；工作区 HKH_l_english.yml、ALC_l_english.yml 均为该格式）
@@ -119,7 +124,7 @@ HNA_missions_2 = {
 	#     always = yes 作为任务 trigger 的原版实例（VANILLA_VERIFIED）：
 	#       原版 missions/AFR_West_African_Missions.txt:473-474
 	HNA_missions_2_1 = {
-		icon = HNA_mission_1
+		icon = mission_unite_home_region
 		position = 1
 		required_missions = { }
 		trigger = {
@@ -154,7 +159,7 @@ HNA_missions_2 = {
 
 	# ---- 行2：五处聚落（关系 A：同列 Δ行=1）----
 	HNA_missions_2_2 = {
-		icon = HNA_mission_2
+		icon = mission_early_game_buildings
 		position = 2
 		required_missions = { HNA_missions_2_1 }
 		trigger = {
@@ -176,7 +181,7 @@ HNA_missions_2 = {
 
 	# ---- 行3：书库与学舍 ----
 	HNA_missions_2_3 = {
-		icon = HNA_mission_3
+		icon = mission_early_modern_university
 		position = 3
 		required_missions = { HNA_missions_2_2 }
 		# v5 变更：原条件 has_building = university（大学）改为 temple（庙宇）。
@@ -200,7 +205,7 @@ HNA_missions_2 = {
 
 	# ---- 行4：印刷工坊 ----
 	HNA_missions_2_4 = {
-		icon = HNA_mission_4
+		icon = mission_have_manufactories
 		position = 4
 		required_missions = { HNA_missions_2_3 }
 		trigger = {
@@ -235,7 +240,7 @@ HNA_missions_3 = {
 
 	# ---- 行2：城防与治安（关系 B：Δ列=1、Δ行=1，斜挂在列2行1下）----
 	HNA_missions_3_1 = {
-		icon = HNA_mission_5
+		icon = mission_japanese_fort
 		position = 2
 		required_missions = { HNA_missions_2_1 }
 		trigger = {
@@ -258,7 +263,7 @@ HNA_missions_3 = {
 
 	# ---- 行3：安科纳的商路 ----
 	HNA_missions_3_2 = {
-		icon = HNA_mission_6
+		icon = mission_dominate_home_trade_node
 		position = 3
 		required_missions = { HNA_missions_3_1 }
 		# v5 变更：原条件 has_building = trade_depot（贸易仓库）改为 marketplace（集市）。
@@ -282,7 +287,7 @@ HNA_missions_3 = {
 
 	# ---- 行4：亚平宁的立足 ----
 	HNA_missions_3_3 = {
-		icon = HNA_mission_7
+		icon = mission_italian_condottiere
 		position = 4
 		required_missions = { HNA_missions_3_2 }
 		provinces_to_highlight = {
@@ -313,11 +318,11 @@ HNA_missions_3 = {
 
 	# ---- 行5：罗马之路（终点；同时作为列4行6的斜向前置）----
 	HNA_missions_3_4 = {
-		icon = HNA_mission_8
+		icon = mission_empire
 		position = 5
 		required_missions = { HNA_missions_3_3 }
 		provinces_to_highlight = {
-			province = 118
+			province_id = 118
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -351,7 +356,7 @@ HNA_missions_4 = {
 
 	# ---- 行3：《求闻史纪》（关系 B：斜挂在列3行2下；需先解锁政体）----
 	HNA_missions_4_1 = {
-		icon = HNA_mission_9
+		icon = mission_luther_theses
 		position = 3
 		required_missions = { HNA_missions_3_1 }
 		trigger = {
@@ -367,7 +372,7 @@ HNA_missions_4 = {
 
 	# ---- 行4：《幻想乡缘起》----
 	HNA_missions_4_2 = {
-		icon = HNA_mission_10
+		icon = mission_buddhist_monk_praying
 		position = 4
 		required_missions = { HNA_missions_4_1 }
 		trigger = {
@@ -381,7 +386,7 @@ HNA_missions_4 = {
 
 	# ---- 行5：魔法与史笔 ----
 	HNA_missions_4_3 = {
-		icon = HNA_mission_11
+		icon = mission_hands_praying
 		position = 5
 		required_missions = { HNA_missions_4_2 }
 		trigger = {
@@ -401,7 +406,7 @@ HNA_missions_4 = {
 	#       3_4  跨列 Δ列=1、Δ行=1  → 关系 B
 	#      —— 这样既完成收束，又让"军事线"真正汇入"著书线"。
 	HNA_missions_4_4 = {
-		icon = HNA_mission_12
+		icon = mission_noble_council
 		position = 6
 		required_missions = {
 			HNA_missions_4_3
