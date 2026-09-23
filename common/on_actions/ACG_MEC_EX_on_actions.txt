@@ -1,0 +1,29 @@
+# ============================================================
+# ACG_MEC_E 子模载入标记
+# 用途：母 mod（ACG1）用 has_global_flag = ACG_MEC_EX_start_global_flag
+#       判断本子模是否已载入。
+# ------------------------------------------------------------
+# 钩子来源：原版 common/on_actions/00_on_actions.txt:4   on_startup = {   （开局钩子）
+# 写法来源：同文件 —— on_startup 块内直接写效果指令；原版 on_actions 全篇
+#           没有任何 effect = { } 包装，故不用包装写法。
+# 效果语法：原版 common/on_actions/00_on_actions.txt:1260
+#           set_global_flag = death_of_haji_giray
+# 条件语法：原版 common/scripted_triggers/00_scripted_triggers.txt:4098
+#           has_global_flag = updated_$culture$_flag
+# ------------------------------------------------------------
+# on_startup 逐国触发，且读档会再次触发（与 ACG1 的 miku_on_actions.txt:2、
+# 子模 ACG_MEC_HNA_on_actions.txt 的非覆盖说明一致），故用 NOT = { ... }
+# 保证一局只设置一次，读档时若缺失（旧存档）也会补上。
+# 同名 on_action 在不同文件里叠加 effect，不会覆盖原版/ACG1/Xorme 的 on_startup。
+#
+# 控制台自查：print_flags（输出全部全局 flag）
+# ============================================================
+
+on_startup = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = ACG_MEC_EX_start_global_flag }
+		}
+		set_global_flag = ACG_MEC_EX_start_global_flag
+	}
+}
