@@ -26,6 +26,20 @@ ACG_MEC_HNA_chronicle_reform = {
 		development_cost = -0.05
 		yearly_innovativeness = 0.25
 		global_institution_spread = 0.10
+		# v6 变更：每年共和传统 +10。
+		#   键名证据：WIKI_VERIFIED 修正列表.html「republican_tradition = 0.5 → 年度共和传统，
+		#     加法」（1.1 起）；VANILLA_VERIFIED 原版政府改革里就有此键
+		#     （common/government_reforms/02_government_reforms_republics.txt:903 / 1694 / 2253 等，
+		#       common/government_reforms/06_government_reforms_common.txt:357）。
+		#   生效前提（已核对）：本键只对有共和传统的政体类型有效，HNA 的政体 acgr_republic 的
+		#     basic_reform = acgr_mechanic 里写着 republican = yes
+		#     （ACG1 common/government_reforms/republics_reform.txt:1-5），因此确实生效。
+		#   ⚠ 数值量级提醒：共和传统是 0~100 的量表（原版触发条件按 85 / 90 / 99 判定，
+		#     见 common/estate_agendas/03_burgher_agendas.txt:233、common/disasters/bonfire_of_the_vanities.txt:43），
+		#     而原版所有用例的年度值都在 0.1~1 之间（最高 1：common/event_modifiers/01_mission_modifiers.txt:2836 / :5677）。
+		#     +10/年等于原版上限的 10 倍，实际效果是共和传统常年钉在 100。
+		#     若要收敛，把 10 改成 1（=原版最高档）或 0.5（原版常见档）即可。
+		republican_tradition = 10
 	}
 	conditional = {
 		allow = { always = yes }
