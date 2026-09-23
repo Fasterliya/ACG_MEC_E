@@ -28,10 +28,14 @@
 #   · 特权效果块内可写 country_event（国家作用域）：
 #       ACG1 common/estate_privileges/01_church_privileges.txt:1027
 #
-# 【登记】EU4 无特权自动登记机制（实测原版 426 个特权定义全部被
+# 【登记｜v5 已改正】EU4 无特权自动登记机制（实测原版 426 个特权定义全部被
 #   common/estates/*.txt 的 privileges 列表引用，孤儿 = 0）。
-#   本文件这 5 个 key 已登记在本 mod 的 common/estates/02_nobility.txt
-#   （ACG1 该文件的完整覆盖副本 + 5 行）。
+#   本文件这 5 个 key 现登记在 common/estates/ACG_MEC_HNA_estate.txt
+#   （照 IQU 的加法式写法：单独一个文件声明 estate_nobles = { privileges = { … } }，
+#     不动 ACG1 的原文件）。
+#   ⚠ 旧写法是把这 5 个 key 追加进 common/estates/02_nobility.txt 的 agendas = { } 块
+#     ——登记成了贵族「议程」而非「特权」，游戏里根本不会出现。该 5 行已移除。
+#     详见 ACG_MEC_HNA_estate.txt 头部的对照说明。
 # ============================================================
 
 # ---------- 1《求闻史纪》：3 年（1095 天） ----------

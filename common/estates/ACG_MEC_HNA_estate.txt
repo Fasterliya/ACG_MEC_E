@@ -1,0 +1,41 @@
+# ============================================================
+# 稗田阿求：贵族阶层（estate_nobles）特权登记
+# ------------------------------------------------------------
+# 【为什么需要这个文件】
+#   EU4 没有「特权自动登记」机制：common/estate_privileges/*.txt 里定义的每个特权，
+#   都必须出现在某个阶层定义（common/estates/*.txt）的 privileges = { } 列表里才会被载入
+#   （实测原版 426 个特权定义全部被 estates 文件引用，孤儿 = 0）。
+#
+# 【写法依据：IQU 模式（Touhou-Universalis-Expanded-CN-\common\estates\）】
+#   该 mod 用「一个角色一个 estate 文件、只声明自己那几条」的加法式登记，实例：
+#     · THE_IQU_estate.txt:1-15   estate_nobles = { custom_name …  privileges = { 2 条 } }
+#     · THE_HNG_estate.txt:42-62  estate_nobles = { custom_name …  privileges = { 9 条 } }
+#     · THE_KEI_estate.txt:1-13   estate_nobles = { custom_name …  privileges = { } }
+#     · THE_FOM_estate.txt:18 / THE_ROD_estate.txt:7 同样各自声明 estate_nobles
+#   同一条 estate_nobles 被 6 个不同文件分别声明 → 说明 common/estates/ 下的**同名阶层跨文件累积**，
+#   因此可以只声明自己的特权，完全不必碰 ACG1 的原文件。
+#   （对照：ACG1 自己走的是「整份拷贝 02_nobility.txt 再追加」的路线 ——
+#     那样每次 ACG1 更新贵族定义，子 mod 的旧副本都会把更新整份盖掉。
+#     本文件改用 IQU 的加法路线，规避该风险。）
+#   注：Wiki「阶层修改.html」是 1.30 快照且未说明跨文件合并语义，
+#   本条结论来自上述实际 mod 的用法推断（PROJECT 级证据），非官方文档。
+#
+# 【旧写法的错误｜本轮修正】
+#   ACG_MEC_HNA_writing_1..5 原先写在 common/estates/02_nobility.txt 的 agendas = { } 块内
+#   （原 655-659 行）—— 被登记成贵族「议程」而不是「特权」，
+#   议程表里不存在这些 key，于是游戏里既看不到按钮也报错。该 5 行已从那里移除。
+#
+# 【特权本体】common/estate_privileges/ACG_MEC_HNA_privileges.txt
+# 【本地化】decode_localisation/ACG_MEC_HNA_l_english.yml 的
+#           ACG_MEC_HNA_writing_1..5 + _desc
+# ============================================================
+
+estate_nobles = {
+	privileges = {
+		ACG_MEC_HNA_writing_1
+		ACG_MEC_HNA_writing_2
+		ACG_MEC_HNA_writing_3
+		ACG_MEC_HNA_writing_4
+		ACG_MEC_HNA_writing_5
+	}
+}

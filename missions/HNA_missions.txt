@@ -56,6 +56,48 @@
 # 【本地化】键名必须是 <任务名>_title 与 <任务名>_desc
 #   （依据：原版 decisions↔loc 命名规范同族；工作区 HKH_l_english.yml、ALC_l_english.yml 均为该格式）
 # ============================================================
+#
+# 【v5 变更｜本轮】
+#   1) 任务树给的修正**全部改为永久**（duration = -1）：
+#        2_3 reward_adm_1、2_4 reward_build_1、3_1 reward_army_1、3_2 reward_dev_2、
+#        3_3 reward_army_2、3_4 reward_army_3、4_1 reward_adm_1、4_2 reward_build_1、
+#        4_3 reward_magic_tech
+#      （2_1 / 2_2 的 reward_dev_1 与 4_4 的 chronicle_permanent 本来就是 duration = -1）
+#      理由：这是长线养成树，限时奖励 10~15 年就失效，与「永久成长」的意图不符。
+#   2) 卡后期科技的建筑条件改掉（科技 17 = 1622 年，太靠后）：
+#        · 2_3「书库与学舍」：has_building = university（行政 17）→ temple（行政 4）
+#        · 3_2「安科纳的商路」：has_building = trade_depot（外交 17）→ marketplace（外交 4）
+#      科技门槛证据见各自任务上方注释。2_4（工坊 行政 6 + 集市 外交 4）与
+#      3_1（法院 行政 8 + 兵营 军事 6）属前期~中期，按你的要求保留不动。
+#   3) 同名修正撞车防护：事件里与任务永久版同名的限时发放也一并改永久，
+#      见 events/ACG_MEC_HNA_events.txt 头部的 v5 说明。
+#
+# 【v6 变更｜本轮】
+#   1) 2_1「稗田家的领地」开局赠送 add_treasury = 2000（原版同额实例
+#      missions/DOM_Britain_Missions.txt:4358）。
+#   2) 军事线三颗（3_1 → 3_3 → 3_4）各追加两份永久修正，共 3 次：
+#        · 骰子：ACG_MEC_HNA_dice_1 / _2 / _3，每个都是
+#            global_attacker_dice_roll_bonus = 1
+#            global_defender_dice_roll_bonus = 1
+#          → 三次累计 **全局进攻骰子 +3、全局防御骰子 +3**。
+#          键名证据（1.34+ 加法型修正）：Wiki 修正列表「全局进攻方骰子增加」/「全局防御方骰子增加」；
+#          原版实例 common/event_modifiers/01_mission_modifiers.txt:8805 / :9803。
+#          ⚠ 为什么用 3 个独立键而不是同一个键发 3 次：同名修正重发是「刷新时长」还是
+#            「并列叠加」，Wiki 修正修改.html 事件修正一节与原版文件中均无说明（无定论），
+#            共用一键有可能只生效 +1。独立键在两种语义下都必然叠到 +3。
+#        · 军事包：ACG_MEC_HNA_mil_1 / _2 / _3（见 common/event_modifiers/ACG_MEC_HNA_modifiers.txt）
+#          均为**新建独立键**，不改动既有 reward_army_1/2/3，
+#          因此事件（.10c / .11c / .12b / .13a）不会连带变强。
+#   3) 每月君主点数分 2 次给：2_2「五处聚落」给 ACG_MEC_HNA_power_1，
+#      4_4「幻想乡史笔」给 ACG_MEC_HNA_power_2，每个键都是
+#        country_admin_power = 1 / country_diplomatic_power = 1 / country_military_power = 1
+#      → 两次合计 **每月行政 +2、外交 +2、军事 +2**。
+#      键名证据（加法型修正）：Wiki 修正列表「每月额外获得行政/外交/军事君主力量点数」
+#      （1.26 / 1.30）；原版实例 common/event_modifiers/01_mission_modifiers.txt:9867-9868、
+#      common/event_modifiers/00_event_modifiers.txt:13160-13162、
+#      common/static_modifiers/00_static_modifiers.txt:1910-1918。
+#      同样拆成 2 个独立键，理由与骰子一致（同名重发语义无定论）。
+# ============================================================
 
 
 # ============================================================
@@ -84,10 +126,14 @@ HNA_missions_2 = {
 			always = yes
 		}
 		effect = {
+			# v6 变更：开局赠款 2000 杜卡特。
+			#   add_treasury 为原版效果；同额原版实例 missions/DOM_Britain_Missions.txt:4358。
+			add_treasury = 2000
 			capital_scope = {
 				add_base_tax = 1
 			}
-			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 3650 }
+			# v5 变更：duration 3650 → -1（永久 -15% 发展成本）
+			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = -1 }
 			HNA_akyuu_grant_growth_effect = { amount = 3 }
 
 			# ---------- 解锁「意大利统一战争」宣战理由 ----------
@@ -119,7 +165,10 @@ HNA_missions_2 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 3650 }
+			# v5 变更：duration 3650 → -1（永久 -15% 发展成本）
+			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = -1 }
+			# v6：每月君主点数第 1 次 —— 行政 / 外交 / 军事 各 +1（ACG_MEC_HNA_power_1）
+			add_country_modifier = { name = ACG_MEC_HNA_power_1 duration = -1 }
 			add_adm_power = 50
 			HNA_akyuu_grant_growth_effect = { amount = 4 }
 		}
@@ -130,13 +179,20 @@ HNA_missions_2 = {
 		icon = HNA_mission_3
 		position = 3
 		required_missions = { HNA_missions_2_2 }
+		# v5 变更：原条件 has_building = university（大学）改为 temple（庙宇）。
+		#   大学由 **行政科技 17 / 1622 年** 解锁（VANILLA_VERIFIED：
+		#     原版 common/technologies/adm.txt:248-259，块注释「#University」「# Tech 17」），
+		#     在这棵前期任务树里等于卡到 17 世纪；
+		#   庙宇由 **行政科技 4 / 1453 年** 解锁（原版 common/technologies/adm.txt:70-78），
+		#     开局不久即可达成，保留「要盖东西」的手感。
+		#   （任务描述《书库与学舍》的文案未动，仍在 decode_localisation。）
 		trigger = {
 			capital_scope = {
-				has_building = university
+				has_building = temple
 			}
 		}
 		effect = {
-			add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 3650 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = -1 }
 			add_splendor = 50
 			HNA_akyuu_grant_growth_effect = { amount = 5 }
 		}
@@ -156,7 +212,7 @@ HNA_missions_2 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = 3650 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = -1 }
 			add_treasury = 100
 			HNA_akyuu_grant_growth_effect = { amount = 4 }
 		}
@@ -191,7 +247,10 @@ HNA_missions_3 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = ACG_MEC_HNA_reward_army_1 duration = 3650 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_army_1 duration = -1 }
+			# v6：军事加成第 1 次 —— 骰子 +1/+1（ACG_MEC_HNA_dice_1）+ 军事包 1（ACG_MEC_HNA_mil_1）
+			add_country_modifier = { name = ACG_MEC_HNA_dice_1 duration = -1 }
+			add_country_modifier = { name = ACG_MEC_HNA_mil_1 duration = -1 }
 			add_manpower = 10
 			HNA_akyuu_grant_growth_effect = { amount = 5 }
 		}
@@ -202,13 +261,21 @@ HNA_missions_3 = {
 		icon = HNA_mission_6
 		position = 3
 		required_missions = { HNA_missions_3_1 }
+		# v5 变更：原条件 has_building = trade_depot（贸易仓库）改为 marketplace（集市）。
+		#   贸易仓库由 **外交科技 17 / 1622 年** 解锁（VANILLA_VERIFIED：
+		#     原版 common/technologies/dip.txt:279-294，块注释「#Merchantman」「# Tech 17」），
+		#     在这棵前期任务树里等于卡到 17 世纪；
+		#   集市由 **外交科技 4 / 1453 年** 解锁（原版 common/technologies/dip.txt:74-82），
+		#     而且 trade_depot 本身 make_obsolete = marketplace（原版 common/buildings/00_buildings.txt:1326），
+		#     即「集市」正是「贸易仓库」的前身，语义上最贴近「设货栈以聚财货」。
+		#   （任务描述《安科纳的商路》的文案未动，仍在 decode_localisation。）
 		trigger = {
 			capital_scope = {
-				has_building = trade_depot
+				has_building = marketplace
 			}
 		}
 		effect = {
-			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_2 duration = 5475 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_2 duration = -1 }
 			HNA_akyuu_grant_growth_effect = { amount = 4 }
 		}
 	}
@@ -236,7 +303,10 @@ HNA_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = 3650 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = -1 }
+			# v6：军事加成第 2 次 —— 骰子 +1/+1（ACG_MEC_HNA_dice_2）+ 军事包 2（ACG_MEC_HNA_mil_2）
+			add_country_modifier = { name = ACG_MEC_HNA_dice_2 duration = -1 }
+			add_country_modifier = { name = ACG_MEC_HNA_mil_2 duration = -1 }
 			HNA_akyuu_grant_growth_effect = { amount = 6 }
 		}
 	}
@@ -256,7 +326,10 @@ HNA_missions_3 = {
 		}
 		effect = {
 			add_prestige = 30
-			add_country_modifier = { name = ACG_MEC_HNA_reward_army_3 duration = 5475 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_army_3 duration = -1 }
+			# v6：军事加成第 3 次 —— 骰子 +1/+1（ACG_MEC_HNA_dice_3）+ 军事包 3（ACG_MEC_HNA_mil_3）
+			add_country_modifier = { name = ACG_MEC_HNA_dice_3 duration = -1 }
+			add_country_modifier = { name = ACG_MEC_HNA_mil_3 duration = -1 }
 			HNA_akyuu_grant_growth_effect = { amount = 8 }
 		}
 	}
@@ -286,7 +359,7 @@ HNA_missions_4 = {
 			has_country_flag = HNA_book_1_done
 		}
 		effect = {
-			add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 3650 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = -1 }
 			add_splendor = 100
 			HNA_akyuu_grant_growth_effect = { amount = 6 }
 		}
@@ -301,7 +374,7 @@ HNA_missions_4 = {
 			has_country_flag = HNA_book_2_done
 		}
 		effect = {
-			add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = 3650 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = -1 }
 			HNA_akyuu_grant_growth_effect = { amount = 5 }
 		}
 	}
@@ -318,7 +391,7 @@ HNA_missions_4 = {
 		effect = {
 			change_variable = { which = Mana value = 20 }
 			change_variable = { which = Magic_exp value = 15 }
-			add_country_modifier = { name = ACG_MEC_HNA_reward_magic_tech duration = 5475 }
+			add_country_modifier = { name = ACG_MEC_HNA_reward_magic_tech duration = -1 }
 			HNA_akyuu_grant_growth_effect = { amount = 5 }
 		}
 	}
@@ -339,6 +412,9 @@ HNA_missions_4 = {
 		}
 		effect = {
 			add_country_modifier = { name = ACG_MEC_HNA_chronicle_permanent duration = -1 }
+			# v6：每月君主点数第 2 次 —— 行政 / 外交 / 军事 各 +1（ACG_MEC_HNA_power_2）
+			#     两次合计：每月行政 +2、外交 +2、军事 +2
+			add_country_modifier = { name = ACG_MEC_HNA_power_2 duration = -1 }
 			add_prestige = 50
 			HNA_akyuu_grant_growth_effect = { amount = 5 }
 

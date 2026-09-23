@@ -1,0 +1,83 @@
+# ============================================================
+# 稗田阿求：国家理念组 HNA_ideas
+# ------------------------------------------------------------
+# 【为什么组名必须是 HNA_ideas】
+#   国家理念组在**加载时**按组名挂给国家：组名 = <TAG>_ideas 即自动成为该 tag 的国家理念，
+#   不需要在 history/countries/*.txt 里写任何 add_idea_group。
+#   VANILLA_VERIFIED：原版 history/countries/ 全目录 0 处 add_idea_group；
+#     原版 common/ideas/00_country_ideas.txt:137-150 的 ENG_ideas 正是
+#       trigger = { tag = ENG } + free = yes		#will be added at load.
+#   WIKI_VERIFIED：理念组修改.html §国家理念组 ——「国家理念组在加载游戏时即被确定……
+#     国家理念组代码中要有 free = yes 这一行，用于和基本理念组进行区别」。
+#
+# 【结构】传统 start + 野心 bonus + 7 条理念 —— 与原版 ENG_ideas 同形。
+#
+# 【平衡口径】对标本 mod 已有的 YYK / ALC：
+#   · YYK（common/ideas/YYK_ideas.txt，组名 ACG_MEC_EX_YYK_ideas）
+#       传统 land_morale 0.10 + global_manpower_modifier 0.25；野心两项；理念数值 0.10~0.20
+#   · ALC（common/ideas/ALC_ideas.txt）
+#       传统 mercenary_cost -0.25 + available_mercenary_companies 1.0；理念数值 0.10~0.25
+#   本组走「学者共和国」路线：经济 / 科技 / 理念花费偏强，军事只占 1 条，且不设军事野心。
+#
+# 【键名证据】下列 modifier 键全部在原版 common/ideas/00_country_ideas.txt 中有实例：
+#   development_cost(:36)        reform_progress_growth(:537)   core_creation(:85)
+#   idea_cost(:1041)             global_tax_modifier(:82)       stability_cost_modifier(:345)
+#   technology_cost(:118)        global_institution_spread(:758) production_efficiency(:157)
+#   global_trade_goods_size_modifier(:133)  prestige(:436)      republican_tradition(:99)
+#   ae_impact(:705)              province_warscore_cost(:1283)  land_morale(:476)
+#   infantry_power(:255)         leader_land_shock(:319)
+#   魔法两项属 ACG1 魔法系统（ACG1 common/event_modifiers/ACGR_magic_modifiers.txt:35-36、
+#   common/estates_preload/acg_estate_modifiers.txt:32-37）。
+# ============================================================
+
+HNA_ideas = {
+	start = {                            # 传统：稗田家的史笔
+		development_cost = -0.10
+		reform_progress_growth = 0.10
+	}
+	bonus = {                            # 野心：幻想乡史笔
+		core_creation = -0.10
+		idea_cost = -0.10
+	}
+	trigger = {
+		tag = HNA
+	}
+	free = yes		#will be added at load.
+
+	# 1. 安科纳编年 —— 家业与治世
+	HNA_ancona_chronicle = {
+		global_tax_modifier = 0.10
+		stability_cost_modifier = -0.10
+	}
+	# 2. 书库与学舍 —— 学术与思潮
+	HNA_house_of_books = {
+		technology_cost = -0.05
+		global_institution_spread = 0.10
+	}
+	# 3. 木版印刷 —— 书稿传抄天下
+	HNA_woodblock_printing = {
+		production_efficiency = 0.10
+		global_trade_goods_size_modifier = 0.10
+	}
+	# 4. 阿求的见闻 —— 名声与共和传统
+	HNA_akyuus_records = {
+		prestige = 1
+		republican_tradition = 0.3
+	}
+	# 5. 魔法考据 —— 魔力与施法经验
+	HNA_magic_research = {
+		pulse_mana_get_modifier = 10
+		pulse_magic_exp_get_modifier = 10
+	}
+	# 6. 亚平宁的立足 —— 扩张的代价更低
+	HNA_italian_footing = {
+		ae_impact = -0.10
+		province_warscore_cost = -0.10
+	}
+	# 7. 阿求出阵 —— 唯一的军事理念
+	HNA_akyuu_the_general = {
+		land_morale = 0.10
+		infantry_power = 0.10
+		leader_land_shock = 1
+	}
+}

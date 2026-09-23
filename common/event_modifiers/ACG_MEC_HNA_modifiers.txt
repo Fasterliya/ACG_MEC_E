@@ -9,7 +9,10 @@
 # ============================================================
 
 # ---------- 奖励方向 A：发展 ----------
-ACG_MEC_HNA_reward_dev_1 = {            #10 年
+# v5 变更：ACG_MEC_HNA_reward_dev_1 已改为「永久」——
+#   4 个发放点（任务 2_1 / 2_2、事件 .10 选项A、事件 .40）全部以 duration = -1 发出，
+#   故原注释「10 年」作废。修正本体不含 duration 字段，时长只由调用处决定。
+ACG_MEC_HNA_reward_dev_1 = {
 	development_cost = -0.15            #ACG1 chino_buff_1_2 用例
 }
 ACG_MEC_HNA_reward_dev_2 = {            #15 年
@@ -58,10 +61,23 @@ ACG_MEC_HNA_reward_magic_tech = {       #15 年
 }
 
 # ---------- 永久修正：《稗田家秘录》成书 ----------
+# v5 变更：按「任务树给的永久 buff」加强（稳健档）——
+#   development_cost     -0.05 → -0.15
+#   technology_cost      -0.05 → -0.10
+#   reform_progress_growth 0.10 → 0.15
+#   新增 core_creation    = -0.10（建造核心花费）
+# 本修正就是任务树给的永久 buff：missions/HNA_missions.txt 的 HNA_missions_4_4
+#   effect 里以 duration = -1 发出；另外事件 ACG_MEC_HNA_events.14（永久向选项）
+#   与 .30（四维圆满）发的也是同一个键，故这三处会同步变强（同一修正，无法分开）。
+# core_creation 键证据：
+#   WIKI_VERIFIED   修正列表.html：「core_creation = -0.1 建造核心花费」
+#   VANILLA_VERIFIED 原版 common/event_modifiers/00_event_modifiers.txt:436
+#   PROJECT_VERIFIED 本 mod common/event_modifiers/YYK_mission_modifiers.txt:28
 ACG_MEC_HNA_chronicle_permanent = {
-	reform_progress_growth = 0.10
-	technology_cost = -0.05
-	development_cost = -0.05
+	reform_progress_growth = 0.15
+	technology_cost = -0.10
+	development_cost = -0.15
+	core_creation = -0.10
 }
 
 # ---------- 四维圆满：幻想乡史笔 ----------
@@ -73,4 +89,62 @@ ACG_MEC_HNA_peak_modifier = {
 	land_morale = 0.05
 	reform_progress_growth = 0.10
 	development_cost = -0.10
+}
+
+# ---------- 六、v6 新增：任务树军事线骰子（3_1 / 3_3 / 3_4 各一次，累计 +3/+3） ----------
+# 键名证据：global_attacker_dice_roll_bonus / global_defender_dice_roll_bonus 为 1.34+ 加法型修正
+#   WIKI_VERIFIED   修正列表.html：「全局进攻方骰子增加」/「全局防御方骰子增加」，标注「加法」「1.34」
+#   VANILLA_VERIFIED 原版 common/event_modifiers/01_mission_modifiers.txt:8805 / :9803
+#   PROJECT_VERIFIED 本工作区 common/static_modifiers/zys_static_modifiers.txt:503 / :515
+# 为什么拆成 3 个键：同名修正重发（刷新时长 vs 并列叠加）无定论，拆键可保证三次必然累计。
+# 语义注意：attacker / defender 骰子是**按该场战斗中本方是攻方还是守方**判定，不是「进攻战/防御战」。
+ACG_MEC_HNA_dice_1 = {
+	global_attacker_dice_roll_bonus = 1
+	global_defender_dice_roll_bonus = 1
+}
+ACG_MEC_HNA_dice_2 = {
+	global_attacker_dice_roll_bonus = 1
+	global_defender_dice_roll_bonus = 1
+}
+ACG_MEC_HNA_dice_3 = {
+	global_attacker_dice_roll_bonus = 1
+	global_defender_dice_roll_bonus = 1
+}
+
+# ---------- 七、v6 新增：任务树军事包（与既有 reward_army_* 解耦，事件不受影响） ----------
+# 全部键均在原版 common/event_modifiers/01_mission_modifiers.txt 中有实例：
+#   reinforce_speed :2763、manpower_recovery_speed :24、discipline :752、
+#   infantry_power :700、cavalry_power :231、siege_ability :4153、
+#   artillery_power :3112、army_tradition :25
+ACG_MEC_HNA_mil_1 = {                   # 3_1 城防与治安 —— 守土与补员
+	reinforce_speed = 0.10
+	manpower_recovery_speed = 0.10
+}
+ACG_MEC_HNA_mil_2 = {                   # 3_3 亚平宁的立足 —— 野战战力
+	discipline = 0.05
+	infantry_power = 0.10
+	cavalry_power = 0.10
+}
+ACG_MEC_HNA_mil_3 = {                   # 3_4 罗马之路 —— 攻坚与传统
+	siege_ability = 0.10
+	artillery_power = 0.10
+	army_tradition = 0.5
+}
+
+# ---------- 八、v6 新增：每月君主点数（2_2 与 4_4 各一次，累计每月 +2/+2/+2） ----------
+# 键名证据：country_admin_power / country_diplomatic_power / country_military_power 为加法型修正
+#   WIKI_VERIFIED   修正列表.html：「每月额外获得行政/外交/军事君主力量点数」（1.26 / 1.30）
+#   VANILLA_VERIFIED 原版 common/event_modifiers/01_mission_modifiers.txt:9867-9868、
+#                    common/event_modifiers/00_event_modifiers.txt:13160-13162、
+#                    common/static_modifiers/00_static_modifiers.txt:1910-1918
+# 同样拆成 2 个独立键：同名修正重发是「刷新时长」还是「并列叠加」无定论，拆键才能保证累计 +2。
+ACG_MEC_HNA_power_1 = {                 # 2_2 五处聚落
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+ACG_MEC_HNA_power_2 = {                 # 4_4 幻想乡史笔
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
 }

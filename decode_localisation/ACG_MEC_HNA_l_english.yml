@@ -1,6 +1,6 @@
 l_english:
  # ===== 稗田阿求：将领特质 =====
- akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\n史笔"
+ akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\n稗田阿求"
  desc_akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\n稗田阿求以史家之笔记述战阵之事。她所率领的部队更易重振士气，攻城亦更为老练。"
  akyuu_chronicler_peak_personality: "幻想乡史笔"
  desc_akyuu_chronicler_peak_personality: "£HNA_akyuu£\n百战之后，阿求的笔下已不再只是传闻。她兼通火器、冲击、机动与攻城之道，所率之军无处不可至、无城不可下。"
@@ -67,6 +67,17 @@ l_english:
  ACG_MEC_HNA_reward_magic_tech: "史笔·明理"
  ACG_MEC_HNA_chronicle_permanent: "稗田家秘录"
  ACG_MEC_HNA_peak_modifier: "幻想乡史笔"
+ # v6 新增：任务树军事线骰子（3_1 / 3_3 / 3_4 各给一次，累计全局进攻骰子 +3、全局防御骰子 +3）
+ ACG_MEC_HNA_dice_1: "史笔·临阵"
+ ACG_MEC_HNA_dice_2: "史笔·料敌"
+ ACG_MEC_HNA_dice_3: "史笔·决胜"
+ # v6 新增：任务树军事包（新建独立键，与既有 reward_army_1/2/3 解耦，事件不受影响）
+ ACG_MEC_HNA_mil_1: "史笔·坚壁"
+ ACG_MEC_HNA_mil_2: "史笔·锐士"
+ ACG_MEC_HNA_mil_3: "史笔·攻城"
+ # v6 新增：每月君主点数（2_2 与 4_4 各给一次，累计每月行政 +2、外交 +2、军事 +2）
+ ACG_MEC_HNA_power_1: "史笔·笔耕"
+ ACG_MEC_HNA_power_2: "史笔·成书"
  # ===== 稗田阿求：著书特权（5 本，挂贵族阶层 estate_nobles）=====
  # 玩家在贵族阶层界面自行授予；特权的 on_granted 会排程对应年限的完成事件。
  # Debuff 就在特权自身（penalties），不再另挂修正。
@@ -127,3 +138,25 @@ l_english:
  # ===== 稗田阿求：再召决议（v4 新增，由最终任务解锁）=====
  ACG_MEC_HNA_recall_akyuu_title: "再召稗田阿求出任将领"
  ACG_MEC_HNA_recall_akyuu_desc: "《稗田家秘录》既已成书，阿求之名便不可磨灭。无论她战殁于阵前还是去职于朝堂，稗田家随时可以请她再度披甲——她此前的全部见闻与成长都不会丢失。"
+ # ===== 稗田阿求：国家理念组 HNA_ideas（common/ideas/HNA_ideas.txt）=====
+ # 键名规范：<组名>（组名本身）/ <组名>_ideas_start(_desc) / <组名>_ideas_bonus(_desc) / <理念键>(_desc)
+ #   依据：本 mod decode_localisation/BLS_l_english.yml:7-10、YYK_l_english.yml:132-136 同族写法。
+ HNA_ideas: "稗田家理念"
+ HNA_ideas_start: "稗田家的史笔"
+ HNA_ideas_start_desc: "稗田家世代居于安科纳，以记述为业。当史笔成为国政之本，全国的营造与治学便有了方向：发展花费降低，政体推进也更顺畅。"
+ HNA_ideas_bonus: "幻想乡史笔"
+ HNA_ideas_bonus_desc: "记下一切，理解一切。当稗田家的理念终为一体，阿求的见闻已足以支撑一部传世之书——开拓疆土与研习理念的代价都随之降低。"
+ HNA_ancona_chronicle: "安科纳编年"
+ HNA_ancona_chronicle_desc: "稗田家的领地编年使税制有据可依，乡里的争端也有了成例可循，境内因此安定。"
+ HNA_house_of_books: "书库与学舍"
+ HNA_house_of_books_desc: "都城的书库汇集典籍、学舍容纳门徒。思想在此碰撞，新技术与新思潮总是更快地传入这个国家。"
+ HNA_woodblock_printing: "木版印刷"
+ HNA_woodblock_printing_desc: "书稿一旦可以大量传抄，知识与手艺便不再囿于宫廷。工坊与市集随之兴旺，货物行销四方。"
+ HNA_akyuus_records: "阿求的见闻"
+ HNA_akyuus_records_desc: "阿求亲历亲闻的记述令稗田家声名远播，也让共和国的传统在一次次朝议中愈发稳固。"
+ HNA_magic_research: "魔法考据"
+ HNA_magic_research_desc: "考据需要魔力的凭据。稗田家以注疏与实验并行，聚敛魔力与施法经验的速度远超他国。"
+ HNA_italian_footing: "亚平宁的立足"
+ HNA_italian_footing_desc: "史书若只写一城，终究太薄。稗田家在意大利的扩张有理有据、有典可引，因此招致的非议更少，议和时的价码也更低。"
+ HNA_akyuu_the_general: "阿求出阵"
+ HNA_akyuu_the_general_desc: "阿求披甲随军，亲历战阵。她的笔记写在战场之上，士气与锋锐也随之而来。"

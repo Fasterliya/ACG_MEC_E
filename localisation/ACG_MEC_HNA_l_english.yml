@@ -1,6 +1,6 @@
 ﻿l_english:
  # ===== z0u?–BlÿS†˜yr( =====
- akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\nòSr"
+ akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\nz0u?–Bl"
  desc_akyuu_chronicler_personality: "\n\n\n£HNA_akyuu£\n\n\nz0u?–BlåNòS¶RKNr°‹ðb5–KN‹N0yYNb‡s†˜„vè–ôffÍ‘=cëXlÿIeÎW¦Nôf:NwÃu0"
  akyuu_chronicler_peak_personality: "‰^ó`aNòSr"
  desc_akyuu_chronicler_peak_personality: "£HNA_akyuu£\nŒvbKNTÿ?–Bl„vrNòTNQêS=f.Oû•0yY|QkphV0²QûQ0:g¨RNIeÎWKNSÿNb‡sKN›QàeYNïSó0àeÎWNïSN0"
@@ -67,6 +67,17 @@
  ACG_MEC_HNA_reward_magic_tech: "òSr·ft"
  ACG_MEC_HNA_chronicle_permanent: "z0u¶RØyUV"
  ACG_MEC_HNA_peak_modifier: "‰^ó`aNòSr"
+ # v6 °ežXÿûN¡Rh›Q‹N¿u°šPRÿ3_1 / 3_3 / 3_4 TÙuN!kÿ=t¡‹hQNSÛIe°šPR +30hQNS2–¡V°šPR +3	ÿ
+ ACG_MEC_HNA_dice_1: "òSr·4N5–"
+ ACG_MEC_HNA_dice_2: "òSr·™eLe"
+ ACG_MEC_HNA_dice_3: "òSr·³QÜw"
+ # v6 °ežXÿûN¡Rh›Q‹NSÿ°eú^ìrËz.•ÿNâe	g reward_army_1/2/3 ã‰&wÿ‹NöNN×SqVÍT	ÿ
+ ACG_MEC_HNA_mil_1: "òSr·ZWÁX"
+ ACG_MEC_HNA_mil_2: "òSr·•ëX"
+ ACG_MEC_HNA_mil_3: "òSr·IeÎW"
+ # v6 °ežXÿÏkgTIN¹ppeÿ2_2 N 4_4 TÙuN!kÿ=t¡‹ÏkgLˆ?e +20Y²N +20›Q‹N +2	ÿ
+ ACG_MEC_HNA_power_1: "òSr·rw"
+ ACG_MEC_HNA_power_2: "òSr·bfN"
  # ===== z0u?–BlÿW„fNyrCgÿ5 ,gÿc5Ïe6–BS estate_nobles	ÿ=====
  # ©s¶R(W5Ïe6–BSLub—êLˆˆcˆNÿyrCg„v on_granted O’czùR”^t^P–„vŒRb‹NöN0
  # Debuff 1S(WyrCgê«Žÿpenalties	ÿÿNQæScîOck0

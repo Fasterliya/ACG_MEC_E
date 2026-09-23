@@ -17,6 +17,34 @@
 #     （成书标记移到 immediate，确保无论选哪个选项都会被置上）。
 #
 # 所有事件均在 decode_localisation/ACG_MEC_HNA_l_english.yml 补齐文本
+#
+# v5 变更（与任务树永久化配套）：
+#   任务树已把 reward_adm_1 / reward_build_1 / reward_army_1 / reward_army_2 /
+#   reward_army_3 / reward_magic_tech / reward_dev_1 全部发成永久（duration = -1）。
+#   若事件仍以限时同发**同名**修正，存在把刚拿到的永久 buff 刷回限时的风险
+#   （同名事件修正重发属「刷新时长」还是「并存叠加」，Wiki 修正修改.html 事件修正一节
+#     与原版文件中均无说明 —— 无定论）。故下列发放一并改永久：
+#     .10 选项c reward_army_1、.11 选项a reward_build_1、.11 选项c / .12 选项b reward_army_2、
+#     .12 选项c / .13 选项c reward_adm_1、.13 选项a reward_army_3、.14 魔法向 reward_magic_tech
+#     （上一轮已改：.10 选项a 与 .40 的 reward_dev_1）
+#   保持限时不动的是任务树不发放的两个修正：
+#     .11 选项b reward_magic_mana（3650）、.12 选项a reward_magic_exp（5475）
+#
+# v6 变更（著书可重复刷取）：
+#   .10 / .11 / .12 / .13 / .14 五个成书事件**移除 fire_only_once = yes**。
+#   原因：fire_only_once 是「重复著书」的硬阻塞（Wiki 事件修改.html：「你可以添加如下语句
+#   使事件只触发一次」）。第二次授予特权后，排程的事件被静默丢弃，immediate 里的
+#   remove_estate_privilege 不执行 → 特权永久挂在贵族身上（连带其 penalties：见
+#   common/estate_privileges/ACG_MEC_HNA_privileges.txt 各书的 penalties 块）；
+#   而每本书的 can_select 又写着 NOT = { has_estate_privilege = 其它 4 本 }，
+#   于是整个著书系统死锁，只能手动撤销特权才能恢复。
+#   改动后流程：授予特权 → N 天后成书事件 → immediate 收掉特权 + 置 HNA_book_N_done →
+#   玩家三选一拿奖励 → 特权回到可授予状态，可再次著书（互斥保留，故为「顺序重复刷」）。
+#   仍保持一次性的：.30（四维圆满）、.40（召阿求出任将领）、.50（稗田家史笔政体成立）。
+#   ⚠ 已知风险（无定论）：重复刷会反复发放**同名永久修正**（如 .10 选项a 的
+#     ACG_MEC_HNA_reward_dev_1，duration = -1）。同名修正重发是「刷新时长」还是
+#     「并列叠加」在 Wiki 与原版文件中均无说明 —— 若为叠加语义，反复刷同一选项会让
+#     对应数值无限累积，需实测确认（这正是你选择「奖励保持原样、无限刷」时接受的取舍）。
 # ============================================================
 namespace = ACG_MEC_HNA_events
 
@@ -44,7 +72,7 @@ country_event = {
 	desc = "ACG_MEC_HNA_events.10.d"
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
-	fire_only_once = yes
+	# v6：移除 fire_only_once，允许重复著书刷取奖励（理由见文件头 v6 段）
 	trigger = {
 		has_estate_privilege = ACG_MEC_HNA_writing_1
 	}
@@ -54,7 +82,13 @@ country_event = {
 	}
 	option = {   #发展向
 		name = "ACG_MEC_HNA_events.10.a"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 3650 }
+		# v5 变更：duration 3650 → -1（永久）。
+		# 原因：任务 2_1 / 2_2 与事件 .40 已把同一个 dev_1 发成永久（duration = -1），
+		# 若此处仍发 3650 天的同名修正，存在把永久 buff 刷回限时的风险
+		# （同名事件修正重发的语义「刷新时长」还是「并存叠加」在 Wiki
+		#   修正修改.html 事件修正一节与原版文件中均无说明 —— 无定论）。
+		# 三处统一为永久后，无论游戏取哪种语义都不会出问题。
+		add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = -1 }
 		HNA_akyuu_grant_growth_effect = { amount = 4 }
 		ai_chance = { factor = 1 }
 	}
@@ -67,7 +101,7 @@ country_event = {
 	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.10.c"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_army_1 duration = 3650 }
+		add_country_modifier = { name = ACG_MEC_HNA_reward_army_1 duration = -1 }
 		add_mil_power = 100
 		HNA_akyuu_grant_growth_effect = { amount = 4 }
 		ai_chance = { factor = 1 }
@@ -83,7 +117,7 @@ country_event = {
 	desc = "ACG_MEC_HNA_events.11.d"
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
-	fire_only_once = yes
+	# v6：移除 fire_only_once，允许重复著书刷取奖励（理由见文件头 v6 段）
 	trigger = {
 		has_estate_privilege = ACG_MEC_HNA_writing_2
 	}
@@ -93,20 +127,20 @@ country_event = {
 	}
 	option = {   #建筑向
 		name = "ACG_MEC_HNA_events.11.a"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = 3650 }
+		add_country_modifier = { name = ACG_MEC_HNA_reward_build_1 duration = -1 }
 		HNA_akyuu_grant_growth_effect = { amount = 5 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #魔法向
 		name = "ACG_MEC_HNA_events.11.b"
-		change_variable = { which = Mana value = 10 }
+		change_variable = { which = Mana value = 1000 }
 		add_country_modifier = { name = ACG_MEC_HNA_reward_magic_mana duration = 3650 }
 		HNA_akyuu_grant_growth_effect = { amount = 5 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.11.c"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = 3650 }
+		add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = -1 }
 		HNA_akyuu_grant_growth_effect = { amount = 5 }
 		ai_chance = { factor = 1 }
 	}
@@ -121,7 +155,7 @@ country_event = {
 	desc = "ACG_MEC_HNA_events.12.d"
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
-	fire_only_once = yes
+	# v6：移除 fire_only_once，允许重复著书刷取奖励（理由见文件头 v6 段）
 	trigger = {
 		has_estate_privilege = ACG_MEC_HNA_writing_3
 	}
@@ -131,22 +165,22 @@ country_event = {
 	}
 	option = {   #魔法向
 		name = "ACG_MEC_HNA_events.12.a"
-		change_variable = { which = Mana value = 25 }
-		change_variable = { which = Magic_exp value = 15 }
+		change_variable = { which = Mana value = 250 }
+		change_variable = { which = Magic_exp value = 150 }
 		add_country_modifier = { name = ACG_MEC_HNA_reward_magic_exp duration = 5475 }
 		HNA_akyuu_grant_growth_effect = { amount = 6 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.12.b"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = 3650 }
+		add_country_modifier = { name = ACG_MEC_HNA_reward_army_2 duration = -1 }
 		add_mil_power = 100
 		HNA_akyuu_grant_growth_effect = { amount = 6 }
 		ai_chance = { factor = 1 }
 	}
 	option = {   #内政向
 		name = "ACG_MEC_HNA_events.12.c"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 5475 }
+		add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = -1 }
 		add_manpower = 20
 		HNA_akyuu_grant_growth_effect = { amount = 6 }
 		ai_chance = { factor = 1 }
@@ -162,7 +196,7 @@ country_event = {
 	desc = "ACG_MEC_HNA_events.13.d"
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
-	fire_only_once = yes
+	# v6：移除 fire_only_once，允许重复著书刷取奖励（理由见文件头 v6 段）
 	trigger = {
 		has_estate_privilege = ACG_MEC_HNA_writing_4
 	}
@@ -172,8 +206,8 @@ country_event = {
 	}
 	option = {   #军事向
 		name = "ACG_MEC_HNA_events.13.a"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_army_3 duration = 5475 }
-		add_mil_power = 150
+		add_country_modifier = { name = ACG_MEC_HNA_reward_army_3 duration = -1 }
+		add_mil_power = 300
 		HNA_akyuu_grant_growth_effect = { amount = 8 }
 		ai_chance = { factor = 1 }
 	}
@@ -184,8 +218,8 @@ country_event = {
 	}
 	option = {   #内政向
 		name = "ACG_MEC_HNA_events.13.c"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = 5475 }
-		add_adm_power = 150
+		add_country_modifier = { name = ACG_MEC_HNA_reward_adm_1 duration = -1 }
+		add_adm_power = 300
 		HNA_akyuu_grant_growth_effect = { amount = 8 }
 		ai_chance = { factor = 1 }
 	}
@@ -200,7 +234,7 @@ country_event = {
 	desc = "ACG_MEC_HNA_events.14.d"
 	picture = COMET_SIGHTED_eventPicture
 	is_triggered_only = yes
-	fire_only_once = yes
+	# v6：移除 fire_only_once，允许重复著书刷取奖励（理由见文件头 v6 段）
 	trigger = {
 		has_estate_privilege = ACG_MEC_HNA_writing_5
 	}
@@ -221,9 +255,9 @@ country_event = {
 	}
 	option = {   #魔法向
 		name = "ACG_MEC_HNA_events.14.c"
-		change_variable = { which = Mana value = 40 }
-		change_variable = { which = Magic_exp value = 30 }
-		add_country_modifier = { name = ACG_MEC_HNA_reward_magic_tech duration = 5475 }
+		change_variable = { which = Mana value = 400 }
+		change_variable = { which = Magic_exp value = 300 }
+		add_country_modifier = { name = ACG_MEC_HNA_reward_magic_tech duration = -1 }
 		HNA_akyuu_grant_growth_effect = { amount = 20 }
 		ai_chance = { factor = 1 }
 	}
@@ -257,7 +291,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = "ACG_MEC_HNA_events.40.a"
-		add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 1825 }
+		# v5 变更：duration 1825 → -1（永久 -15% 发展成本）。
+		# 本事件由决议 ACG_MEC_HNA_summon_akyuu / ACG_MEC_HNA_recall_akyuu 触发。
+		add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = -1 }
 	}
 }
 

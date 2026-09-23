@@ -19,18 +19,25 @@ country_decisions = {
 	# --------------------------------------------------------
 	# 1. 采纳「稗田家史笔」政体 → 解锁阿求成长系统
 	# --------------------------------------------------------
+	#   v5 变更：改为「开局白送」——
+	#     · allow 由 { has_reform = Touhou_Republic_government_reform, prestige = 10 }
+	#       改为 always = yes：不再要求先持有 Touhou_Republic 政体，也不再有 10 声望门槛。
+	#       always = yes 作为决议 allow 的原版实例（VANILLA_VERIFIED）：
+	#         原版 decisions/Governments.txt:226-228（决议 stop_promoting_art）
+	#     · effect 移除 add_prestige = -20（原为「采纳政体」的声望代价）→ 真正零代价。
+	#   potential 保留 tag = HNA 与 NOT has_reform —— 仍限定 HNA，且只能采纳一次。
+	#   （注：政体自身给的长驻 buff 在 common/government_reforms/ACG_MEC_HNA_reforms.txt:24-29，
+	#     本次未改动；本决议触发的 ACG_MEC_HNA_events.50 本来就只给 add_splendor = 100。）
 	ACG_MEC_HNA_adopt_chronicle_reform = {
 		potential = {
 			tag = HNA
 			NOT = { has_reform = ACG_MEC_HNA_chronicle_reform }
 		}
 		allow = {
-			has_reform = Touhou_Republic_government_reform
-			prestige = 10
+			always = yes
 		}
 		effect = {
 			add_government_reform = ACG_MEC_HNA_chronicle_reform
-			add_prestige = -20
 			set_country_flag = HNA_akyuu_growth_enabled
 			country_event = { id = ACG_MEC_HNA_events.50 }
 		}
