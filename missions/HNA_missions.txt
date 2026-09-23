@@ -72,14 +72,16 @@ HNA_missions_2 = {
 	has_country_shield = yes
 
 	# ---- 行1：稗田家的领地（全树唯一根）----
+	#   v5 变更：trigger 由「首都发展度 20」改为 always = yes —— 开局即可完成，
+	#     从而在游戏一开始就拿到「意大利统一战争」宣战理由（见下方 effect）。
+	#     always = yes 作为任务 trigger 的原版实例（VANILLA_VERIFIED）：
+	#       原版 missions/AFR_West_African_Missions.txt:473-474
 	HNA_missions_2_1 = {
 		icon = HNA_mission_1
 		position = 1
 		required_missions = { }
 		trigger = {
-			capital_scope = {
-				development = 20
-			}
+			always = yes
 		}
 		effect = {
 			capital_scope = {
@@ -87,6 +89,20 @@ HNA_missions_2 = {
 			}
 			add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = 3650 }
 			HNA_akyuu_grant_growth_effect = { amount = 3 }
+
+			# ---------- 解锁「意大利统一战争」宣战理由 ----------
+			# 与 YYK 起始任务同款写法（missions/YYK_missions.txt:19-20）：置 flag + 自定义 tooltip。
+			# 该 CB 本体 common/cb_types/YYK_cb_types.txt:4-12 的 prerequisites 只判
+			#     has_country_flag = yyk_italian_cb_unlocked_flag
+			#     （OR 的另一支 mission_completed = YYK_missions_1_1 与本行无关）
+			# 不判 tag，所以 HNA 置上同一个 flag 即可使用此 CB；
+			# 另一条 prerequisites（any_known_country 持有 italy_region 省份）由时局自然满足。
+			# CB 附带效果：-75% 侵略扩张、-50% 战争分数花费、防御方无法召唤盟友
+			#   （挡援军写在 common/diplomatic_actions/00_diplomatic_actions.txt:1020-1033）
+			# tooltip 复用 YYK 已编码好的文本（decode_localisation/YYK_l_english.yml:93），
+			# 正文 tag 中立，故本任务无需新增本地化 key。
+			set_country_flag = yyk_italian_cb_unlocked_flag
+			custom_tooltip = yyk_italian_cb_unlocked_tt
 		}
 	}
 
