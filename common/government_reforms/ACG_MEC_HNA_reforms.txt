@@ -44,4 +44,27 @@ ACG_MEC_HNA_chronicle_reform = {
 	conditional = {
 		allow = { always = yes }
 	}
+
+	# ------------------------------------------------------------
+	# 政府机制（进度条 UI）：稗田阿求的立绘条
+	# ------------------------------------------------------------
+	# 作用：采纳本改革即获得 ACG_MEC_HNA_chronicle_mechanic —— 政府界面出现
+	#       300x162 立绘进度条（空图铺底 + 满图随 power 从左往右点亮）。
+	#
+	# 【为什么必须写在改革里】mechanic 的授权入口就是 government_abilities：
+	#   common/government_mechanics/readme.txt:1「The ID of the government mechanic
+	#   which is used by the government_abilities in the gov reform files」
+	#   原版实例：common/government_reforms/01_government_reforms_monarchies.txt:1039
+	#     government_abilities = { … ottoman_decadence_mechanic … }（全原版共 71 处）
+	#   工作区先例：common/government_reforms/NNM_government_reforms.txt:23-25
+	#
+	# 关联文件：
+	#   common/government_mechanics/ACG_MEC_HNA_mechanic.txt   （mechanic + power 定义）
+	#   interface/government_mechanics/ACG_MEC_HNA_mechanic.gui（进度条界面）
+	#   interface/government_mechanics/ACG_MEC_HNA_mechanic.gfx（贴图绑定）
+	#   gfx/interface/government_mechanics/ACG_MEC_HNA/       （满图 / 空图 / 透明外框）
+	# 换掉本改革 → mechanic 自动失去 → 条自动消失，不需要额外的 flag 维护。
+	government_abilities = {
+		ACG_MEC_HNA_chronicle_mechanic
+	}
 }

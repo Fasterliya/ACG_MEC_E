@@ -160,3 +160,18 @@ l_english:
  HNA_italian_footing_desc: "史书若只写一城，终究太薄。稗田家在意大利的扩张有理有据、有典可引，因此招致的非议更少，议和时的价码也更低。"
  HNA_akyuu_the_general: "阿求出阵"
  HNA_akyuu_the_general_desc: "阿求披甲随军，亲历战阵。她的笔记写在战场之上，士气与锋锐也随之而来。"
+ # ===== 稗田阿求：政体 mechanic 进度条（common/government_mechanics/ACG_MEC_HNA_mechanic.txt）=====
+ # 【值留空，待你填文案】下面 6 个 key 各自显示在哪：
+ #   ACG_MEC_HNA_chronicle_power              → 进度条名（政府界面那条立绘进度条的标题/悬停标题）
+ #   ACG_MEC_HNA_chronicle_power_desc         → 进度条说明（悬停正文；建议写进度含义与范围效果）
+ #   monthly_ACG_MEC_HNA_chronicle_power      → 「每月变化」类修正的显示名（本 mod 目前没用到，先占位）
+ #   ACG_MEC_HNA_chronicle_power_gain_modifier → 「增益修正」类修正的显示名（同上，先占位）
+ #   ability_ACG_MEC_HNA_chronicle_mechanic   → mechanic 名（原版口径，见 localisation/domination_l_english.yml:2576）
+ #   ACG_MEC_HNA_chronicle_mechanic           → mechanic id 本身（本 mod NNM 口径，见本目录 LLF_MUS_CTL_NNM_ideas_l_english.yml:209）
+ # 若你不想留空值，随便填一个字也行；空值与文字都合法。
+ ACG_MEC_HNA_chronicle_power: ""
+ ACG_MEC_HNA_chronicle_power_desc: ""
+ monthly_ACG_MEC_HNA_chronicle_power: ""
+ ACG_MEC_HNA_chronicle_power_gain_modifier: ""
+ ability_ACG_MEC_HNA_chronicle_mechanic: ""
+ ACG_MEC_HNA_chronicle_mechanic: ""

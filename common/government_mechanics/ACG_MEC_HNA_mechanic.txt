@@ -1,0 +1,68 @@
+# ============================================================
+# 稗田阿求：政府机制（government mechanic）「稗田家史笔」
+# ------------------------------------------------------------
+# 作用：给政体改革 ACG_MEC_HNA_chronicle_reform 挂一条 power 进度条，
+#       在政府界面用 300x162 的立绘当条显示
+#       （空图铺底 + 满图按进度从左往右点亮，上方叠同尺寸透明外框）。
+#
+# 【挂载方式】mechanic 自己不判断国家，入口是政府改革的 government_abilities：
+#     common/government_reforms/ACG_MEC_HNA_reforms.txt
+#       government_abilities = { ACG_MEC_HNA_chronicle_mechanic }
+#   证据：
+#     VANILLA_VERIFIED 1.37.5 —— common/government_mechanics/readme.txt:1
+#       「<government_mechanic_id> = { #The ID of the government mechanic which is
+#         used by the government_abilities in the gov reform files」
+#     原版实例 —— common/government_reforms/01_government_reforms_monarchies.txt:1039
+#       （government_abilities 里放 ottoman_decadence_mechanic；全原版共 71 处）
+#     工作区先例 —— common/government_reforms/NNM_government_reforms.txt:23-25
+#
+# 【字段来源】common/government_mechanics/readme.txt（原版自带说明，逐字段对齐）
+#   gui=:8  min=:9  max=:10  default=:11  reset_on_new_ruler=:12
+#   base_monthly_growth=:13  is_good=:38
+#   increases_with_global：readme 未载，但原版 07_ottoman_decadence.txt:14 与本 mod
+#     NNM_mikazuki_mechanic.txt:10 都在用 → 可解析；语义＝本条不随全局类增益变化。
+#
+# 【当前数值口径 v1：只接 UI】
+#   max = 100、base_monthly_growth = 1（每月 +1，100 个月满）。
+#   这条 power 现在是纯仪表：不产生任何修正、不被任何脚本读写。
+#   后续要接真数值时改这里即可：
+#     · 加 scaled_modifier / range_modifier / reverse_scaled_modifier（readme:16-35）
+#     · 或在 scripted_effects 里 add_government_power（readme:47）：
+#         add_government_power = {
+#             mechanic_type = ACG_MEC_HNA_chronicle_mechanic
+#             power_type   = ACG_MEC_HNA_chronicle_power
+#             value        = N
+#         }
+#       工作区唯一加分出口是 common/scripted_effects/ACG_MEC_HNA_effects.txt:412
+#       （HNA_akyuu_grant_growth_effect，28 处调用都走它）。
+#
+# 【本地化 key】见 decode_localisation/ACG_MEC_HNA_l_english.yml（值留空待填）
+#   <power> / <power>_desc / monthly_<power> / <power>_gain_modifier
+#   原版口径证据：localisation/domination_l_english.yml:2577-2578、
+#                localisation/winds_of_change_l_english.yml:3907-3910
+#
+# 【UI 绑定】gui = ACG_MEC_HNA_chronicle_gov_mech
+#   → 定义在 interface/government_mechanics/ACG_MEC_HNA_mechanic.gui
+#   贴图绑定 → interface/government_mechanics/ACG_MEC_HNA_mechanic.gfx
+#   不写 gui 会走原版默认 government_shared_power（230x17 小绿条），立绘不会出现。
+# ============================================================
+
+ACG_MEC_HNA_chronicle_mechanic = {
+	available = {
+		always = yes
+	}
+
+	powers = {
+		ACG_MEC_HNA_chronicle_power = {
+			gui = ACG_MEC_HNA_chronicle_gov_mech
+
+			min = 0
+			max = 100
+			default = 0
+			reset_on_new_ruler = no
+			base_monthly_growth = 1
+			increases_with_global = no
+			is_good = yes
+		}
+	}
+}

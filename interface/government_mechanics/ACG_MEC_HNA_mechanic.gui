@@ -1,0 +1,46 @@
+# ============================================================
+# 稗田阿求：政府机制 power 的进度条界面
+# ------------------------------------------------------------
+# 谁在用：common/government_mechanics/ACG_MEC_HNA_mechanic.txt
+#         ACG_MEC_HNA_chronicle_power → gui = ACG_MEC_HNA_chronicle_gov_mech
+# 写法蓝本（VANILLA_VERIFIED 1.37.5）：
+#   interface/government_mechanics/ottoman_decadence.gui:1-25（大图进度条 + 外框）
+#   interface/government_mechanics/divine_authority.gui:2-29
+#
+# 【铁律】进度控件必须叫 government_power_bar —— 引擎按这个名字把 power 的
+#   百分比灌进控件；原版每一个 mechanic 界面都如此
+#   （ottoman_decadence.gui:13、divine_authority.gui:17、cultural_unity.gui:9）。
+#   外框控件名可自取，这里叫 ACG_MEC_HNA_chronicle_frame。
+#
+# 【渲染方式】进度条按 x 坐标切图（gfx/FX/progress.shader:95）：
+#   x <= 当前进度 → textureFile1（满图），其余 → textureFile2（空图）；
+#   混合是 SRC_ALPHA/INV_SRC_ALPHA + AlphaTest（progress.shader:127-133），
+#   所以全透明外框不会挡住立绘。
+# ============================================================
+
+guiTypes = {
+	windowType = {
+		name = "ACG_MEC_HNA_chronicle_gov_mech"
+		backGround = ""
+		position = { x = 0 y = 0 }
+		size = { x = 300 y = 162 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+
+		# ---- 进度条本体：空图铺底 + 满图按进度从左往右点亮 ----
+		iconType = {
+			name = "government_power_bar"
+			spriteType = "GFX_ACG_MEC_HNA_chronicle_bar"
+			position = { x = 0 y = 0 }
+		}
+
+		# ---- 同尺寸外框（当前是纯透明图；日后直接把边框画进对应 dds 即可）----
+		iconType = {
+			name = "ACG_MEC_HNA_chronicle_frame"
+			spriteType = "GFX_ACG_MEC_HNA_chronicle_frame"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+}

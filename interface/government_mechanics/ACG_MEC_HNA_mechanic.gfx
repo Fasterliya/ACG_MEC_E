@@ -1,0 +1,43 @@
+# ============================================================
+# 稗田阿求：政府机制进度条贴图绑定
+# ------------------------------------------------------------
+# 蓝本（VANILLA_VERIFIED 1.37.5）：
+#   interface/government_mechanics/government_mechanics.gfx:1
+#     （全部条目包在 spriteTypes = { } 里）
+#   :184-199（spriteType 外框 + progressbartype 大图进度条，奥斯曼腐败条 274x110）
+#
+# 【progressbartype 两张贴图的语义】决定性证据 gfx/FX/progress.shader:95
+#   return v.vTexCoord0.x <= CurrentState ? tex2D( TextureOne, … ) : tex2D( TextureTwo, … );
+#     textureFile1（TextureOne）= 已完成进度那一段 → 这里放「满图」（正常亮色）
+#     textureFile2（TextureTwo）= 尚未进度那一段 → 这里放「空图」（暗版）
+#   条从左往右点亮：开局整条是空图，随 power 增长右段逐渐切成满图。
+#   color / colortwo 只在 PixelColor 分支用到（progress.shader:99-105），
+#   贴图走 PixelTexture 分支 → 不会给立绘染色，故此处给白色。
+#   MipFilter = None（progress.shader:20）→ 源图的 mip 链不会被采样，无害。
+#
+# 【图片规格】300 x 162 / 32bpp 未压缩 BGRA（DDS 头 + 9 级 mip 链，与原图一致）。
+# 【frame】当前为全透明占位图（同尺寸 300x162，像素全 0）；
+#   日后把边框画进 ACG_MEC_HNA_chronicle_frame.dds 即可，无需改本文件。
+# ============================================================
+
+spriteTypes = {
+
+	# ---- 进度条本体：满图（已进度）+ 空图（底）----
+	progressbartype = {
+		name = "GFX_ACG_MEC_HNA_chronicle_bar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/ACG_MEC_HNA/ACG_MEC_HNA_chronicle_full.dds"
+		textureFile2 = "gfx/interface/government_mechanics/ACG_MEC_HNA/ACG_MEC_HNA_chronicle_empty.dds"
+		size = { x = 300 y = 162 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	# ---- 同尺寸透明外框 ----
+	spriteType = {
+		name = "GFX_ACG_MEC_HNA_chronicle_frame"
+		texturefile = "gfx/interface/government_mechanics/ACG_MEC_HNA/ACG_MEC_HNA_chronicle_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}
