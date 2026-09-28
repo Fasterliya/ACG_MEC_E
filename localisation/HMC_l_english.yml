@@ -50,6 +50,26 @@
  HMC_china_growth_4: ")YNqQIN"
  HMC_china_growth_5: "wm…QNßu"
 
+ ### MISSION REWARD MODIFIERS ###
+ # åNN 7 *N=fûN¡RhŸS	gVY±RîOck  2026/9/28 eˆÿdkMR decode_localisation Ì‘
+ # N*Ný¡l	gÿ8nb…QOôv¥c>f:ybŸSËY key T0
+ HMC_qijian_unity_modifier: "NQRTÃV"
+ HMC_qilin_blessing_modifier: "’žŸžPy"
+ HMC_changhong_sword_modifier: "•y†QRa"
+ HMC_bingpo_sword_modifier: "°QD›QRa"
+ HMC_china_core_modifier: "-NŸSRVÃV"
+ HMC_hegemon_modifier: ")YN8—IN"
+ HMC_mythic_warrior_modifier: "^yfkKN^"
+
+ # åNN 7 *N=f 2026/9/28 ŒNn°ežXÿŸS,gÍ‘YÑS>e„vMOn9eÑSÙ›N0ƒ1VHr / N^SHr0
+ HMC_qijian_oath_modifier: "NQRR“Š"
+ HMC_mythic_warrior_lesser: "^yfkKN^·Sb"
+ HMC_trade_route_modifier: "FUïEu"
+ HMC_qilin_blessing_lesser: "’žŸžey^t·Sb"
+ HMC_hegemon_lesser: "î•ŸKN×V"
+ HMC_restore_china_modifier: "IQYqS³l"
+ HMC_tianxia_unity_modifier: ")YNNßu"
+
  ### MISSION TITLES ###
 
  HMC_missions_1: "NQRKN“Š"

@@ -13,7 +13,9 @@ HMC_qilin_blessing_modifier = {
 }
 
 HMC_changhong_sword_modifier = {
-	land_fire_damage = 0.15
+	# 原为 land_fire_damage：该修正键原版 1.37.5 全盘 0 命中（正确键是 fire_damage），
+	# 会导致这半条效果静默失效。2026/9/28 修正。
+	fire_damage = 0.15
 	shock_damage = 0.10
 }
 
@@ -36,9 +38,54 @@ HMC_hegemon_modifier = {
 }
 
 HMC_mythic_warrior_modifier = {
-	land_fire_damage = 0.10
+	# 原为 land_fire_damage（原版 0 命中）→ fire_damage。2026/9/28 修正。
+	fire_damage = 0.10
 	shock_damage = 0.10
 	infantry_power = 0.10
+}
+
+### 较弱版专属修正（2026/9/28 新增）###
+# 用途：任务树里原本与上面 7 个修正重复发放的位置，改为各自发放「同名弱化版」，
+#       既不再出现"同名修正重复给 = 白给"，也让每个位置有独立的奖励身份。
+#       本体（上面的 7 个）各自只保留一个给点，见 missions/HMC_missions.txt 文件头。
+
+HMC_qijian_oath_modifier = {          # 1_1 初露锋芒（本体 qijian_unity 给 4_4）
+	land_morale = 0.05
+	global_unrest = -1
+}
+
+HMC_mythic_warrior_lesser = {         # 2_2 讨伐魔教（本体给 2_5）—— 三项各半
+	fire_damage = 0.05
+	shock_damage = 0.05
+	infantry_power = 0.05
+}
+
+HMC_trade_route_modifier = {          # 3_3 商路通达（替代原无效效果名 add_trade_income）
+	trade_efficiency = 0.05
+	global_trade_power = 5
+}
+
+HMC_qilin_blessing_lesser = {         # 3_4 祥瑞遍地（本体给 1_5）
+	global_manpower_modifier = 0.05
+	land_forcelimit_modifier = 0.05
+	tax_income = 0.05
+}
+
+HMC_hegemon_lesser = {                # 5_2 登基称帝（本体给 4_5）—— 半值且砍掉行政效率/减叛乱
+	discipline = 0.05
+	land_morale = 0.05
+	all_power_cost = -0.05
+}
+
+HMC_restore_china_modifier = {        # 5_4 光复中原（与上面任何修正都不重键）
+	core_creation = -0.10
+	land_attrition = -0.10
+}
+
+HMC_tianxia_unity_modifier = {        # 5_5 天下归心（全树终点；弱于 hegemon 但强于其它弱化版）
+	administrative_efficiency = 0.05
+	land_morale = 0.10
+	global_unrest = -2
 }
 
 ### HMC DYNAMIC CHINA GROWTH BUFF ###

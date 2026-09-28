@@ -50,6 +50,26 @@ l_english:
  HMC_china_growth_4: "天下共主"
  HMC_china_growth_5: "海内一统"
 
+ ### MISSION REWARD MODIFIERS ###
+ # 以下 7 个是任务树原有奖励修正 —— 2026/9/28 补：此前 decode_localisation 里
+ # 一个都没有，游戏内会直接显示成原始 key 名。
+ HMC_qijian_unity_modifier: "七剑同心"
+ HMC_qilin_blessing_modifier: "麒麟赐福"
+ HMC_changhong_sword_modifier: "长虹剑意"
+ HMC_bingpo_sword_modifier: "冰魄剑意"
+ HMC_china_core_modifier: "中原归心"
+ HMC_hegemon_modifier: "天下霸主"
+ HMC_mythic_warrior_modifier: "神武之师"
+
+ # 以下 7 个是 2026/9/28 二轮新增：原本重复发放的位置改发这些「较弱版 / 专属版」
+ HMC_qijian_oath_modifier: "七剑初誓"
+ HMC_mythic_warrior_lesser: "神武之师·小成"
+ HMC_trade_route_modifier: "商路畅通"
+ HMC_qilin_blessing_lesser: "麒麟祥瑞·小成"
+ HMC_hegemon_lesser: "问鼎之志"
+ HMC_restore_china_modifier: "光复山河"
+ HMC_tianxia_unity_modifier: "天下一统"
+
  ### MISSION TITLES ###
 
  HMC_missions_1: "七剑之誓"

@@ -143,3 +143,88 @@ git checkout -- common/on_actions missions/HMC_missions.txt missions/BLS_mission
 - 项目内可能还有**其它同类无效效果名**（本次只按已确认范围扫了 `add_trade_income` / `add_crown_land`）。
   如需全量审计：把 mod 脚本里所有 `key = ` 左值与原版效果/触发器清单做差集。
 - `HMC_missions_1`…`HMC_missions_5` 这 5 个本地化 key 是任务树级标题，原版任务树**没有**树级标题键 ⇒ 当前是死键（无害）。
+
+---
+
+# 二轮修订（2026/9/28）：重复位置改发「较弱版专属修正」
+
+> 本节**取代**上文「修复 B」中的一次性奖励方案；树结构（修复 C）与 on_action（修复 A）不变。
+
+## B′. 最终奖励口径
+
+**本体修正各自只保留 1 个给点**（同名 `add_country_modifier` 不叠加，只刷新/替换时长）：
+
+| 本体修正 | 唯一给点 |
+|---|---|
+| `HMC_qijian_unity_modifier` | `4_4` 同仇敌忾（永久） |
+| `HMC_qilin_blessing_modifier` | `1_5` 麒麟赐福 |
+| `HMC_changhong_sword_modifier` | `2_1` 整军备战 |
+| `HMC_bingpo_sword_modifier` | `1_4` 固若金汤 |
+| `HMC_china_core_modifier` | `1_2` 七剑合璧 |
+| `HMC_mythic_warrior_modifier` | `2_5` 势如破竹 |
+| `HMC_hegemon_modifier` | `4_5` 名震天下（**按需求保留本体**） |
+
+**原重复位置 → 新发的较弱/专属修正**（定义在 `common/event_modifiers/HMC_modifiers.txt`）：
+
+| 任务 | 新修正 | 数值 | 对比本体 |
+|---|---|---|---|
+| `1_1` 初露锋芒 | `HMC_qijian_oath_modifier` | `land_morale 0.05` `global_unrest -1` | 本体 0.15 / -2 |
+| `2_2` 讨伐魔教 | `HMC_mythic_warrior_lesser` | `fire_damage 0.05` `shock_damage 0.05` `infantry_power 0.05` | 本体三项各 0.10（恰好半值） |
+| `3_3` 商路通达 | `HMC_trade_route_modifier` | `trade_efficiency 0.05` `global_trade_power 5` | 替代原**无效效果名** `add_trade_income` |
+| `3_4` 祥瑞遍地 | `HMC_qilin_blessing_lesser` | `global_manpower_modifier 0.05` `land_forcelimit_modifier 0.05` `tax_income 0.05` | 本体 0.15/0.10/0.10 |
+| `5_2` 登基称帝 | `HMC_hegemon_lesser` | `discipline 0.05` `land_morale 0.05` `all_power_cost -0.05` | 本体 0.10/0.15/-0.10 且砍掉行政效率、减叛乱 |
+| `5_4` 光复中原 | `HMC_restore_china_modifier` | `core_creation -0.10` `land_attrition -0.10` | 全新键组合，不与任何修正重键 |
+| `5_5` 天下归心 | `HMC_tianxia_unity_modifier` | `administrative_efficiency 0.05` `land_morale 0.10` `global_unrest -2` | 全树终点；弱于 `hegemon` 但强于其它弱化版 |
+
+全部 `duration = -1`（永久）。新增 7 个修正用到的修正键**逐个回原版 1.37.5 验证**：
+`land_morale`(515)、`global_unrest`(642)、`fire_damage`(68)、`shock_damage`(57)、`infantry_power`(203)、
+`trade_efficiency`(507)、`global_trade_power`(229)、`global_manpower_modifier`(365)、`land_forcelimit_modifier`(104)、
+`tax_income`(29)、`discipline`(298)、`all_power_cost`(41)、`core_creation`(198)、`land_attrition`(81)、
+`administrative_efficiency`(58) —— 全部 ≥29 命中。
+
+## D′. 顺带修掉的无效修正键
+
+`land_fire_damage` 在原版 1.37.5 脚本里 **0 命中**（正确键 = `fire_damage`），已修：
+
+| 位置 | 原 | 改后 |
+|---|---|---|
+| `HMC_modifiers.txt` `HMC_changhong_sword_modifier` | `land_fire_damage = 0.15` | `fire_damage = 0.15` |
+| `HMC_modifiers.txt` `HMC_mythic_warrior_modifier` | `land_fire_damage = 0.10` | `fire_damage = 0.10` |
+
+⚠️ **仍未修**（不在本轮批准范围）：`common/ideas/` 里还有 5 处同键 —
+`HMC_ideas.txt:14`、`HMC_ideas.txt:41`、`AIU_ideas.txt:14`、`AIU_ideas.txt:38`、`ACG_QNG_ideas.txt:27`。
+
+## 本地化（写进 `decode_localisation/HMC_l_english.yml`，编码由用户手动完成）
+
+**14 条** = 补齐原有 7 个 + 新增 7 个：
+
+| key | 文本 |
+|---|---|
+| `HMC_qijian_unity_modifier` | 七剑同心 |
+| `HMC_qilin_blessing_modifier` | 麒麟赐福 |
+| `HMC_changhong_sword_modifier` | 长虹剑意 |
+| `HMC_bingpo_sword_modifier` | 冰魄剑意 |
+| `HMC_china_core_modifier` | 中原归心 |
+| `HMC_hegemon_modifier` | 天下霸主 |
+| `HMC_mythic_warrior_modifier` | 神武之师 |
+| `HMC_qijian_oath_modifier` | 七剑初誓 |
+| `HMC_mythic_warrior_lesser` | 神武之师·小成 |
+| `HMC_trade_route_modifier` | 商路畅通 |
+| `HMC_qilin_blessing_lesser` | 麒麟祥瑞·小成 |
+| `HMC_hegemon_lesser` | 问鼎之志 |
+| `HMC_restore_china_modifier` | 光复山河 |
+| `HMC_tianxia_unity_modifier` | 天下一统 |
+
+> 前 7 条此前在 `decode_localisation/` 里**一条都没有**（对比 HNA 的 20 个修正本地化是全的），
+> 若游戏内一直显示原始 key 名，就是这里缺的。`localisation/` 目录我不能读，若你已手工补过前 7 条，
+> 只需编码后 7 条。
+
+## 二轮自检
+
+```
+花括号：missions 154/154、event_modifiers 19/19 平衡
+任务树授予的 14 个修正：全部「有定义 + 有本地化 key」，且没有任何一个被授予两次 ✓
+新增 7 个修正的全部修正键：原版命中均 ≥29 ✓
+脚本内 land_fire_damage：0 残留（ideas/ 的 5 处除外，见上）✓
+```
+

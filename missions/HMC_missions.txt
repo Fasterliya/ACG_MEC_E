@@ -9,14 +9,19 @@
 #   就永远挂不上跨列前置（上面没有行），故必须逐列错开一行。
 #   ⇒ 全树单根 HMC_missions_1_1，25 个任务全连通。
 #
-# 奖励规则（2026/9/28 修）：
-#   每个 event_modifier 全局只保留一个给点，重复位置换成一次性奖励
-#   （同名 add_country_modifier 不会叠加，只会刷新/替换时长，重复给 = 白给）。
-#   唯一给点：qijian_unity → 1_1(25年) + 4_4(永久，升级路径)
-#             qilin_blessing → 1_5    changhong_sword → 2_1
-#             bingpo_sword → 1_4      china_core → 1_2
-#             mythic_warrior → 2_5    hegemon → 5_5
-#   任务 ID 不变，本地化 key（<任务名>_title / _desc）无需改动。
+# 奖励规则（2026/9/28 二轮修）：
+#   ① 同名 add_country_modifier 不会叠加，只刷新/替换时长 ⇒ 同一修正重复给 = 白给。
+#      7 个本体修正各自只保留 1 个给点：
+#        qijian_unity → 4_4     qilin_blessing → 1_5    changhong_sword → 2_1
+#        bingpo_sword → 1_4     china_core → 1_2        mythic_warrior → 2_5
+#        hegemon → 4_5（名震天下，按需求保留本体）
+#   ② 原重复位置改为发「较弱版专属修正」（定义见 common/event_modifiers/HMC_modifiers.txt）：
+#        1_1 → qijian_oath        2_2 → mythic_warrior_lesser
+#        3_4 → qilin_blessing_lesser   5_2 → hegemon_lesser
+#        5_4 → restore_china      5_5 → tianxia_unity（全树终点）
+#   ③ 3_3 → trade_route：替代原无效效果名 add_trade_income（原版/Wiki 均不存在）。
+#   任务 ID 不变，本地化 key（<任务名>_title / _desc）无需改动；
+#   7 个新增修正名需要在 decode_localisation/HMC_l_english.yml 补 key。
 # ============================================================
 
 HMC_missions_1 = {
@@ -36,7 +41,9 @@ HMC_missions_1 = {
 			total_development = 50
 		}
 		effect = {
-			add_country_modifier = { name = HMC_qijian_unity_modifier duration = 9125 }
+			# 原为 HMC_qijian_unity_modifier（25 年限时版）；本体唯一给点移到 4_4 的永久版，
+			# 这里改发弱化版，两个位置都有东西拿
+			add_country_modifier = { name = HMC_qijian_oath_modifier duration = -1 }
 			add_splendor = 50
 			add_prestige = 15
 			add_adm_power = 100
@@ -165,9 +172,9 @@ HMC_missions_2 = {
 			}
 		}
 		effect = {
-			# 原为 HMC_mythic_warrior_modifier（与 2_5 / 5_4 重复，白给）→ 改一次性
-			add_army_tradition = 20
-			add_treasury = 500
+			# 原为 HMC_mythic_warrior_modifier 本体（与 2_5 / 5_4 重复，白给）
+			# → 改发弱化版；本体唯一给点在 2_5
+			add_country_modifier = { name = HMC_mythic_warrior_lesser duration = -1 }
 			add_splendor = 100
 			add_prestige = 20
 			add_mil_power = 150
@@ -288,9 +295,9 @@ HMC_missions_3 = {
 			num_of_merchants = 3
 		}
 		effect = {
-			# 原为 add_trade_income = 100：该效果名原版/Wiki 均不存在，静默白给 → 改已验证效果
-			add_treasury = 750
-			add_mercantilism = 2
+			# 原为 add_trade_income = 100：该效果名原版/Wiki 均不存在，静默白给
+			# → 改发贸易向专属修正
+			add_country_modifier = { name = HMC_trade_route_modifier duration = -1 }
 			add_splendor = 150
 			add_prestige = 25
 			add_dip_power = 200
@@ -310,9 +317,9 @@ HMC_missions_3 = {
 			monthly_income = 60
 		}
 		effect = {
-			# 原为 HMC_qilin_blessing_modifier（与 1_5 重复，白给）→ 改一次性
-			add_years_of_income = 1
-			add_mercantilism = 3
+			# 原为 HMC_qilin_blessing_modifier 本体（与 1_5 重复，白给）
+			# → 改发弱化版；本体唯一给点在 1_5
+			add_country_modifier = { name = HMC_qilin_blessing_lesser duration = -1 }
 			add_splendor = 200
 			add_prestige = 30
 			add_dip_power = 250
@@ -429,8 +436,9 @@ HMC_missions_4 = {
 			is_great_power = yes
 		}
 		effect = {
-			# 原为 HMC_hegemon_modifier（与 5_2 / 5_5 重复，白给）→ 改一次性
-			add_legitimacy = 20
+			# HMC_hegemon_modifier 的唯一给点（按需求保留在「名震天下」）
+			# 5_2 改发弱化版、5_5 改发终局版
+			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
 			add_splendor = 300
 			add_prestige = 50
 			add_stability = 2
@@ -477,8 +485,9 @@ HMC_missions_5 = {
 			total_development = 400
 		}
 		effect = {
-			# 原为 HMC_hegemon_modifier（与 4_5 / 5_5 重复，白给）→ 改一次性
-			add_legitimacy = 30
+			# 原为 HMC_hegemon_modifier 本体（与 4_5 / 5_5 重复，白给）
+			# → 改发弱化版；本体唯一给点在 4_5
+			add_country_modifier = { name = HMC_hegemon_lesser duration = -1 }
 			add_splendor = 200
 			add_prestige = 35
 			add_adm_power = 250
@@ -520,9 +529,9 @@ HMC_missions_5 = {
 			}
 		}
 		effect = {
-			# 原为 HMC_mythic_warrior_modifier（与 2_2 / 2_5 重复，白给）→ 改一次性
-			add_army_tradition = 25
-			add_years_of_income = 1
+			# 原为 HMC_mythic_warrior_modifier 本体（与 2_2 / 2_5 重复，白给）
+			# → 改发光复中原专属修正；本体唯一给点在 2_5
+			add_country_modifier = { name = HMC_restore_china_modifier duration = -1 }
 			add_splendor = 300
 			add_prestige = 45
 			add_stability = 2
@@ -541,8 +550,8 @@ HMC_missions_5 = {
 			}
 		}
 		effect = {
-			# HMC_hegemon_modifier 的唯一给点
-			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
+			# 全树终点专属修正；hegemon 本体的唯一给点已移到 4_5 名震天下
+			add_country_modifier = { name = HMC_tianxia_unity_modifier duration = -1 }
 			add_splendor = 400
 			add_prestige = 60
 			add_stability = 3
