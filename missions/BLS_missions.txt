@@ -144,7 +144,9 @@ BLS_missions_2 = {
 			trade_efficiency = 0.20
 		}
 		effect = {
-			add_trade_income = 50
+			# 原为 add_trade_income = 50：该效果名原版/Wiki 均不存在，静默白给 → 改已验证效果
+			add_treasury = 400
+			add_mercantilism = 1
 			add_splendor = 100
 			add_prestige = 20
 			add_dip_power = 150
@@ -513,7 +515,12 @@ BLS_missions_5 = {
 			add_splendor = 400
 			add_prestige = 60
 			add_stability = 3
-			add_crown_land = 10
+			# 原为 add_crown_land = 10：该效果名原版/Wiki 均不存在，静默白给 → 改已验证效果
+			# 原版用法（00_buildings.txt:163「大清真寺产生王领」）：share 为负 = 从阶层划给王领
+			change_estate_land_share = {
+				estate = all
+				share = -0.10
+			}
 			capital_scope = {
 				add_base_tax = 4
 				add_base_production = 4

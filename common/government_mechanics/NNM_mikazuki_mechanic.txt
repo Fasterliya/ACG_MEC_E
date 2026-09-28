@@ -170,7 +170,11 @@ NNM_mikazuki_bonds_mechanic = {
 				add_adm_power = 100
 				add_dip_power = 100
 				add_mil_power = 100
-				add_crown_land = 5
+				# 原为 add_crown_land = 5：该效果名原版/Wiki 均不存在，静默白给 → 改已验证效果
+				change_estate_land_share = {
+					estate = all
+					share = -0.05
+				}
 				custom_tooltip = NNM_magical_offering_tt
 				hidden_effect = {
 					if = {

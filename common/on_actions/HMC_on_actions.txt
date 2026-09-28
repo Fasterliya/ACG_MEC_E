@@ -1,30 +1,46 @@
 ### HMC CHINA UNIFICATION MECHANIC ###
+# ============================================================
+# 写法：on_action 体内【直接写效果指令】，不要用 effect = { } 包装。
+#   原版证据：common/on_actions/00_on_actions.txt:5810
+#             on_conquest = { on_conquest_effect = yes }
+#   原版全篇 0 处 effect = { ... } 包装（合法的包法只有 hidden_effect = { }）。
+#   误用包装会让整段效果被静默丢弃 —— 本文件 2026/9/28 修的就是这个。
+# 同名 on_action 在不同文件里叠加效果，不会覆盖原版/ACG1/其它子模，
+#   所以本文件与 SKR_on_actions.txt 各自的 on_yearly_pulse 可以共存。
+#
+# on_conquest 作用域：ROOT = 省份，FROM = 原主人，owner = 新主人（征服者）
+#   原版证据：common/scripted_effects/01_scripted_effects_for_on_actions.txt:5074
+#             on_conquest_effect 内以 owner = { ... } 指代新主人。
+#   裸 trigger superregion = X 合法：原版 125 处，如 Korean_Missions.txt:553
+# 前置：country flag HMC_china_core_unlocked 由任务 HMC_missions_1_2 设置。
+#
+# ---- 验证探针（实测通过后可删掉下面两行 log）----
+#   log 写入 logs/game.log（Wiki 指令页；原版实例
+#   common/scripted_effects/02_scripted_effects_preview_missions.txt:21）
+# ============================================================
 
-# on_conquest: ROOT = province, FROM = previous owner, owner = new owner (conqueror)
 on_conquest = {
-	effect = {
-		if = {
-			limit = {
-				owner = { tag = HMC }
-				owner = { has_country_flag = HMC_china_core_unlocked }
-				superregion = china_superregion
-				NOT = { is_core = HMC }
-			}
-			add_core = HMC
+	log = "HMC_OA_conquest_fired"
+	if = {
+		limit = {
+			owner = { tag = HMC }
+			owner = { has_country_flag = HMC_china_core_unlocked }
+			superregion = china_superregion
+			NOT = { is_core = HMC }
 		}
+		add_core = HMC
 	}
 }
 
 # 每年为统一中国加速：占有的中国地区省份越多，Buff 越强
 on_yearly_pulse = {
-	effect = {
-		if = {
-			limit = {
-				tag = HMC
-				has_country_flag = HMC_china_core_unlocked
-			}
-			# 根据已占有的中国省份数量叠加增益
-			HMC_china_unification_effect = yes
+	log = "HMC_OA_yearly_pulse_fired"
+	if = {
+		limit = {
+			tag = HMC
+			has_country_flag = HMC_china_core_unlocked
 		}
+		# 根据已占有的中国省份数量叠加增益
+		HMC_china_unification_effect = yes
 	}
 }

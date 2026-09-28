@@ -1,8 +1,11 @@
 # ============================================================
 # 稗田阿求：on_action 挂载
 # ------------------------------------------------------------
-# 写法来源：工作区 common/on_actions/SKR_on_actions.txt
-#           （on_xxx = { effect = { ... } }）
+# 写法来源：原版 common/on_actions/00_on_actions.txt:475
+#           on_battle_won_country = { on_battle_ended_effect = yes ... }
+#           —— on_action 体内【直接写效果指令】，不要 effect = { } 包装。
+#           （旧版本文件曾照抄 SKR_on_actions.txt 的 effect = { } 包装写法，
+#             该写法会被静默丢弃，2026/9/28 已修。）
 # 原版钩子来源：
 #   on_battle_won_country → 原版 common/on_actions/00_on_actions.txt:475
 #
@@ -13,14 +16,31 @@
 
 # ---- 战斗成长：阿求亲自带队打赢陆战才计成长 ----
 on_battle_won_country = {
-	effect = {
+	if = {
+		limit = {
+			tag = HNA
+			has_reform = ACG_MEC_HNA_chronicle_reform
+			has_leader = "Hieda no Akyuu"
+		}
+		HNA_akyuu_battle_growth_effect = yes
+	}
+}
+
+# ---- 兜底：重建预约没人处理时（弹窗一直没点）下个月自动补建 ----
+# 为什么需要：整军 / 升级路径会先把旧将撤下，再靠弹窗选项在下一个执行时机重建；
+# 若玩家始终不点那个弹窗，阿求就会一直缺席。这里保证最多一个月内必被补回。
+on_monthly_pulse = {
+	if = {
+		limit = {
+			tag = HNA
+			has_country_flag = HNA_akyuu_rebuild_pending
+		}
 		if = {
-			limit = {
-				tag = HNA
-				has_reform = ACG_MEC_HNA_chronicle_reform
-				has_leader = "Hieda no Akyuu"
-			}
-			HNA_akyuu_battle_growth_effect = yes
+			limit = { NOT = { has_leader = "Hieda no Akyuu" } }
+			HNA_akyuu_define_general_effect = yes
+		}
+		else = {
+			clr_country_flag = HNA_akyuu_rebuild_pending
 		}
 	}
 }

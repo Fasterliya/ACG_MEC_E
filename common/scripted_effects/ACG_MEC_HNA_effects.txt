@@ -27,13 +27,39 @@
 
 
 # ------------------------------------------------------------
-# 重建阿求（kill + 按等级 define）
+# 入口：按「阿求是否在役」自动选安全路径
+#   · 不在役（召出 / 再召）→ 直接 define。干净创建，这条路一直是好的。
+#   · 在役（升级 / 整军）  → 只做「撤下 + 预约」，define 交给载波事件在
+#                            【下一个执行时机】执行（原因见下方 define 效果的警告）。
+#   载波分工：tier 1-15 = events.1 突破选项 / tier 16 = events.30 四维圆满选项 /
+#             整军 = events.60 / 兜底 = on_monthly_pulse
 # ------------------------------------------------------------
 HNA_akyuu_rebuild_general_effect = {
 	if = {
 		limit = { has_leader = "Hieda no Akyuu" }
 		kill_leader = { type = "Hieda no Akyuu" }
+		set_country_flag = HNA_akyuu_rebuild_pending
 	}
+	else = {
+		HNA_akyuu_define_general_effect = yes
+	}
+}
+
+
+# ------------------------------------------------------------
+# 阶段二：按 HNA_akyuu_tier 查表 define_general（本效果内不得再 kill）
+#   ⚠ 绝不要把 kill_leader 与 define_general 写进同一个执行块：
+#     实测证据（tier 0 召出正常显示、tier 1+ 升级后特质消失）表明，
+#     同帧内「先 kill 再 define」时 EU4 会照常写入四维，
+#     但把 trait =（将领专属特质 / leader personality）整个吞掉。
+#   原版佐证：原版 1.37.5 共 26 个「脚本指派特质」的 define_general 块，
+#     没有任何一个紧邻 kill_leader（全部是干净创建）；
+#     全库仅 Touhou 系 mod 存在「同块 kill+define+trait」写法。
+#   ACG1 的对照写法：common 里 kill_leader 放事件 immediate、
+#     define_general 放事件 option，即刻意分成两个执行时机。
+# ------------------------------------------------------------
+HNA_akyuu_define_general_effect = {
+	clr_country_flag = HNA_akyuu_rebuild_pending
 	if = {
 		limit = { check_variable = { which = HNA_akyuu_tier value = 16 } }
 		define_general = {

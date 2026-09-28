@@ -6,6 +6,7 @@
 #   .30     四维圆满 100/100/100/100
 #   .40     阿求出任将领
 #   .50     稗田家史笔政体成立
+#   .60     整军重建载波（复用 .40 的本地化 key，无新增文本）
 #
 # v3 变更（著书完成事件）：
 #   · 触发来源 = 著书特权的 on_granted 里排程：
@@ -45,6 +46,18 @@
 #     ACG_MEC_HNA_reward_dev_1，duration = -1）。同名修正重发是「刷新时长」还是
 #     「并列叠加」在 Wiki 与原版文件中均无说明 —— 若为叠加语义，反复刷同一选项会让
 #     对应数值无限累积，需实测确认（这正是你选择「奖励保持原样、无限刷」时接受的取舍）。
+#
+# v7 变更（阿求升级后专属特质丢失）：
+#   根因：阿求在役时升级会「先 kill_leader、再 define_general」，两者在同一个
+#         执行块里 —— EU4 会照常写入四维，但把 trait =（leader personality）
+#         整个吞掉。证据：tier 0（召出，无 kill）特质正常显示，tier 1+ 全部丢失。
+#   修法：把 kill 与 define 拆到两个执行时机，事件层充当「重建载波」：
+#     .1  突破选项      → tier 1-15 的重建
+#     .30 四维圆满选项  → tier 16 的重建（tier 16 那一级不排突破事件）
+#     .60 整军重建载波  → 「整军」决议的重建（新增事件，复用 .40 的本地化 key）
+#   兜底：common/on_actions/ACG_MEC_HNA_on_actions.txt 的 on_monthly_pulse
+#         在弹窗一直没人点时，下个月自动补建（最多缺席一个月）。
+#   召出 / 再召两条决议不受影响：她不在役时没有 kill，属干净创建，本来就正常。
 # ============================================================
 namespace = ACG_MEC_HNA_events
 
@@ -60,6 +73,13 @@ country_event = {
 	option = {
 		name = "ACG_MEC_HNA_events.1.a"
 		add_mil_power = 10
+		# 重建载波（tier 1-15）：升级时旧将已在 check_tier 里被撤下，
+		# 这里换到下一个执行时机按新等级重建 —— 同帧 kill+define 会吞掉专属特质，
+		# 详见 common/scripted_effects/ACG_MEC_HNA_effects.txt 顶部警告。
+		if = {
+			limit = { has_country_flag = HNA_akyuu_rebuild_pending }
+			HNA_akyuu_define_general_effect = yes
+		}
 	}
 }
 
@@ -276,6 +296,12 @@ country_event = {
 	option = {
 		name = "ACG_MEC_HNA_events.30.a"
 		add_country_modifier = { name = ACG_MEC_HNA_chronicle_permanent duration = -1 }
+		# 重建载波（tier 16）：四维圆满那一级 check_tier 不排突破事件，
+		# 由本事件在下一个执行时机把阿求按 tier 16（peak 特质）重建出来。
+		if = {
+			limit = { has_country_flag = HNA_akyuu_rebuild_pending }
+			HNA_akyuu_define_general_effect = yes
+		}
 	}
 }
 
@@ -310,5 +336,25 @@ country_event = {
 	option = {
 		name = "ACG_MEC_HNA_events.50.a"
 		add_splendor = 100
+	}
+}
+
+# ------------------------------------------------------------
+# .60 整军重建载波（复用 .40 的本地化 key，无新增文本）
+# 用途：「整军」决议先把在役的阿求撤下，1 天后由本事件选项按当前等级重建出来。
+# 为什么必须拆开：见 common/scripted_effects/ACG_MEC_HNA_effects.txt 顶部警告。
+# ------------------------------------------------------------
+country_event = {
+	id = ACG_MEC_HNA_events.60
+	title = "ACG_MEC_HNA_events.40.t"
+	desc = "ACG_MEC_HNA_events.40.d"
+	picture = COMET_SIGHTED_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "ACG_MEC_HNA_events.40.a"
+		if = {
+			limit = { has_country_flag = HNA_akyuu_rebuild_pending }
+			HNA_akyuu_define_general_effect = yes
+		}
 	}
 }

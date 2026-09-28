@@ -96,6 +96,9 @@ country_decisions = {
 			clr_country_flag = HNA_akyuu_refit_cd
 			set_country_flag = HNA_akyuu_refit_cd
 			HNA_akyuu_rebuild_general_effect = yes
+			# 载波：在役的阿求会被入口效果「撤下 + 预约」，1 天后由 events.60
+			# 的选项按当前等级重建（保住将领专属特质；同帧 kill+define 会吞掉它）。
+			country_event = { id = ACG_MEC_HNA_events.60 days = 1 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -109,7 +112,8 @@ country_decisions = {
 	#   第 2 条：未解锁时用，必须处于和平，无冷却
 	#   本  条：解锁后用，**不受战争状态限制**，冷却 30 天
 	# 阿求的成长点 / 突破等级存在国家变量里，所以再召回来仍是同一四维等级
-	# （HNA_akyuu_rebuild_general_effect 按 HNA_akyuu_tier 查表重建）。
+	# （HNA_akyuu_rebuild_general_effect → 因她不在役而直接走
+	#   HNA_akyuu_define_general_effect 按 HNA_akyuu_tier 查表重建）。
 	ACG_MEC_HNA_recall_akyuu = {
 		potential = {
 			tag = HNA

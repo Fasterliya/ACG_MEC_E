@@ -1,3 +1,24 @@
+# ============================================================
+# 蓝兔（HMC）任务树
+# ------------------------------------------------------------
+# 布局：单根阶梯（方案甲，2026/9/28 重排）
+#   列1 slot1 行 1-5   列2 slot2 行 2-6   列3 slot3 行 3-7
+#   列4 slot4 行 4-8   列5 slot5 行 5-9
+#   跨列连线（列首）：2_1←1_1  3_1←2_1  4_1←3_1  5_1←4_1
+#   跨列硬规则 Δ行 必须 = 1；同列 Δ行 ≥ 1。列首若都排在第 1 行
+#   就永远挂不上跨列前置（上面没有行），故必须逐列错开一行。
+#   ⇒ 全树单根 HMC_missions_1_1，25 个任务全连通。
+#
+# 奖励规则（2026/9/28 修）：
+#   每个 event_modifier 全局只保留一个给点，重复位置换成一次性奖励
+#   （同名 add_country_modifier 不会叠加，只会刷新/替换时长，重复给 = 白给）。
+#   唯一给点：qijian_unity → 1_1(25年) + 4_4(永久，升级路径)
+#             qilin_blessing → 1_5    changhong_sword → 2_1
+#             bingpo_sword → 1_4      china_core → 1_2
+#             mythic_warrior → 2_5    hegemon → 5_5
+#   任务 ID 不变，本地化 key（<任务名>_title / _desc）无需改动。
+# ============================================================
+
 HMC_missions_1 = {
 	slot = 1
 	generic = no
@@ -119,7 +140,8 @@ HMC_missions_2 = {
 
 	HMC_missions_2_1 = {
 		icon = "mission_assemble_an_army"
-		position = 1
+		position = 2
+		required_missions = { HMC_missions_1_1 }
 		trigger = {
 			army_size_percentage = 0.8
 		}
@@ -134,7 +156,7 @@ HMC_missions_2 = {
 
 	HMC_missions_2_2 = {
 		icon = "mission_conquer_5_states"
-		position = 2
+		position = 3
 		required_missions = { HMC_missions_2_1 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -143,7 +165,9 @@ HMC_missions_2 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = HMC_mythic_warrior_modifier duration = -1 }
+			# 原为 HMC_mythic_warrior_modifier（与 2_5 / 5_4 重复，白给）→ 改一次性
+			add_army_tradition = 20
+			add_treasury = 500
 			add_splendor = 100
 			add_prestige = 20
 			add_mil_power = 150
@@ -153,7 +177,7 @@ HMC_missions_2 = {
 
 	HMC_missions_2_3 = {
 		icon = "mission_cannons_firing"
-		position = 3
+		position = 4
 		required_missions = { HMC_missions_2_2 }
 		trigger = {
 			land_forcelimit = 25
@@ -169,7 +193,7 @@ HMC_missions_2 = {
 
 	HMC_missions_2_4 = {
 		icon = "mission_invade_island"
-		position = 4
+		position = 5
 		required_missions = { HMC_missions_2_3 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -191,7 +215,7 @@ HMC_missions_2 = {
 
 	HMC_missions_2_5 = {
 		icon = "mission_empire"
-		position = 5
+		position = 6
 		required_missions = { HMC_missions_2_4 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -200,6 +224,7 @@ HMC_missions_2 = {
 			}
 		}
 		effect = {
+			# HMC_mythic_warrior_modifier 的唯一给点
 			add_country_modifier = { name = HMC_mythic_warrior_modifier duration = -1 }
 			add_splendor = 250
 			add_prestige = 35
@@ -222,7 +247,8 @@ HMC_missions_3 = {
 
 	HMC_missions_3_1 = {
 		icon = "mission_early_game_buildings"
-		position = 1
+		position = 3
+		required_missions = { HMC_missions_2_1 }
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 5
@@ -239,7 +265,7 @@ HMC_missions_3 = {
 
 	HMC_missions_3_2 = {
 		icon = "mission_high_income"
-		position = 2
+		position = 4
 		required_missions = { HMC_missions_3_1 }
 		trigger = {
 			monthly_income = 30
@@ -255,14 +281,16 @@ HMC_missions_3 = {
 
 	HMC_missions_3_3 = {
 		icon = "mission_dominate_home_trade_node"
-		position = 3
+		position = 5
 		required_missions = { HMC_missions_3_2 }
 		trigger = {
 			trade_efficiency = 0.25
 			num_of_merchants = 3
 		}
 		effect = {
-			add_trade_income = 100
+			# 原为 add_trade_income = 100：该效果名原版/Wiki 均不存在，静默白给 → 改已验证效果
+			add_treasury = 750
+			add_mercantilism = 2
 			add_splendor = 150
 			add_prestige = 25
 			add_dip_power = 200
@@ -272,7 +300,7 @@ HMC_missions_3 = {
 
 	HMC_missions_3_4 = {
 		icon = "mission_asian_trader"
-		position = 4
+		position = 6
 		required_missions = { HMC_missions_3_3 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -282,7 +310,9 @@ HMC_missions_3 = {
 			monthly_income = 60
 		}
 		effect = {
-			add_country_modifier = { name = HMC_qilin_blessing_modifier duration = -1 }
+			# 原为 HMC_qilin_blessing_modifier（与 1_5 重复，白给）→ 改一次性
+			add_years_of_income = 1
+			add_mercantilism = 3
 			add_splendor = 200
 			add_prestige = 30
 			add_dip_power = 250
@@ -293,7 +323,7 @@ HMC_missions_3 = {
 
 	HMC_missions_3_5 = {
 		icon = "mission_high_income"
-		position = 5
+		position = 7
 		required_missions = { HMC_missions_3_4 }
 		trigger = {
 			monthly_income = 100
@@ -320,7 +350,8 @@ HMC_missions_4 = {
 
 	HMC_missions_4_1 = {
 		icon = "mission_have_two_subjects"
-		position = 1
+		position = 4
+		required_missions = { HMC_missions_3_1 }
 		trigger = {
 			num_of_subjects = 1
 		}
@@ -340,7 +371,7 @@ HMC_missions_4 = {
 
 	HMC_missions_4_2 = {
 		icon = "mission_diplomatic_relation"
-		position = 2
+		position = 5
 		required_missions = { HMC_missions_4_1 }
 		trigger = {
 			num_of_subjects = 2
@@ -355,7 +386,7 @@ HMC_missions_4 = {
 
 	HMC_missions_4_3 = {
 		icon = "mission_have_two_subjects"
-		position = 3
+		position = 6
 		required_missions = { HMC_missions_4_2 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -373,12 +404,14 @@ HMC_missions_4 = {
 
 	HMC_missions_4_4 = {
 		icon = "mission_empire"
-		position = 4
+		position = 7
 		required_missions = { HMC_missions_4_3 }
 		trigger = {
 			num_of_subjects = 3
 		}
 		effect = {
+			# HMC_qijian_unity_modifier 升级路径的第二段：把 1_1 的 25 年版顶成永久版
+			# （靠 1_1 → 2_1 → 3_1 → 4_1 → 4_2 → 4_3 → 4_4 的连线保证 1_1 必然先完成）
 			add_country_modifier = { name = HMC_qijian_unity_modifier duration = -1 }
 			add_splendor = 200
 			add_prestige = 30
@@ -390,13 +423,14 @@ HMC_missions_4 = {
 
 	HMC_missions_4_5 = {
 		icon = "mission_the_great_conqueror"
-		position = 5
+		position = 8
 		required_missions = { HMC_missions_4_4 }
 		trigger = {
 			is_great_power = yes
 		}
 		effect = {
-			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
+			# 原为 HMC_hegemon_modifier（与 5_2 / 5_5 重复，白给）→ 改一次性
+			add_legitimacy = 20
 			add_splendor = 300
 			add_prestige = 50
 			add_stability = 2
@@ -421,7 +455,8 @@ HMC_missions_5 = {
 
 	HMC_missions_5_1 = {
 		icon = "mission_monarch_in_throne_room"
-		position = 1
+		position = 5
+		required_missions = { HMC_missions_4_1 }
 		trigger = {
 			prestige = 50
 		}
@@ -435,14 +470,15 @@ HMC_missions_5 = {
 
 	HMC_missions_5_2 = {
 		icon = "mission_empire"
-		position = 2
+		position = 6
 		required_missions = { HMC_missions_5_1 }
 		trigger = {
 			government_rank = 3
 			total_development = 400
 		}
 		effect = {
-			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
+			# 原为 HMC_hegemon_modifier（与 4_5 / 5_5 重复，白给）→ 改一次性
+			add_legitimacy = 30
 			add_splendor = 200
 			add_prestige = 35
 			add_adm_power = 250
@@ -453,7 +489,7 @@ HMC_missions_5 = {
 
 	HMC_missions_5_3 = {
 		icon = "mission_conquer_5_states"
-		position = 3
+		position = 7
 		required_missions = { HMC_missions_5_2 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -475,7 +511,7 @@ HMC_missions_5 = {
 
 	HMC_missions_5_4 = {
 		icon = "mission_empire"
-		position = 4
+		position = 8
 		required_missions = { HMC_missions_5_3 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -484,7 +520,9 @@ HMC_missions_5 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = HMC_mythic_warrior_modifier duration = -1 }
+			# 原为 HMC_mythic_warrior_modifier（与 2_2 / 2_5 重复，白给）→ 改一次性
+			add_army_tradition = 25
+			add_years_of_income = 1
 			add_splendor = 300
 			add_prestige = 45
 			add_stability = 2
@@ -494,7 +532,7 @@ HMC_missions_5 = {
 
 	HMC_missions_5_5 = {
 		icon = "mission_the_great_conqueror"
-		position = 5
+		position = 9
 		required_missions = { HMC_missions_5_4 }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -503,11 +541,17 @@ HMC_missions_5 = {
 			}
 		}
 		effect = {
+			# HMC_hegemon_modifier 的唯一给点
 			add_country_modifier = { name = HMC_hegemon_modifier duration = -1 }
 			add_splendor = 400
 			add_prestige = 60
 			add_stability = 3
-			add_crown_land = 10
+			# 原为 add_crown_land = 10：该效果名原版/Wiki 均不存在，静默白给 → 改已验证效果
+			# 原版用法（00_buildings.txt:163「大清真寺产生王领」）：share 为负 = 从阶层划给王领
+			change_estate_land_share = {
+				estate = all
+				share = -0.10
+			}
 			capital_scope = {
 				add_base_tax = 5
 				add_base_production = 5
