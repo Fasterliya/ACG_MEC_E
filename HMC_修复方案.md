@@ -228,3 +228,78 @@ git checkout -- common/on_actions missions/HMC_missions.txt missions/BLS_mission
 脚本内 land_fire_damage：0 残留（ideas/ 的 5 处除外，见上）✓
 ```
 
+---
+
+# 三轮修订（2026/9/28）：「年度税收」口径修复 + idea/modifier 类型重写协调
+
+> 本节**取代**二轮里"新增 7 个弱化版"的键位表（其中一条改了名与主题）。
+
+## 3.1 修掉的 4 处无效键 / 错误口径
+
+| 位置 | 原 | 问题 | 改后 |
+|---|---|---|---|
+| `HMC_modifiers.txt` `qilin_blessing` | `tax_income = 0.10` | **`tax_income` 是平值修正**，不是百分比。原版实例全是整数：`sufi_shrine = { tax_income = 2 }`、`BYZ_masjid_local_pilgrimages = { tax_income = 60 }`、`ARB_well_managed = { tax_income = 4 }`；百分比键是 `global_tax_modifier`（原版取 0.05 / 0.1） | `global_tax_modifier = 0.10` |
+| 同上 `qilin_blessing_lesser` | `tax_income = 0.05` | 同上 | `global_tax_modifier = 0.05` |
+| `HMC_ideas.txt` `idea_1` / `idea_7` | `land_fire_damage = 0.15 / 0.10` | 原版 0 命中 | `fire_damage = 0.15 / 0.10` |
+| `HMC_ideas.txt` `idea_3` | `national_unrest = -1` | 原版 0 命中 | `diplomatic_reputation = 2` |
+
+## 3.2 重写协调：军事项占比
+
+| 文件 | 改前 | 改后 |
+|---|---|---|
+| `common/ideas/HMC_ideas.txt` | 军事 12 行（7 条理念里 **4 条纯军事**） | **军事 7 / 17 = 41%**（纯军事 2 条：`idea_1` 长虹贯日、`idea_7` 天下归一） |
+| `common/event_modifiers/HMC_modifiers.txt` | 军事 ~58% | **军事 18 / 56 = 32%** |
+
+**ideas 对照表**
+
+| 位置 | 改后 | 分类 |
+|---|---|---|
+| `start` | `land_morale 0.15` + `global_tax_modifier 0.05` | 军+经 |
+| `bonus` | `all_power_cost -0.10`（不变） | 通用 |
+| `idea_1` 长虹贯日 | `fire_damage 0.15` + `infantry_power 0.10` | 军×2 |
+| `idea_2` 麒麟祥瑞 | `core_creation -0.20` + `global_tax_modifier 0.10` | 行+经 |
+| `idea_3` 正义之师 | `global_unrest -3` + `diplomatic_reputation 2` | 内+外 |
+| `idea_4` 七侠集结 | `global_manpower_modifier 0.15` + `diplomatic_upkeep 2` | 军+外 |
+| `idea_5` 武学传承 | `technology_cost -0.10` + `idea_cost -0.10` | 科技×2 |
+| `idea_6` 火舞旋风 | `defensiveness 0.20` + `build_cost -0.15` | 军+经 |
+| `idea_7` 天下归一 | `discipline 0.05` + `land_morale 0.10` | 军×2 |
+
+**modifier 对照表（只列改动项）**
+
+| 修正 | 改后 |
+|---|---|
+| `qilin_blessing` | `global_manpower_modifier 0.15` + `global_tax_modifier 0.10` + `production_efficiency 0.10` |
+| `qijian_oath` | `global_tax_modifier 0.05` + `global_unrest -1`（经济内政向） |
+| **`righteous_crusade`**（原 `mythic_warrior_lesser`，**改名 + 改主题**） | `global_unrest -2` + `diplomatic_reputation 1`（讨伐魔教＝正义之师） |
+| `qilin_blessing_lesser` | `global_tax_modifier 0.05` + `production_efficiency 0.05`（纯经济） |
+| `hegemon_lesser` | `discipline 0.05` + `all_power_cost -0.05` + `legitimacy 1` |
+| `restore_china` | `core_creation -0.10` + `governing_capacity 100`（治理新土） |
+| `tianxia_unity` | `administrative_efficiency 0.05` + `global_unrest -2` + `legitimacy 1` |
+| `china_growth_3/4/5` | 去掉 `land_morale` / `discipline`，改 `global_tax_modifier` / `production_efficiency` / `administrative_efficiency` |
+
+未动的军事向修正（保留国家军事身份）：`qijian_unity`、`changhong_sword`、`bingpo_sword`、`mythic_warrior`、`hegemon`、`china_core`、`trade_route`。
+
+## 3.3 三轮自检
+
+```
+逐键回原版验证（本次是重写，不允许再留无效键）：
+  HMC_modifiers.txt  56 行，军事 18 = 32%，无效键 0
+  HMC_ideas.txt      17 行，军事  7 = 41%，无效键 0
+任务树授予的 14 个修正：全部「有定义 + 有本地化 key + 只授予一次」✓
+残留 HMC_mythic_warrior_lesser：0（仅本地化注释里留了一句改名说明）
+花括号：missions 154/154、modifiers 19/19、ideas 11/11 全部平衡；UTF-8 无 BOM
+```
+
+## 3.4 需要你重新编码的本地化（14 条，最终版）
+
+```
+HMC_qijian_unity_modifier: "七剑同心"      HMC_qijian_oath_modifier: "七剑初誓"
+HMC_qilin_blessing_modifier: "麒麟赐福"    HMC_righteous_crusade_modifier: "正义之师"
+HMC_changhong_sword_modifier: "长虹剑意"   HMC_trade_route_modifier: "商路畅通"
+HMC_bingpo_sword_modifier: "冰魄剑意"      HMC_qilin_blessing_lesser: "麒麟祥瑞·小成"
+HMC_china_core_modifier: "中原归心"        HMC_hegemon_lesser: "问鼎之志"
+HMC_hegemon_modifier: "天下霸主"           HMC_restore_china_modifier: "光复山河"
+HMC_mythic_warrior_modifier: "神武之师"    HMC_tianxia_unity_modifier: "天下一统"
+```
+
+
