@@ -122,3 +122,67 @@ kill_leader 与 define_general 已不在同一执行块 ✓
 cd "F:\Paradox Interactive\Europa Universalis IV\mod\ACG_MEC_E"
 git checkout -- common/scripted_effects/ACG_MEC_HNA_effects.txt events/ACG_MEC_HNA_events.txt decisions/ACG_MEC_HNA_decisions.txt common/on_actions/ACG_MEC_HNA_on_actions.txt
 ```
+
+---
+
+# v8 追加（2026/9/28）：成书事件奖励 —— 永久 buff 不再重复白给
+
+## 问题
+v6 去掉 `fire_only_once` 后 `.10`–`.14` 可重复刷，但其中 **10 个选项发的是永久修正**
+（`duration = -1`）。同名修正重复发放只会刷新时长 ⇒ 玩家再次看到同一选项时，必须自己回忆
+"这个永久 buff 我是不是已经拿过了"，否则就是白点一次。
+
+## 修法（选项**保留可见**，只把「发修正」那一段包进守卫）
+```eu4
+option = {   #发展向
+	name = "ACG_MEC_HNA_events.10.a"
+	if = {
+		limit = { NOT = { has_country_modifier = ACG_MEC_HNA_reward_dev_1 } }
+		add_country_modifier = { name = ACG_MEC_HNA_reward_dev_1 duration = -1 }
+	}
+	# 额外奖励：无论是否首次都照发 ⇒ 旧选项永远不是空奖励
+	add_treasury = 200
+	add_prestige = 10
+	HNA_akyuu_grant_growth_effect = { amount = 4 }
+}
+```
+
+## 额外奖励表（10 个永久修正选项，全部每次点击都发）
+
+| 选项 | 守卫的修正 | 额外奖励 |
+|---|---|---|
+| `.10.a` 发展向 | `reward_dev_1` | treasury 200 + prestige 10 |
+| `.10.c` 军事向 | `reward_army_1` | army_tradition 10 + splendor 100 |
+| `.11.a` 建筑向 | `reward_build_1` | treasury 300 + mercantilism 2 |
+| `.11.c` 军事向 | `reward_army_2` | army_tradition 10 + splendor 100 |
+| `.12.b` 军事向 | `reward_army_2`（与 .11.c 同一个） | army_tradition 10 + splendor 100 |
+| `.12.c` 内政向 | `reward_adm_1` | adm 100 + splendor 100 |
+| `.13.a` 军事向 | `reward_army_3` | army_tradition 15 + splendor 150 |
+| `.13.c` 内政向 | `reward_adm_1`（与 .12.c 同一个） | adm 450（原 300 + 新 150）+ splendor 150 |
+| `.14.b` 永久向 | `chronicle_permanent` | splendor 200 + stability 1 |
+| `.14.c` 魔法向 | `reward_magic_tech` | Mana 200 + Magic_exp 100 |
+
+**两个限时修正选项按需求不加守卫**：`.11.b`（`reward_magic_mana` 3650 天）、
+`.12.a`（`reward_magic_exp` 5475 天）—— 重复领取会**刷新时长**，本身不是白给。
+**三个不发修正的选项不变**：`.10.b` / `.13.b` / `.14.a`。
+
+## 自检
+```
+花括号 133/133 平衡；BOM=False；LF
+12 个发修正的选项：10 个永久 → 全部带守卫且 limit 里的名字与发放名逐字一致 ✔
+                    2 个限时 → 无守卫（按需求）✔
+额外奖励用到的效果名原版全部存在：add_treasury(385) add_prestige(2028)
+  add_army_tradition(273) add_splendor(72) add_mercantilism(378) add_adm_power(1285)
+  add_stability(866) add_mil_power(881) change_variable(215)
+```
+
+## 同类漏网（未修，等你决定）
+以下两个事件**各自只有一个选项、且发永久修正**，玩家若已从别处拿到，点下去等于空奖励：
+
+| 事件 | 发的修正 | 可能已被谁发过 |
+|---|---|---|
+| `.30` 四维圆满 | `ACG_MEC_HNA_chronicle_permanent` | `.14.b`（可重复刷） |
+| `.40` 阿求出任将领 | `ACG_MEC_HNA_reward_dev_1` | `.10.a`、任务 2_1 / 2_2 |
+
+两者都是 `fire_only_once = yes`，所以只会在第一次遇到；修法与本节完全一致（加守卫 + 补 `else` 兜底奖励）。
+
