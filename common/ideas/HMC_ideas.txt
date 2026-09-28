@@ -1,7 +1,26 @@
+# ============================================================
+# 蓝兔（HMC）国家理念
+# ------------------------------------------------------------
+# 2026/9/28 重写协调（与 common/event_modifiers/HMC_modifiers.txt 同一口径）：
+#   军事行从 12 条压到 7 条（7/17 ≈ 41%），原有 4 条纯军事理念 → 2 条，
+#   被换掉的军事项改为经济 / 外交 / 科技 / 治理向。
+#   用到的每个键都回原版 1.37.5 验证过命中：
+#     global_tax_modifier(440) production_efficiency(260) idea_cost(202)
+#     diplomatic_reputation(460) diplomatic_upkeep(199) build_cost(336)
+#     core_creation(198) technology_cost(220) defensiveness(253)
+#     global_manpower_modifier(365) discipline(298) land_morale(515)
+#     fire_damage(68) infantry_power(203) global_unrest(642) all_power_cost(41)
+# ------------------------------------------------------------
+# 同时修掉 3 处无效键：
+#   HMC_idea_1 / HMC_idea_7 的 land_fire_damage（原版 0 命中）→ fire_damage
+#   HMC_idea_3 的 national_unrest（原版 0 命中）→ diplomatic_reputation
+# ============================================================
+
 HMC_ideas = {
 	start = {
 		land_morale = 0.15
-		discipline = 0.05
+		# 原 discipline 0.05（军事项）→ 全国税收百分比
+		global_tax_modifier = 0.05
 	}
 	bonus = {
 		all_power_cost = -0.10
@@ -10,34 +29,53 @@ HMC_ideas = {
 		tag = HMC
 	}
 	free = yes
+
+	# 长虹贯日：七剑之首，纯武保留
 	HMC_idea_1 = {
-		land_fire_damage = 0.15
+		# 原 land_fire_damage（原版 0 命中）→ fire_damage
+		fire_damage = 0.15
 		infantry_power = 0.10
 	}
+
+	# 麒麟祥瑞：行政 + 经济
 	HMC_idea_2 = {
 		core_creation = -0.20
-		administrative_efficiency = 0.05
+		# 原 administrative_efficiency 0.05 → 全国税收百分比
+		global_tax_modifier = 0.10
 	}
+
+	# 正义之师：内政 + 外交
 	HMC_idea_3 = {
 		global_unrest = -3
-		national_unrest = -1
+		# 原 national_unrest（原版 0 命中）→ 外交声誉
+		diplomatic_reputation = 2
 	}
+
+	# 七侠集结：军事 + 外交（群侠归附＝能同时维系更多盟友/附庸）
 	HMC_idea_4 = {
-		land_forcelimit_modifier = 0.25
 		global_manpower_modifier = 0.15
+		# 原 land_forcelimit_modifier 0.25（军事项）→ 外交关系 +2
+		diplomatic_upkeep = 2
 	}
+
+	# 武学传承：科技双线
 	HMC_idea_5 = {
-		stability_cost_modifier = -0.15
 		technology_cost = -0.10
+		# 原 stability_cost_modifier -0.15 → 理念花费（更贴「武学传承」）
+		idea_cost = -0.10
 	}
+
+	# 火舞旋风：防御 + 建设
 	HMC_idea_6 = {
-		land_attrition = -0.25
-		max_hostile_attrition = 2
-		defensiveness = 0.15
+		# 原 3 条军事项（land_attrition 0.25 / max_hostile_attrition 2 / defensiveness 0.15）
+		# → 只留 1 条军事，减损耗主题由任务修正 HMC_bingpo_sword_modifier 承担
+		defensiveness = 0.20
+		build_cost = -0.15
 	}
+
+	# 天下归一：七剑合璧＝纯武终点
 	HMC_idea_7 = {
 		discipline = 0.05
 		land_morale = 0.10
-		land_fire_damage = 0.10
 	}
 }

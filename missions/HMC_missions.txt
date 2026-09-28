@@ -16,9 +16,9 @@
 #        bingpo_sword → 1_4     china_core → 1_2        mythic_warrior → 2_5
 #        hegemon → 4_5（名震天下，按需求保留本体）
 #   ② 原重复位置改为发「较弱版专属修正」（定义见 common/event_modifiers/HMC_modifiers.txt）：
-#        1_1 → qijian_oath        2_2 → mythic_warrior_lesser
-#        3_4 → qilin_blessing_lesser   5_2 → hegemon_lesser
-#        5_4 → restore_china      5_5 → tianxia_unity（全树终点）
+#        1_1 → qijian_oath        2_2 → righteous_crusade（原 mythic_warrior_lesser，
+#        3_4 → qilin_blessing_lesser   5_2 → hegemon_lesser      2026/9/28 重写协调时
+#        5_4 → restore_china      5_5 → tianxia_unity            改为内政+外交向并改名）
 #   ③ 3_3 → trade_route：替代原无效效果名 add_trade_income（原版/Wiki 均不存在）。
 #   任务 ID 不变，本地化 key（<任务名>_title / _desc）无需改动；
 #   7 个新增修正名需要在 decode_localisation/HMC_l_english.yml 补 key。
@@ -173,8 +173,9 @@ HMC_missions_2 = {
 		}
 		effect = {
 			# 原为 HMC_mythic_warrior_modifier 本体（与 2_5 / 5_4 重复，白给）
-			# → 改发弱化版；本体唯一给点在 2_5
-			add_country_modifier = { name = HMC_mythic_warrior_lesser duration = -1 }
+			# → 改发「正义之师」（2026/9/28 重写协调：本位置改为内政 + 外交向，
+			#   不再发军事 buff）；本体唯一给点在 2_5
+			add_country_modifier = { name = HMC_righteous_crusade_modifier duration = -1 }
 			add_splendor = 100
 			add_prestige = 20
 			add_mil_power = 150

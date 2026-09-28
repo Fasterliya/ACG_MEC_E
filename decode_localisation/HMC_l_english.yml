@@ -62,8 +62,10 @@ l_english:
  HMC_mythic_warrior_modifier: "神武之师"
 
  # 以下 7 个是 2026/9/28 二轮新增：原本重复发放的位置改发这些「较弱版 / 专属版」
+ # （其中 HMC_righteous_crusade_modifier 原叫 mythic_warrior_lesser，
+ #   同日在「军事过多」重写协调中改为内政+外交向并改名）
  HMC_qijian_oath_modifier: "七剑初誓"
- HMC_mythic_warrior_lesser: "神武之师·小成"
+ HMC_righteous_crusade_modifier: "正义之师"
  HMC_trade_route_modifier: "商路畅通"
  HMC_qilin_blessing_lesser: "麒麟祥瑞·小成"
  HMC_hegemon_lesser: "问鼎之志"
