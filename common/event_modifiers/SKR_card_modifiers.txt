@@ -460,7 +460,7 @@ skr_judgment_passed = {
 
 skr_clear_card_dawn = {
 	administrative_efficiency = 0.05
-	discipline = 0.5
+	technology_cost = -0.10
 }
 
 skr_clear_trial_gale = {
