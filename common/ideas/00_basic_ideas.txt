@@ -322,7 +322,8 @@ innovativeness_ideas = {
 	}
 
 	bonus = {
-		advisor_cost = -0.2
+		core_creation = -0.15
+		monthly_splendor = 1
 	}
 
 	patron_of_art  = {
@@ -342,8 +343,8 @@ innovativeness_ideas = {
 		global_institution_spread = 0.25
 	}
 	optimism = {
-		war_exhaustion = -0.05
-		monthly_splendor = 1
+		war_exhaustion = -0.10
+		advisor_cost = -0.2
 	}
 	expanded_policies = {
 		free_policy = 1
@@ -916,7 +917,7 @@ economic_ideas = {
 	}
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		development_cost = -0.20
 	}
 
 	bureaucracy = { 
@@ -924,22 +925,25 @@ economic_ideas = {
 	}
 	national_bank = {
 		inflation_reduction = 0.1
+		inflation_action_cost = -0.50
 	}
 	merchant_passes = {
 		merchants = 1
 	}
 	efficient_mining = {
-		gold_depletion_chance_modifier = -0.25
+		global_own_trade_power = 0.33
 	}
 	debt_and_loans = {
 		interest = -0.5
 	}
 	nationalistic_enthusiasm = {
 		land_maintenance_modifier = -0.05
+		global_autonomy = -0.05
 	}
 	smithian_economics = { 
 		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
-		production_efficiency = 0.1					#for eco ideas are done so via on_actions 
+		production_efficiency = 0.1	
+		global_trade_goods_size_modifier = 0.1				#for eco ideas are done so via on_actions 
  	}	
 
 	ai_will_do = {
@@ -1960,21 +1964,21 @@ infrastructure_ideas = {
 	}
 
 	state_efficiency = {
-		global_prosperity_growth = 0.25
+		global_prosperity_growth = 1.0
 		state_maintenance_modifier = -0.33
 	}
 	organised_construction = {
-		build_cost = -0.1 
+		build_cost = -0.15
 	}
 	efficient_construction_plans = {
 		expand_infrastructure_cost_modifier = -0.25
 	}
 	expanded_infrastructure_network = {
-		movement_speed = 0.1
-		center_of_trade_upgrade_cost = -0.2
+		movement_speed = 0.15
+		center_of_trade_upgrade_cost = -0.25
 	}
 	administrative_efficiency_idea = {
-		state_governing_cost = -0.1
+		state_governing_cost = -0.15
 	}
 	fort_logistics = {
 		fort_maintenance_modifier = -0.25
