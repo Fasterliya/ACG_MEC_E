@@ -331,7 +331,7 @@ SKR_missions_7 = {
 		position = 5
 		required_missions = { SKR_mission_7_4 }
 		trigger = {
-			266 = { development = 30 has_building = cathedral }
+			266 = { development = 30 has_tax_building_trigger = yes }
 		}
 		effect = {
 			austria_proper_area = {
@@ -349,7 +349,7 @@ SKR_missions_7 = {
 		trigger = {
 			monthly_income = 80
 			num_of_owned_provinces_with = {
-				has_building = trade_depot
+				has_trade_building_trigger = yes
 				value = 5
 			}
 		}
@@ -366,7 +366,7 @@ SKR_missions_7 = {
 			total_development = 500
 			num_of_owned_provinces_with = {
 				has_building = university
-				value = 5
+				value = 3
 			}
 		}
 		effect = {
@@ -427,7 +427,7 @@ SKR_missions_7 = {
 			total_development = 1500
 			num_of_owned_provinces_with = {
 				has_building = university
-				value = 10
+				value = 5
 			}
 		}
 		effect = {
@@ -852,7 +852,7 @@ SKR_missions_9 = {
 		required_missions = { SKR_mission_9_8 }
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_building = fort_17th
+				has_fort_building_trigger = yes
 				value = 5
 			}
 		}
