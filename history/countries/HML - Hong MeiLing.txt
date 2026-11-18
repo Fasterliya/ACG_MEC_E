@@ -4,6 +4,7 @@ primary_culture = Hongmeiling
 government_rank = 1
 religion = Gensokyo_reg
 technology_group = tech_gensokyan
+unit_type = tech_gensokyan
 capital = 113
 
 1444.11.11 = {

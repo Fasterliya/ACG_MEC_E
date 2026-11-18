@@ -4,6 +4,7 @@ primary_culture = Marisa
 religion = Gensokyo_reg
 government_rank = 1
 technology_group = tech_gensokyan
+unit_type = tech_gensokyan
 capital = 121
 historical_friend = HKR
 historical_friend = NBL
