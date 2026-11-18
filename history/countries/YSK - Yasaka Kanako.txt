@@ -4,7 +4,6 @@ government_rank = 1
 primary_culture = Kanako
 religion = Gensokyo_reg
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 106
 historical_friend = KTY
 historical_friend = MRY

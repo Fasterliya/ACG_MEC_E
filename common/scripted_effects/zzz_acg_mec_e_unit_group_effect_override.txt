@@ -1,0 +1,241 @@
+# ============================================================
+# ACG_MEC_E —— 覆盖母 mod 的 acgr_sync_unit_group_effect
+#
+# 母 mod 在 on_startup / on_country_released / on_country_creation 里调用本 effect，
+# 按 acgr_unit_tag_gNN_trigger 把国家的 unit_type 强制改成 acgr_g01..g36。
+# 36 个幻想乡国家的 g01/g02/g09 命中会导致它们的兵种组被抢走，
+# 游戏里就看不到我们自己的 infantry_gen_t* / cavalry_gen_t* / artillery_gen_t*。
+#
+# 处理：幻想乡 36 国在第一个分支里直接回到 tech_gensokyan 并清掉 acgr 标记，
+# 其余国家完全沿用母 mod 原逻辑（36 个 else_if 原样保留）。
+# ============================================================
+acgr_sync_unit_group_effect = {
+
+	# ACG_MEC_E : 幻想乡国家保留自己的兵种组
+	if = {
+		limit = {
+			OR = {
+					tag = ALC
+					tag = EIR
+					tag = FLD
+					tag = HKH
+					tag = HKR
+					tag = HML
+					tag = HNA
+					tag = HNK
+					tag = HSY
+					tag = IBK
+					tag = IRK
+					tag = KGY
+					tag = KMJ
+					tag = KSN
+					tag = KTY
+					tag = KZK
+					tag = MRS
+					tag = MRY
+					tag = NMK
+					tag = OKK
+					tag = PCL
+					tag = QLN
+					tag = RES
+					tag = RML
+					tag = SJY
+					tag = SKR
+					tag = SKY
+					tag = SMM
+					tag = TES
+					tag = WNT
+					tag = WNY
+					tag = YKR
+					tag = YOM
+					tag = YSK
+					tag = YUK
+					tag = YYK
+			}
+		}
+		change_unit_type = tech_gensokyan
+		acgr_clear_unit_group_flags_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g01_trigger = yes }
+		acgr_use_g01_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g02_trigger = yes }
+		acgr_use_g02_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g03_trigger = yes }
+		acgr_use_g03_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g04_trigger = yes }
+		acgr_use_g04_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g05_trigger = yes }
+		acgr_use_g05_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g06_trigger = yes }
+		acgr_use_g06_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g07_trigger = yes }
+		acgr_use_g07_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g08_trigger = yes }
+		acgr_use_g08_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g09_trigger = yes }
+		acgr_use_g09_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g10_trigger = yes }
+		acgr_use_g10_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g11_trigger = yes }
+		acgr_use_g11_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g12_trigger = yes }
+		acgr_use_g12_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g13_trigger = yes }
+		acgr_use_g13_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g14_trigger = yes }
+		acgr_use_g14_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g15_trigger = yes }
+		acgr_use_g15_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g16_trigger = yes }
+		acgr_use_g16_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g17_trigger = yes }
+		acgr_use_g17_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g18_trigger = yes }
+		acgr_use_g18_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g19_trigger = yes }
+		acgr_use_g19_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g20_trigger = yes }
+		acgr_use_g20_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g21_trigger = yes }
+		acgr_use_g21_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g22_trigger = yes }
+		acgr_use_g22_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g23_trigger = yes }
+		acgr_use_g23_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g24_trigger = yes }
+		acgr_use_g24_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g25_trigger = yes }
+		acgr_use_g25_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g26_trigger = yes }
+		acgr_use_g26_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g27_trigger = yes }
+		acgr_use_g27_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g28_trigger = yes }
+		acgr_use_g28_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g29_trigger = yes }
+		acgr_use_g29_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g30_trigger = yes }
+		acgr_use_g30_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g31_trigger = yes }
+		acgr_use_g31_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g32_trigger = yes }
+		acgr_use_g32_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g33_trigger = yes }
+		acgr_use_g33_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g34_trigger = yes }
+		acgr_use_g34_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g35_trigger = yes }
+		acgr_use_g35_unit_group_effect = yes
+	}
+
+	else_if = {
+		limit = { acgr_unit_tag_g36_trigger = yes }
+		acgr_use_g36_unit_group_effect = yes
+	}
+
+	acgr_init_kirara_unit_region_effect = yes
+}

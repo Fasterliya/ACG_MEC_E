@@ -4,7 +4,6 @@ government_rank = 1
 primary_culture = Suwako
 religion = Gensokyo_reg
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 114
 historical_friend = KTY
 historical_friend = YSK

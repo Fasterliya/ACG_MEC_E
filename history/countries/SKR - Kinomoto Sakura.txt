@@ -5,7 +5,6 @@ primary_culture = cards_magic_culture
 religion = acg
 historical_friend = TMY
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 266
 elector = yes
 

@@ -4,7 +4,6 @@ primary_culture = HimekaidoHatate
 government_rank = 1
 religion = Gensokyo_reg
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 2450
 
 1444.11.11 = {

@@ -4,7 +4,6 @@ primary_culture = Patchouli
 religion = Gensokyo_reg
 government_rank = 1
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 108
 1444.11.11 = {
 	monarch = {

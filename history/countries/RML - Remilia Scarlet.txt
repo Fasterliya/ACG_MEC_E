@@ -4,7 +4,6 @@ primary_culture = Remilia
 religion = Gensokyo_reg
 government_rank = 1
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 112
 add_accepted_culture = Flandre
 add_accepted_culture = Sakuya

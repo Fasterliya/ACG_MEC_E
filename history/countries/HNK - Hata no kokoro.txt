@@ -4,7 +4,6 @@ primary_culture = Hatanokokoro
 government_rank = 1
 religion = Gensokyo_reg
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 333
 
 1444.11.11 = {

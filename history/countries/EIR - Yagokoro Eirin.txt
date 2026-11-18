@@ -4,7 +4,6 @@ primary_culture = YagokoroEirin
 government_rank = 1
 religion = Gensokyo_reg
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 101
 historical_friend = RES
 historical_friend = KGY

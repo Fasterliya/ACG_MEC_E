@@ -4,7 +4,6 @@ primary_culture = Flandre
 government_rank = 1
 religion = Gensokyo_reg
 technology_group = tech_gensokyan
-unit_type = tech_gensokyan
 capital = 107
 historical_friend = SKY
 historical_friend = RML
