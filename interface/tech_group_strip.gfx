@@ -1,0 +1,11 @@
+spriteTypes = {
+	### TECH_GROUP_STRIP
+	# 21 frames = vanilla 18 tech groups + touhou (tech_gensokyan / tech_lunarian / tech_gensokyan_lunarian)
+	# overrides vanilla countrygovernmentview.gfx and mother-mod definition (noOfFrames = 18)
+	spriteType = {
+		name = "GFX_tech_group_strip"
+		texturefile = "gfx/interface/tech_group_strip.dds"
+		transparencecheck = yes
+		noOfFrames = 21
+	}
+}
