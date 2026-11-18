@@ -276,7 +276,7 @@ HNA_missions_3 = {
 		#   （任务描述《安科纳的商路》的文案未动，仍在 decode_localisation。）
 		trigger = {
 			capital_scope = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 			}
 		}
 		effect = {

@@ -12,9 +12,12 @@ BLS_missions_1 = {
 		icon = "mission_empire"
 		position = 1
 		trigger = {
-			brunei_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					area = spice_islands_area
+					area = timor_area
+				}
 			}
 		}
 		effect = {
@@ -56,7 +59,7 @@ BLS_missions_1 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 3
-				has_fort = yes
+				has_fort_building_trigger = yes
 			}
 		}
 		effect = {

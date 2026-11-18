@@ -397,7 +397,7 @@ ALC_missions_8 = {
 		required_missions = { ALC_missions_8_2 }
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_building = trade_depot
+				has_trade_building_trigger = yes
 				value = 5
 			}
 		}

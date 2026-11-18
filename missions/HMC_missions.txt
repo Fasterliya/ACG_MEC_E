@@ -100,7 +100,7 @@ HMC_missions_1 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 3
-				has_fort = yes
+				has_fort_building_trigger = yes
 			}
 		}
 		effect = {
