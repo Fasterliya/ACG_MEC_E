@@ -187,13 +187,30 @@ groups = {
 		}
 	}
 	# Frame index of GFX_tech_group_strip == 0-based position of the group inside groups{}.
-	# Slots: 0-16 = 17 vanilla groups, 17 = test_group_2, 18 = tech_gensokyan, 19 = acg_american.
-	# Frame 18 of gfx/interface/tech_group_strip.dds (21 frames total) holds the touhou icon.
+	# Slots: 0-16 = 17 vanilla groups, 17 = test_group_2, 18 = acg_american (金辉), 19 = tech_gensokyan (幻想乡).
+	# tech_group_strip.dds has 21 frames: frame 18 = 金辉 icon, frame 19 = 幻想乡 icon, frame 20 = spare.
 	test_group_2  = {
 		start_level = 1
 		start_cost_modifier = 0
 		nation_designer_cost = {
 			value = 1000
+		}
+	}
+	acg_american = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = {
+			capital_scope = {
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+			}
+		}
+		nation_designer_cost = {
+			value = 75
 		}
 	}
 	# BEGIN ACG_MEC_E  touhou tech group (submod addition, keep on every mother-mod update)
@@ -215,23 +232,6 @@ groups = {
 		}
 	}
 	# END ACG_MEC_E
-	acg_american = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_trigger = {
-			capital_scope = {
-				OR = {
-					continent = new_world
-					continent = north_america
-					continent = south_america
-					continent = oceania
-				}
-			}
-		}
-		nation_designer_cost = {
-			value = 75
-		}
-	}
 	# BEGIN ACGR_UNIT_GROUPS REGISTERED UNIT FAMILIES
 	acgr_g01 = {
 		start_level = 3
