@@ -186,6 +186,10 @@ groups = {
 			value = 75
 		}
 	}
+	# BEGIN ACG_MEC_E  touhou tech group (submod addition, keep on every mother-mod update)
+	# Frame index of GFX_tech_group_strip == position of the group inside groups{}.
+	# This block MUST stay right after the 16 vanilla groups (slot 17): that slot is
+	# where gfx/interface/tech_group_strip.dds stores the touhou tech-group icon.
 	test_group_2  = {
 		start_level = 1
 		start_cost_modifier = 0
@@ -193,6 +197,24 @@ groups = {
 			value = 1000
 		}
 	}
+	tech_gensokyan = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	# END ACG_MEC_E
 	acg_american = {
 		start_level = 3
 		start_cost_modifier = 0
@@ -391,25 +413,6 @@ groups = {
 		start_cost_modifier = 0
 		nation_designer_trigger = { always = no }
 	}
-	# BEGIN ACG_MEC_E  touhou tech group (submod addition, keep on every mother-mod update)
-	tech_gensokyan = {
-		start_level = 3
-		start_cost_modifier = 0
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
-	# END ACG_MEC_E
 	# END ACGR_UNIT_GROUPS
 }
 
