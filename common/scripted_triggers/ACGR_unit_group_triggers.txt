@@ -1,0 +1,546 @@
+# Country-scope unit identity and fixed Kirara regional eligibility.
+
+acgr_unit_tag_g01_trigger = {
+	OR = {
+		# tag = ALC
+		# tag = FLD
+		# tag = HKH
+		# tag = HKR
+		# tag = HML
+		# tag = HNA
+		# tag = HNK
+		# tag = HSY
+		# tag = IBK
+		# tag = IRK
+		# tag = KMJ
+		tag = KMK
+		tag = KML
+		# tag = KSN
+		# tag = KTY
+		# tag = KZK
+		tag = MJL
+		# tag = MRS
+		# tag = MRY
+		tag = NBL
+		# tag = NMK
+		# tag = OKK
+		# tag = PCL
+		# tag = QLN
+		# tag = RML
+		# tag = SJY
+		# tag = SKY
+		# tag = SMM
+		# tag = TES
+		# tag = YKR
+		# tag = YOM
+		# tag = YSK
+		# tag = YUK
+		# tag = YYK
+	}
+}
+
+acgr_unit_tag_g02_trigger = {
+	# ACG_MEC_E: 原列表 5 国（EIR/KGY/RES/WNT/WNY）全部归属幻想乡 36 国，
+	# 已改由 tech_gensokyan 兵种组接管，此触发器恒假，其余国家不受影响。
+	always = no
+}
+
+acgr_unit_tag_g03_trigger = {
+	OR = {
+		tag = DCT
+		tag = LSW
+		tag = LTY
+		tag = XTC
+		tag = YSZ
+		tag = YZL
+	}
+}
+
+acgr_unit_tag_g04_trigger = {
+	OR = {
+		tag = AQO
+		tag = HME
+		tag = LLF
+		tag = MUS
+		tag = NJK
+	}
+}
+
+acgr_unit_tag_g05_trigger = {
+	OR = {
+		tag = HTS
+	}
+}
+
+acgr_unit_tag_g06_trigger = {
+	OR = {
+		tag = SL9
+	}
+}
+
+acgr_unit_tag_g07_trigger = {
+	OR = {
+		tag = AOB
+		tag = BTR
+		tag = CHN
+		tag = CIY
+		tag = EBS
+		tag = ESA
+		tag = HCA
+		tag = HDM
+		tag = HDT
+		tag = HIA
+		tag = HRK
+		tag = HSH
+		tag = HYK
+		tag = ICT
+		tag = INH
+		tag = KHU
+		tag = KMR
+		tag = KRE
+		tag = KRF
+		tag = KSR
+		tag = MCR
+		tag = MKK
+		tag = MNK
+		tag = MNT
+		tag = MRN
+		tag = MTK
+		tag = NHY
+		tag = NSY
+		tag = OYN
+		tag = OZH
+		tag = SEK
+		tag = SKI
+		tag = SKN
+		tag = SMK
+		tag = SMR
+		tag = TKY
+		tag = TRZ
+		tag = UJC
+		tag = YGK
+		tag = YUI
+	}
+}
+
+acgr_unit_tag_g08_trigger = {
+	OR = {
+		tag = AKE
+		tag = FLC
+		tag = FTB
+		tag = GRY
+		tag = HRG
+		tag = IRH
+		tag = KYO
+		tag = MDK
+		tag = MIF
+		tag = MMN
+		tag = MTM
+		tag = NNM
+		tag = SAY
+		tag = SLU
+		tag = SM0
+		tag = STM
+		tag = TOM
+		tag = TRN
+	}
+}
+
+acgr_unit_tag_g09_trigger = {
+	OR = {
+		tag = AGA
+		tag = AZN
+		tag = AZS
+		tag = BT1
+		tag = CLE
+		tag = CTL
+		tag = DKM
+		tag = ELN
+		tag = EMM
+		tag = EMT
+		tag = ERG
+		tag = FRR
+		tag = ILY
+		tag = IZF
+		tag = IZI
+		tag = JSC
+		tag = KHT
+		tag = KMG
+		tag = KRU
+		tag = KSY
+		tag = LIS
+		tag = MYK
+		tag = NGS
+		tag = NGY
+		tag = RIK
+		tag = ROX
+		tag = SCM
+		tag = SHR
+		# tag = SKR
+		tag = SLH
+		tag = SNK
+		tag = SYA
+		tag = SYL
+		tag = TGM
+		tag = TMY
+		tag = YKY
+		tag = YMT
+		tag = YRN
+		tag = YSN
+	}
+}
+
+acgr_unit_tag_g10_trigger = {
+	OR = {
+		tag = INX
+		tag = KDE
+		tag = KYM
+		tag = MSK
+		tag = SHI
+		tag = SKM
+	}
+}
+
+acgr_unit_tag_g11_trigger = {
+	OR = {
+		tag = ATD
+		tag = ATR
+		tag = DJD
+		tag = DTR
+		tag = ELE
+		tag = GDR
+		tag = IST
+		tag = JDA
+		tag = MTE
+		tag = OKT
+		tag = RIN
+		tag = RSK
+		tag = TSA
+	}
+}
+
+acgr_unit_tag_g12_trigger = {
+	OR = {
+		tag = NER
+		tag = ROM
+	}
+}
+
+acgr_unit_tag_g13_trigger = {
+	OR = {
+		tag = LHW
+		tag = LYZ
+		tag = QIN
+	}
+}
+
+acgr_unit_tag_g14_trigger = {
+	OR = {
+		tag = ABD
+		tag = AOG
+		tag = CCT
+		tag = DMU
+		tag = NSL
+		tag = PLE
+		tag = SEB
+		tag = STR
+	}
+}
+
+acgr_unit_tag_g15_trigger = {
+	OR = {
+		tag = ATI
+		tag = CII
+		tag = IKR
+		tag = RLU
+		tag = SHW
+		tag = YAY
+		tag = YMI
+	}
+}
+
+acgr_unit_tag_g16_trigger = {
+	OR = {
+		tag = CRM
+		tag = ELZ
+		tag = SIR
+		tag = SRA
+		tag = STN
+		tag = ZEL
+	}
+}
+
+acgr_unit_tag_g17_trigger = {
+	OR = {
+		tag = EDE
+		tag = GTH
+		tag = HDS
+		tag = LAS
+		tag = LBX
+		tag = LW1
+		tag = PLP
+		tag = REI
+	}
+}
+
+acgr_unit_tag_g18_trigger = {
+	OR = {
+		tag = ABY
+		tag = ARU
+		tag = GHN
+		tag = HKY
+		tag = MLN
+		tag = RWF
+		tag = SCL
+		tag = SHJ
+		tag = SRT
+		tag = TRG
+		tag = VKR
+	}
+}
+
+acgr_unit_tag_g19_trigger = {
+	OR = {
+		tag = KTK
+		tag = MMQ
+		tag = SLS
+		tag = SPW
+		tag = STD
+		tag = TKT
+		tag = U01
+		tag = U02
+		tag = U03
+		tag = U04
+		tag = U05
+		tag = U06
+		tag = U07
+		tag = U08
+		tag = U09
+		tag = U10
+		tag = U11
+		tag = U12
+		tag = U13
+		tag = U14
+		tag = U15
+		tag = U16
+		tag = U17
+		tag = U18
+		tag = U19
+		tag = U20
+		tag = U21
+		tag = U22
+	}
+}
+
+acgr_unit_tag_g20_trigger = {
+	OR = {
+		tag = JNB
+		tag = JNC
+		tag = JNR
+	}
+}
+
+acgr_unit_tag_g21_trigger = {
+	OR = {
+		tag = AL1
+		tag = BBT
+		tag = BKT
+		tag = FON
+		tag = RDI
+		tag = REU
+		tag = TLL
+	}
+}
+
+acgr_unit_tag_g22_trigger = {
+	OR = {
+		tag = JJJ
+		tag = KKK
+		tag = YYY
+		tag = ZHH
+	}
+}
+
+acgr_unit_tag_g23_trigger = {
+	OR = {
+		tag = KYR
+		tag = NNH
+		tag = TAS
+		tag = TYA
+	}
+}
+
+acgr_unit_tag_g24_trigger = {
+	OR = {
+		tag = SKU
+		tag = TKS
+	}
+}
+
+acgr_unit_tag_g25_trigger = {
+	OR = {
+		tag = MKM
+		tag = MRM
+		tag = ODN
+		tag = SKJ
+	}
+}
+
+acgr_unit_tag_g26_trigger = {
+	OR = {
+		tag = ACV
+		tag = KQS
+		tag = MIH
+	}
+}
+
+acgr_unit_tag_g27_trigger = {
+	OR = {
+		tag = AMR
+		tag = NKY
+		tag = YKM
+	}
+}
+
+acgr_unit_tag_g28_trigger = {
+	OR = {
+		tag = IYS
+	}
+}
+
+acgr_unit_tag_g29_trigger = {
+	OR = {
+		tag = DXD
+	}
+}
+
+acgr_unit_tag_g30_trigger = {
+	OR = {
+		tag = AKR
+		tag = FNY
+		tag = TKK
+		tag = YKC
+	}
+}
+
+acgr_unit_tag_g31_trigger = {
+	OR = {
+		tag = MYH
+	}
+}
+
+acgr_unit_tag_g32_trigger = {
+	OR = {
+		tag = HUH
+	}
+}
+
+acgr_unit_tag_g33_trigger = {
+	OR = {
+		tag = BDR
+	}
+}
+
+acgr_unit_tag_g34_trigger = {
+	OR = {
+		tag = IMS
+	}
+}
+
+acgr_unit_tag_g35_trigger = {
+	OR = {
+		tag = GIM
+	}
+}
+
+acgr_unit_tag_g36_trigger = {
+	OR = {
+		tag = RRN
+		tag = SUG
+	}
+}
+
+acgr_has_unit_assignment_trigger = {
+	OR = {
+		acgr_unit_tag_g01_trigger = yes
+		acgr_unit_tag_g02_trigger = yes
+		acgr_unit_tag_g03_trigger = yes
+		acgr_unit_tag_g04_trigger = yes
+		acgr_unit_tag_g05_trigger = yes
+		acgr_unit_tag_g06_trigger = yes
+		acgr_unit_tag_g07_trigger = yes
+		acgr_unit_tag_g08_trigger = yes
+		acgr_unit_tag_g09_trigger = yes
+		acgr_unit_tag_g10_trigger = yes
+		acgr_unit_tag_g11_trigger = yes
+		acgr_unit_tag_g12_trigger = yes
+		acgr_unit_tag_g13_trigger = yes
+		acgr_unit_tag_g14_trigger = yes
+		acgr_unit_tag_g15_trigger = yes
+		acgr_unit_tag_g16_trigger = yes
+		acgr_unit_tag_g17_trigger = yes
+		acgr_unit_tag_g18_trigger = yes
+		acgr_unit_tag_g19_trigger = yes
+		acgr_unit_tag_g20_trigger = yes
+		acgr_unit_tag_g21_trigger = yes
+		acgr_unit_tag_g22_trigger = yes
+		acgr_unit_tag_g23_trigger = yes
+		acgr_unit_tag_g24_trigger = yes
+		acgr_unit_tag_g25_trigger = yes
+		acgr_unit_tag_g26_trigger = yes
+		acgr_unit_tag_g27_trigger = yes
+		acgr_unit_tag_g28_trigger = yes
+		acgr_unit_tag_g29_trigger = yes
+		acgr_unit_tag_g30_trigger = yes
+		acgr_unit_tag_g31_trigger = yes
+		acgr_unit_tag_g32_trigger = yes
+		acgr_unit_tag_g33_trigger = yes
+		acgr_unit_tag_g34_trigger = yes
+		acgr_unit_tag_g35_trigger = yes
+		acgr_unit_tag_g36_trigger = yes
+	}
+}
+
+acgr_kirara_has_region_trigger = {
+	OR = {
+		has_country_flag = acgr_kirara_region_k01
+		has_country_flag = acgr_kirara_region_k02
+		has_country_flag = acgr_kirara_region_k03
+		has_country_flag = acgr_kirara_region_k04
+		has_country_flag = acgr_kirara_region_k05
+		has_country_flag = acgr_kirara_region_k06
+		has_country_flag = acgr_kirara_region_k07
+	}
+}
+
+acgr_kirara_k01_units_trigger = {
+	has_country_flag = acgr_kirara_region_k01
+}
+
+acgr_kirara_k02_units_trigger = {
+	has_country_flag = acgr_kirara_region_k02
+}
+
+acgr_kirara_k03_units_trigger = {
+	has_country_flag = acgr_kirara_region_k03
+}
+
+acgr_kirara_k04_units_trigger = {
+	has_country_flag = acgr_kirara_region_k04
+}
+
+acgr_kirara_k05_units_trigger = {
+	has_country_flag = acgr_kirara_region_k05
+}
+
+acgr_kirara_k06_units_trigger = {
+	has_country_flag = acgr_kirara_region_k06
+}
+
+acgr_kirara_k07_units_trigger = {
+	has_country_flag = acgr_kirara_region_k07
+}
+
+acgr_full_starlight_available_trigger = {
+	has_country_flag = kirara_full_starlight_doctrine_unlocked
+}
