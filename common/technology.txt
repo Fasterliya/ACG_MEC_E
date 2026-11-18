@@ -186,7 +186,6 @@ groups = {
 			value = 75
 		}
 	}
-	# BEGIN ACG_MEC_E  touhou tech group (submod addition, keep on every mother-mod update)
 	# Frame index of GFX_tech_group_strip == 0-based position of the group inside groups{}.
 	# Slots: 0-16 = 17 vanilla groups, 17 = test_group_2, 18 = tech_gensokyan, 19 = acg_american.
 	# Frame 18 of gfx/interface/tech_group_strip.dds (21 frames total) holds the touhou icon.
@@ -197,6 +196,7 @@ groups = {
 			value = 1000
 		}
 	}
+	# BEGIN ACG_MEC_E  touhou tech group (submod addition, keep on every mother-mod update)
 	tech_gensokyan = {
 		start_level = 3
 		start_cost_modifier = 0
