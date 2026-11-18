@@ -1,5 +1,5 @@
 government = acgr_republic
-add_government_reform = Touhou_Republic_government_reform
+add_government_reform = Fujiwara_Mokou_government_reform
 primary_culture = NoMokou
 religion = Gensokyo_reg
 government_rank = 1
@@ -21,5 +21,3 @@ capital = 4733
 	add_ruler_personality = kind_hearted_personality
 	add_ruler_personality = inspiring_leader_personality
 }
-
-

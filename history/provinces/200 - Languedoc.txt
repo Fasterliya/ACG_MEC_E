@@ -1,17 +1,17 @@
 # 200 Languedoc - Principal cities: Montpellier
 
-owner = FRA
-controller = FRA
+owner = JDA
+controller = JDA
 capital = "Montpellier"
 is_city = yes
-culture = occitain
+culture = Jeanne
 religion = catholic
 hre = no
 base_tax = 6
 base_production = 5
 trade_goods = cloth
 base_manpower = 5
-add_core = FRA
+add_core = JDA
 add_core = TOU
 discovered_by = eastern
 discovered_by = western

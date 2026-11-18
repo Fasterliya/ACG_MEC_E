@@ -29,7 +29,7 @@ discovered_by = tech_gensokyan
 1640.12.1 = { unrest = 0 }
 1646.1.1 = { fort_16th = no fort_17th = yes }
 1762.1.1 = { fort_17th = no fort_18th = yes }
-1807.11.30 = { controller = FRA } # Occupied by France
+1807.11.30 = { controller = JDA } # Occupied by France
 1808.8.30 = { controller = POR }
-1810.7.25 = { controller = FRA } # Invaded after the battle of C�a
+1810.7.25 = { controller = JDA } # Invaded after the battle of C�a
 1811.1.1 = { controller = POR } # The Napoleonic army retreats from Portugal

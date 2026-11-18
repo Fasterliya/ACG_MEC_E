@@ -1,17 +1,17 @@
 # 4391 Vivarais
 
-owner = FRA
-controller = FRA
+owner = JDA
+controller = JDA
 capital = "Viviers"
 is_city = yes
-culture = occitain
+culture = Jeanne
 religion = catholic
 hre = no
 base_tax = 4
 base_production = 4
-trade_goods = wine
+trade_goods = Mercury_flower
 base_manpower = 2
-add_core = FRA
+add_core = JDA
 add_core = TOU
 discovered_by = eastern
 discovered_by = western

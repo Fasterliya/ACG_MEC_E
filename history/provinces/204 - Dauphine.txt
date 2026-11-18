@@ -20,7 +20,7 @@ discovered_by = tech_gensokyan
 #fort_15th = yes
 hakurei_boundary_level_1 = yes
 1446.9.27 = { revolt = { type = pretender_rebels size = 1 leader = "Louis" } controller = REB } # Dauphin�� is ruled as a separate kingdom by Louis
-1461.7.22 = { revolt = {} controller = FRA } # Louis is proclaimed king of France
+1461.7.22 = { revolt = {} controller = JDA } # Louis is proclaimed king of France
 1560.1.1 = { religion = reformed }
 1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1 = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks

@@ -20,9 +20,9 @@ discovered_by = ottoman
 discovered_by = tech_gensokyan
 
 
-1474.8.1 = { controller = FRA } # Louis XI occupies Anjou because of being excluded of the Anjou inheritance
+1474.8.1 = { controller = JDA } # Louis XI occupies Anjou because of being excluded of the Anjou inheritance
 1476.1.1 = { controller = PRO } # Louis XI is reconciled, and Anjou is restored to Duke Ren��
-1480.1.1 = { owner = FRA controller = FRA add_core = FRA } # Anjou ceded to France after the death of Ren��, Duke of Anjou & Provence
+1480.1.1 = { owner = JDA controller = JDA add_core = JDA } # Anjou ceded to France after the death of Ren��, Duke of Anjou & Provence
 1560.1.1 = { religion = reformed }
 1562.3.1 = { unrest = 3 } # The Huguenots organise themselves along the Loire
 1563.3.19 = { unrest = 1 } # Temporary truce after the assassination of de Guise
@@ -40,7 +40,7 @@ discovered_by = tech_gensokyan
 1651.4.1 = { unrest = 4 } # An unstable peace is concluded
 1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Cond�� sides with Spain, situation heats up again
 1652.2.15 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Cond�� marches north from the Guyenne and routs the royal army at Bl��neau
-1652.10.21 = { revolt = {} controller = FRA unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good.
+1652.10.21 = { revolt = {} controller = JDA unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good.
 1656.1.1 = { unrest = 3 } # Region is restless
 1658.1.1 = { unrest = 0 }
 1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV

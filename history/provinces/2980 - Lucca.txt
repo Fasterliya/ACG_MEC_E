@@ -23,13 +23,13 @@ center_of_trade = 1
 
 1495.1.1 = { hre = no }
 1805.6.10 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 }# Annexed by France
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
 	owner = LUC
 	controller = LUC
-	remove_core = FRA
+	remove_core = JDA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

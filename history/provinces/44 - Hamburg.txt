@@ -35,12 +35,12 @@ center_of_trade = 2
 1648.1.1 = { fort_16th = no fort_17th = yes }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1810.12.13 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 }# Annexed by France
 1814.4.11 = {
 	owner = HAM
 	controller = HAM
-	remove_core = FRA
+	remove_core = JDA
 }# Napoleon abdicates unconditionally

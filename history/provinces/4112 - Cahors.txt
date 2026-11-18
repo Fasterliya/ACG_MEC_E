@@ -1,17 +1,17 @@
 # 4112 - Cahors
 
-owner = FRA
-controller = FRA
+owner = JDA
+controller = JDA
 capital = "Cahors"
 is_city = yes
-culture = gascon
+culture = Jeanne
 religion = catholic
 hre = no
 base_tax = 3
 base_production = 3
 trade_goods = wine
 base_manpower = 3
-add_core = FRA
+add_core = JDA
 add_core = GUY
 discovered_by = eastern
 discovered_by = western
@@ -42,5 +42,5 @@ discovered_by = tech_gensokyan
 1689.1.1 = { unrest = 0 } # War of the Grand Alliance erupts: Louis XIV can't persue his religious policy anymore
 1701.1.1 = { unrest = 7 } # War of Spanish Succession erupts: The Camisards see an opportunity to revolt against Louis XIV
 1702.1.1 = { unrest = 0 revolt = { type = heretic_rebels size = 2 } controller = REB } # Camisard rebels in control
-1705.1.1 = { revolt = {} controller = FRA unrest = 3 } # Camisard rebellion ends, isolated aggression continues until 1710
+1705.1.1 = { revolt = {} controller = JDA unrest = 3 } # Camisard rebellion ends, isolated aggression continues until 1710
 1710.1.1 = { unrest = 0 }

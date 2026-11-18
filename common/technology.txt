@@ -210,6 +210,188 @@ groups = {
 			value = 75
 		}
 	}
+	# BEGIN ACGR_UNIT_GROUPS REGISTERED UNIT FAMILIES
+	acgr_g01 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g02 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g03 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g04 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g05 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g06 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g07 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g08 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g09 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g10 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g11 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g12 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g13 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g14 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g15 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g16 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g17 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g18 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g19 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g20 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g21 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g22 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g23 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g24 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g25 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g26 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g27 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g28 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g29 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g30 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g31 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g32 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g33 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g34 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g35 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g36 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	# BEGIN ACG_MEC_E  touhou tech group (submod addition, keep on every mother-mod update)
 	tech_gensokyan = {
 		start_level = 3
 		start_cost_modifier = 0
@@ -227,6 +409,8 @@ groups = {
 			value = 75
 		}
 	}
+	# END ACG_MEC_E
+	# END ACGR_UNIT_GROUPS
 }
 
 tables = {

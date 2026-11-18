@@ -29,24 +29,24 @@ discovered_by = tech_gensokyan
 1650.1.1 = { unrest = 0 }
 1750.1.1 = { add_core = GRE }
 1797.10.17 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 	remove_core = VEN
 } # The Treaty of Campo Formio, Corfu is ceded to France
 1799.3.1 = {
 	owner = CEP
 	controller = CEP
-	remove_core = FRA
+	remove_core = JDA
 } # The Septinsular Republic
 
-1807.7.7 = {	owner = FRA
-	controller = FRA
-	add_core = FRA
+1807.7.7 = {	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # Back under French control after the Treaty of Tilsit
 1815.11.5 = {
 	owner = GBR
 	controller = GBR
 	add_core = GBR
-	remove_core = FRA
+	remove_core = JDA
 } # The Second Treaty of Paris

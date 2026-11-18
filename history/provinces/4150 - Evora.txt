@@ -28,5 +28,5 @@ discovered_by = tech_gensokyan
 1735.1.1 = { fort_17th = no fort_18th = yes } 
 1801.5.26 = { controller = SPA } # Invaded by Spanish troops
 1801.6.6 = { controller = POR } # Treaty of Badajoz
-1810.9.15 = { controller = FRA } # Occupied by French troops
+1810.9.15 = { controller = JDA } # Occupied by French troops
 1811.4.5 = { controller = POR }

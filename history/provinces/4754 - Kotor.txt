@@ -37,9 +37,9 @@ discovered_by = tech_gensokyan
 	remove_core = HAB
 }
 1810.1.1 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 	remove_core = ITA
 }
 1814.1.5 = {
@@ -49,5 +49,5 @@ discovered_by = tech_gensokyan
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = FRA
+	remove_core = JDA
 }

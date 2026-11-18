@@ -30,7 +30,7 @@ discovered_by = tech_gensokyan
 	add_core = HAN
 	remove_core = SWE
 } # The Treaty of Stockholm
-1803.7.5 = { controller = FRA } # French control
+1803.7.5 = { controller = JDA } # French control
 1805.12.15 = {
 	owner = PRU
 	controller = PRU
@@ -45,14 +45,14 @@ discovered_by = tech_gensokyan
 	remove_core = PRU
 } # The Second Treaty of Tilsit, the kingdom of Westfalia
 1810.12.13 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 	remove_core = WES
 } # Annexed by France
 1814.4.11 = {
 	owner = HAN
 	controller = HAN
 	add_core = HAN
-	remove_core = FRA
+	remove_core = JDA
 }# Napoleon abdicated unconditionally

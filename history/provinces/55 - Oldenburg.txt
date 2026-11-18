@@ -35,11 +35,11 @@ discovered_by = tech_gensokyan
 	remove_core = DAN
 } # Oldenburg is sold to the house of Holstein-Gottorp
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1810.1.1 = {	owner = FRA
-	controller = FRA
-	add_core = FRA
+1810.1.1 = {	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # Controlled by France
 1813.1.1 = {	owner = SHL
 	controller = SHL
-	remove_core = FRA
+	remove_core = JDA
 } # Control is returned

@@ -22,6 +22,7 @@ acgr_republic = {
 				JNB_government_reform
 				JNB_protectorate_parliament_reform
 				JNB_grea_republic
+				Fujiwara_Mokou_government_reform
 			}
 		}
 		racial_policy = {
@@ -47,6 +48,7 @@ acgr_republic = {
 				Shinda_Sekai_Sensen_reform
 				ELN_government_reform_1
 				JNB_professional_navy_reform
+				NMK_solitary_dweller
 			}
 		}
 		Missionary_or_tolerate = {
@@ -121,6 +123,7 @@ acgr_republic = {
 				fortress_acg_reform
 				Navy_reform
 				The_distribution_according_to_work_reform
+				NMK_Eternal_Flame
 			}
 		}
 		Social_planning = {
@@ -142,6 +145,7 @@ acgr_republic = {
 				magic_formulation_reform
 				order_prevails_reform
 				adjust_ship_lane_reform
+				NMK_Beyond_life_and_death
 			}
 		}
 	}

@@ -38,5 +38,5 @@ discovered_by = tech_gensokyan
 1794.3.24 = { unrest = 6 } # Kosciuszko uprising
 1794.11.16 = { unrest = 0 }
 1795.10.24 = { owner = RUS controller = RUS add_core = RUS } # Annexed by Russia, third partition
-1812.6.28 = { controller = FRA } # Occupied by French troops
+1812.6.28 = { controller = JDA } # Occupied by French troops
 1812.12.10 = { controller = RUS }

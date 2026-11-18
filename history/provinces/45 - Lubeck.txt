@@ -33,12 +33,12 @@ base_production = 8 } # Stockholm commanded the Baltic Sea trade
 1715.1.1 = { fort_17th = no fort_18th = yes } 
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1810.12.13 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # Annexed by France
 1814.4.11 = {
 	owner = HSA
 	controller = HSA
-	remove_core = FRA
+	remove_core = JDA
 } # Napoleon abdicates undconditionally

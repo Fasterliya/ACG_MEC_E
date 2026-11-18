@@ -32,5 +32,5 @@ discovered_by = tech_gensokyan
 1671.1.1 = { unrest = 0 } # Razin is captured
 1711.1.1 = { base_tax = 14 base_production = 14  } # Governmental reforms and the absolutism
 1767.1.1 = { base_tax = 15 base_production = 15 } # Legislative reform
-1812.9.15 = { controller = FRA } # Napoleon enters Moscow
+1812.9.15 = { controller = JDA } # Napoleon enters Moscow
 1812.10.19 = { controller = RUS } # Napoleon begins to retreat

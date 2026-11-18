@@ -25,12 +25,12 @@ discovered_by = tech_gensokyan
 	controller = MAI
 }
 1644.1.1 = {
-	controller = FRA
+	controller = JDA
 }
 1648.10.24 = {
 	controller = MAI
 }
-1792.10.1 = { controller = FRA } # Occupied by French troops
+1792.10.1 = { controller = JDA } # Occupied by French troops
 1792.12.3 = { controller = MAI } # Prussian troops take control
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1810.1.1 = {

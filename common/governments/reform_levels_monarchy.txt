@@ -175,6 +175,7 @@ acg_monarchy = {
 				keep_balance_reform
 				tolerance_acg_reform
 				contact_with_miku_reform
+				contact_with_miku_reform_mikuver
 				great_priest_reform
 				expand_oracle_reform
 				reinforce_church_school_reform

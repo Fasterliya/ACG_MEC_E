@@ -1,17 +1,17 @@
 # 196 Toulouse - Principal cities: Toulouse
 
-owner = FRA
-controller = FRA
+owner = JDA
+controller = JDA
 capital = "Toulouse"
 is_city = yes
-culture = occitain
+culture = Jeanne
 religion = catholic
 hre = no
 base_tax = 5
 base_production = 5
 trade_goods = wine
 base_manpower = 5
-add_core = FRA
+add_core = JDA
 add_core = TOU
 add_core = GUY
 discovered_by = eastern

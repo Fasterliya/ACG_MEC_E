@@ -30,14 +30,14 @@ discovered_by = tech_gensokyan
 	controller = PRU
 	add_core = PRU
 } # Ansbach is sold to Prussia
-1805.12.15 = {	owner = FRA
-	controller = FRA
-	add_core = FRA
+1805.12.15 = {	owner = JDA
+	controller = JDA
+	add_core = JDA
 	remove_core = PRU
 } # Treaty of Sch�nbrunn
 1806.1.1 = {	owner = BAV
 	controller = BAV
 	add_core = BAV
-	remove_core = FRA
+	remove_core = JDA
 } # Ceded to Bavaria
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

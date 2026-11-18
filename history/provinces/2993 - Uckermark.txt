@@ -31,5 +31,5 @@ discovered_by = tech_gensokyan
 	remove_core = BRA
 } # Friedrich III becomes king of Prussia
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1806.10.27 = { controller = FRA }
+1806.10.27 = { controller = JDA }
 1807.7.9 = { controller = PRU } # The Second treaty of Tilsit

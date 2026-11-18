@@ -58,7 +58,7 @@ center_of_trade = 2
 1793.9.25 = { owner = PRU controller = PRU } # Occupied and later on annexed by Prussia
 1794.3.24 = { unrest = 5 } # Kosciuszko uprising
 1794.11.16 = { unrest = 0 } # The end of the uprising
-1807.5.24 = { controller = FRA } # Occupied by French troops
+1807.5.24 = { controller = JDA } # Occupied by French troops
 1807.7.9 = {
 	owner = DNZ
 	controller = DNZ

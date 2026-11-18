@@ -17,6 +17,7 @@ add_core = CHC
 
 discovered_by = chinese
 discovered_by = nomad_group
+discovered_by = tech_gensokyan
 
 1643.5.1 = {
 	owner = CXI

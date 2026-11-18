@@ -37,7 +37,7 @@ fort_15th = yes
 1725.1.1 = { base_manpower = 4 }
 1750.1.1 = {  base_manpower = 5 base_tax = 10 base_production = 10 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1806.11.1 = { controller = FRA } # Occupied by French troops
+1806.11.1 = { controller = JDA } # Occupied by French troops
 1807.7.9 = {
 	owner = WES
 	controller = WES

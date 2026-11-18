@@ -35,15 +35,15 @@ discovered_by = tech_gensokyan
 1648.1.1 = { fort_16th = no fort_17th = yes }
 1648.8.1 = { unrest = 10 } # Cardinal Mazarin arrests the leaders of the Parliament, Paris rises up and barricades the streets
 1648.10.21 = { unrest = 0 revolt = { type = revolutionary_rebels size = 0 } controller = REB } # The First Fronde hits Paris, officials flee from the city
-1649.3.1 = { revolt = {} controller = FRA } # Mar  chal Cond   besieges and takes back the city, little to no bloodshed - Peace of Rueil signed, peace returns, although Paris remains anti-cardinalist
+1649.3.1 = { revolt = {} controller = JDA } # Mar  chal Cond   besieges and takes back the city, little to no bloodshed - Peace of Rueil signed, peace returns, although Paris remains anti-cardinalist
 1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Cond  , Conti & Longueville, the beginning of the Second Fronde.
-1651.4.1 = { controller = FRA unrest = 4 } # An unstable peace is concluded
+1651.4.1 = { controller = JDA unrest = 4 } # An unstable peace is concluded
 1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Cond   sides with Spain, situation heats up again
 1652.7.2 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB unrest = 3 } # The gates of Paris opened for Cond  's troops
-1652.10.21 = { revolt = {} controller = FRA unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1652.10.21 = { revolt = {} controller = JDA unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
 1715.1.1 = { fort_17th = no fort_18th = yes }
 #1789.7.14 = { revolt = { type = revolutionary_rebels size = 3 } controller = REB } # The storming of the Bastille
 1791.6.20 = {
 	revolt = {}
-	controller = FRA
+	controller = JDA
 } # The establishment of the First Republic

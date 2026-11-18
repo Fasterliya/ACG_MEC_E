@@ -19,13 +19,13 @@ discovered_by = ottoman
 discovered_by = tech_gensokyan
 
 1448.3.15 = {
-	owner = FRA
-	controller = FRA
+	owner = JDA
+	controller = JDA
 	add_local_autonomy = -80
 }
-1474.8.1 = { controller = FRA } # Louis XI occupies Anjou because of being excluded of the Anjou inheritance
+1474.8.1 = { controller = JDA } # Louis XI occupies Anjou because of being excluded of the Anjou inheritance
 1476.1.1 = { controller = PRO } # Louis XI is reconciled, and Anjou is restored to Duke Ren��
-1480.1.1 = { owner = FRA controller = FRA add_core = FRA } # Anjou ceded to France after the death of Ren��, Duke of Anjou & Provence
+1480.1.1 = { owner = JDA controller = JDA add_core = JDA } # Anjou ceded to France after the death of Ren��, Duke of Anjou & Provence
 1560.1.1 = { religion = reformed }
 1562.3.1 = { unrest = 3 } # Huguenots organise themselves along the Loire
 1563.3.19 = { unrest = 0 } # Temporary truce after the assassination of de Guise

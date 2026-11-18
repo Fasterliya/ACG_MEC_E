@@ -31,5 +31,5 @@ discovered_by = tech_gensokyan
 1667.1.1 = { remove_core = LIT remove_core = PLC } # Treaty of Andrusovo
 1711.1.1 = { base_tax = 5 
 base_production = 5 } # Governmental reforms and the absolutism
-1812.8.17 = { controller = FRA } # Battle of Smolensk
+1812.8.17 = { controller = JDA } # Battle of Smolensk
 1812.11.9 = { controller = RUS }

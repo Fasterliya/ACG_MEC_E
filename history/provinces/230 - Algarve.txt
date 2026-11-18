@@ -24,5 +24,5 @@ discovered_by = tech_gensokyan
 
 1640.1.1 = { unrest = 8 } # Revolt headed by John of Bragan�a
 1640.12.1 = { unrest = 0 }
-1807.11.30 = { controller = FRA } # Occupied by troops led by Manuel Godoy
+1807.11.30 = { controller = JDA } # Occupied by troops led by Manuel Godoy
 1808.6.18 = { controller = POR } # Revolt in Olh�o

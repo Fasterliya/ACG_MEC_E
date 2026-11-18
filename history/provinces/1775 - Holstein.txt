@@ -31,12 +31,12 @@ base_production = 5 }
 1773.1.1 = { owner = DAN controller = DAN }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1810.12.13 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # Annexed by France
 1814.4.11 = {
 	owner = DAN
 	controller = DAN
-	remove_core = FRA
+	remove_core = JDA
 } # Napoleon abdicates unconditionally

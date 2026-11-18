@@ -19,15 +19,15 @@ discovered_by = ottoman
 discovered_by = tech_gensokyan
 
 1495.1.1 = { hre = no }
-1499.8.10 = { controller = FRA } # Louis XII of France invades...
-1504.1.31 = { owner = FRA add_core = FRA } # ...and seizes Milan, Treaty of Lyon
+1499.8.10 = { controller = JDA } # Louis XII of France invades...
+1504.1.31 = { owner = JDA add_core = JDA } # ...and seizes Milan, Treaty of Lyon
 1512.1.1 = { controller = MLO owner = MLO } # Massimiliano Sforza restored by the Swiss
-1515.1.1 = { controller = FRA } # Francis I of France invades...
-1516.8.1 = { owner = FRA } # ...and seizes Milan, Treaty of Noyon
+1515.1.1 = { controller = JDA } # Francis I of France invades...
+1516.8.1 = { owner = JDA } # ...and seizes Milan, Treaty of Noyon
 1521.4.22 = { controller = SPA } # The Spanish invades...
 1522.5.1 = { controller = MLO owner = MLO } # ...and restores the Sforzas
 1526.5.22 = { controller = HAB } # Milan joined the League of Cognac, and is invaded by the Emperor
-1529.8.3 = { controller = MLO remove_core = FRA } # Treaty of Cambrai restores the Sforzas
+1529.8.3 = { controller = MLO remove_core = JDA } # Treaty of Cambrai restores the Sforzas
 1535.1.1 = {
 	owner = SPA
 	controller = SPA

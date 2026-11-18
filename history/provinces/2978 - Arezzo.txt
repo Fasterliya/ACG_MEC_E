@@ -29,9 +29,9 @@ discovered_by = tech_gensokyan
 }
 1750.1.1 = { add_core = ITA } 
 1801.2.9 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # The Treaty of Lun�ville
 1801.3.21 = {
 	owner = ETR
@@ -40,12 +40,12 @@ discovered_by = tech_gensokyan
 } # The Kingdom of Etruria
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1807.12.10 = {
-	owner = FRA
-	controller = FRA
+	owner = JDA
+	controller = JDA
 	remove_core = ETR
 } # Etruria is annexed to France
 1814.4.11 = {
 	owner = TUS
 	controller = TUS
-	remove_core = FRA
+	remove_core = JDA
 } # Napoleon abdicates and Tuscany is restored
