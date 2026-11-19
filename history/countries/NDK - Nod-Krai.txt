@@ -9,8 +9,8 @@ capital = 313
 
 1444.11.11 = {
 	monarch = {
-		name = "Kirill"
-		dynasty = "NodKrai"
+		name = "基里尔"
+		dynasty = "挪德卡莱"
 		birth_date = 1422.1.1
 		death_date = 1821.12.31
 		adm = 3

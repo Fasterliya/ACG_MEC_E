@@ -9,8 +9,8 @@ capital = 168
 
 1444.11.11 = {
 	monarch = {
-		name = "Furina"
-		dynasty = "Fontaine"
+		name = "芙宁娜"
+		dynasty = "枫丹"
 		birth_date = 1425.1.1
 		death_date = 1821.12.31
 		adm = 4
