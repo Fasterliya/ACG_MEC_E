@@ -34,10 +34,10 @@ discovered_by = tech_gensokyan
 	add_core = SPI
 	remove_core = SIC
 } # Kingdom of Piedmont-Sardinia
-1797.10.17 = { owner = FRA controller = FRA add_core = FRA } # Treaty of Campo Formio
+1797.10.17 = { owner = JDA controller = JDA add_core = JDA } # Treaty of Campo Formio
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
 	owner = SPI
 	controller = SPI
-	remove_core = FRA
+	remove_core = JDA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

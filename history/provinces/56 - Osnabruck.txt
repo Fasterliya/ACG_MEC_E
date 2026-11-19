@@ -32,7 +32,7 @@ discovered_by = tech_gensokyan
 	add_core = HAN
 	remove_core = KOL 
 } # Taken into possession of Hannover
-1803.7.5 = { controller = FRA } # Occupied by French forces
+1803.7.5 = { controller = JDA } # Occupied by French forces
 1805.12.15 = {
 	owner = PRU
 	controller = PRU

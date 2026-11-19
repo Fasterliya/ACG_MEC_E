@@ -19,11 +19,11 @@ discovered_by = ottoman
 discovered_by = tech_gensokyan
 
 1495.1.1 = { hre = no }
-1499.1.1 = { owner = FRA controller = FRA add_core = FRA }
+1499.1.1 = { owner = JDA controller = JDA add_core = JDA }
 1529.1.1 = { owner = SAV controller = SAV } 
-1536.4.1 = { controller = FRA } 
-1538.6.17 = { owner = FRA } # Treaty of Nice
-1559.1.1 = { owner = SAV controller = SAV remove_core = FRA }
+1536.4.1 = { controller = JDA } 
+1538.6.17 = { owner = JDA } # Treaty of Nice
+1559.1.1 = { owner = SAV controller = SAV remove_core = JDA }
 1563.1.1 = { fort_15th = yes } # Savoyard capital moved from Chambery to Torino, Holy Shroud moved
 1583.1.1 = { fort_15th = no fort_16th = yes }
 1648.1.1 = { fort_16th = no fort_17th = yes }
@@ -40,13 +40,13 @@ discovered_by = tech_gensokyan
 	add_core = SPI
 	remove_core = SIC
 } # Kingdom of Piedmont-Sardinia
-1792.9.1 = { controller = FRA } # Occupied by French troops
-1792.11.27 = {	owner = FRA
-	add_core = FRA
+1792.9.1 = { controller = JDA } # Occupied by French troops
+1792.11.27 = {	owner = JDA
+	add_core = JDA
 } # Savoie is annexed
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
 	owner = SPI
 	controller = SPI
-	remove_core = FRA
+	remove_core = JDA
 } # Napoleon abdicates and Victor Emmanuel is able to return to Turin

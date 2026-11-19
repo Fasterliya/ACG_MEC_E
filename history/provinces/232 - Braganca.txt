@@ -25,7 +25,7 @@ discovered_by = tech_gensokyan
 1580.8.26 = { controller = POR }
 1640.1.1 = { unrest = 8 } # Portugal revolt headed by John of Bragan�a
 1640.12.1 = { unrest = 0 } # Portugal regained its independence & colonial possessions
-1809.3.29 = { controller = FRA } # Occupied by France
+1809.3.29 = { controller = JDA } # Occupied by France
 1809.5.12 = { controller = POR }
-1810.9.26 = { controller = FRA } # Wellington retreats into Lines of Torres Vedras fortification and Mass�na can't enter Lisboa due to the scorched earth policy
+1810.9.26 = { controller = JDA } # Wellington retreats into Lines of Torres Vedras fortification and Mass�na can't enter Lisboa due to the scorched earth policy
 1811.1.1 = { controller = POR } # The Napoleonic army retreats from Portugal

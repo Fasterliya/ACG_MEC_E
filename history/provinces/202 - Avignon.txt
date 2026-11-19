@@ -23,10 +23,10 @@ discovered_by = ottoman
 discovered_by = tech_gensokyan
 
 
-1670.1.1 = { add_core = FRA } # Louis XIV wants to annex the city-state (Chambres de R�union)
+1670.1.1 = { add_core = JDA } # Louis XIV wants to annex the city-state (Chambres de R�union)
 1791.9.14 = {
-	owner = FRA
-	controller = FRA
+	owner = JDA
+	controller = JDA
 	remove_core = PAP
 } # Avignon is incorporated into France
 

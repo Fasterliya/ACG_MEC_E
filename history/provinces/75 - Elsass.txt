@@ -36,8 +36,8 @@ center_of_trade = 1
 1526.1.1 = { unrest = 0 } # Peace restored everywhere
 1583.1.1 = { fort_15th = no fort_16th = yes }
 1648.1.1 = { fort_16th = no fort_17th = yes }
-1670.1.1 = { add_core = FRA } # Louis XIV lays claims through the Chambres de R�union
-1681.1.1 = { owner = FRA controller = FRA } # Louis XIV annexes Strasbourg 
+1670.1.1 = { add_core = JDA } # Louis XIV lays claims through the Chambres de R�union
+1681.1.1 = { owner = JDA controller = JDA } # Louis XIV annexes Strasbourg 
 1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV
 1686.1.17 = { religion = catholic unrest = 0 } # Dragonnard campaign succesful: region reverts back to Catholicism
 1715.1.1 = { fort_17th = no fort_18th = yes }

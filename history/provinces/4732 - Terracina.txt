@@ -20,10 +20,10 @@ discovered_by = tech_gensokyan
 
 
 1750.1.1 = { add_core = ITA } 
-1809.4.10 = { controller = FRA } # Occupied by French troops
-1809.10.14 = { owner = FRA add_core = FRA } # Treaty of Sch�nbrunn
+1809.4.10 = { controller = JDA } # Occupied by French troops
+1809.10.14 = { owner = JDA add_core = JDA } # Treaty of Sch�nbrunn
 1814.4.11 = {
 	owner = PAP
 	controller = PAP
-	remove_core = FRA
+	remove_core = JDA
 } # # Treaty of Fontainebleau, Napoleon abdicates unconditionally

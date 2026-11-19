@@ -29,13 +29,13 @@ hre = yes
 	add_core = BAV
 	remove_core = PAL
 } # The Palatian Wittelsbachs inherit Bavaria and govern their lands from Munich.
-1795.1.1 = { controller = FRA } # Occupied by French troops
-1796.9.7 = { owner = FRA add_core = FRA remove_core = BAV }
+1795.1.1 = { controller = JDA } # Occupied by French troops
+1796.9.7 = { owner = JDA add_core = JDA remove_core = BAV }
 1806.7.12 = {
 	owner = BRG
 	controller = BRG
 	add_core = BRG
-	remove_core = FRA
+	remove_core = JDA
 	hre = no
 } # The Holy Roman Empire is dissolved. Grand Duchy of Berg
 1813.10.19 = {

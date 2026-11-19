@@ -34,5 +34,5 @@ discovered_by = tech_gensokyan
 	controller = RUS
 	add_core = RUS
 } # Most of Lithuania are incorporated into the Russian empire
-1812.6.28 = { controller = FRA } # Occupied by French troops
+1812.6.28 = { controller = JDA } # Occupied by French troops
 1812.12.10 = { controller = RUS }

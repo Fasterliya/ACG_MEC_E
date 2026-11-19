@@ -38,5 +38,5 @@ discovered_by = tech_gensokyan
 1725.1.1 = { base_tax = 10 base_production = 10 }
 1750.1.1 = { base_manpower = 12 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1806.10.27 = { controller = FRA }
+1806.10.27 = { controller = JDA }
 1807.7.9 = { controller = PRU } # The Second treaty of Tilsit

@@ -1,17 +1,17 @@
 # Narbonne - Principal cities: Narbonne
 
-owner = FRA
-controller = FRA
+owner = JDA
+controller = JDA
 capital = "Narbonne"
 is_city = yes
-culture = occitain
+culture = Jeanne
 religion = catholic
 hre = no
 base_tax = 5
 base_production = 5
 trade_goods = wine
 base_manpower = 3
-add_core = FRA
+add_core = JDA
 add_core = TOU
 fort_15th = yes
 

@@ -1,7 +1,7 @@
-owner = HTS
-controller = HTS
-add_core = HTS
-culture = imagination_magic_culture
+owner = FRR
+controller = FRR
+add_core = FRR
+culture = channeling_magic_culture
 religion = acg
 capital = "Reutlingen"
 is_city = yes
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5 
 base_production = 5
 base_manpower = 5
-trade_goods = Garage_Kit
+trade_goods = paper
 
 discovered_by = eastern
 discovered_by = western

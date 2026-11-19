@@ -21,8 +21,8 @@ discovered_by = tech_gensokyan
 
 1495.1.1 = { hre = no }
 1531.1.1 = { controller = SPA owner = SPA add_core = SPA }
-1552.1.1 = { controller = FRA owner = FRA add_core = FRA }
-1555.1.1 = { controller = SPA owner = SPA remove_core = FRA }
+1552.1.1 = { controller = JDA owner = JDA add_core = JDA }
+1555.1.1 = { controller = SPA owner = SPA remove_core = JDA }
 1557.1.1 = {
 	controller = LAN
 	owner = LAN
@@ -38,9 +38,9 @@ discovered_by = tech_gensokyan
 1583.1.1 = { fort_16th = yes } #Medicean Walls
 1750.1.1 = { add_core = ITA } 
 1801.2.9 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # The Treaty of Lun�ville
 1801.3.21 = {
 	owner = ETR
@@ -48,12 +48,12 @@ discovered_by = tech_gensokyan
 	add_core = ETR
 } # The Kingdom of Etruria
 1807.12.10 = {
-	owner = FRA
-	controller = FRA
+	owner = JDA
+	controller = JDA
 	remove_core = ETR
 } # Etruria is annexed to France
 1814.4.11 = {
 	owner = TUS
 	controller = TUS
-	remove_core = FRA
+	remove_core = JDA
 } # Treaty of Fontainebleu, Napoleon abdicates and Tuscany is restored

@@ -1,17 +1,17 @@
 # 194 P�rigord - Principal cities: Bergerac
 
-owner = FRA
-controller = FRA
+owner = JDA
+controller = JDA
 capital = "Bergerac"
 is_city = yes
-culture = gascon
+culture = Jeanne
 religion = catholic
 hre = no
 base_tax = 3
 base_production = 3
 trade_goods = wine
 base_manpower = 3
-add_core = FRA
+add_core = JDA
 add_core = GUY
 discovered_by = eastern
 discovered_by = western
@@ -38,7 +38,7 @@ base_production = 4 } # At the walls of Paris - French War of Religion
 1651.4.1 = { unrest = 4 } # An unstable peace is concluded
 1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Cond� sides with Spain, situation heats up again
 1652.2.15 = { unrest = 0 revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Fronde rebels make a foothold in the Guyenne area, under Cond�
-1652.10.21 = { revolt = {} controller = FRA } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1652.10.21 = { revolt = {} controller = JDA } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
 1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV
 1686.1.17 = { religion = catholic } # Dragonnard campaign succesful: region reverts back to catholicism
 1689.1.1 = { unrest = 0 } # War of the Grand Alliance erupts: Louis XIV can't persue his religious policy anymore

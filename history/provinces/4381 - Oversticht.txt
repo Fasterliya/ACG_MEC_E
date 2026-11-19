@@ -1,6 +1,6 @@
 # 4381 - Oversticht
 
-culture = ShiraiKuroko
+culture = supperability_magic_culture
 religion = acg
 add_core = SHI
 owner = SHI
@@ -38,17 +38,17 @@ discovered_by = tech_gensokyan
 1583.9.1 = { controller = SPA unrest = 15 } # Alessandro Farnese captures Zutphen and the surrounding lands
 1592.7.4 = { controller = NED unrest = 0 } # The Republic takes back Zutphen and surrounding areas
 1648.10.24 = { hre = no } # The Peace of Westphalia
-1672.5.20 = { controller = FRA } # France blitzes through the Lowlands in the Franco-Dutch War
+1672.5.20 = { controller = JDA } # France blitzes through the Lowlands in the Franco-Dutch War
 1678.8.10 = { controller = NED } # Peace of Nijmegen (Netherlands-France)
 1681.1.1 = { base_tax = 9 
 base_production = 9 } # Protestants expelled from France
 1810.7.10 = {	
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # Annexed by France
 1813.11.30 = {	
 	owner = NED
 	controller = NED
-	remove_core = FRA
+	remove_core = JDA
 } # William returns to the Netherlands

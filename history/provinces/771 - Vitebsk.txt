@@ -27,5 +27,5 @@ discovered_by = tech_gensokyan
 1618.12.11 = { owner = PLC } # Truce of Deulino
 1654.9.23 = { owner = RUS controller = RUS } # Reqonquered
 1667.1.1 = { remove_core = LIT remove_core = PLC } # Treaty of Andrusovo
-1812.8.17 = { controller = FRA } # Battle of Smolensk
+1812.8.17 = { controller = JDA } # Battle of Smolensk
 1812.11.9 = { controller = RUS }

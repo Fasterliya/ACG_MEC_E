@@ -22,7 +22,7 @@ extra_cost = 16
 center_of_trade = 2
 
 1446.9.27 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Dauphin�� is ruled as a separate kingdom by Louis
-1461.7.22 = { revolt = {} controller = FRA } # Louis is proclaimed king of France
+1461.7.22 = { revolt = {} controller = JDA } # Louis is proclaimed king of France
 1467.6.15 = { add_core = BUR } # Charles the Bold ascends to the throne and lays claims
 1477.1.5 = { remove_core = BUR } # Charles the Bold dies
 1573.9.1 = { unrest = 5 } # Saint Barthelew's Day Massacre: the consequences in the land
@@ -40,7 +40,7 @@ center_of_trade = 2
 1648.1.1 = { fort_16th = no fort_17th = yes }
 1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Cond��, Conti & Longueville, the beginning of the Second Fronde
 1650.3.1 = { unrest = 0 revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Fronde rebels take control
-1651.4.1 = { revolt = {} controller = FRA } # An unstable peace is concluded
+1651.4.1 = { revolt = {} controller = JDA } # An unstable peace is concluded
 1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Cond�� sides with Spain, situation heats up again
 1652.10.21 = { unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
 1715.1.1 = {

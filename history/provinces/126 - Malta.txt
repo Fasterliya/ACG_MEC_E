@@ -36,7 +36,7 @@ discovered_by = tech_gensokyan
 1566.3.28 = { capital = "Valletta" }
 1775.1.1 = { unrest = 4 } # Revolt headed by priest Gaetano Mannarino failed.
 1776.1.1 = { unrest = 0 }
-1798.6.9 = { controller = FRA } # Occupied by French troops
+1798.6.9 = { controller = JDA } # Occupied by French troops
 1800.1.1 = { controller = KNI } # British protectorate
 1814.5.30 = {
 	owner = GBR

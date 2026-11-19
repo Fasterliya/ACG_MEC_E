@@ -33,12 +33,12 @@ discovered_by = tech_gensokyan
 
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1809.10.14 = {
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+	owner = JDA
+	controller = JDA
+	add_core = JDA
 } # Treaty of Schoenbrunn, Trieste becomes part of the Illyrian province
 1813.1.1 = {
 	owner = HAB
 	controller = HAB
-	remove_core = FRA
+	remove_core = JDA
 } # Austria regains Trieste

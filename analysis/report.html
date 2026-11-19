@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="dsh-htmlui" content="placement=fullscreen">
+<title>ACG_MEC_E 母mod 适配调查报告</title>
+<style>
+  :root{
+    --bg:#0d1117; --bg2:#141b24; --bg3:#1b2431;
+    --gold:#c8a44a; --gold2:#e8c877;
+    --txt:#d7dde5; --dim:#8794a5;
+    --red:#d95c5c; --green:#4caf7d; --amber:#e0a63c; --blue:#5b9bd5;
+    --line:#2a3543;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:
+      radial-gradient(1200px 600px at 20% -10%, #1b2a3d 0%, transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, #2a2118 0%, transparent 55%),
+      var(--bg);
+    color:var(--txt);
+    font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;
+    font-size:14px; line-height:1.65; padding:0 0 60px;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  header{
+    padding:34px 0 22px; border-bottom:1px solid var(--line); margin-bottom:26px;
+    background:linear-gradient(180deg,rgba(200,164,74,.07),transparent);
+  }
+  h1{margin:0 0 6px; font-size:25px; letter-spacing:.5px; color:var(--gold2); font-weight:700}
+  .sub{color:var(--dim); font-size:13px}
+  .sub b{color:var(--txt); font-weight:600}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:26px 0 8px}
+  .kpi{
+    background:linear-gradient(160deg,var(--bg2),var(--bg3));
+    border:1px solid var(--line); border-radius:10px; padding:14px 16px;
+    position:relative; overflow:hidden;
+  }
+  .kpi:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold)}
+  .kpi.red:before{background:var(--red)} .kpi.green:before{background:var(--green)}
+  .kpi.amber:before{background:var(--amber)} .kpi.blue:before{background:var(--blue)}
+  .kpi .n{font-size:26px;font-weight:800;color:#fff;letter-spacing:.5px;line-height:1.15}
+  .kpi .l{font-size:12px;color:var(--dim);margin-top:3px}
+  h2{
+    font-size:16px;color:var(--gold2);margin:34px 0 12px;padding-bottom:7px;
+    border-bottom:1px solid var(--line); letter-spacing:.6px;
+  }
+  h2 .no{color:var(--dim);font-weight:400;margin-right:8px}
+  h3{font-size:14px;color:var(--txt);margin:20px 0 8px}
+  p{margin:8px 0}
+  .card{
+    background:var(--bg2);border:1px solid var(--line);border-radius:10px;
+    padding:16px 18px;margin:12px 0;
+  }
+  .card.warn{border-color:#5a2f2f;background:linear-gradient(160deg,#211516,#181d24)}
+  .card.ok{border-color:#2c5a44;background:linear-gradient(160deg,#12211a,#181d24)}
+  .card.gold{border-color:#5a4a24;background:linear-gradient(160deg,#221d12,#181d24)}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.4px;background:rgba(200,164,74,.05)}
+  tr:hover td{background:rgba(255,255,255,.018)}
+  code{
+    background:#0a0e13;border:1px solid #232d3a;border-radius:4px;
+    padding:1px 5px;font-family:"Cascadia Code",Consolas,monospace;font-size:12px;color:#a8c8e8;
+  }
+  .tag{display:inline-block;padding:1px 7px;border-radius:4px;font-size:11px;font-weight:600;letter-spacing:.3px}
+  .t-red{background:rgba(217,92,92,.16);color:#e88989;border:1px solid rgba(217,92,92,.35)}
+  .t-green{background:rgba(76,175,125,.15);color:#7fd4a8;border:1px solid rgba(76,175,125,.32)}
+  .t-amber{background:rgba(224,166,60,.15);color:#ecc57e;border:1px solid rgba(224,166,60,.32)}
+  .t-blue{background:rgba(91,155,213,.15);color:#8fc0e8;border:1px solid rgba(91,155,213,.32)}
+  ul{margin:8px 0 8px 4px;padding-left:18px}
+  li{margin:4px 0}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:12px 0}
+  .steps li{
+    counter-increment:s;position:relative;padding:12px 16px 12px 52px;margin:8px 0;
+    background:var(--bg2);border:1px solid var(--line);border-radius:9px;
+  }
+  .steps li:before{
+    content:counter(s);position:absolute;left:14px;top:11px;width:24px;height:24px;
+    border-radius:50%;background:rgba(200,164,74,.14);border:1px solid rgba(200,164,74,.4);
+    color:var(--gold2);font-weight:700;font-size:12px;display:grid;place-items:center;
+  }
+  .steps b{color:var(--gold2)}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:13px}
+  .kv .k{color:var(--dim)}
+  .quote{border-left:3px solid var(--gold);padding:2px 0 2px 12px;color:#b9c5d3;margin:10px 0;font-size:13px}
+  .foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--dim);font-size:12px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:820px){.two{grid-template-columns:1fr}}
+  .mono{font-family:"Cascadia Code",Consolas,monospace;font-size:12px}
+  .hl{color:var(--gold2);font-weight:600}
+  .danger{color:#e88989;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>ACG_MEC_E × 母 mod ACG1 0.5 — 适配调查报告</h1>
+  <div class="sub">
+    三方比对：<b>WS</b> 本工作区（我方 submod）·<b>PT</b> 合作伙伴版 ·<b>MOD</b> 母 mod 新版（workshop 2796854877）<br>
+    采样时间 2026-11-18 · 调查方式：4 名并行调查员 + Lead 交叉核实 · 证据均在 <code>analysis/</code>
+  </div>
+</header>
+
+<div class="kpis">
+  <div class="kpi red"><div class="n">1,319</div><div class="l">我方整文件覆盖母 mod 的文件数<br>（覆盖 = 母 mod 更新全部失效）</div></div>
+  <div class="kpi amber"><div class="n">1,270</div><div class="l">双方都覆盖的省份<br>1,015 纯增量 / 255 真冲突</div></div>
+  <div class="kpi blue"><div class="n">36</div><div class="l">母 mod 新增兵种组 acgr_g01..g36<br>我方 technology.txt 会抹掉它们</div></div>
+  <div class="kpi green"><div class="n">1,870</div><div class="l">我方 discovered_by = tech_gensokyan<br>省份视野行（可保留 / 可废弃）</div></div>
+</div>
+
+<div class="card ok">
+  <h3 style="margin-top:0">✅ 已执行 · 分支 <code>integrate/acgr-0.5</code> · 提交 <code>dcfa988</code> · 353 文件 / +20,304 / -840</h3>
+  <table>
+    <tr><th>阶段</th><th>动作</th><th>校验</th></tr>
+    <tr><td>1</td><td>technology.txt = 母 mod 55 组 + tech_gensokyan</td><td><span class="tag t-green">56 组</span></td></tr>
+    <tr><td>2</td><td>mil.txt = 取 PT 版（母 mod 2417 行 + 我方 74 条）</td><td><span class="tag t-green">1,865 enable / 悬空 0</span></td></tr>
+    <tr><td>3</td><td>38 国以母 mod 为底合并</td><td><span class="tag t-green">36 国 gensokyan / unit_type 残留 0</span></td></tr>
+    <tr><td>4</td><td>1,241 省母 mod 为底 + 加视野；27 省（QNG 22 + HMC 5）全字段保我方</td><td><span class="tag t-green">1,897 省有 tech_gensokyan</span></td></tr>
+    <tr><td>5</td><td>ACGR_missions 回退全注释 / 两个 reform_levels 保留我方 9 条 + 补母 mod 5 条</td><td><span class="tag t-green">有效行 0 / 条目各 1 次</span></td></tr>
+  </table>
+  <p><b>剩余待办</b>：<code>00_diplomatic_actions.txt</code>（母 mod 新增 50 行未补）、<code>00_basic_ideas.txt</code>（1,120 行差异）、<code>new_countries_ideas.txt</code>（380 行）、<code>kirara_privileges.txt</code>（38 行）、<code>acg_modifiers.txt</code>（34 行）、<code>IYS_decisions/missions</code>（6/4 行）、以及阶段 6 游戏内验证。</p>
+  <p><b>需你复核</b>：NMK 用了母 mod 的 <code>Fujiwara_Mokou_government_reform</code>（弃我方 <code>Touhou_Republic</code>）；NNM/SKR/TMY 保留我方专属改革与文化，吸收母 mod 新增属性。</p>
+</div>
+
+<h2><span class="no">01</span>结论摘要</h2>
+
+<div class="card gold">
+  <p><span class="hl">核心判断：</span>母 mod 0.5 做的是一次<b>兵种体系重构</b>，不是普通内容更新。它新增 36 个兵种组 <code>acgr_g01..g36</code>，把「兵种组」从 <code>technology_group</code> 里独立出来，改用国家级 <code>unit_type = acgr_gXX</code> + <code>set_country_flag</code> 标记；<code>technology_group</code> 一律退回原版组（western 29 国 / muslim 7 国）。</p>
+  <p>我方 submod 是「整文件覆盖」型 —— 2222 个文件里 1319 个与母 mod 同名，覆盖即替换。母 mod 对这 1319 个文件的所有更新，在我方 submod 生效时<b class="danger">全部失效</b>。其中两处是「一进游戏就坏」级别：<code>common/technology.txt</code>（抹掉 36 组注册）与 <code>common/technologies/mil.txt</code>（抹掉 981 条 enable，含 855 条 acgr 兵种解锁）。</p>
+</div>
+
+<div class="card">
+  <p><b>8 条要点</b></p>
+  <ul>
+    <li><span class="tag t-red">硬伤</span> 原版 14 个 <code>unit_type</code> 全部落在 <code>technology.txt</code> 组名集合内（0 例外）→ <b>兵种组必须先注册成科技组</b>。我方 20 组的 technology.txt 会让母 mod 的 972 个 acgr 兵种 + 280 国的 unit_type 指向未注册组。</li>
+    <li><span class="tag t-red">硬伤</span> 我方 <code>mil.txt</code> 883 条 enable、0 条 acgr；母 mod 1791 条、855 条 acgr。覆盖 = acgr 兵种永不向任何国家解锁。</li>
+    <li><span class="tag t-green">好消息</span> <code>tech_gensokyan</code> 与 <code>western</code> 在科技数值上<b>完全等价</b>（start_level 3 / cost 0）。它唯一作用是「72 个 gen_t* 兵种的归属」+「1870 省的视野锚点」—— 这是所有取舍的支点。</li>
+    <li><span class="tag t-green">好消息</span> 母 mod 新版的历史日期条目<b>没有一条</b>被我方覆盖丢失（355 省全部 HistDelta ≥ 0），时间线不用抢救。</li>
+    <li><span class="tag t-amber">量化</span> 1270 交集省中 <b>1,015 个只多一行</b> <code>discovered_by</code>（机械合并），<b>255 个有实质差异</b>，高风险 239 省：<code>qng→qin</code> 22、<code>fra→jda</code> 13、文化改名 5、<code>hmc→lsw/shj</code> 5、<code>hts↔frr</code> 3。母 mod 新版共改 835 个键值 token / 253 省。</li>
+    <li><span class="tag t-amber">版图</span> 母 mod 重做了版图：<code>QNG(清)→QIN(秦)</code>、<code>FRA→JDA</code>、<code>HMC→SHJ</code>、<code>HTS→FRR</code>，共 43 省。我方旧 owner 会让这些新国家变无地国。</li>
+    <li><span class="tag t-blue">伙伴</span> PT 做的是一整套<b>科技组体系迁移</b>（284 国 technology_group → acgr、省份 42,905 行 acgr discovered_by、72 兵种 unit_type → acgr_g01），自洽但有 4 条代价，其中「抹平科技成本」与「幻想乡兵种一刀切」不可接受。</li>
+    <li><span class="tag t-blue">可用</span> PT 唯一可直接吸收：<code>common/technologies/mil.txt</code> = 母 mod 2417 行 + 我方 74 条 enable，<b>零丢失</b>的干净合并产物。</li>
+  </ul>
+</div>
+
+<h2><span class="no">02</span>三方数据源规模</h2>
+<table>
+  <tr><th>项目</th><th>WS 我方</th><th>PT 伙伴</th><th>MOD 母 mod 0.5</th><th>说明</th></tr>
+  <tr><td>文件总数</td><td>2,222</td><td>3,527</td><td>9,963</td><td>PT 含 1,306 个未跟踪新文件</td></tr>
+  <tr><td>history/provinces</td><td>1,904 / 1,903 省 ID</td><td>2,960 省 ID</td><td>2,498（只含改过的省）</td><td>MOD 不是全量，缺省 = 用原版</td></tr>
+  <tr><td>history/countries</td><td>42</td><td>326</td><td>303</td><td>我方 36 国用 tech_gensokyan</td></tr>
+  <tr><td>common/units</td><td>72（全 gen_t*）</td><td>144</td><td>1,519</td><td>WS∩MOD = 0（无同名覆盖）</td></tr>
+  <tr><td>technology.txt 组数</td><td><span class="danger">20</span></td><td>55</td><td>55</td><td>前 209 行 WS 与 MOD SHA256 相同</td></tr>
+  <tr><td>mil.txt enable</td><td><span class="danger">883</span>（0 acgr）</td><td>1,865（含 74 条我方）</td><td>1,791（855 acgr）</td><td>PT 这份是干净合并</td></tr>
+  <tr><td>tech_gensokyan 引用</td><td>1,979 行（省 1870 / 兵 72 / 国 36 / 组 1）</td><td><span class="danger">0 行</span></td><td>0 行</td><td>PT 把整套体系删了</td></tr>
+</table>
+
+<h2><span class="no">03</span>三个核心冲突的判定</h2>
+
+<div class="card ok">
+  <h3>冲突 1 · 科技组视野 —「每省都要定义」对一半</h3>
+  <p><code>discovered_by = X</code> 的匹配对象是国家的 <b>technology_group</b>（或国家 TAG 作历史发现者），<b>不是 unit_type</b>。原版省份取值集合 = 18 个原版组 + 大量国家 TAG，就是这个道理。</p>
+  <div class="kv">
+    <div class="k">母 mod 的 36 个 acgr 组</div><div>只是兵种组，<code>technology_group = acgr_</code> 全库命中 <b>0</b> → <b class="hl">完全不需要 discovered_by</b>（母 mod 自己一条都没写）</div>
+    <div class="k">我方 tech_gensokyan</div><div>是真正的 technology_group → 必须逐省写，1870 条本身没错</div>
+    <div class="k">PT 的做法</div><div>删 1870 条我方视野 + 加 42,905 行 acgr 视野 —— 只有在他「把 284 国 technology_group 改成 acgr」的前提下才自洽，属于换体系不是补漏洞</div>
+  </div>
+</div>
+
+<div class="card warn">
+  <h3>冲突 2 · 母 mod 改了省份 — 精确到省</h3>
+  <table>
+    <tr><th>分类</th><th>数量</th><th>处理</th></tr>
+    <tr><td>WS∩MOD 交集省</td><td><b>1,270</b></td><td>必须三方合并</td></tr>
+    <tr><td>├ 仅多 discovered_by = tech_gensokyan</td><td><b>1,015</b></td><td><span class="tag t-green">脚本自动</span>取母 mod 新版 + 追加 1 行，零裁决</td></tr>
+    <tr><td>└ 有实质差异</td><td><b>255</b></td><td><span class="tag t-red">人工裁决</span>高风险 239 省（D2 49 + D4 205）</td></tr>
+    <tr><td>WS 独有（母 mod 未改）</td><td>633</td><td>无需动（含 12 个真正我方私有省 BLS/AIU）</td></tr>
+    <tr><td>MOD 独有（母 mod 改过、我方未覆盖）</td><td>1,228</td><td><b>无需任何操作</b>，母 mod 改动自动生效</td></tr>
+  </table>
+  <table>
+    <tr><th>255 省实质差异的 D2 全貌（49 省，顶层标签）</th><th>省数</th><th>说明</th></tr>
+    <tr><td><code>qng → qin</code>（清 → 秦）</td><td>22</td><td><span class="tag t-red">高</span>母 mod 重做中国板块</td></tr>
+    <tr><td><code>fra → jda</code></td><td>13</td><td><span class="tag t-red">高</span>占 D4 日期块变化的 96%</td></tr>
+    <tr><td>文化 <code>ShiraiKuroko → supperability_magic_culture</code></td><td>5</td><td><span class="tag t-red">高</span>且原文化在三处 cultures 均无定义（空引用）</td></tr>
+    <tr><td><code>hmc → lsw / shj</code></td><td>5</td><td><span class="tag t-amber">中</span>HMC 是我方独有国，失地需补首都</td></tr>
+    <tr><td><code>hts ↔ frr</code> 互换</td><td>3</td><td><span class="tag t-amber">中</span>需人工裁决</td></tr>
+    <tr><td>仅 <code>add_core fra→jda</code></td><td>1</td><td>低</td></tr>
+  </table>
+  <div class="quote">关键结论：<b>没有一例「幻想乡势力被母 mod 抢走」</b>。KTY / RES / YKR / SHI / HTS / FRR 的地盘母 mod 自带（母 mod 的 101 Genoa 本身就是 owner = KTY / culture = Sanae / religion = Gensokyo_reg）。我方省份层的私有内容实际只有 <code>discovered_by</code> 一行 + 12 个 WS 独有省。</div>
+</div>
+
+<div class="card">
+  <h3>冲突 3 · 合作伙伴的适配 — 自洽但代价明确</h3>
+  <table>
+    <tr><th>#</th><th>代价</th><th>严重度</th></tr>
+    <tr><td>1</td><td><b>科技成本被抹平</b>：acgr 组全部 start_cost_modifier 0，原版 muslim 0.4 / chinese 0.6 / indian 0.5 / eastern 0.2 / nomad 0.75 的惩罚消失，涉及 150+ 国</td><td><span class="tag t-red">高</span></td></tr>
+    <tr><td>2</td><td><b>幻想乡兵种一刀切</b>：72 个兵种（含 27 门炮、5 个 KSN 专属、月兔/樱系）全挂 acgr_g01；而 acgr 36 组 <b>artillery = 0</b>，我方炮种无落点</td><td><span class="tag t-red">高</span></td></tr>
+    <tr><td>3</td><td>省份 discovered_by 冗余 42,905 行（2,960 省 × 14.5 条）</td><td><span class="tag t-amber">中</span></td></tr>
+    <tr><td>4</td><td>与母 mod 设计反向（母 mod：technology_group 原版 + unit_type acgr），母 mod 每次更新都要重跑这套迁移</td><td><span class="tag t-amber">中</span></td></tr>
+  </table>
+  <p><b>只吸收</b>：<code>mil.txt</code>（干净合并）。<b>不吸收</b>：technology.txt / 284 国 technology_group 改写 / 72 个 unit_type=g01 / 42,905 行 acgr discovered_by。</p>
+</div>
+
+<h2><span class="no">04</span>适配计划（6 阶段）</h2>
+<ol class="steps">
+  <li><b>阶段 0 · 安全基线</b>（10 分钟）— 建分支 <code>integrate/acgr-0.5</code>；提交当前干净状态作 checkpoint；三个源路径写成脚本常量（只读）。</li>
+  <li><b>阶段 1 · technology.txt 合并</b>（15 分钟，最高优先）— 以母 mod 55 组为底 + 追加 <code>tech_gensokyan</code> = <b>56 组</b>。不动 tables 三行。</li>
+  <li><b>阶段 2 · mil.txt 合并</b>（20 分钟，最高优先）— 取 <code>PT</code> 的 mil.txt（母 mod 2417 行 + 我方 74 条，零丢失），跑「enable ↔ units 文件名」悬空对账。目标 1,864 条。</li>
+  <li><b>阶段 3 · 38 国 history 合并</b>（1–2 小时，比预想简单）— WS 42 国 = 母 mod 已有 38 + 我方独有 4（AIU/BLS/HMC/QNG）。38 个重合国 <b>34 国只差 6 行</b>（4 行 ACGR 段 + 科技组），真定制只有 <b>NMK / NNM / SKR / TMY</b> 四国。A2 方案：删母 mod 的 <code>unit_type</code>/<code>set_country_flag</code> 两行、保留 <code>technology_group = tech_gensokyan</code>，其余照母 mod。</li>
+  <li><b>阶段 4 · 1,270 省合并</b>（半天，80% 可脚本化）— ① 1,015 省自动追加 1 行；② 633 个 WS 独有省原样保留（顺手清 <code>.txt.txt</code> 脏文件与 2046 重复）；③ 239 高风险省以母 mod 为准 + 加 gensokyan，仅 3 处人工裁决（67/70/4713 的 hts↔frr、366/368 殖民史去留、680/681/2171/2172/4211 中国板块）；④ 17 个贸易品省无条件跟随母 mod；⑤ <b>绝不</b>给 acgr 写 discovered_by。</li>
+  <li><b>阶段 5 · 其余 16 个覆盖文件合并</b>（1 小时，其中 <b class="danger">5 项必须先回退</b>）— ① <code>missions/ACGR_missions.txt</code>：我方 838 行全注释（故意停用 ACG 通用任务树），PT 恢复成 1,548 有效行 → 回退全注释；② <code>technology.txt</code> 回退并合并 56 组；③ <code>reform_levels_monarchy.txt</code>；④ <code>reform_levels_republic.txt</code> —— 这两处 PT 删掉我方 9 条改革注册（SKR×3/YYK/PLP/BLS/HMC/NNM/HNA），母 mod 全库命中 0 而国家仍在引用 → 7 国政体链会断，必须回退 + 补母 mod 新条目；⑤ <code>00_diplomatic_actions.txt</code>：142 行 #ACG_MEC 定制（禁结盟/魔力宝石）被清空 → 回退。可保留 PT 的只有 <code>new_countries_ideas.txt</code>（TMY_ideas 保住了）、<code>acg_modifiers.txt</code>、<code>SKR_card_modifiers.txt</code>。</li>
+</ol>
+
+<div class="card">
+  <h3>阶段 6 · 验证清单</h3>
+  <ul>
+    <li>启动到主菜单 → 开 1444 → <code>logs/error.log</code> 里 unknown unit_type / unknown technology group / invalid discovered_by <b>= 0</b></li>
+    <li>36 国冒烟测试（建议 HKR / EIR / SKR）：能造兵、模型对、科技面板正常、能看到自己领土与周边</li>
+    <li>交叉校验：每国 <code>capital</code> 省的 <code>owner</code> 必须 = 该国 TAG</li>
+    <li>回归：WS 独有 903 个文件在 diff 里<b>一个都不能变</b></li>
+    <li>每阶段一个 commit，message 写清 stage-N + 省数/国数，便于单阶段回滚</li>
+  </ul>
+</div>
+
+<h2><span class="no">05</span>需要你拍板的 3 个决策</h2>
+
+<div class="card gold">
+  <h3>决策 1（必须）· 幻想乡兵种 gen_t*（72 个）留还是废？</h3>
+  <table>
+    <tr><th>方案</th><th>做法</th><th>代价</th><th>Lead 评级</th></tr>
+    <tr>
+      <td><b>A2 平行共存</b></td>
+      <td>technology.txt 56 组 + mil.txt 1864 条；36 国保持 technology_group = tech_gensokyan、不写 unit_type；保留 1870 条 discovered_by</td>
+      <td>36 国用不到 acgr 兵种外观；每次母 mod 更新重跑 2 文件合并（约 20 分钟）</td>
+      <td><span class="tag t-green">推荐</span></td>
+    </tr>
+    <tr>
+      <td>B 并入母 mod<br><span class="sub">（01 调查员推荐）</span></td>
+      <td>36 国用 acgr_g01/g02/g09；technology_group 改 western/muslim；删 tech_gensokyan / 72 兵种 / 1870 条视野</td>
+      <td><b class="danger">丢 27 门炮</b>（acgr 无炮兵）；月兔系/樱系失去差异化；gen_t* 数值设计作废</td>
+      <td><span class="tag t-amber">可选</span></td>
+    </tr>
+    <tr>
+      <td>A 双轨<br><span class="sub">（正交写法，效果≈B）</span></td><td>两者并存：<code>technology_group = tech_gensokyan</code>（科技/视野）+ <code>unit_type = acgr_gXX</code>（兵种）。二者正交合法，有原版实例</td>
+      <td>gen_t* 72 兵种闲置成死数据；1870 条 discovered_by 仍要留；两套体系各出一半，维护最复杂</td>
+      <td><span class="tag t-red">不推荐</span></td>
+    </tr>
+    <tr>
+      <td>C 全面对抗</td><td>1,979 行改名/劫持 acgr 组，母 mod 34 国共用 g01</td>
+      <td>劫持母 mod 资源、维护地狱</td>
+      <td><span class="tag t-red">不推荐</span></td>
+    </tr>
+  </table>
+  <p><b>Lead 仲裁：A2。</b>① B 会真丢东西（36 组里 artillery = 0，我方 27 门炮占 37%）；② A2 维护成本被高估（只 2 个文件、20 分钟）；③ A2 不占用母 mod 的 g01，双方互不干扰（A 和 C 都会破坏这点）。</p>
+</div>
+
+<div class="card">
+  <h3>决策 2 · 母 mod 的版图重做（43 省 owner）照单全收吗？</h3>
+  <p>建议<b>照单全收</b>。母 mod 是版图权威，我方覆盖旧 owner 会让 JDA / SHJ / QIN / FRR 变成无地国。若某省是我方有意定制（幻想乡核心区），在 CSV 里单独标注，改用「母 mod owner + 我方事件/决议转移」实现。</p>
+</div>
+
+<div class="card">
+  <h3>决策 3 · 合作伙伴 3,327 处改动怎么处理？</h3>
+  <p><b>一手源优先</b>：凡是母 mod 也有的内容，一律从 <code>MOD</code> 原文件取，不从 <code>PT</code> 转手。只保留他两样东西：<code>mil.txt</code>（干净合并）+ 17 个杂项文件里「与 MOD 不一致」的真实改动（逐个 diff 人工裁决）。他的 1,306 个新文件按「MOD 是否有同名」分两类：有 → 同步进 WS；无 → 人工确认。</p>
+</div>
+
+<h2><span class="no">06</span>风险与回滚</h2>
+<table>
+  <tr><th>风险</th><th>触发条件</th><th>缓解</th></tr>
+  <tr><td>母 mod 内容静默失效</td><td>任何 WS 与 MOD 同名文件</td><td>阶段 1–5 全部改成「母 mod 为底本 + 追加我方块」，禁止以我方为底本整份覆盖</td></tr>
+  <tr><td>36 国开局崩</td><td>technology_group 指向不存在的组</td><td>阶段 1 与阶段 3 必须同批提交，不能只做一半</td></tr>
+  <tr><td>兵种不可用</td><td>mil.txt 缺 enable / unit_type 未注册</td><td>阶段 2 后跑 enable ↔ units 双向对账</td></tr>
+  <tr><td>版图错乱</td><td>省 owner 与国家 capital 不一致</td><td>阶段 4 后跑首都交叉校验（36 幻想乡国已验证全部站得住；失首都是 HMC 680→SHJ、QNG 1816→QIN 两个我方独有国）</td></tr>
+  <tr><td>文化空引用</td><td>99/100/1931/4381/4382 的 <code>ShiraiKuroko</code> 在 vanilla/MOD/WS 三处 cultures 均无定义</td><td>统一改 <code>supperability_magic_culture</code>，并核 <code>common/cultures</code> 有无其他孤儿引用</td></tr>
+  <tr><td>省会名乱码</td><td>MOD 的 681/2171/2172 <code>capital</code> 是坏编码乱码</td><td>合并时按可读名回填</td></tr>
+  <tr><td>KGY 被单向拉出幻想乡科技组</td><td><code>MOD/decisions/KGYdecision.txt:298-307</code> 对 KGY 及附庸 <code>change_technology_group = western</code>，我方 0 处反向</td><td>补一条反向 effect，或让 KGY 系直接用 acgr 兵种（方案 B）</td></tr>
+  <tr><td>下次母 mod 更新再崩</td><td>继续整份覆盖</td><td>长期：我方增量写成独立文件（ZZ_ 前缀 / scripted_effects 注入），尽量少覆盖同名文件</td></tr>
+</table>
+
+<div class="foot">
+  完整报告：<code>analysis/05_调查报告与适配计划.md</code> ·
+  调查员报告：<code>01_tech_groups.md</code> / <code>02_unit_groups.md</code> / <code>03_province_history.md</code> / <code>04_country_misc.md</code> ·
+  数据附表：<code>overlap_ws_mod.txt</code> / <code>ws_only.txt</code> / <code>mod_only.txt</code> / <code>touhou_country_mod_map.csv</code> / <code>prov_delta_stats.csv</code> / <code>prov_conflict_class.csv</code>
+</div>
+
+</div>
+</body>
+</html>
