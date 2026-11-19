@@ -1,0 +1,26 @@
+# BEGIN ACGR_UNIT_GROUPS INITIAL ARMY
+unit_type = acgr_g18
+set_country_flag = acgr_unit_group_g18
+# END ACGR_UNIT_GROUPS
+# Override of ACG1 RedWinter: capital moved from 33 (Neva) to 310 (Novgorod),
+# because 33 is reassigned to SVZ (Snezhnaya) in this mod.
+government = acg_monarchy
+add_government_reform = acg_universal_government_reform_1
+primary_culture = RedWinter
+religion = acg
+technology_group = eastern
+capital = 310
+1444.11.11 = {
+	monarch = {
+		name = "Cherino"
+		dynasty = "Renkawa"
+		birth_date = 1428.11.11
+		death_date = 1821.12.31
+		adm = 4
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = the_blue_archive_1
+}

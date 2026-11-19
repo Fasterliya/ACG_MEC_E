@@ -1,0 +1,74 @@
+acg_teyvat_group = {	#提瓦特
+	graphical_culture = asiangfx
+	acg_snezhnaya = {	#至冬
+		primary = SVZ
+		dynasty_names = {
+			Snezhnaya
+			Zapolyarny
+			Fatui
+		}
+		male_names = {
+			Ivan
+			Pyotr
+			Nikolai
+			Dmitri
+			Anton
+			Kirill
+			Rodion
+			Yakov
+		}
+		female_names = {
+			Anastasia
+			Yelena
+			Sonya
+			Vera
+			Mira
+			Lidiya
+			Kseniya
+		}
+	}
+	acg_fontaine = {	#枫丹
+		primary = FTN
+		dynasty_names = {
+			Fontaine
+			Poisson
+			Court
+		}
+		male_names = {
+			Neuvillette
+			Wriothesley
+			Lyney
+			Freminet
+			Arouet
+		}
+		female_names = {
+			Furina
+			Navia
+			Clorinde
+			Chevreuse
+			Charlotte
+		}
+	}
+	acg_nodkrai = {	#挪德卡莱
+		primary = NDK
+		dynasty_names = {
+			NodKrai
+			Aurora
+			Lunarborn
+		}
+		male_names = {
+			Kirill
+			Anton
+			Rodion
+			Yakov
+			Semyon
+		}
+		female_names = {
+			Vera
+			Mira
+			Lidiya
+			Darya
+			Olesya
+		}
+	}
+}

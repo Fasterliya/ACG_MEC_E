@@ -1,0 +1,26 @@
+# BEGIN ACGR_UNIT_GROUPS INITIAL ARMY
+unit_type = acgr_g18
+set_country_flag = acgr_unit_group_g18
+# END ACGR_UNIT_GROUPS
+# Override of ACG1 Arius: all four starting provinces (167, 168, 1879, 4385)
+# are reassigned to FTN (Fontaine) in this mod, so Arius starts landless.
+government = acg_monarchy
+add_government_reform = acg_universal_government_reform_1
+primary_culture = Arius
+religion = acg
+technology_group = western
+1444.11.11 = {
+	monarch = {
+		name = "Saori"
+		dynasty = "Jomae"
+		birth_date = 1420.1.1
+		death_date = 1821.12.31
+		adm = 5
+		dip = 4
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = the_blue_archive_1
+	add_ruler_personality = strict_personality
+}

@@ -1,0 +1,44 @@
+FTN_ideas = {
+	start = {
+		stability_cost_modifier = -0.10
+		global_unrest = -1
+	}
+	bonus = {
+		all_power_cost = -0.05
+	}
+	trigger = {
+		tag = FTN
+	}
+	free = yes
+	FTN_idea_1 = {
+		global_unrest = -2
+		core_creation = -0.10
+	}
+	FTN_idea_2 = {
+		legitimacy = 1
+		prestige = 0.5
+	}
+	FTN_idea_3 = {
+		prestige = 1
+		prestige_decay = -0.01
+		diplomatic_reputation = 1
+	}
+	FTN_idea_4 = {
+		technology_cost = -0.05
+		production_efficiency = 0.10
+		build_cost = -0.10
+	}
+	FTN_idea_5 = {
+		administrative_efficiency = 0.05
+		development_cost = -0.10
+	}
+	FTN_idea_6 = {
+		naval_morale = 0.15
+		global_ship_cost = -0.10
+		naval_forcelimit_modifier = 0.20
+	}
+	FTN_idea_7 = {
+		infantry_power = 0.10
+		land_morale = 0.05
+	}
+}

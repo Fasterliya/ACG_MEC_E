@@ -1,0 +1,67 @@
+#Snezhnaya - 至冬
+
+graphical_culture = acggfx
+
+color = { 130 200 235 }
+
+revolutionary_colors = { 100 170 220 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	quality_ideas
+	administrative_ideas
+	humanist_ideas
+	economic_ideas
+	trade_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	eastern_bow
+	eastern_militia
+	eastern_medieval_infantry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"Anastasia #0" = 100
+	"Ivan #0" = 60
+	"Pyotr #0" = 50
+	"Nikolai #0" = 45
+	"Dmitri #0" = 40
+	"Yelena #0" = 35
+	"Sonya #0" = 30
+	"Vera #0" = 25
+}
+
+leader_names = {
+	Zaytsev
+	Volkov
+	Sokolov
+	Morozov
+	Belov
+	Orlov
+	Kuznetsov
+	Petrov
+	Fyodorov
+	Mikhailov
+}
+
+ship_names = {
+	"Moroz"
+	"Veter"
+	"Sneg"
+	"Ledyanoy"
+	"Zvezda"
+	"Sever"
+	"Burnyy"
+	"Kholod"
+}

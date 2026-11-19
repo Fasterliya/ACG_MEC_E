@@ -1,0 +1,24 @@
+# Snezhnaya - 至冬
+government = acg_monarchy
+add_government_reform = acg_universal_government_reform_1
+government_rank = 3
+primary_culture = acg_snezhnaya
+religion = acg
+technology_group = eastern
+capital = 33
+
+1444.11.11 = {
+	monarch = {
+		name = "Anastasia"
+		dynasty = "Snezhnaya"
+		birth_date = 1420.1.1
+		death_date = 1821.12.31
+		adm = 5
+		dip = 4
+		mil = 5
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = bold_fighter_personality
+}
