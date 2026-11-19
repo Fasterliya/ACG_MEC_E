@@ -1,5 +1,7 @@
 # ACG_MEC_E - Teyvat: switch personal deity
 # 2 decisions -> 2 events (options pick the new deity)
+# 本地化键名规范：<key>_title + <key>_desc
+# 重择不消耗正统性；冷却 20 年（7300 天），由 custom_trigger_tooltip 显示冷却原因
 
 country_decisions = {
 
@@ -9,11 +11,14 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { has_regency = yes }
-			OR = {
-				NOT = { has_country_flag = acg_mec_e_rechoose_deity_flag }
-				had_country_flag = {
-					flag = acg_mec_e_rechoose_deity_flag
-					days = 7300
+			custom_trigger_tooltip = {
+				tooltip = acg_mec_e_rechoose_deity_cooldown_tooltip
+				OR = {
+					NOT = { has_country_flag = acg_mec_e_rechoose_deity_flag }
+					had_country_flag = {
+						flag = acg_mec_e_rechoose_deity_flag
+						days = 7300
+					}
 				}
 			}
 		}
@@ -31,11 +36,14 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { has_regency = yes }
-			OR = {
-				NOT = { has_country_flag = acg_mec_e_rechoose_deity_flag }
-				had_country_flag = {
-					flag = acg_mec_e_rechoose_deity_flag
-					days = 7300
+			custom_trigger_tooltip = {
+				tooltip = acg_mec_e_rechoose_deity_cooldown_tooltip
+				OR = {
+					NOT = { has_country_flag = acg_mec_e_rechoose_deity_flag }
+					had_country_flag = {
+						flag = acg_mec_e_rechoose_deity_flag
+						days = 7300
+					}
 				}
 			}
 		}

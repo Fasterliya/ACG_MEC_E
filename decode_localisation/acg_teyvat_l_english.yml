@@ -15,33 +15,36 @@ l_english:
 
  # ----- Seven Archons -----
  acg_mec_e_deity_barbatos: "巴巴托斯"
- desc_acg_mec_e_deity_barbatos: "自由的风神游荡于高原与酒馆之间，把歌声与谣言一同撒向四方。信他的人行军更快，也更懂得何时该退。"
+ acg_mec_e_deity_barbatos_desc: "自由的风神游荡于高原与酒馆之间，把歌声与谣言一同撒向四方。信他的人行军更快，也更懂得何时该退。"
  acg_mec_e_deity_morax: "摩拉克斯"
- desc_acg_mec_e_deity_morax: "契约之神以磐石立誓。他的子民筑墙、凿石、守约，城墙比誓言更硬。"
+ acg_mec_e_deity_morax_desc: "契约之神以磐石立誓。他的子民筑墙、凿石、守约，城墙比誓言更硬。"
  acg_mec_e_deity_baal: "巴尔"
- desc_acg_mec_e_deity_baal: "永恒之雷悬于列岛之上，斩断一切动摇。他的军阵列如雷纹，不容一丝迟疑。"
+ acg_mec_e_deity_baal_desc: "永恒之雷悬于列岛之上，斩断一切动摇。他的军阵列如雷纹，不容一丝迟疑。"
  acg_mec_e_deity_buer: "布耶尔"
- desc_acg_mec_e_deity_buer: "智慧之神在雨林的枝头低语，知识像藤蔓一样攀满书页。"
+ acg_mec_e_deity_buer_desc: "智慧之神在雨林的枝头低语，知识像藤蔓一样攀满书页。"
  acg_mec_e_deity_focalors: "芙卡洛斯"
- desc_acg_mec_e_deity_focalors: "审判之神坐在水幕之后，一切账目终将在潮水里清算。"
+ acg_mec_e_deity_focalors_desc: "审判之神坐在水幕之后，一切账目终将在潮水里清算。"
  acg_mec_e_deity_mavuika: "玛薇卡"
- desc_acg_mec_e_deity_mavuika: "战争之火在荒原上燃烧，火神赐予的是燃烧到底的力气。"
+ acg_mec_e_deity_mavuika_desc: "战争之火在荒原上燃烧，火神赐予的是燃烧到底的力气。"
  acg_mec_e_deity_washajia: "瓦沙嘉"
- desc_acg_mec_e_deity_washajia: "慈爱之名下的凛冬。她的子民在沉默中整肃，在严寒里团结。"
+ acg_mec_e_deity_washajia_desc: "慈爱之名下的凛冬。她的子民在沉默中整肃，在严寒里团结。"
 
  # ----- Three Moons -----
  acg_mec_e_deity_hengyue: "恒月"
- desc_acg_mec_e_deity_hengyue: "恒常之月守着旧约，赐予信徒不动摇的秩序与尊荣。"
+ acg_mec_e_deity_hengyue_desc: "恒常之月守着旧约，赐予信徒不动摇的秩序与尊荣。"
  acg_mec_e_deity_hongyue: "虹月"
- desc_acg_mec_e_deity_hongyue: "虹月照见商路与仓廪，凡有交易处皆有她的倒影。"
+ acg_mec_e_deity_hongyue_desc: "虹月照见商路与仓廪，凡有交易处皆有她的倒影。"
  acg_mec_e_deity_shuangyue: "霜月"
- desc_acg_mec_e_deity_shuangyue: "霜月主杀伐与守夜，她的信徒在雪线之上磨刀。"
+ acg_mec_e_deity_shuangyue_desc: "霜月主杀伐与守夜，她的信徒在雪线之上磨刀。"
 
  # ----- Decisions -----
+ acg_mec_e_rechoose_seven_archon_title: "重择七神"
  acg_mec_e_rechoose_seven_archon: "重择七神"
- acg_mec_e_rechoose_seven_archon_desc: "七神各执一权。国是既变，主祭之神亦可更易——只是神座不容轻慢，须以正统为祭。每二十年一次。"
+ acg_mec_e_rechoose_seven_archon_desc: "七位执政各执一权。国是既变，主祭之神亦可更易——神座只有一座，故重择之后须再过二十年才能再次改换。此举不损正统。"
+ acg_mec_e_rechoose_moon_title: "重择月相"
  acg_mec_e_rechoose_moon: "重择月相"
- acg_mec_e_rechoose_moon_desc: "三月轮转，月相有盈亏。信徒可在恒月、虹月、霜月之间重定主祭。每二十年一次。"
+ acg_mec_e_rechoose_moon_desc: "三月轮转，月相有盈亏。信徒可在恒月、虹月、霜月之间重定主祭之神——重择之后须再过二十年才能再次改换。此举不损正统。"
+ acg_mec_e_rechoose_deity_cooldown_tooltip: "距上次重择神明已满 20 年（冷却 20 年，每 20 年只能重择一次）"
 
  # ----- Event: Seven Archons -----
  acg_mec_e_teyvat_religion.1.t: "神座之前"

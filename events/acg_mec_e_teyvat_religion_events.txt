@@ -13,7 +13,6 @@ country_event = {
 
 	immediate = {
 		set_country_flag = acg_mec_e_rechoose_deity_flag
-		reduce_legitimacy_large_effect = yes
 	}
 
 	option = {
@@ -69,7 +68,6 @@ country_event = {
 
 	immediate = {
 		set_country_flag = acg_mec_e_rechoose_deity_flag
-		reduce_legitimacy_large_effect = yes
 	}
 
 	option = {
