@@ -1,4 +1,4 @@
-# Fontaine - æ«ä¸¹
+# Fontaine - «g9N
 government = acg_monarchy
 add_government_reform = acg_universal_government_reform_1
 government_rank = 2
@@ -9,8 +9,8 @@ capital = 168
 
 1444.11.11 = {
 	monarch = {
-		name = "èŠ™å®å¨œ"
-		dynasty = "æ«ä¸¹"
+		name = "™‚RZ"
+		dynasty = "«g9N"
 		birth_date = 1425.1.1
 		death_date = 1821.12.31
 		adm = 4

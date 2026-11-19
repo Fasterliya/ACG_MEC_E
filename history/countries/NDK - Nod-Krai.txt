@@ -1,4 +1,4 @@
-# Nod-Krai - æŒªå¾·å¡è±
+# Nod-Krai - *c·VaS±ƒ
 government = acg_monarchy
 add_government_reform = acg_universal_government_reform_1
 government_rank = 1
@@ -9,13 +9,13 @@ capital = 313
 
 1444.11.11 = {
 	monarch = {
-		name = "åŸºé‡Œå°”"
-		dynasty = "æŒªå¾·å¡è±"
+		name = "åT&OÔkZ"
+		dynasty = "*c·VaS±ƒ"
 		birth_date = 1422.1.1
 		death_date = 1821.12.31
-		adm = 3
+		adm = 4
 		dip = 5
-		mil = 3
+		mil = 4
 		female = no
 	}
 	add_ruler_personality = immortal_personality

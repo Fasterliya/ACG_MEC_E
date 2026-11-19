@@ -1,0 +1,24 @@
+# Nod-Krai - 挪德卡莱
+government = acg_monarchy
+add_government_reform = acg_universal_government_reform_1
+government_rank = 1
+primary_culture = acg_nodkrai
+religion = acg
+technology_group = eastern
+capital = 313
+
+1444.11.11 = {
+	monarch = {
+		name = "哥伦比娅"
+		dynasty = "挪德卡莱"
+		birth_date = 1422.1.1
+		death_date = 1821.12.31
+		adm = 4
+		dip = 5
+		mil = 4
+		female = no
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = bold_fighter_personality
+}

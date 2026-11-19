@@ -1,4 +1,4 @@
-# Snezhnaya - è‡³å†¬
+# Snezhnaya - ó¬Q
 government = acg_monarchy
 add_government_reform = acg_universal_government_reform_1
 government_rank = 3
@@ -9,8 +9,8 @@ capital = 33
 
 1444.11.11 = {
 	monarch = {
-		name = "é˜¿çº³æ–¯å¡”è¥¿å¨…"
-		dynasty = "æ–¯æ¶…æ—¥çº³å¨…"
+		name = "?–³u¯eTX‰Z"
+		dynasty = "¯e…måe³uZ"
 		birth_date = 1420.1.1
 		death_date = 1821.12.31
 		adm = 5
