@@ -1,0 +1,92 @@
+# ACG_MEC_E - Teyvat: deity selection events
+# Triggered by decisions in acg_mec_e_teyvat_religion_decisions.txt
+
+namespace = acg_mec_e_teyvat_religion
+
+# Seven Archons
+country_event = {
+	id = acg_mec_e_teyvat_religion.1
+	title = acg_mec_e_teyvat_religion.1.t
+	desc = acg_mec_e_teyvat_religion.1.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = acg_mec_e_rechoose_deity_flag
+		reduce_legitimacy_large_effect = yes
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.1.a
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_barbatos } }
+		change_personal_deity = acg_mec_e_deity_barbatos
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.1.b
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_morax } }
+		change_personal_deity = acg_mec_e_deity_morax
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.1.c
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_baal } }
+		change_personal_deity = acg_mec_e_deity_baal
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.1.d
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_buer } }
+		change_personal_deity = acg_mec_e_deity_buer
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.1.e
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_focalors } }
+		change_personal_deity = acg_mec_e_deity_focalors
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.1.f
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_mavuika } }
+		change_personal_deity = acg_mec_e_deity_mavuika
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.1.g
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_washajia } }
+		change_personal_deity = acg_mec_e_deity_washajia
+	}
+}
+
+# Three Moons
+country_event = {
+	id = acg_mec_e_teyvat_religion.2
+	title = acg_mec_e_teyvat_religion.2.t
+	desc = acg_mec_e_teyvat_religion.2.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = acg_mec_e_rechoose_deity_flag
+		reduce_legitimacy_large_effect = yes
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.2.a
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_hengyue } }
+		change_personal_deity = acg_mec_e_deity_hengyue
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.2.b
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_hongyue } }
+		change_personal_deity = acg_mec_e_deity_hongyue
+	}
+
+	option = {
+		name = acg_mec_e_teyvat_religion.2.c
+		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_shuangyue } }
+		change_personal_deity = acg_mec_e_deity_shuangyue
+	}
+}

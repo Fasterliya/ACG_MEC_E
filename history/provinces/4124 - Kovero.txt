@@ -5,7 +5,7 @@ add_core = SVZ
 remove_core = RWF
 #4124 - North Karelia
 
-religion = acg
+religion = acg_mec_e_seven_archons
 hre = no
 base_tax = 1
 base_production = 1

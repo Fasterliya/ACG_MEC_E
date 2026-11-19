@@ -7,7 +7,7 @@ remove_core = ARU
 
 capital = "Cherbourg"
 is_city = yes
-religion = acg
+religion = acg_mec_e_seven_archons
 hre = no
 base_tax = 4
 base_production = 4

@@ -1,0 +1,10 @@
+# ACG_MEC_E - Teyvat deity strip override
+# Loaded last (zzz_ prefix) so this definition wins over vanilla (12) and ACG1 (18).
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_hindu_deities_strip"
+		texturefile = "gfx//interface//hindu_deities_strip.dds"
+		noOfFrames = 28
+	}
+}

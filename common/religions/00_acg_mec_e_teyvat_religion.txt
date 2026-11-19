@@ -1,0 +1,84 @@
+# ACG_MEC_E - Teyvat religion group
+# New standalone file: do NOT copy 00_religion.txt (it would override ACG1's Anime group).
+
+acg_mec_e_teyvat_group = {
+	defender_of_faith = yes
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 57 }
+
+	crusade_name = HOLY_WAR
+
+	acg_mec_e_seven_archons = {
+		color = { 210 180 90 }
+		icon = 34
+		allowed_conversion = {
+			acg_mec_e_moon_goddess
+		}
+
+		country = {
+			tolerance_heretic = 2
+			global_unrest = -1
+			land_morale = 0.05
+		}
+
+		country_as_secondary = {
+			idea_cost = -0.05
+			global_institution_spread = 0.05
+		}
+
+		province = {
+			local_missionary_strength = -0.02
+		}
+
+		heretic = { ACG_MEC_E_SEVEN_HERETIC ACG_MEC_E_ABYSS_ORDER }
+
+		personal_deity = yes
+
+		on_convert = {
+			change_religion = acg_mec_e_seven_archons
+			add_prestige = -50
+			add_country_modifier = {
+				name = conversion_zeal
+				duration = 3650
+			}
+		}
+	}
+
+	acg_mec_e_moon_goddess = {
+		color = { 120 140 220 }
+		icon = 35
+		allowed_conversion = {
+			acg_mec_e_seven_archons
+		}
+
+		country = {
+			tolerance_own = 2
+			advisor_pool = 1
+			spy_offence = 0.15
+			prestige = 0.5
+		}
+
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			global_unrest = -1
+		}
+
+		province = {
+			local_missionary_strength = 0.02
+		}
+
+		heretic = { ACG_MEC_E_MOON_HERETIC }
+
+		personal_deity = yes
+
+		on_convert = {
+			change_religion = acg_mec_e_moon_goddess
+			add_prestige = -50
+			add_country_modifier = {
+				name = conversion_zeal
+				duration = 3650
+			}
+		}
+	}
+}

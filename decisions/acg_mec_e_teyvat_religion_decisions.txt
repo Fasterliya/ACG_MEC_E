@@ -1,0 +1,49 @@
+# ACG_MEC_E - Teyvat: switch personal deity
+# 2 decisions -> 2 events (options pick the new deity)
+
+country_decisions = {
+
+	acg_mec_e_rechoose_seven_archon = {
+		potential = {
+			religion = acg_mec_e_seven_archons
+		}
+		allow = {
+			NOT = { has_regency = yes }
+			OR = {
+				NOT = { has_country_flag = acg_mec_e_rechoose_deity_flag }
+				had_country_flag = {
+					flag = acg_mec_e_rechoose_deity_flag
+					days = 7300
+				}
+			}
+		}
+		effect = {
+			country_event = { id = acg_mec_e_teyvat_religion.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	acg_mec_e_rechoose_moon = {
+		potential = {
+			religion = acg_mec_e_moon_goddess
+		}
+		allow = {
+			NOT = { has_regency = yes }
+			OR = {
+				NOT = { has_country_flag = acg_mec_e_rechoose_deity_flag }
+				had_country_flag = {
+					flag = acg_mec_e_rechoose_deity_flag
+					days = 7300
+				}
+			}
+		}
+		effect = {
+			country_event = { id = acg_mec_e_teyvat_religion.2 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

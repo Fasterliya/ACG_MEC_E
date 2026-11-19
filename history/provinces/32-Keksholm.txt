@@ -5,7 +5,7 @@ add_core = SVZ
 remove_core = RWF
 #Karelen, incl. Sordavala and Keksholm.
 
-religion = acg
+religion = acg_mec_e_seven_archons
 hre = no
 base_tax = 2 
 base_production = 2

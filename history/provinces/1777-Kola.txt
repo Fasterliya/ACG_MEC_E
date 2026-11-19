@@ -6,7 +6,7 @@ remove_core = RWF
 #Kola
 
 capital = "Kola"
-religion = acg
+religion = acg_mec_e_moon_goddess
 hre = no
 base_tax = 1 
 base_production = 1

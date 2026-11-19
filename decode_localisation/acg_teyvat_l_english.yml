@@ -4,3 +4,75 @@ l_english:
  acg_snezhnaya: "至冬"
  acg_fontaine: "枫丹"
  acg_nodkrai: "挪德卡莱"
+
+ # ===== Teyvat religion (ACG_MEC_E) =====
+ acg_mec_e_teyvat_group: "提瓦特"
+ acg_mec_e_seven_archons: "七神信仰"
+ acg_mec_e_moon_goddess: "月神信仰"
+ ACG_MEC_E_SEVEN_HERETIC: "无信者"
+ ACG_MEC_E_ABYSS_ORDER: "深渊教团"
+ ACG_MEC_E_MOON_HERETIC: "伪月信徒"
+
+ # ----- Seven Archons -----
+ acg_mec_e_deity_barbatos: "巴巴托斯"
+ desc_acg_mec_e_deity_barbatos: "自由的风神游荡于高原与酒馆之间，把歌声与谣言一同撒向四方。信他的人行军更快，也更懂得何时该退。"
+ acg_mec_e_deity_morax: "摩拉克斯"
+ desc_acg_mec_e_deity_morax: "契约之神以磐石立誓。他的子民筑墙、凿石、守约，城墙比誓言更硬。"
+ acg_mec_e_deity_baal: "巴尔"
+ desc_acg_mec_e_deity_baal: "永恒之雷悬于列岛之上，斩断一切动摇。他的军阵列如雷纹，不容一丝迟疑。"
+ acg_mec_e_deity_buer: "布耶尔"
+ desc_acg_mec_e_deity_buer: "智慧之神在雨林的枝头低语，知识像藤蔓一样攀满书页。"
+ acg_mec_e_deity_focalors: "芙卡洛斯"
+ desc_acg_mec_e_deity_focalors: "审判之神坐在水幕之后，一切账目终将在潮水里清算。"
+ acg_mec_e_deity_mavuika: "玛薇卡"
+ desc_acg_mec_e_deity_mavuika: "战争之火在荒原上燃烧，火神赐予的是燃烧到底的力气。"
+ acg_mec_e_deity_washajia: "瓦沙嘉"
+ desc_acg_mec_e_deity_washajia: "慈爱之名下的凛冬。她的子民在沉默中整肃，在严寒里团结。"
+
+ # ----- Three Moons -----
+ acg_mec_e_deity_hengyue: "恒月"
+ desc_acg_mec_e_deity_hengyue: "恒常之月守着旧约，赐予信徒不动摇的秩序与尊荣。"
+ acg_mec_e_deity_hongyue: "虹月"
+ desc_acg_mec_e_deity_hongyue: "虹月照见商路与仓廪，凡有交易处皆有她的倒影。"
+ acg_mec_e_deity_shuangyue: "霜月"
+ desc_acg_mec_e_deity_shuangyue: "霜月主杀伐与守夜，她的信徒在雪线之上磨刀。"
+
+ # ----- Decisions -----
+ acg_mec_e_rechoose_seven_archon: "重择七神"
+ acg_mec_e_rechoose_seven_archon_desc: "七神各执一权。国是既变，主祭之神亦可更易——只是神座不容轻慢，须以正统为祭。每二十年一次。"
+ acg_mec_e_rechoose_moon: "重择月相"
+ acg_mec_e_rechoose_moon_desc: "三月轮转，月相有盈亏。信徒可在恒月、虹月、霜月之间重定主祭。每二十年一次。"
+
+ # ----- Event: Seven Archons -----
+ acg_mec_e_teyvat_religion.1.t: "神座之前"
+ acg_mec_e_teyvat_religion.1.d: "祭司们捧着七枚神徽跪在阶下。风、岩、雷、草、水、火、冰——七位执政各自等待着你的选择。神座只有一座，而神的耐心有限。"
+ acg_mec_e_teyvat_religion.1.a: "风神巴巴托斯"
+ acg_mec_e_teyvat_religion.1.b: "岩神摩拉克斯"
+ acg_mec_e_teyvat_religion.1.c: "雷神巴尔"
+ acg_mec_e_teyvat_religion.1.d: "草神布耶尔"
+ acg_mec_e_teyvat_religion.1.e: "水神芙卡洛斯"
+ acg_mec_e_teyvat_religion.1.f: "火神玛薇卡"
+ acg_mec_e_teyvat_religion.1.g: "冰神瓦沙嘉"
+
+ # ----- Event: Three Moons -----
+ acg_mec_e_teyvat_religion.2.t: "三月当空"
+ acg_mec_e_teyvat_religion.2.d: "月色落在祭坛上，三重光晕彼此交叠。恒月、虹月、霜月——三姐妹各有主张，而主祭只能有一位。"
+ acg_mec_e_teyvat_religion.2.a: "恒月"
+ acg_mec_e_teyvat_religion.2.b: "虹月"
+ acg_mec_e_teyvat_religion.2.c: "霜月"
+
+ # ----- Rebels: seven archons -----
+ acg_mec_e_seven_archons_rebels_demand: "改宗 $COUNTRYNAME$"
+ acg_mec_e_seven_archons_rebels_demand_desc: "宗教叛军为 $RELIGION$ 而战。他们要求我们承认其至高地位，或至少停止改宗，让他们安静地礼拜。"
+ acg_mec_e_seven_archons_rebels_title: "宗教"
+ acg_mec_e_seven_archons_rebels_name: "$RELIGION$ 狂信者"
+ acg_mec_e_seven_archons_rebels_desc: "宗教狂热者往往在异教徒统治的省份起事。他们要传播信仰，并惩戒一切不信者。"
+ acg_mec_e_seven_archons_rebels_army: "$RELIGION$ 军"
+
+ # ----- Rebels: moon goddess -----
+ acg_mec_e_moon_goddess_rebels_demand: "改宗 $COUNTRYNAME$"
+ acg_mec_e_moon_goddess_rebels_demand_desc: "宗教叛军为 $RELIGION$ 而战。他们要求我们承认其至高地位，或至少停止改宗，让他们安静地礼拜。"
+ acg_mec_e_moon_goddess_rebels_title: "宗教"
+ acg_mec_e_moon_goddess_rebels_name: "$RELIGION$ 狂信者"
+ acg_mec_e_moon_goddess_rebels_desc: "宗教狂热者往往在异教徒统治的省份起事。他们要传播信仰，并惩戒一切不信者。"
+ acg_mec_e_moon_goddess_rebels_army: "$RELIGION$ 军"

@@ -3,7 +3,7 @@ government = acg_monarchy
 add_government_reform = acg_universal_government_reform_1
 government_rank = 3
 primary_culture = acg_snezhnaya
-religion = acg
+religion = acg_mec_e_seven_archons
 technology_group = eastern
 capital = 33
 

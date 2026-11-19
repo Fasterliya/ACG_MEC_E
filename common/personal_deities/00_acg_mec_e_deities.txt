@@ -1,0 +1,228 @@
+# ACG_MEC_E - Teyvat personal deities
+# sprite 19-28 -> gfx/interface/acg_mec_e_deities_strip.dds (1148x41, 28 frames)
+# 1-12 vanilla (hindu + norse), 13-18 ACG1 reserved, 19-28 ours.
+
+# ===================== Seven Archons =====================
+
+acg_mec_e_deity_barbatos = {
+	sprite = 19
+	potential = { religion = acg_mec_e_seven_archons }
+	trigger = {}
+
+	land_morale = 0.10
+	land_attrition = -0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = no
+		}
+	}
+}
+
+acg_mec_e_deity_morax = {
+	sprite = 20
+	potential = { religion = acg_mec_e_seven_archons }
+	trigger = {}
+
+	defensiveness = 0.25
+	fort_maintenance_modifier = -0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+
+acg_mec_e_deity_baal = {
+	sprite = 21
+	potential = { religion = acg_mec_e_seven_archons }
+	trigger = {}
+
+	discipline = 0.05
+	shock_damage = 0.10
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = no
+		}
+	}
+}
+
+acg_mec_e_deity_buer = {
+	sprite = 22
+	potential = { religion = acg_mec_e_seven_archons }
+	trigger = {}
+
+	development_cost = -0.10
+	global_institution_spread = 0.10
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+
+acg_mec_e_deity_focalors = {
+	sprite = 23
+	potential = { religion = acg_mec_e_seven_archons }
+	trigger = {}
+
+	trade_efficiency = 0.10
+	global_tax_modifier = 0.05
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+
+acg_mec_e_deity_mavuika = {
+	sprite = 24
+	potential = { religion = acg_mec_e_seven_archons }
+	trigger = {}
+
+	fire_damage = 0.10
+	manpower_recovery_speed = 0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = no
+		}
+	}
+}
+
+acg_mec_e_deity_washajia = {
+	sprite = 25
+	potential = { religion = acg_mec_e_seven_archons }
+	trigger = {}
+
+	global_unrest = -2
+	defensiveness = 0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+# ===================== Three Moons =====================
+
+acg_mec_e_deity_hengyue = {
+	sprite = 26
+	potential = { religion = acg_mec_e_moon_goddess }
+	trigger = {}
+
+	tolerance_own = 2
+	prestige = 1
+	stability_cost_modifier = -0.10
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+acg_mec_e_deity_hongyue = {
+	sprite = 27
+	potential = { religion = acg_mec_e_moon_goddess }
+	trigger = {}
+
+	global_tax_modifier = 0.10
+	production_efficiency = 0.10
+	trade_efficiency = 0.10
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+
+acg_mec_e_deity_shuangyue = {
+	sprite = 28
+	potential = { religion = acg_mec_e_moon_goddess }
+	trigger = {}
+
+	discipline = 0.05
+	defensiveness = 0.20
+	manpower_recovery_speed = 0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}

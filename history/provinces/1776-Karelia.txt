@@ -6,7 +6,7 @@ remove_core = RWF
 #East Karelia
 
 capital = "Kem"
-religion = acg
+religion = acg_mec_e_moon_goddess
 hre = no
 is_city = yes
 base_tax = 1 
