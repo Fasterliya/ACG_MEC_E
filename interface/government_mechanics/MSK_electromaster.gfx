@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "MSK_electromaster_interaction"
+		texturefile = "gfx/interface/government_mechanics/MSK_electromaster/MSK_electromaster_interaction.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "government_reform_MSK_railgun_reform"
+		texturefile = "gfx/interface/government_reform_icons/MSK/MSK_railgun_reform.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

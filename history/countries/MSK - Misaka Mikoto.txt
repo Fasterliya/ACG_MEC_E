@@ -1,0 +1,31 @@
+# BEGIN ACGR_UNIT_GROUPS INITIAL ARMY
+unit_type = acgr_g10
+set_country_flag = acgr_unit_group_g10
+# END ACGR_UNIT_GROUPS
+government = acgr_republic
+add_government_reform = MSK_railgun_reform
+government_rank = 2
+primary_culture = supperability_magic_culture
+religion = acg
+technology_group = western
+capital = 1874
+historical_friend = SHI
+historical_friend = INX
+elector = yes
+1444.11.11 = {
+	monarch = {
+		name = "Mikoto"
+		dynasty = "Misaka"
+		birth_date = 1428.11.11
+		death_date = 1821.12.31
+		adm = 4
+		dip = 4
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = righteous_personality
+	add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = architectural_visionary_personality
+}

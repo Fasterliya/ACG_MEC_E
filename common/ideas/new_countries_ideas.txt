@@ -1345,7 +1345,7 @@ MSK_ideas = {
 	}
 	Only_my_railgun_MSK = {
 		artillery_shock = 1
-		fire_damage = 0.1
+		shock_damage = 0.1
 	}
 	Integrated_trading_network = {
 		trade_efficiency = 0.2

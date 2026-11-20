@@ -1,0 +1,57 @@
+MSK_electromaster_mechanic = {
+	available = {
+		always = yes
+	}
+
+	powers = {
+		MSK_electromaster_power = {
+			min = 0
+			max = 100
+			default = 0
+			base_monthly_growth = 0
+			reset_on_new_ruler = no
+			increases_with_global = no
+			is_good = yes
+
+			scaled_modifier = {
+				modifier = {
+					artillery_power = 0.20
+					shock_damage = 0.20
+				}
+			}
+		}
+	}
+
+	interactions = {
+		MSK_electromaster_charge = {
+			gui = prussian_militarization_gov_mech_1_2
+			cost_type = MSK_electromaster_power
+			trigger = {
+				mil_power = 30
+				NOT = {
+					has_government_power = {
+						mechanic_type = MSK_electromaster_mechanic
+						power_type = MSK_electromaster_power
+						value = 100
+					}
+				}
+			}
+			effect = {
+				add_mil_power = -30
+				add_government_power = {
+					mechanic_type = MSK_electromaster_mechanic
+					power_type = MSK_electromaster_power
+					value = 10
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 5
+				modifier = {
+					factor = 0
+					NOT = { mil_power = 300 }
+				}
+			}
+		}
+	}
+}

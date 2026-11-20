@@ -1,0 +1,21 @@
+MSK_railgun_reform = {
+	lock_level_when_selected = yes
+	icon = "MSK_railgun_reform"
+	potential = {
+		tag = MSK
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	government_abilities = {
+		MSK_electromaster_mechanic
+	}
+	modifiers = {
+		artillery_cost = -0.2
+		morale_damage = 0.1
+		global_manpower_modifier = 0.1
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}

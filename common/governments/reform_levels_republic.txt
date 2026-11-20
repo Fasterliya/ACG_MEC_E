@@ -10,6 +10,7 @@ acgr_republic = {
 				Combat_series_reform
 				JianNiang_government_reform
 				AcademyCity_government_reform
+				MSK_railgun_reform
 				Touhou_Republic_government_reform
 				ACG_MEC_HNA_chronicle_reform
 				Rhodes_island_government_reform
