@@ -1,0 +1,146 @@
+[
+ {
+  "tag": "JZH",
+  "mods": 14,
+  "uniq": 14,
+  "dup": [],
+  "per_slot": [
+   2,
+   1,
+   2,
+   1,
+   1,
+   2,
+   2
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "RGU",
+  "mods": 13,
+  "uniq": 13,
+  "dup": [],
+  "per_slot": [
+   2,
+   1,
+   1,
+   1,
+   2,
+   1,
+   2
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "XJA",
+  "mods": 13,
+  "uniq": 13,
+  "dup": [],
+  "per_slot": [
+   1,
+   1,
+   2,
+   2,
+   1,
+   1,
+   2
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "MGZ",
+  "mods": 15,
+  "uniq": 15,
+  "dup": [],
+  "per_slot": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "CXT",
+  "mods": 14,
+  "uniq": 14,
+  "dup": [],
+  "per_slot": [
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   1
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "FGL",
+  "mods": 13,
+  "uniq": 13,
+  "dup": [],
+  "per_slot": [
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   2
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "FSL",
+  "mods": 12,
+  "uniq": 12,
+  "dup": [],
+  "per_slot": [
+   1,
+   2,
+   1,
+   2,
+   1,
+   1,
+   1
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "MTL",
+  "mods": 13,
+  "uniq": 13,
+  "dup": [],
+  "per_slot": [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "offgrid": []
+ },
+ {
+  "tag": "YHH",
+  "mods": 14,
+  "uniq": 14,
+  "dup": [],
+  "per_slot": [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   1
+  ],
+  "offgrid": []
+ }
+]

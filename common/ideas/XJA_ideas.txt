@@ -11,11 +11,9 @@ XJA_ideas = {
 	}
 	free = yes
 	XJA_idea_1 = {
-		technology_cost = -0.1
-		institution_spread = 0.15
+		institution_spread = 0.1
 	}
 	XJA_idea_2 = {
-		development_cost = -0.1
 		build_cost = -0.1
 	}
 	XJA_idea_3 = {
@@ -23,15 +21,13 @@ XJA_ideas = {
 		global_tax_modifier = 0.1
 	}
 	XJA_idea_4 = {
-		prestige = 1.0
+		prestige = 0.5
 		diplomatic_reputation = 1
 	}
 	XJA_idea_5 = {
-		technology_cost = -0.05
-		prestige = 0.5
+		global_trade_power = 0.1
 	}
 	XJA_idea_6 = {
-		global_tax_modifier = 0.1
 		trade_efficiency = 0.1
 	}
 	XJA_idea_7 = {
