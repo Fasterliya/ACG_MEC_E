@@ -17,9 +17,9 @@ acg_mec_e_teyvat_group = {
 		}
 
 		country = {
-			tolerance_heretic = 2
-			global_unrest = -1
-			land_morale = 0.05
+			ae_impact = -0.10
+			tolerance_heretic = 1
+			infantry_power = 0.10
 		}
 
 		country_as_secondary = {
@@ -34,6 +34,9 @@ acg_mec_e_teyvat_group = {
 		heretic = { ACG_MEC_E_SEVEN_HERETIC ACG_MEC_E_ABYSS_ORDER }
 
 		personal_deity = yes
+		# Tengri-style syncretism: keep the Archon personal-deity slot AND allow a Syncretic Faith.
+		# "Other mechanics" (wiki 宗教修改 > 宗教的其他机制) stack on top of 特有机制 like personal_deity.
+		can_have_secondary_religion = yes
 
 		on_convert = {
 			change_religion = acg_mec_e_seven_archons
@@ -53,10 +56,9 @@ acg_mec_e_teyvat_group = {
 		}
 
 		country = {
-			tolerance_own = 2
-			advisor_pool = 1
-			spy_offence = 0.15
-			prestige = 0.5
+			trade_efficiency = 0.10
+			diplomats = 1
+			spy_offence = 0.50
 		}
 
 		country_as_secondary = {
@@ -71,6 +73,8 @@ acg_mec_e_teyvat_group = {
 		heretic = { ACG_MEC_E_MOON_HERETIC }
 
 		personal_deity = yes
+		# Tengri-style syncretism: keep the Three Moons personal-deity slot AND allow a Syncretic Faith.
+		can_have_secondary_religion = yes
 
 		on_convert = {
 			change_religion = acg_mec_e_moon_goddess
