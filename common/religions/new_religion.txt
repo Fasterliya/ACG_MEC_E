@@ -1,0 +1,1662 @@
+Anime = {
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	center_of_religion = 118	# Rome
+	flags_with_emblem_percentage = 33	# default == 0
+	flag_emblem_index_range = { 1 57 }
+	acg = {
+		color = { 0 0 178 }
+		icon = 34
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			global_trade_goods_size_modifier = 0.1
+			global_missionary_strength = 0.02
+		}
+		country_as_secondary = {
+			global_trade_goods_size_modifier = 0.10
+			tolerance_heretic = 1
+		}
+		province = {
+			min_local_autonomy = -5
+			local_culture_conversion_cost = -0.1
+		}
+		hre_religion = yes
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			Fate_reg
+			idol_reg
+			JianNiang
+			#Academycity
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			#Emperor_worship
+			Kirara
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		#uses_anglican_power = yes					
+		#aspects = {
+		#	Dalao_advisor_aspect
+		#	Dalao_leader_aspect
+		#	ACG_jihad_aspect
+		#	Recruit_acg_aspect
+		#	Saltedfish_heavyindustries_co_aspect 
+		#}
+		aspects_name = acg_ASPECTS
+		harmonized_modifier = harmonized_acg
+		on_convert = {
+			change_religion = acg
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		papacy = {
+			papal_tag = HTS	#不变
+			election_cost = 5
+			seat_of_papacy = 67
+			vampire = {
+				#吸血鬼
+				cost = 50
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+						has_country_modifier = new_acg_religion_1
+					}
+					any_owned_province = {
+						development = 10
+					}
+				}
+				effect = {
+					add_years_of_owned_provinces_production_income = {
+						years = 2
+						trigger = {
+							development = 10
+						}
+						custom_tooltip = vampire_tooltip
+					}
+					add_country_modifier = {
+						name = new_acg_religion_1
+						duration = 5475
+					}
+					hidden_effect = {
+						every_owned_province = {
+							limit = {
+								development = 10
+							}
+							add_province_modifier = { 
+								name = new_acg_religion_2
+								duration = 1825
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			Love_Trial = {
+				#恋爱裁判
+				cost = 50
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+					}
+					NOT = {
+						has_country_modifier = new_acg_religion_3
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = "new_acg_religion_3"
+						duration = 7300
+					}
+					custom_tooltip = Love_Trial_tooltip
+					hidden_effect = {
+						disband_rebels = anti_tax_rebels
+						disband_rebels = cossacks_rebels
+						disband_rebels = heretic_rebels
+						disband_rebels = noble_rebels 
+						disband_rebels = pretender_rebels 
+						disband_rebels = nationalist_rebels 
+						disband_rebels = revolutionary_rebels 
+						disband_rebels = particularist_rebels
+						disband_rebels = aimr_noble_rebels 
+						disband_rebels = zombie_rebels 
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			kami_no_mani_mani = {
+				#神的随波逐流
+				cost = 100
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+					}
+					num_of_cities = 5
+					NOT = {
+						has_country_modifier = new_acg_religion_4
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = "new_acg_religion_4"
+						duration = 7300
+					}
+					custom_tooltip = kami_no_mani_mani_tooltip
+					hidden_effect = {
+						random_owned_province = {
+							limit = {
+								NOT = {
+									has_province_modifier = new_acg_religion_5
+								}
+							}
+							add_base_production = 1
+							add_province_modifier = {
+								name = "new_acg_religion_5"
+								duration = 7300
+							}
+						}
+						random_owned_province = {
+							limit = {
+								NOT = {
+									has_province_modifier = new_acg_religion_5
+								}
+							}
+							add_base_production = 1
+							add_province_modifier = {
+								name = "new_acg_religion_5"
+								duration = 7300
+							}
+						}
+						random_owned_province = {
+							limit = {
+								NOT = {
+									has_province_modifier = new_acg_religion_5
+								}
+							}
+							add_base_production = 1
+							add_province_modifier = {
+								name = "new_acg_religion_5"
+								duration = 7300
+							}
+						}
+						random_owned_province = {
+							limit = {
+								NOT = {
+									has_province_modifier = new_acg_religion_5
+								}
+							}
+							add_base_production = 1
+							add_province_modifier = {
+								name = "new_acg_religion_5"
+								duration = 7300
+							}
+						}
+						random_owned_province = {
+							limit = {
+								NOT = {
+									has_province_modifier = new_acg_religion_5
+								}
+							}
+							add_base_production = 1
+							add_province_modifier = {
+								name = "new_acg_religion_5"
+								duration = 7300
+							}
+						}
+						if = {
+							limit = {
+								num_of_owned_provinces_with = {
+									value = 5
+									OR = {
+										has_building = cathedral
+										has_building = temple 
+									}
+								}
+							}
+							random_owned_province = {
+								limit = {
+									OR = {
+										has_building = cathedral
+										has_building = temple 
+									}
+									NOT = {
+										has_province_modifier = new_acg_religion_6
+									}
+								}
+								add_base_tax = 1
+								add_province_modifier = {
+									name = "new_acg_religion_6"
+									duration = 7300
+								}
+							}
+							random_owned_province = {
+								limit = {
+									OR = {
+										has_building = cathedral
+										has_building = temple 
+									}
+									NOT = {
+										has_province_modifier = new_acg_religion_6
+									}
+								}
+								add_base_tax = 1
+								add_province_modifier = {
+									name = "new_acg_religion_6"
+									duration = 7300
+								}
+							}
+							random_owned_province = {
+								limit = {
+									OR = {
+										has_building = cathedral
+										has_building = temple 
+									}
+									NOT = {
+										has_province_modifier = new_acg_religion_6
+									}
+								}
+								add_base_tax = 1
+								add_province_modifier = {
+									name = "new_acg_religion_6"
+									duration = 7300
+								}
+							}
+							random_owned_province = {
+								limit = {
+									OR = {
+										has_building = cathedral
+										has_building = temple 
+									}
+									NOT = {
+										has_province_modifier = new_acg_religion_6
+									}
+								}
+								add_base_tax = 1
+								add_province_modifier = {
+									name = "new_acg_religion_6"
+									duration = 7300
+								}
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			wakusei_loop = {
+				#行星环
+				cost = 50
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+					}
+					NOT = {
+						has_country_modifier = new_acg_religion_7
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = "new_acg_religion_7"
+						duration = 7300
+					}
+					custom_tooltip = wakusei_loop_tooltip
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			romeo_and_cinderella = {
+				#罗密欧与辛德瑞拉
+				cost = 50
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+					}
+					NOT = {
+						has_country_modifier = new_acg_religion_8
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = "new_acg_religion_8"
+						duration = 7300
+					}
+					custom_tooltip = romeo_and_cinderella_tooltip
+					hidden_effect = {
+						every_known_country = {
+							limit = {
+								marriage_with = ROOT
+							}
+							add_opinion = {
+								who = ROOT
+								modifier = romeo_and_cinderella_modifier
+							}
+						}
+					}
+					random_known_country = {
+						limit = {
+							ai_attitude = {
+								who = ROOT
+								attitude = attitude_outraged
+							}
+							NOT = {
+								has_opinion_modifier = {
+									who = ROOT
+									modifier = romeo_and_cinderella_modifier
+								}
+							}
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = romeo_and_cinderella_modifier
+						}
+					}
+					random_known_country = {
+						limit = {
+							ai_attitude = {
+								who = ROOT
+								attitude = attitude_outraged
+							}
+							NOT = {
+								has_opinion_modifier = {
+									who = ROOT
+									modifier = romeo_and_cinderella_modifier
+								}
+							}
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = romeo_and_cinderella_modifier
+						}
+					}
+					random_known_country = {
+						limit = {
+							ai_attitude = {
+								who = ROOT
+								attitude = attitude_outraged
+							}
+							NOT = {
+								has_opinion_modifier = {
+									who = ROOT
+									modifier = romeo_and_cinderella_modifier
+								}
+							}
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = romeo_and_cinderella_modifier
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			kami_poi_na = {
+				#像神一样呐
+				cost = 50
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+					}
+					NOT = {
+						has_country_modifier = new_acg_religion_9
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = "new_acg_religion_9"
+						duration = 7300
+					}
+					custom_tooltip = kami_poi_na_tooltip
+					hidden_effect = {
+						every_owned_province = {
+							limit = {
+								has_cardinal = yes
+							}
+							province_event = {
+								id = church_aspects.2
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			hidorinbo_envy = {
+				#孑然妒火
+				cost = 100
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+					}
+					NOT = {
+						has_country_modifier = new_acg_religion_10
+					}
+					is_at_war = yes
+				}
+				effect = {
+					add_country_modifier = {
+						name = "new_acg_religion_10"
+						duration = 7300
+					}
+					custom_tooltip = hidorinbo_envy_tooltip
+					hidden_effect = {
+						every_known_country = {
+							limit = {
+								war_with = ROOT
+							}
+							country_event = {
+								id = church_aspects.3
+							}
+						}
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			hello_planet = {
+				#你好，星球
+				cost = 50
+				potential = {
+					always = yes
+				}
+				allow = {
+					NOT = {
+						war_with = HTS
+					}
+					NOT = {
+						has_country_modifier = new_acg_religion_11
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = "new_acg_religion_11"
+						duration = 7300
+					}
+					change_innovativeness = 2
+					custom_tooltip = hello_planet_tooltip
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	}
+	JianNiang = {
+		color = { 0 0 178 }
+		icon = 35
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			naval_forcelimit_modifier = 0.33
+			navy_tradition = 1
+			allowed_marine_fraction = 0.1
+		}
+		country_as_secondary = {
+			naval_forcelimit_modifier = 0.1
+			navy_tradition_decay = -0.01
+		}
+		province = {
+			ship_recruit_speed = -0.33
+		}
+		uses_anglican_power = yes
+		aspects = {
+			jnr_ability_1_aspect
+			jnr_ability_7_aspect
+			jnr_ability_2_aspect
+			jnr_ability_3_aspect
+			jnr_ability_4_aspect
+			jnr_ability_5_aspect
+			jnr_ability_6_aspect
+		}
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			Fate_reg
+			idol_reg
+			acg
+			#Academycity
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			Kirara
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		on_convert = {
+			change_religion = JianNiang
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		aspects_name = JianNiang_ASPECTS
+		harmonized_modifier = harmonized_JianNiang
+	}
+	# #spirit = {
+	# 	color = { 237 28 36 }
+	# 	icon = 32
+	# 	allow_female_defenders_of_the_faith = yes
+	# 	allowed_conversion = {
+	# 		acg
+	# 		Nasalik
+	# 		Fate_reg
+	# 		idol_reg
+	# 		JianNiang
+	# 		#Academycity
+	# 		MagicalGirl
+	# 		#Goddess_ww
+	# 		Gensokyo_reg
+	# 		# Emperor_worship
+	# 		Kirara
+	# 		#Senshado
+	# 		goddess_worship
+	# 		yurihime
+	# 	}
+	# 	on_convert = {
+	# 		change_religion = #spirit
+	# 		add_prestige = -100
+	# 		remove_Tohou_school = yes
+	# 		remove_country_modifier = the_test_act
+	# 		remove_country_modifier = superintendent_office
+	# 		remove_country_modifier = the_popery_act
+	# 		remove_country_modifier = counter_reformation
+	# 		remove_country_modifier = the_statue_in_restraint_of_appeals
+	# 		remove_country_modifier = bavarian_jesuits
+	# 		remove_country_modifier = the_societas_jesu
+	# 		remove_country_modifier = the_declaration_of_indulgence
+	# 		remove_country_modifier = de_heretico_comburendo
+	# 		remove_country_modifier = the_conventicle_act
+	# 		add_country_modifier = {
+	# 			name = "conversion_zeal"
+	# 			duration = 3650
+	# 		}
+	# 	}
+	# 	country = {
+	# 		idea_cost = -0.1
+	# 		fire_damage = 0.05
+	# 	}
+	# 	country_as_secondary = {
+	# 		reinforce_speed = 0.2
+	# 	}
+	# 	province = {
+	# 		allowed_num_of_buildings = 1
+	# 	}
+	# 	uses_anglican_power = yes		# Uses church power/aspect mechanics
+	# 	aspects = {
+	# 		Datealive_aspect
+	# 		KeepPace_with_TheTimes_aspect
+	# 		Magic_perception_aspect
+	# 		Military_exercises_aspect
+	# 		Magic_school_aspect
+	# 	}
+	# 	aspects_name = spirit_ASPECTS
+	# 	harmonized_modifier = harmonized_spirit
+	# }
+	idol_reg = {
+		color = { 255 127 39 }
+		icon = 30
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			land_morale = 0.05
+			tolerance_own = 2
+		}
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			Fate_reg
+			acg
+			JianNiang
+			#Academycity
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			Kirara
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		on_convert = {
+			change_religion = idol_reg
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		country_as_secondary = {
+			recover_army_morale_speed = 0.1
+			tolerance_own = 1
+		}
+		province = {
+			local_production_efficiency = 0.1
+		}
+		uses_anglican_power = yes		# Uses church power/aspect mechanics
+		aspects = {
+			switch_color_aspect
+			change_volume_aspect
+			court_live_aspect
+			national_live_aspect
+			live_oversea_aspect
+			Idol_of_academy_2_aspect
+			#Office_stage_aspect
+		}
+		aspects_name = Idol_ASPECTS
+		harmonized_modifier = harmonized_idol_reg
+	}
+	Nasalik = {
+		color = { 192 192 192 }
+		icon = 37
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			global_manpower_modifier = 0.1
+			land_forcelimit_modifier = 0.1
+		}
+		country_as_secondary = {
+			manpower_recovery_speed = 0.1
+			land_forcelimit_modifier = 0.1
+		}
+		province = {
+			local_defensiveness = 0.1
+		}
+		uses_anglican_power = yes		# Uses church power/aspect mechanics
+		allowed_conversion = {
+			#spirit
+			acg
+			Fate_reg
+			idol_reg
+			JianNiang
+			#Academycity
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			Kirara
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		on_convert = {
+			change_religion = Nasalik
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		aspects = {
+			Call_lower_dead_aspect
+			Defense_construction_aspect
+			Stratum_fief_aspect
+			Undead_strengthen_aspect
+			Magic_school_aspect
+		}
+		aspects_name = Nasalik_ASPECTS
+		harmonized_modifier = harmonized_Nasalik
+	}
+	MikuProtestant = {
+		#未来新教
+		flags_with_emblem_percentage = 20
+		flag_emblem_index_range = { 1 4 }
+		color = { 255 255 128 }
+		icon = 31
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			technology_cost = -0.05
+			tolerance_own = 1
+		}
+		country_as_secondary = {
+			siege_ability = 0.1
+			technology_cost = -0.10
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		uses_anglican_power = yes
+		aspects = {
+			miku_protestant_vampire_aspect
+			miku_protestant_love_trial_aspect
+			miku_protestant_kami_no_mani_mani_aspect
+			miku_protestant_wakusei_loop_aspect
+			miku_protestant_romeo_and_cinderella_aspect
+			miku_protestant_kami_poi_na_aspect
+			miku_protestant_hidorinbo_envy_aspect
+			miku_protestant_hello_planet_aspect
+		}
+		aspects_name = MikuProtestant_ASPECTS
+		hre_heretic_religion = yes
+		# 国家改宗统一由根本性宗教改革决议处理，避免宗教界面绕过压力门槛。
+		on_convert = {
+			change_religion = MikuProtestant
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		harmonized_modifier = harmonized_MikuProtestant
+	}
+	MagicalGirl = {
+		color = { 255 128 192 }
+		icon = 36
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			army_tradition_decay = -0.01
+			diplomatic_annexation_cost = -0.1
+		}
+		country_as_secondary = {
+			core_creation = -0.15
+			diplomatic_annexation_cost = -0.1
+		}
+		province = {
+			local_manpower_modifier = 0.1
+		}
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			Fate_reg
+			idol_reg
+			JianNiang
+			#Academycity
+			acg
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			Kirara
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		has_patriarchs = yes		# Uses patriarch authority
+		orthodox_icons = {
+			Magic_Madoka = {
+				#圆神
+				ae_impact = -0.2
+				improve_relation_modifier = 0.25
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			Magic_Homura = {
+				#焰魔
+				core_creation = -0.25
+				great_project_upgrade_cost = -0.33
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			Magic_Ui = {
+				#忧
+				manpower_recovery_speed = 0.25
+				sailors_recovery_speed = 0.3
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			Magic_Kuroe = {
+				#黑江
+				diplomatic_reputation = 3
+				prestige_decay = -0.02
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			Magic_Mikoto = {
+				#镜层之主
+				discipline = 0.075
+				army_tradition_decay = -0.02
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			Magic_Yuuna = {
+				#友奈
+				infantry_power = 0.2
+				infantry_shock = 0.15
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			Magic_Illya = {
+				#伊莉雅
+				magic_speed_government = 3
+				magic_power_government = 5
+				allow = {
+					61 = {
+						owned_by = ROOT
+						religion = MagicalGirl
+					}
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+		on_convert = {
+			change_religion = MagicalGirl
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		#uses_anglican_power = yes					
+		#aspects = {
+		#	Sign_the_contract_aspect
+		#	Prepare_hunting_aspect
+		#	Grief_seed_aspect
+		#	Ethnic_fusion_aspect
+		#	build_memory_museum
+		#}
+		aspects_name = MagicalGirl_ASPECTS
+		harmonized_modifier = harmonized_MagicalGirl
+	}
+	# #Goddess_ww = {
+	# 	color = { 0 255 255 }
+	# 	icon = 33
+	# 	allow_female_defenders_of_the_faith = yes
+	# 	country = {
+	# 		missionary_maintenance_cost = -0.1
+	# 		warscore_cost_vs_other_religion = -0.1
+	# 	}
+	# 	country_as_secondary = {
+	# 		warscore_cost_vs_other_religion = -0.05
+	# 	}
+	# 	province = {
+	# 		trade_value_modifier = 0.1
+	# 	}
+	# 	allowed_conversion = {
+	# 		goddess_worship
+	# 		#spirit
+	# 		Nasalik
+	# 		Fate_reg
+	# 		idol_reg
+	# 		JianNiang
+	# 		#Academycity
+	# 		MagicalGirl
+	# 		acg
+	# 		Gensokyo_reg
+	# 		# Emperor_worship
+	# 		Kirara
+	# 		#Senshado
+	# 		goddess_worship
+	# 		yurihime
+	# 	}
+	# 	on_convert = {
+	# 		change_religion = #Goddess_ww
+	# 		add_prestige = -100
+	# 		remove_Tohou_school = yes
+	# 		remove_country_modifier = the_test_act
+	# 		remove_country_modifier = superintendent_office
+	# 		remove_country_modifier = the_popery_act
+	# 		remove_country_modifier = counter_reformation
+	# 		remove_country_modifier = the_statue_in_restraint_of_appeals
+	# 		remove_country_modifier = bavarian_jesuits
+	# 		remove_country_modifier = the_societas_jesu
+	# 		remove_country_modifier = the_declaration_of_indulgence
+	# 		remove_country_modifier = de_heretico_comburendo
+	# 		remove_country_modifier = the_conventicle_act
+	# 		add_country_modifier = {
+	# 			name = "conversion_zeal"
+	# 			duration = 3650
+	# 		}
+	# 	}
+	# 	personal_deity = yes
+	# 	harmonized_modifier = harmonized_#Goddess_ww
+	# }
+	Fate_reg = {
+		color = { 255 255 128 }
+		icon = 39
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			fort_maintenance_modifier = -0.15
+			global_trade_power = 0.2
+		}
+		country_as_secondary = {
+			global_trade_power = 0.20
+			fort_maintenance_modifier = -0.10
+		}
+		province = {
+			local_governing_cost = -0.1
+		}
+		hre_heretic_religion = yes
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			acg
+			idol_reg
+			JianNiang
+			#Academycity
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			Kirara
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		on_convert = {
+			change_religion = Fate_reg
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		uses_church_power = yes		# Uses church power/aspect mechanics
+		aspects = {
+			leadership_aspect
+			Magic_letout_aspect
+			Baptism_singing_aspect
+			Search_unknown_aspect
+			Star_blazers_aspect
+			Concept_of_improvement_aspect
+			Prayer_of_faith_aspect
+			Ghostdom_guardian_aspect
+			The_protection_ofthe_sungod_aspect
+			Gifts_fromthe_stars_aspect
+			Voice_of_an_angel_aspect
+			Dilemma_wisdom_aspect
+			Crazy_aspect
+			Stormy_voyager_aspect
+			Ultimate_justice_aspect
+			Golden_rule_aspect
+			Wisdom_ofthe_greatgod_aspect
+			The_bells_aspect
+			Breath_interruption_aspect
+			ride_on_aspect
+			Position_construction_aspect
+			Extraterritorial_life_aspect
+		}
+		aspects_name = Fate_reg_ASPECTS
+		harmonized_modifier = harmonized_Fate_reg
+	}
+	Gensokyo_reg = {
+		color = { 157 10 16 }
+		icon = 38
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			development_cost = -0.1
+			ae_impact = -0.1
+		}
+		country_as_secondary = {
+			development_cost = -0.10
+			ae_impact = -0.10
+		}
+		province = {
+			local_institution_spread = 0.15
+		}
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			Fate_reg
+			idol_reg
+			JianNiang
+			#Academycity
+			MagicalGirl
+			#Goddess_ww
+			acg
+			# Emperor_worship
+			Kirara
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		on_convert = {
+			change_religion = Gensokyo_reg
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		uses_church_power = yes
+		aspects = {
+			Gensokyo_0_Reimu
+			Gensokyo_0_Marisa
+			Gensokyo_0_Patchouli
+			Gensokyo_0_Yuyuko
+			Gensokyo_0_Aya
+			Gensokyo_0_Yukari
+			Gensokyo_0_Cirno
+			Gensokyo_0_Sakuya
+			Gensokyo_0_Konpaku
+			Gensokyo_0_Kaguya
+			Gensokyo_0_Eirin
+			Gensokyo_0_Meirin
+			Gensokyo_0_Alice
+			Gensokyo_0_Reisen
+			Gensokyo_0_Remilia
+			Gensokyo_0_Yuuka
+			Gensokyo_0_Mokou
+			Gensokyo_0_omachi
+			Gensokyo_0_Shikieiki
+			Gensokyo_0_Flandrei
+			Gensokyo_0_Sanae
+			Gensokyo_0_ubterranean_Animism
+			Gensokyo_0_Suwako
+			Gensokyo_0_Suika
+			Gensokyo_0_Tenshi
+			Gensokyo_0_Kokoro
+			Gensokyo_0_Kanako
+			Gensokyo_0_Kawasiro_Nitori
+			Gensokyo_0_Himekaidou_Hatate
+			Gensokyo_0_Watatsuki_no_Toyohime
+			Gensokyo_0_Watatsuki_no_Yorihime
+			Gensokyo_0_Ibaraki_Kasen
+			Gensokyo_0_Hoshiguma_Yugi
+			Gensokyo_0_Hieda_no_Akyuu
+			Gensokyo_0_Kamishirasawa_Keine
+		}
+		aspects_name = Gensokyo_reg_ASPECTS
+		harmonized_modifier = harmonized_Gensokyo_reg
+	}
+	# Emperor_worship = {
+	# 	color = { 255 255 255 }
+	# 	icon = 44
+	# 	allow_female_defenders_of_the_faith = yes
+	# 	country = {
+	# 		legitimacy = 1
+	# 		global_autonomy = -0.05
+	# 	}
+	# 	allowed_conversion = {
+	# 		#spirit
+	# 		Nasalik
+	# 		Fate_reg
+	# 		idol_reg
+	# 		JianNiang
+	# 		#Academycity
+	# 		MagicalGirl
+	# 		#Goddess_ww
+	# 		acg
+	# 		Kirara
+	# 		#Senshado
+	# 		goddess_worship
+	# 		yurihime
+	# 	}
+	# 	on_convert = {
+	# 		change_religion = Emperor_worship
+	# 		add_prestige = -100
+	# 		remove_country_modifier = the_test_act
+	# 		remove_country_modifier = superintendent_office
+	# 		remove_country_modifier = the_popery_act
+	# 		remove_country_modifier = counter_reformation
+	# 		remove_country_modifier = the_statue_in_restraint_of_appeals
+	# 		remove_country_modifier = bavarian_jesuits
+	# 		remove_country_modifier = the_societas_jesu
+	# 		remove_country_modifier = the_declaration_of_indulgence
+	# 		remove_country_modifier = de_heretico_comburendo
+	# 		remove_country_modifier = the_conventicle_act
+	# 		add_country_modifier = {
+	# 			name = "conversion_zeal"
+	# 			duration = 3650
+	# 		}
+	# 	}
+	# 	country_as_secondary = {
+	# 		infantry_power = 0.1
+	# 	}
+	# 	province = {
+	# 		local_unrest = -2
+	# 	}
+	# }
+	ElDorado_religion = {
+		color = { 237 28 36 }
+		icon = 41
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			stability_cost_modifier = -0.2
+			global_tax_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_institution_spread = 0.2
+			global_tax_modifier = 0.1
+		}
+		province = {
+			local_colonial_growth = 10
+		}
+		#authority = yes
+		#religious_reforms = yes
+		#reform_tooltip = ElDorado_religion_REFORM_TOOLTIP
+	}
+	Kirara = {
+		#
+		flags_with_emblem_percentage = 20
+		flag_emblem_index_range = { 1 4 }
+		color = { 116 153 223 }
+		icon = 42
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			global_heretic_missionary_strength = 0.02
+			diplomatic_upkeep = 1
+		}
+		country_as_secondary = {
+			global_missionary_strength = 0.02
+			diplomatic_reputation = 1
+		}
+		province = {
+			province_trade_power_modifier = 0.1
+		}
+		hre_heretic_religion = yes
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			Fate_reg
+			idol_reg
+			JianNiang
+			acg
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			#Academycity
+			#Senshado
+			goddess_worship
+			yurihime
+		}
+		on_convert = {
+			change_religion = Kirara
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		holy_sites = {
+			410
+			324
+			385
+			379
+			151
+			75
+			118
+			236
+			1028
+		}
+		blessings = {
+			Kurumi_blessing
+			Chino_blessing
+			Karen_blessing
+			Kirara_blessing
+			Yui_blessing
+			Rin_blessing
+			Yuno_blessing
+			Shamiko_blessing
+			Yuzuko_blessing
+		}
+		harmonized_modifier = harmonized_Academycity
+	}
+	# #Senshado = {
+	# 	#
+	# 	flags_with_emblem_percentage = 20
+	# 	flag_emblem_index_range = { 1 4 }
+	# 	color = { 116 153 223 }
+	# 	icon = 43
+	# 	allow_female_defenders_of_the_faith = yes
+	# 	country = {
+	# 		cav_to_inf_ratio = 0.25
+	# 		cavalry_flanking = 0.5
+	# 	}
+	# 	country_as_secondary = {
+	# 		cavalry_power = 0.1
+	# 	}
+	# 	province = {
+	# 		land_forcelimit = 0.1
+	# 	}
+	# 	hre_heretic_religion = yes
+	# 	allowed_conversion = {
+	# 		#spirit
+	# 		Nasalik
+	# 		Fate_reg
+	# 		idol_reg
+	# 		JianNiang
+	# 		acg
+	# 		MagicalGirl
+	# 		#Goddess_ww
+	# 		Gensokyo_reg
+	# 		# Emperor_worship
+	# 		#Academycity
+	# 		Kirara
+	# 		goddess_worship
+	# 		yurihime
+	# 	}
+	# 	uses_anglican_power = yes
+	# 	aspects = {
+	# 		#Senshado_Exchange_aspect
+	# 	}
+	# 	on_convert = {
+	# 		change_religion = #Senshado
+	# 		add_prestige = -100
+	# 		remove_Tohou_school = yes
+	# 		remove_country_modifier = the_test_act
+	# 		remove_country_modifier = superintendent_office
+	# 		remove_country_modifier = the_popery_act
+	# 		remove_country_modifier = counter_reformation
+	# 		remove_country_modifier = the_statue_in_restraint_of_appeals
+	# 		remove_country_modifier = bavarian_jesuits
+	# 		remove_country_modifier = the_societas_jesu
+	# 		remove_country_modifier = the_declaration_of_indulgence
+	# 		remove_country_modifier = de_heretico_comburendo
+	# 		remove_country_modifier = the_conventicle_act
+	# 		add_country_modifier = {
+	# 			name = "conversion_zeal"
+	# 			duration = 3650
+	# 		}
+	# 	}
+	# 	harmonized_modifier = harmonized_Academycity
+	# }
+	goddess_worship = {
+		color = { 76 76 229 }
+		icon = 45
+		allow_female_defenders_of_the_faith = yes
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			Fate_reg
+			idol_reg
+			JianNiang
+			acg
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			#Academycity
+			#Senshado
+			Kirara
+			goddess_worship
+			yurihime
+		}
+		country = {
+			land_maintenance_modifier = -0.05
+			advisor_cost = -0.1
+		}
+		country_as_secondary = {
+			land_maintenance_modifier = -0.1
+			advisor_cost = -0.15
+		}
+		province = {
+			local_development_cost = -0.05
+		}
+		on_convert = {
+			change_religion = goddess_worship
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		fervor = yes
+	}
+	Elzia_reg = {
+		color = { 96 156 163 }
+		icon = 46
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			global_missionary_strength = 0.02
+			overextension_impact_modifier = -0.15
+		}
+		province = {
+			local_institution_spread = 0.1
+		}
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			overextension_impact_modifier = -0.1
+		}
+		allowed_center_conversion = {
+			acg
+		}
+		allowed_conversion = {
+			acg
+		}
+		on_convert = {
+			change_religion = Elzia_reg
+			add_prestige = -100
+			add_stability = -3
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		uses_church_power = yes
+		aspects = {
+			Elzia_Imanity_0_Dogma
+			Elzia_Seiren_0_Dogma
+			Elzia_Werebeast_0_Dogma
+			Elzia_Lunamana_0_Dogma
+			Elzia_Dhampir_0_Dogma
+			Elzia_Demonia_0_Dogma
+			Elzia_Ex_Machina_0_Dogma
+			Elzia_Fairy_0_Dogma
+			Elzia_Dwarf_0_Dogma
+			Elzia_Elf_0_Dogma
+			Elzia_Flugel_0_Dogma
+			Elzia_Gigant_0_Dogma
+			Elzia_Dragonia_0_Dogma
+			Elzia_Elemental_0_Dogma
+			Elzia_Phantasma_0_Dogma
+			Elzia_Old_Deus_0_Dogma
+			Elzia_Imanity_1_Dogma
+			Elzia_Seiren_1_Dogma
+			Elzia_Werebeast_1_Dogma
+			Elzia_Lunamana_1_Dogma
+			Elzia_Dhampir_1_Dogma
+			Elzia_Demonia_1_Dogma
+			Elzia_Ex_Machina_1_Dogma
+			Elzia_Fairy_1_Dogma
+			Elzia_Dwarf_1_Dogma
+			Elzia_Elf_1_Dogma
+			Elzia_Flugel_1_Dogma
+			Elzia_Gigant_1_Dogma
+			Elzia_Dragonia_1_Dogma
+			Elzia_Elemental_1_Dogma
+			Elzia_Phantasma_1_Dogma
+			Elzia_Old_Deus_1_Dogma
+			Elzia_Imanity_2_Dogma
+			Elzia_Seiren_2_Dogma
+			Elzia_Werebeast_2_Dogma
+			Elzia_Lunamana_2_Dogma
+			Elzia_Dhampir_2_Dogma
+			Elzia_Demonia_2_Dogma
+			Elzia_Ex_Machina_2_Dogma
+			Elzia_Fairy_2_Dogma
+			Elzia_Dwarf_2_Dogma
+			Elzia_Elf_2_Dogma
+			Elzia_Flugel_2_Dogma
+			Elzia_Gigant_2_Dogma
+			Elzia_Dragonia_2_Dogma
+			Elzia_Elemental_2_Dogma
+			Elzia_Phantasma_2_Dogma
+			Elzia_Old_Deus_2_Dogma
+		}
+		aspects_name = Elzia_reg_ASPECTS
+		misguided_heretic = yes
+		declare_war_in_regency = yes
+		date = 1510.1.1
+		harmonized_modifier = harmonized_Academycity
+		heretic = {
+			ELZIAREGA
+			ELZIAREGB
+		}
+	}
+	yurihime = {
+		flags_with_emblem_percentage = 1
+		flag_emblem_index_range = { 1 4 }
+		color = { 255 165 0 }
+		icon = 47
+		allow_female_defenders_of_the_faith = yes
+		country = {
+			idea_cost = -0.05
+			global_missionary_strength = 0.02
+		}
+		country_as_secondary = {
+			idea_cost = -0.1
+			technology_cost = -0.05
+		}
+		province = {
+			local_tax_modifier = 0.1
+		}
+		hre_heretic_religion = yes
+		allowed_conversion = {
+			#spirit
+			Nasalik
+			acg
+			idol_reg
+			JianNiang
+			#Academycity
+			MagicalGirl
+			#Goddess_ww
+			Gensokyo_reg
+			# Emperor_worship
+			Kirara
+			#Senshado
+			Fate_reg
+			goddess_worship
+			yurihime
+		}
+		on_convert = {
+			change_religion = yurihime
+			add_prestige = -100
+			add_stability = -3
+			remove_Tohou_school = yes
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		heretic = {
+			YURIHIMES
+		}
+		uses_church_power = yes
+		aspects = {
+			free_magazine_aspect
+			release_date_aspect
+			army_defence_aspect
+			unconcious_religion_aspect
+			region_fans_aspect
+			reform_production_aspect
+			embrace_newideas_aspect
+			mochany_protogan_aspect
+			reform_edusystem_aspect
+			find_supports_aspect
+			open_country_aspect
+		}
+		aspects_name = yurihime_ASPECTS
+		harmonized_modifier = harmonized_yurihime		# 定义见 common/event_modifiers/zz_acg_mec_e_harmonized.txt
+	}
+	Inuyasha_religion = {
+		color = { 114 179 214 }
+		icon = 48
+		allowed_conversion = {
+		}
+		country = {
+			tolerance_heathen = 4
+			tolerance_heretic = 4
+		}
+		country_as_secondary = {
+			tolerance_heretic = 1
+			tolerance_heathen = 2
+		}
+		
+		misguided_heretic = yes
+		
+		on_convert = {
+		}
+		
+		heretic = { }
+	}
+}

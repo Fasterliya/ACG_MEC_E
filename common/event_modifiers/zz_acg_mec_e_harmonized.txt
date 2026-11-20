@@ -1,0 +1,20 @@
+# ACG_MEC_E - 补全 ACG1 new_religion.txt 里引用但未定义的 harmonized_modifier
+# 命名与格式对齐 ACG1: common/event_modifiers/acg_harmonized_modifiers.txt（1 条修正 + religion = yes）
+# 同时使用，文件名不同，不覆盖 ACG1 的任何文件。
+
+harmonized_Academycity = {
+	global_missionary_strength = 0.02
+	religion = yes
+}
+
+harmonized_Gensokyo_reg = {
+	development_cost = -0.05
+	religion = yes
+}
+
+harmonized_yurihime = {
+	idea_cost = -0.05
+	religion = yes
+}
+
+# ElDorado_religion / Inuyasha_religion / goddess_worship 在 new_religion.txt 里没有 harmonized_modifier 引用，无需定义。
