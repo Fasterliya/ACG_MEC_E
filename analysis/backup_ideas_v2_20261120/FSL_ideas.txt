@@ -1,0 +1,34 @@
+FSL_ideas = {
+	start = {
+		naval_morale = 0.1
+		global_ship_trade_power = 0.1
+	}
+	bonus = {
+		naval_forcelimit_modifier = 0.2
+	}
+	trigger = {
+		tag = FSL
+	}
+	free = yes
+	FSL_idea_1 = {
+		heavy_ship_power = 0.1
+	}
+	FSL_idea_2 = {
+		recover_navy_morale_speed = 0.1
+	}
+	FSL_idea_3 = {
+		sailors_recovery_speed = 0.1
+	}
+	FSL_idea_4 = {
+		trade_efficiency = 0.1
+	}
+	FSL_idea_5 = {
+		navy_tradition_decay = -0.01
+	}
+	FSL_idea_6 = {
+		global_trade_power = 0.1
+	}
+	FSL_idea_7 = {
+		global_tax_modifier = 0.05
+	}
+}

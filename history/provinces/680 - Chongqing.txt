@@ -1,10 +1,10 @@
 # 680 - Chongqing
 
-owner = XJA
-controller = XJA
-add_core = XJA
-culture = acg_wuthering_waves
-religion = acg
+owner = HMC
+controller = HMC
+add_core = HMC
+culture = acg_hongmao
+religion = confucianism
 capital = "Chongqing"
 trade_goods = spices
 hre = no
@@ -12,18 +12,23 @@ base_tax = 8
 base_production = 8
 base_manpower = 4
 is_city = yes
+add_core = CXI
+add_core = SHU
 discovered_by = chinese
 discovered_by = nomad_group
 discovered_by = tech_gensokyan
 extra_cost = 8
 center_of_trade = 1
 
-# Zhang Xianzhong's Xi empire
-1655.1.1 = {
-discovered_by = SPA
+1644.10.1 = {
+	owner = CXI
+	controller = CXI
+} # Zhang Xianzhong's Xi empire
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1658.4.1 = {
+	owner = QNG
+	controller = QNG
 }
-#Novus Atlas Sinensis
-
-
-# Three Feudatories revolt
-
+1662.1.1 = { remove_core = MNG }
+1673.12.1 = { controller = CZH } # Three Feudatories revolt
+1680.1.1 = { controller = QNG }

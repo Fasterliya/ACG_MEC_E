@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = acg_hongmao
 religion = acg
 technology_group = chinese
-capital = 681
+capital = 680
 
 1444.11.11 = {
 	monarch = {

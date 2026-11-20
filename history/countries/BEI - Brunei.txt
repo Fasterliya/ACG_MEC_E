@@ -3,7 +3,6 @@ add_government_reform = mandala_reform
 primary_culture = bornean
 religion = sunni
 technology_group = chinese
-capital = 4804	# Brunei Town
 religious_school = shafii_school
 
 1399.1.1 = {

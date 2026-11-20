@@ -9,7 +9,7 @@ capital = 2681
 
 1444.11.11 = {
 	monarch = {
-		name = "摄政"
+		name = "坎特蕾拉"
 		dynasty = "翡萨烈"
 		birth_date = 1400.1.1
 		death_date = 1821.12.31

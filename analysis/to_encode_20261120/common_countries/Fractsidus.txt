@@ -1,0 +1,61 @@
+#Fractsidus (Wuthering Waves) - 残星会
+
+graphical_culture = acggfx
+
+color = { 150 40 60 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 110 25 45 }
+
+historical_idea_groups = {
+	espionage_ideas
+	offensive_ideas
+	quality_ideas
+	defensive_ideas
+	administrative_ideas
+	influence_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"弗洛洛 #0" = 60
+	"Phrolova #0" = 60
+	"Scar #0" = 60
+	"Nyx #0" = 60
+	"Rin #0" = 60
+}
+
+leader_names = {
+	Phrolova Scar Nyx Rin
+}
+
+ship_names = {
+	"Fractsidus" "Duskstar"
+}

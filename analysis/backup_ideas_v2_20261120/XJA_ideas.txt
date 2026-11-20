@@ -1,0 +1,34 @@
+XJA_ideas = {
+	start = {
+		technology_cost = -0.05
+		development_cost = -0.05
+	}
+	bonus = {
+		all_power_cost = -0.05
+	}
+	trigger = {
+		tag = XJA
+	}
+	free = yes
+	XJA_idea_1 = {
+		technology_cost = -0.05
+	}
+	XJA_idea_2 = {
+		development_cost = -0.05
+	}
+	XJA_idea_3 = {
+		build_cost = -0.1
+	}
+	XJA_idea_4 = {
+		prestige = 0.5
+	}
+	XJA_idea_5 = {
+		diplomatic_reputation = 1
+	}
+	XJA_idea_6 = {
+		global_tax_modifier = 0.05
+	}
+	XJA_idea_7 = {
+		land_morale = 0.05
+	}
+}

@@ -1,8 +1,8 @@
 #622 - Palembang
 
-owner = LGN
-controller = LGN
-add_core = LGN
+owner = RGU
+controller = RGU
+add_core = RGU
 
 culture = acg_wuthering_waves
 religion = acg

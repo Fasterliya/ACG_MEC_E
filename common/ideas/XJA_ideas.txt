@@ -1,7 +1,7 @@
 XJA_ideas = {
 	start = {
-		technology_cost = -0.05
-		development_cost = -0.05
+		technology_cost = -0.1
+		development_cost = -0.1
 	}
 	bonus = {
 		all_power_cost = -0.05
@@ -11,24 +11,31 @@ XJA_ideas = {
 	}
 	free = yes
 	XJA_idea_1 = {
-		technology_cost = -0.05
+		technology_cost = -0.1
+		institution_spread = 0.15
 	}
 	XJA_idea_2 = {
-		development_cost = -0.05
-	}
-	XJA_idea_3 = {
+		development_cost = -0.1
 		build_cost = -0.1
 	}
-	XJA_idea_4 = {
-		prestige = 0.5
+	XJA_idea_3 = {
+		production_efficiency = 0.1
+		global_tax_modifier = 0.1
 	}
-	XJA_idea_5 = {
+	XJA_idea_4 = {
+		prestige = 1.0
 		diplomatic_reputation = 1
 	}
+	XJA_idea_5 = {
+		technology_cost = -0.05
+		prestige = 0.5
+	}
 	XJA_idea_6 = {
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.1
+		trade_efficiency = 0.1
 	}
 	XJA_idea_7 = {
-		land_morale = 0.05
+		land_morale = 0.1
+		discipline = 0.05
 	}
 }

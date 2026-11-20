@@ -45,7 +45,7 @@ historical_units = {
 }
 
 monarch_names = {
-	"Regent #0" = 60
+	"Cantarella #0" = 60
 	"Fisalia #0" = 60
 	"Maren #0" = 60
 	"Corin #0" = 60

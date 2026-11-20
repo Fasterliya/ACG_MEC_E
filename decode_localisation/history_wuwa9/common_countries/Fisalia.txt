@@ -45,7 +45,7 @@ historical_units = {
 }
 
 monarch_names = {
-	"摄政 #0" = 60
+	"坎特蕾拉 #0" = 60
 	"Fisalia #0" = 60
 	"Maren #0" = 60
 	"Corin #0" = 60

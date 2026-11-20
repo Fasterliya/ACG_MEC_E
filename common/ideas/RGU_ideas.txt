@@ -1,0 +1,41 @@
+RGU_ideas = {
+	start = {
+		trade_efficiency = 0.15
+		global_trade_power = 0.15
+	}
+	bonus = {
+		diplomatic_reputation = 2
+	}
+	trigger = {
+		tag = RGU
+	}
+	free = yes
+	RGU_idea_1 = {
+		production_efficiency = 0.15
+		global_tax_modifier = 0.1
+	}
+	RGU_idea_2 = {
+		trade_efficiency = 0.15
+		global_ship_trade_power = 0.2
+	}
+	RGU_idea_3 = {
+		global_ship_trade_power = 0.2
+		naval_forcelimit_modifier = 0.2
+	}
+	RGU_idea_4 = {
+		prestige = 1.0
+		diplomatic_reputation = 1
+	}
+	RGU_idea_5 = {
+		build_cost = -0.15
+		development_cost = -0.1
+	}
+	RGU_idea_6 = {
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+	}
+	RGU_idea_7 = {
+		naval_morale = 0.15
+		heavy_ship_power = 0.15
+	}
+}

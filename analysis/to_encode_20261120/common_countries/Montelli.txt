@@ -1,0 +1,61 @@
+#Montelli (Wuthering Waves) - 莫塔里
+
+graphical_culture = acggfx
+
+color = { 140 60 90 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 110 40 70 }
+
+historical_idea_groups = {
+	economic_ideas
+	trade_ideas
+	diplomatic_ideas
+	administrative_ideas
+	defensive_ideas
+	quality_ideas
+	humanist_ideas
+	influence_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"珂莱塔 #0" = 60
+	"Carlotta #0" = 60
+	"Montelli #0" = 60
+	"Enzo #0" = 60
+	"Livia #0" = 60
+}
+
+leader_names = {
+	Carlotta Montelli Enzo Livia
+}
+
+ship_names = {
+	"Montelli" "Goldmark"
+}

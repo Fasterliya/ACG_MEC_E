@@ -1,6 +1,10 @@
 
+owner = BLS
+controller = BLS
+add_core = BLS
+
 culture = bornean
-religion = hinduism
+religion = acg
 capital = "Pontiniak"
 trade_goods = gold
 hre = no
@@ -18,10 +22,12 @@ discovered_by = ottoman
 discovered_by = tech_gensokyan
 
 1444.1.1 = {
-	owner = SMB
-	controller = SMB
-	add_core = SMB
+
 	is_city = yes
 }
 
-1521.1.1 = { discovered_by = POR }
+
+1521.1.1 = {
+discovered_by = POR
+}
+

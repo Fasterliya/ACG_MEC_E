@@ -1,0 +1,61 @@
+#Ragunna (Wuthering Waves) - 拉古那
+
+graphical_culture = acggfx
+
+color = { 230 150 60 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 200 120 40 }
+
+historical_idea_groups = {
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	defensive_ideas
+	quality_ideas
+	administrative_ideas
+	influence_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"罗斯玛丽 #0" = 60
+	"Rosa #0" = 60
+	"Lumi #0" = 60
+	"Enzo #0" = 60
+	"Vera #0" = 60
+}
+
+leader_names = {
+	Rosa Lumi Enzo Vera
+}
+
+ship_names = {
+	"Ragunna" "Carnival"
+}

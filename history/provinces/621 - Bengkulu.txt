@@ -1,8 +1,8 @@
 #621 - Bengkulu
 
-owner = LGN
-controller = LGN
-add_core = LGN
+owner = RGU
+controller = RGU
+add_core = RGU
 
 latent_trade_goods = {
 
