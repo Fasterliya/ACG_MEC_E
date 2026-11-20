@@ -144,7 +144,7 @@ declarewar = {
 			}
 		}
 	}
-
+	
 	condition = {
 		tooltip = CANNOT_DECLARE_WARS_TEUTONS_HRE
 		potential = {
@@ -175,124 +175,124 @@ declarewar = {
 	effect = {
 		on_war_declaration_effect = yes
 		if = { #灵梦相关内容
-            limit = {
-                FROM = { 
-                    has_country_flag = stand_trial_from_NBL
-                }
-                ROOT = { 
-                    culture_group = DF_Project
-                }
-            }
+		limit = {
+			FROM = { 
+				has_country_flag = stand_trial_from_NBL
+			}
 			ROOT = { 
-            	add_country_modifier = { 
-                	name = NBL_diolomatic_trial_modifier
-                	duration = -1
-            	}	
-			}
-        }
-		if = {	#战车学院
-			limit = {
-				has_government_attribute = enables_gup_customs
-			}
-			add_country_modifier = {
-				name = gup_government_modifier
-				duration = 730
+				culture_group = DF_Project
 			}
 		}
-		if = {	#魔力宝石
-			limit = {
-				has_age_ability = ab_Magic_Gem
-				NOT = {
-					has_country_modifier = ab_Magic_Gem_modifier
-				}
-			}
-			add_country_modifier = {
-				name = ab_Magic_Gem_modifier
+		ROOT = { 
+			add_country_modifier = { 
+				name = NBL_diolomatic_trial_modifier
 				duration = -1
-			}
-		}
-		if = {	#某个战争和和平相关的政府改革
-			limit = {
-				has_government_attribute = enables_Developing_productivity_reform_customs
-			}
-			remove_country_modifier = Developing_productivity_reform_modifier_1
-			add_country_modifier = {
-				name = Developing_productivity_reform_modifier_2
-				duration = -1
-			}
-		}
-		if = {	#谭雅
-			limit = {
-				has_government_attribute = Die_Starke_ist_die_Gerechtigkeit_reform
-			}
-			FROM = {
-				add_country_modifier = {
-					name = "Angst_vor_einem_starken_Feind"
-					duration = -1
-				}
-			}
-		}
-		if = {
-			limit = { 
-				mission_completed = hun_the_anatolian_threat
-				NOT = {
-					has_country_flag = hun_declared_first_war_against_tur
-				}
-				FROM = { tag = TUR }
-			}
-			add_country_modifier = {
-				name = hun_avenge_varna
-				duration = -1
-			}
-			set_country_flag = hun_declared_first_war_against_tur
-		}
-		if = {
-			limit = { 
-				has_country_flag = nor_norwegian_independence_modifier
-				FROM = { tag = DAN }
-			}
-			add_country_modifier = {
-				name = nor_norwegian_independence_war_mod
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = teu_joined_the_hre
-				tag = TEU
-				is_part_of_hre = yes
-				FROM = { is_part_of_hre = yes }
-			}
-			clr_country_flag = teu_joined_the_hre
-			country_event = {
-				id = flavor_teu.33
-				days = 10
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = ned_no_stab_loss_on_independence_flag
-				war_with = BUR
-				has_casus_belli = {
-					type = cb_independence_war
-					target = FROM
-				}
-			}
-			clr_country_flag = ned_no_stab_loss_on_independence_flag
-			add_stability = 1
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					tag = SL9
-				}
-				country_event = {
-					id = flavorSL9.17
-					days = 5
-				}
-			}
+			}	
 		}
 	}
+	if = {	#战车学院
+	limit = {
+		has_government_attribute = enables_gup_customs
+	}
+	add_country_modifier = {
+		name = gup_government_modifier
+		duration = 730
+	}
+}
+if = {	#魔力宝石
+limit = {
+	has_age_ability = ab_Magic_Gem
+	NOT = {
+		has_country_modifier = ab_Magic_Gem_modifier
+	}
+}
+add_country_modifier = {
+	name = ab_Magic_Gem_modifier
+	duration = -1
+}
+}
+if = {	#某个战争和和平相关的政府改革
+limit = {
+	has_government_attribute = enables_Developing_productivity_reform_customs
+}
+remove_country_modifier = Developing_productivity_reform_modifier_1
+add_country_modifier = {
+	name = Developing_productivity_reform_modifier_2
+	duration = -1
+}
+}
+if = {	#谭雅
+limit = {
+	has_government_attribute = Die_Starke_ist_die_Gerechtigkeit_reform
+}
+FROM = {
+	add_country_modifier = {
+		name = "Angst_vor_einem_starken_Feind"
+		duration = -1
+	}
+}
+}
+if = {
+	limit = { 
+		mission_completed = hun_the_anatolian_threat
+		NOT = {
+			has_country_flag = hun_declared_first_war_against_tur
+		}
+		FROM = { tag = TUR }
+	}
+	add_country_modifier = {
+		name = hun_avenge_varna
+		duration = -1
+	}
+	set_country_flag = hun_declared_first_war_against_tur
+}
+if = {
+	limit = { 
+		has_country_flag = nor_norwegian_independence_modifier
+		FROM = { tag = DAN }
+	}
+	add_country_modifier = {
+		name = nor_norwegian_independence_war_mod
+		duration = -1
+	}
+}
+if = {
+	limit = {
+		has_country_flag = teu_joined_the_hre
+		tag = TEU
+		is_part_of_hre = yes
+		FROM = { is_part_of_hre = yes }
+	}
+	clr_country_flag = teu_joined_the_hre
+	country_event = {
+		id = flavor_teu.33
+		days = 10
+	}
+}
+if = {
+	limit = {
+		has_country_flag = ned_no_stab_loss_on_independence_flag
+		war_with = BUR
+		has_casus_belli = {
+			type = cb_independence_war
+			target = FROM
+		}
+	}
+	clr_country_flag = ned_no_stab_loss_on_independence_flag
+	add_stability = 1
+}
+hidden_effect = {
+	if = {
+		limit = {
+			tag = SL9
+		}
+		country_event = {
+			id = flavorSL9.17
+			days = 5
+		}
+	}
+}
+}
 }
 
 allianceaction = {
@@ -416,10 +416,10 @@ allianceaction = {
 			FROM = {
 				ai = yes
 			}
-		 }
+		}
 		allow = {
 			always = no
-		 }
+		}
 	}
 	condition = {
 		tooltip = FROM_CANNOT_MAKE_ALLIANCES_2
@@ -431,32 +431,32 @@ allianceaction = {
 			FROM = {
 				ai = yes
 			}
-		 }
+		}
 		allow = { 
 			always = no
 		}
 	}
 	effect = {
 		if = {	#acgu
-			limit = {
-				has_government_attribute = enables_kirara_customs
-			}
-			add_country_modifier = {
-				name = kirara_government_modifier
-				duration = 1825
-			}
+		limit = {
+			has_government_attribute = enables_kirara_customs
 		}
-		change_asha_vahishta = { value = 2 }
-		if = { 
-			limit = { 
-				tag = NBL
-			}	
-			change_variable = {
-				which = ACGR_shenpan_var
-				value = 2
-			}
+		add_country_modifier = {
+			name = kirara_government_modifier
+			duration = 1825
 		}
 	}
+	change_asha_vahishta = { value = 2 }
+	if = { 
+		limit = { 
+			tag = NBL
+		}	
+		change_variable = {
+			which = ACGR_shenpan_var
+			value = 2
+		}
+	}
+}
 }
 
 enforce_peace = {
@@ -641,8 +641,8 @@ influence_nation = {
 				has_country_flag = GER_buff_influence_nation_flag
 			}
 			add_favors = {
-			   who = FROM
-			   amount = 5
+				who = FROM
+				amount = 5
 			}
 		}
 	}
@@ -1026,6 +1026,30 @@ callaction = {
 					casus_belli = cb_yyk_italian_unification
 				}
 			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	#ACG_MEC_MSK —— 茵蒂克丝讨伐战：防守方无法召唤盟友
+	condition = {
+		tooltip = ACG_MEC_MSK_INX_CB_NO_ALLY_CALL_TT
+		potential = {
+			OR = {
+				ROOT = {
+					is_in_war = {
+						defender_leader = ROOT
+						casus_belli = cb_msk_index_war
+					}
+				}
+				ROOT = {
+					is_in_war = {
+						attacker_leader = ROOT
+						casus_belli = cb_msk_index_war
+					}
+				}
+			}
+			
 		}
 		allow = {
 			always = no

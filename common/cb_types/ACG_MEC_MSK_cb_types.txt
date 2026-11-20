@@ -1,0 +1,11 @@
+# ACG_MEC_MSK —— 御坂美琴对茵蒂克丝的特殊宣战理由
+# 该 CB 只能通过决议中的 declare_war_with_cb 效果触发，不自动授予任何国家。
+
+cb_msk_index_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+
+	war_goal = war_goal_msk_index_war
+}

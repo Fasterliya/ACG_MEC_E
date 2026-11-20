@@ -1,4 +1,7 @@
 l_english:
+
+### MISSION ###
+
  MSK_missions_1:0 "超电磁炮的征途"
  MSK_missions_1_1_title:0 "御坂美琴的日常"
  MSK_missions_1_1_desc:0 "常盘台的早晨从巡逻开始，风纪委员在校门口点名。要在这片土地上站住，先得把兵力补满。"
@@ -76,3 +79,87 @@ l_english:
  MSK_missions_4_7_desc:0 "花掉 300 点军事点数，扩建常盘台后山的炮厂。铸出来的炮更便宜，也更沉。"
  MSK_missions_4_8_title:0 "选票的价钱"
  MSK_missions_4_8_desc:0 "花掉 300 点外交点数，让德意志的宫廷记住学园都市的名字。吞并一个附庸，从此不用再等十年。"
+
+### MISSION TOOLTIP ###
+
+ MSK_missions_3_1_c_tt1_yes: "£yes£若我们结盟@SHI§Y[SHI.GetName]§!且拥有§G+100§!好感度"
+ MSK_missions_3_1_c_tt1_no: "£no£若我们结盟@SHI§Y[SHI.GetName]§!且拥有§G+100§!好感度"
+ MSK_missions_3_1_c_tt2: "否则:"
+
+### MODIFIER ###
+
+ MSK_army_spirit:0 "学园都市的士气"
+ MSK_danish_campaign:0 "丹麦战役"
+ MSK_baltic_dominance:0 "波罗的海霸权"
+ MSK_mobilization:0 "动员令"
+ MSK_annex_glory:0 "吞并的荣光"
+ MSK_academy_budget:0 "学园都市的预算"
+ MSK_galley_doctrine:0 "桨帆船条例"
+ MSK_northern_crown:0 "北方的王冠"
+ MSK_scandinavia_crown:0 "斯堪的纳维亚的王冠"
+ MSK_hanse_doctrine:0 "汉萨军制"
+ MSK_railgun_doctrine:0 "超电磁炮战术"
+ MSK_academy_city:0 "学园都市的产业"
+ MSK_dual_route:0 "双线商路"
+ MSK_low_countries:0 "低地整合"
+ MSK_diplomatic_merit:0 "外交声望"
+ MSK_saxony_trade:0 "萨克森贸易区"
+ MSK_rhine_trade:0 "莱茵军械"
+ MSK_academy_works:0 "学园都市的营建"
+ MSK_hanse_ledger:0 "汉萨账簿"
+ MSK_hanse_prosperity:0 "汉萨繁荣"
+ MSK_golden_age:0 "学园都市的黄金时代"
+ MSK_academy_hub:0 "研究所群"
+ MSK_national_bank:0 "学园都市的银行"
+ MSK_allied_arms:0 "联合兵科"
+ MSK_electoral_bloc:0 "选帝侯集团"
+ MSK_electoral_prestige:0 "选帝侯的威望"
+ MSK_court_of_union:0 "同盟宫廷"
+ MSK_oath_of_alliance:0 "同盟誓约"
+ MSK_shared_drill:0 "联合操典"
+ MSK_allied_guard:0 "库洛近卫"
+ MSK_allied_court:0 "库洛的宫廷"
+ MSK_zealand_port:0 "西兰岛的海港"
+ MSK_bought_admin:0 "常盘台的预算案"
+ MSK_bought_military:0 "战术演习成果"
+ MSK_bought_diplo:0 "通商交涉成果"
+ MSK_bought_research:0 "研究院的拨款"
+ MSK_bought_artillery:0 "炮厂扩建"
+ MSK_bought_influence:0 "选票的价钱"
+
+### REFORM ###
+
+ MSK_railgun_reform:0 "超电磁炮"
+ MSK_railgun_reform_desc:0 "学园都市把御坂美琴的能力写进了军制：炮兵造价更低，冲击更狠，全国的人力也更充足。"
+ MSK_electromaster_mechanic:0 "电击使"
+ ability_MSK_electromaster_mechanic:0 "电击使"
+ MSK_electromaster_power:0 "电击使"
+ MSK_electromaster_power_desc:0 "投入军事点数蓄积电力。蓄得越满，炮兵作战与冲击伤害越强。"
+ monthly_MSK_electromaster_power:0 "每月电击使变化"
+ MSK_electromaster_power_gain_modifier:0 "电击使增益"
+ MSK_electromaster_charge:0 "蓄电"
+
+### DECISION ###
+
+ ACG_MEC_MSK_decalre_INX_war_decision_title:0 "对茵蒂克丝宣战"
+ ACG_MEC_MSK_decalre_INX_war_decision_desc:0 "风纪委员已经锁定了茵蒂克丝的位置。这一次不再发传票——学园都市的军队将直接开进她的领地。此决议仅能执行一次，宣战瞬间双方的盟友都不会被召唤。"
+
+### TOOLTIP ###
+
+ ACG_MEC_MSK_missions_1_1_INX_war_tooltip:0 "解锁「§Y对茵蒂克丝宣战§!」，双方均无法召唤盟友"
+ ACG_MEC_MSK_INX_CB_NO_ALLY_CALL_TT:0 "正在被御坂美琴的「§Y茵蒂克丝讨伐§!」宣战，无法召唤盟友。"
+ ACG_MEC_void: ""
+
+### CB ###
+
+ cb_msk_index_war:0 "茵蒂克丝讨伐"
+ cb_msk_index_war_desc:0 "茵蒂克丝的存在本身，就是对学园都市秩序的挑战。风纪委员的传票已经作废，接下来由超电磁炮说话。"
+
+### WARGOAL ###
+
+ war_goal_msk_index_war:0 "讨伐茵蒂克丝"
+ war_goal_msk_index_war_desc:0 "以绝对优势压倒茵蒂克丝，迫使对方在谈判桌上低头。"
+
+### WAR NAME ###
+
+ MSK_INDEX_WAR_NAME:0 "御坂美琴对$DEFENDER$的茵蒂克丝讨伐战"

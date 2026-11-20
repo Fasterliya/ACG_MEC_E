@@ -1,0 +1,37 @@
+country_decisions = {
+	ACG_MEC_MSK_decalre_INX_war_decision = {
+		color = { 230 230 230 }
+		potential = {
+			has_country_flag = ACG_MEC_MSK_INX_war_unlocked_flag
+			NOT = { has_country_flag = ACG_MEC_MSK_decalre_INX_war_decision_flag }
+			exists = INX
+			NOT = { war_with = INX }
+			NOT = {
+				is_in_war = {
+					casus_belli = cb_msk_index_war
+				}
+			}
+		}
+		allow = {
+			exists = INX
+			NOT = { war_with = INX }
+			NOT = {
+				is_in_war = {
+					casus_belli = cb_msk_index_war
+				}
+			}
+		}
+		effect = {
+			declare_war_with_cb = {
+				who = INX
+				casus_belli = cb_msk_index_war
+			}
+			hidden_effect = {
+				set_country_flag = ACG_MEC_MSK_decalre_INX_war_decision_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

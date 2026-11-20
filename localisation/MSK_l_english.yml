@@ -1,4 +1,7 @@
 ﻿l_english:
+
+### MISSION ###
+
  MSK_missions_1:0 "…5uÁx®p„vV"
  MSK_missions_1_1_title:0 "¡VBWŽ4t„våe8^"
  MSK_missions_1_1_desc:0 "8^ØvðS„véehfÎNáTIVËYÿÎ˜ªuÔYXT(W!hè•ãS¹pT0‰(WÙGrW0WNÙzOOÿHQ—VŠbuQ›Reˆán0"
@@ -18,7 +21,7 @@
  MSK_missions_2_2_title:0 "àeýw›RwÆ–âV"
  MSK_missions_2_2_desc:0 "¡l	g…ýw›R„vºNÑQ(WNwÿmNýw’cúQÏP7h„v5–¿u0N(„KQîhRVŽNNßu±)YÿfRíVý^„vekuQŒT®pR,rN!k’c0R†NÎW™XN0"
  MSK_missions_2_3_title:0 "ÑžPR„v‰béb"
- MSK_missions_2_3_desc:0 "SVfRíVý^„v›Q–‹SÇ‹v•NÑžPRöeÿyY¡l	gVkpÿêSŠbTKQ„vpSàz¨c†NÇegÿÞTte*NÎ˜ªuÔYXT„v–HS0"
+ MSK_missions_2_3_desc:0 "SVfRíVý^„v›Q–‹SÇ‹v•NÑžPRöeÿyY¡l	gVkpÿêSŠbTKQ„vpSàz¨c†NÇegÿÞTte*NÎ˜ªuÔYXT„v–:S0"
  MSK_missions_2_4_title:0 "—fè„vnkb"
  MSK_missions_2_4_desc:0 "ÑžPRŠbÎ˜ªuÔYXT„v×e²N0RfRíVý^KbÌ‘0ÎN±åNTÿÙµ^ÎW^êS	gN*NTWR—‰gÎNÿ—fèmNN7h0"
  MSK_missions_2_5_title:0 "…5uÁx®p"
@@ -38,7 +41,7 @@
  MSK_missions_3_3_desc:0 "wƒpQ„v=nãSjPán†NFU9‚0fRíVý^‰ŽV‰ÿHQ—V¨cVÙGbè•0"
  MSK_missions_3_4_title:0 "±ƒ5ƒpQ"
  MSK_missions_3_4_desc:0 "±ƒ5ƒ³l2N¸S„vÎW!XNa„„íVÿÎNegý=f·Va×VgÌR„v0W¹e0"
- MSK_missions_3_5_title:0 "(„KQîh8fHS"
+ MSK_missions_3_5_title:0 "(„KQîh8f:S"
  MSK_missions_3_5_desc:0 "(„KQîh„vö”ÿwNÆ–^ÿ=fS¹eFUï„væSNïz0"
  MSK_missions_3_6_title:0 "›Q°hFUï"
  MSK_missions_3_6_desc:0 "2NagFUï(WfRíVý^KbÌ‘TbNag0Ð„v=f^9S0ÐvŒTÁ”ÿmNÐ®p¿OœR—VY„v®p0"
@@ -67,7 +70,7 @@
  MSK_missions_5_6_title:0 "8^ØvðS„v„˜—rHh"
  MSK_missions_5_6_desc:0 "±‚‰c 150 ¹pLˆ?e¹ppeÿŠb8^ØvðS„vú^Qr„˜—rN!k'`ybNeg0x4Y04lål0þV¸uÿÎNdký¿OœRN›N0"
  MSK_missions_5_7_title:0 "b=go`N"
- MSK_missions_5_7_desc:0 "±‚‰c 150 ¹p›Q‹N¹ppeÿŠbÎ˜ªuÔYXTŒTYe^Éb0Ro`NHW0ÃuÇ„vºNŒT¡lÃuÇ„vºNÿ(WbHWNN=fNÞV‹N0"
+ MSK_missions_5_7_desc:0 "±‚‰c 150 ¹p›Q‹N¹ppeÿŠbÎ˜ªuÔYXTŒTYe^Éb0Ro`N:W0ÃuÇ„vºNŒT¡lÃuÇ„vºNÿ(Wb:WNN=fNÞV‹N0"
  MSK_missions_5_8_title:0 "FU²N‰m"
  MSK_missions_5_8_desc:0 "±‚‰c 150 ¹pY²N¹ppeÿ©‹Il(„„vFU†™(WfRíVý^Ì‘cNÛbLr0"
  MSK_missions_4_6_title:0 "xvzb–„vèb>k"
@@ -76,3 +79,87 @@
  MSK_missions_4_7_desc:0 "±‚‰c 300 ¹p›Q‹N¹ppeÿibú^8^ØvðSTqS„v®p‚S0ø”úQeg„v®pôf¿OœRÿmNôf‰l0"
  MSK_missions_4_8_title:0 "	hy„v÷N±”"
  MSK_missions_4_8_desc:0 "±‚‰c 300 ¹pY²N¹ppeÿ©‹·Va×V„v«R÷^°‹OOfRíVý^„vTWR0Tv^N*ND–¸^ÿÎNdkN(uQIrASt^0"
+
+### MISSION TOOLTIP ###
+
+ MSK_missions_3_1_c_tt1_yes: "£yes£å‚bìNÓußv@SHI§Y[SHI.GetName]§!Nåb	g§G+100§!‹Ya¦^"
+ MSK_missions_3_1_c_tt1_no: "£no£å‚bìNÓußv@SHI§Y[SHI.GetName]§!Nåb	g§G+100§!‹Ya¦^"
+ MSK_missions_3_1_c_tt2: "&TR:"
+
+### MODIFIER ###
+
+ MSK_army_spirit:0 "fRíVý^„vëXl"
+ MSK_danish_campaign:0 "9N¦žbyV"
+ MSK_baltic_dominance:0 "âlW„vwm8—Cg"
+ MSK_mobilization:0 "¨RXTäN"
+ MSK_annex_glory:0 "Tv^„vcƒIQ"
+ MSK_academy_budget:0 "fRíVý^„v„˜—r"
+ MSK_galley_doctrine:0 "hh^9‚ag‹O"
+ MSK_northern_crown:0 "S¹e„v‹s Q"
+ MSK_scandinavia_crown:0 "¯e*X„v³uôušN„v‹s Q"
+ MSK_hanse_doctrine:0 "Il(„›Q6R"
+ MSK_railgun_doctrine:0 "…5uÁx®pb=g"
+ MSK_academy_city:0 "fRíVý^„vµNN"
+ MSK_dual_route:0 "ÌS¿uFUï"
+ MSK_low_countries:0 "NO0WteT"
+ MSK_diplomatic_merit:0 "Y²NðXg"
+ MSK_saxony_trade:0 "(„KQîh8f:S"
+ MSK_rhine_trade:0 "±ƒ5ƒ›Q°h"
+ MSK_academy_works:0 "fRíVý^„v%„ú^"
+ MSK_hanse_ledger:0 "Il(„&?|"
+ MSK_hanse_prosperity:0 "Il(„Aucƒ"
+ MSK_golden_age:0 "fRíVý^„vÄžÑ‘öeãN"
+ MSK_academy_hub:0 "xvzNb²"
+ MSK_national_bank:0 "fRíVý^„vö”Lˆ"
+ MSK_allied_arms:0 "TwTuQÑy"
+ MSK_electoral_bloc:0 "	^¯OÆ–âV"
+ MSK_electoral_prestige:0 "	^¯O„vZg"
+ MSK_court_of_union:0 "Tßv«R÷^"
+ MSK_oath_of_alliance:0 "Tßv“Š¦u"
+ MSK_shared_drill:0 "TwTÍdxQ"
+ MSK_allied_guard:0 "“^mÑkS"
+ MSK_allied_court:0 "“^m„v«R÷^"
+ MSK_zealand_port:0 "‰pQ›S„vwm=n"
+ MSK_bought_admin:0 "8^ØvðS„v„˜—rHh"
+ MSK_bought_military:0 "b=go`Nbœg"
+ MSK_bought_diplo:0 "FU²N‰mbœg"
+ MSK_bought_research:0 "xvzb–„vèb>k"
+ MSK_bought_artillery:0 "®p‚Sibú^"
+ MSK_bought_influence:0 "	hy„v÷N±”"
+
+### REFORM ###
+
+ MSK_railgun_reform:0 "…5uÁx®p"
+ MSK_railgun_reform_desc:0 "fRíVý^Šb¡VBWŽ4t„výw›R™QÛ†N›Q6Rÿ®puQ.÷NôfNOÿ²QûQôfàrÿhQýV„vºN›RmNôfEQ³0"
+ MSK_electromaster_mechanic:0 "5uûQO"
+ ability_MSK_electromaster_mechanic:0 "5uûQO"
+ MSK_electromaster_power:0 "5uûQO"
+ MSK_electromaster_power_desc:0 "•beQ›Q‹N¹ppeÄ„ïy5u›R0Ä„—VŠánÿ®puQjObN²QûQ2O³RŠ:V0"
+ monthly_MSK_electromaster_power:0 "Ïkg5uûQOØSS"
+ MSK_electromaster_power_gain_modifier:0 "5uûQOžXÊv"
+ MSK_electromaster_charge:0 "Ä„5u"
+
+### DECISION ###
+
+ ACG_MEC_MSK_decalre_INX_war_decision_title:0 "ùR5ƒ‚„KQN±Rb"
+ ACG_MEC_MSK_decalre_INX_war_decision_desc:0 "Î˜ªuÔYXTòTÏu•šR†N5ƒ‚„KQN„vMOn0ÙN!kNQÑS.OhyfRíVý^„v›Q–Sôv¥cVÛyY„v†˜0W0dk³Q®‹ÅNýwgbLˆN!kÿ±Rb¬wô•ÌS¹e„vßvËSýNO«ˆìS2U0"
+
+### TOOLTIP ###
+
+ ACG_MEC_MSK_missions_1_1_INX_war_tooltip:0 "ã‰•0§YùR5ƒ‚„KQN±Rb§!0ÿÌS¹eGWàeÕlìS2UßvËS"
+ ACG_MEC_MSK_INX_CB_NO_ALLY_CALL_TT:0 "ck(W«ˆ¡VBWŽ4t„v0§Y5ƒ‚„KQN¨‹O§!0±RbÿàeÕlìS2UßvËS0"
+ ACG_MEC_void: ""
+
+### CB ###
+
+ cb_msk_index_war:0 "5ƒ‚„KQN¨‹O"
+ cb_msk_index_war_desc:0 "5ƒ‚„KQN„vXR(W,g«Žÿ1S=fùRfRíVý^éy^„vcb0Î˜ªuÔYXT„v.OhyòTÏujOŸ^ÿ¥cNeg1u…5uÁx®pô‹Ý‹0"
+
+### WARGOAL ###
+
+ war_goal_msk_index_war:0 "¨‹O5ƒ‚„KQN"
+ war_goal_msk_index_war_desc:0 "åNÝuùRO¿R‹SP5ƒ‚„KQNÿëOùR¹e(WŒ2RLhNNO4Y0"
+
+### WAR NAME ###
+
+ MSK_INDEX_WAR_NAME:0 "¡VBWŽ4tùR$DEFENDER$„v5ƒ‚„KQN¨‹Ob"
