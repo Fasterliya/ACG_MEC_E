@@ -1,0 +1,61 @@
+#Xingju-Academy (Wuthering Waves)
+
+graphical_culture = acggfx
+
+color = { 170 130 230 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 140 100 200 }
+
+historical_idea_groups = {
+	innovative_ideas
+	economic_ideas
+	administrative_ideas
+	humanist_ideas
+	diplomatic_ideas
+	defensive_ideas
+	quality_ideas
+	trade_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"Aemis #0" = 60
+	"Aemis #0" = 60
+	"Ling #0" = 60
+	"Baird #0" = 60
+	"Nova #0" = 60
+}
+
+leader_names = {
+	Aemis Ling Baird Nova
+}
+
+ship_names = {
+	"Xingju" "Torchlight"
+}

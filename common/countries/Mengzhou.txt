@@ -1,0 +1,61 @@
+#Mengzhou (Wuthering Waves)
+
+graphical_culture = acggfx
+
+color = { 220 130 190 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 190 100 165 }
+
+historical_idea_groups = {
+	humanist_ideas
+	religious_ideas
+	administrative_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"Ming #0" = 60
+	"Ming #0" = 60
+	"Suo #0" = 60
+	"Yan #0" = 60
+	"Bai #0" = 60
+}
+
+leader_names = {
+	Ming Suo Yan Bai
+}
+
+ship_names = {
+	"Mengzhou" "Misty"
+}

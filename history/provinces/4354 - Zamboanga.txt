@@ -1,0 +1,30 @@
+#4354 - Zamboanga
+
+owner = JZH
+controller = JZH
+add_core = JZH
+
+culture = acg_wuthering_waves
+religion = acg
+capital = "Zamboanga"
+trade_goods = unknown
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+native_size = 50
+native_ferocity = 3
+native_hostileness = 9
+discovered_by = chinese
+
+1520.1.1 = {
+
+	is_city = yes
+	trade_goods = tropical_wood
+}
+
+1521.1.1 = {
+discovered_by = SPA
+}
+# Ferdinand Magellan 
+

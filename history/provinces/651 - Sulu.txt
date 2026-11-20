@@ -1,7 +1,11 @@
 #651 - Sulu
 
-culture = filipino
-religion = sunni
+owner = JZH
+controller = JZH
+add_core = JZH
+
+culture = acg_wuthering_waves
+religion = acg
 capital = "Jolo"
 trade_goods = unknown
 hre = no
@@ -20,10 +24,12 @@ extra_cost = 8
 center_of_trade = 1
 
 1405.1.1 = {
-	owner = SUL
-	controller = SUL
-	add_core = SUL
+
 	is_city = yes
 	trade_goods = gems #Pearls
-} # The Sulu Sultanate
-1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
+}
+# The Sulu Sultanate
+1521.1.1 = {
+discovered_by = SPA
+}
+# Ferdinand Magellan 

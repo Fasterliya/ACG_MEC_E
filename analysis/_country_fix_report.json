@@ -1,0 +1,211 @@
+[
+ {
+  "tag": "MAJ",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\MAJ - Majapahit.txt",
+  "file": "MAJ - Majapahit.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\MAJ - Majapahit.txt"
+ },
+ {
+  "tag": "MLC",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\MLC - Malacca.txt",
+  "file": "MLC - Malacca.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\MLC - Malacca.txt"
+ },
+ {
+  "tag": "PSA",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\PSA - Pasai.txt",
+  "file": "PSA - Pasai.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\PSA - Pasai.txt"
+ },
+ {
+  "tag": "BNJ",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\BNJ - Banjar.txt",
+  "file": "BNJ - Banjar.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\BNJ - Banjar.txt"
+ },
+ {
+  "tag": "BEU",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\BEU - Berau.txt",
+  "file": "BEU - Berau.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\BEU - Berau.txt"
+ },
+ {
+  "tag": "KUT",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\KUT - Kutai.txt",
+  "file": "KUT - Kutai.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\KUT - Kutai.txt"
+ },
+ {
+  "tag": "PLB",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\PLB - Palembang.txt",
+  "file": "PLB - Palembang.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\PLB - Palembang.txt"
+ },
+ {
+  "tag": "PGR",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\PGR - Pagarruyung.txt",
+  "file": "PGR - Pagarruyung.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\PGR - Pagarruyung.txt"
+ },
+ {
+  "tag": "DLI",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\DLI - Deli.txt",
+  "file": "DLI - Deli.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\DLI - Deli.txt"
+ },
+ {
+  "tag": "IND",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\IND - Indrapura.txt",
+  "file": "IND - Indrapura.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\IND - Indrapura.txt"
+ },
+ {
+  "tag": "BRS",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\BRS - Barus.txt",
+  "file": "BRS - Barus.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\BRS - Barus.txt"
+ },
+ {
+  "tag": "PAH",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\PAH - Pahang.txt",
+  "file": "PAH - Pahang.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\PAH - Pahang.txt"
+ },
+ {
+  "tag": "SUL",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\SUL - Sulu.txt",
+  "file": "SUL - Sulu.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\SUL - Sulu.txt"
+ },
+ {
+  "tag": "BAN",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\BAN - Banten.txt",
+  "file": "BAN - Banten.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\BAN - Banten.txt"
+ },
+ {
+  "tag": "BLM",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\BLM - Blambangan.txt",
+  "file": "BLM - Blambangan.txt",
+  "newcap": null,
+  "replaced": false,
+  "removed": 1,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\BLM - Blambangan.txt"
+ },
+ {
+  "tag": "BEI",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\BEI - Brunei.txt",
+  "file": "BEI - Brunei.txt",
+  "newcap": 4804,
+  "replaced": true,
+  "removed": 0,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\BEI - Brunei.txt"
+ },
+ {
+  "tag": "SUN",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\SUN - Sunda.txt",
+  "file": "SUN - Sunda.txt",
+  "newcap": 630,
+  "replaced": true,
+  "removed": 0,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\SUN - Sunda.txt"
+ },
+ {
+  "tag": "BLI",
+  "src": "F:\\SteamLibrary\\steamapps\\common\\Europa Universalis IV\\history\\countries\\BLI - Bali.txt",
+  "file": "BLI - Bali.txt",
+  "newcap": 2693,
+  "replaced": true,
+  "removed": 0,
+  "braces_ok": true,
+  "layer": "Europa Universalis IV",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\BLI - Bali.txt"
+ },
+ {
+  "tag": "HMC",
+  "src": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\HMC - Hong Mao.txt",
+  "file": "HMC - Hong Mao.txt",
+  "newcap": 681,
+  "replaced": true,
+  "removed": 0,
+  "braces_ok": true,
+  "layer": "MOD",
+  "dest": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\countries\\HMC - Hong Mao.txt"
+ }
+]

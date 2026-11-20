@@ -1,10 +1,10 @@
 #624 - Banten
 
-owner = SUN
-controller = SUN
-add_core = SUN
-culture = sundanese
-religion = hinduism
+owner = XJA
+controller = XJA
+add_core = XJA
+culture = acg_wuthering_waves
+religion = acg
 capital = "Banten"
 trade_goods = spices
 hre = no
@@ -22,16 +22,23 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = tech_gensokyan
 
-1509.1.1 = { discovered_by = POR }
-1521.1.1 = { discovered_by = SPA }
+1509.1.1 = {
+discovered_by = POR
+}
 
-1527.1.1 = {
-	owner = BAN
-	controller = BAN
-	add_core = BAN
-	remove_core = SUN
-} # Conquered by the Cirebonese Army and Banten Sultanate was established
-1530.1.1 = { religion = sunni }
-1602.1.1 = { discovered_by = ENG } # English settlement
-1604.1.1 = { religion = sunni }
-1707.5.12 = { discovered_by = GBR }
+1521.1.1 = {
+discovered_by = SPA
+}
+
+
+# Conquered by the Cirebonese Army and Banten Sultanate was established
+
+1602.1.1 = {
+discovered_by = ENG
+}
+# English settlement
+
+1707.5.12 = {
+discovered_by = GBR
+}
+

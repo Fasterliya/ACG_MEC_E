@@ -1,0 +1,61 @@
+#OrderOfTheDeep (Wuthering Waves)
+
+graphical_culture = acggfx
+
+color = { 120 200 210 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 90 175 190 }
+
+historical_idea_groups = {
+	religious_ideas
+	humanist_ideas
+	administrative_ideas
+	defensive_ideas
+	economic_ideas
+	influence_ideas
+	quality_ideas
+	trade_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"Phoebe #0" = 60
+	"Phoebe #0" = 60
+	"Maren #0" = 60
+	"Silas #0" = 60
+	"Nia #0" = 60
+}
+
+leader_names = {
+	Phoebe Maren Silas Nia
+}
+
+ship_names = {
+	"Order" "Deepsea"
+}

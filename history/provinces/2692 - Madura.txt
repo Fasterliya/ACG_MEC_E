@@ -1,10 +1,10 @@
 #2692 - Madura
 
-owner = MAJ
-controller = MAJ
-add_core = MAJ
-culture = javanese
-religion = hinduism
+owner = FGL
+controller = FGL
+add_core = FGL
+culture = acg_wuthering_waves
+religion = acg
 capital = "Madura"
 trade_goods = tropical_wood
 hre = no
@@ -21,25 +21,16 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = tech_gensokyan
 
-1509.1.1 = { discovered_by = POR }
+1509.1.1 = {
+discovered_by = POR
+}
 
-1527.1.1 = {
-	owner = DMK
-	controller = DMK
-	add_core = DMK
-	remove_core = MAJ
-} # Demak Sultanate conquered Majapahit
-1550.1.1 = { religion = sunni }
-1587.1.1 = {
-	owner = BLM
-	controller = BLM
-	add_core = BLM
-	remove_core = DMK
-} # The Fall of Demak Sultanate
-1613.1.1 = { discovered_by = NED } # The Dutch arrived
-1625.1.1 = {
-	owner = MTR
-	controller = MTR
-	add_core = MTR
-	remove_core = BLM
-} # Mataram conquered Surabaya after several years of struggle
+
+# Demak Sultanate conquered Majapahit
+
+# The Fall of Demak Sultanate
+1613.1.1 = {
+discovered_by = NED
+}
+# The Dutch arrived
+# Mataram conquered Surabaya after several years of struggle

@@ -1,0 +1,1172 @@
+[
+ {
+  "id": 637,
+  "tag": "JZH",
+  "layer": "MOD",
+  "file": "637 - Api-Api.txt",
+  "old_owner": "BEI",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 6
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\637 - Api-Api.txt"
+ },
+ {
+  "id": 651,
+  "tag": "JZH",
+  "layer": "MOD",
+  "file": "651 - Sulu.txt",
+  "old_owner": "SUL",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\651 - Sulu.txt"
+ },
+ {
+  "id": 655,
+  "tag": "JZH",
+  "layer": "VAN",
+  "file": "655 - Palawan.txt",
+  "old_owner": "BEI",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 5
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\655 - Palawan.txt"
+ },
+ {
+  "id": 2703,
+  "tag": "JZH",
+  "layer": "MOD",
+  "file": "2703 - Lehad Datu.txt",
+  "old_owner": "BEI",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 6
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2703 - Lehad Datu.txt"
+ },
+ {
+  "id": 2709,
+  "tag": "JZH",
+  "layer": "MOD",
+  "file": "2709 - Tarakan.txt",
+  "old_owner": "BEU",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 5
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2709 - Tarakan.txt"
+ },
+ {
+  "id": 2710,
+  "tag": "JZH",
+  "layer": "MOD",
+  "file": "2710 - Sambaliung.txt",
+  "old_owner": "BEU",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 1
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2710 - Sambaliung.txt"
+ },
+ {
+  "id": 2711,
+  "tag": "JZH",
+  "layer": "MOD",
+  "file": "2711 - Bulungan.txt",
+  "old_owner": "BEU",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 1
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2711 - Bulungan.txt"
+ },
+ {
+  "id": 4354,
+  "tag": "JZH",
+  "layer": "VAN",
+  "file": "4354 - Zamboanga.txt",
+  "old_owner": "MGD",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 8
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4354 - Zamboanga.txt"
+ },
+ {
+  "id": 4356,
+  "tag": "JZH",
+  "layer": "VAN",
+  "file": "4356 - Taytay.txt",
+  "old_owner": "SPA",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 5
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4356 - Taytay.txt"
+ },
+ {
+  "id": 4799,
+  "tag": "JZH",
+  "layer": "MOD",
+  "file": "4799 - Sangkulirang.txt",
+  "old_owner": "KUT",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 1
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4799 - Sangkulirang.txt"
+ },
+ {
+  "id": 621,
+  "tag": "LGN",
+  "layer": "MOD",
+  "file": "621 - Bengkulu.txt",
+  "old_owner": "BAN",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 12
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\621 - Bengkulu.txt"
+ },
+ {
+  "id": 622,
+  "tag": "LGN",
+  "layer": "MOD",
+  "file": "622 - Palembang.txt",
+  "old_owner": "PLB",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\622 - Palembang.txt"
+ },
+ {
+  "id": 623,
+  "tag": "LGN",
+  "layer": "MOD",
+  "file": "623 - Tulangbewang.txt",
+  "old_owner": "PLB",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 11
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\623 - Tulangbewang.txt"
+ },
+ {
+  "id": 2678,
+  "tag": "LGN",
+  "layer": "MOD",
+  "file": "2678 - Bangka.txt",
+  "old_owner": "PLB",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2678 - Bangka.txt"
+ },
+ {
+  "id": 2679,
+  "tag": "LGN",
+  "layer": "MOD",
+  "file": "2679 - Belitung.txt",
+  "old_owner": "GBR",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2679 - Belitung.txt"
+ },
+ {
+  "id": 2680,
+  "tag": "LGN",
+  "layer": "MOD",
+  "file": "2680 - Muko-Muko.txt",
+  "old_owner": "IND",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 0
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2680 - Muko-Muko.txt"
+ },
+ {
+  "id": 4818,
+  "tag": "LGN",
+  "layer": "MOD",
+  "file": "4818 - Indrapura.txt",
+  "old_owner": "IND",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 0
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4818 - Indrapura.txt"
+ },
+ {
+  "id": 624,
+  "tag": "XJA",
+  "layer": "MOD",
+  "file": "624 - Banten.txt",
+  "old_owner": "SUN",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 6
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\624 - Banten.txt"
+ },
+ {
+  "id": 625,
+  "tag": "XJA",
+  "layer": "MOD",
+  "file": "625 - Ciamis.txt",
+  "old_owner": "SUN",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 5
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\625 - Ciamis.txt"
+ },
+ {
+  "id": 680,
+  "tag": "XJA",
+  "layer": "MOD",
+  "file": "680 - Chongqing.txt",
+  "old_owner": "HMC",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 3,
+   "date_removed": 7
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\680 - Chongqing.txt"
+ },
+ {
+  "id": 2687,
+  "tag": "XJA",
+  "layer": "MOD",
+  "file": "2687 - Pakuan.txt",
+  "old_owner": "SUN",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 5
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2687 - Pakuan.txt"
+ },
+ {
+  "id": 2688,
+  "tag": "XJA",
+  "layer": "MOD",
+  "file": "2688 - Sumedang.txt",
+  "old_owner": "SUN",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 5
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2688 - Sumedang.txt"
+ },
+ {
+  "id": 4790,
+  "tag": "XJA",
+  "layer": "MOD",
+  "file": "4790 - Pangguyanan.txt",
+  "old_owner": "SUN",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 8
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4790 - Pangguyanan.txt"
+ },
+ {
+  "id": 4791,
+  "tag": "XJA",
+  "layer": "MOD",
+  "file": "4791 - Cirebon.txt",
+  "old_owner": "SUN",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 5
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4791 - Cirebon.txt"
+ },
+ {
+  "id": 638,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "638 - Kutai.txt",
+  "old_owner": "KUT",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 1
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\638 - Kutai.txt"
+ },
+ {
+  "id": 639,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "639 - Banjar.txt",
+  "old_owner": "BNJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\639 - Banjar.txt"
+ },
+ {
+  "id": 2706,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "2706 - Katapang.txt",
+  "old_owner": "",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 0
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2706 - Katapang.txt"
+ },
+ {
+  "id": 2707,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "2707 - Barito.txt",
+  "old_owner": "BNJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2707 - Barito.txt"
+ },
+ {
+  "id": 2708,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "2708 - Sampit.txt",
+  "old_owner": "",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 0
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2708 - Sampit.txt"
+ },
+ {
+  "id": 2712,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "2712 - Samarinda.txt",
+  "old_owner": "KUT",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 1
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2712 - Samarinda.txt"
+ },
+ {
+  "id": 4800,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "4800 - Paser.txt",
+  "old_owner": "BNJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4800 - Paser.txt"
+ },
+ {
+  "id": 4801,
+  "tag": "MGZ",
+  "layer": "MOD",
+  "file": "4801 - Batulican.txt",
+  "old_owner": "BNJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 0,
+   "controller_lines": 0,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 0,
+   "date_removed": 3
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4801 - Batulican.txt"
+ },
+ {
+  "id": 627,
+  "tag": "CXT",
+  "layer": "MOD",
+  "file": "627 - Blambangan.txt",
+  "old_owner": "BLM",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 8
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\627 - Blambangan.txt"
+ },
+ {
+  "id": 631,
+  "tag": "CXT",
+  "layer": "MOD",
+  "file": "631 - Bali.txt",
+  "old_owner": "BLI",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 4
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\631 - Bali.txt"
+ },
+ {
+  "id": 2690,
+  "tag": "CXT",
+  "layer": "MOD",
+  "file": "2690 - Pajang.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 9
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2690 - Pajang.txt"
+ },
+ {
+  "id": 2691,
+  "tag": "CXT",
+  "layer": "MOD",
+  "file": "2691 - Kediri.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 13
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2691 - Kediri.txt"
+ },
+ {
+  "id": 4794,
+  "tag": "CXT",
+  "layer": "MOD",
+  "file": "4794 - East Kediri.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 2,
+   "date_removed": 13
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4794 - East Kediri.txt"
+ },
+ {
+  "id": 626,
+  "tag": "FGL",
+  "layer": "MOD",
+  "file": "626 - Karta.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 9
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\626 - Karta.txt"
+ },
+ {
+  "id": 628,
+  "tag": "FGL",
+  "layer": "MOD",
+  "file": "628 - Surabaya.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 13
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\628 - Surabaya.txt"
+ },
+ {
+  "id": 629,
+  "tag": "FGL",
+  "layer": "MOD",
+  "file": "629 - Demak.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 9
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\629 - Demak.txt"
+ },
+ {
+  "id": 2689,
+  "tag": "FGL",
+  "layer": "MOD",
+  "file": "2689 - Pekalongan.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 9
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2689 - Pekalongan.txt"
+ },
+ {
+  "id": 2692,
+  "tag": "FGL",
+  "layer": "MOD",
+  "file": "2692 - Madura.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 13
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2692 - Madura.txt"
+ },
+ {
+  "id": 4792,
+  "tag": "FGL",
+  "layer": "MOD",
+  "file": "4792 - Kendal.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 2,
+   "date_removed": 9
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4792 - Kendal.txt"
+ },
+ {
+  "id": 4793,
+  "tag": "FGL",
+  "layer": "MOD",
+  "file": "4793 - South Demak.txt",
+  "old_owner": "MAJ",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 9
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4793 - South Demak.txt"
+ },
+ {
+  "id": 619,
+  "tag": "FSL",
+  "layer": "MOD",
+  "file": "619 - Batak.txt",
+  "old_owner": "BRS",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 1
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\619 - Batak.txt"
+ },
+ {
+  "id": 2681,
+  "tag": "FSL",
+  "layer": "MOD",
+  "file": "2681 - Pagarruyung.txt",
+  "old_owner": "PGR",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 0
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2681 - Pagarruyung.txt"
+ },
+ {
+  "id": 2682,
+  "tag": "FSL",
+  "layer": "MOD",
+  "file": "2682 - Pariaman.txt",
+  "old_owner": "PGR",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 0
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2682 - Pariaman.txt"
+ },
+ {
+  "id": 4811,
+  "tag": "FSL",
+  "layer": "MOD",
+  "file": "4811 - Barus.txt",
+  "old_owner": "BRS",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 0
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4811 - Barus.txt"
+ },
+ {
+  "id": 4817,
+  "tag": "FSL",
+  "layer": "MOD",
+  "file": "4817 - Padang.txt",
+  "old_owner": "PGR",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 0
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4817 - Padang.txt"
+ },
+ {
+  "id": 617,
+  "tag": "MTL",
+  "layer": "MOD",
+  "file": "617 - Lamuri.txt",
+  "old_owner": "PSA",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 4
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\617 - Lamuri.txt"
+ },
+ {
+  "id": 2673,
+  "tag": "MTL",
+  "layer": "MOD",
+  "file": "2673 - Pasai.txt",
+  "old_owner": "PSA",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 8
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2673 - Pasai.txt"
+ },
+ {
+  "id": 2674,
+  "tag": "MTL",
+  "layer": "MOD",
+  "file": "2674 - Peureulak.txt",
+  "old_owner": "PSA",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 4
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2674 - Peureulak.txt"
+ },
+ {
+  "id": 2685,
+  "tag": "MTL",
+  "layer": "MOD",
+  "file": "2685 - Gayo.txt",
+  "old_owner": "PSA",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 7
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2685 - Gayo.txt"
+ },
+ {
+  "id": 4809,
+  "tag": "MTL",
+  "layer": "MOD",
+  "file": "4809 - South Peureulak.txt",
+  "old_owner": "PSA",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 4
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4809 - South Peureulak.txt"
+ },
+ {
+  "id": 595,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "595 - Perak.txt",
+  "old_owner": "MLC",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 2,
+   "date_removed": 2
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\595 - Perak.txt"
+ },
+ {
+  "id": 596,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "596 - Malacca.txt",
+  "old_owner": "MLC",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 11
+  },
+  "capital": true,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\596 - Malacca.txt"
+ },
+ {
+  "id": 597,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "597 - Johor.txt",
+  "old_owner": "MLC",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 2,
+   "date_removed": 2
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\597 - Johor.txt"
+ },
+ {
+  "id": 598,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "598 - Pahang.txt",
+  "old_owner": "PAH",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 2
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\598 - Pahang.txt"
+ },
+ {
+  "id": 618,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "618 - Deli.txt",
+  "old_owner": "DLI",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 4
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\618 - Deli.txt"
+ },
+ {
+  "id": 2392,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "2392 - Selangor.txt",
+  "old_owner": "MLC",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 2,
+   "date_removed": 2
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2392 - Selangor.txt"
+ },
+ {
+  "id": 2675,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "2675 - Rokan.txt",
+  "old_owner": "DLI",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 4
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2675 - Rokan.txt"
+ },
+ {
+  "id": 2686,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "2686 - Bintan.txt",
+  "old_owner": "MLC",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 2,
+   "date_removed": 2
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\2686 - Bintan.txt"
+ },
+ {
+  "id": 4810,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "4810 - South Deli.txt",
+  "old_owner": "DLI",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 4
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4810 - South Deli.txt"
+ },
+ {
+  "id": 4814,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "4814 - Semantan.txt",
+  "old_owner": "PAH",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 1,
+   "date_removed": 2
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4814 - Semantan.txt"
+ },
+ {
+  "id": 4815,
+  "tag": "YHH",
+  "layer": "MOD",
+  "file": "4815 - Singapura.txt",
+  "old_owner": "MLC",
+  "braces_ok": true,
+  "stats": {
+   "owner_lines": 1,
+   "controller_lines": 1,
+   "culture_lines": 1,
+   "religion_lines": 1,
+   "core_lines": 2,
+   "date_removed": 2
+  },
+  "capital": false,
+  "written": "F:\\Paradox Interactive\\Europa Universalis IV\\mod\\ACG_MEC_E\\history\\provinces\\4815 - Singapura.txt"
+ }
+]

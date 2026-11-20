@@ -1,9 +1,9 @@
 #2673 - Pasai
 
-owner = PSA
-controller = PSA
-culture = acehnese
-religion = sunni
+owner = MTL
+controller = MTL
+culture = acg_wuthering_waves
+religion = acg
 capital = "Pasai"
 trade_goods = spices
 hre = no
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 3
 is_city = yes
-add_core = PSA
+add_core = MTL
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
@@ -20,17 +20,14 @@ discovered_by = tech_gensokyan
 extra_cost = 16
 center_of_trade = 2
 
-1405.1.1 = { discovered_by = MNG }
-1471.1.1 = { add_core = ATJ }
-1509.1.1 = { discovered_by = POR }
-1521.1.1 = {
-	owner = POR
-	controller = POR
-	add_core = POR
-	remove_core = PSA
-} # Portugal conquered Pasai
-1531.1.1 = {
-	owner = ATJ
-	controller = ATJ
-	remove_core = POR
+1405.1.1 = {
+discovered_by = MNG
 }
+
+
+1509.1.1 = {
+discovered_by = POR
+}
+
+# Portugal conquered Pasai
+

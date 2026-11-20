@@ -1,0 +1,6 @@
+BLS = "countries/Black Shore.txt" #黑海岸
+HMC = "countries/HMC.txt" #虹猫
+AIU = "countries/AIU.txt" #艾尔
+SVZ = "countries/Snezhnaya.txt" #至冬
+FTN = "countries/Fontaine.txt" #枫丹
+NDK = "countries/Nod-Krai.txt" #挪德卡莱

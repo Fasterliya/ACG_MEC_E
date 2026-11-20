@@ -1,7 +1,7 @@
-owner = MLC
-controller = MLC
-culture = malayan
-religion = sunni
+owner = YHH
+controller = YHH
+culture = acg_wuthering_waves
+religion = acg
 capital = "Singapura"
 trade_goods = fish
 hre = no
@@ -9,8 +9,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = MLC
-add_core = JOH
+add_core = YHH
 
 
 
@@ -20,9 +19,9 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = tech_gensokyan
 
-1516.1.1 = { discovered_by = POR }
-
-1528.1.1 = {
-	owner = JOH
-	controller = JOH
+1516.1.1 = {
+discovered_by = POR
 }
+
+
+

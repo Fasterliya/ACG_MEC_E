@@ -1,0 +1,61 @@
+#Fuguanglin (Wuthering Waves) - 浮光林
+
+graphical_culture = acggfx
+
+color = { 90 170 90 }
+
+random_nation_chance = 0
+
+historical_score = 0
+
+revolutionary_colors = { 65 140 70 }
+
+historical_idea_groups = {
+	defensive_ideas
+	quantity_ideas
+	economic_ideas
+	administrative_ideas
+	humanist_ideas
+	offensive_ideas
+	trade_ideas
+	religious_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	japanese_archer
+	chinese_footsoldier
+	japanese_samurai
+	east_asian_spearmen
+	asian_arquebusier
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	eastern_militia
+	indian_elephant
+	steppe_riders
+	steppe_lancers
+	steppe_musketeers
+	steppe_cavalry
+	eastern_knights
+	eastern_carabinier
+	eastern_uhlan
+	eastern_skirmisher
+}
+
+monarch_names = {
+	"摄政 #0" = 60
+	"Lin #0" = 60
+	"Ye #0" = 60
+	"Mu #0" = 60
+	"Qing #0" = 60
+}
+
+leader_names = {
+	Lin Ye Mu Qing
+}
+
+ship_names = {
+	"Fuguang" "Glowwood"
+}

@@ -1,0 +1,226 @@
+﻿l_english:
+
+ # ===== JZH ÊNÞT =====
+
+ JZH: "ÊNÞT"
+ JZH_ADJ: "ÊNÞT„v"
+ JZH_ADJ2: "ÊNÞT„v"
+ JZH_ideas: "ÊNÞTtõV"
+ JZH_ideas_start: "ÊNÞT.Oßu"
+ JZH_ideas_start_desc: "ÊNÞTËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ JZH_ideas_bonus: "ÊNÞTÎ‘ÃV"
+ JZH_ideas_bonus_desc: "ÊNÞTtõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ JZH_idea_1: "‰s¬NˆRg"
+ JZH_idea_1_desc: "‰s¬NˆRg0ÙNag«ˆTN™QeQÊNÞT„výVòS0"
+ JZH_idea_2: "ÊNÞTÁ”ÁX"
+ JZH_idea_2_desc: "ÊNÞTÁ”ÁX0ÙNag«ˆTN™QeQÊNÞT„výVòS0"
+ JZH_idea_3: "1žŸ”KN‹V"
+ JZH_idea_3_desc: "1žŸ”KN‹V0ÙNag«ˆTN™QeQÊNÞT„výVòS0"
+ JZH_idea_4: "™ŸÉl›QåT"
+ JZH_idea_4_desc: "™ŸÉl›QåT0ÙNag«ˆTN™QeQÊNÞT„výVòS0"
+ JZH_idea_5: "noPl›Q5–"
+ JZH_idea_5_desc: "noPl›Q5–0ÙNag«ˆTN™QeQÊNÞT„výVòS0"
+ JZH_idea_6: "¹0WoS¦W"
+ JZH_idea_6_desc: "¹0WoS¦W0ÙNag«ˆTN™QeQÊNÞT„výVòS0"
+ JZH_idea_7: "SINW­‹"
+ JZH_idea_7_desc: "SINW­‹0ÙNag«ˆTN™QeQÊNÞT„výVòS0"
+
+ # ===== LGN ÉbäS± =====
+
+ LGN: "ÉbäS±"
+ LGN_ADJ: "ÉbäS±„v"
+ LGN_ADJ2: "ÉbäS±„v"
+ LGN_ideas: "ÉbäS±tõV"
+ LGN_ideas_start: "ÉbäS±.Oßu"
+ LGN_ideas_start_desc: "ÉbäS±ËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ LGN_ideas_bonus: "ÉbäS±Î‘ÃV"
+ LGN_ideas_bonus_desc: "ÉbäS±tõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ LGN_idea_1: "Âr0kKN=n"
+ LGN_idea_1_desc: "Âr0kKN=n0ÙNag«ˆTN™QeQÉbäS±„výVòS0"
+ LGN_idea_2: "FUï"
+ LGN_idea_2_desc: "FUï0ÙNag«ˆTN™QeQÉbäS±„výVòS0"
+ LGN_idea_3: "²›S9‚âV"
+ LGN_idea_3_desc: "²›S9‚âV0ÙNag«ˆTN™QeQÉbäS±„výVòS0"
+ LGN_idea_4: "GPb—‚O"
+ LGN_idea_4_desc: "GPb—‚O0ÙNag«ˆTN™QeQÉbäS±„výVòS0"
+ LGN_idea_5: "gRb–KNÎW"
+ LGN_idea_5_desc: "gRb–KNÎW0ÙNag«ˆTN™QeQÉbäS±„výVòS0"
+ LGN_idea_6: "Ñ‘Wzz6R"
+ LGN_idea_6_desc: "Ñ‘Wzz6R0ÙNag«ˆTN™QeQÉbäS±„výVòS0"
+ LGN_idea_7: "Üm²b*‚"
+ LGN_idea_7_desc: "Üm²b*‚0ÙNag«ˆTN™QeQÉbäS±„výVòS0"
+
+ # ===== XJA f¬pfRb– =====
+
+ XJA: "f¬pfRb–"
+ XJA_ADJ: "f¬pfRb–„v"
+ XJA_ADJ2: "f¬pfRb–„v"
+ XJA_ideas: "f¬pfRb–tõV"
+ XJA_ideas_start: "f¬pfRb–.Oßu"
+ XJA_ideas_start_desc: "f¬pfRb–ËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ XJA_ideas_bonus: "f¬pfRb–Î‘ÃV"
+ XJA_ideas_bonus_desc: "f¬pfRb–tõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ XJA_idea_1: "f¬p²‹X"
+ XJA_idea_1_desc: "f¬p²‹X0ÙNag«ˆTN™QeQf¬pfRb–„výVòS0"
+ XJA_idea_2: "qQ1žxvz"
+ XJA_idea_2_desc: "qQ1žxvz0ÙNag«ˆTN™QeQf¬pfRb–„výVòS0"
+ XJA_idea_3: "fRb–åTJW"
+ XJA_idea_3_desc: "fRb–åTJW0ÙNag«ˆTN™QeQf¬pfRb–„výVòS0"
+ XJA_idea_4: "fR=gðXg"
+ XJA_idea_4_desc: "fR=gðXg0ÙNag«ˆTN™QeQf¬pfRb–„výVòS0"
+ XJA_idea_5: "²NbcfRw"
+ XJA_idea_5_desc: "²NbcfRw0ÙNag«ˆTN™QeQf¬pfRb–„výVòS0"
+ XJA_idea_6: "fRíVµNN"
+ XJA_idea_6_desc: "fRíVµNN0ÙNag«ˆTN™QeQf¬pfRb–„výVòS0"
+ XJA_idea_7: "²bb–kS–"
+ XJA_idea_7_desc: "²bb–kS–0ÙNag«ˆTN™QeQf¬pfRb–„výVòS0"
+
+ # ===== MGZ ¦hÞT =====
+
+ MGZ: "¦hÞT"
+ MGZ_ADJ: "¦hÞT„v"
+ MGZ_ADJ2: "¦hÞT„v"
+ MGZ_ideas: "¦hÞTtõV"
+ MGZ_ideas_start: "¦hÞT.Oßu"
+ MGZ_ideas_start_desc: "¦hÞTËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ MGZ_ideas_bonus: "¦hÞTÎ‘ÃV"
+ MGZ_ideas_bonus_desc: "¦hÞTtõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ MGZ_idea_1: "¦hýlßpâl"
+ MGZ_idea_1_desc: "¦hýlßpâl0ÙNag«ˆTN™QeQ¦hÞT„výVòS0"
+ MGZ_idea_2: "ÞTœ^7b"
+ MGZ_idea_2_desc: "ÞTœ^7b0ÙNag«ˆTN™QeQ¦hÞT„výVòS0"
+ MGZ_idea_3: "Çu.KN¦"
+ MGZ_idea_3_desc: "Çu.KN¦0ÙNag«ˆTN™QeQ¦hÞT„výVòS0"
+ MGZ_idea_4: "•l²N›Q"
+ MGZ_idea_4_desc: "•l²N›Q0ÙNag«ˆTN™QeQ¦hÞT„výVòS0"
+ MGZ_idea_5: "ýlýV2X2–"
+ MGZ_idea_5_desc: "ýlýV2X2–0ÙNag«ˆTN™QeQ¦hÞT„výVòS0"
+ MGZ_idea_6: "RVSKNVr"
+ MGZ_idea_6_desc: "RVSKNVr0ÙNag«ˆTN™QeQ¦hÞT„výVòS0"
+ MGZ_idea_7: "¦hÞTðXg"
+ MGZ_idea_7_desc: "¦hÞTðXg0ÙNag«ˆTN™QeQ¦hÞT„výVòS0"
+
+ # ===== CXT ‹kfO =====
+
+ CXT: "‹kfO"
+ CXT_ADJ: "‹kfO„v"
+ CXT_ADJ2: "‹kfO„v"
+ CXT_ideas: "‹kfOtõV"
+ CXT_ideas_start: "‹kfO.Oßu"
+ CXT_ideas_start_desc: "‹kfOËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ CXT_ideas_bonus: "‹kfOÎ‘ÃV"
+ CXT_ideas_bonus_desc: "‹kfOtõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ CXT_idea_1: "‹kf•ëX"
+ CXT_idea_1_desc: "‹kf•ëX0ÙNag«ˆTN™QeQ‹kfO„výVòS0"
+ CXT_idea_2: "—fnon"
+ CXT_idea_2_desc: "—fnon0ÙNag«ˆTN™QeQ‹kfO„výVòS0"
+ CXT_idea_3: "fQSÞVÍT"
+ CXT_idea_3_desc: "fQSÞVÍT0ÙNag«ˆTN™QeQ‹kfO„výVòS0"
+ CXT_idea_4: "NÜ`ãN÷N"
+ CXT_idea_4_desc: "NÜ`ãN÷N0ÙNag«ˆTN™QeQ‹kfO„výVòS0"
+ CXT_idea_5: "Á”Ußu¡V"
+ CXT_idea_5_desc: "Á”Ußu¡V0ÙNag«ˆTN™QeQ‹kfO„výVòS0"
+ CXT_idea_6: "†ußWn—r"
+ CXT_idea_6_desc: "†ußWn—r0ÙNag«ˆTN™QeQ‹kfO„výVòS0"
+ CXT_idea_7: "‹kfVìS"
+ CXT_idea_7_desc: "‹kfVìS0ÙNag«ˆTN™QeQ‹kfO„výVòS0"
+
+ # ===== FGL nmIQ—g =====
+
+ FGL: "nmIQ—g"
+ FGL_ADJ: "nmIQ—g„v"
+ FGL_ADJ2: "nmIQ—g„v"
+ FGL_ideas: "nmIQ—gtõV"
+ FGL_ideas_start: "nmIQ—g.Oßu"
+ FGL_ideas_start_desc: "nmIQ—gËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ FGL_ideas_bonus: "nmIQ—gÎ‘ÃV"
+ FGL_ideas_bonus_desc: "nmIQ—gtõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ FGL_idea_1: "—gô•OuQ"
+ FGL_idea_1_desc: "—gô•OuQ0ÙNag«ˆTN™QeQnmIQ—g„výVòS0"
+ FGL_idea_2: "ˆR—g8ns"
+ FGL_idea_2_desc: "ˆR—g8ns0ÙNag«ˆTN™QeQnmIQ—g„výVòS0"
+ FGL_idea_3: "(gèRåT‹N"
+ FGL_idea_3_desc: "(gèRåT‹N0ÙNag«ˆTN™QeQnmIQ—g„výVòS0"
+ FGL_idea_4: "nmIQ(gµN"
+ FGL_idea_4_desc: "nmIQ(gµN0ÙNag«ˆTN™QeQnmIQ—g„výVòS0"
+ FGL_idea_5: "—g!KN6R"
+ FGL_idea_5_desc: "—g!KN6R0ÙNag«ˆTN™QeQnmIQ—g„výVòS0"
+ FGL_idea_6: "qS—gVìS"
+ FGL_idea_6_desc: "qS—gVìS0ÙNag«ˆTN™QeQnmIQ—g„výVòS0"
+ FGL_idea_7: "—g“ŠKN¦u"
+ FGL_idea_7_desc: "—g“ŠKN¦u0ÙNag«ˆTN™QeQnmIQ—g„výVòS0"
+
+ # ===== FSL á(„Èp =====
+
+ FSL: "á(„Èp"
+ FSL_ADJ: "á(„Èp„v"
+ FSL_ADJ2: "á(„Èp„v"
+ FSL_ideas: "á(„ÈptõV"
+ FSL_ideas_start: "á(„Èp.Oßu"
+ FSL_ideas_start_desc: "á(„ÈpËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ FSL_ideas_bonus: "á(„ÈpÎ‘ÃV"
+ FSL_ideas_bonus_desc: "á(„ÈptõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ FSL_idea_1: "Í‘0‚.Oßu"
+ FSL_idea_1_desc: "Í‘0‚.Oßu0ÙNag«ˆTN™QeQá(„Èp„výVòS0"
+ FSL_idea_2: "wmáSÍdÃu"
+ FSL_idea_2_desc: "wmáSÍdÃu0ÙNag«ˆTN™QeQá(„Èp„výVòS0"
+ FSL_idea_3: "4lKbN¶R"
+ FSL_idea_3_desc: "4lKbN¶R0ÙNag«ˆTN™QeQá(„Èp„výVòS0"
+ FSL_idea_4: "™™™e*‚ï"
+ FSL_idea_4_desc: "™™™e*‚ï0ÙNag«ˆTN™QeQá(„Èp„výVòS0"
+ FSL_idea_5: "Üm.Ob"
+ FSL_idea_5_desc: "Üm.Ob0ÙNag«ˆTN™QeQá(„Èp„výVòS0"
+ FSL_idea_6: "²›SFUCg"
+ FSL_idea_6_desc: "²›SFUCg0ÙNag«ˆTN™QeQá(„Èp„výVòS0"
+ FSL_idea_7: "=n¡RzsQ"
+ FSL_idea_7_desc: "=n¡RzsQ0ÙNag«ˆTN™QeQá(„Èp„výVòS0"
+
+ # ===== MTL «ƒTXÌ‘ =====
+
+ MTL: "«ƒTXÌ‘"
+ MTL_ADJ: "«ƒTXÌ‘„v"
+ MTL_ADJ2: "«ƒTXÌ‘„v"
+ MTL_ideas: "«ƒTXÌ‘tõV"
+ MTL_ideas_start: "«ƒTXÌ‘.Oßu"
+ MTL_ideas_start_desc: "«ƒTXÌ‘ËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ MTL_ideas_bonus: "«ƒTXÌ‘Î‘ÃV"
+ MTL_ideas_bonus_desc: "«ƒTXÌ‘tõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ MTL_idea_1: "¶RÏeÑ‘“^"
+ MTL_idea_1_desc: "¶RÏeÑ‘“^0ÙNag«ˆTN™QeQ«ƒTXÌ‘„výVòS0"
+ MTL_idea_2: "FUOQÜu"
+ MTL_idea_2_desc: "FUOQÜu0ÙNag«ˆTN™QeQ«ƒTXÌ‘„výVòS0"
+ MTL_idea_3: "ÎW¦%„."
+ MTL_idea_3_desc: "ÎW¦%„.0ÙNag«ˆTN™QeQ«ƒTXÌ‘„výVòS0"
+ MTL_idea_4: "Tè•ðXg"
+ MTL_idea_4_desc: "Tè•ðXg0ÙNag«ˆTN™QeQ«ƒTXÌ‘„výVòS0"
+ MTL_idea_5: "QY¦u¾|^y"
+ MTL_idea_5_desc: "QY¦u¾|^y0ÙNag«ˆTN™QeQ«ƒTXÌ‘„výVòS0"
+ MTL_idea_6: "ÁyuQ²bkS"
+ MTL_idea_6_desc: "ÁyuQ²bkS0ÙNag«ˆTN™QeQ«ƒTXÌ‘„výVòS0"
+ MTL_idea_7: "Y²NTwûY"
+ MTL_idea_7_desc: "Y²NTwûY0ÙNag«ˆTN™QeQ«ƒTXÌ‘„výVòS0"
+
+ # ===== YHH –wmîOO =====
+
+ YHH: "–wmîOO"
+ YHH_ADJ: "–wmîOO„v"
+ YHH_ADJ2: "–wmîOO„v"
+ YHH_ideas: "–wmîOOtõV"
+ YHH_ideas_start: "–wmîOO.Oßu"
+ YHH_ideas_start_desc: "–wmîOOËzýVKNR¿OòTÝQÓu„v.Oßu0"
+ YHH_ideas_bonus: "–wmîOOÎ‘ÃV"
+ YHH_ideas_bonus_desc: "–wmîOOtõVQm6qNSOKNöeÿ¿O=fvQwckÎ‘ÃV>fbVKNåe0"
+ YHH_idea_1: "ñmwm1WNb"
+ YHH_idea_1_desc: "ñmwm1WNb0ÙNag«ˆTN™QeQ–wmîOO„výVòS0"
+ YHH_idea_2: "îOOb‹V"
+ YHH_idea_2_desc: "îOOb‹V0ÙNag«ˆTN™QeQ–wmîOO„výVòS0"
+ YHH_idea_3: "wm†uRVS"
+ YHH_idea_3_desc: "wm†uRVS0ÙNag«ˆTN™QeQ–wmîOO„výVòS0"
+ YHH_idea_4: "1W¿kkS–"
+ YHH_idea_4_desc: "1W¿kkS–0ÙNag«ˆTN™QeQ–wmîOO„výVòS0"
+ YHH_idea_5: "Ye:S»lt"
+ YHH_idea_5_desc: "Ye:S»lt0ÙNag«ˆTN™QeQ–wmîOO„výVòS0"
+ YHH_idea_6: "^SÛV¹e"
+ YHH_idea_6_desc: "^SÛV¹e0ÙNag«ˆTN™QeQ–wmîOO„výVòS0"
+ YHH_idea_7: "T†Ú‹KNR"
+ YHH_idea_7_desc: "T†Ú‹KNR0ÙNag«ˆTN™QeQ–wmîOO„výVòS0"

@@ -1,7 +1,7 @@
-owner = PGR
-controller = PGR
-culture = sumatran
-religion = hinduism
+owner = FSL
+controller = FSL
+culture = acg_wuthering_waves
+religion = acg
 capital = "Padang"
 trade_goods = grain
 hre = no
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = PGR
+add_core = FSL
 
 
 
@@ -19,6 +19,12 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = tech_gensokyan
 
-1405.1.1 = { discovered_by = MNG }
-1509.1.1 = { discovered_by = POR }
+1405.1.1 = {
+discovered_by = MNG
+}
+
+1509.1.1 = {
+discovered_by = POR
+}
+
 

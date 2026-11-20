@@ -1,9 +1,9 @@
 #617 - Lamuri
 
-owner = PSA
-controller = PSA
-culture = acehnese
-religion = sunni
+owner = MTL
+controller = MTL
+culture = acg_wuthering_waves
+religion = acg
 capital = "Lamuri"
 trade_goods = spices
 hre = no
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = PSA
+add_core = MTL
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
@@ -20,14 +20,18 @@ discovered_by = tech_gensokyan
 extra_cost = 8
 center_of_trade = 1
 
-1405.1.1 = { discovered_by = MNG }
-
-1444.1.1 = {
-	owner = ATJ
-	controller = ATJ
-	add_core = ATJ
-	remove_core = PSA
+1405.1.1 = {
+discovered_by = MNG
 }
 
-1471.1.1 = { capital = "Kutaraja" }
-1509.1.1 = { discovered_by = POR }
+
+
+
+1471.1.1 = {
+capital = "Kutaraja"
+}
+
+1509.1.1 = {
+discovered_by = POR
+}
+

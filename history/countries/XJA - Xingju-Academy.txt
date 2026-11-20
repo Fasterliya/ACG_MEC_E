@@ -1,0 +1,24 @@
+# Xingju-Academy - f¬pfRb–
+government = acg_monarchy
+add_government_reform = acg_universal_government_reform_1
+government_rank = 1
+primary_culture = acg_wuthering_waves
+religion = acg
+technology_group = chinese
+capital = 2687
+
+1444.11.11 = {
+	monarch = {
+		name = "1r%V¯e"
+		dynasty = "'Yê–Òu"
+		birth_date = 1400.1.1
+		death_date = 1821.12.31
+		adm = 4
+		dip = 5
+		mil = 4
+		female = yes
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = calm_personality
+}

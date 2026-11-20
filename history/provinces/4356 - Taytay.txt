@@ -1,0 +1,29 @@
+#4356 - Taytay
+
+owner = JZH
+controller = JZH
+add_core = JZH
+
+culture = acg_wuthering_waves
+religion = acg
+capital = "Taytay"
+trade_goods = unknown
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+discovered_by = chinese
+native_size = 40
+native_ferocity = 2
+native_hostileness = 9
+
+1521.1.1 = {
+discovered_by = SPA
+}
+# Ferdinand Magellan 
+1623.1.1 = {
+
+	trade_goods = grain
+}
+# Taytay becomes a colony
+
