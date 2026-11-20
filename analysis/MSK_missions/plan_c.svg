@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1244" width="1060" height="1244" font-family="Microsoft YaHei, PingFang SC, Segoe UI, Arial, sans-serif">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#161a23"/><stop offset="0.55" stop-color="#101419"/><stop offset="1" stop-color="#0a0d12"/></linearGradient>
+<marker id="arr-conquest" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#e05a63"/></marker>
+<marker id="arr-economy" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#3fae72"/></marker>
+<marker id="arr-empire" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#d9a441"/></marker>
+<marker id="arr-aux" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7f8a9c"/></marker>
+<marker id="arr-final" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#b46fe0"/></marker>
+</defs>
+<rect x="0" y="0" width="1060" height="1244" fill="url(#bg)"/>
+<rect x="16" y="14" width="1028" height="1216" rx="14" fill="none" stroke="#2a3040" stroke-width="1.2"/>
+<text x="52" y="58" font-size="26" font-weight="700" fill="#f2eee3">方案 C · 双脊汇流</text>
+<text x="52" y="84" font-size="12.5" fill="#8b95a6">征服（列 1）与帝国（列 4）两条竖脊并列，经济拆成商路（列 2）＋产业（列 3）夹在中间；列 5 收点数采购与终局，低地两件套挂在征服列右侧延伸。适合「先</text>
+<text x="52" y="105" font-size="12.5" fill="#8b95a6">军后金」的推进节奏。</text>
+<g class="links" fill="none">
+<path d="M 138 212 L 138 254" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 316 L 138 358" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 420 L 138 462" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 524 L 138 566" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 628 L 138 670" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 732 L 138 774" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 836 L 138 878" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 940 L 138 982" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 138 1044 L 138 1086" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 334 212 L 334 254" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 334 316 L 334 358" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 334 420 L 334 462" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 334 524 L 334 566" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 334 628 L 334 670" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 334 732 L 334 774" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 334 212 C 334 233, 530 233, 530 254" stroke="#3fae72" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr-economy)"/>
+<path d="M 530 316 L 530 358" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 530 420 L 530 462" stroke="#3fae72" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-economy)"/>
+<path d="M 138 524 C 138 545, 530 545, 530 566" stroke="#e05a63" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr-conquest)"/>
+<path d="M 530 628 L 530 670" stroke="#e05a63" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-conquest)"/>
+<path d="M 726 212 L 726 254" stroke="#d9a441" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-empire)"/>
+<path d="M 726 316 L 726 358" stroke="#d9a441" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-empire)"/>
+<path d="M 726 420 L 726 462" stroke="#d9a441" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-empire)"/>
+<path d="M 726 524 L 726 566" stroke="#d9a441" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-empire)"/>
+<path d="M 726 628 L 726 670" stroke="#d9a441" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-empire)"/>
+<path d="M 726 732 L 726 774" stroke="#d9a441" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-empire)"/>
+<path d="M 726 836 L 726 878" stroke="#d9a441" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-empire)"/>
+<path d="M 530 524 C 530 545, 922 545, 922 566" stroke="#7f8a9c" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr-aux)"/>
+<path d="M 922 628 L 922 670" stroke="#7f8a9c" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-aux)"/>
+<path d="M 922 732 L 922 878" stroke="#7f8a9c" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-aux)"/>
+<path d="M 922 940 L 922 982" stroke="#b46fe0" stroke-opacity="0.55" stroke-width="2" marker-end="url(#arr-final)"/>
+<path d="M 726 940 C 726 961, 922 961, 922 982" stroke="#b46fe0" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr-final)"/>
+</g>
+<g>
+<rect x="52" y="150" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="150" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="150" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="159" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="177" font-size="13.6" fill="#eceae3">御坂美琴的日常</text>
+<text x="68" y="197" font-size="11" fill="#7b8598">原 1_1</text>
+<text x="212" y="201" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 1 行</text>
+</g>
+<g>
+<rect x="52" y="254" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="254" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="254" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="263" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="281" font-size="14.5" fill="#eceae3">无能力者集团</text>
+<text x="68" y="301" font-size="11" fill="#7b8598">原 2_2</text>
+<text x="212" y="305" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 2 行</text>
+</g>
+<g>
+<rect x="52" y="358" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="358" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="358" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="367" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="385" font-size="13.6" fill="#eceae3">风纪委员的巡逻艇</text>
+<text x="68" y="405" font-size="11" fill="#7b8598">原 1_3</text>
+<text x="212" y="409" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 3 行</text>
+</g>
+<g>
+<rect x="52" y="462" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="462" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="462" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="471" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="489" font-size="14.5" fill="#eceae3">渡过海峡</text>
+<text x="68" y="509" font-size="11" fill="#7b8598">原 1_4</text>
+<text x="212" y="513" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 4 行</text>
+</g>
+<g>
+<rect x="52" y="566" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="566" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="566" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="575" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="593" font-size="14.5" fill="#eceae3">西兰岛的海港</text>
+<text x="68" y="613" font-size="11" fill="#7b8598">原 1_5</text>
+<text x="212" y="617" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 5 行</text>
+</g>
+<g>
+<rect x="52" y="670" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="670" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="670" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="679" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="697" font-size="14.5" fill="#eceae3">北上的商队</text>
+<text x="68" y="717" font-size="11" fill="#7b8598">原 1_6</text>
+<text x="212" y="721" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 6 行</text>
+</g>
+<g>
+<rect x="52" y="774" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="774" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="774" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="783" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="801" font-size="13.6" fill="#eceae3">斯韦阿兰的王都</text>
+<text x="68" y="821" font-size="11" fill="#7b8598">原 1_7</text>
+<text x="212" y="825" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 7 行</text>
+</g>
+<g>
+<rect x="52" y="878" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="878" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="878" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="887" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="905" font-size="12.8" fill="#eceae3">斯堪的纳维亚的旗帜</text>
+<text x="68" y="925" font-size="11" fill="#7b8598">原 1_8</text>
+<text x="212" y="929" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 8 行</text>
+</g>
+<g>
+<rect x="52" y="982" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="982" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="982" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="991" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="1009" font-size="14.5" fill="#eceae3">超电磁炮</text>
+<text x="68" y="1029" font-size="11" fill="#7b8598">原 2_5</text>
+<text x="212" y="1033" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 9 行</text>
+</g>
+<g>
+<rect x="52" y="1086" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="52" y="1086" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="52" y="1086" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="52" y="1095" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="68" y="1113" font-size="13.6" fill="#eceae3">学园都市的产业</text>
+<text x="68" y="1133" font-size="11" fill="#7b8598">原 2_6</text>
+<text x="212" y="1137" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">1 列 · 10 行</text>
+</g>
+<g>
+<rect x="248" y="150" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="248" y="150" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="248" y="150" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="248" y="159" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="264" y="177" font-size="14.5" fill="#eceae3">常盘台的预算</text>
+<text x="264" y="197" font-size="11" fill="#7b8598">原 4_1</text>
+<text x="408" y="201" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">2 列 · 1 行</text>
+</g>
+<g>
+<rect x="248" y="254" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="248" y="254" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="248" y="254" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="248" y="263" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="264" y="281" font-size="14.5" fill="#eceae3">汉萨的账簿</text>
+<text x="264" y="301" font-size="11" fill="#7b8598">原 4_2</text>
+<text x="408" y="305" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">2 列 · 2 行</text>
+</g>
+<g>
+<rect x="248" y="358" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="248" y="358" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="248" y="358" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="248" y="367" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="264" y="385" font-size="14.5" fill="#eceae3">低地的门户</text>
+<text x="264" y="405" font-size="11" fill="#7b8598">原 3_3</text>
+<text x="408" y="409" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">2 列 · 3 行</text>
+</g>
+<g>
+<rect x="248" y="462" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="248" y="462" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="248" y="462" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="248" y="471" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="264" y="489" font-size="14.5" fill="#eceae3">莱茵兰</text>
+<text x="264" y="509" font-size="11" fill="#7b8598">原 3_4</text>
+<text x="408" y="513" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">2 列 · 4 行</text>
+</g>
+<g>
+<rect x="248" y="566" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="248" y="566" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="248" y="566" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="248" y="575" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="264" y="593" font-size="14.5" fill="#eceae3">萨克森贸易区</text>
+<text x="264" y="613" font-size="11" fill="#7b8598">原 3_5</text>
+<text x="408" y="617" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">2 列 · 5 行</text>
+</g>
+<g>
+<rect x="248" y="670" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="248" y="670" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="248" y="670" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="248" y="679" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="264" y="697" font-size="14.5" fill="#eceae3">军械商路</text>
+<text x="264" y="717" font-size="11" fill="#7b8598">原 3_6</text>
+<text x="408" y="721" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">2 列 · 6 行</text>
+</g>
+<g>
+<rect x="248" y="774" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="248" y="774" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="248" y="774" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="248" y="783" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="264" y="801" font-size="14.5" fill="#eceae3">通商许可</text>
+<text x="264" y="821" font-size="11" fill="#7b8598">原 2_7</text>
+<text x="408" y="825" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">2 列 · 7 行</text>
+</g>
+<g>
+<rect x="444" y="254" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="444" y="254" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="444" y="254" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="444" y="263" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="460" y="281" font-size="14.5" fill="#eceae3">研究所群</text>
+<text x="460" y="301" font-size="11" fill="#7b8598">原 4_3</text>
+<text x="604" y="305" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">3 列 · 2 行</text>
+</g>
+<g>
+<rect x="444" y="358" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="444" y="358" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="444" y="358" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="444" y="367" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="460" y="385" font-size="12.8" fill="#eceae3">学园都市的黄金时代</text>
+<text x="460" y="405" font-size="11" fill="#7b8598">原 4_4</text>
+<text x="604" y="409" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">3 列 · 3 行</text>
+</g>
+<g>
+<rect x="444" y="462" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="444" y="462" width="172" height="62" rx="9" fill="#3fae72" fill-opacity="0.11"/>
+<rect x="444" y="462" width="172" height="62" rx="9" fill="none" stroke="#3fae72" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="444" y="471" width="4" height="44" rx="2" fill="#3fae72"/>
+<text x="460" y="489" font-size="13.6" fill="#eceae3">学园都市的银行</text>
+<text x="460" y="509" font-size="11" fill="#7b8598">原 4_5</text>
+<text x="604" y="513" font-size="9.5" text-anchor="end" fill="#3fae72" fill-opacity="0.8">3 列 · 4 行</text>
+</g>
+<g>
+<rect x="444" y="566" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="444" y="566" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="444" y="566" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="444" y="575" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="460" y="593" font-size="14.5" fill="#eceae3">低地远征</text>
+<text x="460" y="613" font-size="11" fill="#7b8598">原 2_8</text>
+<text x="604" y="617" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">3 列 · 5 行</text>
+</g>
+<g>
+<rect x="444" y="670" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="444" y="670" width="172" height="62" rx="9" fill="#e05a63" fill-opacity="0.11"/>
+<rect x="444" y="670" width="172" height="62" rx="9" fill="none" stroke="#e05a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="444" y="679" width="4" height="44" rx="2" fill="#e05a63"/>
+<text x="460" y="697" font-size="14.5" fill="#eceae3">低地统一</text>
+<text x="460" y="717" font-size="11" fill="#7b8598">原 2_9</text>
+<text x="604" y="721" font-size="9.5" text-anchor="end" fill="#e05a63" fill-opacity="0.8">3 列 · 6 行</text>
+</g>
+<g>
+<rect x="640" y="150" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="150" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="150" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="159" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="177" font-size="14.5" fill="#eceae3">常盘台的同桌</text>
+<text x="656" y="197" font-size="11" fill="#7b8598">原 3_1</text>
+<text x="800" y="201" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 1 行</text>
+</g>
+<g>
+<rect x="640" y="254" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="254" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="254" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="263" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="281" font-size="14.5" fill="#eceae3">黑子的抉择</text>
+<text x="656" y="301" font-size="11" fill="#7b8598">原 2_3</text>
+<text x="800" y="305" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 2 行</text>
+</g>
+<g>
+<rect x="640" y="358" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="358" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="358" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="367" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="385" font-size="14.5" fill="#eceae3">暗部的清扫</text>
+<text x="656" y="405" font-size="11" fill="#7b8598">原 2_4</text>
+<text x="800" y="409" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 3 行</text>
+</g>
+<g>
+<rect x="640" y="462" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="462" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="462" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="471" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="489" font-size="14.5" fill="#eceae3">选帝侯的席位</text>
+<text x="656" y="509" font-size="11" fill="#7b8598">原 5_1</text>
+<text x="800" y="513" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 4 行</text>
+</g>
+<g>
+<rect x="640" y="566" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="566" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="566" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="575" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="593" font-size="13.6" fill="#eceae3">与木之本樱的盟约</text>
+<text x="656" y="613" font-size="11" fill="#7b8598">原 5_2</text>
+<text x="800" y="617" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 5 行</text>
+</g>
+<g>
+<rect x="640" y="670" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="670" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="670" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="679" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="697" font-size="14.5" fill="#eceae3">选帝侯的串联</text>
+<text x="656" y="717" font-size="11" fill="#7b8598">原 5_3</text>
+<text x="800" y="721" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 6 行</text>
+</g>
+<g>
+<rect x="640" y="774" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="774" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="774" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="783" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="801" font-size="14.5" fill="#eceae3">库洛的援军</text>
+<text x="656" y="821" font-size="11" fill="#7b8598">原 5_4</text>
+<text x="800" y="825" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 7 行</text>
+</g>
+<g>
+<rect x="640" y="878" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="640" y="878" width="172" height="62" rx="9" fill="#d9a441" fill-opacity="0.11"/>
+<rect x="640" y="878" width="172" height="62" rx="9" fill="none" stroke="#d9a441" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="640" y="887" width="4" height="44" rx="2" fill="#d9a441"/>
+<text x="656" y="905" font-size="13.6" fill="#eceae3">帝国的学园都市</text>
+<text x="656" y="925" font-size="11" fill="#7b8598">原 5_5</text>
+<text x="800" y="929" font-size="9.5" text-anchor="end" fill="#d9a441" fill-opacity="0.8">4 列 · 8 行</text>
+</g>
+<g>
+<rect x="836" y="566" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="836" y="566" width="172" height="62" rx="9" fill="#7f8a9c" fill-opacity="0.11"/>
+<rect x="836" y="566" width="172" height="62" rx="9" fill="none" stroke="#7f8a9c" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="836" y="575" width="4" height="44" rx="2" fill="#7f8a9c"/>
+<text x="852" y="593" font-size="14.5" fill="#eceae3">研究院的拨款</text>
+<text x="852" y="613" font-size="11" fill="#7b8598">原 4_6</text>
+<text x="996" y="617" font-size="9.5" text-anchor="end" fill="#7f8a9c" fill-opacity="0.8">5 列 · 5 行</text>
+</g>
+<g>
+<rect x="836" y="670" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="836" y="670" width="172" height="62" rx="9" fill="#7f8a9c" fill-opacity="0.11"/>
+<rect x="836" y="670" width="172" height="62" rx="9" fill="none" stroke="#7f8a9c" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="836" y="679" width="4" height="44" rx="2" fill="#7f8a9c"/>
+<text x="852" y="697" font-size="14.5" fill="#eceae3">炮厂的扩建</text>
+<text x="852" y="717" font-size="11" fill="#7b8598">原 4_7</text>
+<text x="996" y="721" font-size="9.5" text-anchor="end" fill="#7f8a9c" fill-opacity="0.8">5 列 · 6 行</text>
+</g>
+<g>
+<rect x="836" y="878" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="836" y="878" width="172" height="62" rx="9" fill="#7f8a9c" fill-opacity="0.11"/>
+<rect x="836" y="878" width="172" height="62" rx="9" fill="none" stroke="#7f8a9c" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="836" y="887" width="4" height="44" rx="2" fill="#7f8a9c"/>
+<text x="852" y="905" font-size="14.5" fill="#eceae3">选票的价钱</text>
+<text x="852" y="925" font-size="11" fill="#7b8598">原 4_8</text>
+<text x="996" y="929" font-size="9.5" text-anchor="end" fill="#7f8a9c" fill-opacity="0.8">5 列 · 8 行</text>
+</g>
+<g>
+<rect x="830" y="976" width="184" height="74" rx="13" fill="#b46fe0" fill-opacity="0.10" stroke="#b46fe0" stroke-opacity="0.35" stroke-width="1"/>
+<rect x="836" y="982" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="836" y="982" width="172" height="62" rx="9" fill="#b46fe0" fill-opacity="0.11"/>
+<rect x="836" y="982" width="172" height="62" rx="9" fill="none" stroke="#b46fe0" stroke-opacity="0.6" stroke-width="1.5"/>
+<rect x="836" y="991" width="4" height="44" rx="2" fill="#b46fe0"/>
+<text x="852" y="1009" font-size="13.6" fill="#eceae3">学园都市的霸业</text>
+<text x="852" y="1029" font-size="11" fill="#7b8598">新建</text>
+<text x="996" y="1033" font-size="9.5" text-anchor="end" fill="#b46fe0" fill-opacity="0.8">5 列 · 9 行</text>
+</g>
+<g>
+<rect x="836" y="1086" width="172" height="62" rx="9" fill="#12161e" fill-opacity="0.95"/>
+<rect x="836" y="1086" width="172" height="62" rx="9" fill="#7f8a9c" fill-opacity="0.11"/>
+<rect x="836" y="1086" width="172" height="62" rx="9" fill="none" stroke="#7f8a9c" stroke-opacity="0.55" stroke-width="1.4" stroke-dasharray="6 4"/>
+<rect x="836" y="1095" width="4" height="44" rx="2" fill="#7f8a9c"/>
+<text x="852" y="1113" font-size="13.6" fill="#6d7787">三个采购任务合并</text>
+<text x="852" y="1133" font-size="11" fill="#7b8598">5_6 / 5_7 / 5_8</text>
+<text x="996" y="1137" font-size="9.5" text-anchor="end" fill="#7f8a9c" fill-opacity="0.8">5 列 · 10 行</text>
+</g>
+<rect x="52" y="1173" width="14" height="14" rx="3" fill="#e05a63" fill-opacity="0.85"/>
+<text x="73" y="1185" font-size="12" fill="#9aa4b4">征服线 Conquest</text>
+<rect x="251" y="1173" width="14" height="14" rx="3" fill="#3fae72" fill-opacity="0.85"/>
+<text x="272" y="1185" font-size="12" fill="#9aa4b4">经济线 Economy</text>
+<rect x="438" y="1173" width="14" height="14" rx="3" fill="#d9a441" fill-opacity="0.85"/>
+<text x="459" y="1185" font-size="12" fill="#9aa4b4">帝国线 Empire</text>
+<rect x="613" y="1173" width="14" height="14" rx="3" fill="#7f8a9c" fill-opacity="0.85"/>
+<text x="634" y="1185" font-size="12" fill="#9aa4b4">支线 / 点数采购</text>
+<rect x="776" y="1173" width="14" height="14" rx="3" fill="#b46fe0" fill-opacity="0.85"/>
+<text x="797" y="1185" font-size="12" fill="#9aa4b4">终局节点</text>
+<text x="52" y="1214" font-size="11.5" fill="#5f6879">实线＝同列纵向依赖 · 虚线＝跨列依赖（跨列只允许相邻一行）· 虚线灰框＝建议删除或合并的重复节点</text>
+</svg>
