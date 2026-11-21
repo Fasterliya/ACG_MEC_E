@@ -79,12 +79,12 @@ MSK_saxony_trade = {
 
 MSK_rhine_trade = {
 	production_efficiency = 0.1
-	build_cost = -0.1
+	build_cost = -0.05
 	artillery_cost = -0.2
 }
 
 MSK_academy_works = {
-	build_cost = -0.15
+	build_cost = -0.10
 }
 
 MSK_hanse_ledger = {
@@ -155,7 +155,7 @@ MSK_zealand_port = {
 }
 
 MSK_bought_admin = {
-	build_cost = -0.1
+	build_cost = -0.05
 }
 
 MSK_bought_military = {

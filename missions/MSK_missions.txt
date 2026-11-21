@@ -308,6 +308,9 @@ MSK_missions_2 = {
 					value = 150
 				}
 			}
+			SHI = {
+				NOT = { total_development = 151 }
+			}
 		}
 		effect = {
 			inherit = SHI
