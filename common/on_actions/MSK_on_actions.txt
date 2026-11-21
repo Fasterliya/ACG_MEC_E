@@ -1,0 +1,12 @@
+on_general_recruited = {
+	effect = {
+		if = {
+			limit = { has_country_flag = MSK_electromaster_lv4 }
+			add_government_power = {
+				mechanic_type = MSK_electromaster_mechanic_lv4
+				power_type = MSK_electromaster_power_lv4
+				value = 5
+			}
+		}
+	}
+}

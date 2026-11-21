@@ -21,6 +21,14 @@ MSK_missions_1 = {
 			custom_tooltip = ACG_MEC_void
 			add_country_modifier = { name = MSK_army_spirit duration = 9125 }
 			add_prestige = 10
+			add_treasury = 150
+			define_general = {
+				name = "御坂美琴"
+				fire = 6
+				shock = 4
+				manuever = 5
+				siege = 3
+			}
 			northern_saxony_area = {
 				add_permanent_claim = ROOT
 			}
@@ -39,34 +47,10 @@ MSK_missions_1 = {
 		}
 	}
 	
-	MSK_missions_1_2 = {
-		icon = mission_diplomatic_relation
-		position = 2
-		required_missions = { MSK_missions_1_1 }
-		provinces_to_highlight = {
-			area = lower_saxony_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			lower_saxony_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			holstein_area = {
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = { name = MSK_hanse_doctrine duration = -1 }
-			add_dip_power = 50
-			add_prestige = 15
-		}
-	}
-	
 	MSK_missions_1_3 = {
 		icon = mission_dominate_home_trade_node
 		position = 3
-		required_missions = { MSK_missions_1_2 }
+		required_missions = { MSK_missions_2_2 }
 		trigger = {
 			navy_size_percentage = 0.6
 		}
@@ -154,7 +138,11 @@ MSK_missions_1 = {
 	MSK_missions_1_5 = {
 		icon = mission_the_kalmar_union
 		position = 5
-		required_missions = { MSK_missions_1_4 }
+		provinces_to_highlight = {
+			area = denmark_area
+			area = skaneland_area
+		}
+		required_missions = { MSK_missions_1_4 MSK_missions_2_4 }
 		trigger = {
 			denmark_area = {
 				type = all
@@ -177,6 +165,10 @@ MSK_missions_1 = {
 	MSK_missions_1_6 = {
 		icon = mission_african_soldier
 		position = 6
+		provinces_to_highlight = {
+			area = gotaland_area
+			area = vastra_gotaland_area
+		}
 		required_missions = { MSK_missions_1_5 }
 		trigger = {
 			gotaland_area = {
@@ -197,6 +189,10 @@ MSK_missions_1 = {
 	MSK_missions_1_7 = {
 		icon = mission_war_chest
 		position = 7
+		provinces_to_highlight = {
+			area = svealand_area
+			area = ostra_svealand_area
+		}
 		required_missions = { MSK_missions_1_6 }
 		trigger = {
 			svealand_area = {
@@ -235,6 +231,17 @@ MSK_missions_1 = {
 			add_splendor = 200
 		}
 	}
+	MSK_missions_1_12 = {
+		icon = mission_conquer_5_states
+		position = 12
+		required_missions = { MSK_missions_2_11 }
+		trigger = {
+			num_of_cities = 6
+		}
+		effect = {
+			add_adm_tech = 1
+		}
+	}
 }
 
 MSK_missions_2 = {
@@ -247,86 +254,160 @@ MSK_missions_2 = {
 	has_country_shield = yes
 	
 	MSK_missions_2_2 = {
-		icon = mission_have_manufactories
+		icon = mission_diplomatic_relation
 		position = 2
-		required_missions = { MSK_missions_1_1 }
+		required_missions = { MSK_missions_1_1 MSK_missions_3_1 }
+		provinces_to_highlight = {
+			area = lower_saxony_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = {
-			holland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			flanders_area = {
+			lower_saxony_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			brabant_area = {
+			holstein_area = {
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { name = MSK_academy_budget duration = 5475 }
-			add_adm_power = 100
-			add_treasury = 300
+			add_country_modifier = { name = MSK_hanse_doctrine duration = -1 }
+			add_dip_power = 50
+			add_prestige = 15
 		}
 	}
 	
 	MSK_missions_2_3 = {
-		icon = mission_dominate_home_trade_node
+		icon = mission_have_two_subjects
 		position = 3
 		required_missions = { MSK_missions_2_2 }
-		provinces_to_highlight = {
-			region = low_countries_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
 		trigger = {
-			low_countries_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			army_size = SHI
 		}
 		effect = {
-			add_country_modifier = { name = MSK_low_countries duration = -1 }
-			add_stability = 2
-			add_splendor = 250
+			create_march = SHI
+			low_countries_region = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = MSK_mobilization duration = 3650 }
+			add_dip_power = 100
+			add_treasury = 200
 		}
 	}
 	
 	MSK_missions_2_4 = {
-		icon = mission_have_manufactories
+		icon = mission_friends_or_enemies
 		position = 4
-		required_missions = { MSK_missions_3_3 }
+		required_missions = { MSK_missions_2_3 }
 		trigger = {
-			adm_power = 300
+			stability = 3
+			mil_power = 500
+			SHI = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
 		}
 		effect = {
-			add_adm_power = -300
-			add_country_modifier = { name = MSK_bought_research duration = -1 }
+			inherit = SHI
+			add_stability = -3
+			add_mil_power = -200
+			add_country_modifier = { name = MSK_secret_unrest duration = 3650 }
 		}
 	}
 	
 	MSK_missions_2_5 = {
 		icon = mission_cannons_firing
 		position = 5
-		required_missions = { MSK_missions_1_4 }
+		required_missions = { MSK_missions_2_4 }
 		trigger = {
-			mil_power = 300
+			num_of_cities = 20
+			monthly_income = 100
+			mil_tech = 6
 		}
 		effect = {
-			add_mil_power = -300
-			add_country_modifier = { name = MSK_bought_artillery duration = -1 }
+			add_country_modifier = { name = MSK_railgun_doctrine duration = -1 }
+			add_adm_power = 100
+			add_stability = 1
+		}
+	}
+	
+	MSK_missions_2_6 = {
+		icon = mission_monarch_in_throne_room
+		position = 6
+		required_missions = { MSK_missions_3_5 }
+		trigger = {
+			num_of_cities = 30
+			total_development = 400
+		}
+		effect = {
+			override_country_name = MSK_academy_country_name
+			add_country_modifier = { name = MSK_academy_city duration = -1 }
+			add_prestige = 20
+			add_splendor = 150
 		}
 	}
 	
 	MSK_missions_2_7 = {
-		icon = mission_rb_control_electors
+		icon = mission_empire
 		position = 7
-		required_missions = { MSK_missions_3_6 }
+		required_missions = { MSK_missions_2_6 MSK_missions_3_6 }
 		trigger = {
-			dip_power = 300
+			prestige = 75
+			num_of_centers_of_trade = 3
+			any_owned_province = {
+				has_center_of_trade_of_level = 3
+			}
 		}
 		effect = {
-			add_dip_power = -300
-			add_country_modifier = { name = MSK_bought_influence duration = -1 }
+			add_country_modifier = { name = MSK_dual_route duration = -1 }
+			add_prestige = 40
+			add_splendor = 200
+			add_dip_power = 150
+		}
+	}
+	
+
+	
+	MSK_missions_2_9 = {
+		icon = mission_empire
+		position = 9
+		required_missions = { MSK_missions_1_8 MSK_missions_3_8 }
+		trigger = {
+			num_of_cities = 120
+			prestige = 75
+		}
+		effect = {
+			add_prestige = 50
+			add_splendor = 500
+			add_stability = 2
+			add_army_tradition = 10
+		}
+	}
+
+	MSK_missions_2_11 = {
+		icon = mission_monarch_in_throne_room
+		position = 11
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_treasury = 50
+		}
+	}
+	MSK_missions_2_12 = {
+		icon = mission_diplomatic_relation
+		position = 12
+		required_missions = { MSK_missions_2_11 }
+		trigger = {
+			num_of_allies = 3
+		}
+		effect = {
+			add_dip_tech = 1
 		}
 	}
 }
@@ -341,35 +422,61 @@ MSK_missions_3 = {
 	has_country_shield = yes
 	
 	MSK_missions_3_1 = {
-		icon = mission_early_game_buildings
+		icon = mission_alliances
 		position = 1
 		trigger = {
-			num_of_cities = 4
+			OR = {
+				SHI = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				SHI = {
+					alliance_with = ROOT
+				}
+			}
 		}
 		effect = {
-			add_country_modifier = { name = MSK_academy_works duration = -1 }
-			add_treasury = 200
-		}
-	}
-	
-	MSK_missions_3_2 = {
-		icon = mission_war_chest
-		position = 2
-		required_missions = { MSK_missions_3_1 }
-		trigger = {
-			num_of_ports = 2
-		}
-		effect = {
-			add_country_modifier = { name = MSK_hanse_ledger duration = -1 }
-			add_country_modifier = { name = MSK_hanse_prosperity duration = 9125 }
-			add_treasury = 300
+			add_country_modifier = { name = MSK_diplomatic_merit duration = -1 }
+			add_dip_power = 75
+			if = {
+				limit = {
+					SHI = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+				custom_tooltip = MSK_missions_3_1_c_tt1_yes
+				45 = {
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						NOT = { owns = 45 }
+					}
+					45 = {
+						cede_province = ROOT
+					}
+				}
+			}
+			else = {
+				custom_tooltip = MSK_missions_3_1_c_tt1_no
+				add_prestige = 10
+			}
 		}
 	}
 	
 	MSK_missions_3_3 = {
 		icon = mission_high_income
 		position = 3
-		required_missions = { MSK_missions_3_2 }
+		provinces_to_highlight = {
+			area = holland_area
+			area = flanders_area
+		}
+		required_missions = { MSK_missions_2_2 }
 		trigger = {
 			holland_area = {
 				type = all
@@ -388,6 +495,11 @@ MSK_missions_3 = {
 	MSK_missions_3_4 = {
 		icon = mission_early_game_buildings
 		position = 4
+		provinces_to_highlight = {
+			area = north_rhine_area
+			area = upper_rhineland_area
+			area = lower_rhineland_area
+		}
 		required_missions = { MSK_missions_3_3 }
 		trigger = {
 			north_rhine_area = {
@@ -411,6 +523,10 @@ MSK_missions_3 = {
 	MSK_missions_3_5 = {
 		icon = mission_conquer_5_states
 		position = 5
+		provinces_to_highlight = {
+			area = northern_saxony_area
+			area = south_saxony_area
+		}
 		required_missions = { MSK_missions_3_4 }
 		trigger = {
 			northern_saxony_area = {
@@ -433,6 +549,9 @@ MSK_missions_3 = {
 	MSK_missions_3_6 = {
 		icon = mission_dominate_home_trade_node
 		position = 6
+		provinces_to_highlight = {
+			area = lower_rhineland_area
+		}
 		required_missions = { MSK_missions_3_5 }
 		trigger = {
 			lower_rhineland_area = {
@@ -446,48 +565,64 @@ MSK_missions_3 = {
 			add_prestige = 25
 		}
 	}
-	
 	MSK_missions_3_7 = {
-		icon = mission_cannons_firing
+		icon = mission_have_manufactories
 		position = 7
-		required_missions = { MSK_missions_1_6 }
+		provinces_to_highlight = {
+			area = holland_area
+			area = flanders_area
+			area = brabant_area
+		}
+		required_missions = { MSK_missions_3_6 }
 		trigger = {
-			num_of_cities = 10
+			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			flanders_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			add_country_modifier = { name = MSK_railgun_doctrine duration = -1 }
+			brabant_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { name = MSK_academy_budget duration = 5475 }
 			add_adm_power = 100
-			add_stability = 1
+			add_treasury = 300
 		}
 	}
-	
+
 	MSK_missions_3_8 = {
-		icon = mission_monarch_in_throne_room
+		icon = mission_dominate_home_trade_node
 		position = 8
 		required_missions = { MSK_missions_3_7 }
+		provinces_to_highlight = {
+			region = low_countries_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = {
-			num_of_cities = 15
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			add_country_modifier = { name = MSK_academy_city duration = -1 }
-			add_prestige = 20
-			add_splendor = 150
+			add_country_modifier = { name = MSK_low_countries duration = -1 }
+			add_stability = 2
+			add_splendor = 250
 		}
 	}
-	
-	MSK_missions_3_9 = {
-		icon = mission_empire
-		position = 9
-		required_missions = { MSK_missions_3_8 MSK_missions_1_8 MSK_missions_5_8 }
+	MSK_missions_3_12 = {
+		icon = mission_assemble_an_army
+		position = 12
+		required_missions = { MSK_missions_2_11 }
 		trigger = {
-			num_of_cities = 120
-			prestige = 75
+			army_size = 10
 		}
 		effect = {
-			add_prestige = 50
-			add_splendor = 500
-			add_stability = 2
-			add_army_tradition = 10
+			add_mil_tech = 1
 		}
 	}
 }
@@ -501,29 +636,46 @@ MSK_missions_4 = {
 	}
 	has_country_shield = yes
 	
-	MSK_missions_4_2 = {
-		icon = mission_have_manufactories
-		position = 2
-		required_missions = { MSK_missions_3_1 }
+	MSK_missions_4_1 = {
+		icon = mission_early_game_buildings
+		position = 1
 		trigger = {
-			num_of_cities = 12
+			num_of_cities = 4
+			temple = 5
 		}
 		effect = {
-			add_country_modifier = { name = MSK_academy_hub duration = -1 }
-			add_adm_power = 100
+			add_country_modifier = { name = MSK_academy_works duration = -1 }
+			add_treasury = 200
+		}
+	}
+	
+	MSK_missions_4_2 = {
+		icon = mission_war_chest
+		position = 2
+		required_missions = { MSK_missions_4_1 }
+		trigger = {
+			owns = 44
+			owns = 45
+			num_of_ports = 5
+		}
+		effect = {
+			add_country_modifier = { name = MSK_hanse_ledger duration = -1 }
+			add_country_modifier = { name = MSK_hanse_prosperity duration = 9125 }
+			add_treasury = 300
 		}
 	}
 	
 	MSK_missions_4_3 = {
-		icon = mission_high_income
+		icon = mission_have_manufactories
 		position = 3
 		required_missions = { MSK_missions_4_2 }
 		trigger = {
-			num_of_cities = 15
+			num_of_cities = 20
+			workshop = 5
 		}
 		effect = {
-			add_country_modifier = { name = MSK_golden_age duration = -1 }
-			add_splendor = 150
+			add_country_modifier = { name = MSK_academy_hub duration = -1 }
+			add_adm_power = 100
 		}
 	}
 	
@@ -532,7 +684,22 @@ MSK_missions_4 = {
 		position = 4
 		required_missions = { MSK_missions_4_3 }
 		trigger = {
-			num_of_cities = 18
+			num_of_cities = 30
+			workshop = 15
+		}
+		effect = {
+			add_country_modifier = { name = MSK_golden_age duration = -1 }
+			add_splendor = 150
+		}
+	}
+	
+	MSK_missions_4_5 = {
+		icon = mission_high_income
+		position = 5
+		required_missions = { MSK_missions_4_4 }
+		trigger = {
+			NOT = { inflation = 2 }
+			monthly_income = 300
 		}
 		effect = {
 			add_country_modifier = { name = MSK_national_bank duration = -1 }
@@ -541,59 +708,34 @@ MSK_missions_4 = {
 		}
 	}
 	
-	MSK_missions_4_5 = {
-		icon = mission_empire
-		position = 5
-		required_missions = { MSK_missions_4_4 }
-		trigger = {
-			prestige = 60
-		}
-		effect = {
-			add_country_modifier = { name = MSK_dual_route duration = -1 }
-			add_prestige = 40
-			add_splendor = 200
-			add_dip_power = 150
-		}
-	}
-	
 	MSK_missions_4_6 = {
-		icon = mission_high_income
+		icon = mission_empire
 		position = 6
-		required_missions = { MSK_missions_4_5 }
+		required_missions = { MSK_missions_3_5 MSK_missions_4_5 MSK_missions_5_5 }
+		provinces_to_highlight = {
+			region = north_german_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = {
-			adm_power = 150
+			north_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			army_size = 300
 		}
 		effect = {
-			add_adm_power = -150
-			add_country_modifier = { name = MSK_bought_admin duration = -1 }
+			add_country_modifier = { name = MSK_new_era duration = -1 }
+			add_treasury = 200
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
 		}
 	}
+
+
 	
-	MSK_missions_4_7 = {
-		icon = mission_assemble_an_army
-		position = 7
-		required_missions = { MSK_missions_4_6 }
-		trigger = {
-			mil_power = 150
-		}
-		effect = {
-			add_mil_power = -150
-			add_country_modifier = { name = MSK_bought_military duration = -1 }
-		}
-	}
+
 	
-	MSK_missions_4_8 = {
-		icon = mission_diplomatic_relation
-		position = 8
-		required_missions = { MSK_missions_4_7 }
-		trigger = {
-			dip_power = 150
-		}
-		effect = {
-			add_dip_power = -150
-			add_country_modifier = { name = MSK_bought_diplo duration = -1 }
-		}
-	}
 }
 
 MSK_missions_5 = {
@@ -606,101 +748,8 @@ MSK_missions_5 = {
 	has_country_shield = yes
 	
 	MSK_missions_5_1 = {
-		icon = mission_alliances
-		position = 1
-		trigger = {
-			OR = {
-				SHI = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-				SHI = {
-					alliance_with = ROOT
-				}
-			}
-		}
-		effect = {
-			45 = {
-				add_core = ROOT
-			}
-			add_country_modifier = { name = MSK_diplomatic_merit duration = -1 }
-			add_dip_power = 75
-			
-			if = {
-				limit = { 
-					SHI = {
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-					}
-					SHI = {
-						alliance_with = ROOT
-					}
-				}
-				custom_tooltip = MSK_missions_3_1_c_tt1_yes
-				ROOT = {
-					vassalize = SHI
-				}
-				custom_tooltip = MSK_missions_3_1_c_tt2
-				tooltip = {
-					add_prestige = 10
-				}
-			}
-			else = {
-				custom_tooltip = MSK_missions_3_1_c_tt1_no
-				tooltip = {
-					ROOT = {
-						vassalize = SHI
-					}
-				}
-				custom_tooltip = MSK_missions_3_1_c_tt2
-				add_prestige = 10
-			}
-		}
-	}
-	
-	MSK_missions_5_2 = {
-		icon = mission_have_two_subjects
-		position = 2
-		required_missions = { MSK_missions_5_1 }
-		trigger = {
-			army_size = SHI
-		}
-		effect = {
-			vassalize = SHI
-			low_countries_region = {
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = { name = MSK_mobilization duration = 3650 }
-			add_dip_power = 100
-			add_treasury = 200
-		}
-	}
-	
-	MSK_missions_5_3 = {
-		icon = mission_friends_or_enemies
-		position = 3
-		required_missions = { MSK_missions_5_2 }
-		trigger = {
-			SHI = {
-				vassal_of = ROOT
-			}
-		}
-		effect = {
-			inherit = SHI
-			add_country_modifier = { name = MSK_annex_glory duration = 3650 }
-			add_prestige = 25
-			add_manpower = 5
-		}
-	}
-	
-	MSK_missions_5_4 = {
 		icon = mission_rb_control_electors
-		position = 4
-		required_missions = { MSK_missions_5_3 }
+		position = 1
 		trigger = {
 			is_elector = yes
 		}
@@ -710,10 +759,10 @@ MSK_missions_5 = {
 		}
 	}
 	
-	MSK_missions_5_5 = {
+	MSK_missions_5_2 = {
 		icon = mission_friends_or_enemies
-		position = 5
-		required_missions = { MSK_missions_5_4 }
+		position = 2
+		required_missions = { MSK_missions_5_1 }
 		trigger = {
 			alliance_with = SKR
 		}
@@ -727,10 +776,10 @@ MSK_missions_5 = {
 		}
 	}
 	
-	MSK_missions_5_6 = {
+	MSK_missions_5_3 = {
 		icon = mission_diplomatic_relation
-		position = 6
-		required_missions = { MSK_missions_5_5 }
+		position = 3
+		required_missions = { MSK_missions_5_2 }
 		trigger = {
 			num_of_allies = 3
 		}
@@ -745,10 +794,10 @@ MSK_missions_5 = {
 		}
 	}
 	
-	MSK_missions_5_7 = {
+	MSK_missions_5_4 = {
 		icon = mission_alliances
-		position = 7
-		required_missions = { MSK_missions_5_6 }
+		position = 4
+		required_missions = { MSK_missions_5_3 }
 		trigger = {
 			alliance_with = SKR
 			prestige = 40
@@ -768,10 +817,10 @@ MSK_missions_5 = {
 		}
 	}
 	
-	MSK_missions_5_8 = {
+	MSK_missions_5_5 = {
 		icon = mission_empire
-		position = 8
-		required_missions = { MSK_missions_5_7 }
+		position = 5
+		required_missions = { MSK_missions_5_4 }
 		trigger = {
 			num_of_cities = 100
 		}
@@ -783,6 +832,192 @@ MSK_missions_5 = {
 				add_country_modifier = { name = MSK_allied_court duration = -1 }
 				add_treasury = 500
 			}
+		}
+	}
+	
+
+	
+
+	
+
+}
+
+MSK_missions_6 = {
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = MSK
+	}
+	has_country_shield = yes
+
+	MSK_missions_6_1 = {
+		icon = mission_assemble_an_army
+		position = 1
+		trigger = {
+			army_size_percentage = 1.0
+			government_reform_progress = 25
+		}
+		effect = {
+			change_government_reform_progress = -25
+			add_mil_power = -150
+			set_country_flag = MSK_electromaster_lv2
+			custom_tooltip = MSK_missions_6_1_lv2_tooltip
+		}
+	}
+
+	MSK_missions_6_2 = {
+		icon = mission_cannons_firing
+		position = 2
+		required_missions = { MSK_missions_6_1 }
+		trigger = {
+			army_size = 120
+			government_reform_progress = 25
+			mil_power = 175
+		}
+		effect = {
+			change_government_reform_progress = -25
+			add_mil_power = -175
+			set_country_flag = MSK_electromaster_lv3
+			add_government_power = {
+				mechanic_type = MSK_electromaster_mechanic
+				power_type = MSK_electromaster_power
+				value = 50
+			}
+			custom_tooltip = MSK_missions_6_2_lv3_tooltip
+		}
+	}
+
+	MSK_missions_6_3 = {
+		icon = mission_empire
+		position = 3
+		required_missions = { MSK_missions_6_2 }
+		trigger = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			treasury = 1000
+			government_reform_progress = 25
+			army_size = 200
+			monthly_income = 120
+		}
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_treasury = -1000
+			change_government_reform_progress = -25
+			set_country_flag = MSK_electromaster_lv4
+			custom_tooltip = MSK_missions_6_3_lv4_tooltip
+		}
+	}
+
+	MSK_missions_6_4 = {
+		icon = mission_empire
+		position = 4
+		required_missions = { MSK_missions_6_3 }
+		trigger = {
+			treasury = 5000
+			mil_power = 300
+			mil_tech = 10
+			government_reform_progress = 25
+			has_country_modifier = MSK_railgun_doctrine
+			army_size = 300
+			monthly_income = 400
+		}
+		effect = {
+			add_treasury = -5000
+			add_mil_power = -300
+			change_government_reform_progress = -25
+			set_country_flag = MSK_electromaster_lv5
+			custom_tooltip = MSK_missions_6_4_lv5_tooltip
+		}
+	}
+
+	MSK_missions_6_5 = {
+		icon = mission_empire
+		position = 5
+		required_missions = { MSK_missions_6_4 }
+		trigger = {
+			is_hegemon = yes
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			set_country_flag = MSK_electromaster_lv6
+			custom_tooltip = MSK_missions_6_5_lv6_tooltip
+		}
+	}
+
+	MSK_missions_6_6 = {
+		icon = mission_have_manufactories
+		position = 6
+		trigger = {
+			adm_power = 300
+		}
+		effect = {
+			add_adm_power = -300
+			add_country_modifier = { name = MSK_bought_research duration = -1 }
+		}
+	}
+
+	MSK_missions_6_7 = {
+		icon = mission_cannons_firing
+		position = 7
+		trigger = {
+			mil_power = 300
+		}
+		effect = {
+			add_mil_power = -300
+			add_country_modifier = { name = MSK_bought_artillery duration = -1 }
+		}
+	}
+
+	MSK_missions_6_8 = {
+		icon = mission_rb_control_electors
+		position = 8
+		trigger = {
+			dip_power = 300
+		}
+		effect = {
+			add_dip_power = -300
+			add_country_modifier = { name = MSK_bought_influence duration = -1 }
+		}
+	}
+
+	MSK_missions_6_9 = {
+		icon = mission_high_income
+		position = 9
+		trigger = {
+			adm_power = 150
+		}
+		effect = {
+			add_adm_power = -150
+			add_country_modifier = { name = MSK_bought_admin duration = -1 }
+		}
+	}
+
+	MSK_missions_6_10 = {
+		icon = mission_assemble_an_army
+		position = 10
+		trigger = {
+			mil_power = 150
+		}
+		effect = {
+			add_mil_power = -150
+			add_country_modifier = { name = MSK_bought_military duration = -1 }
+		}
+	}
+
+	MSK_missions_6_11 = {
+		icon = mission_diplomatic_relation
+		position = 11
+		trigger = {
+			dip_power = 150
+		}
+		effect = {
+			add_dip_power = -150
+			add_country_modifier = { name = MSK_bought_diplo duration = -1 }
 		}
 	}
 }

@@ -13,12 +13,84 @@ MSK_electromaster_mechanic = {
 			increases_with_global = no
 			is_good = yes
 
-			scaled_modifier = {
-				modifier = {
-					artillery_power = 0.20
-					shock_damage = 0.20
-				}
+		scaled_modifier = {
+			trigger = {
+				NOT = { has_country_flag = MSK_electromaster_lv2 }
 			}
+			modifier = {
+					artillery_power = 0.10
+					shock_damage = 0.10
+					monthly_MSK_electromaster_power = -0.10
+			}
+		}
+
+		scaled_modifier = {
+			trigger = {
+				has_country_flag = MSK_electromaster_lv2
+				NOT = { has_country_flag = MSK_electromaster_lv3 }
+			}
+			modifier = {
+					artillery_power = 0.10
+					shock_damage = 0.10
+					monthly_MSK_electromaster_power = -0.08
+			}
+		}
+
+		scaled_modifier = {
+			trigger = {
+				has_country_flag = MSK_electromaster_lv3
+				NOT = { has_country_flag = MSK_electromaster_lv4 }
+			}
+			modifier = {
+					artillery_power = 0.10
+					shock_damage = 0.15
+					morale_damage = 0.10
+					monthly_MSK_electromaster_power = -0.06
+			}
+		}
+
+		scaled_modifier = {
+			trigger = {
+				has_country_flag = MSK_electromaster_lv4
+				NOT = { has_country_flag = MSK_electromaster_lv5 }
+			}
+			modifier = {
+					artillery_power = 0.20
+					shock_damage = 0.15
+					morale_damage = 0.10
+					monthly_MSK_electromaster_power = -0.04
+			}
+		}
+
+		scaled_modifier = {
+			trigger = {
+				has_country_flag = MSK_electromaster_lv5
+				NOT = { has_country_flag = MSK_electromaster_lv6 }
+			}
+			modifier = {
+					artillery_power = 0.20
+					shock_damage = 0.15
+					morale_damage = 0.10
+					morale_damage_received = -0.10
+					artillery_shock = 0.50
+					monthly_MSK_electromaster_power = -0.02
+			}
+		}
+
+		scaled_modifier = {
+			trigger = {
+				has_country_flag = MSK_electromaster_lv6
+			}
+			modifier = {
+					artillery_power = 0.20
+					shock_damage = 0.15
+					morale_damage = 0.10
+					morale_damage_received = -0.10
+					artillery_shock = 0.75
+					fire_damage = 0.10
+					monthly_MSK_electromaster_power = 0.00
+			}
+		}
 		}
 	}
 
@@ -27,7 +99,8 @@ MSK_electromaster_mechanic = {
 			gui = prussian_militarization_gov_mech_1_2
 			cost_type = MSK_electromaster_power
 			trigger = {
-				mil_power = 30
+				mil_power = 50
+				NOT = { has_country_flag = MSK_electromaster_lv2 }
 				NOT = {
 					has_government_power = {
 						mechanic_type = MSK_electromaster_mechanic
@@ -37,7 +110,7 @@ MSK_electromaster_mechanic = {
 				}
 			}
 			effect = {
-				add_mil_power = -30
+				add_mil_power = -50
 				add_government_power = {
 					mechanic_type = MSK_electromaster_mechanic
 					power_type = MSK_electromaster_power
@@ -49,7 +122,72 @@ MSK_electromaster_mechanic = {
 				factor = 5
 				modifier = {
 					factor = 0
-					NOT = { mil_power = 300 }
+					NOT = { mil_power = 200 }
+				}
+			}
+		}
+
+		MSK_electromaster_charge_25 = {
+			gui = prussian_militarization_gov_mech_1_2
+			cost_type = MSK_electromaster_power
+			trigger = {
+				mil_power = 25
+				has_country_flag = MSK_electromaster_lv2
+				NOT = { has_country_flag = MSK_electromaster_lv5 }
+				NOT = {
+					has_government_power = {
+						mechanic_type = MSK_electromaster_mechanic
+						power_type = MSK_electromaster_power
+						value = 100
+					}
+				}
+			}
+			effect = {
+				add_mil_power = -25
+				add_government_power = {
+					mechanic_type = MSK_electromaster_mechanic
+					power_type = MSK_electromaster_power
+					value = 10
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 5
+				modifier = {
+					factor = 0
+					NOT = { mil_power = 100 }
+				}
+			}
+		}
+
+		MSK_electromaster_charge_15 = {
+			gui = prussian_militarization_gov_mech_1_2
+			cost_type = MSK_electromaster_power
+			trigger = {
+				mil_power = 15
+				has_country_flag = MSK_electromaster_lv5
+				NOT = {
+					has_government_power = {
+						mechanic_type = MSK_electromaster_mechanic
+						power_type = MSK_electromaster_power
+						value = 100
+					}
+				}
+			}
+			effect = {
+				add_mil_power = -15
+				add_government_power = {
+					mechanic_type = MSK_electromaster_mechanic
+					power_type = MSK_electromaster_power
+					value = 10
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 5
+				modifier = {
+					factor = 0
+					NOT = { mil_power = 60 }
 				}
 			}
 		}

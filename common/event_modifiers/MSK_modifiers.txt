@@ -1,5 +1,6 @@
 MSK_army_spirit = {
 	land_morale = 0.1
+	land_forcelimit = 6
 	ae_impact = -0.1
 }
 
@@ -15,11 +16,6 @@ MSK_baltic_dominance = {
 
 MSK_mobilization = {
 	discipline = 0.05
-}
-
-MSK_annex_glory = {
-	land_morale = 0.05
-	war_exhaustion = -0.05
 }
 
 MSK_academy_budget = {
@@ -46,7 +42,7 @@ MSK_scandinavia_crown = {
 
 MSK_hanse_doctrine = {
 	infantry_power = 0.1
-	artillery_power = 0.2
+	shock_damage = 0.05
 }
 
 MSK_railgun_doctrine = {
@@ -175,12 +171,19 @@ MSK_bought_research = {
 }
 
 MSK_bought_artillery = {
-	artillery_power = 0.2
 	artillery_cost = -0.15
 	backrow_artillery_damage = 0.1
-	artillery_shock = 1
 }
 
 MSK_bought_influence = {
 	diplomatic_annexation_cost = -0.2
+}
+
+MSK_new_era = {
+	fire_damage = 0.05
+	shock_damage = 0.05
+}
+
+MSK_secret_unrest = {
+	stability_cost_modifier = 0.2
 }

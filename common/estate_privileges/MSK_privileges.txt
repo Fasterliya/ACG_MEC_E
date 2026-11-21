@@ -1,0 +1,31 @@
+estate_nobles_sister = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	loyalty = 0.10
+	influence = 0.10
+
+	can_select = {
+	}
+
+	on_granted = {
+	}
+
+	mechanics = {
+		exempt_from_seize_land
+	}
+
+	benefits = {
+		monthly_mil = 1
+	}
+
+	modifier_by_land_ownership = {
+		global_manpower_modifier = 0.33
+		land_forcelimit_modifier = 0.20
+		manpower_recovery_speed = 0.33
+		stability_cost_modifier = 0.20
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
