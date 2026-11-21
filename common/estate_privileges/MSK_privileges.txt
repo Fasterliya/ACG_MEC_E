@@ -4,6 +4,10 @@ estate_nobles_sister = {
 	loyalty = 0.10
 	influence = 0.10
 
+	is_valid = {
+		tag = MSK
+	}
+
 	can_select = {
 	}
 
