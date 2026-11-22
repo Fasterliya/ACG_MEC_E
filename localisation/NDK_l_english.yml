@@ -23,7 +23,7 @@
  NDK_idea_7: "gÒRuXR"
  NDK_idea_7_desc: "ýw(W*c·VaS±ƒ„v¬Q)YImNeg„vºNÿ,g«Ž1S=fN=e›Q–0ÙÌ‘„vÏkN7bºN¶RýYNwôg0ÐvNN.VýwÉbV„vV0"
 
- # ===== ûN¡Rh v2 =====
+ # ===== MISSION =====
 
  NDK_missions_1: "gSËzýV"
  NDK_missions_2: "¹8‰S"
@@ -107,7 +107,7 @@
  NDK_tt_end_1a: "§YR=e1A · g«Žø‹b§! òTb0g¿uS(WNN<h6emg:N §G°euKNg§!0"
  NDK_tt_end_2a: "§YR=e2A§! òTb0g¿uS(WNN<h6emg:N §G°eÞ‹„v–`º‹§!0"
 
- # ===== ûN¡RhîOck =====
+ # ===== MODIFIER =====
 
  NDK_mod_lake_land: "CSVnKN0W"
  NDK_mod_northern_road: "S¹eKNï"
@@ -128,3 +128,18 @@
  NDK_mod_fatui_deal: "aºNO„v²Nf"
  NDK_mod_new_moon: "°euKNg"
  NDK_mod_paradox_born: "°eÞ‹„v–`º‹"
+
+ ### REFORM
+ NDK_hollow_moon_poem_reform: "zzgN•YKN×‹"
+ NDK_hollow_moon_poem_reform_desc: "*c·VaS±ƒ„v?eSON=fN)Yø”b„v0zzgKNt^ÿTèÏe(W—gNÍ‘¢‹ßv¦uÿop1ugbopºN¹pÿ'1uFUOÐÿ†S1u—gKNPR°‹ÿ‰p1uåTJWçpÿwRRRVaºNO0ÏkN¶Rýÿb0R†NêñT±NýNÿmNý.kN†N+RºN±NýN0dkT•YQ•ÿmN•NÇÙ–™S*g™QŒR„v×‹0"
+
+ ### ESTATE
+ NDK_estate_nobles_name: "gbopºN"
+ NDK_estate_church_name: "—gKNPR"
+ NDK_estate_burghers_name: "îSÃ”ÐTwUË†wSåTJW"
+ NDK_estate_dhimmi_name: "O<SQYFUO"
+ NDK_estate_brahmins_name: "aºNO"
+
+ ### CUSTOM_TOOLTIP
+ NDK_missions_1_3_c_tt1: "§Y7R°e³Q®‹ïSåNÍ‘°e	ébgøv„vcd§!"
+ NDK_missions_2_3_c_tt1: "–:g§Y15§!¹p£dip£§YúWNxuµNÑSUS¦^§!RM‘0R&rTagöN„vwýN"

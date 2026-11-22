@@ -23,7 +23,7 @@ l_english:
  NDK_idea_7: "极寒生存"
  NDK_idea_7_desc: "能在挪德卡莱的冬天活下来的人，本身就是一支军队。这里的每一户人家都备着柴、盐与一张能拉开的弓。"
 
- # ===== 任务树 v2 =====
+ # ===== MISSION =====
 
  NDK_missions_1: "极北立国"
  NDK_missions_2: "边贸要道"
@@ -65,32 +65,32 @@ l_english:
  NDK_missions_4_1_title: "月佑之地"
  NDK_missions_4_1_desc: "守夜者在月下起誓，誓言里没有一个字提到国家。但从此以后，挪德卡莱的每一次决断，都要先看一眼月亮。"
 
- NDK_missions_4_lock_2_title: "空月之歌"
- NDK_missions_4_lock_2_desc: "有些歌只在月缺的时候能唱出来。唱的人知道自己在唱什么，听的人不知道——这就是它一直没被禁的原因。"
- NDK_missions_4_lock_3_title: "祈月之夜"
- NDK_missions_4_lock_3_desc: "祈月之夜，家家熄灯。不是敬畏，是怕看见月亮上那一块空缺的形状像什么。"
- NDK_missions_4_lock_4_title: "分支1A,B"
- NDK_missions_4_lock_4_desc: "史书在这里留了空白。不是没有写，是写下来的那一页被人撕走了。"
- NDK_missions_4_lock_5_title: "分支2A,B"
- NDK_missions_4_lock_5_desc: "另一条路，另一种结局。它一直在这里，只是还没轮到你走。"
+ NDK_missions_4_lock_2_title: "已锁定"
+ NDK_missions_4_lock_2_desc: "已锁定"
+ NDK_missions_4_lock_3_title: "已锁定"
+ NDK_missions_4_lock_3_desc: "已锁定"
+ NDK_missions_4_lock_4_title: "已锁定"
+ NDK_missions_4_lock_4_desc: "已锁定"
+ NDK_missions_4_lock_5_title: "已锁定"
+ NDK_missions_4_lock_5_desc: "已锁定"
 
- NDK_missions_4_a_2_title: "空月之歌 · 析身"
- NDK_missions_4_a_2_desc: "三月空席之后，挪德卡莱人开始讨论一个不该讨论的问题：如果月有两个，人是不是也可以有两个。"
+ NDK_missions_4_a_2_title: "空月之歌"
+ NDK_missions_4_a_2_desc: "空月之歌"
  NDK_missions_4_a_3_title: "析身之议"
- NDK_missions_4_a_3_desc: "贵族们在议事厅里争了七天。争到最后，他们同意把自己分成两半：一半留在雪原，一半去追月亮。"
- NDK_missions_4_a_4_title: "分支1A · 析身诸我"
- NDK_missions_4_a_4_desc: "五家之中已有三家站到了这一边。剩下两家还没说话，但议事厅的门已经关上了。"
- NDK_missions_4_a_5_title: "分支1B · 新生之月"
- NDK_missions_4_a_5_desc: "新的月亮不是被点亮的，是被造出来的。造它的材料里，有一半是挪德卡莱人自己交出去的东西。"
+ NDK_missions_4_a_3_desc: "析身之议"
+ NDK_missions_4_a_4_title: "佚名"
+ NDK_missions_4_a_4_desc: "佚名"
+ NDK_missions_4_a_5_title: "新生之月"
+ NDK_missions_4_a_5_desc: "新生之月"
 
- NDK_missions_4_b_2_title: "空月之歌 · 悖论"
- NDK_missions_4_b_2_desc: "另一派说，月缺不是灾难，是证词。有人把月亮藏起来了，而我们要做的不是补它，是找出藏它的人。"
+ NDK_missions_4_b_2_title: "空月之歌"
+ NDK_missions_4_b_2_desc: "空月之歌"
  NDK_missions_4_b_3_title: "新诞的前夜"
- NDK_missions_4_b_3_desc: "商人们在港口清点仓库，教士在教堂清点蜡烛。所有人都在等一件谁也说不清是什么的事发生。"
- NDK_missions_4_b_4_title: "分支2A · 佚名"
- NDK_missions_4_b_4_desc: "这一格的名字在档案里是空的。抄写员留下了行距，却忘了留字——或者他故意忘了。"
- NDK_missions_4_b_5_title: "分支2B · 新诞的悖论"
- NDK_missions_4_b_5_desc: "新诞之物不该存在，于是它的第一份公文就是证明自己不存在。挪德卡莱的官僚体系对此毫无困难。"
+ NDK_missions_4_b_3_desc: "新诞的前夜"
+ NDK_missions_4_b_4_title: "析身诸我"
+ NDK_missions_4_b_4_desc: "析身诸我"
+ NDK_missions_4_b_5_title: "新诞的舛讹"
+ NDK_missions_4_b_5_desc: "新诞的舛讹"
 
  NDK_missions_5_1_title: "霜月之子"
  NDK_missions_5_1_desc: "霜月之子不谈政治，只谈月相。他们把历法交给国家，条件是国家不许改历法上的任何一天。"
@@ -107,7 +107,7 @@ l_english:
  NDK_tt_end_1a: "§Y分支1A · 析身诸我§! 已成。月线将在下一格收束为 §G新生之月§!。"
  NDK_tt_end_2a: "§Y分支2A§! 已成。月线将在下一格收束为 §G新诞的悖论§!。"
 
- # ===== 任务树修正 =====
+ # ===== MODIFIER =====
 
  NDK_mod_lake_land: "千湖之地"
  NDK_mod_northern_road: "北方之路"
@@ -139,3 +139,7 @@ l_english:
  NDK_estate_burghers_name: "叮铃哐啷蛋卷工坊"
  NDK_estate_dhimmi_name: "伏尼契商会"
  NDK_estate_brahmins_name: "愚人众"
+
+ ### CUSTOM_TOOLTIP
+ NDK_missions_1_3_c_tt1: "§Y刷新决议可以重新选择月相的冷却§!"
+ NDK_missions_2_3_c_tt1: "随机§Y15§!点£dip£§Y基础生产发展度§!分配到符合条件的省份"

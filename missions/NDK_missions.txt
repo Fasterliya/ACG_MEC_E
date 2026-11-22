@@ -1,13 +1,3 @@
-# ============================================================
-# 挪德卡莱 NDK 任务树 v5 —— 骨骼按设计图落位
-# 5 列(slot 1-5) / 8 个 series block / 32 个节点
-# slot4 保持四 block 并存结构（不动）
-# 全部 effect 清空为 effect = { }，修正文件全部停用
-# 图上的跨列线只有两条：
-#   A3 北方之路   ──→ B4 北拉普兰
-#   B1 雪浪与苍林 ──→ C1 白海港口（同一行，正右方）
-# ============================================================
-
 # ------------------------------------------------------------
 # A 列 — slot1 极北立国：position 1-5 一条直线
 # ------------------------------------------------------------
@@ -25,46 +15,122 @@ NDK_missions_1 = {
 		icon = "mission_unknown_mission"
 		position = 1
 		trigger = {
-			total_development = 30
+			OR = {
+				army_size = 15
+				army_size_percentage = 0.90
+			}
 		}
-		effect = { }
+		effect = { 
+			add_treasury = 100
+			create_general = {
+				tradition = 70
+				add_shock = 1
+				add_manuever = 1
+			}
+			finland_area = {
+				add_permanent_claim = ROOT
+			}
+			bothnia_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 
 	NDK_missions_1_2 = {			# A2 千湖之野
 		icon = "mission_unknown_mission"
 		position = 2
 		required_missions = { NDK_missions_1_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = finland_area
+				area = bothnia_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			total_development = 45
 			num_of_owned_provinces_with = {
 				value = 3
-				has_fort_building_trigger = yes
+				OR = {
+					area = finland_area
+					area = bothnia_area
+				}
 			}
 		}
-		effect = { }
+		effect = {
+			add_adm_power = 100
+			add_prestige = 10
+			laponia_area = {
+				add_permanent_claim = ROOT
+			}
+			norrland_area = {
+				add_permanent_claim = ROOT
+			}
+			northern_norway = {
+				add_permanent_claim = ROOT
+			}
+			
+		 }
 	}
 
 	NDK_missions_1_3 = {			# A3 北方之路（另有跨列线指向 B4）
 		icon = "mission_unknown_mission"
 		position = 3
 		required_missions = { NDK_missions_1_2 }
-		trigger = {
-			num_of_ports = 4
+		provinces_to_highlight = {
+			OR = {
+				area = laponia_area
+				area = norrland_area
+				area = northern_norway
+			}
+			NOT = {
+				owned_by = ROOT
+			}
 		}
-		effect = { }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 3
+				OR = {
+					area = laponia_area
+					area = norrland_area
+					area = northern_norway
+				}
+			}
+		}
+		effect = { 
+			custom_tooltip = NDK_missions_1_3_c_tt1
+			baltic_region = {
+				add_permanent_claim = ROOT
+			}
+			scandinavia_region = {
+				add_permanent_claim = ROOT
+			}
+			hidden_effect = {
+				clr_country_flag = acg_mec_e_rechoose_deity_flag
+			}
+		}
 	}
 
 	NDK_missions_1_4 = {			# A4 冰封的波尼亚
 		icon = "mission_unknown_mission"
 		position = 4
 		required_missions = { NDK_missions_1_3 }
+		provinces_to_highlight = {
+			region = baltic_region
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
-			pomor_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 10
+				region = baltic_region
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 75
+			add_dip_power = 75
+		}
 	}
 
 	NDK_missions_1_5 = {			# A5 北境王座
@@ -73,15 +139,30 @@ NDK_missions_1 = {
 		required_missions = { NDK_missions_1_4 }
 		trigger = {
 			government_rank = 2
-			total_development = 100
+			OR = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 15
+					region = baltic_region
+				}
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 15
+					region = scandinavia_region
+				}
+			}
 		}
-		effect = { }
+		effect = {
+			set_government_rank = 3
+			add_prestige = 50
+			custom_tooltip = NDK_missions_1_3_c_tt1
+			hidden_effect = {
+				clr_country_flag = acg_mec_e_rechoose_deity_flag
+			}
+		 }
 	}
 }
 
 # ------------------------------------------------------------
-# B 列 — slot2 边贸要道：position 1-5 一条直线
-# B4 北拉普兰吃双前置：B3 毛皮和盐 + A3 北方之路
+
 # ------------------------------------------------------------
 NDK_missions_2 = {
 	slot = 2
@@ -97,9 +178,23 @@ NDK_missions_2 = {
 		icon = "mission_unknown_mission"
 		position = 1
 		trigger = {
-			monthly_income = 12
+			monthly_income = 10
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 5
+					development = 6
+				}
+				capital_scope = {
+					has_tax_building_trigger = yes
+					NOT = {
+						devastation = 1
+					}
+				}
+			}
 		}
-		effect = { }
+		effect = {
+			add_prestige = 5
+		 }
 	}
 
 	NDK_missions_2_2 = {			# B2 商会贸易
@@ -107,21 +202,60 @@ NDK_missions_2 = {
 		position = 2
 		required_missions = { NDK_missions_2_1 }
 		trigger = {
-			monthly_income = 20
 			num_of_light_ship = 5
+			OR = {
+				navy_size = 12
+				navy_tradition = 35
+			}
 		}
-		effect = { }
+		effect = {
+			add_dip_power = 50
+			add_mercantilism = 5
+		 }
 	}
 
 	NDK_missions_2_3 = {			# B3 毛皮和盐
 		icon = "mission_unknown_mission"
 		position = 3
 		required_missions = { NDK_missions_2_2 }
-		trigger = {
-			monthly_income = 28
-			num_of_ports = 5
+		provinces_to_highlight = {
+			OR = {
+				trade_goods = fur
+				trade_goods = salt
+			}
 		}
-		effect = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 5
+				has_production_building_trigger = yes
+				OR = {
+					trade_goods = fur
+					trade_goods = salt
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = NDK_missions_2_3_c_tt1
+			add_dip_power = 75
+			add_mercantilism = 5
+			hidden_effect = {
+				for = {
+					amount = 15
+					effect = "
+						random_owned_province = {
+							limit = {
+								development = 5
+								has_production_building_trigger = yes
+								trade_goods = fur
+							}
+							add_base_production = 1
+						}
+					"
+				}
+			}
+			
+		 }
 	}
 
 	NDK_missions_2_4 = {			# B4 北拉普兰（双前置：B3 + A3）
@@ -130,17 +264,26 @@ NDK_missions_2 = {
 		required_missions = {
 			NDK_missions_1_3
 		}
-		trigger = {
-			owns = 1777
-			total_development = 60
+		provinces_to_highlight = {
+			region = scandinavia_region
+			NOT = { owned_by = ROOT }
 		}
-		effect = { }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 10
+				region = scandinavia_region
+			}
+		}
+		effect = { 
+			add_prestige = 20
+			add_legitimacy = 5
+		}
 	}
 
 	NDK_missions_2_5 = {			# B5 格陵兰冰岛
 		icon = "mission_unknown_mission"
 		position = 5
-		required_missions = { NDK_missions_2_4 }
+		required_missions = { NDK_missions_3_4 }
 		trigger = {
 			num_of_ports = 8
 			navy_size = 12
@@ -167,10 +310,10 @@ NDK_missions_3 = {
 
 	NDK_missions_3_2 = {			# C1 白海港口
 		icon = "mission_unknown_mission"
-		position = 1
+		position = 2
 		required_missions = { NDK_missions_2_1 }
 		trigger = {
-			num_of_ports = 3
+			num_of_ports = 5
 		}
 		effect = { }
 	}
@@ -214,7 +357,14 @@ NDK_missions_4_root = {
 		icon = "mission_unknown_mission"
 		position = 1
 		trigger = {
-			prestige = 20
+			calc_true_if = {
+				amount = 3
+				mission_completed = NDK_missions_5_1
+				mission_completed = NDK_missions_5_2
+				mission_completed = NDK_missions_5_3
+				mission_completed = NDK_missions_5_4
+				mission_completed = NDK_missions_5_5
+			}
 		}
 		effect = { }
 	}
@@ -402,6 +552,14 @@ NDK_missions_4_b = {
 # 阶层键：estate_church / estate_nobles / estate_burghers
 # 特权 PRIV_A..E 未定名，等定名后再进 trigger/effect
 # ------------------------------------------------------------
+
+# 变量
+# NDK_missions_5_estate_church_support_var
+# NDK_missions_5_estate_nobles_support_var
+# NDK_missions_5_estate_burghers_support_var
+# NDK_missions_5_estate_dhimmi_support_var
+# NDK_missions_5_estate_brahmins_support_var
+
 NDK_missions_5 = {
 	slot = 5
 	generic = no
@@ -441,7 +599,7 @@ NDK_missions_5 = {
 		position = 3
 		trigger = {
 			estate_influence = {
-				estate = estate_burghers
+				estate = estate_dhimmi
 				influence = 40
 			}
 		}
@@ -466,7 +624,7 @@ NDK_missions_5 = {
 		position = 5
 		trigger = {
 			estate_influence = {
-				estate = estate_nobles
+				estate = estate_brahmins
 				influence = 55
 			}
 			army_size = 30
@@ -474,55 +632,3 @@ NDK_missions_5 = {
 		effect = { }
 	}
 }
-
-# ============================================================
-# 停用区 A：C 列「白海的浮冰」
-# 设计图上 C2、C3 是空格，这个节点不落位。
-# 恢复方式：把 position 设成 2（或 3），并把 3_4 的前置从 3_2 改成它。
-# ------------------------------------------------------------
-# 	NDK_missions_3_3 = {
-# 		icon = "mission_unknown_mission"
-# 		position = 3
-# 		required_missions = { NDK_missions_3_2 }
-# 		trigger = {
-# 			num_of_light_ship = 4
-# 		}
-# 		effect = { }
-# 	}
-
-# ============================================================
-# 停用存档：v2 原稿被清空的 effect 内容（仅备忘，未生效）
-# 恢复时把对应行搬回该节点的 effect = { } 里
-# ------------------------------------------------------------
-# 1_1 首都 +1 税/产/兵，威望 +10，金 +100
-# 1_2 NDK_mod_lake_land 25 年，稳定 +1，行政 +100
-# 1_3 NDK_mod_northern_road 25 年，重商 +1，外交 +100
-# 1_4 arkhangelsk_area 永久宣称，威望 +15，军事 +100
-# 1_5 NDK_mod_border_throne 永久，稳定 +1，辉煌 +200
-# 2_1 NDK_mod_timber 25 年，金 +150
-# 2_2 NDK_mod_charter 25 年，重商 +1，外交 +100
-# 2_3 NDK_mod_pelt_salt 25 年，金 +250，辉煌 +50
-# 2_4 NDK_mod_lapland_road 25 年，1776 永久宣称，军事 +100
-# 2_5 NDK_mod_north_atlantic 永久，外交 +150，辉煌 +100
-# 3_2 NDK_mod_white_sea_harbor 25 年，外交 +100（现为 C1 格）
-# 3_3 NDK_mod_ice_pilot 25 年，外交 +50（浮冰，当前停用）
-# 3_4 NDK_mod_chart_room 25 年，辉煌 +100
-# 3_5 NDK_mod_vinland 永久，金 +400，辉煌 +150
-# 4_1 flag ndk_moon_line_open，NDK_mod_moon_blessing 25 年，行政 +100
-# 4_lock_2 flag ndk_moon_gate_open，NDK_mod_hollow_moon 25 年，威望 +15
-# 4_lock_3 custom_tooltip NDK_tt_choose_side，稳定 +1
-# 4_lock_4 / 4_lock_5 威望 +1（占位格）
-# 4_a_2 NDK_mod_body_split 25 年，行政 +100
-# 4_a_3 change_estate_land_share 贵族 +0.05，稳定 +1
-# 4_a_4 flag ndk_end_1a，custom_tooltip NDK_tt_end_1a，辉煌 +150
-# 4_a_5 NDK_mod_new_moon 永久，辉煌 +200，稳定 +1
-# 4_b_2 NDK_mod_paradox_seed 25 年，外交 +100
-# 4_b_3 外交 +100，稳定 +1
-# 4_b_4 flag ndk_end_2a，custom_tooltip NDK_tt_end_2a，辉煌 +150
-# 4_b_5 NDK_mod_paradox_born 永久，辉煌 +200，稳定 +1
-# 5_1 flag ndk_faction_frostmoon，教会忠诚 +10，行政 +50，（TODO PRIV_A）
-# 5_2 flag ndk_faction_lantern，贵族忠诚 +10，军事 +50，（TODO PRIV_B）
-# 5_3 flag ndk_faction_vonvich，市民忠诚 +10，外交 +50，（TODO PRIV_C）
-# 5_4 flag ndk_faction_eggroll，金 +150，（TODO PRIV_D）
-# 5_5 flag ndk_faction_fatui，NDK_mod_fatui_deal 25 年，军事 +50，（TODO PRIV_E）
-# ============================================================
