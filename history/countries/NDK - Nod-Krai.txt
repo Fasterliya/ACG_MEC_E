@@ -1,6 +1,11 @@
 # Nod-Krai - *c·VaS±ƒ
 government = acg_monarchy
 add_government_reform = NDK_hollow_moon_poem_reform
+set_estate_privilege = NDK_priv_frostmoon_calendar
+set_estate_privilege = NDK_priv_lantern_wardens
+set_estate_privilege = NDK_priv_workshop_charter
+set_estate_privilege = NDK_priv_vonvich_caravan
+set_estate_privilege = NDK_priv_fatui_delegation
 government_rank = 1
 primary_culture = acg_nodkrai
 religion = acg_mec_e_moon_goddess

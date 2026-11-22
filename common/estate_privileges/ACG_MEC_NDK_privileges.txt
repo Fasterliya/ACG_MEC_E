@@ -1,0 +1,196 @@
+# ============================================================
+# 挪德卡莱 NDK：五个初始阶层特权（骨架）
+# ------------------------------------------------------------
+# 【为什么是骨架】
+#   数值、benefits、penalties、on_granted 里的实际效果都留空，
+#   只把"能被引擎读到、能在阶层界面显示、能被任务检测"的最小键值写全。
+#   后续填数值时只动 blocks，不改结构。
+#
+# 【写法依据：HNA】
+#   common/estate_privileges/ACG_MEC_HNA_privileges.txt
+#   同款字段：icon / max_absolutism / influence / loyalty /
+#             is_valid / can_select / on_granted / on_revoked /
+#             on_invalid / penalties / benefits / ai_will_do
+#
+# 【注册｜关键】
+#   EU4 没有特权自动注册机制：写在 common/estate_privileges/ 只等于定义了，
+#   还必须出现在某个 common/estates/*.txt 的 privileges = { } 列表里才会加载。
+#   本文件这 5 个 key 注册在 common/estates/ACG_MEC_NDK_estate.txt
+#   （照 IQU / HNA 的加法式写法，不覆盖原版 02_nobility.txt 等）。
+#
+# 【is_valid vs can_select】
+#   is_valid 不满足会让"已授予"的特权被自动撤销（触发 on_invalid），
+#   所以互斥/前置条件一律写 can_select；is_valid 只用来限定国家。
+#
+# 【对应阶层】
+#   NDK_priv_frostmoon_calendar  -> estate_church    （霜月之子）
+#   NDK_priv_lantern_wardens     -> estate_nobles    （执灯人）
+#   NDK_priv_workshop_charter    -> estate_burghers  （叮铃哐啷蛋卷工坊）
+#   NDK_priv_vonvich_caravan     -> estate_dhimmi    （伏尼契商会）
+#   NDK_priv_fatui_delegation    -> estate_brahmins  （愚人众）
+# ============================================================
+
+# ---------- 霜月之子：霜月历法 ----------
+NDK_priv_frostmoon_calendar = {
+	icon = privilege_aged_paper
+	influence = 0.20
+	loyalty = 0.20
+	land_share = 10
+	max_absolutism = -15
+	is_valid = {
+		tag = NDK
+	}
+	can_select = {
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		all_estate_loyalty_equilibrium = 0.10
+		all_estate_influence_modifier = -0.05
+		global_autonomy = -0.10
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# ---------- 执灯人：守灯之责 ----------
+NDK_priv_lantern_wardens = {
+	icon = privilege_fort
+	influence = 0.40
+	loyalty = 0.20
+	land_share = 10
+	max_absolutism = -15
+	is_valid = {
+		tag = NDK
+	}
+	can_select = {
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		global_autonomy = -0.10
+		morale_damage_received = -0.05
+		liberty_desire_from_subject_development = -1.00
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# ---------- 叮铃哐啷蛋卷工坊：工坊特许 ----------
+NDK_priv_workshop_charter = {
+	icon = privilege_goods_produced
+	influence = 0.40
+	loyalty = 0.20
+	land_share = 10
+	max_absolutism = -20
+	is_valid = {
+		tag = NDK
+	}
+	can_select = {
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		global_autonomy = -0.10
+		build_cost = -0.10
+		production_efficiency = 0.05
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# ---------- 伏尼契商会：商会行路权 ----------
+NDK_priv_vonvich_caravan = {
+	icon = privilege_caravans
+	influence = 0.40
+	loyalty = 0.20
+	land_share = 10
+	max_absolutism = -5
+	is_valid = {
+		tag = NDK
+	}
+	can_select = {
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		global_autonomy = -0.10
+		mercantilism_cost = -0.25
+		trade_efficiency = 0.05
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# ---------- 愚人众：愚人众使团 ----------
+NDK_priv_fatui_delegation = {
+	icon = privilege_seek_support_of_brahmins
+	influence = 0.40
+	loyalty = 0.20
+	land_share = 10
+	max_absolutism = -15
+	is_valid = {
+		tag = NDK
+	}
+	can_select = {
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		global_autonomy = -0.10
+		mercenary_manpower = 0.25
+		liberty_desire_from_subject_development = -0.50
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

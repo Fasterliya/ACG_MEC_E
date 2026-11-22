@@ -143,3 +143,15 @@ l_english:
  ### CUSTOM_TOOLTIP
  NDK_missions_1_3_c_tt1: "§Y刷新决议可以重新选择月相的冷却§!"
  NDK_missions_2_3_c_tt1: "随机§Y15§!点£dip£§Y基础生产发展度§!分配到符合条件的省份"
+
+ ### PRIVILEGE
+ NDK_priv_frostmoon_calendar: "霜月历法"
+ NDK_priv_frostmoon_calendar_desc: "每月初一，霜月之子在城头读月：读出什么日子，全国就按什么日子过。历法若错一天，全城的神都会认不出自己。"
+ NDK_priv_lantern_wardens: "守灯之责"
+ NDK_priv_lantern_wardens_desc: "执灯人认路不认人。只要灯还亮着，连敌人的车队也能平安通过——这也正是他们不被任何一方完全信任的原因。"
+ NDK_priv_workshop_charter: "工坊特许"
+ NDK_priv_workshop_charter_desc: "工坊只要一张纸：独占这条街的炉火，不许旁人在隔壁再起一座。国家收税，工坊收规矩，谁也别管谁的闲事。"
+ NDK_priv_vonvich_caravan: "商会行路权"
+ NDK_priv_vonvich_caravan_desc: "商会的车队有优先通关的凭据，凭据上从不写货是什么。海关的人很快就学会了一件事：不问，才能一直收下去。"
+ NDK_priv_fatui_delegation: "愚人众驻军"
+ NDK_priv_fatui_delegation_desc: "使团在城里有一栋不属于任何人的楼，进出的人都自称经手人。挪德卡莱给了他们名分——因为没有名分的人反而更难盯着。"
