@@ -1,0 +1,33 @@
+# ============================================================
+# 挪德卡莱 NDK 专属政府改革
+# 骨架：BLS_government_reforms.txt:1-22
+# enables_estate_* 用法：01_government_reforms_monarchies.txt:5147 / 5166-5169
+# ============================================================
+
+NDK_hollow_moon_poem_reform = {
+	lock_level_when_selected = yes
+	icon = "ACG_MEC_E_NDK_reform_1"
+	potential = {
+		OR = {
+			has_reform = NDK_hollow_moon_poem_reform
+			have_had_reform = NDK_hollow_moon_poem_reform
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		governing_capacity = 200
+		global_unrest = -2
+		legitimacy = 1
+		stability_cost_modifier = -0.10
+		trade_efficiency = 0.10
+	}
+	custom_attributes = {
+		enables_estate_brahmins = yes
+		enables_estate_dhimmi = yes
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}

@@ -1,0 +1,109 @@
+# ============================================================
+# 挪德卡莱 NDK 任务树修正 —— 全部停用（留空）
+# 目的：效果与修正由你重新设计，这里不预设任何数值
+# 当前状态：文件内没有任何生效的 event_modifier 定义
+# 恢复方式：取消某个 block 的注释即可重新成为一个可用 modifier
+# 引用状态：missions\NDK_missions.txt 里已无任何 add_country_modifier 引用
+# ============================================================
+
+# ---- slot1 立国线 ----
+# NDK_mod_lake_land = {
+# 	defensiveness = 0.10
+# 	global_unrest = -1
+# }
+#
+# NDK_mod_northern_road = {
+# 	trade_efficiency = 0.10
+# 	global_trade_power = 0.05
+# }
+#
+# NDK_mod_border_throne = {
+# 	prestige = 0.50
+# 	legitimacy = 1
+# 	governing_capacity_modifier = 0.10
+# }
+
+# ---- slot2 经济线 ----
+# NDK_mod_timber = {
+# 	production_efficiency = 0.10
+# 	global_trade_goods_size_modifier = 0.05
+# }
+#
+# NDK_mod_charter = {
+# 	mercantilism_cost = -0.10
+# 	global_ship_trade_power = 0.10
+# }
+#
+# NDK_mod_pelt_salt = {
+# 	trade_income_percentage = 0.10
+# 	interest = -0.5
+# }
+#
+# NDK_mod_lapland_road = {
+# 	land_forcelimit_modifier = 0.10
+# 	global_manpower_modifier = 0.05
+# }
+#
+# NDK_mod_north_atlantic = {
+# 	naval_forcelimit_modifier = 0.10
+# 	heavy_ship_power = 0.10
+# }
+
+# ---- slot3 航路线 ----
+# NDK_mod_white_sea_harbor = {
+# 	global_sailors_modifier = 0.10
+# 	naval_morale = 0.05
+# }
+#
+# NDK_mod_ice_pilot = {
+# 	sailors_recovery_speed = 0.10
+# 	navy_tradition_decay = -0.01
+# }
+#
+# NDK_mod_chart_room = {
+# 	global_ship_recruit_speed = 0.10
+# 	naval_forcelimit_modifier = 0.05
+# }
+#
+# NDK_mod_vinland = {
+# 	global_trade_power = 0.10
+# 	trade_efficiency = 0.05
+# }
+
+# ---- slot4 月线 ----
+# NDK_mod_moon_blessing = {
+# 	stability_cost_modifier = -0.10
+# 	prestige = 0.25
+# }
+#
+# NDK_mod_hollow_moon = {
+# 	global_unrest = -1
+# 	legitimacy = 1
+# }
+#
+# NDK_mod_body_split = {
+# 	administrative_efficiency = 0.05
+# 	governing_capacity = 5
+# }
+#
+# NDK_mod_paradox_seed = {
+# 	all_power_cost = -0.02
+# 	diplomatic_reputation = 1
+# }
+#
+# NDK_mod_new_moon = {
+# 	prestige = 0.50
+# 	stability_cost_modifier = -0.10
+# 	global_unrest = -1
+# }
+#
+# NDK_mod_paradox_born = {
+# 	all_power_cost = -0.03
+# 	governing_capacity = 10
+# }
+
+# ---- slot5 五家线 ----
+# NDK_mod_fatui_deal = {
+# 	discipline = 0.03
+# 	land_morale = 0.05
+# }

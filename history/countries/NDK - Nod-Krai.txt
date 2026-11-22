@@ -1,6 +1,7 @@
 # Nod-Krai - *c·VaS±ƒ
 government = acg_monarchy
 add_government_reform = acg_universal_government_reform_1
+add_government_reform = NDK_hollow_moon_poem_reform
 government_rank = 1
 primary_culture = acg_nodkrai
 religion = acg_mec_e_moon_goddess

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="dsh-htmlui" content="placement=inline">
+<title>BLS 黑海岸 · 任务树模块设计</title>
+<style>
+  :root{
+    --bg:#0e1117; --panel:#151a23; --panel2:#1b2230; --line:#2a3342;
+    --txt:#dbe3ef; --dim:#8b98ab; --hot:#e0b45c; --ok:#5fc48b; --bad:#e0685c; --blue:#6aa9ff; --vio:#b98cff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:13px/1.66 "Segoe UI","Microsoft YaHei",sans-serif;padding:14px 16px 26px}
+  h1{font-size:17px;margin:0 0 2px;letter-spacing:.5px}
+  h2{font-size:14px;margin:22px 0 8px;padding-left:9px;border-left:3px solid var(--hot);color:#f0e6d2}
+  h3{font-size:13px;margin:16px 0 4px;color:var(--blue);font-weight:600}
+  h3 .cnt{font-size:11px;color:var(--dim);font-weight:400;margin-left:6px}
+  .sub{color:var(--dim);font-size:12px;margin-bottom:4px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:8px;margin:8px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:9px 11px;font-size:12.2px}
+  .card b{color:var(--hot);font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:12.2px}
+  th,td{border:1px solid var(--line);padding:5px 7px;vertical-align:top;text-align:left}
+  th{background:var(--panel2);color:#cfd8e6;font-weight:600}
+  code{background:#0a0d13;border:1px solid var(--line);border-radius:3px;padding:0 4px;color:#a8d4ff;font:11.5px/1.5 Consolas,monospace}
+  .bad{color:var(--bad)} .ok{color:var(--ok)} .hot{color:var(--hot)} .dim{color:var(--dim)} .vio{color:var(--vio)}
+  ul{margin:4px 0 5px 18px;padding:0} li{margin:2px 0}
+  .mod{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 7px 7px 0;padding:9px 12px;margin:9px 0}
+  .mod h3{margin-top:0}
+  .lbl{display:inline-block;min-width:44px;color:var(--hot);font-size:11.5px}
+  .chain{font-size:12px;color:#c9d6e8;margin:3px 0 3px 0}
+  .chain i{color:var(--hot);font-style:normal;margin:0 4px}
+  .note{border-left:3px solid var(--bad);background:#1d1618;padding:7px 10px;border-radius:0 6px 6px 0;margin:8px 0;font-size:12.2px}
+  .say{border-left:3px solid var(--ok);background:#141d18;padding:7px 10px;border-radius:0 6px 6px 0;margin:8px 0;font-size:12.2px}
+</style>
+</head>
+<body>
+
+<h1>BLS 黑海岸 · 任务树「模块设计」</h1>
+<div class="sub">按线拆模块，不谈格子排布 · 证据基准：原版 1.37.5 + 本 mod 实读（<code>missions/BLS_missions.txt</code>、<code>common/ideas/BLS_ideas.txt</code>、<code>common/religions/new_religion.txt</code>、<code>common/event_modifiers/BLS_mission_modifiers.txt</code>）</div>
+
+<h2>一、先看这个国家的"天赋说明"——模块只能长在它上面</h2>
+<table>
+  <tr><th>来源</th><th>内容</th><th>设计含义</th></tr>
+  <tr><td>理念 start</td><td><code>naval_morale = 0.15</code> + <b class="hot">may_explore = yes</b></td><td>开局就能探索 —— 殖民是国策级天赋，不是选修</td></tr>
+  <tr><td>理念 1 / 4</td><td><code>colonists = 1</code>、<code>global_colonial_growth = 15</code>、<code>naval_force_limit_modifier = 0.30</code></td><td>殖民 + 海军双修，明确指向"向海之外"</td></tr>
+  <tr><td>理念 3 / 6</td><td><code>global_trade_power = 0.33</code>、<code>trade_efficiency = 0.20</code>、<code>global_unrest = -2</code></td><td>贸易是主收入，且内政天然稳</td></tr>
+  <tr><td>理念 5 / 7</td><td><code>discipline 0.05</code>、<code>land_morale 0.10</code>、<code>naval_combat_ability 0.15</code></td><td>陆军够用即可，海军才是主战兵种</td></tr>
+  <tr><td>理念 bonus</td><td><code>all_power_cost = -0.10</code></td><td>滚雪球型收尾，适合长线任务给点数</td></tr>
+  <tr><td>宗教 <code>acg</code></td><td>带 <b>教廷系统</b>：<code>papal_tag = HTS</code>、<code>seat_of_papacy = 67</code>、教皇行动 <code>vampire</code> / <code>Love_Trial</code>；国教自带 <code>global_trade_goods_size_modifier 0.1</code> + 传教强度 0.02</td><td>宗教线有现成系统可吃（枢机 / 护教者 / 教廷影响力），但<b class="bad">现有 17 条 mission 修正里 0 条宗教向</b></td></tr>
+  <tr><td>地理</td><td>9 省全在 <code>malacca</code> 节点（<code>00_tradenodes.txt:817</code>）；<code>brunei_area</code> 5/5 全占、<code>kalimantan_area</code> 4/5（缺 2706 = MGZ 梦州）</td><td>贸易线的天然舞台；军事线的第一口肉是 2706</td></tr>
+</table>
+
+<h2>二、六条模块线（设计想法）</h2>
+
+<div class="mod">
+<h3>① 经济线 · 潮声商路 <span class="cnt">建议 5 格 · 节奏：全程在线，越往后越陡</span></h3>
+<div class="chain"><span class="lbl">立线</span>9 省全泡在 malacca 节点里，理念 3+6 把贸易拉到 0.33/0.20 —— 这条线是"国家现金流"，不是支线。</div>
+<div class="chain"><span class="lbl">动作</span>抢节点份额 <i>→</i> 派商人锁节点 <i>→</i> 轻船护商 <i>→</i> 抢香料产地 <i>→</i> 吃掉节点内小国</div>
+<div class="chain"><span class="lbl">阶梯</span><code>home_trade_node</code> 份额 20 <i>→</i> 30 + 2 商人 <i>→</i> <code>spice_islands_area</code>/<code>timor_area</code> 5 省 <i>→</i> 份额 45 <i>→</i> 份额 60 + 月入 50</div>
+<div class="chain"><span class="lbl">奖励</span><code>trade_efficiency</code> / <code>global_trade_power</code> / <code>trade_income_percentage</code> / <code>mercantilism_cost</code> / <code>global_trade_goods_size_modifier</code></div>
+<div class="chain"><span class="lbl">可用</span>已有修正直接复用：<code>BLS_tide_caller</code> / <code>BLS_spice_route</code> / <code>BLS_master_of_malacca</code> / <code>BLS_golden_route</code>（4 条，够整条线用）</div>
+<div class="chain"><span class="lbl">坑</span><span class="bad">别再把「2 商人」当门槛</span>（<code>:128</code>，开局就有）；<code>trade_share</code> 只标 province 作用域，原版实证一律写成 <code>home_trade_node = { trade_share = { country = ROOT share = N } }</code>（<code>00_Generic_missions.txt:296-301</code>）</div>
+</div>
+
+<div class="mod">
+<h3>② 宗教线 · 鸣潮圣潮 <span class="cnt">建议 4 格 · 新增模块（目前完全空白）</span></h3>
+<div class="chain"><span class="lbl">立线</span><code>acg</code> 是带教廷（papacy）的宗教，有枢机、教皇行动、护教者整套系统 —— 而 BLS 的 25 个任务节点、17 条修正里<b class="bad">一条宗教向都没有</b>，整套系统白放着。</div>
+<div class="chain"><span class="lbl">动作</span>传教洗婆罗洲 <i>→</i> 抢教廷席位（枢机） <i>→</i> 买护教者 <i>→</i> 全境同教 <i>→</i> 教廷影响力滚雪球</div>
+<div class="chain"><span class="lbl">阶梯</span><code>religious_unity 0.80</code> <i>→</i> <code>num_of_cardinals = 2</code> <i>→</i> <code>is_defender_of_faith = yes</code> <i>→</i> <code>papal_influence = 200</code>（全部已用 <code>query_script_doc</code> 核过存在）</div>
+<div class="chain"><span class="lbl">奖励</span><code>global_missionary_strength</code> / <code>tolerance_own</code> / <code>papal_influence</code> / <code>prestige</code> / <code>legitimacy</code></div>
+<div class="chain"><span class="lbl">需新增</span><code>BLS_tide_priesthood</code>（传教强度 + 容忍）、<code>BLS_shore_creed</code>（教廷影响力 + 威望）、<code>BLS_sanctified_tide</code>（终局：容忍 + 稳定成本）—— 3 条写进 <code>BLS_mission_modifiers.txt</code></div>
+<div class="chain"><span class="lbl">叙事</span>守岸人不是"信神"，是"听潮"：把传教写成"把无音区变成有回声的地方"，护教者写成"为整片海答应一声"。</div>
+<div class="chain"><span class="lbl">坑</span><span class="bad">acg 国教已自带 <code>global_trade_goods_size_modifier 0.1</code> + 传教强度 0.02</span>，同项别再叠；教皇行动的临时修正名 <code>new_acg_religion_1/2/3</code> 已被占用，别撞。</div>
+</div>
+
+<div class="mod">
+<h3>③ 扩展线 · 向海之外 <span class="cnt">建议 4 格 · 新增模块（被浪费掉的天赋）</span></h3>
+<div class="chain"><span class="lbl">立线</span>start 就有 <code>may_explore = yes</code>，理念 1 送 <code>colonists = 1</code>、理念 4 送 <code>global_colonial_growth = 15</code> —— 理念在明示"去发现、去殖民"，任务树一个字没写。</div>
+<div class="chain"><span class="lbl">动作</span>点探索理念 <i>→</i> 探险家沿岸探路 <i>→</i> 抢殖民点（新几内亚 / 澳洲北岸 / 太平洋岛链） <i>→</i> 殖民地转贸易</div>
+<div class="chain"><span class="lbl">阶梯</span><code>num_of_colonies = 3</code> <i>→</i> 5 块殖民地完成 + 已探明 N 省 <i>→</i> 10 块殖民地 <i>→</i> 海外省 15 + 殖民地总发展度</div>
+<div class="chain"><span class="lbl">奖励</span><code>global_colonial_growth</code> / <code>colonists</code> / <code>sailors_recovery_speed</code> / <code>naval_forcelimit_modifier</code>（后两个理念里已有，安全）</div>
+<div class="chain"><span class="lbl">需新增</span><code>BLS_open_horizon</code>（殖民增长 + 水手）、<code>BLS_far_shores</code>（终局：殖民增长 + 贸易力）</div>
+<div class="chain"><span class="lbl">叙事</span>南岛语族从婆罗洲向太平洋扩散的史实骨架 + 鸣潮"潮声传得很远"的设定，天然合拍。</div>
+<div class="chain"><span class="lbl">坑</span><span class="bad">会和军事线的香料群岛抢地</span>：现有 2-3 已经要 <code>spice_islands_area</code> 5 省。分工建议 —— 殖民线走太平洋/澳洲，香料群岛归经济线（改成"贸易份额/产地控制"而不是"拥有省份"）。</div>
+</div>
+
+<div class="mod">
+<h3>④ 军事扩张线 · 鸣潮远征 <span class="cnt">建议 5 格 · 现状最烂，优先重写</span></h3>
+<div class="chain"><span class="lbl">立线</span>现在第 4 列 5 个节点里 <b class="bad">3 个白给</b>：4-2 要 <code>indonesia_region</code> 10 省（开局 9 省就在这 region，只差 1 省）、4-3 只要 8 省（比 4-2 还低）、4-4 又回到 10 省（与 4-2 同值）。整列唯一真门槛是 4-1 的马来半岛 5 省。</div>
+<div class="chain"><span class="lbl">动作</span>吃 2706 <i>→</i> 马来半岛 <i>→</i> 苏门答腊 <i>→</i> 海峡锁钥 <i>→</i> 婆罗洲收官 <i>→</i> 群岛全境</div>
+<div class="chain"><span class="lbl">阶梯</span>全部改用 <b>area/region 全占</b>，不用"数量 ≥ N"：<code>kalimantan_area</code> 全占 <i>→</i> <code>malaya_region</code> 5 省 <i>→</i> <code>malaya_region</code> 12 省 <i>→</i> <code>kutai_area</code> + <code>sabah_area</code> 全占 <i>→</i> malaya+indonesia 25 省 + dev 500</div>
+<div class="chain"><span class="lbl">奖励</span><code>land_forcelimit_modifier</code> / <code>global_manpower_modifier</code> / <code>discipline</code> / <code>core_creation</code>（<code>BLS_tide_warrior</code> / <code>BLS_mainland_march</code> / <code>BLS_ocean_empire</code> 已有）</div>
+<div class="chain"><span class="lbl">为什么</span><span class="bad">数量门槛在这套 region 定义下必然误判</span>：<code>indonesia_region</code> 含 brunei/kalimantan/kutai/banjar/sabah 五个婆罗洲 area，BLS 开局 9 省全在里面；<code>malaya_region</code> 才是苏门答腊+马来半岛。两层的区别就是这棵树现在最大的 bug。</div>
+</div>
+
+<div class="mod">
+<h3>⑤ 海军线 · 永夜舰队 <span class="cnt">建议 4 格 · 结构最健康的一条，只补档位</span></h3>
+<div class="chain"><span class="lbl">立线</span>全 mod 里最纯的海军国之一：start 海军士气 +0.15，理念 4 上限 +30%，理念 7 战力 +0.15 / 复士气 +0.15 / 传统衰减 -0.01。</div>
+<div class="chain"><span class="lbl">动作</span>建港 <i>→</i> 刷传统 <i>→</i> 造重舰 <i>→</i> 抬上限 <i>→</i> 深海霸权</div>
+<div class="chain"><span class="lbl">阶梯</span>港口 6 <i>→</i> 传统 25 <i>→</i> 重舰 20 <i>→</i> 上限 30 <i>→</i> 上限 40 + 传统 50</div>
+<div class="chain"><span class="lbl">奖励</span><code>naval_morale</code> / <code>heavy_ship_power</code> / <code>naval_forcelimit_modifier</code> / <code>global_sailors_modifier</code> / <code>navy_tradition_decay</code>（<code>fleet_gathering</code> / <code>eternal_night_fleet</code> / <code>sea_wall</code> / <code>deep_sea_hegemon</code> 已有，零新增）</div>
+<div class="chain"><span class="lbl">坑</span><span class="bad">4806 Inland Sarawak 是内陆</span> → 最多 8 个港口，第一格写 8 等于"满编才给过"，先给 6；终局漏了 <code>change_government_reform_progress</code>（<code>:296-306</code>），补 100。</div>
+</div>
+
+<div class="mod">
+<h3>⑥ 内政外交线 · 守岸人议会 <span class="cnt">建议 4 格 · 别让"列强"卡死中段</span></h3>
+<div class="chain"><span class="lbl">立线</span>9 省小国的瓶颈不是钱，是治理上限 / 稳定 / 改革进度；现在 5-3 第 3 格就要 <code>is_great_power = yes</code>（<code>:478</code>），中段直接封路。</div>
+<div class="chain"><span class="lbl">动作</span>发首都 <i>→</i> 修要塞 <i>→</i> 议会与顾问 <i>→</i> 收属国 <i>→</i> 升帝国 <i>→</i> 才谈列强</div>
+<div class="chain"><span class="lbl">阶梯</span>dev 60 <i>→</i> 3 要塞 + 稳定 1 <i>→</i> 2 属国 <i>→</i> dev 250 + 12 港口 <i>→</i> dev 800 + <code>is_great_power</code>（列强判定只在最后一格）</div>
+<div class="chain"><span class="lbl">奖励</span><code>governing_capacity</code> / <code>global_unrest</code> / <code>stability_cost_modifier</code> / <code>all_power_cost</code> / <code>prestige</code> / <code>diplomatic_reputation</code>（<code>legacy_of_guardian</code> / <code>black_shore_empire</code> / <code>great_power_shore</code> / <code>renowned_shore</code> 已有）</div>
+<div class="chain"><span class="lbl">叙事</span>「守岸人议会」「系统」「候补」这套政体头衔（<code>decode_localisation/BLS_l_english.yml:38-45</code>）就是现成的人物设定，任务文案顺着它写，不要另起一套。</div>
+</div>
+
+<h2>三、剧情怎么写（法则 + 逐线样例，可直接粘）</h2>
+
+<div class="say">
+<b>剧情不是"写一段漂亮话"，是三层东西</b>：① 节点文案（<code>title</code> 4–8 字 + <code>desc</code> 60–110 字）② 标题之间的用词分工（一列读下来像一章，不像五个同义词）③ 可选：完成节点时弹一个风味事件（<code>country_event</code>，原版实证 <code>99_Hansa_Missions.txt:83</code>；本项目骨架见 <code>events/ALC_mission_events.txt</code> 全 14 行）。
+</div>
+
+<h3>3.1 七条法则</h3>
+<table>
+  <tr><th>#</th><th>法则</th><th>为什么</th></tr>
+  <tr><td>1</td><td><b>三句式</b>：地景一句 → 人的动作一句 → 代价/结果一句</td><td>第一句让玩家看见海，第二句告诉他干了什么，第三句告诉他花了什么。缺第三句就变成口号。</td></tr>
+  <tr><td>2</td><td>主语永远是<b>集体</b>：守岸人 / 黑海岸 / 议会 / 舰队 / 系统</td><td>EU4 的 desc 是史书体，出现「你」立刻掉出世界观。</td></tr>
+  <tr><td>3</td><td><b>不写数值、不写「完成任务」「提高 X%」</b>；真要提示数值就交给 trigger 的 tooltip</td><td>desc 是叙事面板，不是收益清单。攻略腔一出现，整棵树的气质就散了。</td></tr>
+  <tr><td>4</td><td>每段 desc 至少一个<b>具体地名或物件</b>（坤甸的河口 / 帝汶的望楼 / 舵轮改的冠）</td><td>具体才有画面；通稿感的根因是全是抽象名词。</td></tr>
+  <tr><td>5</td><td>一列之内时间线要推进：早期写「立」，中期写「守」，末期写「传」</td><td>5 个标题连起来应该像一章，而不是 5 个并列的同义词。</td></tr>
+  <tr><td>6</td><td>允许一句<b>克制的冷幽默</b>，禁止热血口号与感叹号连击</td><td>黑海岸的性格是"守"不是"燃"；一个「反正木头在这片海岸上不值钱」胜过十句豪言。</td></tr>
+  <tr><td>7</td><td>色彩：<code>§Y</code> 只标唯一关键数字/地名一次，<code>§G</code> 标永久授予，<code>§R</code> 只给负面</td><td>整段刷色 = 没有重点，且中文编码后极易溢出按钮宽度。</td></tr>
+</table>
+
+<h3>3.2 设定词对照表（写之前先统一口径）</h3>
+<table>
+  <tr><th>设定词</th><th>对应游戏概念</th><th>写法</th></tr>
+  <tr><td>潮声</td><td>远方来的消息 / 时势 / 情报</td><td>「听见」「顺着」「潮声指到哪里」</td></tr>
+  <tr><td>回声</td><td>共鸣 = 正统 / 声望 / 号召力</td><td>「答应一声」是这条线最好用的动词</td></tr>
+  <tr><td>无音区</td><td>没有回声的地方 = 未归化 / 异教 / 荒野</td><td>宗教线与殖民线共用，别混用"蛮荒"</td></tr>
+  <tr><td>残象</td><td>残留的敌影 = 叛军 / 流寇 / 残部</td><td>只用在军事线，不当"敌人"泛称</td></tr>
+  <tr><td>声骸</td><td>遗物 / 古物 / 遗产</td><td>奖励型叙事（拿到东西）时用</td></tr>
+  <tr><td>守岸人</td><td>国家 / 统治集团（集体主语）</td><td>全篇默认主语</td></tr>
+  <tr><td>系统 / 候补 / 共渡者</td><td>君主 / 继承人 / 配偶</td><td>来自 <code>decode_localisation/BLS_l_english.yml:41-45</code>，只在终局与继承类节点出现</td></tr>
+  <tr><td>泰提斯</td><td>政体机构（理念原文有）</td><td>和"议会"二选一，一列里不要两套机构名</td></tr>
+</table>
+
+<h3>3.3 逐线样例（title / desc，可直接进 <code>decode_localisation</code>）</h3>
+
+<table>
+  <tr><th style="width:96px">线 · 节点</th><th>文案</th></tr>
+  <tr><td>经济 1</td><td><b>潮声市集</b><br>坤甸的河口每天涨两次潮，船也跟着来两次。守岸人把税关设在潮水能打到的地方，让每一担香料都得先向黑海岸报一声名字。集市散了，账册还亮着灯。</td></tr>
+  <tr><td>经济 2</td><td><b>不问来路的灯</b><br>黑海岸的商船不挂旗号，只挂灯。灯亮着，说明这条水路今晚归守岸人管。马六甲的海图因此被重画了一遍——画的不是海岸，是灯。</td></tr>
+  <tr><td>经济 3</td><td><b>香料寻迹</b><br>香料群岛的芬芳是海商的梦。守岸人沿着气味往东，先在帝汶的礁石上立了第一座望楼，再把望楼连成线。线以内的产地，从此只认一种秤。</td></tr>
+  <tr><td>经济 4</td><td><b>海峡锁钥</b><br>马六甲海峡窄得像一道伤口。谁按住它，谁就能让整片东方的血往自己这边流。黑海岸没有封锁它，只是把两端的灯塔都换成了自己人——船照样过，只是过的时候要低头。</td></tr>
+  <tr><td>经济 5</td><td><b>黄金商路</b><br>金子不是挖出来的，是顺着潮水漂来的。当账房先生们发现国库的银箱要换更大的，守岸人只是把旧箱子劈了当柴——反正木头在这片海岸上不值钱。</td></tr>
+
+  <tr><td>宗教 1</td><td><b>屋檐下加一盏灯</b><br>婆罗洲的旧神住在河口与树根里。守岸人没有拆他们的庙，只在庙的屋檐下挂了一盏灯。灯亮过三个雨季，村民便忘了该向谁磕头——他们只记得灯。</td></tr>
+  <tr><td>宗教 2</td><td><b>多出来的席位</b><br>教廷的席位按城分配，不按海。黑海岸的使者带着一箱湿透的海图走进议事厅，把图摊开：这些岛，这些礁，这些连名字都没有的岸，都归我们守。席位于是多了一张。</td></tr>
+  <tr><td>宗教 3</td><td><b>答应一声</b><br>护教者不是头衔，是债。当异端的船烧到邻国的港口，黑海岸的舰队已经在那儿了——不为土地，只为让那些还肯听潮声的人知道，有人答应过。</td></tr>
+  <tr><td>宗教 4</td><td><b>同一个回声</b><br>全境的庙里终于只响一种钟。守岸人不强迫谁改口，只是让旧钟慢慢锈掉；锈到某一天，人们发现新钟的声音和潮水是一个调子。</td></tr>
+
+  <tr><td>扩展 1</td><td><b>向海之外</b><br>海图的最东边曾经画着一条龙。守岸人的探险家沿着那条龙飞出去，回来时带了一张更长的图——图上没有龙，只有一串没名字的岛。</td></tr>
+  <tr><td>扩展 2</td><td><b>第一块岸</b><br>殖民点建在一条没有淡水的小岛上。第一批去的人死了七个，活下来的把旗插在礁石最高的地方——不是因为那里好看，是因为涨潮时只有那里还露着。</td></tr>
+  <tr><td>扩展 3</td><td><b>钟绳垂到水上</b><br>从婆罗洲出发的船，最远到过一片海水是黑色的地方。那里的人不会说黑海岸的话，但听得懂敲钟。守岸人于是在岸边留了一口钟，钟绳一直垂到水上。</td></tr>
+  <tr><td>扩展 4</td><td><b>海之外的海</b><br>当殖民地连成一条线，黑海岸的地图上第一次出现了"外面"。守岸人议会为这件事吵了三天，最后决定：不画边界，只画航线。</td></tr>
+
+  <tr><td>军事 1</td><td><b>不该有两个主人</b><br>婆罗洲是一整块，不该有两个主人。梦州的旗插在内陆的雨林里已经太久，久到连他们自己都忘了为什么插在那儿。守岸人替他们想起来了——用刀。</td></tr>
+  <tr><td>军事 2</td><td><b>跨海进军</b><br>越过海峡，踏上马来半岛。守岸人不带辎重，只带盐和火药——这两样东西，半岛上都有。</td></tr>
+  <tr><td>军事 3</td><td><b>半岛的骨头</b><br>马来半岛的河口一座接一座，像一排断掉的牙。黑海岸把它们一颗颗装回去，装到最后才发现，这颗头骨本来就是自己的。</td></tr>
+  <tr><td>军事 4</td><td><b>婆罗洲收官</b><br>沙巴与库台的雨林里没有路，只有河。守岸人的军队沿河而上，把最后一个不属于黑海岸的营寨烧成了灰。灰落进水里，顺流到海——海认得这是谁的东西。</td></tr>
+  <tr><td>军事 5</td><td><b>我们的海</b><br>从文莱到香料群岛，船要走四十天。这四十天里，每一处能下锚的地方都有一面黑旗。守岸人不再说"我们的海岸"，只说"我们的海"。</td></tr>
+
+  <tr><td>海军 1</td><td><b>把河口挖深三尺</b><br>造船先造船坞。守岸人把八条河的河口都挖深了三尺，桩子打进淤泥里，一排排站着，像等命令的兵。</td></tr>
+  <tr><td>海军 2</td><td><b>制海权</b><br>海战打的是风，不是船。黑海岸的水手从十二岁开始认风，认得比认字早。第一次炮响之后，风站在哪一边，就没有悬念了。</td></tr>
+  <tr><td>海军 3</td><td><b>永夜舰队</b><br>重舰吃水深，进不了浅湾。守岸人还是造了——因为永夜来时，只有重舰的灯能亮到最后。那一夜海面上排开二十盏灯，像一条不肯沉的路。</td></tr>
+  <tr><td>海军 4</td><td><b>潮汐壁垒</b><br>舰队多了，港就不够用。议会在珊瑚礁上凿出新港，涨潮时看不见，退潮时才露出来——敌人若来，先得学会看潮。</td></tr>
+
+  <tr><td>内政 1</td><td><b>议会的第一盏灯</b><br>守岸人聚在文莱的旧仓库里议事，没有桌子，只有一张摊开的海图。争论到半夜，有人把灯芯剪短了一截——省下的油，够明天多派一条船。</td></tr>
+  <tr><td>内政 2</td><td><b>要塞是用来谈的</b><br>要塞不是用来守的，是用来谈的。三门炮对着海，谈判桌上就多三分底气。守岸人从不在要塞里驻太多兵，只驻足够的旗。</td></tr>
+  <tr><td>内政 3</td><td><b>候补的名字</b><br>继承人的名字要写进议会的册子里，才算法定。册子锁在灯塔底下，钥匙由三个人分持——一个人开不了，两个人开了也没用。</td></tr>
+  <tr><td>内政 4</td><td><b>盐渍的冠</b><br>加冕那天没有雨。黑海岸的冠不是金子打的，是旧船的舵轮改的，边缘还留着盐渍。系统戴上它时说了一句话，风太大，没人听清。</td></tr>
+  <tr><td>内政 5</td><td><b>潮声为证</b><br>到最后，守岸人不再需要向谁证明什么。潮水每天来两次，每次都照着同一个方向推——那是黑海岸的方向，从来没有变过。</td></tr>
+</table>
+
+<h3>3.4 坏例 → 好例（同一件事的两种写法）</h3>
+<table>
+  <tr><th>写法</th><th>文本</th><th>诊断</th></tr>
+  <tr><td class="bad">攻略腔</td><td>「完成此任务后，你将获得 +10% 贸易效率，并解锁新的任务。」</td><td>把任务面板当说明书；世界观当场蒸发。</td></tr>
+  <tr><td class="bad">口号腔</td><td>「提升贸易效率，让每一艘商船都满载而归！」</td><td>没有地景、没有人、没有代价；三句里一句都不是画面。</td></tr>
+  <tr><td class="ok">好例</td><td>「坤甸的河口每天涨两次潮，船也跟着来两次。守岸人把税关设在潮水能打到的地方，让每一担香料都得先向黑海岸报一声名字。集市散了，账册还亮着灯。」</td><td>地名（坤甸）+ 机制（税关=贸易份额）+ 一句人话（灯还亮着）。玩家读完知道自己在干什么，也知道这活儿有多累。</td></tr>
+</table>
+
+<h3>3.5 想让剧情"动起来"：完成节点弹事件（可选）</h3>
+<table>
+  <tr><th>做法</th><th>骨架</th><th>证据</th></tr>
+  <tr><td>在任务 <code>effect</code> 里触发</td><td><code>country_event = { id = BLS_missions.5 }</code>（放在 effect 末尾，不影响原有奖励）</td><td class="ok">原版实证 <code>99_Hansa_Missions.txt:83</code>、<code>:204</code>、<code>:241</code></td></tr>
+  <tr><td>事件文件</td><td><code>namespace = BLS_missions</code> + <code>is_triggered_only = yes</code> + 单个 <code>option</code></td><td class="ok">本项目现成骨架 <code>events/ALC_mission_events.txt</code>（14 行）</td></tr>
+  <tr><td>配图</td><td><code>picture = MISSION_OVERSEAS_eventPicture</code>（海洋向）或 <code>MISSION_EMPIRE_eventPicture</code></td><td class="ok">ALC 已用前者；其余先按同类抽一条原版实例核对</td></tr>
+</table>
+<div class="sub">建议只给 3 个节点配事件：经济线终格（黄金商路）、宗教线终格（同一个回声）、内政线终格（潮声为证）。事件写"被听见的那一刻"，不要写总结报告。</div>
+
+<h3>3.6 落盘规则（硬性）</h3>
+<ul>
+  <li>只写 <code>decode_localisation/BLS_l_english.yml</code>（UTF-8 无 BOM、LF、行首 <b>1 个空格</b>、<code>KEY: "文本"</code>）；<code>localisation/</code> 由你手动编码，我不读不写。</li>
+  <li>key 格式：<code>BLS_missions_&lt;列&gt;_&lt;行&gt;_title</code> / <code>_desc</code>（漏 <code>_title</code> 界面就是空白）。树级标题 <code>BLS_missions_1..5</code> 已存在（<code>:49-53</code>），可改文案不用改 key。</li>
+  <li>改完跑 <code>check_loc_keys</code> 对一遍；新增 key 我一并给你「key → 中文全文」对照表，你直接抄去编码。</li>
+</ul>
+
+<h2>四、模块分量与修正复用（一张表收口）</h2>
+<table>
+  <tr><th>模块</th><th>格数</th><th>已有修正可复用</th><th>需新增修正</th><th>核心判定词汇</th></tr>
+  <tr><td>经济 · 潮声商路</td><td>5</td><td class="ok">4 条（tide_caller / spice_route / master_of_malacca / golden_route）</td><td class="dim">0</td><td><code>home_trade_node</code> 份额、<code>num_of_merchants</code>、<code>trade_efficiency</code>、<code>monthly_income</code></td></tr>
+  <tr><td>宗教 · 鸣潮圣潮</td><td>4</td><td class="bad">0</td><td class="hot">3 条</td><td><code>religious_unity</code>、<code>num_of_cardinals</code>、<code>is_defender_of_faith</code>、<code>papal_influence</code></td></tr>
+  <tr><td>扩展 · 向海之外</td><td>4</td><td class="bad">0</td><td class="hot">2 条</td><td><code>num_of_colonies</code>、<code>colonists</code>、<code>global_colonial_growth</code></td></tr>
+  <tr><td>军事 · 鸣潮远征</td><td>5</td><td class="ok">3 条（tide_warrior / mainland_march / ocean_empire）</td><td class="dim">0</td><td>area/region 全占、<code>total_development</code></td></tr>
+  <tr><td>海军 · 永夜舰队</td><td>4</td><td class="ok">4 条（fleet_gathering / eternal_night_fleet / sea_wall / deep_sea_hegemon）</td><td class="dim">0</td><td><code>num_of_total_ports</code>、<code>num_of_heavy_ship</code>、<code>naval_forcelimit</code>、<code>navy_tradition</code></td></tr>
+  <tr><td>内政外交 · 守岸人议会</td><td>3</td><td class="ok">4 条（legacy_of_guardian / black_shore_empire / great_power_shore / renowned_shore）</td><td class="dim">0</td><td><code>total_development</code>、<code>num_of_subjects</code>、<code>government_rank</code></td></tr>
+  <tr><td><b>合计</b></td><td><b>25</b></td><td>15 条</td><td>5 条</td><td>—</td></tr>
+</table>
+
+<div class="say">
+<b>模块化的好处</b>：宗教线与扩展线是<b>净新增</b>（0 条现有修正可用），但它们吃的是这套 mod 已经跑通的系统（教廷 / 探索），不需要新机制；而现有 17 条修正里 15 条能原地复用 —— 换句话说，这次改动的重心是<b>把已有资源重新接线</b>，不是再造一套数值。
+</div>
+
+<h2>五、每条线"打的是哪一场仗"（一句话对齐表）</h2>
+<table>
+  <tr><th>线</th><th>一句话</th><th>玩家在地图上做的动作</th></tr>
+  <tr><td>经济</td><td>把 malacca 的钱变成自己的钱</td><td>派商人、造轻船、抢香料产地</td></tr>
+  <tr><td>宗教</td><td>让整片海都听见同一个回声</td><td>传教、抢枢机、买护教者</td></tr>
+  <tr><td>扩展</td><td>潮声传到哪里，旗就插到哪里</td><td>探险家沿岸、殖民点、海外省</td></tr>
+  <tr><td>军事</td><td>先从 2706 开始，一寸一寸推</td><td>吃省、全占 area、跨海投送</td></tr>
+  <tr><td>海军</td><td>永夜里也找得到回家的路</td><td>建港、造重舰、刷传统</td></tr>
+  <tr><td>内政</td><td>9 省也能撑起一个帝国</td><td>发首都、修要塞、收属国、升帝国</td></tr>
+</table>
+
+<h2>六、下一步（选定模块我就按模块写，不按格子写）</h2>
+<ul>
+  <li>宗教线与扩展线要不要立？立了就各加 3 / 2 条修正 + 8 个节点，现有 25 格要重新分配。</li>
+  <li>香料群岛归经济线（份额/产地）还是军事线（全占）？两线只能有一个当"拥有省份"。</li>
+  <li>2706（MGZ 梦州）让不让军事线写进去 —— 这是"统一婆罗洲"唯一的真门槛。</li>
+</ul>
+
+</body>
+</html>

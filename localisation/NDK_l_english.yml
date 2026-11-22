@@ -22,3 +22,109 @@
  NDK_idea_6_desc: "g®N„vÈvN«ˆ*c·VaS±ƒºNSVjO†SÕlNë‹‹T0ˆRYw(WgN±R“Šÿ“ŠŠÔkûNUO‡efNýôf¾–•dÁk0"
  NDK_idea_7: "gÒRuXR"
  NDK_idea_7_desc: "ýw(W*c·VaS±ƒ„v¬Q)YImNeg„vºNÿ,g«Ž1S=fN=e›Q–0ÙÌ‘„vÏkN7bºN¶RýYNwôg0ÐvNN.VýwÉbV„vV0"
+
+ # ===== ûN¡Rh v2 =====
+
+ NDK_missions_1: "gSËzýV"
+ NDK_missions_2: "¹8‰S"
+ NDK_missions_3: "‹vwm*‚ï"
+ NDK_missions_4: "gNKN¦u"
+ NDK_missions_5: "”N¶RÒ‰›R"
+
+ NDK_missions_1_1_title: "S…–*gT"
+ NDK_missions_1_1_desc: "kNWW0W0	NãSÐv•N0NagpN„vê–ïÿÙ1S=f*c·VaS±ƒ„vhQè¶RSV0úWÌ‘S(WkpX¹JdVŠ®v¸uÿô‹ÿHQŠbÙWW0WPWžRÿQŒ+R„v0"
+ NDK_missions_1_2_title: "CSVnKNÎ‘"
+ NDK_missions_1_2_desc: "°QSKNTÿVnNVnKNô•2—úQïSåNp„vï0èÏe–™†˜ìN,rN!kTa(WTNY®‹‹NÿagöN=fÏkºNÞV¶Röeý&^—VpNf|œ0"
+ NDK_missions_1_3_title: "S¹eKNï"
+ NDK_missions_1_3_desc: "ÎN‹vwm0R…QF–„vïNÅVîO—Vo®NÿêS‰ýwÇf0*c·VaS±ƒ6e„vN=fÇï9ÿ=fÇïºNŽVTÅV‰˜°‹—V„vTWR0"
+ NDK_missions_1_4_title: "°QS„vâl<SšN"
+ NDK_missions_1_4_desc: "âl«ƒSÛVwòTÏuhQpeRVÃV0iRN„v‹N=fŠb‡efN0R?–SIl<hS¯eKQ±¹„vºNOHQðyNðy¸u„vRÏ‘ÿQ³QšR‰N‰û‹0"
+ NDK_missions_1_5_title: "SƒX‹sµ^"
+ NDK_missions_1_5_desc: "Lu‘xËzweg±)Yÿ¡l	gºN R•Q0úWÌ‘SêS©‹ºN(W‘xNIR†NNLˆWRÿdkYŽVSÿÄ‰éw1ubìNšR0"
+
+ NDK_missions_2_1_title: "ê–jmNÍ‚—g"
+ NDK_missions_2_1_desc: "ê–jm‹SNwÍ‚—gÿ—gPRÌ‘úQ„v(g4YÔkÑ‘PRžR(W0xNeg„v,rN9hÿ«ˆËz(W†NzaSè•ãSSVè•ñg0"
+ NDK_missions_2_2_title: "FUO8f"
+ NDK_missions_2_2_desc: "WSeg„vÐvFU±b(`ï¾–pÿS»S„v®v'FU±b(`z*YÍ‘0*c·VaS±ƒ„vÞVTr=fÿïRVbîOÿzRVbšRÿ±b(`RV`O0"
+ NDK_missions_2_3_title: "Ûk®vŒTÐv"
+ NDK_missions_2_3_desc: "Ûk®vúQSÿÐvÛWS0&?bHQu,rN!kÑS°sÿÙ2N7hN‰(WTN*N&,gNöeÿpeWROêñTŽVNp0"
+ NDK_missions_2_4_title: "SÉbnfpQ"
+ NDK_missions_2_4_desc: "ÉbnfpQ„vošžgrlN²‹ýVLuÿêS²‹cR‚‚0*c·VaS±ƒNSb—rYeÖNìN²‹WRÿêSSb—r©‹ÖNìN°‹—V(WêTagïãS²Nz0"
+ NDK_missions_2_5_title: "<hu–pQ°Q›S"
+ NDK_missions_2_5_desc: "°Q›SN<hu–pQKNô•±agw*‚ïÿôu¬NºNpÇ0INYepÇ0Teg¡lºNp†N0*c·VaS±ƒŠbƒRÍ‘°ep†NNMÿ6qT°‹N†N°QšS0"
+
+ NDK_missions_3_2_title: "‹vwm=nãS"
+ NDK_missions_3_2_desc: "‹vwmNt^	gÛV*NgN»Q0ÙÛV*NgÌ‘ÿ0tWaS„vx4Y‰ÅˆNtet^„vcgÿÅˆNN1SÂp(W¸SN0"
+ NDK_missions_3_3_title: "‹vwm„vnm°Q"
+ NDK_missions_3_3_desc: "nm°QNwwmþV0†˜*‚„vw5‚Kbô‹ÿ²‹°QÔk²‹fÍ‘‰fO—šºNÿ°QNOÿƒRêSO(W`OždN»S„vöePJTÉ‹`OƒR(W0"
+ NDK_missions_3_4_title: "wmþVN„v*‚¿u"
+ NDK_missions_3_4_desc: "wmþV²RÌ‘„v±.VþVÿ¹Ò‰«ˆKbWlèx—VÑS®N0Nb—	gNag¿uÿÎN‹vwmNôvIu0R¡lºNÞVeg„v0W¹e0"
+ NDK_missions_3_5_title: "‡epQ"
+ NDK_missions_3_5_desc: "‡epQ„va„„ä…=f.Oô‹ÿ|œ²=fžR„v09‚–&^ÞV„v,rNyb'N=fÄžÑ‘ÿ=fL‹Y„vÕœ|œŒTNåS0±¹w„výwOOºN00"
+
+ NDK_missions_4_1_title: "gQOKN0W"
+ NDK_missions_4_1_desc: "ˆRYw(WgNw“Šÿ“ŠŠÌ‘¡l	gN*NWRÐc0RýV¶R0FOÎNdkåNTÿ*c·VaS±ƒ„vÏkN!k³Q­eÿý‰HQwN<wg®N0"
+
+ NDK_missions_4_lock_2_title: "zzgKNLk"
+ NDK_missions_4_lock_2_desc: "	g›NLkêS(Wg:„vöePýw1UúQeg01U„vºNåwSêñT(W1UÀNHNÿ,T„vºNNåwSÙ1S=fƒRNôv¡l«ˆy„vŸSàV0"
+ NDK_missions_4_lock_3_title: "HygKNY"
+ NDK_missions_4_lock_3_desc: "HygKNYÿ¶R¶R„qop0N=fleOuÿ=f`wÁ‰g®NN±NWWzz:„vbV¶rÏPÀNHN0"
+ NDK_missions_4_lock_4_title: "R=e1A,B"
+ NDK_missions_4_lock_4_desc: "òSfN(WÙÌ‘Yu†Nzz‹v0N=f¡l	g™Qÿ=f™QNeg„v±Nu˜«ˆºN•dp†N0"
+ NDK_missions_4_lock_5_title: "R=e2A,B"
+ NDK_missions_4_lock_5_desc: "æSNagïÿæSNÍyÓuNS0ƒRNôv(WÙÌ‘ÿêS=fØ¡ln0R`Op0"
+
+ NDK_missions_4_a_2_title: "zzgKNLk · g«Ž"
+ NDK_missions_4_a_2_desc: "	Ngzz-^KNTÿ*c·VaS±ƒºNVËY¨‹º‹N*NNå‹¨‹º‹„vî•˜˜ÿ‚Yœgg	g2N*NÿºN=fN=fmNïSåN	g2N*N0"
+ NDK_missions_4_a_3_title: "g«ŽKN®‹"
+ NDK_missions_4_a_3_desc: "5ÏeìN(W®‹‹N…SÌ‘‰N†NN)Y0‰N0RgTÿÖNìNTaŠbêñTRb2NJSÿNJSYu(Wê–ŸSÿNJS»Sýg®N0"
+ NDK_missions_4_a_4_title: "R=e1A · g«Žø‹b"
+ NDK_missions_4_a_4_desc: "”N¶RKN-NòT	g	N¶RÙz0R†NÙN¹0iRN2N¶RØ¡lô‹Ý‹ÿFO®‹‹N…S„vè•òTÏusQN†N0"
+ NDK_missions_4_a_5_title: "R=e1B · °euKNg"
+ NDK_missions_4_a_5_desc: "°e„vg®NN=f«ˆ¹p®N„vÿ=f«ˆ.úQeg„v0.ƒR„vPg™eÌ‘ÿ	gNJS=f*c·VaS±ƒºNêñT²NúQ»S„vN‰0"
+
+ NDK_missions_4_b_2_title: "zzgKNLk · –`º‹"
+ NDK_missions_4_b_2_desc: "æSN>mô‹ÿg:N=fŒp¾–ÿ=fÁ‹Í‹0	gºNŠbg®NÏ…weg†NÿwbìN‰ZP„vN=feˆƒRÿ=fŒbúQÏ…ƒR„vºN0"
+ NDK_missions_4_b_3_title: "°eÞ‹„vMRY"
+ NDK_missions_4_b_3_desc: "FUºNìN(W=nãSn¹pÓN“^ÿYeëX(WYeXn¹p!‡Ûp0Nb	gºNý(WIrNöNŒmNô‹Nn=fÀNHN„v‹NÑSu0"
+ NDK_missions_4_b_4_title: "R=e2A · ZOT"
+ NDK_missions_4_b_4_desc: "ÙN<h„vTWR(WchHhÌ‘=fzz„v0„b™QXTYuN†NLˆÝÿtSØV†NYuWRbwÖNEeaØV†N0"
+ NDK_missions_4_b_5_title: "R=e2B · °eÞ‹„v–`º‹"
+ NDK_missions_4_b_5_desc: "°eÞ‹KNirNå‹XR(WÿŽN=fƒR„v,rNýNlQ‡e1S=fÁ‹fêñTNXR(W0*c·VaS±ƒ„v˜RÚPSOû|ùRdkëkàeðV¾–0"
+
+ NDK_missions_5_1_title: "—gKNPR"
+ NDK_missions_5_1_desc: "—gKNPRNŒ?e»lÿêSŒgøv0ÖNìNŠb†SÕl²NÙuýV¶RÿagöN=fýV¶RN¸‹9e†SÕlN„vûNUON)Y0"
+ NDK_missions_5_2_title: "gbopºN"
+ NDK_missions_5_2_desc: "gbopºNˆR„v=fïÿN=fÎW0ÖNìN?aa:N*c·VaS±ƒ¹popÿMRÐc=fop¹l±”1u*c·VaS±ƒúQ0"
+ NDK_missions_5_3_title: "O<SQYFUO"
+ NDK_missions_5_3_desc: "O<SQY„vºNNî•'ÎNêTegÿêSî•÷NýwNýwQNOJSb0*c·VaS±ƒœU0kÙÍyNî•egï„vÚ‹žR0"
+ NDK_missions_5_4_title: "îSÃ”ÐTwUË†wSåTJW"
+ NDK_missions_5_4_desc: "åTJW„vTWR,TNwÏP©srÿúQ„v'tSNöNÔkNöNƒw0ÖNìNêS‰BlNöN‹Nÿ+R¬P0"
+ NDK_missions_5_5_title: "aºNO"
+ NDK_missions_5_5_desc: "aºNO„vO‚‚ÎNNzzKbegÿmNÎNNzzKbp0*c·VaS±ƒnZiÙN¹pÿÍN6qV†Nè•àV:Nè•YØ	g+R„vºN(W’c–0"
+
+ NDK_tt_choose_side: "§Y	Ngzz-^§! òTbšRNS0dkT*c·VaS±ƒ‰pêTNagïÿ1uN:W‰béb³QšRÿ§GR=ea§!ÿg«Žø‹b	ÿb §GR=eb§!ÿ°eÞ‹„v–`º‹	ÿ0"
+ NDK_tt_end_1a: "§YR=e1A · g«Žø‹b§! òTb0g¿uS(WNN<h6emg:N §G°euKNg§!0"
+ NDK_tt_end_2a: "§YR=e2A§! òTb0g¿uS(WNN<h6emg:N §G°eÞ‹„v–`º‹§!0"
+
+ # ===== ûN¡RhîOck =====
+
+ NDK_mod_lake_land: "CSVnKN0W"
+ NDK_mod_northern_road: "S¹eKNï"
+ NDK_mod_border_throne: "SƒXLu‘x"
+ NDK_mod_timber: "Í‚—g(g™e"
+ NDK_mod_charter: "FUïyr¸‹"
+ NDK_mod_pelt_salt: "Ûk®vNÐv"
+ NDK_mod_lapland_road: "ÉbnfpQS"
+ NDK_mod_north_atlantic: "S'Y‰m*‚ï"
+ NDK_mod_white_sea_harbor: "‹vwm=nãS"
+ NDK_mod_ice_pilot: "nm°QV4lºN"
+ NDK_mod_chart_room: "wmþV²R"
+ NDK_mod_vinland: "‡epQ„v&?|"
+ NDK_mod_moon_blessing: "gQO"
+ NDK_mod_hollow_moon: "zzg"
+ NDK_mod_body_split: "g«Ž"
+ NDK_mod_paradox_seed: "–`º‹KNÍy"
+ NDK_mod_fatui_deal: "aºNO„v²Nf"
+ NDK_mod_new_moon: "°euKNg"
+ NDK_mod_paradox_born: "°eÞ‹„v–`º‹"

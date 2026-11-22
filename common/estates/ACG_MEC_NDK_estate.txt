@@ -1,0 +1,51 @@
+# ============================================================
+# 挪德卡莱 NDK：五个阶层的专属名称
+# 加法式注册（同键名跨文件累加），不覆盖原版、不改 ACG1 的 02_nobility.txt
+# 写法依据：Touhou-Universalis-Expanded-CN\common\estates\THE_IQU_estate.txt:1-15
+# 触发：仅仅 tag = NDK 时改名，其它国家仍显示原版名称
+# ============================================================
+
+estate_nobles = {
+	custom_name = {
+		desc = NDK_estate_nobles_name
+		trigger = {
+			tag = NDK
+		}
+	}
+}
+
+estate_church = {
+	custom_name = {
+		desc = NDK_estate_church_name
+		trigger = {
+			tag = NDK
+		}
+	}
+}
+
+estate_burghers = {
+	custom_name = {
+		desc = NDK_estate_burghers_name
+		trigger = {
+			tag = NDK
+		}
+	}
+}
+
+estate_dhimmi = {
+	custom_name = {
+		desc = NDK_estate_dhimmi_name
+		trigger = {
+			tag = NDK
+		}
+	}
+}
+
+estate_brahmins = {
+	custom_name = {
+		desc = NDK_estate_brahmins_name
+		trigger = {
+			tag = NDK
+		}
+	}
+}
