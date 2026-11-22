@@ -7,8 +7,8 @@
  MSK_missions_1:0 "…5uÁx®p„vV"
  MSK_missions_1_1_title:0 "¡VBWŽ4t„våe8^"
  MSK_missions_1_1_desc:0 "8^ØvðS„véehfÎNáTIVËYÿÎ˜ªuÔYXT(W!hè•ãS¹pT0‰(WÙGrW0WNÙzOOÿHQ—VŠbuQ›Reˆán0"
- MSK_missions_2_2_title:0 "àeýw›RwÆ–âV"
- MSK_missions_2_2_desc:0 "¡l	g…ýw›R„vºNÑQ(WNwÿmNýw’cúQÏP7h„v5–¿u0N(„KQîhRVŽNNßu±)YÿfRíVý^„vekuQŒT®pR,rN!k’c0R†NÎW™XN0"
+ MSK_missions_2_2_title:0 "T›ÕlyfNîvUV"
+ MSK_missions_2_2_desc:0 "5ƒ‚„KQN‹ˆÌ‘±ASN	NCS,gT›SfNÿÈuŽN«ˆfRíVý^tetb†NchHh0	g†NÙýNTUVÿßuNN(„KQîh1SNQêS=f¢b0WØvÿw=fŠbteGr·Va×V„vT›ÕlÓu>yNv^6eÛ0tV0"
  MSK_missions_1_3_title:0 "Î˜ªuÔYXT„váTIG‚"
  MSK_missions_1_3_desc:0 "TKQ=fÙGrwm„vÃV0ÙuáTIG‚cN°e×eÿâlW„vwmmNå‹	gNag^SŽNfRíVý^„v*‚S0"
  MSK_missions_1_4_title:0 "!nÇwmáS"
@@ -75,8 +75,8 @@
 
  # ---------- slot 5 · 帝国脊 ----------
  MSK_missions_5:0 "‡v^„v-^MO"
- MSK_missions_3_1_title:0 "8^ØvðS„vTLh"
- MSK_missions_3_1_desc:0 "‹v•NÑžPR1SOO(W”–ÁX0Î˜ªuÔYXT„v–ˆàzÔkûNUOag¦uýïS`—ÿN¸uTßvŒrN»SÿTKQmN1SßNwÇeg†N0"
+ MSK_missions_3_1_title:0 "8^ØvðS²RËS"
+ MSK_missions_3_1_desc:0 "‹v•NÑžPR1SOO(W”–ÁXÿÎ˜ªuÔYXT„v–ˆàzÔkûNUOag¦uýïS`—0NyY¾bTßv0‹YaNNOŽN §G100§!ÿyY1SŠbTKQ©‹Ùu`Oÿ&TRêS=fNýNzz4Y²NÅ`0"
  MSK_missions_2_3_title:0 "ÑžPR„v‰béb"
  MSK_missions_2_3_desc:0 "SVfRíVý^„v›Q–‹SÇ‹v•NÑžPRöeÿyY¡l	gVkpÿêSŠbTKQ„vpSàz¨c†NÇegÿÞTte*NÎ˜ªuÔYXT„v–HS0"
  MSK_missions_2_4_title:0 "8^ØvðSteÎ˜Ð¨R"
@@ -95,8 +95,8 @@
 ### MISSION TOOLTIP ###
 # 依附于 5_1（原 3_1）effect 的 custom_tooltip，effect 未改动，故保留原名
 
- MSK_missions_3_1_c_tt1_yes:0 "£yes£§Y[SHI.GetName]§! ùR`O‹YaòT¾ §G+100§!ÿTKQrR©‹Ùu §Y[Root.GetName]§!ÿv^·ƒ—Vå‹0W8hÃV"
- MSK_missions_3_1_c_tt1_no:0 "£no£§Y[SHI.GetName]§! ‹YaN³ §R100§!ÿ,g!kNrR0W"
+ MSK_missions_3_1_c_tt1_yes:0 "£yes£å‚ §Y[SHI.GetName]§! ùR`O‹YaNNOŽN §G100§!ÿTKQÿ+T8hÃV	ÿrR©‹Ùu §Y[Root.GetName]§!"
+ MSK_missions_3_1_c_tt1_no:0 "£no£å‚ §Y[SHI.GetName]§! ‹YaN³ §R100§!ÿNrR0WÿÅN·ƒ—V §G+10§! Zg"
  MSK_missions_3_1_c_tt2:0 "&TRÿ"
 
 ### MODIFIER ###
@@ -114,7 +114,7 @@
  MSK_academy_city:0 "fRíVý^„vµNN"
  MSK_dual_route:0 "ÌS¿uFUï"
  MSK_low_countries:0 "NO0WteT"
- MSK_diplomatic_merit:0 "Y²NðXg"
+ MSK_diplomatic_merit:0 "8^ØvðS²RËS"
  MSK_saxony_trade:0 "(„KQîh8fHS"
  MSK_rhine_trade:0 "±ƒ5ƒ›Q°h"
  MSK_academy_works:0 "fRíVý^„v%„ú^"
@@ -208,3 +208,17 @@
  MSK_missions_3_12_title:0 "fRHS›QY"
  MSK_missions_3_12_desc:0 "8^ØvðS„v‰š›QÑQYNN0"
  MSK_academy_country_name:0 "fRíVý^"
+ MSK_missions_2_13_title:0 "R%fp™)R"
+ MSK_missions_2_13_desc:0 "ÙuyYNrÏu9ÿ©‹yYŠbfRíVý^„vÅ`¥bQú”V0"
+ MSK_missions_3_13_title:0 "PO)YêlPR"
+ MSK_missions_3_13_desc:0 "xvzNb²òTÏuK„bÿLˆ?eÑyŽbmN0R†NmQµuŠbPO)YêlPRmN—rÛÙýNTUS0"
+ MSK_missions_2_14_title:0 "8^ØvðSÔYXTO"
+ MSK_missions_2_14_desc:0 "R%fNPO)Yý(W†Nÿ8^ØvðSÔYXTOckVbËzÿŽVTÏkN¹pTIN¹ppeýôf<P±”0"
+ MSK_uiharu:0 "R%fp™)R"
+ MSK_saten:0 "PO)YêlPR"
+ MSK_committee:0 "8^ØvðSÔYXTO"
+ MSK_missions_3_2_title:0 "ô‹gß˜‡ÍdHy"
+ MSK_missions_3_2_desc:0 "ß˜‡ÍdHyN¡VBWŽ4tÎNegNùRØN0‰HNŠbyY„v0WØvhQpeTNÿ‰HNŠbyYÉbNTN.VLhPR2Nagïýýwÿb0R0ÃVtŒcµc00"
+ MSK_mental_control:0 "ÃVtŒcµc"
+ MSK_missions_3_2_tt_allied:0 "£yes£å‚N §Y[SKM.GetName]§! §GÓußv§!ÿ·ƒ—V §G25 t^§! „v0ÃVtŒcµc0ÿ9e„UsQû| §G+15%§!	ÿÿY R §G+10§! Zg"
+ MSK_missions_3_2_tt_conquest:0 "£no£å‚òT §RTv^§! §Y[SKM.GetName]§! „vhQè†˜Wÿ3zšR §R-1§!ÿbcÖS8lEN0ÃVtŒcµc0ÿ9e„UsQû| §G+15%§!	ÿ"

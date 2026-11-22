@@ -187,3 +187,20 @@ MSK_new_era = {
 MSK_secret_unrest = {
 	stability_cost_modifier = 0.2
 }
+
+MSK_uiharu = {
+	spy_offence = 0.15
+}
+
+MSK_saten = {
+	land_morale = 0.05
+	morale_damage_received = -0.05
+}
+
+MSK_committee = {
+	all_power_cost = -0.075
+}
+
+MSK_mental_control = {
+	improve_relation_modifier = 0.15
+}

@@ -7,8 +7,8 @@ l_english:
  MSK_missions_1:0 "超电磁炮的征途"
  MSK_missions_1_1_title:0 "御坂美琴的日常"
  MSK_missions_1_1_desc:0 "常盘台的早晨从巡逻开始，风纪委员在校门口点名。要在这片土地上站住，先得把兵力补满。"
- MSK_missions_2_2_title:0 "无能力者集团"
- MSK_missions_2_2_desc:0 "没有超能力的人凑在一起，也能排出像样的阵线。下萨克森归于一统那天，学园都市的步兵和炮列第一次排到了城墙下。"
+ MSK_missions_2_2_title:0 "魔法禁书目录"
+ MSK_missions_2_2_desc:0 "茵蒂克丝脑袋里那十万三千本魔道书，终于被学园都市整理成了档案。有了这份名录，统一下萨克森就不再只是抢地盘，而是把整片德意志的魔法结社一并收进索引。"
  MSK_missions_1_3_title:0 "风纪委员的巡逻艇"
  MSK_missions_1_3_desc:0 "吕贝克是这片海的心脏。给巡逻艇挂上新旗，波罗的海也该有一条属于学园都市的航道。"
  MSK_missions_1_4_title:0 "渡过海峡"
@@ -75,8 +75,8 @@ l_english:
 
  # ---------- slot 5 · 帝国脊 ----------
  MSK_missions_5:0 "皇帝的席位"
- MSK_missions_3_1_title:0 "常盘台的同桌"
- MSK_missions_3_1_desc:0 "白井黑子就住在隔壁。风纪委员的袖章比任何条约都可靠，一纸同盟签下去，吕贝克也就跟着过来了。"
+ MSK_missions_3_1_title:0 "常盘台室友"
+ MSK_missions_3_1_desc:0 "白井黑子就住在隔壁，风纪委员的袖章比任何条约都可靠。与她达成同盟、好感不低于 §G100§!，她就把吕贝克让给你；否则只是一份空头交情。"
  MSK_missions_2_3_title:0 "黑子的抉择"
  MSK_missions_2_3_desc:0 "当学园都市的军队压过白井黑子时，她没有开火，只把吕贝克的印章推了过来，连同整个风纪委员的辖区。"
  MSK_missions_2_4_title:0 "常盘台整风运动"
@@ -95,8 +95,8 @@ l_english:
 ### MISSION TOOLTIP ###
 # 依附于 5_1（原 3_1）effect 的 custom_tooltip，effect 未改动，故保留原名
 
- MSK_missions_3_1_c_tt1_yes:0 "£yes£§Y[SHI.GetName]§! 对你好感已达 §G+100§!：吕贝克割让给 §Y[Root.GetName]§!，并获得该地核心"
- MSK_missions_3_1_c_tt1_no:0 "£no£§Y[SHI.GetName]§! 好感不足 §R100§!：本次不割地"
+ MSK_missions_3_1_c_tt1_yes:0 "£yes£若 §Y[SHI.GetName]§! 对你好感不低于 §G100§!：吕贝克（含核心）割让给 §Y[Root.GetName]§!"
+ MSK_missions_3_1_c_tt1_no:0 "£no£若 §Y[SHI.GetName]§! 好感不足 §R100§!：不割地，仅获得 §G+10§! 威望"
  MSK_missions_3_1_c_tt2:0 "否则："
 
 ### MODIFIER ###
@@ -114,7 +114,7 @@ l_english:
  MSK_academy_city:0 "学园都市的产业"
  MSK_dual_route:0 "双线商路"
  MSK_low_countries:0 "低地整合"
- MSK_diplomatic_merit:0 "外交声望"
+ MSK_diplomatic_merit:0 "常盘台室友"
  MSK_saxony_trade:0 "萨克森贸易区"
  MSK_rhine_trade:0 "莱茵军械"
  MSK_academy_works:0 "学园都市的营建"
@@ -208,3 +208,17 @@ l_english:
  MSK_missions_3_12_title:0 "学区军备"
  MSK_missions_3_12_desc:0 "常盘台的驻军凑够一万。"
  MSK_academy_country_name:0 "学园都市"
+ MSK_missions_2_13_title:0 "初春饰利"
+ MSK_missions_2_13_desc:0 "给她一笔经费，让她把学园都市的情报网铺开。"
+ MSK_missions_3_13_title:0 "佐天泪子"
+ MSK_missions_3_13_desc:0 "研究所群已经落成，行政科技也到了六级——把佐天泪子也算进这份名单。"
+ MSK_missions_2_14_title:0 "常盘台委员会"
+ MSK_missions_2_14_desc:0 "初春与佐天都在了，常盘台委员会正式成立：往后每一点君主点数都更值钱。"
+ MSK_uiharu:0 "初春饰利"
+ MSK_saten:0 "佐天泪子"
+ MSK_committee:0 "常盘台委员会"
+ MSK_missions_3_2_title:0 "说服食蜂操祈"
+ MSK_missions_3_2_desc:0 "食蜂操祈与御坂美琴从来不对付。要么把她的地盘全数吃下，要么把她拉上同一张桌子——两条路都能拿到「心理掌控」。"
+ MSK_mental_control:0 "心理掌控"
+ MSK_missions_3_2_tt_allied:0 "£yes£若与 §Y[SKM.GetName]§! §G结盟§!：获得 §G25 年§! 的「心理掌控」（改善关系 §G+15%§!），外加 §G+10§! 威望"
+ MSK_missions_3_2_tt_conquest:0 "£no£若已 §R吞并§! §Y[SKM.GetName]§! 的全部领土：稳定 §R-1§!，换取永久「心理掌控」（改善关系 §G+15%§!）"
