@@ -86,6 +86,7 @@ acg_monarchy = {
 				HMC_qijian_reform
 				PLP_purple_heart_reform
 				YYK_netherworld_reform
+				NDK_hollow_moon_poem_reform
 			}
 		}
 		racial_policy = {
