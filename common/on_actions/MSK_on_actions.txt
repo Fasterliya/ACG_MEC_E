@@ -3,8 +3,8 @@ on_general_recruited = {
 		if = {
 			limit = { has_country_flag = MSK_electromaster_lv4 }
 			add_government_power = {
-				mechanic_type = MSK_electromaster_mechanic_lv4
-				power_type = MSK_electromaster_power_lv4
+				mechanic_type = MSK_electromaster_mechanic
+				power_type = MSK_electromaster_power
 				value = 5
 			}
 		}

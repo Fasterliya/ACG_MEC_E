@@ -53,7 +53,7 @@ MSK_railgun_doctrine = {
 
 MSK_academy_city = {
 	global_trade_goods_size_modifier = 0.15
-	development_cost = -0.05
+	local_development_cost = -0.05
 }
 
 MSK_dual_route = {
@@ -103,7 +103,7 @@ MSK_golden_age = {
 }
 
 MSK_academy_hub = {
-	development_cost = -0.05
+	local_development_cost = -0.05
 	global_trade_goods_size_modifier = 0.05
 }
 
@@ -146,7 +146,7 @@ MSK_allied_guard = {
 
 MSK_allied_court = {
 	global_trade_goods_size_modifier = 0.05
-	development_cost = -0.05
+	local_development_cost = -0.05
 }
 
 MSK_zealand_port = {

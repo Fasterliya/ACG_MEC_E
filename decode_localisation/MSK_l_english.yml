@@ -222,3 +222,5 @@ l_english:
  MSK_mental_control:0 "心理掌控"
  MSK_missions_3_2_tt_allied:0 "£yes£若与 §Y[SKM.GetName]§! §G结盟§!：获得 §G25 年§! 的「心理掌控」（改善关系 §G+15%§!），外加 §G+10§! 威望"
  MSK_missions_3_2_tt_conquest:0 "£no£若已 §R吞并§! §Y[SKM.GetName]§! 的全部领土：稳定 §R-1§!，换取永久「心理掌控」（改善关系 §G+15%§!）"
+ MSK_committee_reform:0 "常盘台委员会"
+ MSK_committee_reform_desc:0 "委员会把学园都市的行政、教育与情报拢在一处：顾问更便宜，行政效率更高，改革推进也更快。\n凡文化为超能力系魔法使的领地，都会自动获得「学园都市学区」：思潮传播速度 +25%，本地发展成本 -5%。"

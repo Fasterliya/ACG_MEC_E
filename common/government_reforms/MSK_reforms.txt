@@ -19,3 +19,25 @@ MSK_railgun_reform = {
 		allow = { always = yes }
 	}
 }
+
+MSK_committee_reform = {
+	lock_level_when_selected = yes
+	icon = "MSK_committee_reform"
+	potential = {
+		tag = MSK
+	}
+	trigger = {
+		has_country_modifier = MSK_committee
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		advisor_cost = -0.15
+		administrative_efficiency = 0.05
+		reform_progress_growth = 0.20
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}

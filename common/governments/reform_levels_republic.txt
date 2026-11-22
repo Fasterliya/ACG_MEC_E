@@ -39,6 +39,7 @@ acgr_republic = {
 		}
 		Power_structure = {
 			reforms = {
+				MSK_committee_reform
 				average_opportunity_reform
 				proteges_and_loyalists_reform
 				self_governing_reform

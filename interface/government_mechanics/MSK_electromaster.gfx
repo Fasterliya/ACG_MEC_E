@@ -13,4 +13,11 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
+
+	spriteType = {
+		name = "government_reform_MSK_committee_reform"
+		texturefile = "gfx/interface/government_reform_icons/MSK/MSK_committee_reform.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
 }
