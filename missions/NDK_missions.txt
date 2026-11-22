@@ -1,12 +1,15 @@
 # ============================================================
-# 挪德卡莱 NDK 任务树 v3（结构版 / 效果与修正全部留空）
-# 8 个 series block / 32 个节点
-# 只保留：slot / potential / 节点 icon / position / required_missions / trigger
-# 全部 effect 清空为 effect = { }，原设计数值见文件末尾「停用存档」
+# 挪德卡莱 NDK 任务树 v5 —— 骨骼按设计图落位
+# 5 列(slot 1-5) / 8 个 series block / 32 个节点
+# slot4 保持四 block 并存结构（不动）
+# 全部 effect 清空为 effect = { }，修正文件全部停用
+# 图上的跨列线只有两条：
+#   A3 北方之路   ──→ B4 北拉普兰
+#   B1 雪浪与苍林 ──→ C1 白海港口（同一行，正右方）
 # ============================================================
 
 # ------------------------------------------------------------
-# slot 1 — 极北立国（列 A，position 1-5 一条直线）
+# A 列 — slot1 极北立国：position 1-5 一条直线
 # ------------------------------------------------------------
 NDK_missions_1 = {
 	slot = 1
@@ -18,7 +21,7 @@ NDK_missions_1 = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_1_1 = {
+	NDK_missions_1_1 = {			# A1 北隅未合
 		icon = "mission_unknown_mission"
 		position = 1
 		trigger = {
@@ -27,7 +30,7 @@ NDK_missions_1 = {
 		effect = { }
 	}
 
-	NDK_missions_1_2 = {
+	NDK_missions_1_2 = {			# A2 千湖之野
 		icon = "mission_unknown_mission"
 		position = 2
 		required_missions = { NDK_missions_1_1 }
@@ -41,7 +44,7 @@ NDK_missions_1 = {
 		effect = { }
 	}
 
-	NDK_missions_1_3 = {
+	NDK_missions_1_3 = {			# A3 北方之路（另有跨列线指向 B4）
 		icon = "mission_unknown_mission"
 		position = 3
 		required_missions = { NDK_missions_1_2 }
@@ -51,7 +54,7 @@ NDK_missions_1 = {
 		effect = { }
 	}
 
-	NDK_missions_1_4 = {
+	NDK_missions_1_4 = {			# A4 冰封的波尼亚
 		icon = "mission_unknown_mission"
 		position = 4
 		required_missions = { NDK_missions_1_3 }
@@ -64,7 +67,7 @@ NDK_missions_1 = {
 		effect = { }
 	}
 
-	NDK_missions_1_5 = {
+	NDK_missions_1_5 = {			# A5 北境王座
 		icon = "mission_unknown_mission"
 		position = 5
 		required_missions = { NDK_missions_1_4 }
@@ -77,7 +80,8 @@ NDK_missions_1 = {
 }
 
 # ------------------------------------------------------------
-# slot 2 — 边贸要道（列 B，position 1-5 一条直线）
+# B 列 — slot2 边贸要道：position 1-5 一条直线
+# B4 北拉普兰吃双前置：B3 毛皮和盐 + A3 北方之路
 # ------------------------------------------------------------
 NDK_missions_2 = {
 	slot = 2
@@ -89,7 +93,7 @@ NDK_missions_2 = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_2_1 = {
+	NDK_missions_2_1 = {			# B1 雪浪与苍林（另有跨列线指向 C1）
 		icon = "mission_unknown_mission"
 		position = 1
 		trigger = {
@@ -98,7 +102,7 @@ NDK_missions_2 = {
 		effect = { }
 	}
 
-	NDK_missions_2_2 = {
+	NDK_missions_2_2 = {			# B2 商会贸易
 		icon = "mission_unknown_mission"
 		position = 2
 		required_missions = { NDK_missions_2_1 }
@@ -109,7 +113,7 @@ NDK_missions_2 = {
 		effect = { }
 	}
 
-	NDK_missions_2_3 = {
+	NDK_missions_2_3 = {			# B3 毛皮和盐
 		icon = "mission_unknown_mission"
 		position = 3
 		required_missions = { NDK_missions_2_2 }
@@ -120,10 +124,12 @@ NDK_missions_2 = {
 		effect = { }
 	}
 
-	NDK_missions_2_4 = {
+	NDK_missions_2_4 = {			# B4 北拉普兰（双前置：B3 + A3）
 		icon = "mission_unknown_mission"
 		position = 4
-		required_missions = { NDK_missions_2_3 }
+		required_missions = {
+			NDK_missions_1_3
+		}
 		trigger = {
 			owns = 1777
 			total_development = 60
@@ -131,7 +137,7 @@ NDK_missions_2 = {
 		effect = { }
 	}
 
-	NDK_missions_2_5 = {
+	NDK_missions_2_5 = {			# B5 格陵兰冰岛
 		icon = "mission_unknown_mission"
 		position = 5
 		required_missions = { NDK_missions_2_4 }
@@ -144,9 +150,10 @@ NDK_missions_2 = {
 }
 
 # ------------------------------------------------------------
-# slot 3 — 白海航路（列 C，从 position 2 起，只有 4 个节点）
-# position 1 留空 = 该列第一格不显示任务
-# 入口：NDK_missions_3_2 接 NDK_missions_2_1
+# C 列 — slot3 白海航路：图上是「第 1 行 + 第 4 行 + 第 5 行」
+# position 2、3 留空（图上那两格是空白）
+# 入口：B1 雪浪与苍林 → C1 白海港口（同一行，正右方）
+# 原「白海的浮冰」(3_3) 图上没有，停用见文件末尾停用区 A
 # ------------------------------------------------------------
 NDK_missions_3 = {
 	slot = 3
@@ -158,9 +165,9 @@ NDK_missions_3 = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_3_2 = {
+	NDK_missions_3_2 = {			# C1 白海港口
 		icon = "mission_unknown_mission"
-		position = 2
+		position = 1
 		required_missions = { NDK_missions_2_1 }
 		trigger = {
 			num_of_ports = 3
@@ -168,20 +175,10 @@ NDK_missions_3 = {
 		effect = { }
 	}
 
-	NDK_missions_3_3 = {
-		icon = "mission_unknown_mission"
-		position = 3
-		required_missions = { NDK_missions_3_2 }
-		trigger = {
-			num_of_light_ship = 4
-		}
-		effect = { }
-	}
-
-	NDK_missions_3_4 = {
+	NDK_missions_3_4 = {			# C4 海图上的航线
 		icon = "mission_unknown_mission"
 		position = 4
-		required_missions = { NDK_missions_3_3 }
+		required_missions = { NDK_missions_3_2 }
 		trigger = {
 			navy_size = 10
 			num_of_ports = 6
@@ -189,7 +186,7 @@ NDK_missions_3 = {
 		effect = { }
 	}
 
-	NDK_missions_3_5 = {
+	NDK_missions_3_5 = {			# C5 文兰
 		icon = "mission_unknown_mission"
 		position = 5
 		required_missions = { NDK_missions_3_4 }
@@ -201,7 +198,7 @@ NDK_missions_3 = {
 }
 
 # ------------------------------------------------------------
-# slot 4 — root：月佑之地（列 D position 1，不分支）
+# D 列 slot4 — root：月佑之地（position 1，不分支）
 # ------------------------------------------------------------
 NDK_missions_4_root = {
 	slot = 4
@@ -213,7 +210,7 @@ NDK_missions_4_root = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_4_1 = {
+	NDK_missions_4_1 = {			# D1 月佑之地
 		icon = "mission_unknown_mission"
 		position = 1
 		trigger = {
@@ -224,9 +221,7 @@ NDK_missions_4_root = {
 }
 
 # ------------------------------------------------------------
-# slot 4 — lock：未选边（列 D position 2-5）
-# 显示条件：既没有 branch_a 也没有 branch_b
-# position 2 已补接 root(4_1)：原稿缺这条连线
+# D 列 slot4 — lock：未选边（position 2-5）
 # ------------------------------------------------------------
 NDK_missions_4_lock = {
 	slot = 4
@@ -240,7 +235,7 @@ NDK_missions_4_lock = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_4_lock_2 = {
+	NDK_missions_4_lock_2 = {		# D2 空月之歌「锁定」
 		icon = "mission_unknown_mission"
 		position = 2
 		required_missions = { NDK_missions_4_1 }
@@ -250,7 +245,7 @@ NDK_missions_4_lock = {
 		effect = { }
 	}
 
-	NDK_missions_4_lock_3 = {
+	NDK_missions_4_lock_3 = {		# D3 祈月之夜「锁定」
 		icon = "mission_unknown_mission"
 		position = 3
 		required_missions = { NDK_missions_4_lock_2 }
@@ -260,8 +255,7 @@ NDK_missions_4_lock = {
 		effect = { }
 	}
 
-	# 占位：永远不可完成，只用来占住格子（trigger 永远为假）
-	NDK_missions_4_lock_4 = {
+	NDK_missions_4_lock_4 = {		# D4 分支1A,B（占位格，永远不可完成）
 		icon = "mission_unknown_mission"
 		position = 4
 		required_missions = { NDK_missions_4_lock_3 }
@@ -271,7 +265,7 @@ NDK_missions_4_lock = {
 		effect = { }
 	}
 
-	NDK_missions_4_lock_5 = {
+	NDK_missions_4_lock_5 = {		# D5 分支2A,B（占位格，永远不可完成）
 		icon = "mission_unknown_mission"
 		position = 5
 		required_missions = { NDK_missions_4_lock_4 }
@@ -283,8 +277,7 @@ NDK_missions_4_lock = {
 }
 
 # ------------------------------------------------------------
-# slot 4 — 分支 a：析身线（列 D position 2-5，与 lock 同格替换）
-# 显示条件：has_country_flag = ndk_branch_a
+# D 列 slot4 — 分支 a：析身线（position 2-5，与 lock 同格替换）
 # ------------------------------------------------------------
 NDK_missions_4_a = {
 	slot = 4
@@ -297,7 +290,7 @@ NDK_missions_4_a = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_4_a_2 = {
+	NDK_missions_4_a_2 = {			# D2 空月之歌·析身
 		icon = "mission_unknown_mission"
 		position = 2
 		required_missions = { NDK_missions_4_1 }
@@ -307,7 +300,7 @@ NDK_missions_4_a = {
 		effect = { }
 	}
 
-	NDK_missions_4_a_3 = {
+	NDK_missions_4_a_3 = {			# D3 析身之议
 		icon = "mission_unknown_mission"
 		position = 3
 		required_missions = { NDK_missions_4_a_2 }
@@ -321,7 +314,7 @@ NDK_missions_4_a = {
 		effect = { }
 	}
 
-	NDK_missions_4_a_4 = {
+	NDK_missions_4_a_4 = {			# D4 分支1A·析身诸我
 		icon = "mission_unknown_mission"
 		position = 4
 		required_missions = { NDK_missions_4_a_3 }
@@ -331,7 +324,7 @@ NDK_missions_4_a = {
 		effect = { }
 	}
 
-	NDK_missions_4_a_5 = {
+	NDK_missions_4_a_5 = {			# D5 分支1B·新生之月
 		icon = "mission_unknown_mission"
 		position = 5
 		required_missions = { NDK_missions_4_a_4 }
@@ -344,8 +337,7 @@ NDK_missions_4_a = {
 }
 
 # ------------------------------------------------------------
-# slot 4 — 分支 b：悖论线（列 D position 2-5，与 lock 同格替换）
-# 显示条件：has_country_flag = ndk_branch_b
+# D 列 slot4 — 分支 b：悖论线（position 2-5，与 lock 同格替换）
 # ------------------------------------------------------------
 NDK_missions_4_b = {
 	slot = 4
@@ -358,7 +350,7 @@ NDK_missions_4_b = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_4_b_2 = {
+	NDK_missions_4_b_2 = {			# D2 空月之歌·悖论
 		icon = "mission_unknown_mission"
 		position = 2
 		required_missions = { NDK_missions_4_1 }
@@ -368,7 +360,7 @@ NDK_missions_4_b = {
 		effect = { }
 	}
 
-	NDK_missions_4_b_3 = {
+	NDK_missions_4_b_3 = {			# D3 新诞的前夜
 		icon = "mission_unknown_mission"
 		position = 3
 		required_missions = { NDK_missions_4_b_2 }
@@ -382,7 +374,7 @@ NDK_missions_4_b = {
 		effect = { }
 	}
 
-	NDK_missions_4_b_4 = {
+	NDK_missions_4_b_4 = {			# D4 分支2A·佚名
 		icon = "mission_unknown_mission"
 		position = 4
 		required_missions = { NDK_missions_4_b_3 }
@@ -392,7 +384,7 @@ NDK_missions_4_b = {
 		effect = { }
 	}
 
-	NDK_missions_4_b_5 = {
+	NDK_missions_4_b_5 = {			# D5 分支2B·新诞的悖论
 		icon = "mission_unknown_mission"
 		position = 5
 		required_missions = { NDK_missions_4_b_4 }
@@ -405,9 +397,10 @@ NDK_missions_4_b = {
 }
 
 # ------------------------------------------------------------
-# slot 5 — 五家角力（列 E，position 1-5 一条直线）
+# E 列 — slot5 五家角力：图上没有连线
+# 五个节点全部无前置，并列可点（position 1-5）
 # 阶层键：estate_church / estate_nobles / estate_burghers
-# 特权（PRIV_A..E）尚未定名，等定名后再进 trigger/effect
+# 特权 PRIV_A..E 未定名，等定名后再进 trigger/effect
 # ------------------------------------------------------------
 NDK_missions_5 = {
 	slot = 5
@@ -419,7 +412,7 @@ NDK_missions_5 = {
 	}
 	has_country_shield = yes
 
-	NDK_missions_5_1 = {
+	NDK_missions_5_1 = {			# E1 霜月之子
 		icon = "mission_unknown_mission"
 		position = 1
 		trigger = {
@@ -431,10 +424,9 @@ NDK_missions_5 = {
 		effect = { }
 	}
 
-	NDK_missions_5_2 = {
+	NDK_missions_5_2 = {			# E2 执灯人
 		icon = "mission_unknown_mission"
 		position = 2
-		required_missions = { NDK_missions_5_1 }
 		trigger = {
 			estate_influence = {
 				estate = estate_nobles
@@ -444,10 +436,9 @@ NDK_missions_5 = {
 		effect = { }
 	}
 
-	NDK_missions_5_3 = {
+	NDK_missions_5_3 = {			# E3 伏尼契商会
 		icon = "mission_unknown_mission"
 		position = 3
-		required_missions = { NDK_missions_5_2 }
 		trigger = {
 			estate_influence = {
 				estate = estate_burghers
@@ -457,10 +448,9 @@ NDK_missions_5 = {
 		effect = { }
 	}
 
-	NDK_missions_5_4 = {
+	NDK_missions_5_4 = {			# E4 叮铃哐啷蛋卷工坊
 		icon = "mission_unknown_mission"
 		position = 4
-		required_missions = { NDK_missions_5_3 }
 		trigger = {
 			estate_influence = {
 				estate = estate_burghers
@@ -471,10 +461,9 @@ NDK_missions_5 = {
 		effect = { }
 	}
 
-	NDK_missions_5_5 = {
+	NDK_missions_5_5 = {			# E5 愚人众
 		icon = "mission_unknown_mission"
 		position = 5
-		required_missions = { NDK_missions_5_4 }
 		trigger = {
 			estate_influence = {
 				estate = estate_nobles
@@ -487,8 +476,23 @@ NDK_missions_5 = {
 }
 
 # ============================================================
-# 停用存档：v2 原稿里被清空的 effect 内容（仅备忘，未生效）
-# 要恢复某条时，把对应行取消注释后搬回该节点的 effect = { } 里
+# 停用区 A：C 列「白海的浮冰」
+# 设计图上 C2、C3 是空格，这个节点不落位。
+# 恢复方式：把 position 设成 2（或 3），并把 3_4 的前置从 3_2 改成它。
+# ------------------------------------------------------------
+# 	NDK_missions_3_3 = {
+# 		icon = "mission_unknown_mission"
+# 		position = 3
+# 		required_missions = { NDK_missions_3_2 }
+# 		trigger = {
+# 			num_of_light_ship = 4
+# 		}
+# 		effect = { }
+# 	}
+
+# ============================================================
+# 停用存档：v2 原稿被清空的 effect 内容（仅备忘，未生效）
+# 恢复时把对应行搬回该节点的 effect = { } 里
 # ------------------------------------------------------------
 # 1_1 首都 +1 税/产/兵，威望 +10，金 +100
 # 1_2 NDK_mod_lake_land 25 年，稳定 +1，行政 +100
@@ -500,14 +504,14 @@ NDK_missions_5 = {
 # 2_3 NDK_mod_pelt_salt 25 年，金 +250，辉煌 +50
 # 2_4 NDK_mod_lapland_road 25 年，1776 永久宣称，军事 +100
 # 2_5 NDK_mod_north_atlantic 永久，外交 +150，辉煌 +100
-# 3_2 NDK_mod_white_sea_harbor 25 年，外交 +100
-# 3_3 NDK_mod_ice_pilot 25 年，外交 +50
+# 3_2 NDK_mod_white_sea_harbor 25 年，外交 +100（现为 C1 格）
+# 3_3 NDK_mod_ice_pilot 25 年，外交 +50（浮冰，当前停用）
 # 3_4 NDK_mod_chart_room 25 年，辉煌 +100
 # 3_5 NDK_mod_vinland 永久，金 +400，辉煌 +150
 # 4_1 flag ndk_moon_line_open，NDK_mod_moon_blessing 25 年，行政 +100
 # 4_lock_2 flag ndk_moon_gate_open，NDK_mod_hollow_moon 25 年，威望 +15
 # 4_lock_3 custom_tooltip NDK_tt_choose_side，稳定 +1
-# 4_lock_4 / 4_lock_5 威望 +1（占位格，正式内容由分支 a/b 接管）
+# 4_lock_4 / 4_lock_5 威望 +1（占位格）
 # 4_a_2 NDK_mod_body_split 25 年，行政 +100
 # 4_a_3 change_estate_land_share 贵族 +0.05，稳定 +1
 # 4_a_4 flag ndk_end_1a，custom_tooltip NDK_tt_end_1a，辉煌 +150
@@ -516,7 +520,7 @@ NDK_missions_5 = {
 # 4_b_3 外交 +100，稳定 +1
 # 4_b_4 flag ndk_end_2a，custom_tooltip NDK_tt_end_2a，辉煌 +150
 # 4_b_5 NDK_mod_paradox_born 永久，辉煌 +200，稳定 +1
-# 5_1 flag ndk_faction_frostmoon，教会忠诚 +10，行政 +50，（TODO remove_estate_privilege PRIV_A）
+# 5_1 flag ndk_faction_frostmoon，教会忠诚 +10，行政 +50，（TODO PRIV_A）
 # 5_2 flag ndk_faction_lantern，贵族忠诚 +10，军事 +50，（TODO PRIV_B）
 # 5_3 flag ndk_faction_vonvich，市民忠诚 +10，外交 +50，（TODO PRIV_C）
 # 5_4 flag ndk_faction_eggroll，金 +150，（TODO PRIV_D）
