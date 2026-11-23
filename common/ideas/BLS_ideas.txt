@@ -4,7 +4,7 @@ BLS_ideas = {
 		may_explore = yes
 	}
 	bonus = {
-		all_power_cost = -0.10
+		navy_tradition = 0.5
 	}
 	trigger = {
 		tag = BLS
@@ -20,9 +20,10 @@ BLS_ideas = {
 	}
 	BLS_idea_3 = {
 		global_trade_power = 0.33
+		development_cost = -0.15
 	}
 	BLS_idea_4 = {
-		naval_force_limit_modifier = 0.30
+		all_power_cost = -0.10
 		global_colonial_growth = 15
 		sailors_recovery_speed = 0.10
 	}
@@ -35,7 +36,6 @@ BLS_ideas = {
 		global_unrest = -2
 	}
 	BLS_idea_7 = {
-		naval_combat_ability = 0.15
 		recover_navy_morale_speed = 0.15
 		navy_tradition_decay = -0.01
 	}
