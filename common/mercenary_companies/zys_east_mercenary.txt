@@ -28,10 +28,6 @@ zys_jp_merc_2 = { #僧兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		culture_group = japanese_g
@@ -52,10 +48,6 @@ zys_jp_merc_3 = { #风魔众
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -74,10 +66,6 @@ zys_jp_merc_4 = { #根来众
 	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -101,10 +89,6 @@ zys_jp_merc_5 = { #村上水军
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		num_of_ports = 1
@@ -119,17 +103,13 @@ zys_jp_merc_6 = { #一领具足众
 	regiments_per_development = 0.1
 	cavalry_weight = 0
 	artillery_weight = 0
-	cost_modifier = 0.05
+	cost_modifier = 0.25
 	home_province = 1819
 	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
 	counts_towards_force_limit = no #不占上限
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		has_idea = csk_ichiryo_gusoku
 		#is_at_war = yes
 	}
@@ -145,10 +125,6 @@ zys_jp_merc_7 = { #阿依努人
 	sprites = { Ainu_units inuitgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -170,10 +146,6 @@ zys_jp_merc_8 = { #陆上自卫队
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		OR = {
 			TAG = JAP
 			WAS_TAG = JAP
@@ -190,10 +162,6 @@ zys_jp_merc_9 = { #北陆龙骑兵
 	sprites = { dlc067_dte_sprite_pack dlc068_jap_sprite_pack jap_base_sprite_pack  }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -213,10 +181,6 @@ zys_jp_merc_10 = { #信浓流镝马
 	sprites = { dlc067_tkd_sprite_pack jap_base_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -242,10 +206,6 @@ zys_cn_merc_1 = { #燕军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -290,10 +250,6 @@ zys_cn_merc_2 = { #辽军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -341,10 +297,6 @@ zys_cn_merc_3 = { #凉军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -386,10 +338,6 @@ zys_cn_merc_4 = { #秦军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -434,10 +382,6 @@ zys_cn_merc_5 = { #晋军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -479,10 +423,6 @@ zys_cn_merc_6 = { #齐军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -530,10 +470,6 @@ zys_cn_merc_7 = { #淮军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		if = {
@@ -567,10 +503,6 @@ zys_cn_merc_8 = { #楚军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		if = {
@@ -602,10 +534,6 @@ zys_cn_merc_9 = { #吴军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -645,10 +573,6 @@ zys_cn_merc_10 = { #越军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -685,10 +609,6 @@ zys_cn_merc_11 = { #闽军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -723,10 +643,6 @@ zys_cn_merc_12 = { #粤军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -772,10 +688,6 @@ zys_cn_merc_13 = { #蜀军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -810,10 +722,6 @@ zys_cn_merc_14 = { #湘军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -870,10 +778,6 @@ zys_cn_merc_16 = { #大理象兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = {
@@ -910,10 +814,6 @@ zys_cn_merc_17 = { #冀军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -961,10 +861,6 @@ zys_cn_merc_18 = { #豫军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -998,10 +894,6 @@ zys_cn_merc_19 = { #燕云铁骑
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1048,10 +940,6 @@ zys_cn_merc_20 = { #交趾
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new }
@@ -1096,10 +984,6 @@ zys_cn_merc_21 = { #甘凉铁骑
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1141,10 +1025,6 @@ zys_cn_merc_22 = { #赣军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1192,10 +1072,6 @@ zys_cn_merc_23 = { #桂军
 		}
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1236,10 +1112,6 @@ zys_cn_merc_24 = { #黔军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1335,10 +1207,6 @@ zys_cn_merc_28 = { #苗军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1383,10 +1251,6 @@ zys_cn_merc_29 = { #赵军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1429,10 +1293,6 @@ zys_cn_merc_30 = { #女真骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = {
@@ -1466,10 +1326,6 @@ zys_cn_merc_31 = { #河东甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1514,10 +1370,6 @@ zys_cn_merc_32 = { #松潘骑兵
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1555,10 +1407,6 @@ zys_cn_merc_33 = { #西番铁骑
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = {
@@ -1584,10 +1432,6 @@ zys_cn_merc_34 = { #宁夏骑兵
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1627,10 +1471,6 @@ zys_cn_merc_35 = { #娄烦骑兵
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1666,10 +1506,6 @@ zys_cn_merc_36 = { #保定骑兵
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1708,10 +1544,6 @@ zys_cn_merc_37 = { #徐州甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1757,10 +1589,6 @@ zys_cn_merc_38 = { #汉中甲士
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1799,10 +1627,6 @@ zys_cn_merc_39 = { #丹阳甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1848,10 +1672,6 @@ zys_cn_merc_40 = { #武昌甲士
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1890,10 +1710,6 @@ zys_cn_merc_41 = { #辽西甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -1942,10 +1758,6 @@ zys_cn_merc_42 = { #鄱阳甲士
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -1984,10 +1796,6 @@ zys_cn_merc_43 = { #河西甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2033,10 +1841,6 @@ zys_cn_merc_44 = { #南阳甲士
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -2078,10 +1882,6 @@ zys_cn_merc_45 = { #巴军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -2118,10 +1918,6 @@ zys_cn_merc_46 = { #琉球军
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2162,10 +1958,6 @@ zys_cn_merc_47 = { #青州甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2209,10 +2001,6 @@ zys_cn_merc_48 = { #辽南甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2263,10 +2051,6 @@ zys_cn_merc_49 = { #羌军
 		NOT = { has_idea = the_green_standard_army }
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { primary_culture = manchu_new } 
@@ -2309,10 +2093,6 @@ zys_cn_merc_50 = { #越西甲士
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		NOT = { has_idea = the_green_standard_army }
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2361,10 +2141,6 @@ zys_tt_merc_1 = { #卡法贩奴团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		285 = { 
@@ -2394,10 +2170,6 @@ zys_tt_merc_2 = { #钦察骑兵
 	sprites = { dlc048_gol_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2432,10 +2204,6 @@ zys_tt_merc_3 = { #喀尔巴阡库曼军团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		155 = { 
@@ -2462,10 +2230,6 @@ zys_tt_merc_4 = { #库曼骑兵
 	sprites = { dlc048_gol_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2498,10 +2262,6 @@ zys_tt_merc_5 = { #格鲁吉亚骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -2526,10 +2286,6 @@ zys_tt_merc_6 = { #诺盖劫掠者
 	sprites = { dlc048_nog_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2564,10 +2320,6 @@ zys_tt_merc_7 = { #河中骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -2596,10 +2348,6 @@ zys_tt_merc_8 = { #吉尔吉斯骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -2620,10 +2368,6 @@ zys_tt_merc_9 = { #土库曼炮兵
 	sprites = { muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2657,10 +2401,6 @@ zys_tt_merc_10 = { #准噶尔骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
@@ -2678,10 +2418,6 @@ zys_tt_merc_11 = { #河套骑兵
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2708,10 +2444,6 @@ zys_tt_merc_12 = { #安纳托利亚大队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -2735,10 +2467,6 @@ zys_tt_merc_13 = { #亚美尼亚流浪者
 	sprites = { dlc129_ARM_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2770,10 +2498,6 @@ zys_tt_merc_14 = { #萨法维佣兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		NOT = { war_with = ARL }
@@ -2801,10 +2525,6 @@ zys_tt_merc_15 = { #萨法维教团
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		OR = {
 			TAG = ARL
 			WAS_TAG = ARL
@@ -2825,10 +2545,6 @@ zys_tt_merc_16 = { #阿拉伯城市暴民
 	sprites = { dlc002_mam_sprite_pack dlc058_mam_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2853,10 +2569,6 @@ zys_tt_merc_17 = { #波斯湾海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -2884,10 +2596,6 @@ zys_tt_merc_18 = { #霍尔木兹海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -2915,10 +2623,6 @@ zys_tt_merc_19 = { #亚丁湾海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -2944,10 +2648,6 @@ zys_tt_merc_20 = { #阿富汗大队
 	sprites = { dlc079_afg_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -2993,10 +2693,6 @@ zys_tt_merc_22 = { #巴哈利亚精锐马穆鲁克
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -3017,10 +2713,6 @@ zys_tt_merc_23 = { #阿拉伯佣兵
 	sprites = { dlc078_naj_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3045,10 +2737,6 @@ zys_tt_merc_24 = { #西伯利亚猎手团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		1075 = { NOT = { culture_group = east_slavic } }
@@ -3071,10 +2759,6 @@ zys_tt_merc_25 = { #高加索大队
 	sprites = { muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3102,10 +2786,6 @@ zys_tt_merc_26 = { #呼罗珊卫队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -3125,10 +2805,6 @@ zys_tt_merc_27 = { #东北六镇
 	sprites = { dlc068_kor_sprite_pack asiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3179,10 +2855,6 @@ zys_tt_merc_29 = { #女真海盗
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 100
 		}
 		num_of_ports = 1
@@ -3207,10 +2879,6 @@ zys_tt_merc_30 = { #索伦兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 100
 		}
 		any_province = {
@@ -3232,10 +2900,6 @@ zys_tt_merc_31 = { #辛加尔奴贩
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3264,10 +2928,6 @@ zys_tt_merc_32 = { #匈牙利骠骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -3293,10 +2953,6 @@ zys_tt_merc_33 = { #塞尔柱遗老
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		NOT = { TAG = TUR }
 		NOT = { WAS_TAG = TUR }
 		NOT = { exists = RUM }
@@ -3323,10 +2979,6 @@ zys_tt_merc_34 = { #土耳其海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -3373,10 +3025,6 @@ zys_tt_merc_36 = { #柏柏尔海盗
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		num_of_ports = 1
@@ -3406,10 +3054,6 @@ zys_tt_merc_37 = { #十大卡神
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 500 
 		}
 	}
@@ -3428,10 +3072,6 @@ zys_tt_merc_38 = { #安多骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
@@ -3448,10 +3088,6 @@ zys_tt_merc_39 = { #沙姆游侠
 	sprites = { dlc129_SYR_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		any_province = {
 			OR = {
 				region = mashriq_region 
@@ -3474,10 +3110,6 @@ zys_tt_merc_40 = { #马六甲海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -3501,10 +3133,6 @@ zys_tt_merc_41 = { #威尔士射手
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -3523,10 +3151,6 @@ zys_tt_merc_42 = { #热那亚射手
 	sprites = { dlc020_gen_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3556,10 +3180,6 @@ zys_tt_merc_43 = { #布拉班特方阵
 	sprites = { dlc042_ned_sprite_pack dlc028_ned_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		any_province = {
 			OR = {
 				region = low_countries_region 
@@ -3582,10 +3202,6 @@ zys_tt_merc_44 = { #罗斯佣兵
 	sprites = { dlc075_ukr_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3615,10 +3231,6 @@ zys_tt_merc_45 = { #叙利亚佣兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -3646,10 +3258,6 @@ zys_tt_merc_46 = { #高昌回纥骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
@@ -3666,10 +3274,6 @@ zys_tt_merc_47 = { #康巴骑兵
 	sprites = { dlc041_tib_sprite_pack asiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3698,10 +3302,6 @@ zys_tt_merc_48 = { #吐蕃步兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -3722,10 +3322,6 @@ zys_tt_merc_49 = { #占城海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -3772,10 +3368,6 @@ zys_tt_merc_51 = { #骑逝精神
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 200
 		}
 		OR = { 
@@ -3806,10 +3398,6 @@ zys_tt_merc_52 = { #瓦剌骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
@@ -3830,10 +3418,6 @@ zys_tt_merc_53 = { #达斡尔骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  superregion = tartary_superregion country_or_non_sovereign_subject_holds = ROOT }
@@ -3851,10 +3435,6 @@ zys_tt_merc_54 = { #蒙古骑兵
 	sprites = { mon_cav_units dlc069_kha_sprite_pack asiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -3890,10 +3470,6 @@ zys_tt_merc_56 = { #伊比利亚骑手
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = { OR = { region = iberia_region region = france_region } country_or_non_sovereign_subject_holds = ROOT }
@@ -3910,10 +3486,6 @@ zys_tt_merc_57 = { #吕根海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -3933,10 +3505,6 @@ zys_tt_merc_58 = { #维京突袭者
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -3958,10 +3526,6 @@ zys_tt_merc_59 = { #波罗的海公爵亲卫
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = { OR = { region = baltic_region region = poland_region } country_or_non_sovereign_subject_holds = ROOT }
@@ -3978,10 +3542,6 @@ zys_tt_merc_60 = { #西西里海盗
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -4020,10 +3580,6 @@ zys_tt_merc_62 = { #鱼皮鞑子
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -4046,10 +3602,6 @@ zys_tt_merc_63 = { #精彩哥的白马
 	mercenary_desc_key = ZYS_NPL_CAV_DESC 
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 200
@@ -4077,7 +3629,7 @@ zys_tt_merc_64 = { #印度程序员
 	regiments_per_development = 0.1
 	cavalry_weight = 0
 	artillery_weight = 1
-	cost_modifier = 0.05
+	cost_modifier = 0.25
 	home_province = 533
 	sprites = { indiangfx_sprite_pack  }
 	counts_towards_force_limit = no #不占上限
@@ -4098,10 +3650,6 @@ zys_tt_merc_65 = { #埃及佣兵
 	sprites = { muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4140,10 +3688,6 @@ zys_tt_merc_67 = { #保加利亚军团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4168,10 +3712,6 @@ zys_tt_merc_68 = { #巴尔干山地战士
 	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4199,10 +3739,6 @@ zys_tt_merc_69 = { #罗斯炮兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4228,10 +3764,6 @@ zys_tt_merc_70 = { #利沃尼亚大队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		36 = { NOT = { culture_group = germanic } }
@@ -4255,10 +3787,6 @@ zys_tt_merc_71 = { #保加尔骑兵
 	sprites = { dlc074_kaz_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4288,10 +3816,6 @@ zys_tt_merc_72 = { #波西米亚车营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = {
@@ -4319,10 +3843,6 @@ zys_tt_merc_73 = { #北欧重斧兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4346,10 +3866,6 @@ zys_tt_merc_74 = { #高地佣兵
 	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4391,10 +3907,6 @@ zys_tt_merc_76 = { #缅军
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4419,10 +3931,6 @@ zys_tt_merc_77 = { #吕宋勇士
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -4441,10 +3949,6 @@ zys_tt_merc_78 = { #爪哇水军
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		if = {
 			limit = { ai = yes }
@@ -4465,10 +3969,6 @@ zys_tt_merc_79 = { #波兰枪骑兵
 	sprites = { dlc053_pol_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4499,10 +3999,6 @@ zys_tt_merc_80 = { #乌拉尔大队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4528,10 +4024,6 @@ zys_tt_merc_81 = { #布列塔尼铁颅军团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4553,10 +4045,6 @@ zys_tt_merc_82 = { #波斯商队护卫
 	sprites = { muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4581,10 +4069,6 @@ zys_tt_merc_83 = { #突厥卫队
 	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4612,10 +4096,6 @@ zys_tt_merc_84 = { #马佐维亚佣兵团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4638,10 +4118,6 @@ zys_tt_merc_85 = { #诺曼骑士
 	sprites = { dlc088_nrm_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4716,10 +4192,6 @@ zys_tt_merc_88 = { #阿兰骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4746,10 +4218,6 @@ zys_tt_merc_89 = { #也门山地营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4772,10 +4240,6 @@ zys_tt_merc_90 = { #万象营
 	sprites = { dlc090_south_east_asian_elephant_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4808,10 +4272,6 @@ zys_tt_merc_91 = { #巴尔干骠骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4838,10 +4298,6 @@ zys_tt_merc_92 = { #斯拉夫刺客
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4872,10 +4328,6 @@ zys_tt_merc_93 = { #龙骑士团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4900,10 +4352,6 @@ zys_tt_merc_94 = { #勃艮第炮兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -4924,10 +4372,6 @@ zys_tt_merc_95 = { #纳瓦拉伏击者
 	sprites = { dlc098_nav_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		any_province = {  
 			OR = {
 				region = france_region
@@ -4947,10 +4391,6 @@ zys_tt_merc_96 = { #那不勒斯骑炮兵
 	sprites = { dlc056_nap_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -4992,10 +4432,6 @@ zys_tt_merc_98 = { #闹事的酒鬼
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5017,10 +4453,6 @@ zys_tt_merc_99 = { #劫掠印度者
 	sprites = { dlc079_afg_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		any_province = {  
 			OR = {
 				region = khorasan_region
@@ -5041,10 +4473,6 @@ zys_tt_merc_100 = { #兀良哈骑兵
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5072,10 +4500,6 @@ zys_tt_merc_101 = { #掸军
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5097,10 +4521,6 @@ zys_tt_merc_102 = { #安南炮兵
 	sprites = { dlc041_dai_sprite_pack asiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5126,10 +4546,6 @@ zys_tt_merc_103 = { #于阗营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5148,10 +4564,6 @@ zys_tt_merc_104 = { #波斯长生军
 	sprites = { dlc079_per_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5177,10 +4589,6 @@ zys_tt_merc_105 = { #土耳其劲旅
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5202,10 +4610,6 @@ zys_tt_merc_106 = { #瓦隆开颅者
 	sprites = { dlc028_ned_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		any_province = {  
 			OR = {
 				region = france_region
@@ -5229,10 +4633,6 @@ zys_tt_merc_107 = { #达契亚战团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5254,10 +4654,6 @@ zys_tt_merc_108 = { #本都步兵
 	sprites = { dlc129_TRE_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5301,10 +4697,6 @@ zys_tt_merc_110 = { #伯罗奔尼撒战团
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5331,10 +4723,6 @@ zys_tt_merc_111 = { #藤甲军
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5357,10 +4745,6 @@ zys_tt_merc_112 = { #西京军
 	sprites = { dlc068_kor_sprite_pack asiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5390,10 +4774,6 @@ zys_tt_merc_113 = { #喀尔喀骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5417,10 +4797,6 @@ zys_tt_merc_114 = { #科尔沁骑兵
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5448,10 +4824,6 @@ zys_tt_merc_115 = { #葱岭回纥骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5475,10 +4847,6 @@ zys_tt_merc_116 = { #察哈尔骑兵
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MG
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5506,10 +4874,6 @@ zys_tt_merc_117 = { #安南海盗
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		num_of_ports = 1
@@ -5534,10 +4898,6 @@ zys_tt_merc_118 = { #朝鲜水军
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5568,10 +4928,6 @@ zys_tt_merc_119 = { #阿拉干海盗
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		num_of_ports = 1
@@ -5595,10 +4951,6 @@ zys_tt_merc_120 = { #荷兰水军
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		any_province = {  
 			OR = {
@@ -5622,10 +4974,6 @@ zys_tt_merc_121 = { #英格兰水军
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST_MR
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		num_of_ports = 1
 		any_province = {  
 			OR = {
@@ -5649,10 +4997,6 @@ zys_tt_merc_122 = { #爱尔兰卫队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5674,10 +5018,6 @@ zys_tt_merc_123 = { #瑞士卫队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5697,10 +5037,6 @@ zys_tt_merc_124 = { #山鹰卫队
 	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5727,10 +5063,6 @@ zys_tt_merc_125 = { #芬兰卫队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5753,10 +5085,6 @@ zys_tt_merc_126 = { #卢尔营
 	sprites = { muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5782,10 +5110,6 @@ zys_tt_merc_127 = { #古尔步兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5807,10 +5131,6 @@ zys_tt_merc_128 = { #俾路支大队
 	sprites = { dlc079_afg_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5836,10 +5156,6 @@ zys_tt_merc_129 = { #阿萨姆佣兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5861,10 +5177,6 @@ zys_tt_merc_130 = { #印度象兵
 	sprites = { dlc092_jnp_sprite_pack asiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5890,10 +5202,6 @@ zys_tt_merc_131 = { #孟加拉骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5915,10 +5223,6 @@ zys_tt_merc_132 = { #锡克骑兵
 	sprites = { dlc024_mul_sprite_pack asiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5944,10 +5248,6 @@ zys_tt_merc_133 = { #古吉拉特大队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -5969,10 +5269,6 @@ zys_tt_merc_134 = { #拉杰普特大队
 	sprites = { dlc091_mer_sprite_pack indiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -5998,10 +5294,6 @@ zys_tt_merc_135 = { #僧伽罗步兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -6023,10 +5315,6 @@ zys_tt_merc_136 = { #贡德步兵
 	sprites = { indiangfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -6054,10 +5342,6 @@ zys_tt_merc_137 = { #马拉塔大队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -6083,10 +5367,6 @@ zys_tt_merc_138 = { #伊拉克佣兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -6109,10 +5389,6 @@ zys_tt_merc_139 = { #加泰罗尼亚卫队
 	sprites = { dlc020_ara_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -6140,10 +5416,6 @@ zys_tt_merc_140 = { #安达卢斯骑兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {  
@@ -6165,10 +5437,6 @@ zys_tt_merc_141 = { #塞尔维亚战团
 	sprites = { dlc102_ser_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -6194,10 +5462,6 @@ zys_tt_merc_142 = { #西西里卫队
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = { region = italy_region country_or_non_sovereign_subject_holds = ROOT }
@@ -6215,10 +5479,6 @@ zys_tt_merc_143 = { #费拉拉炮兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = { region = italy_region country_or_non_sovereign_subject_holds = ROOT }
@@ -6234,10 +5494,6 @@ zys_tt_merc_144 = { #土库曼佣兵
 	sprites = { muslimgfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -6264,10 +5520,6 @@ zys_tt_merc_145 = { #柏柏尔辅兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		any_province = {
@@ -6288,10 +5540,6 @@ zys_tt_merc_146 = { #马其顿战团
 	sprites = { dlc100_rom_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -6320,10 +5568,6 @@ zys_tt_merc_147 = { #圣墓守卫
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		religion_group = christian
@@ -6342,10 +5586,6 @@ zys_tt_merc_148 = { #巴伐利亚雇佣军
 	sprites = { dlc061_bav_sprite_pack dlc029_bav_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -6372,10 +5612,6 @@ zys_tt_merc_149 = { #雇佣骑手
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 	}
@@ -6390,10 +5626,6 @@ zys_tt_merc_150 = { #虎力巴图鲁
 	sprites = { mch_base_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150

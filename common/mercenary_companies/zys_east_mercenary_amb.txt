@@ -10,10 +10,6 @@ zys_adg_merc_0 = { #源氏爱新觉罗清废帝天照贤孙溥仪
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -40,10 +36,6 @@ zys_adg_merc_1 = { #禁旅八旗
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -62,10 +54,6 @@ zys_adg_merc_2 = { #盛京八旗
 	sprites = { far_east_cav mch_base_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -89,10 +77,6 @@ zys_adg_merc_3 = { #吉林八旗
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -112,10 +96,6 @@ zys_adg_merc_4 = { #黑龙江八旗
 	sprites = { far_east_cav mch_base_sprite_pack }
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -139,10 +119,6 @@ zys_adg_merc_5 = { #伊犁八旗
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -155,15 +131,11 @@ zys_adg_merc_6 = { #随军驱口
 	regiments_per_development = 0.1
 	cavalry_weight = 0
 	artillery_weight = 0
-	cost_modifier = 0.001
+	cost_modifier = 0.25
 	counts_towards_force_limit = no #不占上限
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -186,10 +158,6 @@ zys_adg_merc_7 = { #湘西云贵广西土司兵
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -210,10 +178,6 @@ zys_adg_merc_8 = { #西北番骑
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -226,15 +190,11 @@ zys_adg_merc_9 = { #满饷不可敌
 	regiments_per_development = 0.1
 	cavalry_weight = 0.05
 	artillery_weight = 0.38
-	cost_modifier = 0.05
+	cost_modifier = 0.25
 	counts_towards_force_limit = no #不占上限
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_AND_FORCELIMIT_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -251,10 +211,6 @@ zys_adg_merc_10 = { #直隶驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -281,10 +237,6 @@ zys_adg_merc_11 = { #山东驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -304,10 +256,6 @@ zys_adg_merc_12 = { #山西驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -331,10 +279,6 @@ zys_adg_merc_13 = { #陕西驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -354,10 +298,6 @@ zys_adg_merc_14 = { #甘肃驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -384,10 +324,6 @@ zys_adg_merc_15 = { #河南驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -410,10 +346,6 @@ zys_adg_merc_16 = { #安徽驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -440,10 +372,6 @@ zys_adg_merc_17 = { #江苏驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -468,10 +396,6 @@ zys_adg_merc_18 = { #湖北驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -491,10 +415,6 @@ zys_adg_merc_19 = { #湖南驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -518,10 +438,6 @@ zys_adg_merc_20 = { #浙江驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -541,10 +457,6 @@ zys_adg_merc_21 = { #福建驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -568,10 +480,6 @@ zys_adg_merc_22 = { #江西驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -591,10 +499,6 @@ zys_adg_merc_23 = { #广东驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -621,10 +525,6 @@ zys_adg_merc_24 = { #广西驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -644,10 +544,6 @@ zys_adg_merc_25 = { #四川驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -675,10 +571,6 @@ zys_adg_merc_26 = { #贵州驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -701,10 +593,6 @@ zys_adg_merc_27 = { #云南驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
@@ -731,10 +619,6 @@ zys_adg_merc_28 = { #安南驻防军 驻防驻防军马队+绿营
 		is_allowed_to_recruit_mercenaries = yes
 		if = {
 			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
-		if = {
-			limit = { ai = yes }
 			total_development = 150
 		}
 		OR = { TAG = QNG TAG = MCH }
@@ -757,10 +641,6 @@ zys_adg_merc_29 = { #朝鲜驻防军 驻防驻防军马队+绿营
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		if = {
-			limit = { ai = yes }
-			NOT = { army_size_percentage = 0.7 }
-		}
 		if = {
 			limit = { ai = yes }
 			total_development = 150
