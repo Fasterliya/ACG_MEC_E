@@ -1,0 +1,14 @@
+# 蒙德 MND —— 条件修正的触发时机
+# 与 ACG_MEC_E_unit_group_on_actions.txt 同款：同名 on_action 跨文件叠加，不覆盖别的文件
+
+on_startup = {
+	MND_sync_barbatos_creed_effect = yes
+}
+
+on_religion_change = {
+	MND_sync_barbatos_creed_effect = yes
+}
+
+on_monthly_pulse = {
+	MND_sync_barbatos_creed_effect = yes
+}

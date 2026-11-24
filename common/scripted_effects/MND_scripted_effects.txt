@@ -1,0 +1,29 @@
+# 蒙德 MND —— 西风骑士团改革的条件修正
+# 改革本身只能在 modifiers 里写无条件修正（conditional 只吃属性，不吃 modifiers），
+# 所以「七神信仰 + 奉巴巴托斯」这条走脚本：满足条件挂永久国家修正，不满足就摘掉。
+
+MND_sync_barbatos_creed_effect = {
+	if = {
+		limit = {
+			has_reform = MND_knights_of_favonius_reform
+			has_personal_deity = acg_mec_e_deity_barbatos
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = MND_barbatos_creed }
+			}
+			add_country_modifier = {
+				name = MND_barbatos_creed
+				duration = -1
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				has_country_modifier = MND_barbatos_creed
+			}
+			remove_country_modifier = MND_barbatos_creed
+		}
+	}
+}

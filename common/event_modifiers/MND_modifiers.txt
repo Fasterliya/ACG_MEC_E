@@ -1,0 +1,11 @@
+# 蒙德 MND —— 动态国家修正
+# 由 common/scripted_effects/MND_scripted_effects.txt 维护，
+# 触发时机见 common/on_actions/MND_on_actions.txt
+
+MND_barbatos_creed = {	# 巴巴托斯的信条
+	morale_damage_received = -0.10
+}
+
+MND_resident_commissions_mod = {	# 西风骑士团的委托（省修正）
+	local_development_cost = -0.10
+}

@@ -1,0 +1,44 @@
+# ============================================================
+# 蒙德 MND：阶层专属名称
+# 骨架：ACG_MEC_NDK_estate.txt:13-71（同款加法式 custom_name 注册）
+# 只有 tag = MND 时改显示名，其它国家仍用原版名称
+# ============================================================
+
+estate_nobles = {
+	custom_name = {
+		desc = MND_estate_nobles_name
+		trigger = {
+			tag = MND
+		}
+	}
+}
+
+estate_burghers = {
+	custom_name = {
+		desc = MND_estate_burghers_name
+		trigger = {
+			tag = MND
+		}
+	}
+}
+
+estate_brahmins = {
+	custom_name = {
+		desc = MND_estate_brahmins_name
+		trigger = {
+			tag = MND
+		}
+	}
+}
+
+estate_maratha = {
+	custom_name = {
+		desc = MND_estate_maratha_name
+		trigger = {
+			tag = MND
+		}
+	}
+	privileges = {
+		MND_resident_commissions
+	}
+}
