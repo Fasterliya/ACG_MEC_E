@@ -147,6 +147,14 @@ technology = {
 	enable = infantry_gen_t1_02
 	enable = infantry_gen_t1_03
 	enable = infantry_gen_t1_04
+	enable = acg_tv_assault_infantry_01
+	enable = acg_tv_assault_cavalry_01
+	enable = acg_tv_guard_infantry_01
+	enable = acg_tv_guard_cavalry_01
+	enable = acg_sl_fire_infantry_01
+	enable = acg_sl_fire_cavalry_01
+	enable = acg_sl_shock_infantry_01
+	enable = acg_sl_shock_cavalry_01
 }
 
 technology = {
@@ -401,6 +409,10 @@ technology = {
 	enable = infantry_gen_t5_02
 	enable = infantry_gen_t5_03
 	enable = infantry_gen_t5_04
+	enable = acg_tv_assault_infantry_05
+	enable = acg_tv_guard_infantry_05
+	enable = acg_sl_fire_infantry_05
+	enable = acg_sl_shock_infantry_05
 }
 
 technology = {
@@ -473,6 +485,10 @@ technology = {
 	enable = cavalry_gen_t6_01
 	enable = cavalry_gen_t6_02
 	enable = cavalry_gen_t6_03
+	enable = acg_tv_assault_cavalry_06
+	enable = acg_tv_guard_cavalry_06
+	enable = acg_sl_fire_cavalry_06
+	enable = acg_sl_shock_cavalry_06
 }
 
 technology = {
@@ -496,6 +512,10 @@ technology = {
 	enable = moyetushu_7_3  #魔夜
 	enable = artillery_gen_t7_01
 	enable = artillery_gen_t7_02
+	enable = acg_tv_assault_artillery_07
+	enable = acg_tv_guard_artillery_07
+	enable = acg_sl_fire_artillery_07
+	enable = acg_sl_shock_artillery_07
 }
 
 technology = {
@@ -630,6 +650,10 @@ technology = {
 	enable = infantry_gen_t9_02
 	enable = infantry_gen_t9_03
 	enable = infantry_gen_t9_04
+	enable = acg_tv_assault_infantry_09
+	enable = acg_tv_guard_infantry_09
+	enable = acg_sl_fire_infantry_09
+	enable = acg_sl_shock_infantry_09
 }
 
 technology = {
@@ -742,6 +766,10 @@ technology = {
 	enable = artillery_gen_t10_01
 	enable = artillery_gen_t10_02
 	enable = artillery_gen_t10_KSN
+	enable = acg_tv_assault_cavalry_10
+	enable = acg_tv_guard_cavalry_10
+	enable = acg_sl_fire_cavalry_10
+	enable = acg_sl_shock_cavalry_10
 }
 
 technology = {
@@ -873,6 +901,14 @@ technology = {
 	enable = infantry_gen_t12_03
 	enable = infantry_gen_t12_04
 	enable = artillery_gen_t12_KSN
+	enable = acg_tv_assault_infantry_12
+	enable = acg_tv_assault_artillery_12
+	enable = acg_tv_guard_infantry_12
+	enable = acg_tv_guard_artillery_12
+	enable = acg_sl_fire_infantry_12
+	enable = acg_sl_fire_artillery_12
+	enable = acg_sl_shock_infantry_12
+	enable = acg_sl_shock_artillery_12
 }
 
 technology = {
@@ -1012,6 +1048,10 @@ technology = {
 	enable = cavalry_gen_t14_01
 	enable = cavalry_gen_t14_02
 	enable = artillery_gen_t14_KSN
+	enable = acg_tv_assault_cavalry_14
+	enable = acg_tv_guard_cavalry_14
+	enable = acg_sl_fire_cavalry_14
+	enable = acg_sl_shock_cavalry_14
 }
 
 technology = {
@@ -1128,6 +1168,10 @@ technology = {
 	enable = infantry_gen_t15_03
 	enable = infantry_gen_t15_04
 	enable = artillery_gen_t15_KSN
+	enable = acg_tv_assault_infantry_15
+	enable = acg_tv_guard_infantry_15
+	enable = acg_sl_fire_infantry_15
+	enable = acg_sl_shock_infantry_15
 }
 
 technology = {
@@ -1160,6 +1204,10 @@ technology = {
 	enable = Elzia_Phantasma_ut_16
 	enable = artillery_gen_t16_01
 	enable = artillery_gen_t16_02
+	enable = acg_tv_assault_artillery_16
+	enable = acg_tv_guard_artillery_16
+	enable = acg_sl_fire_artillery_16
+	enable = acg_sl_shock_artillery_16
 }
 
 technology = {
@@ -1393,6 +1441,10 @@ technology = {
 	enable = infantry_gen_t19_02
 	enable = infantry_gen_t19_03
 	enable = infantry_gen_t19_04
+	enable = acg_tv_assault_infantry_19
+	enable = acg_tv_guard_infantry_19
+	enable = acg_sl_fire_infantry_19
+	enable = acg_sl_shock_infantry_19
 }
 
 technology = {
@@ -1493,6 +1545,10 @@ technology = {
 	enable = artillery_gen_t22_01
 	enable = artillery_gen_t22_02
 	enable = artillery_gen_t22_KSN
+	enable = acg_tv_assault_artillery_22
+	enable = acg_tv_guard_artillery_22
+	enable = acg_sl_fire_artillery_22
+	enable = acg_sl_shock_artillery_22
 }
 
 technology = {
@@ -1658,6 +1714,10 @@ technology = {
 	# END ACGR_UNIT_GROUPS
 	enable = cavalry_gen_t23_01
 	enable = cavalry_gen_t23_02
+	enable = acg_tv_assault_cavalry_23
+	enable = acg_tv_guard_cavalry_23
+	enable = acg_sl_fire_cavalry_23
+	enable = acg_sl_shock_cavalry_23
 }
 
 technology = {
@@ -1870,6 +1930,14 @@ technology = {
 	enable = infantry_gen_t26_03
 	enable = infantry_gen_t26_04
 	enable = artillery_gen_t26_KSN
+	enable = acg_tv_assault_infantry_26
+	enable = acg_tv_assault_artillery_26
+	enable = acg_tv_guard_infantry_26
+	enable = acg_tv_guard_artillery_26
+	enable = acg_sl_fire_infantry_26
+	enable = acg_sl_fire_artillery_26
+	enable = acg_sl_shock_infantry_26
+	enable = acg_sl_shock_artillery_26
 }
 
 technology = {
@@ -2053,6 +2121,10 @@ technology = {
 	enable = cavalry_gen_t28_02
 	enable = artillery_gen_t29_01
 	enable = artillery_gen_t29_02
+	enable = acg_tv_assault_cavalry_28
+	enable = acg_tv_guard_cavalry_28
+	enable = acg_sl_fire_cavalry_28
+	enable = acg_sl_shock_cavalry_28
 }
 
 technology = {
@@ -2080,6 +2152,10 @@ technology = {
 	enable = gorakubu_defender_3_artillery
 	enable = DXD_Juggernaut_Annihilation_Battery
 	enable = DXD_Ultimate_Red_Dragon_Emperor_Battery
+	enable = acg_tv_assault_artillery_29
+	enable = acg_tv_guard_artillery_29
+	enable = acg_sl_fire_artillery_29
+	enable = acg_sl_shock_artillery_29
 }
 
 technology = {

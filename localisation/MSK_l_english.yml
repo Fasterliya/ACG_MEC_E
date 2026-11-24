@@ -1,9 +1,9 @@
 ﻿l_english:
 
 ### MISSION ###
-# 布局 = 方案 B（漏斗收束）：key 已按新 slot_position 重编
+# ^NS = ¹eHh Bÿo—e6emg	ÿÿkey òT	c°e slot_position Í‘
 
- # ---------- slot 1 · 征服脊（10 城→北欧） ----------
+ # ---------- slot 1 · Vgÿ10 ÎW’!S'k	ÿ ----------
  MSK_missions_1:0 "…5uÁx®p„vV"
  MSK_missions_1_1_title:0 "¡VBWŽ4t„våe8^"
  MSK_missions_1_1_desc:0 "8^ØvðS„véehfÎNáTIVËYÿÎ˜ªuÔYXT(W!hè•ãS¹pT0‰(WÙGrW0WNÙzOOÿHQ—VŠbuQ›Reˆán0"
@@ -22,7 +22,7 @@
  MSK_missions_1_8_title:0 "¯e*X„v³uôušN„v×e^"
  MSK_missions_1_8_desc:0 "ÎNåe·VpQ0RÉbnfpQÿteGrJS›Sýcw†NfRíVý^„v×e0…5uÁx®p„vT÷Sÿ,rN!kèÇ†Nwm0"
 
- # ---------- slot 2 · 低地 + 点数采购支线 ----------
+ # ---------- slot 2 · NO0W + ¹ppeÇ‘-=e¿u ----------
  MSK_missions_2:0 "fRíVý^„vY²N"
  MSK_missions_3_7_title:0 "NO0WÜV"
  MSK_missions_3_7_desc:0 "wƒpQNiOpQ·V¯e„v=nãSÞbNGrÿfRíVý^„v9‚ïSåNNïV0RwmãS0"
@@ -35,7 +35,7 @@
  MSK_missions_6_8_title:0 "	hy„v÷N±”"
  MSK_missions_6_8_desc:0 "±‚‰c 300 ¹pY²N¹ppeÿ©‹·Va×V„v«R÷^°‹OOfRíVý^„vTWR0Tv^N*ND–¸^ÿÎNdkN(uQIrASt^0"
 
- # ---------- slot 3 · 经济主脊（商路 → 产业 → 终局） ----------
+ # ---------- slot 3 · ÏuNmINÿFUï ’! µNN ’! ÈuNS	ÿ ----------
  MSK_missions_3:0 "8^ØvðSNÑžPR"
  MSK_missions_4_1_title:0 "8^ØvðS„v„˜—r"
  MSK_missions_4_1_desc:0 "ÛVµ^ÎW^ÿ RNASµ^^y™^ÿYeX¿uNïGSN»SmN—r	ÿÿ8^ØvðS„v%„ú^Mb—rËzOO0"
@@ -45,7 +45,7 @@
  MSK_missions_3_3_desc:0 "wƒpQ„v=nãSjPán†NFU9‚0fRíVý^‰ŽV‰ÿHQ—V¨cVÙGbè•0"
  MSK_missions_3_4_title:0 "±ƒ5ƒpQ"
  MSK_missions_3_4_desc:0 "±ƒ5ƒ³l2N¸S„vÎW!XNa„„íVÿÎNegý=f·Va×VgÌR„v0W¹e0"
- MSK_missions_3_5_title:0 "(„KQîh8fHS"
+ MSK_missions_3_5_title:0 "(„KQîh8f:S"
  MSK_missions_3_5_desc:0 "(„KQîh„vö”ÿwNÆ–^ÿ=fS¹eFUï„væSNïz0"
  MSK_missions_3_6_title:0 "›Q°hFUï"
  MSK_missions_3_6_desc:0 "2NagFUï(WfRíVý^KbÌ‘TbNag0Ð„v=f^9S0ÐvŒTÁ”ÿmNÐ®p¿OœR—VY„v®p0"
@@ -56,7 +56,7 @@
  MSK_missions_2_9_title:0 "fRíVý^„v8—N"
  MSK_missions_2_9_desc:0 "S'k„v×e^0NO0W„vö”“^0^ýV„v	hyÿÈuŽNcN†NTNb—™X0fRíVý^NQ=fNµ^ÎW¦ÿw=fN*N^ýV0"
 
- # ---------- slot 4 · 产业与采购（挂经济脊右侧） ----------
+ # ---------- slot 4 · µNNNÇ‘-ÿcÏuNmóSµO	ÿ ----------
  MSK_missions_4:0 "fRíVý^„v0–"
  MSK_missions_4_3_title:0 "xvzNb²"
  MSK_missions_4_3_desc:0 "ŒNASµ^ÎW^0ASµ^åTJWÿ8^ØvðS„vxvzNbÎNNô•ØSbN’c0"
@@ -69,16 +69,16 @@
  MSK_missions_6_9_title:0 "8^ØvðS„v„˜—rHh"
  MSK_missions_6_9_desc:0 "±‚‰c 150 ¹pLˆ?e¹ppeÿŠb8^ØvðS„vú^Qr„˜—rN!k'`ybNeg0x4Y04lål0þV¸uÿÎNdký¿OœRN›N0"
  MSK_missions_6_10_title:0 "b=go`N"
- MSK_missions_6_10_desc:0 "±‚‰c 150 ¹p›Q‹N¹ppeÿŠbÎ˜ªuÔYXTŒTYe^Éb0Ro`NHW0ÃuÇ„vºNŒT¡lÃuÇ„vºNÿ(WbHWNN=fNÞV‹N0"
+ MSK_missions_6_10_desc:0 "±‚‰c 150 ¹p›Q‹N¹ppeÿŠbÎ˜ªuÔYXTŒTYe^Éb0Ro`N:W0ÃuÇ„vºNŒT¡lÃuÇ„vºNÿ(Wb:WNN=fNÞV‹N0"
  MSK_missions_6_11_title:0 "FU²N‰m"
  MSK_missions_6_11_desc:0 "±‚‰c 150 ¹pY²N¹ppeÿ©‹Il(„„vFU†™(WfRíVý^Ì‘cNÛbLr0"
 
- # ---------- slot 5 · 帝国脊 ----------
+ # ---------- slot 5 · ^ýV ----------
  MSK_missions_5:0 "‡v^„v-^MO"
  MSK_missions_3_1_title:0 "8^ØvðS²RËS"
  MSK_missions_3_1_desc:0 "‹v•NÑžPR1SOO(W”–ÁXÿÎ˜ªuÔYXT„v–ˆàzÔkûNUOag¦uýïS`—0NyY¾bTßv0‹YaNNOŽN §G100§!ÿyY1SŠbTKQ©‹Ùu`Oÿ&TRêS=fNýNzz4Y²NÅ`0"
  MSK_missions_2_3_title:0 "ÑžPR„v‰béb"
- MSK_missions_2_3_desc:0 "SVfRíVý^„v›Q–‹SÇ‹v•NÑžPRöeÿyY¡l	gVkpÿêSŠbTKQ„vpSàz¨c†NÇegÿÞTte*NÎ˜ªuÔYXT„v–HS0"
+ MSK_missions_2_3_desc:0 "SVfRíVý^„v›Q–‹SÇ‹v•NÑžPRöeÿyY¡l	gVkpÿêSŠbTKQ„vpSàz¨c†NÇegÿÞTte*NÎ˜ªuÔYXT„v–:S0"
  MSK_missions_2_4_title:0 "8^ØvðSteÎ˜Ð¨R"
  MSK_missions_2_4_desc:0 "åNteÎ˜KNT6eÑžPR„vWµNÿçub‹v•NÑžPR„vhQè†˜0WÿãN÷N=f	N¹p3zšRN2NŒv›Q‹N¹pÿÎWÌ‘ÎNdkºNÃVnm¨R0"
  MSK_missions_5_1_title:0 "	^¯O„v-^MO"
@@ -93,7 +93,7 @@
  MSK_missions_5_5_desc:0 "^y1WWlš„v	hy0ø‹¯O„vpSáO0fRíV„v®p‚SÿhQýRV0RNY0“^m„v¶RÏeÿb0RN­ˆ5rMOÿÙµ^ÎW^ÈuŽNNêS=f·Va×V„vNÒ‰ÿw=fƒR„v-NÃV0"
 
 ### MISSION TOOLTIP ###
-# 依附于 5_1（原 3_1）effect 的 custom_tooltip，effect 未改动，故保留原名
+# OD–ŽN 5_1ÿŸS 3_1	ÿeffect „v custom_tooltipÿeffect *g9e¨RÿEeÝOYuŸST
 
  MSK_missions_3_1_c_tt1_yes:0 "£yes£å‚ §Y[SHI.GetName]§! ùR`O‹YaNNOŽN §G100§!ÿTKQÿ+T8hÃV	ÿrR©‹Ùu §Y[Root.GetName]§!"
  MSK_missions_3_1_c_tt1_no:0 "£no£å‚ §Y[SHI.GetName]§! ‹YaN³ §R100§!ÿNrR0WÿÅN·ƒ—V §G+10§! Zg"
@@ -115,7 +115,7 @@
  MSK_dual_route:0 "ÌS¿uFUï"
  MSK_low_countries:0 "NO0WteT"
  MSK_diplomatic_merit:0 "8^ØvðS²RËS"
- MSK_saxony_trade:0 "(„KQîh8fHS"
+ MSK_saxony_trade:0 "(„KQîh8f:S"
  MSK_rhine_trade:0 "±ƒ5ƒ›Q°h"
  MSK_academy_works:0 "fRíVý^„v%„ú^"
  MSK_hanse_ledger:0 "Il(„&?|"
@@ -146,7 +146,7 @@
  MSK_electromaster_mechanic:0 "5uûQO"
  ability_MSK_electromaster_mechanic:0 "5uûQO"
  MSK_electromaster_power:0 "5uûQO"
- MSK_electromaster_power_desc:0 "•beQ›Q‹N¹ppeÄ„ïy5u›R0Ä„—VŠánÿ®puQjObN²QûQ2O³RŠHV0"
+ MSK_electromaster_power_desc:0 "•beQ›Q‹N¹ppeÄ„ïy5u›R0Ä„—VŠánÿ®puQjObN²QûQ2O³RŠ:V0"
  monthly_MSK_electromaster_power:0 "Ïkg5uûQOØSS"
  MSK_electromaster_power_gain_modifier:0 "5uûQOžXÊv"
  MSK_electromaster_charge:0 "Ä„5uÿ50 ›Q‹N¹p	ÿ"
@@ -193,21 +193,22 @@
  MSK_missions_6_4_desc:0 "”NCSÑ‘0	NASNF–›Q0geQÛVŒv0›Q‹NÑyŽbASµuÿNòTác	g…5uÁx®pb=g5uûQOŽÛ,r”Nµu0"
  MSK_missions_6_4_lv5_tooltip:0 "Ä„ánöe˜Y·ƒ—V 0.5 ¹p®puQ²QûQN 10% Nb×SëXlSbûQÏQMQÿTöeÝOYu 10% ëXlSbûQÿÏkgêžX 0.080pˆÏQ 0.10"
  MSK_missions_6_5_title:0 "Lv.6"
- MSK_missions_6_5_desc:0 "bHN8—IN0KbácŒvåe›Q‹N¹p¡VBWŽ4t„v5uûQOp0R†NÙNãN„vKS4Y0"
+ MSK_missions_6_5_desc:0 "b:N8—IN0KbácŒvåe›Q‹N¹p¡VBWŽ4t„v5uûQOp0R†NÙNãN„vKS4Y0"
  MSK_missions_6_5_lv6_tooltip:0 "Ä„ánöeQ·ƒ +0.25 ¹p®puQ²QûQN +10% kp›R2O³RÿÄ„5uÅN— 15 ›Q‹N¹p0"
  MSK_electromaster_charge_25:0 "Ä„5uÿ25 ›Q‹N¹p	ÿ"
  MSK_electromaster_charge_15:0 "Ä„5uÿ15 ›Q‹N¹p	ÿ"
  estate_nobles_sister:0 "Sister"
- estate_nobles_sister_desc:0 "5Ïe-N„v0ÐYÐYìN0«N	gyrCgÿê¶RW0WN×S¡l6eÿÏkgHN¡VBWŽ4tÐc›O 1 ¹p›Q‹N¹ppeÿ	cvQW0WýN˜ÿÐc›OºN›R0F–›QNP–NºN›Rb`Yÿv^‹SNO3zšR±‚90"
- MSK_missions_2_11_title:0 "fRíVý^fRHS"
- MSK_missions_2_11_desc:0 "fRíVý^„vfRHSR‹Y†NÿKbÌ‘	gN<h3zšRÿfRHS1S—rckVV.V0"
- MSK_missions_1_12_title:0 "fRHSib.V"
- MSK_missions_1_12_desc:0 "ŠbfRHS„v0WLuŽVY¨c	NWW0"
- MSK_missions_2_12_title:0 "fRHSTßv"
- MSK_missions_2_12_desc:0 "N	N*NýV¶RÓußvÿ©‹fRHS(W·Va×V	gô‹Ý‹„výNÏ‘0"
- MSK_missions_3_12_title:0 "fRHS›QY"
+ estate_nobles_sister_desc:0 "5Ïe-N„v0ÐYÐYìN0«N	gyrCgÿê¶RW0WN×S¡l6eÿÏkg:N¡VBWŽ4tÐc›O 1 ¹p›Q‹N¹ppeÿ	cvQW0WýN˜ÿÐc›OºN›R0F–›QNP–NºN›Rb`Yÿv^‹SNO3zšR±‚90"
+ MSK_missions_2_11_title:0 "fRíVý^fR:S"
+ MSK_missions_2_11_desc:0 "fRíVý^„vfR:SR‹Y†NÿKbÌ‘	gN<h3zšRÿfR:S1S—rckVV.V0"
+ MSK_missions_1_12_title:0 "fR:Sib.V"
+ MSK_missions_1_12_desc:0 "ŠbfR:S„v0WLuŽVY¨c	NWW0"
+ MSK_missions_2_12_title:0 "fR:STßv"
+ MSK_missions_2_12_desc:0 "N	N*NýV¶RÓußvÿ©‹fR:S(W·Va×V	gô‹Ý‹„výNÏ‘0"
+ MSK_missions_3_12_title:0 "fR:S›QY"
  MSK_missions_3_12_desc:0 "8^ØvðS„v‰š›QÑQYNN0"
  MSK_academy_country_name:0 "fRíVý^"
+ MSK_academy_country_name_ADJ: "fRíVý^"
  MSK_missions_2_13_title:0 "R%fp™)R"
  MSK_missions_2_13_desc:0 "ÙuyYNrÏu9ÿ©‹yYŠbfRíVý^„vÅ`¥bQú”V0"
  MSK_missions_3_13_title:0 "PO)YêlPR"
@@ -223,4 +224,4 @@
  MSK_missions_3_2_tt_allied:0 "£yes£å‚N §Y[SKM.GetName]§! §GÓußv§!ÿ·ƒ—V §G25 t^§! „v0ÃVtŒcµc0ÿ9e„UsQû| §G+15%§!	ÿÿY R §G+10§! Zg"
  MSK_missions_3_2_tt_conquest:0 "£no£å‚òT §RTv^§! §Y[SKM.GetName]§! „vhQè†˜Wÿ3zšR §R-1§!ÿbcÖS8lEN0ÃVtŒcµc0ÿ9e„UsQû| §G+15%§!	ÿ"
  MSK_committee_reform:0 "8^ØvðSÔYXTO"
- MSK_committee_reform_desc:0 "ÔYXTOŠbfRíVý^„vLˆ?e0Ye²wNÅ`¥bâb(WNYÿŒ˜î•ôf¿OœRÿLˆ?eHe‡sôfØšÿ9ei—¨cÛmNôfëV0\náQ‡eSHN…ýw›Rû|T›ÕlO„v†˜0WÿýOê¨R·ƒ—V0fRíVý^fRHS0ÿ`no.O­d¦^ +25%ÿ,g0WÑSUSb,g -5%0"
+ MSK_committee_reform_desc:0 "ÔYXTOŠbfRíVý^„vLˆ?e0Ye²wNÅ`¥bâb(WNYÿŒ˜î•ôf¿OœRÿLˆ?eHe‡sôfØšÿ9ei—¨cÛmNôfëV0\náQ‡eS:N…ýw›Rû|T›ÕlO„v†˜0WÿýOê¨R·ƒ—V0fRíVý^fR:S0ÿ`no.O­d¦^ +25%ÿ,g0WÑSUSb,g -5%0"

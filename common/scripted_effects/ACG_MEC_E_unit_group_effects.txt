@@ -1,0 +1,32 @@
+# ACG_MEC_E : Teyvat / Solaris unit group switch (country scope)
+# Same shape as the mother mod: one unit_type group per faction, change_unit_type to switch.
+# Every unit enabled inside the group is available by default, so unit files carry no trigger.
+
+acg_use_teyvat_unit_group_effect = {
+	if = {
+		limit = { NOT = { has_country_flag = acg_unit_group_teyvat } }
+		change_unit_type = acg_teyvat
+		clr_country_flag = acg_unit_group_solaris
+		set_country_flag = acg_unit_group_teyvat
+	}
+}
+
+acg_use_solaris_unit_group_effect = {
+	if = {
+		limit = { NOT = { has_country_flag = acg_unit_group_solaris } }
+		change_unit_type = acg_solaris
+		clr_country_flag = acg_unit_group_teyvat
+		set_country_flag = acg_unit_group_solaris
+	}
+}
+
+acg_sync_unit_group_effect = {
+	if = {
+		limit = { acg_teyvat_unit_tag_trigger = yes }
+		acg_use_teyvat_unit_group_effect = yes
+	}
+	else_if = {
+		limit = { acg_solaris_unit_tag_trigger = yes }
+		acg_use_solaris_unit_group_effect = yes
+	}
+}

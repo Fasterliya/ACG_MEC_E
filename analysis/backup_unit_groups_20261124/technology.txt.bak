@@ -1,0 +1,423 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+# If adding new technology, make sure they are AFTER THE LAST TECHNOLOGY
+
+# Groups must be defined BEFORE tables.
+
+#Nation Designer Cost is set to match triggers for starting institutions.
+
+groups = {
+	western = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	eastern = {
+		start_level = 3
+		start_cost_modifier = 0.20
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	ottoman = {
+		start_level = 3
+		start_cost_modifier = 0.25
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	muslim = {
+		start_level = 3
+		start_cost_modifier = 0.40
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	indian = {
+		start_level = 3
+		start_cost_modifier = 0.5
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	east_african = {
+		start_level = 3
+		start_cost_modifier = 0.5
+		nation_designer_unit_type = sub_saharan
+	}
+	central_african = {
+		start_level = 2
+		start_cost_modifier = 0.65
+		nation_designer_unit_type = sub_saharan
+	}
+	chinese = {
+		start_level = 3
+		start_cost_modifier = 0.6
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	nomad_group = {
+		start_level = 3
+		start_cost_modifier = 0.75
+		# nation_designer_trigger = {
+		# 	has_reform = steppe_horde
+		# }
+	}
+	sub_saharan = { #West African
+		start_level = 2
+		start_cost_modifier = 0.6
+	}
+	north_american = {
+		start_level = 1
+		start_cost_modifier = 2.5
+		is_primitive = yes
+	}
+	mesoamerican = {
+		start_level = 1
+		start_cost_modifier = 1.5
+		is_primitive = yes
+	}
+	south_american = {
+		start_level = 1
+		start_cost_modifier = 2.5
+		is_primitive = yes
+	}
+	andean = {
+		start_level = 1
+		start_cost_modifier = 1.5
+		nation_designer_unit_type = south_american
+		is_primitive = yes
+	}	
+	aboriginal_tech = {
+		start_level = 1
+		start_cost_modifier = 2.5
+		is_primitive = yes
+		nation_designer_cost = {
+			value = 50
+		}
+	}
+	polynesian_tech = {
+		start_level = 2
+		start_cost_modifier = 2
+		is_primitive = yes
+		nation_designer_cost = {
+			value = 50
+		}
+	}
+	
+	high_american = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = high_american
+		nation_designer_trigger = {
+			capital_scope = {
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+			}
+		}
+		nation_designer_cost = {
+			value = 75
+		}
+	}
+	# Frame index of GFX_tech_group_strip == 0-based position of the group inside groups{}.
+	# Slots: 0-16 = 17 vanilla groups, 17 = test_group_2, 18 = acg_american (金辉), 19 = tech_gensokyan (幻想乡).
+	# tech_group_strip.dds has 21 frames: frame 18 = 金辉 icon, frame 19 = 幻想乡 icon, frame 20 = spare.
+	test_group_2  = {
+		start_level = 1
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			value = 1000
+		}
+	}
+	acg_american = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = {
+			capital_scope = {
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+			}
+		}
+		nation_designer_cost = {
+			value = 75
+		}
+	}
+	# BEGIN ACG_MEC_E  touhou tech group (submod addition, keep on every mother-mod update)
+	tech_gensokyan = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	# END ACG_MEC_E
+	# BEGIN ACGR_UNIT_GROUPS REGISTERED UNIT FAMILIES
+	acgr_g01 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g02 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g03 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g04 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g05 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g06 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g07 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g08 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g09 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g10 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g11 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g12 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g13 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g14 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g15 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g16 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g17 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g18 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g19 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g20 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g21 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g22 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g23 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g24 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g25 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g26 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g27 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g28 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g29 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g30 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g31 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g32 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g33 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g34 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g35 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acgr_g36 = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	# END ACGR_UNIT_GROUPS
+}
+
+tables = {
+	adm_tech = "technologies/adm.txt"
+	dip_tech = "technologies/dip.txt"
+	mil_tech = "technologies/mil.txt"
+}

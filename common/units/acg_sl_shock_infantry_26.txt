@@ -1,0 +1,11 @@
+# Solaris tide doctrine | infantry T26 | ACG_MEC_E
+type = infantry
+unit_type = acg_solaris
+
+maneuver = 1
+offensive_morale = 3
+defensive_morale = 3
+offensive_fire = 5
+defensive_fire = 5
+offensive_shock = 6
+defensive_shock = 5

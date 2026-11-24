@@ -414,6 +414,20 @@ groups = {
 		nation_designer_trigger = { always = no }
 	}
 	# END ACGR_UNIT_GROUPS
+	# BEGIN ACG_MEC_E TEYVAT / SOLARIS UNIT GROUPS
+	# unit_type == tech group name: change_unit_type only accepts groups registered here
+	# every unit enabled inside a group is available by default (no per-unit trigger)
+	acg_teyvat = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	acg_solaris = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_trigger = { always = no }
+	}
+	# END ACG_MEC_E TEYVAT / SOLARIS UNIT GROUPS
 }
 
 tables = {

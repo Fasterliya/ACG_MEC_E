@@ -1,0 +1,11 @@
+# Teyvat assault doctrine | cavalry T14 | ACG_MEC_E
+type = cavalry
+unit_type = acg_teyvat
+
+maneuver = 2
+offensive_morale = 3
+defensive_morale = 2
+offensive_fire = 2
+defensive_fire = 0
+offensive_shock = 4
+defensive_shock = 1

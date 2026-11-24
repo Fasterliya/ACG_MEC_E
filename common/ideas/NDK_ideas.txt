@@ -20,11 +20,11 @@ NDK_ideas = {
 	}
 	NDK_idea_3 = {
 		defensiveness = 0.20
-		land_attrition = -0.10
+		land_attrition = -0.25
 	}
 	NDK_idea_4 = {
-		cavalry_power = 0.10
-		infantry_power = 0.05
+		infantry_power = 0.15
+		max_hostile_attrition = 2
 	}
 	NDK_idea_5 = {
 		production_efficiency = 0.10

@@ -1,0 +1,19 @@
+# ACG_MEC_E : assign Teyvat / Solaris unit groups on load, creation and release.
+# Hook bodies verified in vanilla common/on_actions/00_on_actions.txt
+#   on_startup           : line 4
+#   on_country_released  : line 5588
+#   on_country_creation  : line 5814
+# Same-named on_action blocks stack across files, nothing is overwritten.
+# acg_sync_unit_group_effect is idempotent: it only fires when the group flag is missing.
+
+on_startup = {
+	acg_sync_unit_group_effect = yes
+}
+
+on_country_creation = {
+	acg_sync_unit_group_effect = yes
+}
+
+on_country_released = {
+	acg_sync_unit_group_effect = yes
+}

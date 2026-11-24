@@ -1,0 +1,160 @@
+﻿l_english:
+ # ---------- unit group names (registered tech groups, keep loc so no raw key shows) ----------
+ acg_teyvat: "ÐcætyruQÍy"
+ acg_solaris: "0tÉbÌ‘¯euQÍy"
+ # ---------- Ðcætyr · •âwÿacg_tv_assault_*	ÿ ----------
+ acg_tv_assault_infantry_01: "NNºN"
+ acg_tv_assault_infantry_01DESCR: "Ðcætyrg8^Á‰„vŸSuèÏeÿ„bw(gÒh1Sbe²Q•ÿb²öeÔkwN»S¾–.0"
+ acg_tv_assault_infantry_05: "×vRâV¥eP"
+ acg_tv_assault_infantry_05DESCR: "WùMRI`HQw0RÖNìNÿÑ—VÔkŒýëVÿ¢b—VÔkŒýàr0"
+ acg_tv_assault_infantry_09: "aºNOHQc–"
+ acg_tv_assault_infantry_09DESCR: "ó¬Q8OúQ„v,rNêSKbÿÅˆY¾|o‚0Lˆ¨RtePŸÿÎNNUSìrúQ°s0"
+ acg_tv_assault_infantry_12: "N•Ñ‘ÅeâVR‚w"
+ acg_tv_assault_infantry_12DESCR: "™l.oFUïN„vÇ–cOR¢RÿúQKb±‚èTÿRRtSýTYNw‰³R0"
+ acg_tv_assault_infantry_15: "aºNOkpªgKb"
+ acg_tv_assault_infantry_15DESCR: "R–PŸS„vó¬Qó”uQÿNnkp›Rýw‹S—VºN¬bNw4Y0"
+ acg_tv_assault_infantry_19: "‰Î˜‘šëXâVHQ•"
+ acg_tv_assault_infantry_19DESCR: "™„·V„v‘šëXHQ•ÿÎ˜CQ.tVïÿ²Q5–gëVmNgHQ(cSb0"
+ acg_tv_assault_infantry_26: "aºNOgbLˆ˜RkS–"
+ acg_tv_assault_infantry_26DESCR: "gbLˆ˜R«Ž¹gTNSºN™XÿhQXT¾|•ÿNNM–0"
+ acg_tv_assault_cavalry_01: "H…‹Q"
+ acg_tv_assault_cavalry_01DESCR: "CQ.tÌRÆ–0W&^„vbRPRuirÿ×SÊ`Tb²²QždÿDŽek‰l—Výw—LX(gh0"
+ acg_tv_assault_cavalry_06: "1W¸š‹Q"
+ acg_tv_assault_cavalry_06DESCR: "ÜäSèT‹Q„vW¸š«ˆCQ.tÍ‘°eqš¨Rÿ²QwegàQNNjPNNeg0"
+ acg_tv_assault_cavalry_10: "‹QƒXs¬r"
+ acg_tv_assault_cavalry_10DESCR: "ÎNÂˆ™–Ì‘»”úQ„vs‹Qÿb²ýûQÿÑ—VÔklšØëV0"
+ acg_tv_assault_cavalry_14: "nš‹Q‘šKb"
+ acg_tv_assault_cavalry_14DESCR: "‰˜%VFUïN„vnš‹Q‘šKbÿÑ—VÜ0Ñ—VENÿckb—NLˆ0"
+ acg_tv_assault_cavalry_23: "ñmwm™Ÿ%‡"
+ acg_tv_assault_cavalry_23DESCR: "ÎNñmwm,rN¸S„v™Ÿ%‡ÿÞœ2ušSÍ‘ÿNãSýw¬TzþvLr0"
+ acg_tv_assault_cavalry_28: "Wù™Ÿ‹Q"
+ acg_tv_assault_cavalry_28DESCR: "¬`zzÞ˜Lˆ„vNW^tšN:gsQÿïO²QöeåNCQ.tRVï0"
+ acg_tv_assault_artillery_07: "NN(„án"
+ acg_tv_assault_artillery_07DESCR: ">NNw¨šVg„vNNºNËe=gwÿkptÆQ4YîTÿFO¶gNOOY0"
+ acg_tv_assault_artillery_12: "WùsKb"
+ acg_tv_assault_artillery_12DESCR: "¬`jPzz-N„vNW^tšN:gsQÿåNCQ.tIQmg¹pNgîvh0"
+ acg_tv_assault_artillery_16: "°Qó”Í‘kSëX"
+ acg_tv_assault_artillery_16DESCR: "aºNOÍ‘Åˆó”uQÿNÑS°Q9VýwŠb5–‹W•dV:ãS0"
+ acg_tv_assault_artillery_22: "CQýw„gÅˆSO"
+ acg_tv_assault_artillery_22DESCR: "™l.oñmY8np„vCQýw.irÿSzKN…Q¡l	g‰RhQ:S0"
+ acg_tv_assault_artillery_26: "WùÍ‘:g"
+ acg_tv_assault_artillery_26DESCR: "(rÍ‘FOïS`—„vIeÎW:gsQÿN®pbcNµkÎW™X0"
+ acg_tv_assault_artillery_29: "JS8lR`ßu–éw5–"
+ acg_tv_assault_artillery_29DESCR: "™l.oñmYnmw„vßu–:gsQÿIQñhkbÇKNYøRIƒNu0"
+ # ---------- Ðcætyr · ZWÁXÿacg_tv_guard_*	ÿ ----------
+ acg_tv_guard_infantry_01: "(gþvNNºN"
+ acg_tv_guard_infantry_01DESCR: ">NNw—|6R(gþv„vNNºNÿ!c—VOOów4Yÿ!cNOOkp0"
+ acg_tv_guard_infantry_05: "×vRâVSbKb"
+ acg_tv_guard_infantry_05DESCR: "ÿb±”žR‹N„v—|IlÿÙzihýwibÿÑweg1Sce0"
+ acg_tv_guard_infantry_09: "CS©S›Q"
+ acg_tv_guard_infantry_09DESCR: "ƒtg8^YˆR›Qÿ`—5–‹WN•ªgTm™ÿˆRÎW=fLˆ¶RÿýûQ=fYLˆ0"
+ acg_tv_guard_infantry_12: ")Y†˜IYLˆN›R"
+ acg_tv_guard_infantry_12DESCR: "Iz»Y„v»l‰RfkwÿR5–ˆRYÿíwuQøv¥cöe3z—VˆV0"
+ acg_tv_guard_infantry_15: "‰Î˜‘šëXâVþvkS"
+ acg_tv_guard_infantry_15DESCR: "v˜(WgMRb—„v™„·VþvKbÿib¿uýw›RhQ'YF–û•T0"
+ acg_tv_guard_infantry_19: "«g9N÷^f‹Y–"
+ acg_tv_guard_infantry_19DESCR: "«g9N÷^„v8^‰šf‹Yfk›Rÿªu‹V%NteÿÅd•åN5–0WˆmwùRKb0"
+ acg_tv_guard_infantry_26: "CS©S›QG•ówkS–"
+ acg_tv_guard_infantry_26DESCR: "åNG•ów:N8hÃV„vƒtgÍ‘ÅˆˆR›QÿNek1S=fƒtg=n0"
+ acg_tv_guard_cavalry_01: "©SH…‹Q"
+ acg_tv_guard_cavalry_01DESCR: "«bNw©SóX„vH…‹Qÿ²QNëVÿFOždN»SÏPžd™X0"
+ acg_tv_guard_cavalry_06: "1W¸šÒ‰Äœ"
+ acg_tv_guard_cavalry_06DESCR: "«bNw1W¸š2uóX„vèTÄœÿckb—v˜5–àQNN¨cN¨R0"
+ acg_tv_guard_cavalry_10: "‹QƒX‹s‹Q"
+ acg_tv_guard_cavalry_10DESCR: "‹QƒXs¬r„v–™†˜ÿ²bOO5–¿uöeÔkÛIeôf¾–.0"
+ acg_tv_guard_cavalry_14: "N•Ñ‘ÅeâVoš‹Q^"
+ acg_tv_guard_cavalry_14DESCR: "&^Nw™l‹QN5–„v‰˜%VÇ–cOuQÿ3zOOµOü1SY(u0"
+ acg_tv_guard_cavalry_23: "nN™Ÿ%‡"
+ acg_tv_guard_cavalry_23DESCR: "‹vYýV„vˆRW™Ÿ%‡ÿO(W5–0WMRNekN0"
+ acg_tv_guard_cavalry_28: "ñmwm™Ÿ%‡‹s"
+ acg_tv_guard_cavalry_28DESCR: "ñmwm™Ÿ%‡„v–™†˜ÿÞœ2uNSOÏ‘ý0R†NæSN*NBSµu0"
+ acg_tv_guard_artillery_07: "NN©SÔv‹s"
+ acg_tv_guard_artillery_07DESCR: "©SÔv R«Ž„vNNºNèTIlÿTbów4YÔkŒýàr0"
+ acg_tv_guard_artillery_12: "Wù¦OßRw"
+ acg_tv_guard_artillery_12DESCR: "NOzzáTI„v¦Oåg:gsQÿHQÑS°sÿHQVkp0"
+ acg_tv_guard_artillery_16: "°Q2„=gëX"
+ acg_tv_guard_artillery_16DESCR: "åN°Q2„ur6R„vaºNO=gëXÿýwÖbOOteagb¿u0"
+ acg_tv_guard_artillery_22: "CQýw„gÅˆSOˆRgw"
+ acg_tv_guard_artillery_22DESCR: "ˆRNwWùeQãS„vCQýw„gÅˆSOÿÙzNwN¨RÍSwg¾–Sb0"
+ acg_tv_guard_artillery_26: "WùˆRkS"
+ acg_tv_guard_artillery_26DESCR: "NW^tšN„vÏuxQˆRè•:gsQÿckb—lxv˜gT0"
+ acg_tv_guard_artillery_29: "àeøvKN©S"
+ acg_tv_guard_artillery_29DESCR: "ÝQbžRSO„v©SCQ.tu‹Tÿ8xN»S1S=fNGrŸ^ŸX0"
+ # ---------- 0tÉbÌ‘¯e · qQ1žÿacg_sl_fire_*	ÿ ----------
+ acg_sl_fire_infantry_01: "‹kfO°euQ"
+ acg_sl_fire_infantry_01DESCR: "«ˆ1žVNOí‹Ê†Ñ`„vt^‰ºNÿÿbNwübÑQ„vfkhV1SN5–0"
+ acg_sl_fire_infantry_05: "ðX¸šsKb"
+ acg_sl_fire_infantry_05DESCR: "(Wàeó—:S`—sNgðX¸š:Nu„vºNÿŸq‰`ÏkNðX1žÍTasTNwÀNHN0"
+ acg_sl_fire_infantry_09: "qQ1žwS–"
+ acg_sl_fire_infantry_09DESCR: "ýw,TÁ‰qQ1ž„vbëXÄuÿkp›RÆ–-NöeýwŠbðX¸šSbce0"
+ acg_sl_fire_infantry_12: "Ñžwm¸SáT–"
+ acg_sl_fire_infantry_12DESCR: "Ñžwm¸S„vYôVáT2––ÿÅˆYßuNÿkp›ROHQ0"
+ acg_sl_fire_infantry_15: "ÉbäS±QRëX"
+ acg_sl_fire_infantry_15DESCR: "ÉbäS±„vQR=gAm>m.OºNÿúQKbëVÿ6eÛbôfëV0"
+ acg_sl_fire_infantry_19: "‹kfOgbÁˆw"
+ acg_sl_fire_infantry_19DESCR: "‹kfO„v-NZWÿåN1žV:NáOðNÿåNkp›R:Ní‹Š0"
+ acg_sl_fire_infantry_26: "1žV›QâV"
+ acg_sl_fire_infantry_26DESCR: "«ˆ1žV‰V•^Tv^„vte6R›QâVÿêSiRÛIeN*NcäN0"
+ acg_sl_fire_cavalry_01: "RƒÎ‘nš‹Q"
+ acg_sl_fire_cavalry_01DESCR: "RƒÎ‘Ng8^Á‰„vnš‹Qÿ«ˆošegnš'ÿmNnšºN0"
+ acg_sl_fire_cavalry_06: "ðX¸šür‘š"
+ acg_sl_fire_cavalry_06DESCR: "ŠbðX¸šürSVjOPW‘š„vsKbÿýûQ¦^ëV—V»y1Œ0"
+ acg_sl_fire_cavalry_10: "1žŸ”KNŸŸ"
+ acg_sl_fire_cavalry_10DESCR: "ÌwNw1žŸ”„vèT‹WðX¸šÿûy¨RbaÿFONïý(WÍT0"
+ acg_sl_fire_cavalry_14: "àe8^mž‘šKb"
+ acg_sl_fire_cavalry_14DESCR: "‘šXNàe8^mž„v‰‘šÿwOKNô•òTÏubc†NMOn0"
+ acg_sl_fire_cavalry_23: "àe QwÁ”‘š"
+ acg_sl_fire_cavalry_23DESCR: "àe Qw¾žN„vÍ‘Åˆ‘š–ÿ²QV5–‹W1SNÞV4Y0"
+ acg_sl_fire_cavalry_28: "1žVèT‹Q"
+ acg_sl_fire_cavalry_28DESCR: "«ˆ1žV>e'Y„vèT‹QÿSO‹W,g«Ž1S=ffkhV0"
+ acg_sl_fire_artillery_07: "ðX¸š•bówKb"
+ acg_sl_fire_artillery_07DESCR: "ŠbŽxówNðX¸š‹kGrSV9V8N„v•bKbÿÆQ4YN,‚ÿÆR¦^Ê`ºN0"
+ acg_sl_fire_artillery_12: "áTèT:gŽP"
+ acg_sl_fire_artillery_12DESCR: "Ñžwm¸SYôV„vê¨RèTuQÿ(uðXâl•šRîvhT>Pûlkp›R0"
+ acg_sl_fire_artillery_16: ":g°hvP"
+ acg_sl_fire_artillery_16DESCR: "4·ƒT9e.„v:g°hvPÿkp›RN¾|ÿFOpeÏ‘¡rY0"
+ acg_sl_fire_artillery_22: "qQ1ž®pKb"
+ acg_sl_fire_artillery_22DESCR: "åNqQ1žZw&qkp›R„v®pÄuÿPŸSöeÞzzlý(W=c0"
+ acg_sl_fire_artillery_26: "‹kfÍ‘®p"
+ acg_sl_fire_artillery_26DESCR: "‹kfOÆbã‰Wùø”b„vÍ‘®pÿSz†‰ÖvteGràeó—:S0"
+ acg_sl_fire_artillery_29: "Èu+g^R®p"
+ acg_sl_fire_artillery_29DESCR: "‹kfOgñm„v.irÿNÑS1S=fNteagb¿u„vÈu¹p0"
+ # ---------- 0tÉbÌ‘¯e · noŒmÿacg_sl_shock_*	ÿ ----------
+ acg_sl_shock_infantry_01: "ÊNÞTˆRYuQ"
+ acg_sl_shock_infantry_01DESCR: "ÊNÞT„v8^YˆR›QÿˆRWaÆ‹:VÇNR0"
+ acg_sl_shock_infantry_05: "Ñžwm¸SþbRƒw"
+ acg_sl_shock_infantry_05DESCR: "(WŸ^ŸXÌ‘acúQNag‹T„vºNÿ®vžR0wSb0N²‹àzÕl0"
+ acg_sl_shock_infantry_09: "ÊNÞTRkS"
+ acg_sl_shock_infantry_09DESCR: "ÊNÞTÎWè•„vRKbÿÑ«Ž.—e=f,gLw0"
+ acg_sl_shock_infantry_12: "‹kfOáO’V"
+ acg_sl_shock_infantry_12DESCR: "«ˆ1žV¸‹ú‹†N*geg„váO’Vÿ²QwegN‰‹T0"
+ acg_sl_shock_infantry_15: "ÉbäS±þvkS"
+ acg_sl_shock_infantry_15DESCR: "ÉbäS±„vþv5–uQÿNekN0"
+ acg_sl_shock_infantry_19: "àe QwáO’V"
+ acg_sl_shock_infantry_19DESCR: "ý–àe Qw„vÂráOwÿŠ(cSbŠöQ0"
+ acg_sl_shock_infantry_26: "àeRV„v,Œï‹"
+ acg_sl_shock_infantry_26DESCR: "1žVwQ°súQ„v•ï‹XR(Wÿ²QûQöeÞ0WbVNw¹b‰c0"
+ acg_sl_shock_cavalry_01: "©SÌwŸŸ"
+ acg_sl_shock_cavalry_01DESCR: "Ìw2ušSžR„vÎ‘uŸŸ‹Qÿ²QNëVÿFOžd—V¨R0"
+ acg_sl_shock_cavalry_06: "ØhÌw‹Q‘šKb"
+ acg_sl_shock_cavalry_06DESCR: "‘šNwØhÌw‹Q„v²Q5–‘šuQÿ,rNâlždûQgô‹T0"
+ acg_sl_shock_cavalry_10: "ÎqgqKN‘š"
+ acg_sl_shock_cavalry_10DESCR: "ŽkpwLˆ„v1žV‘šëXÿ²Q•öeŠbteGrb:Wrb&qW0"
+ acg_sl_shock_cavalry_14: "ÀTðX7ž‘šKb"
+ acg_sl_shock_cavalry_14DESCR: "‘šXNÀTðX7ž„v‘šKbÿSxUHQ0RÿºNT0R0"
+ acg_sl_shock_cavalry_23: "nnmpKNno‘šuQ"
+ acg_sl_shock_cavalry_23DESCR: "«ˆnnmpKNno¨cNwMRÛ„v‘š–ÿjPNeg1SO«ˆT‰c0"
+ acg_sl_shock_cavalry_28: "wmxU‘šëX"
+ acg_sl_shock_cavalry_28DESCR: "åN1žV.úQèTjm–Lˆ„vÍ‘‘šÿN!k²Q•1S=fN!k‰vF–0"
+ acg_sl_shock_artillery_07: "‹kfO=gëX"
+ acg_sl_shock_artillery_07DESCR: "åN1žV:N’ZËNËe=g„váO’VÿK„¹pNÆQÿZ›RYàr0"
+ acg_sl_shock_artillery_12: "ðX¸š)VKb"
+ acg_sl_shock_artillery_12DESCR: "(uðX¸š¨š¼šZP)V„vSÄuÿÑÝ»yz›RÊ`ºN0"
+ acg_sl_shock_artillery_16: "ÊNÞT)V®p"
+ acg_sl_shock_artillery_16DESCR: "ÊNÞTÎW4Y„vwV)V®pÿˆRÎWöeg‹Y(u0"
+ acg_sl_shock_artillery_22: "1žŸ”®pðS"
+ acg_sl_shock_artillery_22DESCR: "åN1žŸ”qQ=cžXE^„v®pðSÿðX0Rÿ9V0R0"
+ acg_sl_shock_artillery_26: "àe Qw®pµ^"
+ acg_sl_shock_artillery_26DESCR: "¶g(Wàe Qw‹k¸šN„vÍ‘®pÿVkpsS´f2—MOn0"
+ acg_sl_shock_artillery_29: "àeó—:SMW)SO"
+ acg_sl_shock_artillery_29DESCR: "àeó—:SÌ‘«ˆ‹S)0Rgô„v1žVÿK„0W1ST‰cNGr0"

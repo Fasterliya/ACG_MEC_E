@@ -1,0 +1,33 @@
+# ACG_MEC_E : Teyvat / Solaris unit group assignment (country scope)
+# Hooked from common/on_actions/ACG_MEC_E_unit_group_on_actions.txt
+# (on_startup / on_country_creation / on_country_released)
+
+acg_teyvat_unit_tag_trigger = {
+	OR = {
+		tag = SVZ
+		tag = NDK
+		tag = FTN
+	}
+}
+
+acg_solaris_unit_tag_trigger = {
+	OR = {
+		tag = BLS
+		tag = JZH
+		tag = RGU
+		tag = XJA
+		tag = MGZ
+		tag = CXT
+		tag = FGL
+		tag = FSL
+		tag = MTL
+		tag = YHH
+	}
+}
+
+acg_has_unit_group_assignment_trigger = {
+	OR = {
+		acg_teyvat_unit_tag_trigger = yes
+		acg_solaris_unit_tag_trigger = yes
+	}
+}
