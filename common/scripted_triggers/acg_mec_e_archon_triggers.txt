@@ -1,0 +1,21 @@
+# ACG_MEC_E - 原神信仰事件：共用触发器
+# 供 events/acg_mec_e_archon_events.txt 的 30 个事件在 trigger 里调用。
+#
+# 设计意图（用户 2025-11-25 定稿）：全部 30 件信仰事件共用一个互斥 flag，
+# 任意一件在场时其余一律不判定，避免同一 tick 连续弹多件。
+#
+# 兜底动机：set_country_flag 的签名是 <string>（EU4 文档 effects.txt:47），
+# 写不了「带天数的 flag」；一旦 after 没执行（读档中断 / 事件被其他途径关闭），
+# 共用 flag 会永久挂着，把 30 件事件整体锁死。
+# 故这里用 OR 放行「flag 已挂满 30 天」的情形。had_country_flag = { flag days }
+# 的写法与本 mod decisions/acg_mec_e_teyvat_religion_decisions.txt:18 一致。
+
+acg_mec_e_deity_event_gate = {
+	OR = {
+		NOT = { has_country_flag = acg_mec_e_had_deity_event_flag }
+		had_country_flag = {
+			flag = acg_mec_e_had_deity_event_flag
+			days = 30
+		}
+	}
+}

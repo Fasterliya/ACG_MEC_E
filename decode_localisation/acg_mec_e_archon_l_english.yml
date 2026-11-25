@@ -1,0 +1,196 @@
+l_english:
+
+ # ============================================================
+ # ACG_MEC_E - 原神信仰事件（30 件）+ 事件修正（32 条）
+ # 脚本：events/acg_mec_e_archon_events.txt
+ #       common/event_modifiers/acg_mec_e_archon_modifiers.txt
+ #       common/scripted_triggers/acg_mec_e_archon_triggers.txt
+ # 本文件为可读明文源，正式 localisation/ 由用户自行编码。
+ # ============================================================
+
+ # ===== 巴巴托斯（风）=====
+ acg_mec_e_archon_events.1.t: "风起之时"
+ acg_mec_e_archon_events.1.d: "蒙德的风一夜之间改了方向。酒馆的门被吹得整夜作响，第二天清晨，驿道的尘土不见了，商队的车辙深了一寸——车夫说他们赶了三天路，只用了两天。牧羊人发誓看见一个抱着琴的少年坐在城墙上，等他爬上去，只有一朵塞西莉亚花。"
+ acg_mec_e_archon_events.1.a: "让风带路"
+
+ acg_mec_e_archon_events.2.t: "无主之歌"
+ acg_mec_e_archon_events.2.d: "一名吟游诗人在集市上唱起了不该唱的歌——歌词讲的是神明不该坐在王座上。卫兵要抓人，人群却跟着合唱。风把歌声送进了每一扇窗，连议政厅的窗子也没关严。"
+ acg_mec_e_archon_events.2.a: "让它唱：自由是风的本性"
+ acg_mec_e_archon_events.2.b: "封住他的琴"
+
+ acg_mec_e_archon_events.3.t: "高天之琴"
+ acg_mec_e_archon_events.3.d: "教团请求在都城外办一场持续七日的风花节。费用不轻：酒、花、以及每一座钟楼都要整夜敲响。但风神从不在意形式，祂只在意有没有人抬头看天。"
+ acg_mec_e_archon_events.3.a: "办，办足七日"
+ acg_mec_e_archon_events.3.b: "省下这笔钱"
+
+ # ===== 摩拉克斯（岩）=====
+ acg_mec_e_archon_events.4.t: "契约之神的天平"
+ acg_mec_e_archon_events.4.d: "商人们在港口立起一块新石碑，刻着所有已经兑现的契约。第七天，石碑裂开一道缝，缝里流出的不是水，是金沙。长老说：契约之神在看。也有人说，祂只是在算利息。"
+ acg_mec_e_archon_events.4.a: "立碑为证"
+
+ acg_mec_e_archon_events.5.t: "摩拉的重量"
+ acg_mec_e_archon_events.5.d: "国库见底，而军饷下月就要发。祭司抬来神库的钥匙，说这笔钱本来就是为了这种时候。可契约上写着：神库只借给还得出的人。你看了看账本，又看了看钥匙。"
+ acg_mec_e_archon_events.5.a: "借"
+ acg_mec_e_archon_events.5.b: "不借，先勒紧腰带"
+
+ acg_mec_e_archon_events.6.t: "璃月港的仲裁"
+ acg_mec_e_archon_events.6.d: "两家商会为一条航线的归属吵到总督府，双方都举着契约，两份契约的日期是同一天、同一个时辰。只有神能判。祭司说：判了，就要有人不服。"
+ acg_mec_e_archon_events.6.a: "判给先交货的一家"
+ acg_mec_e_archon_events.6.b: "判给两家共有"
+
+ # ===== 巴尔（雷）=====
+ acg_mec_e_archon_events.7.t: "永恒之愿"
+ acg_mec_e_archon_events.7.d: "雷雨在都城外下了四十天，没有一道雷落在城里。占星官翻遍典籍，只说了一句：将军要的是不变。于是那一夜，所有人都梦见了同一把刀，插在同一个位置。"
+ acg_mec_e_archon_events.7.a: "接受永恒"
+
+ acg_mec_e_archon_events.8.t: "锁国令"
+ acg_mec_e_archon_events.8.d: "外邦商船在海面上排成一线，等着进港。老臣跪在殿前，说开门则乱，闭门则穷。雷电将军的雕像在雨里看着这一切，不置一词——祂从来只回答一个问题：要不要变。"
+ acg_mec_e_archon_events.8.a: "锁"
+ acg_mec_e_archon_events.8.b: "开"
+
+ acg_mec_e_archon_events.9.t: "千手百眼"
+ acg_mec_e_archon_events.9.d: "新的军旗下立着千尊石像，每尊的眼睛都朝向海。军费账目送上来时，将军只写了两个字：值得。财务官在旁边补了一行小字：国库不同意。"
+ acg_mec_e_archon_events.9.a: "铸像，扩军"
+ acg_mec_e_archon_events.9.b: "只铸一尊，意思到了"
+
+ # ===== 布耶尔（草）=====
+ acg_mec_e_archon_events.10.t: "智慧的馈赠"
+ acg_mec_e_archon_events.10.d: "须弥的学者在山顶发现一座从未被打开的书库。门没有锁，只要回答一个问题：你为什么要知道？第一个答题的人答「因为不知道难受」，门开了。里面没有书，只有一排空书架和一张写着「写吧」的字条。"
+ acg_mec_e_archon_events.10.a: "翻开"
+
+ acg_mec_e_archon_events.11.t: "梦境之试"
+ acg_mec_e_archon_events.11.d: "全城的孩子在同一个夜里做了同一个梦：一棵树问他们要不要看看明天。醒来后，一半的孩子会写字了，另一半开始说一种没人听得懂的话。学者们争论了三天，最后一致同意：先别叫醒他们。"
+ acg_mec_e_archon_events.11.a: "入梦求知"
+ acg_mec_e_archon_events.11.b: "封梦，先办实务"
+
+ acg_mec_e_archon_events.12.t: "兰那罗的园圃"
+ acg_mec_e_archon_events.12.d: "林子里的小家伙们答应帮忙，条件是把王家的猎场让出来。它们不种粮食，种的是「会记住事情」的种子。三年后那里会长出一片没人敢砍的森林——因为砍树的人第二天会忘记自己为什么拿斧头。"
+ acg_mec_e_archon_events.12.a: "答应它们"
+ acg_mec_e_archon_events.12.b: "猎场不能给"
+
+ # ===== 芙卡洛斯（水）=====
+ acg_mec_e_archon_events.13.t: "正义的审判"
+ acg_mec_e_archon_events.13.d: "歌剧院的最后一场演出没有演员，只有被告席。被判有罪的是这座城市自己——罪名是「让穷人站在雨里看戏」。判决下来时全场起立，没有人为被告辩护，包括被告。"
+ acg_mec_e_archon_events.13.a: "执行判决"
+
+ acg_mec_e_archon_events.14.t: "歌剧院的判决"
+ acg_mec_e_archon_events.14.d: "一位公爵被指控侵吞赈灾款，证据确凿，但他是三支军团的实际供养人。法官把判决书递到你面前，说：神只问对错，不问代价。窗外的雨下得很有节奏，像在等一个答案。"
+ acg_mec_e_archon_events.14.a: "依法处决"
+ acg_mec_e_archon_events.14.b: "特赦，让他连本带利还钱"
+
+ acg_mec_e_archon_events.15.t: "水神的谢幕"
+ acg_mec_e_archon_events.15.d: "大审判庭要开一场持续三日的公开审判：任何人都可以控告任何人，包括神明自己。祭司说，上一次有人这么干，城市繁荣了整整一代人。他没说的是，上一次主持审判的法官没有活到闭幕。"
+ acg_mec_e_archon_events.15.a: "开审"
+ acg_mec_e_archon_events.15.b: "不必，留着钱修堤"
+
+ # ===== 玛薇卡（火）=====
+ acg_mec_e_archon_events.16.t: "战意燃起"
+ acg_mec_e_archon_events.16.d: "火山口边上的部族把整年的酒都倒进了火里。第二天，征兵站前排到了城门外，来的都是些不该来的年纪。他们说不为钱，只为「打过一次」这件事本身。招募官把名册递给你的手在抖——不是怕，是激动。"
+ acg_mec_e_archon_events.16.a: "收下他们"
+ acg_mec_e_archon_events.16.b: "我们应该为此献上最高的敬意"
+
+ acg_mec_e_archon_events.17.t: "竞技场的挑战"
+ acg_mec_e_archon_events.17.d: "按纳塔的规矩，神与王同场，输的人要把名字交出去。挑战书放在王座上，落款是一个字：火。你不确定这是神的意思，还是祭司的意思——但广场上已经坐满了人，他们只关心一件事：你去不去。"
+ acg_mec_e_archon_events.17.a: "亲自下场"
+ acg_mec_e_archon_events.17.b: "派将代战"
+
+ acg_mec_e_archon_events.18.t: "灰烬中的重生"
+ acg_mec_e_archon_events.18.d: "战场上烧焦的旗子被重新缝了起来，缝线的颜色和原来不一样。老兵的妻子说：旗子能缝，人缝不了。可第二天清晨，那些逃回来的溃兵都站在了旗下，一个不少，像在等一面新的旗。"
+ acg_mec_e_archon_events.18.a: "重铸军团"
+ acg_mec_e_archon_events.18.b: "遣散战士"
+
+ # ===== 瓦沙嘉（冰）=====
+ acg_mec_e_archon_events.19.t: "无神之爱"
+ acg_mec_e_archon_events.19.d: "至冬的冬天今年没有冻死人。不是因为它变暖了——是因为每个村口都多了一间不锁门的屋子，里面堆着柴。没人知道是谁放的，墙上只有一行炭笔字：别谢神，谢人。祭司看了很久，把字擦掉了，又原样写了回去。"
+ acg_mec_e_archon_events.19.a: "继续放柴"
+
+ acg_mec_e_archon_events.20.t: "严寒的考验"
+ acg_mec_e_archon_events.20.d: "开仓就够吃到春天，但军需官说这笔粮是北境三个军团的口粮。他补了一句：如果不开仓，明年征兵的时候，这些村子就不在了。你问他哪个更贵，他说：都贵，只是账期不同。"
+ acg_mec_e_archon_events.20.a: "开仓"
+ acg_mec_e_archon_events.20.b: "留给军队"
+
+ acg_mec_e_archon_events.21.t: "愚人众的效忠"
+ acg_mec_e_archon_events.21.d: "一队穿着黑色大衣的人跪在殿外，领头的说他们只忠于「女皇的意志」，不问女皇是谁。他们带来了三箱金币和一份名单，名单上都是本国贵族——以及每个贵族在哪个房间睡觉。"
+ acg_mec_e_archon_events.21.a: "接纳"
+ acg_mec_e_archon_events.21.b: "拒之门外"
+
+ # ===== 三月信仰 · 恒月 =====
+ acg_mec_e_archon_events.22.t: "恒月当空"
+ acg_mec_e_archon_events.22.d: "四十年来第一次，满月与历法完全对齐。祭司把这一夜称作「神在看账本」。所有积压的争执、地界、婚约，都在这一夜被重新念了一遍——念到第七十条时，两个斗了半辈子的家族当场合账，把地界石搬走了一块。"
+ acg_mec_e_archon_events.22.a: "重订一切"
+
+ acg_mec_e_archon_events.23.t: "月相的裂痕"
+ acg_mec_e_archon_events.23.d: "观星台报告说，月亮缺了一角，而且不会再圆回来。教团分成两派：一派说应当改历，另一派说改历等于承认神明有缺。两边都在你的殿外跪着，跪了三天，谁也不肯先站起来。"
+ acg_mec_e_archon_events.23.a: "改历"
+ acg_mec_e_archon_events.23.b: "不改，等它自己圆"
+
+ acg_mec_e_archon_events.24.t: "月下的誓约"
+ acg_mec_e_archon_events.24.d: "教团要用白银铸一面镜子，把月光引进神殿。造价惊人，但祭司说这面镜子能照出所有违约者的脸——而且他们自己会先看见。你问：那照不出的人呢？祭司说：那就不必照了。"
+ acg_mec_e_archon_events.24.a: "铸"
+ acg_mec_e_archon_events.24.b: "不铸"
+
+ # ===== 三月信仰 · 虹月 =====
+ acg_mec_e_archon_events.25.t: "虹月市集"
+ acg_mec_e_archon_events.25.d: "每月十五，虹月下的市集不收税、不查货、不问来路。今年的市集上出现了一种没人见过的染料：洗不掉，晒不褪。商人们赌咒说它值一座城，而卖染料的老太婆只收铜板，一双袜子，一句好话。"
+ acg_mec_e_archon_events.25.a: "放任市集"
+
+ acg_mec_e_archon_events.26.t: "色彩的诱惑"
+ acg_mec_e_archon_events.26.d: "那种染料会在夜里发光。第一批用它染布的城已经整夜不睡了——人们开始通宵做工，也通宵吵架。医师说再这样下去会出人命，商人说再这样下去会出金子。祭司说虹月从不问人受不受得了。"
+ acg_mec_e_archon_events.26.a: "全国推广"
+ acg_mec_e_archon_events.26.b: "限三城试用"
+
+ acg_mec_e_archon_events.27.t: "虹月之潮"
+ acg_mec_e_archon_events.27.d: "三月的排列在这一年重合，海水被照成七种颜色。商船队请求借这个兆头开一条新航线，赌上全部家当。他们只要一件事：国旗跟着船走。船长说，如果回不来，旗子就留在海上，也算你们的。"
+ acg_mec_e_archon_events.27.a: "押注"
+ acg_mec_e_archon_events.27.b: "稳一点，走老航线"
+
+ # ===== 三月信仰 · 霜月 =====
+ acg_mec_e_archon_events.28.t: "霜月行军"
+ acg_mec_e_archon_events.28.d: "霜月当空的那一夜，全军在雪地里走了六十里，没有一个人掉队，没有一匹马喘气。军医说这不正常，士兵说这很正常——那一夜他们不觉得冷，也不觉得累，只觉得前面还有路。"
+ acg_mec_e_archon_events.28.a: "继续行军"
+
+ acg_mec_e_archon_events.29.t: "寒夜的抉择"
+ acg_mec_e_archon_events.29.d: "霜月教团要求把俘虏全部留在雪地里「交给月亮」。军法官提醒你，按律这些人该做苦役，能修三十年城墙。教团的人说：城墙会塌，月亮不会。两边都在等你开口，俘虏在雪里发抖。"
+ acg_mec_e_archon_events.29.a: "交给月亮"
+ acg_mec_e_archon_events.29.b: "按律做苦役"
+
+ acg_mec_e_archon_events.30.t: "霜月加冕"
+ acg_mec_e_archon_events.30.d: "教团要在最冷的一夜为你加冕。仪式上你要赤手在雪里握住一把剑，直到剑刃结霜。他们说这不是考验勇气，是考验你还能不能感觉到疼——感觉不到的人，不配坐在这个位置上。"
+ acg_mec_e_archon_events.30.a: "受冕"
+ acg_mec_e_archon_events.30.b: "推辞"
+
+ # ============================================================
+ # 事件修正（event_modifiers）
+ # ============================================================
+ acg_mec_e_wind_rising: "风起之时"
+ acg_mec_e_free_song: "自由吟唱"
+ acg_mec_e_windblume_festival: "风花节"
+ acg_mec_e_geo_contract: "岩之契"
+ acg_mec_e_harbor_rule: "港规"
+ acg_mec_e_shared_contract: "共契"
+ acg_mec_e_eternity_vow: "永恒之愿"
+ acg_mec_e_sakoku: "锁国"
+ acg_mec_e_open_port: "开港"
+ acg_mec_e_thunder_punishment: "雷罚"
+ acg_mec_e_pragmatism: "务实"
+ acg_mec_e_aranara_garden: "兰那罗的园圃"
+ acg_mec_e_fontaine_justice: "枫丹的公正"
+ acg_mec_e_grand_tribunal: "大审判庭"
+ acg_mec_e_battle_spirit: "战意"
+ acg_mec_e_pyro_levy: "征募热潮"
+ acg_mec_e_ash_rebirth: "灰烬重生"
+ acg_mec_e_godless_love: "无神之爱"
+ acg_mec_e_winter_relief: "冬赈"
+ acg_mec_e_closed_door: "关门"
+ acg_mec_e_heng_moon_ward: "恒月之护"
+ acg_mec_e_new_calendar: "新历"
+ acg_mec_e_old_calendar: "守历"
+ acg_mec_e_moon_mirror_pact: "月镜之约"
+ acg_mec_e_rainbow_market: "虹月市集"
+ acg_mec_e_sleepless_city: "不夜城"
+ acg_mec_e_limited_dye: "限量"
+ acg_mec_e_rainbow_route: "虹月航路"
+ acg_mec_e_frost_march: "霜月行军"
+ acg_mec_e_corvee: "苦役"
+ acg_mec_e_frost_coronation: "霜月加冕"
+ acg_mec_e_unrest_10y: "民怨"

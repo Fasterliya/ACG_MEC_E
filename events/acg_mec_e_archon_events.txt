@@ -1,0 +1,1019 @@
+# ACG_MEC_E - 原神信仰事件
+# 设计稿：analysis/archon_events_edit_v2.html（用户 2025-11-25 定稿 14 件改稿 + 其余原案）
+# 修正定义：common/event_modifiers/acg_mec_e_archon_modifiers.txt
+# 本地化：decode_localisation/acg_mec_e_archon_l_english.yml（.t/.d/.a/.b 全套）
+#
+# ============================================================================
+# 通用触发规范（30 件完全一致）
+# ============================================================================
+# 1) 判定：religion + has_personal_deity。<七神> = acg_mec_e_seven_archons，
+#    <三月> = acg_mec_e_moon_goddess；deity key 见 common/personal_deities/00_acg_mec_e_deities.txt
+# 2) 频率：mean_time_to_happen = { months = 120 }，即持有该神后按 10 年 MTTH 判定。
+#    全部不加 fire_only_once —— 冷却过去后同一事件可再次触发。
+# 3) 防连跳（共用互斥 flag）：
+#      immediate 里 set_country_flag = acg_mec_e_had_deity_event_flag
+#      trigger   里 acg_mec_e_deity_event_gate = yes（查 flag，定义在
+#                common/scripted_triggers/acg_mec_e_archon_triggers.txt）
+#      after     里 clr_country_flag = acg_mec_e_had_deity_event_flag
+#    语义：任意一件信仰事件在场时，其余 29 件一律不判定。
+# 4) 为什么 gate 不是单纯 NOT = { has_country_flag }：
+#    set_country_flag 的签名是 <string>（不是 block），写不了 days 过期参数
+#    —— 见 EU4 文档 effects.txt:47「set_country_flag = <string>」。
+#    共用 flag 一旦遇上 after 未执行（读档中断 / 事件被其他途径关闭）就会永久挂着，
+#    整个 mod 的 30 件信仰事件全停。故 gate 用 OR 兜底：flag 已挂满 30 天仍未清，
+#    视为漏清、允许重新判定，最坏情况只是某件事件多弹一次。
+# 5) 效果里"全国叛乱 +1 · 10 年"这类代价走 acg_mec_e_unrest_10y 修正。
+# ============================================================================
+
+namespace = acg_mec_e_archon_events
+
+# ===================== 巴巴托斯（风） =====================
+
+# A-1 恩泽：风起之时
+country_event = {
+	id = acg_mec_e_archon_events.1
+	title = acg_mec_e_archon_events.1.t
+	desc = acg_mec_e_archon_events.1.d
+	picture = COURT_INTRIGUE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_barbatos
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.1.a
+		add_country_modifier = { name = acg_mec_e_wind_rising duration = 3650 }
+		add_mil_power = 25
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# A-2 抉择：无主之歌
+country_event = {
+	id = acg_mec_e_archon_events.2
+	title = acg_mec_e_archon_events.2.t
+	desc = acg_mec_e_archon_events.2.d
+	picture = COURT_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_barbatos
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.2.a
+		add_stability = -1
+		add_country_modifier = { name = acg_mec_e_free_song duration = 3650 }
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.2.b
+		add_prestige = 10
+		add_legitimacy = 5
+		add_adm_power = 25
+		ai_chance = { factor = 2 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# A-3 仪式：高天之琴
+country_event = {
+	id = acg_mec_e_archon_events.3
+	title = acg_mec_e_archon_events.3.t
+	desc = acg_mec_e_archon_events.3.d
+	picture = FEAST_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_barbatos
+		acg_mec_e_deity_event_gate = yes
+		treasury = 200
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.3.a
+		add_treasury = -200
+		add_country_modifier = { name = acg_mec_e_windblume_festival duration = 5475 }
+		add_dip_power = 50
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.3.b
+		add_adm_power = 25
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 摩拉克斯（岩） =====================
+
+# B-1 恩泽：契约之神的天平
+country_event = {
+	id = acg_mec_e_archon_events.4
+	title = acg_mec_e_archon_events.4.t
+	desc = acg_mec_e_archon_events.4.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_morax
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.4.a
+		add_country_modifier = { name = acg_mec_e_geo_contract duration = 4380 }
+		add_adm_power = 25
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# B-2 抉择：摩拉的重量
+country_event = {
+	id = acg_mec_e_archon_events.5
+	title = acg_mec_e_archon_events.5.t
+	desc = acg_mec_e_archon_events.5.d
+	picture = ECONOMY_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_morax
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.5.a
+		add_treasury = 200
+		add_stability = -1
+		add_legitimacy = -5
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.5.b
+		add_adm_power = 50
+		add_legitimacy = 10
+		add_prestige = 5
+		ai_chance = { factor = 2 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# B-3 仪式：璃月港的仲裁
+country_event = {
+	id = acg_mec_e_archon_events.6
+	title = acg_mec_e_archon_events.6.t
+	desc = acg_mec_e_archon_events.6.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_morax
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.6.a
+		add_country_modifier = { name = acg_mec_e_harbor_rule duration = 5475 }
+		add_mercantilism = 2
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.6.b
+		add_country_modifier = { name = acg_mec_e_shared_contract duration = 4380 }
+		add_adm_power = 50
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 巴尔（雷） =====================
+
+# C-1 恩泽：永恒之愿
+country_event = {
+	id = acg_mec_e_archon_events.7
+	title = acg_mec_e_archon_events.7.t
+	desc = acg_mec_e_archon_events.7.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_baal
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.7.a
+		add_country_modifier = { name = acg_mec_e_eternity_vow duration = 5475 }
+		add_mil_power = 25
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# C-2 抉择：锁国令
+country_event = {
+	id = acg_mec_e_archon_events.8
+	title = acg_mec_e_archon_events.8.t
+	desc = acg_mec_e_archon_events.8.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_baal
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.8.a
+		add_country_modifier = { name = acg_mec_e_sakoku duration = 5475 }
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.8.b
+		add_country_modifier = { name = acg_mec_e_open_port duration = 5475 }
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# C-3 仪式：千手百眼
+country_event = {
+	id = acg_mec_e_archon_events.9
+	title = acg_mec_e_archon_events.9.t
+	desc = acg_mec_e_archon_events.9.d
+	picture = LAND_MILITARY_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_baal
+		acg_mec_e_deity_event_gate = yes
+		mil_power = 50
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.9.a
+		add_mil_power = -50
+		add_country_modifier = { name = acg_mec_e_thunder_punishment duration = 4380 }
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.9.b
+		add_prestige = 5
+		add_mil_power = 25
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 布耶尔（草） =====================
+
+# D-1 恩泽：智慧的馈赠（三系点数各 50；条件：国家发展度 ≥ 100）
+country_event = {
+	id = acg_mec_e_archon_events.10
+	title = acg_mec_e_archon_events.10.t
+	desc = acg_mec_e_archon_events.10.d
+	picture = BIG_BOOK_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_buer
+		acg_mec_e_deity_event_gate = yes
+		development = 100
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.10.a
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# D-2 抉择：梦境之试
+country_event = {
+	id = acg_mec_e_archon_events.11
+	title = acg_mec_e_archon_events.11.t
+	desc = acg_mec_e_archon_events.11.d
+	picture = INVENTION_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_buer
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.11.a
+		add_army_tradition = 25
+		add_navy_tradition = 25
+		add_stability = -1
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.11.b
+		add_stability = 1
+		add_country_modifier = { name = acg_mec_e_pragmatism duration = 3650 }
+		ai_chance = { factor = 2 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# D-3 仪式：兰那罗的园圃
+# 注意：设计稿第三条效果「行政点数 +25、创新度 +5」——「创新度」在本机 1.37.5 的
+# effects.txt 中查不到 add_innovations（grep 全 game 目录 0 命中），无法发放，
+# 故折算为 行政点数 +25（合计 add_adm_power = 50），保留「行政 +25」原值不变。
+country_event = {
+	id = acg_mec_e_archon_events.12
+	title = acg_mec_e_archon_events.12.t
+	desc = acg_mec_e_archon_events.12.d
+	picture = FORESTS_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_buer
+		acg_mec_e_deity_event_gate = yes
+		treasury = 100
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.12.a
+		add_treasury = -100
+		add_country_modifier = { name = acg_mec_e_aranara_garden duration = 7300 }
+		add_adm_power = 50
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.12.b
+		add_mil_power = 50
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 芙卡洛斯（水） =====================
+
+# E-1 恩泽：正义的审判（全境清荒废 + 拉繁荣）
+# 说明：EU4 无「全国荒废度」效果，add_prosperity / add_devastation 均为 province 作用域
+# （effects.txt province scope；原版用例 00_scripted_effects.txt:94 add_devastation = 80），
+# 故走 every_owned_province 逐省执行。繁荣度上限 100，add_prosperity = 100 即满。
+country_event = {
+	id = acg_mec_e_archon_events.13
+	title = acg_mec_e_archon_events.13.t
+	desc = acg_mec_e_archon_events.13.d
+	picture = IMPORTANT_STATUE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_focalors
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.13.a
+		every_owned_province = {
+			add_devastation = -100
+			add_prosperity = 100
+		}
+		add_country_modifier = { name = acg_mec_e_fontaine_justice duration = 5475 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# E-2 抉择：歌剧院的判决
+country_event = {
+	id = acg_mec_e_archon_events.14
+	title = acg_mec_e_archon_events.14.t
+	desc = acg_mec_e_archon_events.14.d
+	picture = COURT_INTRIGUE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_focalors
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.14.a
+		add_legitimacy = 10
+		add_adm_power = 50
+		add_country_modifier = { name = acg_mec_e_unrest_10y duration = 3650 }
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.14.b
+		add_treasury = 300
+		add_dip_power = 50
+		ai_chance = { factor = 2 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# E-3 仪式：水神的谢幕
+country_event = {
+	id = acg_mec_e_archon_events.15
+	title = acg_mec_e_archon_events.15.t
+	desc = acg_mec_e_archon_events.15.d
+	picture = COURT_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_focalors
+		acg_mec_e_deity_event_gate = yes
+		treasury = 250
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.15.a
+		add_treasury = -250
+		add_country_modifier = { name = acg_mec_e_grand_tribunal duration = 7300 }
+		add_adm_power = 50
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.15.b
+		add_adm_power = 25
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 玛薇卡（火） =====================
+
+# F-1 恩泽：战意燃起
+# 「获得 2 年人力」= acg_mec_e_pyro_levy（730 天，人力恢复 +100%，规模无关，等效两年恢复量）
+country_event = {
+	id = acg_mec_e_archon_events.16
+	title = acg_mec_e_archon_events.16.t
+	desc = acg_mec_e_archon_events.16.d
+	picture = LAND_MILITARY_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_mavuika
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.16.a
+		add_country_modifier = { name = acg_mec_e_battle_spirit duration = 4380 }
+		add_mil_power = 50
+		add_country_modifier = { name = acg_mec_e_pyro_levy duration = 730 }
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.16.b
+		add_army_tradition = 15
+		add_army_professionalism = 0.05
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# F-2 抉择：竞技场的挑战
+country_event = {
+	id = acg_mec_e_archon_events.17
+	title = acg_mec_e_archon_events.17.t
+	desc = acg_mec_e_archon_events.17.d
+	picture = MILITARY_CAMP_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_mavuika
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.17.a
+		add_mil_power = 200
+		add_prestige = 15
+		add_stability = -1
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.17.b
+		add_mil_power = 50
+		add_army_tradition = 10
+		add_prestige = -5
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# F-3 仪式：灰烬中的重生
+country_event = {
+	id = acg_mec_e_archon_events.18
+	title = acg_mec_e_archon_events.18.t
+	desc = acg_mec_e_archon_events.18.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_mavuika
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.18.a
+		add_country_modifier = { name = acg_mec_e_ash_rebirth duration = 3650 }
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.18.b
+		add_stability = 1
+		add_adm_power = 25
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 瓦沙嘉（冰） =====================
+
+# G-1 恩泽：无神之爱
+country_event = {
+	id = acg_mec_e_archon_events.19
+	title = acg_mec_e_archon_events.19.t
+	desc = acg_mec_e_archon_events.19.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_washajia
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.19.a
+		add_country_modifier = { name = acg_mec_e_godless_love duration = 5475 }
+		add_adm_power = 25
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# G-2 抉择：严寒的考验
+country_event = {
+	id = acg_mec_e_archon_events.20
+	title = acg_mec_e_archon_events.20.t
+	desc = acg_mec_e_archon_events.20.d
+	picture = FARMING_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_washajia
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.20.a
+		add_treasury = -150
+		add_stability = 1
+		add_country_modifier = { name = acg_mec_e_winter_relief duration = 3650 }
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.20.b
+		add_mil_power = 75
+		add_stability = -1
+		add_country_modifier = { name = acg_mec_e_unrest_10y duration = 3650 }
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# G-3 抉择：愚人众的效忠
+# 「获得 3 队步兵」= capital_scope 里 add_unit_construction（province 作用域，
+# 结构见原版 common/scripted_effects/00_scripted_effects.txt:4273 amount/type/speed/cost）
+country_event = {
+	id = acg_mec_e_archon_events.21
+	title = acg_mec_e_archon_events.21.t
+	desc = acg_mec_e_archon_events.21.d
+	picture = COURT_INTRIGUE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_seven_archons
+		has_personal_deity = acg_mec_e_deity_washajia
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.21.a
+		capital_scope = {
+			add_unit_construction = {
+				amount = 3
+				type = infantry
+				speed = 1
+				cost = 0
+			}
+		}
+		add_army_tradition = 10
+		add_stability = -1
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.21.b
+		add_dip_power = 75
+		add_legitimacy = 5
+		add_country_modifier = { name = acg_mec_e_closed_door duration = 3650 }
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 三月信仰 · 恒月 =====================
+
+# H-1 恩泽：恒月当空
+country_event = {
+	id = acg_mec_e_archon_events.22
+	title = acg_mec_e_archon_events.22.t
+	desc = acg_mec_e_archon_events.22.d
+	picture = NORSE_TEMPLE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_hengyue
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.22.a
+		if = {
+			limit = { stability < 3 }
+			add_stability = 1
+		}
+		add_legitimacy = 10
+		add_country_modifier = { name = acg_mec_e_heng_moon_ward duration = 4380 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# H-2 抉择：月相的裂痕
+country_event = {
+	id = acg_mec_e_archon_events.23
+	title = acg_mec_e_archon_events.23.t
+	desc = acg_mec_e_archon_events.23.d
+	picture = IMPORTANT_STATUE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_hengyue
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.23.a
+		add_adm_power = 75
+		add_country_modifier = { name = acg_mec_e_new_calendar duration = 5475 }
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.23.b
+		if = {
+			limit = { stability < 3 }
+			add_stability = 1
+		}
+		add_legitimacy = 10
+		add_country_modifier = { name = acg_mec_e_old_calendar duration = 3650 }
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# H-3 仪式：月下的誓约
+country_event = {
+	id = acg_mec_e_archon_events.24
+	title = acg_mec_e_archon_events.24.t
+	desc = acg_mec_e_archon_events.24.d
+	picture = NORSE_TEMPLE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_hengyue
+		acg_mec_e_deity_event_gate = yes
+		treasury = 200
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.24.a
+		add_treasury = -200
+		add_country_modifier = { name = acg_mec_e_moon_mirror_pact duration = 7300 }
+		add_adm_power = 25
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.24.b
+		add_stability = 1
+		add_adm_power = 25
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 三月信仰 · 虹月 =====================
+
+# I-1 恩泽：虹月市集（「商人 +1」并入 acg_mec_e_rainbow_market 修正，12 年）
+country_event = {
+	id = acg_mec_e_archon_events.25
+	title = acg_mec_e_archon_events.25.t
+	desc = acg_mec_e_archon_events.25.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_hongyue
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.25.a
+		add_treasury = 100
+		add_country_modifier = { name = acg_mec_e_rainbow_market duration = 4380 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# I-2 抉择：色彩的诱惑
+country_event = {
+	id = acg_mec_e_archon_events.26
+	title = acg_mec_e_archon_events.26.t
+	desc = acg_mec_e_archon_events.26.d
+	picture = ECONOMY_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_hongyue
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.26.a
+		add_treasury = 200
+		add_country_modifier = { name = acg_mec_e_sleepless_city duration = 5475 }
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.26.b
+		add_adm_power = 50
+		add_country_modifier = { name = acg_mec_e_limited_dye duration = 4380 }
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# I-3 仪式：虹月之潮
+country_event = {
+	id = acg_mec_e_archon_events.27
+	title = acg_mec_e_archon_events.27.t
+	desc = acg_mec_e_archon_events.27.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_hongyue
+		acg_mec_e_deity_event_gate = yes
+		treasury = 300
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.27.a
+		add_treasury = -300
+		add_treasury = 200
+		add_country_modifier = { name = acg_mec_e_rainbow_route duration = 7300 }
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.27.b
+		add_adm_power = 50
+		add_treasury = 50
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# ===================== 三月信仰 · 霜月 =====================
+
+# J-1 恩泽：霜月行军
+country_event = {
+	id = acg_mec_e_archon_events.28
+	title = acg_mec_e_archon_events.28.t
+	desc = acg_mec_e_archon_events.28.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_shuangyue
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.28.a
+		add_army_tradition = 10
+		add_mil_power = 25
+		add_country_modifier = { name = acg_mec_e_frost_march duration = 4380 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# J-2 抉择：寒夜的抉择
+country_event = {
+	id = acg_mec_e_archon_events.29
+	title = acg_mec_e_archon_events.29.t
+	desc = acg_mec_e_archon_events.29.d
+	picture = PLAGUE_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_shuangyue
+		acg_mec_e_deity_event_gate = yes
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.29.a
+		add_mil_power = 100
+		add_army_tradition = 5
+		add_stability = -1
+		add_legitimacy = -10
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.29.b
+		add_adm_power = 50
+		add_country_modifier = { name = acg_mec_e_corvee duration = 4380 }
+		ai_chance = { factor = 2 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}
+
+# J-3 仪式：霜月加冕
+country_event = {
+	id = acg_mec_e_archon_events.30
+	title = acg_mec_e_archon_events.30.t
+	desc = acg_mec_e_archon_events.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	trigger = {
+		religion = acg_mec_e_moon_goddess
+		has_personal_deity = acg_mec_e_deity_shuangyue
+		acg_mec_e_deity_event_gate = yes
+		treasury = 150
+	}
+	mean_time_to_happen = { months = 120 }
+
+	immediate = { set_country_flag = acg_mec_e_had_deity_event_flag }
+
+	option = {
+		name = acg_mec_e_archon_events.30.a
+		add_treasury = -150
+		add_legitimacy = 15
+		add_prestige = 10
+		add_mil_power = 50
+		add_country_modifier = { name = acg_mec_e_frost_coronation duration = 7300 }
+		ai_chance = { factor = 2 }
+	}
+
+	option = {
+		name = acg_mec_e_archon_events.30.b
+		add_adm_power = 25
+		add_stability = 1
+		ai_chance = { factor = 1 }
+	}
+
+	after = { clr_country_flag = acg_mec_e_had_deity_event_flag }
+}

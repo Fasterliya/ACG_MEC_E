@@ -78,8 +78,8 @@ acg_mec_e_deity_buer = {
 	potential = { religion = acg_mec_e_seven_archons }
 	trigger = {}
 
-	development_cost = -0.20
-	global_institution_spread = 0.10
+	technology_cost = -0.10
+	idea_cost = -0.10
 
 	effect = {}
 	removed_effect = {}
@@ -101,7 +101,7 @@ acg_mec_e_deity_focalors = {
 	potential = { religion = acg_mec_e_seven_archons }
 	trigger = {}
 
-	production_efficiency = 0.20
+	development_cost = -0.20
 	global_monthly_devastation = -2
 
 	effect = {}

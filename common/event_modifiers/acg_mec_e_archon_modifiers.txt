@@ -1,0 +1,186 @@
+# ACG_MEC_E - 原神信仰事件：国家修正
+# 供 events/acg_mec_e_archon_events.txt 的 30 个信仰事件调用。
+# 命名前缀 acg_mec_e_ 不与其他 mod 的 event_modifiers 冲突（本目录其余文件的 key 无此前缀）。
+# 持续时间写在事件侧 add_country_modifier 的 duration 参数，此处只定义修正内容。
+# 说明：修正值全部照抄 analysis/archon_events_edit_v2.html 里用户 11-25 定稿的数据。
+
+# ===================== 巴巴托斯（风） =====================
+
+acg_mec_e_wind_rising = {
+	movement_speed = 0.15
+	land_attrition = -0.20
+}
+
+acg_mec_e_free_song = {
+	global_unrest = -2
+	idea_cost = -0.05
+}
+
+acg_mec_e_windblume_festival = {
+	land_morale = 0.10
+	diplomatic_reputation = 1
+}
+
+# ===================== 摩拉克斯（岩） =====================
+
+acg_mec_e_geo_contract = {
+	global_tax_modifier = 0.10
+	build_cost = -0.10
+}
+
+acg_mec_e_harbor_rule = {
+	trade_efficiency = 0.15
+	merchants = 1
+}
+
+acg_mec_e_shared_contract = {
+	production_efficiency = 0.10
+	stability_cost_modifier = -0.10
+}
+
+# ===================== 巴尔（雷） =====================
+
+acg_mec_e_eternity_vow = {
+	discipline = 0.05
+	stability_cost_modifier = -0.10
+}
+
+acg_mec_e_sakoku = {
+	global_unrest = -3
+	stability_cost_modifier = -0.15
+}
+
+acg_mec_e_open_port = {
+	trade_efficiency = 0.15
+	merchants = 1
+}
+
+acg_mec_e_thunder_punishment = {
+	shock_damage = 0.15
+	land_morale = 0.05
+}
+
+# ===================== 布耶尔（草） =====================
+
+acg_mec_e_pragmatism = {
+	development_cost = -0.05
+	production_efficiency = 0.15
+}
+
+acg_mec_e_aranara_garden = {
+	global_institution_spread = 0.33
+	technology_cost = -0.05
+}
+
+# ===================== 芙卡洛斯（水） =====================
+
+acg_mec_e_fontaine_justice = {
+	production_efficiency = 0.10
+	stability_cost_modifier = -0.10
+}
+
+acg_mec_e_grand_tribunal = {
+	global_tax_modifier = 0.10
+	global_unrest = -2
+}
+
+# ===================== 玛薇卡（火） =====================
+
+acg_mec_e_battle_spirit = {
+	manpower_recovery_speed = 0.20
+	reinforce_speed = 0.10
+}
+
+# 「获得 2 年人力」的落地形态：两年内人力恢复翻倍，规模无关。
+# 玩家在 730 天内拿到的恢复量 ≈ 平时两年的量，等效于「提前发两年人力」。
+acg_mec_e_pyro_levy = {
+	manpower_recovery_speed = 1.0
+}
+
+acg_mec_e_ash_rebirth = {
+	reinforce_speed = 0.15
+	land_morale = 0.15
+}
+
+# ===================== 瓦沙嘉（冰） =====================
+
+acg_mec_e_godless_love = {
+	global_unrest = -3
+	stability_cost_modifier = -0.15
+}
+
+acg_mec_e_winter_relief = {
+	global_unrest = -2
+}
+
+acg_mec_e_closed_door = {
+	global_unrest = -1
+}
+
+# ===================== 恒月 =====================
+
+acg_mec_e_heng_moon_ward = {
+	global_unrest = -2
+	stability_cost_modifier = -0.10
+}
+
+acg_mec_e_new_calendar = {
+	technology_cost = -0.10
+	idea_cost = -0.10
+}
+
+acg_mec_e_old_calendar = {
+	stability_cost_modifier = -0.15
+}
+
+acg_mec_e_moon_mirror_pact = {
+	global_tax_modifier = 0.10
+	global_unrest = -2
+}
+
+# ===================== 虹月 =====================
+
+acg_mec_e_rainbow_market = {
+	trade_efficiency = 0.10
+	production_efficiency = 0.10
+	merchants = 1
+}
+
+acg_mec_e_sleepless_city = {
+	production_efficiency = 0.15
+	global_unrest = 2
+}
+
+acg_mec_e_limited_dye = {
+	production_efficiency = 0.05
+	stability_cost_modifier = -0.10
+}
+
+acg_mec_e_rainbow_route = {
+	trade_efficiency = 0.20
+	merchants = 2
+}
+
+# ===================== 霜月 =====================
+
+acg_mec_e_frost_march = {
+	land_morale = 0.10
+	reinforce_speed = 0.10
+}
+
+acg_mec_e_corvee = {
+	build_cost = -0.15
+	development_cost = -0.10
+}
+
+acg_mec_e_frost_coronation = {
+	discipline = 0.05
+	land_morale = 0.10
+}
+
+# ===================== 通用代价修正 =====================
+
+# 「全国叛乱 +1 · 10 年」：E-2 依法处决、G-2 留给军队 两处共用
+acg_mec_e_unrest_10y = {
+	global_unrest = 1
+}
