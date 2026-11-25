@@ -13,3 +13,4 @@ FGL = "countries/Fuguanglin.txt" #浮光林
 FSL = "countries/Fisalia.txt" #翡萨烈
 MTL = "countries/Montelli.txt" #莫塔里
 YHH = "countries/OrderOfTheDeep.txt" #隐海修会
+MND = "countries/Mondstadt.txt" #蒙德

@@ -4,6 +4,7 @@
  acg_snezhnaya: "ó¬Q"
  acg_fontaine: "«g9N"
  acg_nodkrai: "*c·VaS±ƒ"
+ acg_mondstadt: "™„·V"
 
  # ===== Teyvat religion (ACG_MEC_E) =====
  acg_mec_e_teyvat_group: "Ðcætyr"
@@ -15,15 +16,15 @@
 
  # ----- Seven Archons -----
  acg_mec_e_deity_barbatos: "ôTôTXb¯e"
- acg_mec_e_deity_barbatos_desc: "ê1u„vÎ˜^y8naƒŽNØšŸSNR‘†™KNô•ÿŠbLkðXN1ŒŠNT’dTÛV¹e0áOÖN„vºNLˆ›QôfëVÿmNôfÂa—VUOöeå‹0"
+ acg_mec_e_deity_barbatos_desc: "ê1u„vÎ˜^y8naƒŽNØšŸSNR‘†™KNô•ÿŠbLkðXN1ŒŠNT’dTÛV¹e0áOÖN„vºNLˆ›QôfëVÿ_NôfÂa—VUOöeå‹0"
  acg_mec_e_deity_morax: "idÉbKQ¯e"
- acg_mec_e_deity_morax_desc: "QY¦uKN^yåNÐxówËz“Š0ÖN„vPRlQr™X0ÿQów0ˆR¦uÿÎW™XÔk“ŠŠôflx0"
+ acg_mec_e_deity_morax_desc: "QY¦uKN^yåNÐxówËz“Š0ÖN„vPRlQ{™X0ÿQów0ˆR¦uÿÎW™XÔk“ŠŠôflx0"
  acg_mec_e_deity_baal: "ôTS"
  acg_mec_e_deity_baal_desc: "8lR`KN÷–¬`ŽNR›SKNNÿ©e­eNR¨RGd0ÖN„v›Q5–R‚Y÷–¹uÿN¹RNNß‘u0"
  acg_mec_e_deity_buer: "^6wS"
  acg_mec_e_deity_buer_desc: "zfgaKN^y(Wè–—g„vg4YNOí‹ÿåwÆ‹ÏPä……N7heánfNu˜0"
  acg_mec_e_deity_focalors: "™‚aSm¯e"
- acg_mec_e_deity_focalors_desc: "¡R2RKN^yPW(W4lU^KNTÿNR&îvÈuS(Wno4lÌ‘n—r0"
+ acg_mec_e_deity_focalors_desc: "¡R2RKN^yPW(W4lU^KNTÿNR&îvÈuS(Wno4lÌ‘n—{0"
  acg_mec_e_deity_mavuika: "›s‡…aS"
  acg_mec_e_deity_mavuika_desc: "b‰NKNkp(WRƒŸSNÃqçpÿkp^yPˆN„v=fÃqçp0R•^„v›Rl0"
  acg_mec_e_deity_washajia: "æt™l	V"
@@ -31,24 +32,24 @@
 
  # ----- Three Moons -----
  acg_mec_e_deity_hengyue: "R`g"
- acg_mec_e_deity_hengyue_desc: "R`8^KNgˆRNwçe¦uÿPˆNáO’VN¨RGd„véy^NScƒ0"
+ acg_mec_e_deity_hengyue_desc: "R`8^KNgˆR@wçe¦uÿPˆNáO’VN¨RGd„véy^NScƒ0"
  acg_mec_e_deity_hongyue: "y†g"
  acg_mec_e_deity_hongyue_desc: "y†ggqÁ‰FUïNÓNê^ÿáQ	g²NfY†v	gyY„vPqV0"
  acg_mec_e_deity_shuangyue: "—g"
- acg_mec_e_deity_shuangyue_desc: "—gINNgONˆRYÿyY„váO’V(Wê–¿uKNNèxR0"
+ acg_mec_e_deity_shuangyue_desc: "—gIN@gONˆRYÿyY„váO’V(Wê–¿uKNNèxR0"
 
  # ----- Decisions -----
  acg_mec_e_rechoose_seven_archon_title: "Í‘ébN^y"
  acg_mec_e_rechoose_seven_archon: "Í‘ébN^y"
- acg_mec_e_rechoose_seven_archon_desc: "NMOgb?eTgbNCg0ýV=fâeØSÿINmyKN^y¦NïSôff^yµ^êS	gNµ^ÿEeÍ‘ébKNT‰˜QÇŒNASt^MbýwQ!k9ebc0dk>NNmcckßu0"
+ acg_mec_e_rechoose_seven_archon_desc: "NMOgb?eTgbNCg0ýV=fâeØSÿINmyKN^y¦NïSôff  ^yµ^êS	gNµ^ÿEeÍ‘ébKNT‰˜QÇŒNASt^MbýwQ!k9ebc0dk>NN_cckßu0"
  acg_mec_e_rechoose_moon_title: "Í‘ébgøv"
  acg_mec_e_rechoose_moon: "Í‘ébgøv"
- acg_mec_e_rechoose_moon_desc: "	Ngnlÿgøv	gÈvN0áO’VïS(WR`g0y†g0—gKNô•Í‘šRINmyKN^yÍ‘ébKNT‰˜QÇŒNASt^MbýwQ!k9ebc0dk>NNmcckßu0"
+ acg_mec_e_rechoose_moon_desc: "	Ngnlÿgøv	gÈvN0áO’VïS(WR`g0y†g0—gKNô•Í‘šRINmyKN^y  Í‘ébKNT‰˜QÇŒNASt^MbýwQ!k9ebc0dk>NN_cckßu0"
  acg_mec_e_rechoose_deity_cooldown_tooltip: "ÝN!kÍ‘éb^yfòTán 20 t^ÿ·QtS 20 t^ÿÏk 20 t^êSýwÍ‘ébN!k	ÿ"
 
  # ----- Event: Seven Archons -----
  acg_mec_e_teyvat_religion.1.t: "^yµ^KNMR"
- acg_mec_e_teyvat_religion.1.d: "myøSìNgcNwNšg^yËVê(W6–N0Î˜0©S0÷–0Iƒ04l0kp0°QNMOgb?eTêIr…VNw`O„v	éb0^yµ^êS	gNµ^ÿw^y„vwÃV	gP–0"
+ acg_mec_e_teyvat_religion.1.d: "myøSìNgc@wNšg^y½Vê(W6–N0Î˜0©S0÷–0Iƒ04l0kp0°Q  NMOgb?eTêI{…V@w`O„v	éb0^yµ^êS	gNµ^ÿw^y„vwÃV	gP–0"
  acg_mec_e_teyvat_religion.1.a: "Î˜^yôTôTXb¯e"
  acg_mec_e_teyvat_religion.1.b: "©S^yidÉbKQ¯e"
  acg_mec_e_teyvat_religion.1.c: "÷–^yôTS"
@@ -59,23 +60,23 @@
 
  # ----- Event: Three Moons -----
  acg_mec_e_teyvat_religion.2.t: "	NgSVzz"
- acg_mec_e_teyvat_religion.2.d: "gr‚K„(WmyiWNÿ	NÍ‘IQUf|Vdk²NàS0R`g0y†g0—g	NÐY¹YT	gIN.VÿwINmyêSýw	gNMO0"
+ acg_mec_e_teyvat_religion.2.d: "gr‚=„(Wmy[WNÿ	NÍ‘IQUf|Vdk²NàS0R`g0y†g0—g  	NÐY¹YT	gIN.VÿwINmyêSýw	gNMO0"
  acg_mec_e_teyvat_religion.2.a: "R`g"
  acg_mec_e_teyvat_religion.2.b: "y†g"
  acg_mec_e_teyvat_religion.2.c: "—g"
 
  # ----- Rebels: seven archons -----
  acg_mec_e_seven_archons_rebels_demand: "9e—R $COUNTRYNAME$"
- acg_mec_e_seven_archons_rebels_demand_desc: "—RYeÛS›Q:N $RELIGION$ wb0ÖNìN‰BlbìNb²‹vQóØš0WMOÿbóSjPbk9e—Rÿ©‹ÖNìN‰RY—0W<yÜb0"
+ acg_mec_e_seven_archons_rebels_demand_desc: "—RYeÛS›Q:N $RELIGION$ wb0ÖNìN‰BlbìNb²‹vQóØš0WMOÿbóS\Pbk9e—Rÿ©‹ÖNìN‰RY—0W<yÜb0"
  acg_mec_e_seven_archons_rebels_title: "—RYe"
  acg_mec_e_seven_archons_rebels_name: "$RELIGION$ ÂráOw"
- acg_mec_e_seven_archons_rebels_desc: "—RYeÂrípwŽVŽV(WVYe’Vßu»l„vwýNw‹N0ÖNìN‰.O­dáOðNÿv^é`bNRNáOw0"
+ acg_mec_e_seven_archons_rebels_desc: "—RYeÂrípw€V€V(WVYe’Vßu»l„vwýNw‹N0ÖNìN‰.O­dáOðNÿv^é`bNRNáOw0"
  acg_mec_e_seven_archons_rebels_army: "$RELIGION$ ›Q"
 
  # ----- Rebels: moon goddess -----
  acg_mec_e_moon_goddess_rebels_demand: "9e—R $COUNTRYNAME$"
- acg_mec_e_moon_goddess_rebels_demand_desc: "—RYeÛS›Q:N $RELIGION$ wb0ÖNìN‰BlbìNb²‹vQóØš0WMOÿbóSjPbk9e—Rÿ©‹ÖNìN‰RY—0W<yÜb0"
+ acg_mec_e_moon_goddess_rebels_demand_desc: "—RYeÛS›Q:N $RELIGION$ wb0ÖNìN‰BlbìNb²‹vQóØš0WMOÿbóS\Pbk9e—Rÿ©‹ÖNìN‰RY—0W<yÜb0"
  acg_mec_e_moon_goddess_rebels_title: "—RYe"
  acg_mec_e_moon_goddess_rebels_name: "$RELIGION$ ÂráOw"
- acg_mec_e_moon_goddess_rebels_desc: "—RYeÂrípwŽVŽV(WVYe’Vßu»l„vwýNw‹N0ÖNìN‰.O­dáOðNÿv^é`bNRNáOw0"
+ acg_mec_e_moon_goddess_rebels_desc: "—RYeÂrípw€V€V(WVYe’Vßu»l„vwýNw‹N0ÖNìN‰.O­dáOðNÿv^é`bNRNáOw0"
  acg_mec_e_moon_goddess_rebels_army: "$RELIGION$ ›Q"

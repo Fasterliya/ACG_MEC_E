@@ -7,6 +7,7 @@ acg_teyvat_unit_tag_trigger = {
 		tag = SVZ
 		tag = NDK
 		tag = FTN
+		tag = MND
 	}
 }
 

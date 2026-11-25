@@ -71,4 +71,31 @@ acg_teyvat_group = {	#提瓦特
 			Olesya
 		}
 	}
+	acg_mondstadt = {	#蒙德
+		primary = MND
+		dynasty_names = {
+			Mondstadt
+			Gunnhildr
+			Lawrence
+			Ragnvindr
+		}
+		male_names = {
+			Venti
+			Diluc
+			Kaeya
+			Albedo
+			Mika
+			Bennett
+			Razor
+		}
+		female_names = {
+			Jean
+			Amber
+			Lisa
+			Klee
+			Eula
+			Noelle
+			Barbara
+		}
+	}
 }

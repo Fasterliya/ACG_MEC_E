@@ -24,6 +24,8 @@ acgr_republic = {
 				JNB_protectorate_parliament_reform
 				JNB_grea_republic
 				Fujiwara_Mokou_government_reform
+				###ACG MEC E
+				MND_knights_of_favonius_reform
 			}
 		}
 		racial_policy = {

@@ -1,0 +1,48 @@
+# ============================================================
+# 蒙德 MND 专属政府改革：西风骑士团
+# 骨架：NDK_government_reforms.txt（lock_level_when_selected +
+#       potential 只认已持有 -> 别国拿不到、拿到也换不掉）
+# 无选举：照原版 president_for_life_reform:3929-3942 顶层 has_term_election = no
+# 统治者不领军：照原版 faith_and_power_reform:1860 顶层 rulers_can_be_generals
+# 阶级键名：enables_estate_brahmins（001_brahmins.txt）/ enables_estate_maratha（002_maratha.txt）
+# ============================================================
+
+MND_knights_of_favonius_reform = {
+	lock_level_when_selected = yes
+	icon = "ACG_MEC_E_MND_reform_1"
+	potential = {
+		OR = {
+			has_reform = MND_knights_of_favonius_reform
+			have_had_reform = MND_knights_of_favonius_reform
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	has_term_election = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	modifiers = {
+		stability_cost_modifier = -0.10
+		num_accepted_cultures = 2
+		culture_conversion_cost = -0.10
+		tolerance_heathen = 1
+		nobles_influence_modifier = -0.40
+		nobles_loyalty_modifier = -0.10
+		brahmins_hindu_influence_modifier = 0.25
+	}
+	custom_attributes = {
+		enables_estate_brahmins = yes
+		enables_estate_maratha = yes
+		disables_estate_church = yes
+	}
+	effect = {
+		custom_tooltip = MND_tt_barbatos_creed
+		hidden_effect = {
+			MND_sync_barbatos_creed_effect = yes
+		}
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}

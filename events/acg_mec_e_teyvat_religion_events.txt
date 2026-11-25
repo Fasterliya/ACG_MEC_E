@@ -19,42 +19,49 @@ country_event = {
 		name = acg_mec_e_teyvat_religion.1.a
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_barbatos } }
 		change_personal_deity = acg_mec_e_deity_barbatos
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.1.b
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_morax } }
 		change_personal_deity = acg_mec_e_deity_morax
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.1.c
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_baal } }
 		change_personal_deity = acg_mec_e_deity_baal
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.1.d
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_buer } }
 		change_personal_deity = acg_mec_e_deity_buer
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.1.e
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_focalors } }
 		change_personal_deity = acg_mec_e_deity_focalors
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.1.f
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_mavuika } }
 		change_personal_deity = acg_mec_e_deity_mavuika
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.1.g
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_washajia } }
 		change_personal_deity = acg_mec_e_deity_washajia
+		MND_sync_barbatos_creed_effect = yes
 	}
 }
 
@@ -74,17 +81,20 @@ country_event = {
 		name = acg_mec_e_teyvat_religion.2.a
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_hengyue } }
 		change_personal_deity = acg_mec_e_deity_hengyue
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.2.b
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_hongyue } }
 		change_personal_deity = acg_mec_e_deity_hongyue
+		MND_sync_barbatos_creed_effect = yes
 	}
 
 	option = {
 		name = acg_mec_e_teyvat_religion.2.c
 		trigger = { NOT = { has_personal_deity = acg_mec_e_deity_shuangyue } }
 		change_personal_deity = acg_mec_e_deity_shuangyue
+		MND_sync_barbatos_creed_effect = yes
 	}
 }

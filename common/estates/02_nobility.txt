@@ -22,6 +22,7 @@ estate_nobles =
 		NOT = { has_country_flag = Elzia_missions_events_41_1_flag }
 		if = {
 			limit = {
+				NOT = { tag = MND }
 				NOT = { religion_group = muslim }
 				NOT = { religion = sikhism }
 				NOT = { religion = buddhism }
