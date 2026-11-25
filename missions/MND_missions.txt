@@ -1,0 +1,1050 @@
+# ============================================================
+# 蒙德 MND 任务树
+# slot = 列（1 最左 / 5 最右）；position = 行（1 最上）
+# 关系：1_1→1_2；2_1→2_2→2_3；1_3 前置 2_2；3_1→3_2→3_3，3_3 另需 2_2
+# ============================================================
+
+MND_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = MND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ── 1_1 风起之地
+	MND_missions_1_1 = {
+		icon = "mission_early_game_buildings"
+		position = 1
+		trigger = {
+			total_development = 50
+		}
+		effect = {
+			change_government_reform_progress = 75
+		}
+	}
+
+	# ── 1_2 千风一缕
+	MND_missions_1_2 = {
+		icon = "mission_high_income"
+		position = 2
+		required_missions = {
+			MND_missions_1_1
+		}
+		trigger = {
+			total_development = 1000
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_qianfeng_yilv
+				duration = -1
+			}
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+		}
+	}
+
+	# ── 1_3 晨曦酒庄（前置 2_2）
+	MND_missions_1_3 = {
+		icon = "mission_high_income"
+		position = 3
+		required_missions = {
+			MND_missions_2_2
+		}
+		trigger = {
+			monthly_income = 25
+			num_of_owned_provinces_with = {
+				value = 5
+				MND_has_any_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wine_industry
+				duration = -1
+			}
+		}
+	}
+	# ── 1_4 蒙德城迪卢克（前置 1_3）
+	MND_missions_1_4 = {
+		icon = "mission_have_manufactories"
+		position = 4
+		required_missions = {
+			MND_missions_1_3
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = workshop
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_diluc
+				duration = -1
+			}
+			if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 15
+						has_building = workshop
+					}
+				}
+				add_country_modifier = {
+					name = MND_dawn_winery
+					duration = -1
+				}
+			}
+		}
+	}
+
+	# ── 1_5 西风教会的祈祷（无前置，第 5 行独立根）
+	MND_missions_1_5 = {
+		icon = "mission_european_church"
+		position = 5
+		trigger = {
+			has_estate_privilege = estate_brahmins_development_of_temples
+			has_estate_privilege = estate_brahmins_clerical_education
+			has_estate_privilege = estate_brahmins_legitimacy_to_rule
+			has_estate_privilege = estate_brahmins_for_the_faith
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_church_of_favonius
+				duration = -1
+			}
+		}
+	}
+
+	# ── 1_6 天空之琴（前置 1_5）
+	MND_missions_1_6 = {
+		icon = "mission_hands_praying"
+		position = 6
+		required_missions = {
+			MND_missions_1_5
+		}
+		trigger = {
+			capital_scope = {
+				has_building = temple
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_sky_lyre
+				duration = -1
+			}
+			custom_tooltip = {
+				text = MND_missions_1_6_bonus_yes
+				NOT = {
+					any_owned_province = {
+						is_in_capital_area = yes
+						NOT = { has_building = temple }
+					}
+				}
+			}
+			custom_tooltip = {
+				text = MND_missions_1_6_bonus_no
+				any_owned_province = {
+					is_in_capital_area = yes
+					NOT = { has_building = temple }
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_province = {
+							is_in_capital_area = yes
+							NOT = { has_building = temple }
+						}
+					}
+				}
+				add_country_modifier = {
+					name = MND_wind_blessing
+					duration = -1
+				}
+			}
+		}
+	}
+
+}
+
+MND_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = MND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ── 2_1 代理团长琴
+	MND_missions_2_1 = {
+		icon = "mission_assemble_an_army"
+		position = 1
+		trigger = {
+			adm_power = 100
+			has_leaders = {
+				value = 1
+				type = general
+				include_monarch = no
+				include_heir = no
+			}
+		}
+		effect = {
+			97 = {
+				add_permanent_province_modifier = {
+					name = MND_mondstadt_city
+					duration = -1
+				}
+			}
+		}
+	}
+
+	# ── 2_2 整饬骑士团
+	MND_missions_2_2 = {
+		icon = "mission_italian_condottiere"
+		position = 2
+		required_missions = {
+			MND_missions_2_1
+		}
+		trigger = {
+			stability = 3
+		}
+		effect = {
+			add_stability = -1
+			add_country_modifier = {
+				name = MND_together_as_one
+				duration = -1
+			}
+		}
+	}
+
+	# ── 2_3 侦察小队
+	MND_missions_2_3 = {
+		icon = "mission_build_up_to_force_limit"
+		position = 3
+		required_missions = {
+			MND_missions_2_2
+		}
+		trigger = {
+			army_size_percentage = 0.8
+			cavalry_fraction = 0.25
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_terrain_survey
+				duration = 5475
+			}
+			add_army_tradition = 10
+		}
+	}
+	# ── 2_4 骑兵队长凯亚（前置 2_3 + 3_3）
+	MND_missions_2_4 = {
+		icon = "mission_assemble_an_army"
+		position = 4
+		required_missions = {
+			MND_missions_2_3
+			MND_missions_3_3
+		}
+		trigger = {
+			army_tradition = 41
+			num_of_cavalry = 21
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_kaeya_freeze
+				duration = -1
+			}
+		}
+	}
+
+	# ── 2_5 蒙德的秘密武器（无前置，第 5 行独立根）
+	MND_missions_2_5 = {
+		icon = "mission_landsknecht_soldier"
+		position = 5
+		trigger = {
+			mil_power = 200
+			army_tradition = 25
+		}
+		effect = {
+			add_mil_power = -200
+			add_army_tradition = -20
+			add_country_modifier = {
+				name = MND_spark_knight
+				duration = -1
+			}
+		}
+	}
+
+	# ── 2_6 龙脊雪山（前置 2_5）
+	MND_missions_2_6 = {
+		icon = "mission_arabian_fort"
+		position = 6
+		required_missions = {
+			MND_missions_2_5
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_fort_building_trigger = yes
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = MND_wind_where_it_blows
+				duration = -1
+			}
+		}
+	}
+
+	# ── 2_7 魔龙杜林的童话故事（前置 2_6）
+	MND_missions_2_7 = {
+		icon = "mission_gain_mana"
+		position = 7
+		required_missions = {
+			MND_missions_2_6
+		}
+		trigger = {
+			has_country_modifier = MND_creation_law
+			total_development = 501
+			num_of_owned_provinces_with = {
+				value = 6
+				has_building = magic_building_1_1
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_durin
+				duration = -1
+			}
+		}
+	}
+
+}
+
+MND_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = MND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ── 3_1 稳定旧贵族
+	MND_missions_3_1 = {
+		icon = "mission_arabian_fort"
+		position = 1
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 50
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_treasury = 75
+		}
+	}
+
+	# ── 3_2 浪花骑士优菈
+	MND_missions_3_2 = {
+		icon = "mission_assemble_an_army"
+		position = 2
+		required_missions = {
+			MND_missions_3_1
+		}
+		trigger = {
+			army_professionalism = 0.20
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wave_knight
+				duration = -1
+			}
+		}
+	}
+
+	# ── 3_3 清扫风啸山坡（前置 3_2 + 2_2）
+	MND_missions_3_3 = {
+		icon = "mission_cannons_firing"
+		position = 3
+		required_missions = {
+			MND_missions_3_2
+			MND_missions_2_2
+		}
+		trigger = {
+			army_size = 50
+			capital_scope = {
+				development = 24
+			}
+		}
+		effect = {
+			add_treasury = 200
+			add_country_modifier = {
+				name = MND_mondstadt_stability
+				duration = 3650
+			}
+		}
+	}
+	# ── 3_4 图书馆管理员丽莎（前置 4_3）
+	MND_missions_3_4 = {
+		icon = "mission_early_modern_university"
+		position = 4
+		required_missions = {
+			MND_missions_4_3
+		}
+		trigger = {
+			MND_any_full_idea_group_trigger = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_sumuru_genius
+				duration = -1
+			}
+		}
+	}
+
+	# ── 3_5 蒲公英骑士（前置 3_4 + 2_4）
+	MND_missions_3_5 = {
+		icon = "mission_cossack_cavalry"
+		position = 5
+		required_missions = {
+			MND_missions_3_4
+			MND_missions_2_4
+		}
+		trigger = {
+			army_professionalism = 0.25
+			army_tradition = 11
+			treasury = 1001
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_dandelion_knight
+				duration = -1
+			}
+			add_army_professionalism = 0.05
+			add_prestige = 10
+		}
+	}
+
+	# ── 3_6 远征军的讯息（前置 3_5）
+	MND_missions_3_6 = {
+		icon = "mission_teutonic_knights"
+		position = 6
+		required_missions = {
+			MND_missions_3_5
+		}
+		trigger = {
+			is_year = 1500
+		}
+		effect = {
+			add_treasury = 500
+		}
+	}
+
+	# ── 3_7 米卡的归来（前置 3_6）
+	MND_missions_3_7 = {
+		icon = "mission_landsknecht_soldier"
+		position = 7
+		required_missions = {
+			MND_missions_3_6
+		}
+		trigger = {
+			army_professionalism = 0.41
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_scout_mika
+				duration = -1
+			}
+		}
+	}
+
+}
+
+MND_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = MND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ── 4_1 听凭风的指引
+	MND_missions_4_1 = {
+		icon = "mission_build_up_to_force_limit"
+		position = 1
+		trigger = {
+			land_forcelimit = 100
+		}
+		effect = {
+			low_countries_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	# ── 4_2 保障蒙德城安全（前置 4_1 + 3_1）
+	MND_missions_4_2 = {
+		icon = "mission_italian_condottiere"
+		position = 2
+		required_missions = {
+			MND_missions_4_1
+			MND_missions_3_1
+		}
+		trigger = {
+			monthly_income = 10
+			stability = 1
+		}
+		effect = {
+			97 = {
+				if = {
+					limit = { has_building = fort_15th }
+					add_building = fort_16th
+				}
+				else_if = {
+					limit = { has_building = fort_16th }
+					add_building = fort_17th
+				}
+				else_if = {
+					limit = { has_building = fort_17th }
+					add_building = fort_18th
+				}
+				else = {
+					add_building = fort_15th
+				}
+			}
+			add_country_modifier = {
+				name = MND_mondstadt_security
+				duration = 3650
+			}
+		}
+	}
+
+	# ── 4_3 蒙德图书馆（前置 4_2）
+	MND_missions_4_3 = {
+		icon = "mission_early_modern_university"
+		position = 3
+		required_missions = {
+			MND_missions_4_2
+		}
+		trigger = {
+			has_institution = Basic_Laws_of_Magic
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_library
+				duration = -1
+			}
+		}
+	}
+
+	# ── 4_4 蒙德的恢复（前置 5_3）
+	MND_missions_4_4 = {
+		icon = "mission_early_game_buildings"
+		position = 4
+		required_missions = {
+			MND_missions_5_3
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				is_prosperous = yes
+			}
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = MND_rebuilding
+				duration = 3650
+			}
+		}
+	}
+	# ── 4_5 北德意志的固有领土（前置 5_4）
+	MND_missions_4_5 = {
+		icon = "mission_empire"
+		position = 5
+		required_missions = {
+			MND_missions_5_4
+		}
+		provinces_to_highlight = {
+			region = north_german_region
+		}
+		trigger = {
+			num_of_cities = 75
+		}
+		effect = {
+			north_german_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+}
+
+MND_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ── 5_2 清扫敌对势力（前置 4_1）
+	MND_missions_5_2 = {
+		icon = "mission_cannons_firing"
+		position = 2
+		required_missions = {
+			MND_missions_4_1
+		}
+		trigger = {
+			num_of_cities = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_guidance
+				duration = -1
+			}
+		}
+	}
+
+	# ── 5_3 种满蒲公英花（前置 5_2）
+	MND_missions_5_3 = {
+		icon = "mission_have_manufactories"
+		position = 3
+		required_missions = {
+			MND_missions_5_2
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 17
+				region = low_countries_region
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_dandelion
+				duration = -1
+			}
+			add_splendor = 200
+		}
+	}
+
+	# ── 5_4 蒙德的势力范围（前置 5_3）
+	MND_missions_5_4 = {
+		icon = "mission_empire"
+		position = 4
+		required_missions = {
+			MND_missions_5_3
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = north_rhine_area
+				area = lower_rhineland_area
+				area = upper_rhineland_area
+			}
+		}
+		trigger = {
+			total_development = 251
+			num_of_cities = 30
+			land_forcelimit = 61
+			treasury = 500
+		}
+		effect = {
+			north_rhine_area = {
+				add_permanent_claim = ROOT
+			}
+			lower_rhineland_area = {
+				add_permanent_claim = ROOT
+			}
+			upper_rhineland_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	# ── 5_5 莱茵兰的归绥（前置 5_4）
+	MND_missions_5_5 = {
+		icon = "mission_conquer_5_states"
+		position = 5
+		required_missions = {
+			MND_missions_5_4
+		}
+		provinces_to_highlight = {
+			region = south_german_region
+		}
+		trigger = {
+			north_rhine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_rhineland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_rhineland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			south_german_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	# ── 5_1 女仆诺艾尔（无前置）
+	MND_missions_5_1 = {
+		icon = "mission_noble_council"
+		position = 1
+		trigger = {
+			num_of_generals = 3
+			army_tradition = 10
+			prestige = 51
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_maid_noelle
+				duration = -1
+			}
+		}
+	}
+
+	# ── 5_6 德意志的皇帝（前置 4_5 + 5_5）
+	MND_missions_5_6 = {
+		icon = "mission_empire"
+		position = 6
+		required_missions = {
+			MND_missions_4_5
+			MND_missions_5_5
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 95
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+			}
+		}
+		effect = {
+			set_government_rank = 3
+			add_prestige = 100
+			add_power_projection = {
+				type = MND_mission_reward
+				amount = 100
+			}
+			add_country_modifier = {
+				name = MND_mondstadt_unification
+				duration = -1
+			}
+		}
+	}
+
+}
+
+MND_missions_6 = {
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = MND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ── 7_1 阿贝多的炼金工坊
+	MND_missions_6_1 = {
+		icon = "mission_have_manufactories"
+		position = 1
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_building = magic_building_1_1
+			}
+			97 = {
+				development = 26
+			}
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = acgr_magic_government_mechanic_1
+				power_type = acgr_magic_government
+				value = 25
+			}
+			add_country_modifier = {
+				name = MND_albedo
+				duration = -1
+			}
+		}
+	}
+
+	# ── 6_2 创生之法（前置 6_1）
+	MND_missions_6_2 = {
+		icon = "mission_gain_mana"
+		position = 2
+		required_missions = {
+			MND_missions_6_1
+		}
+		trigger = {
+			has_government_power = {
+				mechanic_type = acgr_magic_government_mechanic_1
+				power_type = acgr_magic_government
+				value = 51
+			}
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = acgr_magic_government_mechanic_1
+				power_type = acgr_magic_government
+				value = -50
+			}
+			add_country_modifier = {
+				name = MND_creation_law
+				duration = -1
+			}
+		}
+	}
+
+
+	# ── 6_3 魔女会援助（无前置）
+	MND_missions_6_3 = {
+		icon = "mission_gain_mana"
+		position = 3
+		trigger = {
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			add_adm_power = 200
+		}
+	}
+
+	# ── 6_4 魔女茶会（前置 6_3）
+	MND_missions_6_4 = {
+		icon = "mission_gain_mana"
+		position = 4
+		required_missions = {
+			MND_missions_6_3
+		}
+		trigger = {
+			monthly_income = 51
+			has_government_power = {
+				mechanic_type = acgr_magic_government_mechanic_1
+				power_type = acgr_magic_government
+				value = 51
+			}
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = acgr_magic_government_mechanic_1
+				power_type = acgr_magic_government
+				value = 33
+			}
+			add_country_modifier = {
+				name = MND_witch_coven
+				duration = -1
+			}
+		}
+	}
+
+
+	# ── 6_5 闪击枫丹计划（前置 5_4）
+	MND_missions_6_5 = {
+		icon = "mission_iberian_conquistador"
+		position = 5
+		required_missions = {
+			MND_missions_5_4
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = normandy_area
+				area = picardy_area
+				area = ile_de_france_area
+				area = champagne_area
+				area = loire_area
+			}
+		}
+		trigger = {
+			has_leader_with = {
+				general = yes
+				manuever = 5
+			}
+		}
+		effect = {
+			normandy_area = {
+				add_permanent_claim = ROOT
+			}
+			picardy_area = {
+				add_permanent_claim = ROOT
+			}
+			ile_de_france_area = {
+				add_permanent_claim = ROOT
+			}
+			champagne_area = {
+				add_permanent_claim = ROOT
+			}
+			loire_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	# ── 6_6 枫丹的归顺（前置 6_5）
+	MND_missions_6_6 = {
+		icon = "mission_iberian_conquistador"
+		position = 6
+		required_missions = {
+			MND_missions_6_5
+		}
+		trigger = {
+			normandy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = FTN }
+		}
+		effect = {
+			normandy_area = {
+				add_claim = ROOT
+			}
+			picardy_area = {
+				add_claim = ROOT
+			}
+			ile_de_france_area = {
+				add_claim = ROOT
+			}
+			champagne_area = {
+				add_claim = ROOT
+			}
+			loire_area = {
+				add_claim = ROOT
+			}
+			orleans_area = {
+				add_claim = ROOT
+			}
+			poitou_area = {
+				add_claim = ROOT
+			}
+			guyenne_area = {
+				add_claim = ROOT
+			}
+			languedoc_area = {
+				add_claim = ROOT
+			}
+			provence_area = {
+				add_claim = ROOT
+			}
+			savoy_dauphine_area = {
+				add_claim = ROOT
+			}
+			lorraine_area = {
+				add_claim = ROOT
+			}
+			bourgogne_area = {
+				add_claim = ROOT
+			}
+			west_burgundy_area = {
+				add_claim = ROOT
+			}
+			pyrenees_area = {
+				add_claim = ROOT
+			}
+			massif_central_area = {
+				add_claim = ROOT
+			}
+		}
+	}
+
+	# ── 6_7 征服法兰西（前置 6_6）
+	MND_missions_6_7 = {
+		icon = "mission_conquer_50_development"
+		position = 7
+		required_missions = {
+			MND_missions_6_6
+		}
+		provinces_to_highlight = {
+			region = france_region
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 35
+				region = france_region
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_hydro_archon_blessing
+				duration = -1
+			}
+		}
+	}
+
+}
+
+MND_missions_7 = {
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = MND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ── 7_1 东风之龙（独立任务，无前置）
+	MND_missions_7_1 = {
+		icon = "mission_cannons_firing"
+		position = 1
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+		}
+	}
+
+	# ── 7_2 南风之狮（独立任务，无前置）
+	MND_missions_7_2 = {
+		icon = "mission_landsknecht_soldier"
+		position = 2
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+		}
+	}
+
+	# ── 7_3 西风之鹰（独立任务，无前置）
+	MND_missions_7_3 = {
+		icon = "mission_steppe_warriors"
+		position = 3
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+		}
+	}
+
+	# ── 7_4 北风之狼（独立任务，无前置）
+	MND_missions_7_4 = {
+		icon = "mission_cossack_cavalry"
+		position = 4
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+		}
+	}
+}

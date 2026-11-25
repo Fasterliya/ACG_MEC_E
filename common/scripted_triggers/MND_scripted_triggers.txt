@@ -1,0 +1,65 @@
+# 蒙德 MND —— 任务树用到的剧本触发器
+# 省份作用域：该省是否建有任意一种常规建筑（不含要塞类，避免开局要塞白送）
+
+MND_has_any_building_trigger = {
+	OR = {
+		has_building = marketplace
+		has_building = workshop
+		has_building = temple
+		has_building = barracks
+		has_building = courthouse
+		has_building = dock
+		has_building = shipyard
+		has_building = regimental_camp
+		has_building = trade_depot
+		has_building = cathedral
+		has_building = university
+		has_building = grand_shipyard
+		has_building = training_fields
+		has_building = stock_exchange
+		has_building = counting_house
+		has_building = town_hall
+		has_building = drydock
+		has_building = conscription_center
+		has_building = manufactory
+		has_building = wharf
+		has_building = weapons
+		has_building = textile
+		has_building = plantations
+		has_building = tradecompany
+		has_building = farm_estate
+		has_building = mills
+		has_building = furnace
+	}
+}
+
+# 国家作用域：是否已闭门（点满）任意一个可选理念组
+# 组名取自原版 full_idea_group 的实际用例（24 组）
+MND_any_full_idea_group_trigger = {
+	OR = {
+		full_idea_group = administrative_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = court_ideas
+		full_idea_group = mercenary_ideas
+		full_idea_group = infrastructure_ideas
+		full_idea_group = horde_gov_ideas
+		full_idea_group = indigenous_ideas
+	}
+}
