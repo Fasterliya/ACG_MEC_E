@@ -136,22 +136,6 @@ MND_missions_1 = {
 				name = MND_sky_lyre
 				duration = -1
 			}
-			custom_tooltip = {
-				text = MND_missions_1_6_bonus_yes
-				NOT = {
-					any_owned_province = {
-						is_in_capital_area = yes
-						NOT = { has_building = temple }
-					}
-				}
-			}
-			custom_tooltip = {
-				text = MND_missions_1_6_bonus_no
-				any_owned_province = {
-					is_in_capital_area = yes
-					NOT = { has_building = temple }
-				}
-			}
 			if = {
 				limit = {
 					NOT = {
@@ -161,10 +145,14 @@ MND_missions_1 = {
 						}
 					}
 				}
+				custom_tooltip = MND_missions_1_6_bonus_yes
 				add_country_modifier = {
 					name = MND_wind_blessing
 					duration = -1
 				}
+			}
+			else = {
+				custom_tooltip = MND_missions_1_6_bonus_no
 			}
 		}
 	}
