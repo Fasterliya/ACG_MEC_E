@@ -157,6 +157,37 @@ MND_missions_1 = {
 		}
 	}
 
+	# ── 1_7 天空下的芭芭拉（前置 1_6）
+	MND_missions_1_7 = {
+		icon = "mission_hands_praying"
+		position = 7
+		required_missions = {
+			MND_missions_1_6
+		}
+		trigger = {
+			has_personal_deity = acg_mec_e_deity_barbatos
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_sister_barbara
+				duration = -1
+			}
+			if = {
+				limit = {
+					has_personal_deity = acg_mec_e_deity_barbatos
+				}
+				custom_tooltip = MND_missions_1_7_bonus_yes
+				add_country_modifier = {
+					name = MND_barbara_prayer
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = MND_missions_1_7_bonus_no
+			}
+		}
+	}
+
 }
 
 MND_missions_2 = {
@@ -308,6 +339,35 @@ MND_missions_2 = {
 		effect = {
 			add_country_modifier = {
 				name = MND_durin
+				duration = -1
+			}
+		}
+	}
+
+	# ── 2_8 杜林的化形（前置 2_7）
+	MND_missions_2_8 = {
+		icon = "mission_gain_mana"
+		position = 8
+		required_missions = {
+			MND_missions_2_7
+		}
+		trigger = {
+			treasury = 1000
+			has_government_power = {
+				mechanic_type = acgr_magic_government_mechanic_1
+				power_type = acgr_magic_government
+				value = 50
+			}
+		}
+		effect = {
+			add_treasury = -500
+			add_government_power = {
+				mechanic_type = acgr_magic_government_mechanic_1
+				power_type = acgr_magic_government
+				value = -50
+			}
+			add_country_modifier = {
+				name = MND_dragoon
 				duration = -1
 			}
 		}
