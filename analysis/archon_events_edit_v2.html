@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="dsh-htmlui" content="store=archon_events">
+<title>七神 &amp; 三月 · 事件效果编辑台 v2</title>
+<style>
+  :root{
+    --bg:#0d1016; --bg2:#131822; --bg3:#1a2130; --line:#262f3f;
+    --ink:#e7edf6; --ink2:#9aa8bd; --ink3:#6b7993;
+    --gold:#e8c479; --cyan:#63d2e8; --green:#7ed6a5; --red:#f08090; --warn:#ffcf6b;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;font-size:14px;line-height:1.6}
+  #app{display:flex;flex-direction:column;height:100vh}
+  header{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#161d29,#0f141d);flex-wrap:wrap}
+  header h1{font-size:14.5px;margin:0;letter-spacing:.05em;font-weight:600}
+  header h1 span{color:var(--gold)}
+  .stat{font-size:12px;color:var(--ink2);border:1px solid var(--line);border-radius:99px;padding:2px 10px}
+  .stat b{color:var(--gold);font-weight:600}
+  .stat.w b{color:var(--warn)}
+  .grow{flex:1}
+  button{font:inherit;font-size:12.5px;color:var(--ink);background:var(--bg3);border:1px solid var(--line);
+    border-radius:8px;padding:5px 11px;cursor:pointer;transition:.15s}
+  button:hover{border-color:#3b4a63;background:#222c3d}
+  button.primary{background:linear-gradient(180deg,#2b3a52,#1d2739);border-color:#3f5573;color:#fff}
+  button.primary:hover{border-color:var(--gold);color:var(--gold)}
+  button.approve{background:linear-gradient(180deg,#26402f,#1a2a20);border-color:#3c6a4d;color:#cdf0da}
+  #body{display:flex;flex:1;min-height:0}
+  nav{width:236px;flex:0 0 236px;border-right:1px solid var(--line);overflow-y:auto;padding:8px 8px 90px;background:#0f141d}
+  .navsec{font-size:11px;letter-spacing:.16em;color:var(--ink3);padding:12px 10px 4px}
+  .navitem{display:flex;align-items:center;gap:9px;padding:6px 10px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--ink2)}
+  .navitem:hover{background:#17202c;color:var(--ink)}
+  .navitem.on{background:#1d2839;color:var(--ink);box-shadow:inset 2px 0 0 var(--gold)}
+  .dot{width:8px;height:8px;border-radius:99px;flex:0 0 8px}
+  .navitem .cnt{margin-left:auto;font-size:11px;color:var(--ink3)}
+  .navitem .cnt.done{color:var(--green)}
+  .navitem .cnt.w{color:var(--warn)}
+  main{flex:1;overflow-y:auto;padding:18px 26px 130px;min-width:0}
+  .dhead{margin:2px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .dhead .k{font-size:11.5px;letter-spacing:.2em;color:var(--ink3)}
+  .dhead h2{margin:5px 0 3px;font-size:21px}
+  .dhead .sub{color:var(--ink2);font-size:13px}
+  .tipbox{background:#111a24;border:1px solid #2b4152;border-radius:11px;padding:12px 16px;margin-bottom:16px}
+  .tipbox summary{cursor:pointer;font-size:12.5px;color:var(--cyan);letter-spacing:.05em;outline:none}
+  .tipbox ul{margin:8px 0 0;padding-left:18px;font-size:13px;color:#c6d2e4}
+  .tipbox li{margin:3px 0}
+  .tipbox code{color:#8fb4d8;background:#0d1620;padding:1px 5px;border-radius:4px;font-size:12px}
+  .tipbox pre{margin:10px 0 0;background:#0b1219;border:1px solid #22303f;border-radius:8px;padding:10px 12px;
+    font-family:ui-monospace,Consolas,monospace;font-size:11.8px;color:#9fc4dd;overflow-x:auto;line-height:1.6;white-space:pre}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px 12px;margin-bottom:16px}
+  .card.edited{border-color:#4a5f3c;box-shadow:0 0 0 1px rgba(232,196,121,.12)}
+  .chead{display:flex;align-items:center;gap:9px;margin-bottom:6px;flex-wrap:wrap}
+  .idx{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;color:var(--ink3)}
+  .flag{font-family:ui-monospace,Consolas,monospace;font-size:11px;color:#7fa8c8;background:#0e1721;
+    border:1px solid #22303f;border-radius:5px;padding:1px 7px}
+  .kind{font-size:11px;padding:1px 8px;border-radius:5px;border:1px solid;letter-spacing:.05em}
+  .kind.bless{color:var(--green);border-color:#33513f;background:#14201a}
+  .kind.choice{color:var(--cyan);border-color:#2b4a55;background:#131f24}
+  .kind.rite{color:var(--gold);border-color:#4d4126;background:#1d1a12}
+  input.title-in{flex:1;min-width:170px;background:#0f1620;border:1px solid transparent;border-radius:6px;
+    color:#eef4ff;font:inherit;font-size:16px;font-weight:600;padding:2px 6px}
+  input.title-in:hover{border-color:#2c3a4d}
+  input.title-in:focus{outline:none;border-color:#42607f;background:#0b1219}
+  .lbl{font-size:10.5px;letter-spacing:.22em;color:var(--ink3);margin:11px 0 5px}
+  .flavor{background:#101722;border-left:2px solid #2c3d54;border-radius:0 8px 8px 0;padding:9px 13px;
+    color:#c6d2e4;font-size:13.4px;line-height:1.8}
+  .warnbox{display:flex;gap:8px;align-items:flex-start;margin-top:10px;background:#1e1a10;border:1px solid #4a3d1e;
+    border-radius:8px;padding:7px 11px;font-size:12.4px;color:#e8d9a6}
+  .warnbox b{color:var(--warn);flex:0 0 auto}
+  .opt{border:1px solid var(--line);border-radius:9px;padding:9px 11px 7px;margin-top:8px;background:#141b26}
+  .opt .orow{display:flex;align-items:center;gap:8px}
+  .opt .lead{color:var(--cyan);font-size:13px;font-weight:700;flex:0 0 auto}
+  input.oname{flex:1;background:#0f1620;border:1px solid #202b3a;border-radius:6px;color:#dfe8f5;
+    font:inherit;font-size:13px;font-weight:600;padding:3px 8px}
+  input.oname:focus{outline:none;border-color:#42607f}
+  .eff{list-style:none;margin:7px 0 0;padding:0}
+  .eff li{display:flex;align-items:center;gap:6px;margin:4px 0}
+  .tp{flex:0 0 auto;width:34px;padding:2px 0;font-size:11px;text-align:center;border-radius:6px;cursor:pointer;
+    background:#0e1721;border:1px solid #22303f;color:var(--ink3)}
+  .tp.g{color:var(--green);border-color:#33513f}
+  .tp.b{color:var(--red);border-color:#4a2f36}
+  .tp.n{color:var(--ink2)}
+  input.effin{flex:1;background:#0e1721;border:1px solid #1e2a38;border-radius:6px;color:#c9d6e8;
+    font:inherit;font-size:12.8px;padding:3px 8px}
+  input.effin:focus{outline:none;border-color:#42607f;background:#0b1219}
+  .del{flex:0 0 auto;padding:1px 7px;font-size:12px;color:#7d8ba1;background:transparent;border-color:transparent}
+  .del:hover{color:var(--red);border-color:#4a2f36;background:#1c1418}
+  .optfoot{display:flex;gap:6px;margin-top:6px}
+  .optfoot button{font-size:11.5px;padding:2px 9px;color:var(--ink3)}
+  .cond{margin-top:9px;font-size:12px;color:var(--ink3)}
+  .cond code{color:#8fb4d8;background:#101722;padding:1px 5px;border-radius:4px;font-size:11.5px}
+  footer{position:fixed;left:0;right:0;bottom:0;background:rgba(13,17,24,.97);border-top:1px solid var(--line);
+    padding:9px 16px;display:flex;gap:12px;align-items:flex-end;backdrop-filter:blur(6px)}
+  footer textarea{min-height:36px;height:36px}
+  textarea{width:100%;background:#0f1620;color:var(--ink);border:1px solid var(--line);
+    border-radius:8px;padding:7px 10px;font:inherit;font-size:12.8px;resize:vertical}
+  textarea:focus{outline:none;border-color:#42607f}
+  .toast{position:fixed;right:16px;bottom:74px;background:#1d2839;border:1px solid var(--gold);color:var(--gold);
+    padding:8px 13px;border-radius:9px;font-size:12.5px;opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none}
+  .toast.on{opacity:1;transform:none}
+  .hint{font-size:11.5px;color:var(--ink3);margin-top:5px}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>原神 · <span>信仰事件效果编辑台 v2</span></h1>
+    <div class="stat">事件 <b>30</b></div>
+    <div class="stat">本轮改动 <b id="s-edit">0</b></div>
+    <div class="stat w">待你定 <b id="s-warn">0</b></div>
+    <div class="grow"></div>
+    <button id="btn-filter">只看本轮改动</button>
+    <button id="btn-warn">只看待定项</button>
+    <button id="btn-reset">撤销本轮改动</button>
+    <button class="primary" id="btn-submit">提交改稿</button>
+    <button class="approve" id="btn-approve">全部通过 · 开始写脚本</button>
+  </header>
+
+  <div id="body">
+    <nav id="nav"></nav>
+    <main id="main"></main>
+  </div>
+
+  <footer>
+    <div class="grow">
+      <textarea id="global" placeholder="全局意见（数值尺度 / 共用冷却 / 疑点怎么定…）"></textarea>
+      <div class="hint">v2 基准 = 你 11-25 提交的 14 件改稿；flag 已统一为共用 <code>acg_mec_e_had_deity_event_flag</code>。改动自动留档。</div>
+    </div>
+  </footer>
+  <div class="toast" id="toast"></div>
+</div>
+
+<script>
+/* =========================================================
+   v2 基准稿：已并入用户 11-25 的 14 件改动
+   flag 统一：acg_mec_e_had_deity_event_flag（全局互斥）
+   warn = 我标的疑点（只提示，不改你的数值）
+   ========================================================= */
+const SHARED_FLAG = 'acg_mec_e_had_deity_event_flag';
+
+const BASE = [
+{ id:'anemo', group:'七神信仰', name:'巴巴托斯', el:'风', cls:'#7ed6a5', theme:'自由 · 漂泊 · 吟游',
+  events:[
+  { code:'A-1', kind:'恩泽', kc:'bless', title:'风起之时',
+    text:'蒙德的风一夜之间改了方向。酒馆的门被吹得整夜作响，第二天清晨，驿道的尘土不见了，商队的车辙深了一寸——车夫说他们赶了三天路，只用了两天。牧羊人发誓看见一个抱着琴的少年坐在城墙上，等他爬上去，只有一朵塞西莉亚花。',
+    opts:[{ name:'让风带路', eff:[
+      {t:'g',x:'全国修正「风起之时」· 10 年：陆军移动速度 +15%、陆军损耗 −20%'},
+      {t:'g',x:'军事点数 +25'} ]}]},
+  { code:'A-2', kind:'抉择', kc:'choice', title:'无主之歌',
+    text:'一名吟游诗人在集市上唱起了不该唱的歌——歌词讲的是神明不该坐在王座上。卫兵要抓人，人群却跟着合唱。风把歌声送进了每一扇窗，连议政厅的窗子也没关严。',
+    opts:[
+      { name:'让它唱：自由是风的本性', eff:[
+        {t:'b',x:'稳定度 −1'},
+        {t:'g',x:'全国修正「自由吟唱」· 10 年：全国叛乱 −2、理念花费 −5%'} ]},
+      { name:'封住他的琴', eff:[
+        {t:'g',x:'威望 +10、正统性 +5'},
+        {t:'g',x:'行政点数 +25'} ]}]},
+  { code:'A-3', kind:'仪式', kc:'rite', title:'高天之琴',
+    text:'教团请求在都城外办一场持续七日的风花节。费用不轻：酒、花、以及每一座钟楼都要整夜敲响。但风神从不在意形式，祂只在意有没有人抬头看天。',
+    opts:[
+      { name:'办，办足七日', eff:[
+        {t:'b',x:'花费 200 金币'},
+        {t:'g',x:'全国修正「风花节」· 15 年：陆军士气 +10%、外交声望 +1'},
+        {t:'g',x:'外交点数 +50'} ]},
+      { name:'省下这笔钱', eff:[ {t:'n',x:'行政点数 +25'} ]}]}
+  ]},
+
+{ id:'geo', group:'七神信仰', name:'摩拉克斯', el:'岩', cls:'#d9b26a', theme:'契约 · 商业 · 坚固',
+  events:[
+  { code:'B-1', kind:'恩泽', kc:'bless', title:'契约之神的天平',
+    text:'商人们在港口立起一块新石碑，刻着所有已经兑现的契约。第七天，石碑裂开一道缝，缝里流出的不是水，是金沙。长老说：契约之神在看。也有人说，祂只是在算利息。',
+    opts:[{ name:'立碑为证', eff:[
+      {t:'g',x:'全国修正「岩之契」· 12 年：全国税收 +10%、建造花费 −10%'},
+      {t:'g',x:'行政点数 +25'} ]}]},
+  { code:'B-2', kind:'抉择', kc:'choice', title:'摩拉的重量',
+    text:'国库见底，而军饷下月就要发。祭司抬来神库的钥匙，说这笔钱本来就是为了这种时候。可契约上写着：神库只借给还得出的人。你看了看账本，又看了看钥匙。',
+    opts:[
+      { name:'借', eff:[ {t:'g',x:'金币 +200'}, {t:'b',x:'稳定度 −1、正统性 −5'} ]},
+      { name:'不借，先勒紧腰带', eff:[ {t:'g',x:'行政点数 +50'}, {t:'g',x:'正统性 +10、威望 +5'} ]}]},
+  { code:'B-3', kind:'仪式', kc:'rite', title:'璃月港的仲裁',
+    text:'两家商会为一条航线的归属吵到总督府，双方都举着契约，两份契约的日期是同一天、同一个时辰。只有神能判。祭司说：判了，就要有人不服。',
+    warn:'「获得重商主义 +2」需确认效果名（vanilla 多为 mercantilism 修正或 add_mercantilism）。',
+    opts:[
+      { name:'判给先交货的一家', eff:[
+        {t:'g',x:'全国修正「港规」· 15 年：贸易效率 +15%、商人 +1'},
+        {t:'g',x:'获得重商主义 +2'} ]},
+      { name:'判给两家共有', eff:[
+        {t:'g',x:'全国修正「共契」· 12 年：生产效率 +10%、稳定花费 −10%'},
+        {t:'g',x:'行政点数 +50'} ]}]}
+  ]},
+
+{ id:'electro', group:'七神信仰', name:'巴尔', el:'雷', cls:'#b48cff', theme:'永恒 · 锁国 · 威权',
+  events:[
+  { code:'C-1', kind:'恩泽', kc:'bless', title:'永恒之愿',
+    text:'雷雨在都城外下了四十天，没有一道雷落在城里。占星官翻遍典籍，只说了一句：将军要的是不变。于是那一夜，所有人都梦见了同一把刀，插在同一个位置。',
+    opts:[{ name:'接受永恒', eff:[
+      {t:'g',x:'全国修正「永恒之愿」· 15 年：纪律 +5%、稳定花费 −10%'},
+      {t:'g',x:'军事点数 +25'} ]}]},
+  { code:'C-2', kind:'抉择', kc:'choice', title:'锁国令',
+    text:'外邦商船在海面上排成一线，等着进港。老臣跪在殿前，说开门则乱，闭门则穷。雷电将军的雕像在雨里看着这一切，不置一词——祂从来只回答一个问题：要不要变。',
+    warn:'两选项现在都是纯收益（锁国无贸易惩罚、开港无叛乱代价），等于随便点。建议一边补一条代价，或删成一个选项。',
+    opts:[
+      { name:'锁', eff:[
+        {t:'g',x:'全国修正「锁国」· 15 年：全国叛乱 −3、稳定花费 −15%'} ]},
+      { name:'开', eff:[
+        {t:'g',x:'全国修正「开港」· 15 年：贸易效率 +15%、商人 +1'} ]}]},
+  { code:'C-3', kind:'仪式', kc:'rite', title:'千手百眼',
+    text:'新的军旗下立着千尊石像，每尊的眼睛都朝向海。军费账目送上来时，将军只写了两个字：值得。财务官在旁边补了一行小字：国库不同意。',
+    warn:'50 军事点换 12 年「冲击伤害 +15%」偏便宜（原稿 150 点还附 4 队兵）。要么抬价，要么降到 +10%。',
+    opts:[
+      { name:'铸像，扩军', eff:[
+        {t:'b',x:'花费 50 军事点'},
+        {t:'g',x:'全国修正「雷罚」· 12 年：冲击伤害 +15%、陆军士气 +5%'} ]},
+      { name:'只铸一尊，意思到了', eff:[ {t:'n',x:'威望 +5'}, {t:'g',x:'军事点数 +25'} ]}]}
+  ]},
+
+{ id:'dendro', group:'七神信仰', name:'布耶尔', el:'草', cls:'#8fd46a', theme:'智慧 · 梦境 · 发展',
+  events:[
+  { code:'D-1', kind:'恩泽', kc:'bless', title:'智慧的馈赠',
+    text:'须弥的学者在山顶发现一座从未被打开的书库。门没有锁，只要回答一个问题：你为什么要知道？第一个答题的人答"因为不知道难受"，门开了。里面没有书，只有一排空书架和一张写着"写吧"的字条。',
+    opts:[{ name:'翻开', eff:[
+      {t:'g',x:'行政点数 +50、外交点数 +50、军事点数 +50'} ]}]},
+  { code:'D-2', kind:'抉择', kc:'choice', title:'梦境之试',
+    text:'全城的孩子在同一个夜里做了同一个梦：一棵树问他们要不要看看明天。醒来后，一半的孩子会写字了，另一半开始说一种没人听得懂的话。学者们争论了三天，最后一致同意：先别叫醒他们。',
+    warn:'陆军传统 +25／海军传统 +25 ≈ 好几场胜仗的积累，比原来 +100 行政强得多；「务实」又同时给了生产效率 +15%。这组现在是全表最肥的一件。',
+    opts:[
+      { name:'入梦求知', eff:[ {t:'g',x:'陆军传统 +25、海军传统 +25'}, {t:'b',x:'稳定度 −1（政务荒废）'} ]},
+      { name:'封梦，先办实务', eff:[
+        {t:'g',x:'稳定度 +1'},
+        {t:'g',x:'全国修正「务实」· 10 年：发展成本 −5%、生产效率 +15%'} ]}]},
+  { code:'D-3', kind:'仪式', kc:'rite', title:'兰那罗的园圃',
+    text:'林子里的小家伙们答应帮忙，条件是把王家的猎场让出来。它们不种粮食，种的是"会记住事情"的种子。三年后那里会长出一片没人敢砍的森林——因为砍树的人第二天会忘记自己为什么拿斧头。',
+    warn:'思潮传播 +33% 超出 vanilla 常见区间（一般 5–20%），且 20 年；创新度 +5 需确认效果名（add_innovations）。',
+    opts:[
+      { name:'答应它们', eff:[
+        {t:'b',x:'花费 100 金币'},
+        {t:'g',x:'全国修正「兰那罗的园圃」· 20 年：思潮传播 +33%、科技花费 −5%'},
+        {t:'g',x:'行政点数 +25、创新度 +5'} ]},
+      { name:'猎场不能给', eff:[ {t:'n',x:'军事点数 +50（贵族满意）'} ]}]}
+  ]},
+
+{ id:'hydro', group:'七神信仰', name:'芙卡洛斯', el:'水', cls:'#5fc7e8', theme:'正义 · 审判 · 繁荣',
+  events:[
+  { code:'E-1', kind:'恩泽', kc:'bless', title:'正义的审判',
+    text:'歌剧院的最后一场演出没有演员，只有被告席。被判有罪的是这座城市自己——罪名是"让穷人站在雨里看戏"。判决下来时全场起立，没有人为被告辩护，包括被告。',
+    warn:'「全国荒废度 −100、繁荣度 +100」没有国家层效果，要逐省 every_owned_province 里 add_prosperity / change_devastation；繁荣度上限 100，量大等于全境重开一次。要不要限首都 + 邻省？',
+    opts:[{ name:'执行判决', eff:[
+      {t:'g',x:'全国荒废度 −100、繁荣度 +100'},
+      {t:'g',x:'全国修正「枫丹的公正」· 15 年：生产效率 +10%、稳定花费 −10%'} ]}]},
+  { code:'E-2', kind:'抉择', kc:'choice', title:'歌剧院的判决',
+    text:'一位公爵被指控侵吞赈灾款，证据确凿，但他是三支军团的实际供养人。法官把判决书递到你面前，说：神只问对错，不问代价。窗外的雨下得很有节奏，像在等一个答案。',
+    warn:'B 选项删掉正统性 −10 后变纯赚，A 反而成了唯一有代价的选项。要保留"对错 vs 代价"的味道，B 得留一条代价。',
+    opts:[
+      { name:'依法处决', eff:[ {t:'g',x:'正统性 +10、行政点数 +50'}, {t:'b',x:'全国叛乱 +1 · 10 年'} ]},
+      { name:'特赦，让他连本带利还钱', eff:[ {t:'g',x:'金币 +300、外交点数 +50'} ]}]},
+  { code:'E-3', kind:'仪式', kc:'rite', title:'水神的谢幕',
+    text:'大审判庭要开一场持续三日的公开审判：任何人都可以控告任何人，包括神明自己。祭司说，上一次有人这么干，城市繁荣了整整一代人。他没说的是，上一次主持审判的法官没有活到闭幕。',
+    opts:[
+      { name:'开审', eff:[
+        {t:'b',x:'花费 250 金币'},
+        {t:'g',x:'全国修正「大审判庭」· 20 年：全国税收 +10%、全国叛乱 −2'},
+        {t:'g',x:'行政点数 +50'} ]},
+      { name:'不必，留着钱修堤', eff:[ {t:'n',x:'行政点数 +25'} ]}]}
+  ]},
+
+{ id:'pyro', group:'七神信仰', name:'玛薇卡', el:'火', cls:'#ff8a5c', theme:'战争 · 热血 · 重生',
+  events:[
+  { code:'F-1', kind:'恩泽', kc:'bless', title:'战意燃起',
+    text:'火山口边上的部族把整年的酒都倒进了火里。第二天，征兵站前排到了城门外，来的都是些不该来的年纪。他们说不为钱，只为"打过一次"这件事本身。招募官把名册递给你的手在抖——不是怕，是激动。',
+    warn:'「获得 2 年人力」无动态乘法可直接写，需 add_manpower 常量或 scripted_effect 折算（我按当前月人力 ×24 折算成固定值，落地时给你算式）。新增 B 选项要补 name/desc 本地化。',
+    opts:[
+      { name:'收下他们', eff:[
+        {t:'g',x:'全国修正「战意」· 12 年：人力恢复速度 +20%、补员速度 +10%'},
+        {t:'g',x:'军事点数 +50、获得 2 年人力'} ]},
+      { name:'我们应该为此献上最高的敬意', eff:[
+        {t:'g',x:'陆军传统 +15'},
+        {t:'g',x:'陆军职业度 +5%'} ]}]},
+  { code:'F-2', kind:'抉择', kc:'choice', title:'竞技场的挑战',
+    text:'按纳塔的规矩，神与王同场，输的人要把名字交出去。挑战书放在王座上，落款是一个字：火。你不确定这是神的意思，还是祭司的意思——但广场上已经坐满了人，他们只关心一件事：你去不去。',
+    opts:[
+      { name:'亲自下场', eff:[ {t:'g',x:'军事点数 +200、威望 +15'}, {t:'b',x:'稳定度 −1'} ]},
+      { name:'派将代战', eff:[ {t:'g',x:'军事点数 +50、陆军传统 +10'}, {t:'b',x:'威望 −5'} ]}]},
+  { code:'F-3', kind:'仪式', kc:'rite', title:'灰烬中的重生',
+    text:'战场上烧焦的旗子被重新缝了起来，缝线的颜色和原来不一样。老兵的妻子说：旗子能缝，人缝不了。可第二天清晨，那些逃回来的溃兵都站在了旗下，一个不少，像在等一面新的旗。',
+    warn:'去掉 150 军事点与「补满 50% 人力」后，A 变纯赚 10 年修正；仪式类原本靠花费控制频率，现在只剩 flag 互斥。要不要留个代价？',
+    opts:[
+      { name:'重铸军团', eff:[
+        {t:'g',x:'全国修正「灰烬重生」· 10 年：补员速度 +15%、陆军士气 +15%'} ]},
+      { name:'遣散战士', eff:[ {t:'g',x:'稳定度 +1'}, {t:'g',x:'行政点数 +25'} ]}]}
+  ]},
+
+{ id:'cryo', group:'七神信仰', name:'瓦沙嘉', el:'冰', cls:'#9fd6ea', theme:'悲悯 · 严寒 · 无神之爱',
+  events:[
+  { code:'G-1', kind:'恩泽', kc:'bless', title:'无神之爱',
+    text:'至冬的冬天今年没有冻死人。不是因为它变暖了——是因为每个村口都多了一间不锁门的屋子，里面堆着柴。没人知道是谁放的，墙上只有一行炭笔字：别谢神，谢人。祭司看了很久，把字擦掉了，又原样写了回去。',
+    opts:[{ name:'继续放柴', eff:[
+      {t:'g',x:'全国修正「无神之爱」· 15 年：全国叛乱 −3、稳定花费 −15%'},
+      {t:'g',x:'行政点数 +25'} ]}]},
+  { code:'G-2', kind:'抉择', kc:'choice', title:'严寒的考验',
+    text:'开仓就够吃到春天，但军需官说这笔粮是北境三个军团的口粮。他补了一句：如果不开仓，明年征兵的时候，这些村子就不在了。你问他哪个更贵，他说：都贵，只是账期不同。',
+    opts:[
+      { name:'开仓', eff:[ {t:'b',x:'金币 −150'}, {t:'g',x:'稳定度 +1'}, {t:'g',x:'全国修正「冬赈」· 10 年：全国叛乱 −2'} ]},
+      { name:'留给军队', eff:[ {t:'g',x:'军事点数 +75'}, {t:'b',x:'稳定度 −1、全国叛乱 +1 · 10 年'} ]}]},
+  { code:'G-3', kind:'抉择', kc:'choice', title:'愚人众的效忠',
+    text:'一队穿着黑色大衣的人跪在殿外，领头的说他们只忠于"女皇的意志"，不问女皇是谁。他们带来了三箱金币和一份名单，名单上都是本国贵族——以及每个贵族在哪个房间睡觉。',
+    opts:[
+      { name:'接纳', eff:[ {t:'g',x:'获得 3 队步兵、陆军传统 +10'}, {t:'b',x:'稳定度 −1（贵族不安）'} ]},
+      { name:'拒之门外', eff:[ {t:'g',x:'外交点数 +75、正统性 +5'}, {t:'g',x:'全国修正「关门」· 10 年：全国叛乱 −1'} ]}]}
+  ]},
+
+{ id:'moon_heng', group:'三月信仰', name:'恒月', el:'恒定', cls:'#cfd6e2', theme:'秩序 · 庇护 · 恒定',
+  events:[
+  { code:'H-1', kind:'恩泽', kc:'bless', title:'恒月当空',
+    text:'四十年来第一次，满月与历法完全对齐。祭司把这一夜称作"神在看账本"。所有积压的争执、地界、婚约，都在这一夜被重新念了一遍——念到第七十条时，两个斗了半辈子的家族当场合账，把地界石搬走了一块。',
+    opts:[{ name:'重订一切', eff:[
+      {t:'g',x:'稳定度 +1（若低于 3）'},
+      {t:'g',x:'正统性 +10'},
+      {t:'g',x:'全国修正「恒月之护」· 12 年：全国叛乱 −2、稳定花费 −10%'} ]}]},
+  { code:'H-2', kind:'抉择', kc:'choice', title:'月相的裂痕',
+    text:'观星台报告说，月亮缺了一角，而且不会再圆回来。教团分成两派：一派说应当改历，另一派说改历等于承认神明有缺。两边都在你的殿外跪着，跪了三天，谁也不肯先站起来。',
+    warn:'改历删掉「全国叛乱 +1」后变纯赚，且科技花费 −10%、理念花费 −10% 同时开 15 年，等于半个理念组。',
+    opts:[
+      { name:'改历', eff:[
+        {t:'g',x:'行政点数 +75'},
+        {t:'g',x:'全国修正「新历」· 15 年：科技花费 −10%、理念花费 −10%'} ]},
+      { name:'不改，等它自己圆', eff:[
+        {t:'g',x:'稳定度 +1、正统性 +10'},
+        {t:'g',x:'全国修正「守历」· 10 年：稳定花费 −15%'} ]}]},
+  { code:'H-3', kind:'仪式', kc:'rite', title:'月下的誓约',
+    text:'教团要用白银铸一面镜子，把月光引进神殿。造价惊人，但祭司说这面镜子能照出所有违约者的脸——而且他们自己会先看见。你问：那照不出的人呢？祭司说：那就不必照了。',
+    opts:[
+      { name:'铸', eff:[
+        {t:'b',x:'花费 200 金币'},
+        {t:'g',x:'全国修正「月镜之约」· 20 年：全国税收 +10%、全国叛乱 −2'},
+        {t:'g',x:'行政点数 +25'} ]},
+      { name:'不铸', eff:[ {t:'n',x:'稳定度 +1、行政点数 +25'} ]}]}
+  ]},
+
+{ id:'moon_hong', group:'三月信仰', name:'虹月', el:'丰饶', cls:'#ffb3c8', theme:'丰饶 · 贸易 · 色彩',
+  events:[
+  { code:'I-1', kind:'恩泽', kc:'bless', title:'虹月市集',
+    text:'每月十五，虹月下的市集不收税、不查货、不问来路。今年的市集上出现了一种没人见过的染料：洗不掉，晒不褪。商人们赌咒说它值一座城，而卖染料的老太婆只收铜板，一双袜子，一句好话。',
+    opts:[{ name:'放任市集', eff:[
+      {t:'g',x:'商人 +1、金币 +100'},
+      {t:'g',x:'全国修正「虹月市集」· 12 年：贸易效率 +10%、生产效率 +10%'} ]}]},
+  { code:'I-2', kind:'抉择', kc:'choice', title:'色彩的诱惑',
+    text:'那种染料会在夜里发光。第一批用它染布的城已经整夜不睡了——人们开始通宵做工，也通宵吵架。医师说再这样下去会出人命，商人说再这样下去会出金子。祭司说虹月从不问人受不受得了。',
+    opts:[
+      { name:'全国推广', eff:[
+        {t:'g',x:'金币 +200'},
+        {t:'g',x:'全国修正「不夜城」· 15 年：生产效率 +15%'},
+        {t:'b',x:'同一修正内：全国叛乱 +2'} ]},
+      { name:'限三城试用', eff:[
+        {t:'g',x:'行政点数 +50'},
+        {t:'g',x:'全国修正「限量」· 12 年：生产效率 +5%、稳定花费 −10%'} ]}]},
+  { code:'I-3', kind:'仪式', kc:'rite', title:'虹月之潮',
+    text:'三月的排列在这一年重合，海水被照成七种颜色。商船队请求借这个兆头开一条新航线，赌上全部家当。他们只要一件事：国旗跟着船走。船长说，如果回不来，旗子就留在海上，也算你们的。',
+    opts:[
+      { name:'押注', eff:[
+        {t:'b',x:'花费 300 金币'},
+        {t:'g',x:'金币 +200（返利）'},
+        {t:'g',x:'全国修正「虹月航路」· 20 年：贸易效率 +20%、商人 +2'} ]},
+      { name:'稳一点，走老航线', eff:[ {t:'n',x:'行政点数 +50、金币 +50'} ]}]}
+  ]},
+
+{ id:'moon_shuang', group:'三月信仰', name:'霜月', el:'肃杀', cls:'#a8d8ff', theme:'寒霜 · 军威 · 肃杀',
+  events:[
+  { code:'J-1', kind:'恩泽', kc:'bless', title:'霜月行军',
+    text:'霜月当空的那一夜，全军在雪地里走了六十里，没有一个人掉队，没有一匹马喘气。军医说这不正常，士兵说这很正常——那一夜他们不觉得冷，也不觉得累，只觉得前面还有路。',
+    opts:[{ name:'继续行军', eff:[
+      {t:'g',x:'陆军传统 +10、军事点数 +25'},
+      {t:'g',x:'全国修正「霜月行军」· 12 年：陆军士气 +10%、补员速度 +10%'} ]}]},
+  { code:'J-2', kind:'抉择', kc:'choice', title:'寒夜的抉择',
+    text:'霜月教团要求把俘虏全部留在雪地里"交给月亮"。军法官提醒你，按律这些人该做苦役，能修三十年城墙。教团的人说：城墙会塌，月亮不会。两边都在等你开口，俘虏在雪里发抖。',
+    opts:[
+      { name:'交给月亮', eff:[ {t:'g',x:'军事点数 +100、陆军传统 +5'}, {t:'b',x:'稳定度 −1、正统性 −10'} ]},
+      { name:'按律做苦役', eff:[
+        {t:'g',x:'行政点数 +50'},
+        {t:'g',x:'全国修正「苦役」· 12 年：建造花费 −15%、发展成本 −10%'} ]}]},
+  { code:'J-3', kind:'仪式', kc:'rite', title:'霜月加冕',
+    text:'教团要在最冷的一夜为你加冕。仪式上你要赤手在雪里握住一把剑，直到剑刃结霜。他们说这不是考验勇气，是考验你还能不能感觉到疼——感觉不到的人，不配坐在这个位置上。',
+    opts:[
+      { name:'受冕', eff:[
+        {t:'b',x:'花费 150 金币'},
+        {t:'g',x:'正统性 +15、威望 +10、军事点数 +50'},
+        {t:'g',x:'全国修正「霜月加冕」· 20 年：纪律 +5%、陆军士气 +10%'} ]},
+      { name:'推辞', eff:[ {t:'n',x:'行政点数 +25、稳定度 +1'} ]}]}
+  ]}
+];
+
+const TIP_CODE =
+'country_event = {\n' +
+'    id = acg_mec_e_archon_anemo.1\n' +
+'    title = acg_mec_e_archon_anemo.1.t\n' +
+'    desc  = acg_mec_e_archon_anemo.1.d\n' +
+'    picture = PRAYING_eventPicture\n' +
+'\n' +
+'    trigger = {\n' +
+'        religion = acg_mec_e_seven_archons           # 或 acg_mec_e_moon_goddess\n' +
+'        has_personal_deity = acg_mec_e_deity_barbatos\n' +
+'        NOT = { has_country_flag = acg_mec_e_had_deity_event_flag }   # 共用互斥\n' +
+'    }\n' +
+'    mean_time_to_happen = { months = 120 }\n' +
+'\n' +
+'    immediate = {\n' +
+'        set_country_flag = { flag = acg_mec_e_had_deity_event_flag days = 30 }\n' +
+'    }\n' +
+'\n' +
+'    option = { name = ... }\n' +
+'\n' +
+'    after = { clr_country_flag = acg_mec_e_had_deity_event_flag }\n' +
+'}';
+
+const $ = s => document.querySelector(s);
+const TOTAL = BASE.reduce((n,d)=>n+d.events.length,0);
+const clone = o => JSON.parse(JSON.stringify(o));
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const norm = (x,y) => x.code===y.code && x.title===y.title && JSON.stringify(x.opts)===JSON.stringify(y.opts);
+
+let DOC = clone(BASE);
+const state = { active: BASE[0].id, filter:'all' };  // all | edited | warn
+let saveTimer = null;
+
+async function loadDoc(){
+  try{
+    if (window.dshHTML && dshHTML.store && dshHTML.store.rows && dshHTML.store.rows.get){
+      const v = await dshHTML.store.rows.get('doc_v2');
+      if (v) return typeof v === 'string' ? JSON.parse(v) : v;
+    }
+  }catch(e){}
+  try{ const raw = localStorage.getItem('archon_doc_v2'); if (raw) return JSON.parse(raw); }catch(e){}
+  return null;
+}
+function saveDoc(){
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(async ()=>{
+    const data = JSON.stringify(DOC);
+    try{
+      if (window.dshHTML && dshHTML.store && dshHTML.store.rows && dshHTML.store.rows.set){
+        await dshHTML.store.rows.set('doc_v2', data); return;
+      }
+    }catch(e){}
+    try{ localStorage.setItem('archon_doc_v2', data); }catch(e){}
+  }, 400);
+}
+
+const baseOf = (di, code) => BASE.find(x=>x.id===di).events.find(e=>e.code===code);
+function eventEdited(d, e){ return !norm(e, baseOf(d.id, e.code)); }
+function counts(){
+  let ed = 0, wn = 0;
+  DOC.forEach(d=>d.events.forEach(e=>{ if (eventEdited(d,e)) ed++; if (e.warn) wn++; }));
+  return { ed, wn };
+}
+
+function renderNav(){
+  const nav = $('#nav');
+  let html = '', last = '';
+  DOC.forEach(d=>{
+    if (d.group !== last){ html += '<div class="navsec">' + d.group + '</div>'; last = d.group; }
+    const ed = d.events.filter(e=>eventEdited(d,e)).length;
+    const wn = d.events.filter(e=>e.warn).length;
+    const tag = ed ? (ed + '/3') : (wn ? '!' : '3');
+    html += '<div class="navitem' + (state.active===d.id?' on':'') + '" data-id="' + d.id + '">' +
+      '<span class="dot" style="background:' + d.cls + '"></span><span>' + d.name + '</span>' +
+      '<span class="cnt' + (ed?' done':(wn?' w':'')) + '">' + tag + '</span></div>';
+  });
+  nav.innerHTML = html;
+  nav.querySelectorAll('.navitem').forEach(el=>{
+    el.onclick = ()=>{ state.active = el.dataset.id; renderNav(); renderMain(); $('#main').scrollTop = 0; };
+  });
+}
+
+function renderMain(){
+  const d = DOC.find(x=>x.id===state.active);
+  let evs = d.events.slice();
+  if (state.filter === 'edited') evs = evs.filter(e=>eventEdited(d,e));
+  if (state.filter === 'warn') evs = evs.filter(e=>e.warn);
+
+  let html = '<div class="dhead"><div class="k">' + d.group + ' · ' + d.el + '</div>' +
+    '<h2><span style="color:' + d.cls + '">' + d.name + '</span></h2>' +
+    '<div class="sub">' + d.theme + '</div></div>';
+
+  html += '<details class="tipbox"' + (state.active===DOC[0].id?' open':'') + '>' +
+    '<summary>统一触发规范（30 件共用一个 flag）· 点开看骨架</summary><ul>' +
+    '<li>判定：<code>religion</code> + <code>has_personal_deity</code>，不设 fire_only_once。</li>' +
+    '<li>频率：<code>mean_time_to_happen = { months = 120 }</code>（持有该神即 10 年 MTTH）。</li>' +
+    '<li>互斥：全场只有 <code>' + SHARED_FLAG + '</code> 一个 flag —— 任意一件信仰事件在场时，其余 29 件都不会判定。</li>' +
+    '<li><code>immediate</code> 设 flag（带 <code>days = 30</code> 自动过期兜底）、<code>after</code> 清 flag；<code>trigger</code> 里 <code>NOT</code> 查它。</li>' +
+    '<li>副作用：事件窗口挂着不点，全场信仰事件就停摆；30 天过期后自动解锁，靠这条兜底不会永久锁死。</li>' +
+    '</ul><pre id="tipcode"></pre></details>';
+
+  if (!evs.length) html += '<div class="card"><div class="flavor">这一组在这个筛选下没有条目。</div></div>';
+
+  evs.forEach(e=>{
+    const idx = d.events.indexOf(e);
+    html += '<section class="card' + (eventEdited(d,e)?' edited':'') + '">';
+    html += '<div class="chead"><span class="idx">' + d.id.toUpperCase() + ' · ' + e.code + '</span>' +
+      '<span class="kind ' + e.kc + '">' + e.kind + '</span>' +
+      '<input class="title-in" data-di="' + d.id + '" data-ei="' + idx + '" value="' + esc(e.title) + '">' +
+      '<span class="flag">flag 共用</span></div>';
+    html += '<div class="lbl">文本</div><div class="flavor">' + e.text + '</div>';
+    if (e.warn) html += '<div class="warnbox"><b>待定</b><span>' + e.warn + '</span></div>';
+    html += '<div class="lbl">选项与效果（可直接改）</div>';
+    e.opts.forEach((o, oi)=>{
+      html += '<div class="opt"><div class="orow"><span class="lead">' + String.fromCharCode(65+oi) + '.</span>' +
+        '<input class="oname" data-di="' + d.id + '" data-ei="' + idx + '" data-oi="' + oi + '" value="' + esc(o.name) + '"></div><ul class="eff">';
+      o.eff.forEach((f, fi)=>{
+        html += '<li><button class="tp ' + f.t + '" data-di="' + d.id + '" data-ei="' + idx + '" data-oi="' + oi + '" data-fi="' + fi + '">' +
+          (f.t==='g'?'益':f.t==='b'?'损':'平') + '</button>' +
+          '<input class="effin" data-di="' + d.id + '" data-ei="' + idx + '" data-oi="' + oi + '" data-fi="' + fi + '" value="' + esc(f.x) + '">' +
+          '<button class="del" data-di="' + d.id + '" data-ei="' + idx + '" data-oi="' + oi + '" data-fi="' + fi + '">×</button></li>';
+      });
+      html += '</ul><div class="optfoot">' +
+        '<button class="addeff" data-di="' + d.id + '" data-ei="' + idx + '" data-oi="' + oi + '">+ 加一条效果</button>' +
+        '<button class="clreff" data-di="' + d.id + '" data-ei="' + idx + '" data-oi="' + oi + '">清空本选项</button>' +
+        '</div></div>';
+    });
+    html += '<div class="cond">触发：<code>MTTH 120 月</code> · 共用互斥 flag <code>' + SHARED_FLAG + '</code></div>';
+    html += '</section>';
+  });
+
+  $('#main').innerHTML = html;
+  const pre = $('#tipcode'); if (pre) pre.textContent = TIP_CODE;
+  bindEditors();
+}
+
+function bindEditors(){
+  const main = $('#main');
+  const nodes = (di, ei, oi, fi) => {
+    const d = DOC.find(x=>x.id===di);
+    const e = d.events[ei];
+    const o = oi==null ? null : e.opts[oi];
+    const f = fi==null ? null : o.eff[fi];
+    return { d, e, o, f };
+  };
+  main.querySelectorAll('input.title-in').forEach(inp=>{
+    inp.oninput = ()=>{ nodes(inp.dataset.di, +inp.dataset.ei).e.title = inp.value; saveDoc(); };
+    inp.onblur = ()=>{ renderNav(); renderMain(); };
+  });
+  main.querySelectorAll('input.oname').forEach(inp=>{
+    inp.oninput = ()=>{ nodes(inp.dataset.di, +inp.dataset.ei, +inp.dataset.oi).o.name = inp.value; saveDoc(); };
+  });
+  main.querySelectorAll('input.effin').forEach(inp=>{
+    inp.oninput = ()=>{ nodes(inp.dataset.di, +inp.dataset.ei, +inp.dataset.oi, +inp.dataset.fi).f.x = inp.value; saveDoc(); };
+  });
+  main.querySelectorAll('button.tp').forEach(btn=>{
+    btn.onclick = ()=>{
+      const f = nodes(btn.dataset.di, +btn.dataset.ei, +btn.dataset.oi, +btn.dataset.fi).f;
+      f.t = f.t==='g' ? 'b' : f.t==='b' ? 'n' : 'g';
+      btn.className = 'tp ' + f.t;
+      btn.textContent = f.t==='g'?'益':f.t==='b'?'损':'平';
+      saveDoc();
+    };
+  });
+  main.querySelectorAll('button.del').forEach(btn=>{
+    btn.onclick = ()=>{
+      nodes(btn.dataset.di, +btn.dataset.ei, +btn.dataset.oi).o.eff.splice(+btn.dataset.fi,1);
+      saveDoc(); renderNav(); renderMain();
+    };
+  });
+  main.querySelectorAll('button.addeff').forEach(btn=>{
+    btn.onclick = ()=>{
+      nodes(btn.dataset.di, +btn.dataset.ei, +btn.dataset.oi).o.eff.push({t:'n',x:''});
+      saveDoc(); renderNav(); renderMain();
+    };
+  });
+  main.querySelectorAll('button.clreff').forEach(btn=>{
+    btn.onclick = ()=>{
+      nodes(btn.dataset.di, +btn.dataset.ei, +btn.dataset.oi).o.eff = [];
+      saveDoc(); renderNav(); renderMain();
+    };
+  });
+}
+
+function updateStat(){ const c = counts(); $('#s-edit').textContent = c.ed; $('#s-warn').textContent = c.wn; }
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.classList.add('on');
+  setTimeout(()=>t.classList.remove('on'), 2200);
+}
+
+$('#btn-filter').onclick = ()=>{
+  state.filter = state.filter==='edited' ? 'all' : 'edited';
+  $('#btn-filter').textContent = state.filter==='edited' ? '显示全部' : '只看本轮改动';
+  renderMain();
+};
+$('#btn-warn').onclick = ()=>{
+  state.filter = state.filter==='warn' ? 'all' : 'warn';
+  $('#btn-warn').textContent = state.filter==='warn' ? '显示全部' : '只看待定项';
+  renderMain();
+};
+$('#btn-reset').onclick = ()=>{
+  DOC = clone(BASE); saveDoc(); renderNav(); renderMain(); updateStat(); toast('已撤回本轮改动，回到 11-25 的稿子');
+};
+$('#btn-submit').onclick = ()=>{
+  const items = [];
+  DOC.forEach(d=>d.events.forEach(e=>{
+    if (!eventEdited(d,e)) return;
+    items.push({
+      deity:d.name, group:d.group, code:e.code, kind:e.kind, title:e.title,
+      flag:SHARED_FLAG,
+      options:e.opts.map(o=>({ name:o.name, effects:o.eff.map(f=>({type:f.t,text:f.x})) })),
+      warn:e.warn || ''
+    });
+  }));
+  const g = $('#global').value.trim();
+  if (!items.length && !g){ toast('没有新的改动'); return; }
+  try{ if (window.dshHTML) dshHTML.send('revision', { round:2, changed:items, global:g }); }catch(e){}
+  toast('已提交：改动 ' + items.length + ' 件');
+};
+$('#btn-approve').onclick = ()=>{
+  try{ if (window.dshHTML) dshHTML.send('approve', { approved:true, changed:counts().ed }); }catch(e){}
+  toast('已按「全部通过」提交');
+};
+$('#global').oninput = saveDoc;
+
+(async ()=>{
+  const saved = await loadDoc();
+  if (saved && Array.isArray(saved) && saved.length === BASE.length) DOC = saved;
+  renderNav(); renderMain(); updateStat();
+})();
+</script>
+</body>
+</html>

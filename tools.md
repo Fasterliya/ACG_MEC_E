@@ -90,3 +90,27 @@ Select-String -Path ".\missions\*_missions.txt" -Pattern "_region|_area" |
 2. 在 `region.txt` / `area.txt` 中 grep 确认键值存在
 3. 使用**游戏原生键值**写入 `_missions.txt`
 4. 运行上方批量校验命令确认无误
+
+---
+
+## 3. 任务树骨骼生成器（视图 → slot/position/required_missions）
+
+工具在 **`_workbench/mission_tree/`**（已进 `.gitignore`，工作文件不进仓库；说明见该目录 `README.md`）。
+
+```powershell
+# 视图（.mtv / .xlsx / .csv）→ 骨架 + decode loc + 校验报告
+python _workbench\mission_tree\mission_tree_builder.py _workbench\mission_tree\view\demo_funnel.mtv --dry-run
+python _workbench\mission_tree\mission_tree_builder.py _workbench\mission_tree\view\demo_funnel.mtv --out missions --force
+
+# Excel 模板 / 直读
+python _workbench\mission_tree\mission_tree_builder.py --init-xlsx _workbench\mission_tree\view\template.xlsx --demo
+python _workbench\mission_tree\mission_tree_builder.py _workbench\mission_tree\view\template.xlsx --tag XXX
+
+# 从现有树反抽视图 / loc 覆盖检查
+python _workbench\mission_tree\mission_tree_builder.py --extract missions\NDK_missions.txt
+python _workbench\mission_tree\mission_tree_builder.py --check-loc missions\NDK_missions.txt
+```
+
+职责边界：**只定位，不填内容**。`trigger` / `effect` / `provinces_to_highlight` 一律留注释位；
+几何规则即本文件第 1 节第 3 节，越界项直接报 error 不生成。
+
