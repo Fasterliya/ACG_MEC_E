@@ -163,3 +163,77 @@ MND_dragoon = {	# 龙骑兵
 	shock_damage_received = -0.10
 	fire_damage_received = -0.10
 }
+
+MND_rosaria = {	# 罗莎莉亚
+	shock_damage = 0.10
+	land_morale = 0.10
+}
+
+MND_trade_empire = {	# 贸易帝国
+	morale_damage = 0.10
+}
+
+MND_city_of_freedom = {	# 自由之都
+	movement_speed = 0.10
+	global_trade_goods_size_modifier = 0.20
+}
+
+MND_mondstadt_empire = {	# 蒙德帝国
+	land_morale = 0.20
+	morale_damage_received = -0.10
+	morale_damage = 0.10
+}
+
+MND_magic_training = {	# 魔导的特训
+	army_tradition = 1
+}
+
+MND_wind_dragon = {	# 东风之龙
+	discipline = 0.02
+}
+
+MND_wind_lion = {	# 南风之狮
+	discipline = 0.02
+}
+
+MND_wind_eagle = {	# 西风之鹰
+	discipline = 0.02
+}
+
+MND_wind_wolf = {	# 北风之狼
+	discipline = 0.02
+}
+
+# ===== 四风守护：政府行动的 5 年效果 =====
+# 由 common/government_mechanics/MND_four_winds_mechanic.txt 的 interaction effect 发放，
+# duration = 1825（5 年），与那里的 cooldown_years = 5 同步。
+# 前置钥匙是上面的 MND_wind_*（任务 MND_missions_7_1~7_4 授予，duration = -1）。
+
+MND_wind_dragon_boon = {	# 东风之龙 · 庇佑
+	reinforce_speed = 0.10
+	morale_damage_received = -0.10
+}
+
+MND_wind_wolf_boon = {	# 北风之狼 · 庇佑
+	shock_damage = 0.15
+	discipline = 0.025
+}
+
+MND_wind_lion_boon = {	# 南风之狮 · 庇佑
+	cavalry_power = 0.15
+	cav_to_inf_ratio = 0.10
+}
+
+MND_wind_eagle_boon = {	# 西风之鹰 · 庇佑
+	movement_speed = 0.10
+	morale_damage = 0.10
+}
+
+MND_economic_recovery = {	# 蒙德复苏期
+	build_cost = -0.10
+	build_time = -0.20
+}
+
+MND_wine_factory = {	# 蒙德酒厂（省份修正）
+	trade_goods_size = 1.0
+}

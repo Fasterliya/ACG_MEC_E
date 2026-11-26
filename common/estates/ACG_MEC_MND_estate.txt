@@ -40,5 +40,6 @@ estate_maratha = {
 	}
 	privileges = {
 		MND_resident_commissions
+		MND_knights_of_favonius_charter
 	}
 }

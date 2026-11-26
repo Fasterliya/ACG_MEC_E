@@ -70,3 +70,46 @@ MND_resident_commissions = {
 		factor = 0
 	}
 }
+
+# ============================================================
+# 西风骑士团：骑士团特许状
+#   忠诚 +10% / 影响力 +10%
+#   王领 -5%（land_share = 5，让给阶层）
+#   免拔地（exempt_from_seize_land）
+#   骑兵战力 / 骑兵比例 随「骑士团领地占比」线性增长，占比 100% 时封顶 +33% / +20%
+# 参数依据：原版 common/estate_privileges/XX_example.txt:1-31
+#   land_share = <number>                  # 要让出的王冠领地（给阶级）
+#   modifier_by_land_ownership = { <mod> } # 修正与阶级领地相乘
+#   mechanics = { exempt_from_seize_land } # 原版 04_cossack_privileges.txt:397 同款
+# 同款结构：common/estate_privileges/MSK_privileges.txt:1-35
+# 修正名：cavalry_power（骑兵战力）、cav_to_inf_ratio（骑兵比例）
+# 注册：common/estates/ACG_MEC_MND_estate.txt 的 estate_maratha -> privileges
+# ============================================================
+MND_knights_of_favonius_charter = {
+	icon = privilege_land_rights
+	land_share = 5
+	loyalty = 0.10
+	influence = 0.10
+	is_valid = {
+		tag = MND
+	}
+	can_select = {
+		tag = MND
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	modifier_by_land_ownership = {
+		cavalry_power = 0.33
+		cav_to_inf_ratio = 0.20
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

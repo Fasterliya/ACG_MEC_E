@@ -37,6 +37,8 @@ acgr_republic = {
 				Invite_monsters_reform
 				Midas_touch_reform
 				JNB_consulate_of_the_sea
+				###ACG MEC E
+				MND_four_winds_reform
 			}
 		}
 		Power_structure = {

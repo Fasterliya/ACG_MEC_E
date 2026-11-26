@@ -46,3 +46,44 @@ MND_knights_of_favonius_reform = {
 		allow = { always = yes }
 	}
 }
+
+# ============================================================
+# 蒙德 MND —— 第二级改革「四风守护」
+# ------------------------------------------------------------
+# 与上面那条不同：这条是**普通可选改革**（玩家花改革点自己选），所以——
+#   · 不写 lock_level_when_selected：写了就把该层锁死，选过就再也换不掉
+#     （该键语义见原版说明 wiki「政府修改」：锁定为特殊改革，无法手动切换为同级改革）
+#   · potential 用 tag / was_tag 限定只有蒙德看得见
+#     （was_tag 原版用例：common/government_reforms/06_government_reforms_common.txt:52 was_tag = BYZ）
+#   · 登记位置：common/governments/reform_levels_republic.txt 的 acgr_republic → 第 2 层 racial_policy
+#
+# 修正键名均已对照工作区 docs-data 修正表（kind = modifier，scopes = country）：
+#   discipline     +5%  训练度
+#   shock_damage   +10% 冲击阶段伤害
+#   core_creation  -10% 造核花费（负值 = 降低）
+#
+# 政府机制：MND_four_winds_mechanic（四风守护，四个行动，5 年一选，互斥）
+# ============================================================
+MND_four_winds_reform = {
+	icon = "ACG_MEC_E_MND_reform_2"
+	potential = {
+		OR = {
+			tag = MND
+			was_tag = MND
+		}
+	}
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_normal_conversion = yes
+	modifiers = {
+		discipline = 0.05
+		shock_damage = 0.10
+		core_creation = -0.10
+	}
+	government_abilities = {
+		MND_four_winds_mechanic
+	}
+	conditional = {
+		allow = { always = yes }
+	}
+}

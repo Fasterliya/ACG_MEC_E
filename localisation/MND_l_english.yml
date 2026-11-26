@@ -201,3 +201,45 @@
  MND_barbara_prayer_desc: "yYÏk)Y:NúQV„vºNHywyÿ2OuQÞVeg—VÔkÎNMRôfëV0"
  MND_dragoon: "™Ÿ‘šuQ"
  MND_dragoon_desc: "«b@w™ŸÞœ„v‘šuQNç`kpN²QûQÿ²QÛLe5–öeÏPNWWO¨R„vÎW™X0"
+ MND_missions_1_8_title: "YeO„vb—eîOsY"
+ MND_missions_1_8_desc: "WŽƒ‰ƒšNN(WYeXÌ‘1U×‹ÿyY(WÎWY„vïNáTY0YeO„vºNýåwSÿîOsYˆPR•^NÏ…@wNŠb•ªg0"
+ MND_missions_4_6_title: "wmùR¸S„v†˜W"
+ MND_missions_4_6_desc: "ñ‚	T)RwmáS„væSN¹1S=f›SNºN„v0WLu0™„·V„v9‚–êS‰ýw(W£Gr4lßWô‹—VNÝ‹ÿwmáS1SNQ=f)YX0"
+ MND_missions_4_7_title: "ÜgSwm"
+ MND_missions_4_7_desc: "ÎNV)R‰šN„vwm¸S€VSwÿhQ=fSwm„vjm0™„·VŠbñ‚	T)RZPb…QVnKNTÿNNGr4lb—_Nå‹ÓY™„·V†N0"
+ MND_missions_5_7_title: "ê1uKNý"
+ MND_missions_5_7_desc: "™„·VÎWNQêS=fNµ^ÎWÿw=fNÍyô‹ÕlÿêS‰¯wr^Imÿ(WêT?QýýwIm—Vê1u0ºNÎNÛVb—kQ¹eŒmegÿŠbNO0WkXb†NÎW0"
+ MND_missions_5_8_title: "™„·V^ýV"
+ MND_missions_5_8_desc: "ÎNNO0W0RÕlpQ‰ÿÎNSwm0R·Va×Vÿ×e^ÈuŽNêSiRNÍyœ˜r‚0‘šëXâV(WÎW4Ycw^ýV„v¹uàz  Î˜NgrLkÿÎNdk=fN*N^ýV„vTWR0"
+ MND_rosaria: "WŽƒ‰ƒšN"
+ MND_rosaria_desc: "YÌ‘áTÎW„vîOsYúQKbÈSëVÈSàrÿ™„·V„vˆR›Q(WyY„v©c²bNbe€VûNUO:ãS²Q0"
+ MND_trade_empire: "8f^ýV"
+ MND_trade_empire_desc: "™„·V„vFU9‚ŠbSwmú”ánÿLe›Q„veˆÙu¿uØ¡l¥cNÿëXl1SHQ®W†NNJS0"
+ MND_city_of_freedom: "ê1uKNý"
+ MND_city_of_freedom_desc: "ê1uKNý„vTðX.OM'YF–ÿåT.SNFU–¢b@w€V™„·V,dÿ'_N(WÎWÌ‘ŠXŠY0"
+ MND_mondstadt_empire: "™„·V^ýV"
+ MND_mondstadt_empire_desc: "Î˜^y„v×e^NNQ=fNµ^ÎW¦0^ýV„v›Q–Sb—Vôfàrÿ_Nôf¾–«ˆSb®W0"
+ MND_knights_of_favonius_charter: "‰Î˜‘šëXâVyr¸‹¶r"
+ MND_knights_of_favonius_charter_desc: "®‹OŠbÎWÊ„v0u„^0èxJWNzCgNv^R0R‘šëXâVTNÿ'YâV•(W®‹‹N…SÌ‘ô‹Ý‹ôfÍ‘ÿ‘šëXìN_N?aa:N™„·VYVSNýN‹T0ãN÷N=fýV‹sôv–„v†˜0WÈSS”N*N~vR¹pÿwNÙýNyr¸‹¶rN~{ÿ£›N0W1SQ_NÔbNÞVegÿd–^—Šbte.V¶r¸ujOŸ^0‘šëXâVTN„v0WŠYÿ™„·V„v‘šuQ1SŠÏPÎNê¶Rlš©SÌ‘•úQeg„vÿ†˜0W`SÔkÏkØšNRÿ‘šuQb›RN‘šuQÔk‹O¿Oß@w¨mÿ`SánöeïS¾ +33% ‘šuQjOb0+20% ‘šuQÔk‹O0"
+ MND_missions_2_9_title: "T›üR„vyr­‹"
+ MND_missions_2_9_desc: "?–YŠb¼pÑ‘=gÆbbNWYSOýw­‹Ãuÿ©‹‘šëX(Wê–0WÌ‘Ñ0(WÎ˜Ì‘>Nþv0ÖNô‹T›üRNêS=f=gVÿ_N=f«ŽSO0"
+ MND_magic_training: "T›üR„vyr­‹"
+ MND_magic_training_desc: "×SÇyr­‹„v‘šëXÏkt^ýO&^ÞV°e„vb‹ONÃV—Vÿ.Oßu1SÙHNNt^t^eweg0"
+ MND_knights_of_favonius_charter: "‘šëXâVyr¸‹¶r"
+ MND_knights_of_favonius_charter_desc: "yr¸‹¶rŠbW0WckVRRV‘šëXâV0ÖNìN(W†˜0WN‰Qlš0ÃuuQ0îOï  ÖNìN(W†˜0WN‰Qlš0ÃuuQ0îOï  †˜—VŠYÿýwÉbNb:W„v‘šuQ1SŠY0"
+ MND_wind_dragon: "NÎ˜KN™Ÿ"
+ MND_wind_dragon_desc: "NƒX„vÎ˜Ì‘&^@w™Ÿ„vNO1ž0‘šëXâVfR@w	c£‚‚OYR5–ÿek1SQ¡lqNÇ0"
+ MND_wind_lion: "WSÎ˜KNîr"
+ MND_wind_lion_desc: "WS¹„vIƒŸSYeO‘šëXâVÀNHNëS²Q•0îrPRNI{ºNÿÖNìN_NNI{†N0"
+ MND_wind_eagle: "‰Î˜KNpž"
+ MND_wind_eagle_desc: "pž„v<w[wŠbteGrb:W6eÛ<w•^ÿ‘šëXâVß@wƒRŒte–bVÿYY`SHQ0"
+ MND_wind_wolf: "SÎ˜KNür"
+ MND_wind_wolf_desc: "ür²(Wê–ŸSNNŠUNëSÿêS¬Tg„…1V„v£NY0‘šëXâVfRO†NT7h„vwÃV0"
+ MND_missions_1_10_title: "™„·VÏuNmYÏ‚"
+ MND_missions_1_10_desc: "åT‚S„vßpñVNµ^µ^ËzwegÿÎWY„vïNÈSVËYÑFU–0‘šëXâVŠbÙýNípù•SVbáO÷Sÿ™„·V(cÇ†Ng¾–„v£àQt^0"
+ MND_economic_recovery: "™„·VYÏ‚g"
+ MND_economic_recovery_desc: "åT.SÞVeg†NÿPg™eß—VNÿÎWÌ‘„vIm¡‹Í‘°elweg0"
+ MND_missions_1_11_title: "™„·VR‘‚S"
+ MND_missions_1_11_desc: "hfæfR‘„^„vwÕlPR«ˆ,dÛ†NÏkNGra„„íVÿT7h„vvh0T7h„vkpP0T7h„vt^ýN0‘šëXâV‰„vN=fN2N¶RT„^ÿ=fteGrµN:S„vµNÏ‘0"
+ MND_wine_factory: "™„·VR‘‚S"
+ MND_wine_factory_desc: "Ùµ^R‘‚S	c™„·V„väSÕl‘.ÿµNúQÔkÎNMRY†NNb0"

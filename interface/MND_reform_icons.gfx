@@ -4,4 +4,30 @@ spriteTypes = {
 		name = "government_reform_ACG_MEC_E_MND_reform_1"
 		texturefile = "gfx/interface/government_reform_icons/ACG_MEC_E_MND/ACG_MEC_E_MND_reform_1.dds"
 	}
+
+	# 第二级改革「四风守护」——图标取自南风守护旗中央的狮头
+	spriteType = {
+		name = "government_reform_ACG_MEC_E_MND_reform_2"
+		texturefile = "gfx/interface/government_reform_icons/ACG_MEC_E_MND/ACG_MEC_E_MND_reform_2.dds"
+	}
+
+	### GOVERNMENT_MECHANIC_INTERACTION 四风守护（四项行动按钮）
+	# 命名规则与 NNM 一致：sprite 名 = 机制里 icon = 的值本身（不加 GFX_ 前缀）
+	# 参照 common/government_mechanics/NNM_mikazuki_mechanic.txt:117 + interface/NNM_reform_icons.gfx:9
+	spriteType = {
+		name = "ACG_MEC_E_MND_interaction_dragon"
+		texturefile = "gfx/interface/government_reform_icons/ACG_MEC_E_MND/ACG_MEC_E_MND_interaction_dragon.dds"
+	}
+	spriteType = {
+		name = "ACG_MEC_E_MND_interaction_lion"
+		texturefile = "gfx/interface/government_reform_icons/ACG_MEC_E_MND/ACG_MEC_E_MND_interaction_lion.dds"
+	}
+	spriteType = {
+		name = "ACG_MEC_E_MND_interaction_wolf"
+		texturefile = "gfx/interface/government_reform_icons/ACG_MEC_E_MND/ACG_MEC_E_MND_interaction_wolf.dds"
+	}
+	spriteType = {
+		name = "ACG_MEC_E_MND_interaction_falcon"
+		texturefile = "gfx/interface/government_reform_icons/ACG_MEC_E_MND/ACG_MEC_E_MND_interaction_falcon.dds"
+	}
 }
