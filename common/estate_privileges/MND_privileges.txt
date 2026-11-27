@@ -76,7 +76,7 @@ MND_resident_commissions = {
 #   忠诚 +10% / 影响力 +10%
 #   王领 -5%（land_share = 5，让给阶层）
 #   免拔地（exempt_from_seize_land）
-#   骑兵战力 / 骑兵比例 随「骑士团领地占比」线性增长，占比 100% 时封顶 +33% / +20%
+#   骑兵战力 / 骑兵比例 随「骑士团领地占比」线性增长，占比 100% 时封顶 +33% / +33%
 # 参数依据：原版 common/estate_privileges/XX_example.txt:1-31
 #   land_share = <number>                  # 要让出的王冠领地（给阶级）
 #   modifier_by_land_ownership = { <mod> } # 修正与阶级领地相乘
@@ -107,7 +107,7 @@ MND_knights_of_favonius_charter = {
 	}
 	modifier_by_land_ownership = {
 		cavalry_power = 0.33
-		cav_to_inf_ratio = 0.20
+		cav_to_inf_ratio = 0.33
 	}
 	ai_will_do = {
 		factor = 1

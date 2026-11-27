@@ -220,13 +220,11 @@
  MND_mondstadt_empire: "™„·V^ýV"
  MND_mondstadt_empire_desc: "Î˜^y„v×e^NNQ=fNµ^ÎW¦0^ýV„v›Q–Sb—Vôfàrÿ_Nôf¾–«ˆSb®W0"
  MND_knights_of_favonius_charter: "‰Î˜‘šëXâVyr¸‹¶r"
- MND_knights_of_favonius_charter_desc: "®‹OŠbÎWÊ„v0u„^0èxJWNzCgNv^R0R‘šëXâVTNÿ'YâV•(W®‹‹N…SÌ‘ô‹Ý‹ôfÍ‘ÿ‘šëXìN_N?aa:N™„·VYVSNýN‹T0ãN÷N=fýV‹sôv–„v†˜0WÈSS”N*N~vR¹pÿwNÙýNyr¸‹¶rN~{ÿ£›N0W1SQ_NÔbNÞVegÿd–^—Šbte.V¶r¸ujOŸ^0‘šëXâVTN„v0WŠYÿ™„·V„v‘šuQ1SŠÏPÎNê¶Rlš©SÌ‘•úQeg„vÿ†˜0W`SÔkÏkØšNRÿ‘šuQb›RN‘šuQÔk‹O¿Oß@w¨mÿ`SánöeïS¾ +33% ‘šuQjOb0+20% ‘šuQÔk‹O0"
+ MND_knights_of_favonius_charter_desc: "®‹OŠbÎWÊ„v0u„^0èxJWNzCgNv^R0R‘šëXâVTNÿ'YâV•(W®‹‹N…SÌ‘ô‹Ý‹ôfÍ‘ÿ‘šëXìNmN?aa:N™„·VYVSNýN‹T0ãN÷N=fýV‹sôv–„v†˜0WÈSS”N*NŒvR¹pÿwNÙýNyr¸‹¶rNŒrÿ±›N0W1SQmNÔbNÞVegÿd–^—Šbte.V¶r¸ujOŸ^0‘šëXâVTN„v0WŠYÿ™„·V„v‘šuQ1SŠÏPÎNê¶Rlš©SÌ‘•úQeg„vÿ†˜0W`SÔkÏkØšNRÿ‘šuQb›RN‘šuQÔk‹O¿OßNw¨mÿ`SánöeïS¾ +33% ‘šuQjOb0+33% ‘šuQÔk‹O0"
  MND_missions_2_9_title: "T›üR„vyr­‹"
  MND_missions_2_9_desc: "?–YŠb¼pÑ‘=gÆbbNWYSOýw­‹Ãuÿ©‹‘šëX(Wê–0WÌ‘Ñ0(WÎ˜Ì‘>Nþv0ÖNô‹T›üRNêS=f=gVÿ_N=f«ŽSO0"
  MND_magic_training: "T›üR„vyr­‹"
  MND_magic_training_desc: "×SÇyr­‹„v‘šëXÏkt^ýO&^ÞV°e„vb‹ONÃV—Vÿ.Oßu1SÙHNNt^t^eweg0"
- MND_knights_of_favonius_charter: "‘šëXâVyr¸‹¶r"
- MND_knights_of_favonius_charter_desc: "yr¸‹¶rŠbW0WckVRRV‘šëXâV0ÖNìN(W†˜0WN‰Qlš0ÃuuQ0îOï  ÖNìN(W†˜0WN‰Qlš0ÃuuQ0îOï  †˜—VŠYÿýwÉbNb:W„v‘šuQ1SŠY0"
  MND_wind_dragon: "NÎ˜KN™Ÿ"
  MND_wind_dragon_desc: "NƒX„vÎ˜Ì‘&^@w™Ÿ„vNO1ž0‘šëXâVfR@w	c£‚‚OYR5–ÿek1SQ¡lqNÇ0"
  MND_wind_lion: "WSÎ˜KNîr"
@@ -243,3 +241,4 @@
  MND_missions_1_11_desc: "hfæfR‘„^„vwÕlPR«ˆ,dÛ†NÏkNGra„„íVÿT7h„vvh0T7h„vkpP0T7h„vt^ýN0‘šëXâV‰„vN=fN2N¶RT„^ÿ=fteGrµN:S„vµNÏ‘0"
  MND_wine_factory: "™„·VR‘‚S"
  MND_wine_factory_desc: "Ùµ^R‘‚S	c™„·V„väSÕl‘.ÿµNúQÔkÎNMRY†NNb0"
+ MND_tt_become_empire: "§Y[Root.GetName]§!„v?eœ^I{µulØS:N§Y^ýVµu§!0"

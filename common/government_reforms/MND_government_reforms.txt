@@ -35,6 +35,7 @@ MND_knights_of_favonius_reform = {
 		enables_estate_brahmins = yes
 		enables_estate_maratha = yes
 		disables_estate_church = yes
+		enables_aristocratic_idea_group = yes
 	}
 	effect = {
 		custom_tooltip = MND_tt_barbatos_creed

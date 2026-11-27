@@ -108,8 +108,6 @@ MND_missions_1 = {
 		trigger = {
 			has_estate_privilege = estate_brahmins_development_of_temples
 			has_estate_privilege = estate_brahmins_clerical_education
-			has_estate_privilege = estate_brahmins_legitimacy_to_rule
-			has_estate_privilege = estate_brahmins_for_the_faith
 		}
 		effect = {
 			add_country_modifier = {
@@ -616,7 +614,7 @@ MND_missions_4 = {
 		icon = "mission_build_up_to_force_limit"
 		position = 1
 		trigger = {
-			land_forcelimit = 100
+			army_size_percentage = 0.9
 		}
 		effect = {
 			low_countries_region = {
@@ -1274,7 +1272,10 @@ MND_missions_5 = {
 			}
 		}
 		effect = {
-			set_government_rank = 3
+			custom_tooltip = MND_tt_become_empire
+			hidden_effect = {
+				set_government_rank = 3
+			}
 			add_prestige = 100
 			add_power_projection = {
 				type = MND_mission_reward
