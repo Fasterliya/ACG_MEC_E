@@ -434,18 +434,17 @@ MND_missions_2 = {
 		}
 		trigger = {
 			treasury = 1000
-			has_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
+			# ACG 魔法系统的「魔法值」（变量 Mana），不是政府机制里的「法术强度」
+			check_variable = {
+				which = Mana
 				value = 50
 			}
 		}
 		effect = {
 			add_treasury = -500
-			add_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
-				value = -50
+			subtract_variable = {
+				which = Mana
+				value = 50
 			}
 			add_country_modifier = {
 				name = MND_dragoon
@@ -1361,7 +1360,7 @@ MND_missions_6 = {
 	}
 	has_country_shield = yes
 
-	# ── 7_1 阿贝多的炼金工坊
+	# ── 6_1 阿贝多的炼金工坊
 	MND_missions_6_1 = {
 		icon = "mission_have_manufactories"
 		position = 1
@@ -1375,9 +1374,8 @@ MND_missions_6 = {
 			}
 		}
 		effect = {
-			add_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
+			change_variable = {
+				which = Mana
 				value = 25
 			}
 			add_country_modifier = {
@@ -1395,17 +1393,16 @@ MND_missions_6 = {
 			MND_missions_6_1
 		}
 		trigger = {
-			has_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
+			# ACG 魔法系统的「魔法值」（变量 Mana）≥ 51，再耗 50 换「创生之法」
+			check_variable = {
+				which = Mana
 				value = 51
 			}
 		}
 		effect = {
-			add_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
-				value = -50
+			subtract_variable = {
+				which = Mana
+				value = 50
 			}
 			add_country_modifier = {
 				name = MND_creation_law
@@ -1439,9 +1436,8 @@ MND_missions_6 = {
 			monthly_income = 51
 		}
 		effect = {
-			add_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
+			change_variable = {
+				which = Mana
 				value = 1
 			}
 			add_country_modifier = {
@@ -1607,6 +1603,7 @@ MND_missions_7 = {
 				name = MND_wind_dragon
 				duration = -1
 			}
+			add_mil_power = -50
 		}
 	}
 
@@ -1622,6 +1619,7 @@ MND_missions_7 = {
 				name = MND_wind_lion
 				duration = -1
 			}
+			add_mil_power = -50
 		}
 	}
 
@@ -1637,6 +1635,7 @@ MND_missions_7 = {
 				name = MND_wind_eagle
 				duration = -1
 			}
+			add_mil_power = -50
 		}
 	}
 
@@ -1652,6 +1651,7 @@ MND_missions_7 = {
 				name = MND_wind_wolf
 				duration = -1
 			}
+			add_mil_power = -50
 		}
 	}
 }
