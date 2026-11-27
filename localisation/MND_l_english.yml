@@ -125,6 +125,7 @@
  MND_missions_1_5_desc: "îOsYìN(W‰Î˜'YYeXÌ‘õVŒRgTNµkwyÍ‹ÿYeO„vyrCgòTÏu=„0R†NžRY0™„·V„vºN›RNQêSegêR‘†™N0uÎ‘ÿ_NegêÙ›N?aa:NÎW¦úQ›R„vºN0"
  MND_missions_1_6_title: ")YzzKN4t"
  MND_missions_1_6_desc: ")YzzKN4t«ˆ›O(WYeXñmYÿ4t&VNÍTÿÎ˜1SÕuÇÎW™X0‘šëXâVŠbúR™^îOán–™ý@b(W„vte*N0W:SÿMb©‹ÙŠb4tÍ‘°eÑSúQðXó—0"
+ MND_missions_1_6_bonus_note: "˜YVY±Rÿ–™ý@b(W0W:S…Q@b	gñT¹ewýNýú^	gúR™^ÿR˜Y·ƒ—V0Î˜^y²bQO0ÿûy¨R¦^ +5%0­‹Ãu¦^ +2.5%	ÿ"
  MND_missions_1_6_bonus_yes: "§G'§! ˜YVY±Rÿ–™ý@b(W0W:S@b	gwýNýú^	gúR™^  ·ƒ—V0Î˜^y²bQO0"
  MND_missions_1_6_bonus_no: "§R'§! ˜YVY±Rÿ–™ý@b(W0W:S@b	gwýNýú^	gúR™^"
  MND_church_of_favonius: "‰Î˜YeO"
@@ -220,7 +221,7 @@
  MND_mondstadt_empire: "™„·V^ýV"
  MND_mondstadt_empire_desc: "Î˜^y„v×e^NNQ=fNµ^ÎW¦0^ýV„v›Q–Sb—Vôfàrÿ_Nôf¾–«ˆSb®W0"
  MND_knights_of_favonius_charter: "‰Î˜‘šëXâVyr¸‹¶r"
- MND_knights_of_favonius_charter_desc: "®‹OŠbÎWÊ„v0u„^0èxJWNzCgNv^R0R‘šëXâVTNÿ'YâV•(W®‹‹N…SÌ‘ô‹Ý‹ôfÍ‘ÿ‘šëXìNmN?aa:N™„·VYVSNýN‹T0ãN÷N=fýV‹sôv–„v†˜0WÈSS”N*NŒvR¹pÿwNÙýNyr¸‹¶rNŒrÿ±›N0W1SQmNÔbNÞVegÿd–^—Šbte.V¶r¸ujOŸ^0‘šëXâVTN„v0WŠYÿ™„·V„v‘šuQ1SŠÏPÎNê¶Rlš©SÌ‘•úQeg„vÿ†˜0W`SÔkÏkØšNRÿ‘šuQb›RN‘šuQÔk‹O¿OßNw¨mÿ`SánöeïS¾ +33% ‘šuQjOb0+33% ‘šuQÔk‹O0"
+ MND_knights_of_favonius_charter_desc: "®‹OŠbÎWÊ„v0u„^0èxJWNzCgNv^R0R‘šëXâVTNÿ'YâV•(W®‹‹N…SÌ‘ô‹Ý‹ôfÍ‘ÿ‘šëXìN_N?aa:N™„·VYVSNýN‹T0ãN÷N=fýV‹sôv–„v†˜0WÈSS”N*N~vR¹pÿwNÙýNyr¸‹¶rN~{ÿ£›N0W1SQ_NÔbNÞVegÿd–^—Šbte.V¶r¸ujOŸ^0‘šëXâVTN„v0WŠYÿ™„·V„v‘šuQ1SŠÏPÎNê¶Rlš©SÌ‘•úQeg„vÿ†˜0W`SÔkÏkØšNRÿ‘šuQb›RN‘šuQÔk‹O¿Oß@w¨mÿ`SánöeïS¾ +33% ‘šuQjOb0+33% ‘šuQÔk‹O0"
  MND_missions_2_9_title: "T›üR„vyr­‹"
  MND_missions_2_9_desc: "?–YŠb¼pÑ‘=gÆbbNWYSOýw­‹Ãuÿ©‹‘šëX(Wê–0WÌ‘Ñ0(WÎ˜Ì‘>Nþv0ÖNô‹T›üRNêS=f=gVÿ_N=f«ŽSO0"
  MND_magic_training: "T›üR„vyr­‹"

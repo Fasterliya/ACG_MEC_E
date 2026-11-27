@@ -134,6 +134,7 @@ MND_missions_1 = {
 				name = MND_sky_lyre
 				duration = -1
 			}
+			custom_tooltip = MND_missions_1_6_bonus_note
 			if = {
 				limit = {
 					NOT = {
