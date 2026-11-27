@@ -2,6 +2,16 @@
 # 蒙德 MND 任务树
 # slot = 列（1 最左 / 5 最右）；position = 行（1 最上）
 # 关系：1_1→1_2；2_1→2_2→2_3；1_3 前置 2_2；3_1→3_2→3_3，3_3 另需 2_2
+#
+# 额外奖励写法（2026/11/27 统一为原版 1.35 的 complex_dynamic_effect 框架，
+#   写法对齐 missions/TES_missions.txt:1932 与 IYS_missions.txt:2314）：
+#     1_4 全国工坊 ≥15        → 「晨曦酒庄产业」
+#     1_6 首都地区寺庙全满     → 「风神护佑」
+#     1_7 主神为巴巴托斯       → 「芭芭拉的祷告」（⚠ first_limit 与 trigger 同条件，✓ 恒真）
+#   要点：说明键 = <任务>_bonus_tt（自己写）；✓/✗ 两行由原版 BONUS_REWARD_YES / BONUS_REWARD_NO 提供；
+#         奖励本体写在 first_effect 里 —— 框架末尾的 hidden_effect 才真正发放，tooltip 只负责显示；
+#         多档「只能拿一个」用 complex_dynamic_effect，多档「满足几个给几个」用
+#         complex_dynamic_effect_without_alternative（定义见原版 common/scripted_effects/00_scripted_effects.txt:5805 / :6017）。
 # ============================================================
 
 MND_missions_1 = {
@@ -86,17 +96,21 @@ MND_missions_1 = {
 				name = MND_diluc
 				duration = -1
 			}
-			if = {
-				limit = {
+			# 额外奖励：complex_dynamic_effect 框架（同 1_6）
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_1_4_bonus_tt
+				first_limit = "
 					num_of_owned_provinces_with = {
 						value = 15
 						has_building = workshop
 					}
-				}
-				add_country_modifier = {
-					name = MND_dawn_winery
-					duration = -1
-				}
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_dawn_winery
+						duration = -1
+					}
+				"
 			}
 		}
 	}
@@ -134,24 +148,26 @@ MND_missions_1 = {
 				name = MND_sky_lyre
 				duration = -1
 			}
-			custom_tooltip = MND_missions_1_6_bonus_note
-			if = {
-				limit = {
+			# 额外奖励：改用原版 1.35 的 complex_dynamic_effect 框架
+			#   （写法对齐 ACG1 的 missions/TES_missions.txt:1932 那套）
+			#   条件说明 = 自己写的 _bonus_tt；✓/✗ 这行由原版 BONUS_REWARD_YES / _NO 提供；
+			#   奖励本体放进 first_effect，框架末尾的 hidden_effect 会真的发放，tooltip 只负责显示。
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_1_6_bonus_tt
+				first_limit = "
 					NOT = {
 						any_owned_province = {
 							is_in_capital_area = yes
 							NOT = { has_building = temple }
 						}
 					}
-				}
-				custom_tooltip = MND_missions_1_6_bonus_yes
-				add_country_modifier = {
-					name = MND_wind_blessing
-					duration = -1
-				}
-			}
-			else = {
-				custom_tooltip = MND_missions_1_6_bonus_no
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_wind_blessing
+						duration = -1
+					}
+				"
 			}
 		}
 	}
@@ -171,18 +187,21 @@ MND_missions_1 = {
 				name = MND_sister_barbara
 				duration = -1
 			}
-			if = {
-				limit = {
+			# 额外奖励：complex_dynamic_effect 框架（同 1_6）
+			# ⚠ 这里的 first_limit 与上面 trigger 是同一个条件，所以 ✓ 档恒定成立、✗ 档永远不出现。
+			#   要让它变成真正的"可选额外奖励"，把 first_limit 换成更苛刻的一条即可，例：
+			#     num_of_owned_provinces_with = { value = 10 has_building = temple }
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_1_7_bonus_tt
+				first_limit = "
 					has_personal_deity = acg_mec_e_deity_barbatos
-				}
-				custom_tooltip = MND_missions_1_7_bonus_yes
-				add_country_modifier = {
-					name = MND_barbara_prayer
-					duration = -1
-				}
-			}
-			else = {
-				custom_tooltip = MND_missions_1_7_bonus_no
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_barbara_prayer
+						duration = -1
+					}
+				"
 			}
 		}
 	}
@@ -492,7 +511,7 @@ MND_missions_3 = {
 			MND_missions_3_1
 		}
 		trigger = {
-			army_professionalism = 0.20
+			army_professionalism = 0.05
 		}
 		effect = {
 			add_country_modifier = {
