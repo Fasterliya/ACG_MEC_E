@@ -1417,17 +1417,12 @@ MND_missions_6 = {
 		}
 		trigger = {
 			monthly_income = 51
-			has_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
-				value = 51
-			}
 		}
 		effect = {
 			add_government_power = {
 				mechanic_type = acgr_magic_government_mechanic_1
 				power_type = acgr_magic_government
-				value = 33
+				value = 1
 			}
 			add_country_modifier = {
 				name = MND_witch_coven
