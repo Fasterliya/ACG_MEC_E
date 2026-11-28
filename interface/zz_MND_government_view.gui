@@ -1,0 +1,47 @@
+guiTypes = {
+
+	# ============================================================
+	# 蒙德 MND —— 政府交互栏加宽（让四风守护能放下第 4 个行动按钮）
+	# ------------------------------------------------------------
+	# 【问题】原版 interface/countrygovernmentview.gui 里：
+	#     windowType "government_mechanic_interactions"  size = 300×100
+	#       └ smoothListboxType "government_interaction_list"  size = 300×100  horizontal = 1
+	#   引擎把每个 interaction 的按钮窗口按 **固定 100 像素一格** 横排（不是按窗口自身宽度），
+	#   第 n 个就落在 x = 100n。第 4 个 = 300，正好落在 300 宽的列表外面 → 整格不绘制。
+	#   实机验证（2026-11-26）：把窗口宽度从 100 改成 74，按钮位置一格都没变，
+	#   第 4 个依然消失、下排依然右偏 —— 说明是固定 100 栅格 + 300 宽裁剪。
+	#
+	# 【解法】把这个容器和列表加宽到 440，第 4 格（x=300~400）就落在界内、会被绘制。
+	#   容器本身没有背景图，加宽不会画出多余的框；按钮的真实位置由
+	#   interface/government_mechanics/MND_four_winds.gui 里的偏移决定（2×2）。
+	#
+	# 【覆盖方式】靠窗口同名覆盖：本文件重新定义 government_mechanic_interactions，
+	#   引擎按名字取用。ACG 本体也覆盖过 countrygovernmentview.gui（两万行），
+	#   但那是整份文件覆盖，与本文件不冲突；若某个加载顺序下本定义没生效，
+	#   最坏情况也只是回到"只有 3 个按钮"，不会报错。
+	#   原版定义位置：countrygovernmentview.gui:852-872（v1.37.5）
+	# ============================================================
+
+	windowType = {
+		name = "government_mechanic_interactions"
+		backGround = ""
+		position = { x = 0 y = 0 }
+		size = { x = 440 y = 100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		#list of interactions
+		smoothListboxType = {
+			name = "government_interaction_list"
+			position = { x = 0 y = 0 }
+			backGround = ""
+			size = { x = 440 y = 100 }
+			Orientation = "UPPER_LEFT"
+			horizontal = 1
+			spacing = 0
+			borderSize = { x = 0 y = 0 }
+		}
+	}
+}

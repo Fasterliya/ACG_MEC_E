@@ -2,6 +2,16 @@
 # 蒙德 MND 任务树
 # slot = 列（1 最左 / 5 最右）；position = 行（1 最上）
 # 关系：1_1→1_2；2_1→2_2→2_3；1_3 前置 2_2；3_1→3_2→3_3，3_3 另需 2_2
+#
+# 额外奖励写法（2026/11/27 统一为原版 1.35 的 complex_dynamic_effect 框架，
+#   写法对齐 missions/TES_missions.txt:1932 与 IYS_missions.txt:2314）：
+#     1_4 全国工坊 ≥15        → 「晨曦酒庄产业」
+#     1_6 首都地区寺庙全满     → 「风神护佑」
+#     1_7 主神为巴巴托斯       → 「芭芭拉的祷告」（⚠ first_limit 与 trigger 同条件，✓ 恒真）
+#   要点：说明键 = <任务>_bonus_tt（自己写）；✓/✗ 两行由原版 BONUS_REWARD_YES / BONUS_REWARD_NO 提供；
+#         奖励本体写在 first_effect 里 —— 框架末尾的 hidden_effect 才真正发放，tooltip 只负责显示；
+#         多档「只能拿一个」用 complex_dynamic_effect，多档「满足几个给几个」用
+#         complex_dynamic_effect_without_alternative（定义见原版 common/scripted_effects/00_scripted_effects.txt:5805 / :6017）。
 # ============================================================
 
 MND_missions_1 = {
@@ -22,7 +32,12 @@ MND_missions_1 = {
 			total_development = 50
 		}
 		effect = {
-			change_government_reform_progress = 75
+			change_government_reform_progress = 100
+			# 永久 buff：省份战争分数花费 -10%
+			add_country_modifier = {
+				name = MND_wind_rising
+				duration = -1
+			}
 		}
 	}
 
@@ -86,17 +101,21 @@ MND_missions_1 = {
 				name = MND_diluc
 				duration = -1
 			}
-			if = {
-				limit = {
+			# 额外奖励：complex_dynamic_effect 框架（同 1_6）
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_1_4_bonus_tt
+				first_limit = "
 					num_of_owned_provinces_with = {
 						value = 15
 						has_building = workshop
 					}
-				}
-				add_country_modifier = {
-					name = MND_dawn_winery
-					duration = -1
-				}
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_dawn_winery
+						duration = -1
+					}
+				"
 			}
 		}
 	}
@@ -108,8 +127,6 @@ MND_missions_1 = {
 		trigger = {
 			has_estate_privilege = estate_brahmins_development_of_temples
 			has_estate_privilege = estate_brahmins_clerical_education
-			has_estate_privilege = estate_brahmins_legitimacy_to_rule
-			has_estate_privilege = estate_brahmins_for_the_faith
 		}
 		effect = {
 			add_country_modifier = {
@@ -136,23 +153,145 @@ MND_missions_1 = {
 				name = MND_sky_lyre
 				duration = -1
 			}
-			if = {
-				limit = {
+			# 额外奖励：改用原版 1.35 的 complex_dynamic_effect 框架
+			#   （写法对齐 ACG1 的 missions/TES_missions.txt:1932 那套）
+			#   条件说明 = 自己写的 _bonus_tt；✓/✗ 这行由原版 BONUS_REWARD_YES / _NO 提供；
+			#   奖励本体放进 first_effect，框架末尾的 hidden_effect 会真的发放，tooltip 只负责显示。
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_1_6_bonus_tt
+				first_limit = "
 					NOT = {
 						any_owned_province = {
 							is_in_capital_area = yes
 							NOT = { has_building = temple }
 						}
 					}
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_wind_blessing
+						duration = -1
+					}
+				"
+			}
+		}
+	}
+
+	# ── 1_7 天空下的芭芭拉（前置 1_6）
+	MND_missions_1_7 = {
+		icon = "mission_hands_praying"
+		position = 7
+		required_missions = {
+			MND_missions_1_6
+		}
+		trigger = {
+			has_personal_deity = acg_mec_e_deity_barbatos
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_sister_barbara
+				duration = -1
+			}
+			# 额外奖励：complex_dynamic_effect 框架（同 1_6）
+			# ⚠ 这里的 first_limit 与上面 trigger 是同一个条件，所以 ✓ 档恒定成立、✗ 档永远不出现。
+			#   要让它变成真正的"可选额外奖励"，把 first_limit 换成更苛刻的一条即可，例：
+			#     num_of_owned_provinces_with = { value = 10 has_building = temple }
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_1_7_bonus_tt
+				first_limit = "
+					has_personal_deity = acg_mec_e_deity_barbatos
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_barbara_prayer
+						duration = -1
+					}
+				"
+			}
+		}
+	}
+
+	# ── 1_8 教会的战斗修女（前置 1_7）
+	MND_missions_1_8 = {
+		icon = "mission_hands_praying"
+		position = 8
+		required_missions = {
+			MND_missions_1_7
+		}
+		trigger = {
+			manpower = 200
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_rosaria
+				duration = -1
+			}
+		}
+	}
+
+	# ── 1_9 吟游诗人的乐章（前置 1_8）
+	MND_missions_1_9 = {
+		icon = "mission_early_modern_university"
+		position = 9
+		required_missions = {
+			MND_missions_1_8
+		}
+		trigger = {
+			innovativeness = 20
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_bard_songs
+				duration = -1
+			}
+			change_innovativeness = 20
+		}
+	}
+
+	# ── 1_10 蒙德经济复苏（无前置）
+	MND_missions_1_10 = {
+		icon = "mission_have_manufactories"
+		position = 10
+		trigger = {
+			# 原写 has_building = manufactory —— 原版没有这个可建建筑（manufactory 只是模板，
+			# 实际是 wharf/weapons/textile/tradecompany/farm_estate/mills/furnace 等），
+			# 原版专门给了 province 作用域的脚本触发器 has_manufactory_trigger（00_scripted_triggers.txt:665）
+			num_of_owned_provinces_with = {
+				value = 10
+				has_manufactory_trigger = yes
+			}
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = MND_economic_recovery
+				duration = 9125
+			}
+		}
+	}
+
+	# ── 1_11 蒙德酒厂（前置 1_10）
+	MND_missions_1_11 = {
+		icon = "mission_high_income"
+		position = 11
+		required_missions = {
+			MND_missions_1_10
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 6
+				trade_goods = wine
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
 				}
-				custom_tooltip = MND_missions_1_6_bonus_yes
-				add_country_modifier = {
-					name = MND_wind_blessing
+				add_permanent_province_modifier = {
+					name = MND_wine_factory
 					duration = -1
 				}
-			}
-			else = {
-				custom_tooltip = MND_missions_1_6_bonus_no
 			}
 		}
 	}
@@ -313,6 +452,77 @@ MND_missions_2 = {
 		}
 	}
 
+	# ── 2_8 杜林的化形（前置 2_7）
+	MND_missions_2_8 = {
+		icon = "mission_gain_mana"
+		position = 8
+		required_missions = {
+			MND_missions_2_7
+		}
+		trigger = {
+			treasury = 1000
+			# ACG 魔法系统的「魔法值」（变量 Mana），不是政府机制里的「法术强度」
+			check_variable = {
+				which = Mana
+				value = 50
+			}
+		}
+		effect = {
+			add_treasury = -500
+			subtract_variable = {
+				which = Mana
+				value = 50
+			}
+			add_country_modifier = {
+				name = MND_dragoon
+				duration = -1
+			}
+		}
+	}
+
+	# ── 2_9 魔导的特训（前置 2_8）
+	MND_missions_2_9 = {
+		icon = "mission_gain_mana"
+		position = 9
+		required_missions = {
+			MND_missions_2_8
+		}
+		trigger = {
+			mil_power = 200
+			army_tradition = 60
+		}
+		effect = {
+			add_mil_power = -200
+			add_army_tradition = 40
+			add_country_modifier = {
+				name = MND_magic_training
+				duration = -1
+			}
+		}
+	}
+
+	# ── 2_10 大魔女们（前置 2_9）
+	MND_missions_2_10 = {
+		icon = "mission_gain_mana"
+		position = 10
+		required_missions = {
+			MND_missions_2_9
+		}
+		trigger = {
+			# 魔法学院 = ACG1 的 magic_building_2_1（common/buildings/magic_buildings.txt:1478）
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = magic_building_2_1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = Mana
+				value = 40
+			}
+		}
+	}
+
 }
 
 MND_missions_3 = {
@@ -332,7 +542,7 @@ MND_missions_3 = {
 		trigger = {
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 50
+				loyalty = 51
 			}
 		}
 		effect = {
@@ -349,7 +559,7 @@ MND_missions_3 = {
 			MND_missions_3_1
 		}
 		trigger = {
-			army_professionalism = 0.20
+			army_professionalism = 0.05
 		}
 		effect = {
 			add_country_modifier = {
@@ -455,6 +665,114 @@ MND_missions_3 = {
 		}
 	}
 
+	# ── 3_8 蒙德远征军（前置 3_7）
+	MND_missions_3_8 = {
+		icon = "mission_build_up_to_force_limit"
+		position = 8
+		required_missions = {
+			MND_missions_3_7
+		}
+		trigger = {
+			num_of_cavalry = 55		# 55 支骑兵 = 5.5 万
+			treasury = 500
+			# 发展度 ≥ 开局 42（96 Zeeland 11 + 97 Holland 16 + 4383 Haag 15）的 10 倍
+			total_development = 420
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_expeditionary_army
+				duration = -1
+			}
+		}
+	}
+
+	# ── 3_9 魔女会（前置 3_8 + 2_8）
+	MND_missions_3_9 = {
+		icon = "mission_gain_mana"
+		position = 9
+		required_missions = {
+			MND_missions_3_8
+			MND_missions_2_8
+		}
+		trigger = {
+			# ACG 魔法系统的「魔法值」（变量 Mana）≥ 125
+			check_variable = {
+				which = Mana
+				value = 125
+			}
+		}
+		effect = {
+			subtract_variable = {
+				which = Mana
+				value = 65
+			}
+			add_country_modifier = {
+				name = MND_witch_council
+				duration = -1
+			}
+		}
+	}
+
+	# ── 3_10 大团长法尔伽（前置 3_9）
+	MND_missions_3_10 = {
+		icon = "mission_empire"
+		position = 10
+		required_missions = {
+			MND_missions_3_9
+		}
+		trigger = {
+			num_of_cities = 44
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_grand_master
+				duration = -1
+			}
+			# 额外奖励（二选一，complex_dynamic_effect 是 if / else_if，先命中先生效）
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_3_10_bonus_cav_tt
+				first_limit = "
+					cavalry_fraction = 1.0
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_varka
+						duration = -1
+					}
+				"
+				second_custom_tooltip = MND_missions_3_10_bonus_mixed_tt
+				second_limit = "
+					NOT = { cavalry_fraction = 1.0 }
+				"
+				second_effect = "
+					add_country_modifier = {
+						name = MND_knightly_code
+						duration = -1
+					}
+				"
+			}
+		}
+	}
+
+	# ── 3_11 全盛蒙德（前置 3_10 + 2_10）
+	MND_missions_3_11 = {
+		icon = "mission_empire"
+		position = 11
+		required_missions = {
+			MND_missions_3_10
+			MND_missions_2_10
+		}
+		trigger = {
+			num_of_cavalry = 100		# 100 支骑兵 = 10 万
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_pinnacle_mondstadt
+				duration = -1
+			}
+		}
+	}
+
 }
 
 MND_missions_4 = {
@@ -472,11 +790,16 @@ MND_missions_4 = {
 		icon = "mission_build_up_to_force_limit"
 		position = 1
 		trigger = {
-			land_forcelimit = 100
+			army_size_percentage = 0.9
 		}
 		effect = {
 			low_countries_region = {
 				add_permanent_claim = ROOT
+			}
+			# 限时 25 年（9125 天）：扩张更易消化
+			add_country_modifier = {
+				name = MND_follow_the_wind
+				duration = 9125
 			}
 		}
 	}
@@ -576,6 +899,462 @@ MND_missions_4 = {
 			}
 		}
 	}
+	# ── 4_6 海对岸的领土（前置 3_5）
+	MND_missions_4_6 = {
+		icon = "mission_establish_high_seas_navy"
+		position = 6
+		required_missions = {
+			MND_missions_3_5
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 233
+				province_id = 234
+				province_id = 235
+				province_id = 236
+				province_id = 237
+				province_id = 238
+				province_id = 239
+				province_id = 240
+				province_id = 241
+				province_id = 242
+				province_id = 243
+				province_id = 245
+				province_id = 1860
+				province_id = 1861
+				province_id = 4130
+				province_id = 4366
+				province_id = 4367
+				province_id = 4368
+				province_id = 4369
+				province_id = 4370
+				province_id = 4371
+				province_id = 4372
+				province_id = 4373
+				province_id = 4374
+				province_id = 4376
+				province_id = 4785
+			}
+		}
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+		}
+		effect = {
+			233 = {
+				add_permanent_claim = ROOT
+			}
+			234 = {
+				add_permanent_claim = ROOT
+			}
+			235 = {
+				add_permanent_claim = ROOT
+			}
+			236 = {
+				add_permanent_claim = ROOT
+			}
+			237 = {
+				add_permanent_claim = ROOT
+			}
+			238 = {
+				add_permanent_claim = ROOT
+			}
+			239 = {
+				add_permanent_claim = ROOT
+			}
+			240 = {
+				add_permanent_claim = ROOT
+			}
+			241 = {
+				add_permanent_claim = ROOT
+			}
+			242 = {
+				add_permanent_claim = ROOT
+			}
+			243 = {
+				add_permanent_claim = ROOT
+			}
+			245 = {
+				add_permanent_claim = ROOT
+			}
+			1860 = {
+				add_permanent_claim = ROOT
+			}
+			1861 = {
+				add_permanent_claim = ROOT
+			}
+			4130 = {
+				add_permanent_claim = ROOT
+			}
+			4366 = {
+				add_permanent_claim = ROOT
+			}
+			4367 = {
+				add_permanent_claim = ROOT
+			}
+			4368 = {
+				add_permanent_claim = ROOT
+			}
+			4369 = {
+				add_permanent_claim = ROOT
+			}
+			4370 = {
+				add_permanent_claim = ROOT
+			}
+			4371 = {
+				add_permanent_claim = ROOT
+			}
+			4372 = {
+				add_permanent_claim = ROOT
+			}
+			4373 = {
+				add_permanent_claim = ROOT
+			}
+			4374 = {
+				add_permanent_claim = ROOT
+			}
+			4376 = {
+				add_permanent_claim = ROOT
+			}
+			4785 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	# ── 4_7 远望北海（前置 4_6）
+	MND_missions_4_7 = {
+		icon = "mission_galleys_in_port"
+		position = 7
+		required_missions = {
+			MND_missions_4_6
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1975
+				province_id = 1266
+				province_id = 1280
+				province_id = 1281
+				province_id = 1282
+				province_id = 1929
+				province_id = 4153
+				province_id = 4146
+				province_id = 248
+				province_id = 249
+				province_id = 251
+				province_id = 246
+				province_id = 247
+				province_id = 4361
+				province_id = 4362
+				province_id = 253
+				province_id = 4364
+				province_id = 4365
+				province_id = 250
+				province_id = 252
+				province_id = 369
+				province_id = 4110
+				province_id = 4363
+				province_id = 375
+				province_id = 376
+				province_id = 4119
+				province_id = 373
+				province_id = 374
+				province_id = 4120
+				province_id = 4379
+				province_id = 372
+				province_id = 4121
+				province_id = 4380
+				province_id = 4118
+				province_id = 4377
+				province_id = 4378
+				province_id = 10
+				province_id = 20
+				province_id = 21
+				province_id = 1978
+				province_id = 1979
+				province_id = 370
+				province_id = 371
+				province_id = 23
+				province_id = 24
+				province_id = 2752
+				province_id = 4145
+				province_id = 4375
+				province_id = 244
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 50
+				OR = {
+					province_id = 1269
+					province_id = 1270
+					province_id = 1271
+					province_id = 167
+					province_id = 168
+					province_id = 1879
+					province_id = 4385
+					province_id = 87
+					province_id = 88
+					province_id = 89
+					province_id = 1743
+					province_id = 241
+					province_id = 242
+					province_id = 4366
+					province_id = 4369
+					province_id = 245
+					province_id = 4367
+					province_id = 4368
+					province_id = 4785
+					province_id = 239
+					province_id = 240
+					province_id = 4372
+					province_id = 243
+					province_id = 1860
+					province_id = 1861
+					province_id = 4370
+					province_id = 4376
+					province_id = 233
+					province_id = 234
+					province_id = 4130
+					province_id = 4373
+					province_id = 4374
+					province_id = 235
+					province_id = 236
+					province_id = 237
+					province_id = 238
+					province_id = 4371
+					province_id = 92
+					province_id = 95
+					province_id = 98
+					province_id = 99
+					province_id = 2974
+					province_id = 96
+					province_id = 97
+					province_id = 4383
+					province_id = 100
+					province_id = 1931
+					province_id = 4381
+					province_id = 4382
+					province_id = 90
+					province_id = 1744
+					province_id = 1865
+					province_id = 4769
+					province_id = 4770
+					province_id = 1742
+				}
+			}
+		}
+		effect = {
+			1975 = {
+				add_permanent_claim = ROOT
+			}
+			1266 = {
+				add_permanent_claim = ROOT
+			}
+			1280 = {
+				add_permanent_claim = ROOT
+			}
+			1281 = {
+				add_permanent_claim = ROOT
+			}
+			1282 = {
+				add_permanent_claim = ROOT
+			}
+			1929 = {
+				add_permanent_claim = ROOT
+			}
+			4153 = {
+				add_permanent_claim = ROOT
+			}
+			4146 = {
+				add_permanent_claim = ROOT
+			}
+			248 = {
+				add_permanent_claim = ROOT
+			}
+			249 = {
+				add_permanent_claim = ROOT
+			}
+			251 = {
+				add_permanent_claim = ROOT
+			}
+			246 = {
+				add_permanent_claim = ROOT
+			}
+			247 = {
+				add_permanent_claim = ROOT
+			}
+			4361 = {
+				add_permanent_claim = ROOT
+			}
+			4362 = {
+				add_permanent_claim = ROOT
+			}
+			253 = {
+				add_permanent_claim = ROOT
+			}
+			4364 = {
+				add_permanent_claim = ROOT
+			}
+			4365 = {
+				add_permanent_claim = ROOT
+			}
+			250 = {
+				add_permanent_claim = ROOT
+			}
+			252 = {
+				add_permanent_claim = ROOT
+			}
+			369 = {
+				add_permanent_claim = ROOT
+			}
+			4110 = {
+				add_permanent_claim = ROOT
+			}
+			4363 = {
+				add_permanent_claim = ROOT
+			}
+			375 = {
+				add_permanent_claim = ROOT
+			}
+			376 = {
+				add_permanent_claim = ROOT
+			}
+			4119 = {
+				add_permanent_claim = ROOT
+			}
+			373 = {
+				add_permanent_claim = ROOT
+			}
+			374 = {
+				add_permanent_claim = ROOT
+			}
+			4120 = {
+				add_permanent_claim = ROOT
+			}
+			4379 = {
+				add_permanent_claim = ROOT
+			}
+			372 = {
+				add_permanent_claim = ROOT
+			}
+			4121 = {
+				add_permanent_claim = ROOT
+			}
+			4380 = {
+				add_permanent_claim = ROOT
+			}
+			4118 = {
+				add_permanent_claim = ROOT
+			}
+			4377 = {
+				add_permanent_claim = ROOT
+			}
+			4378 = {
+				add_permanent_claim = ROOT
+			}
+			10 = {
+				add_permanent_claim = ROOT
+			}
+			20 = {
+				add_permanent_claim = ROOT
+			}
+			21 = {
+				add_permanent_claim = ROOT
+			}
+			1978 = {
+				add_permanent_claim = ROOT
+			}
+			1979 = {
+				add_permanent_claim = ROOT
+			}
+			370 = {
+				add_permanent_claim = ROOT
+			}
+			371 = {
+				add_permanent_claim = ROOT
+			}
+			23 = {
+				add_permanent_claim = ROOT
+			}
+			24 = {
+				add_permanent_claim = ROOT
+			}
+			2752 = {
+				add_permanent_claim = ROOT
+			}
+			4145 = {
+				add_permanent_claim = ROOT
+			}
+			4375 = {
+				add_permanent_claim = ROOT
+			}
+			244 = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = MND_trade_empire
+				duration = -1
+			}
+		}
+	}
+
+	# ── 4_8 副团长洛恩（前置 3_7）
+	MND_missions_4_8 = {
+		icon = "mission_assemble_an_army"
+		position = 8
+		required_missions = {
+			MND_missions_3_7
+		}
+		trigger = {
+			mil_power = 110
+		}
+		effect = {
+			add_mil_power = -100
+			define_general = {
+				name = "洛恩"
+				fire = 5
+				shock = 5
+				manuever = 5
+				siege = 3
+			}
+		}
+	}
+
+	# ── 4_9 东风之龙（独立任务，无前置无后续）
+	MND_missions_4_9 = {
+		icon = "mission_cannons_firing"
+		position = 9
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_dragon
+				duration = -1
+			}
+			add_mil_power = -50
+		}
+	}
+
+	# ── 4_10 南风之狮（独立任务，无前置无后续）
+	MND_missions_4_10 = {
+		icon = "mission_landsknecht_soldier"
+		position = 10
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_lion
+				duration = -1
+			}
+			add_mil_power = -50
+		}
+	}
 
 }
 
@@ -588,6 +1367,23 @@ MND_missions_5 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
+
+	# ── 5_1 女仆诺艾尔（无前置）
+	MND_missions_5_1 = {
+		icon = "mission_noble_council"
+		position = 1
+		trigger = {
+			num_of_generals = 3
+			army_tradition = 10
+			prestige = 51
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_maid_noelle
+				duration = -1
+			}
+		}
+	}
 
 	# ── 5_2 清扫敌对势力（前置 4_1）
 	MND_missions_5_2 = {
@@ -645,7 +1441,7 @@ MND_missions_5 = {
 		}
 		trigger = {
 			total_development = 251
-			num_of_cities = 30
+			num_of_cities = 22
 			land_forcelimit = 61
 			treasury = 500
 		}
@@ -693,23 +1489,6 @@ MND_missions_5 = {
 		}
 	}
 
-	# ── 5_1 女仆诺艾尔（无前置）
-	MND_missions_5_1 = {
-		icon = "mission_noble_council"
-		position = 1
-		trigger = {
-			num_of_generals = 3
-			army_tradition = 10
-			prestige = 51
-		}
-		effect = {
-			add_country_modifier = {
-				name = MND_maid_noelle
-				duration = -1
-			}
-		}
-	}
-
 	# ── 5_6 德意志的皇帝（前置 4_5 + 5_5）
 	MND_missions_5_6 = {
 		icon = "mission_empire"
@@ -728,7 +1507,10 @@ MND_missions_5 = {
 			}
 		}
 		effect = {
-			set_government_rank = 3
+			custom_tooltip = MND_tt_become_empire
+			hidden_effect = {
+				set_government_rank = 3
+			}
 			add_prestige = 100
 			add_power_projection = {
 				type = MND_mission_reward
@@ -738,6 +1520,79 @@ MND_missions_5 = {
 				name = MND_mondstadt_unification
 				duration = -1
 			}
+		}
+	}
+	# ── 5_7 自由之都（前置 5_6）
+	MND_missions_5_7 = {
+		icon = "mission_conquer_50_development"
+		position = 7
+		required_missions = {
+			MND_missions_5_6
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 50
+				development = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_city_of_freedom
+				duration = -1
+			}
+		}
+	}
+	# ── 5_8 蒙德帝国（前置 4_7 + 5_7 + 6_7）
+	MND_missions_5_8 = {
+		icon = "mission_empire"
+		position = 8
+		required_missions = {
+			MND_missions_4_7
+			MND_missions_5_7
+			MND_missions_6_7
+		}
+		trigger = {
+			total_development = 1500
+			prestige = 80
+			government_rank = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_mondstadt_empire
+				duration = -1
+			}
+		}
+	}
+
+	# ── 5_9 西风之鹰（独立任务，无前置无后续）
+	MND_missions_5_9 = {
+		icon = "mission_steppe_warriors"
+		position = 9
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_eagle
+				duration = -1
+			}
+			add_mil_power = -50
+		}
+	}
+
+	# ── 5_10 北风之狼（独立任务，无前置无后续）
+	MND_missions_5_10 = {
+		icon = "mission_cossack_cavalry"
+		position = 10
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_wolf
+				duration = -1
+			}
+			add_mil_power = -50
 		}
 	}
 
@@ -753,7 +1608,7 @@ MND_missions_6 = {
 	}
 	has_country_shield = yes
 
-	# ── 7_1 阿贝多的炼金工坊
+	# ── 6_1 阿贝多的炼金工坊
 	MND_missions_6_1 = {
 		icon = "mission_have_manufactories"
 		position = 1
@@ -767,9 +1622,8 @@ MND_missions_6 = {
 			}
 		}
 		effect = {
-			add_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
+			change_variable = {
+				which = Mana
 				value = 25
 			}
 			add_country_modifier = {
@@ -787,17 +1641,16 @@ MND_missions_6 = {
 			MND_missions_6_1
 		}
 		trigger = {
-			has_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
+			# ACG 魔法系统的「魔法值」（变量 Mana）≥ 51，再耗 50 换「创生之法」
+			check_variable = {
+				which = Mana
 				value = 51
 			}
 		}
 		effect = {
-			add_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
-				value = -50
+			subtract_variable = {
+				which = Mana
+				value = 50
 			}
 			add_country_modifier = {
 				name = MND_creation_law
@@ -829,17 +1682,11 @@ MND_missions_6 = {
 		}
 		trigger = {
 			monthly_income = 51
-			has_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
-				value = 51
-			}
 		}
 		effect = {
-			add_government_power = {
-				mechanic_type = acgr_magic_government_mechanic_1
-				power_type = acgr_magic_government
-				value = 33
+			change_variable = {
+				which = Mana
+				value = 1
 			}
 			add_country_modifier = {
 				name = MND_witch_coven
@@ -982,57 +1829,4 @@ MND_missions_6 = {
 
 }
 
-MND_missions_7 = {
-	slot = 7
-	generic = no
-	ai = yes
-	potential = {
-		tag = MND
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
 
-	# ── 7_1 东风之龙（独立任务，无前置）
-	MND_missions_7_1 = {
-		icon = "mission_cannons_firing"
-		position = 1
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-		}
-	}
-
-	# ── 7_2 南风之狮（独立任务，无前置）
-	MND_missions_7_2 = {
-		icon = "mission_landsknecht_soldier"
-		position = 2
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-		}
-	}
-
-	# ── 7_3 西风之鹰（独立任务，无前置）
-	MND_missions_7_3 = {
-		icon = "mission_steppe_warriors"
-		position = 3
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-		}
-	}
-
-	# ── 7_4 北风之狼（独立任务，无前置）
-	MND_missions_7_4 = {
-		icon = "mission_cossack_cavalry"
-		position = 4
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-		}
-	}
-}

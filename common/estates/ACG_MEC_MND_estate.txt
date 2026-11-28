@@ -29,6 +29,9 @@ estate_brahmins = {
 			tag = MND
 		}
 	}
+	privileges = {
+		MND_pastoral_prayer
+	}
 }
 
 estate_maratha = {
@@ -40,5 +43,6 @@ estate_maratha = {
 	}
 	privileges = {
 		MND_resident_commissions
+		MND_knights_of_favonius_charter
 	}
 }

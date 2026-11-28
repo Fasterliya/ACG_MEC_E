@@ -1,0 +1,148 @@
+# ============================================================
+# 蒙德 MND —— 政府机制「四风守护」
+# ------------------------------------------------------------
+# 【挂载入口】common/government_reforms/MND_government_reforms.txt 的 government_abilities。
+#   证据：common/government_mechanics/readme.txt（原版自带说明）——
+#     mechanic 的 ID 由政体改革的 government_abilities 引用；
+#   工作区先例：common/government_reforms/ACG_MEC_HNA_reforms.txt:67-69、NNM_government_reforms.txt:23-25。
+#
+# 【结构照抄原版伊克塔】common/government_mechanics/02_iqta.txt:1-194
+#   伊克塔同样只有 interactions、没有 powers —— 说明「纯按钮机制」是原版支持的写法。
+#   （唯一例外：为了排成 2×2，本机制额外用了一份 gui，见下面【2×2 排布】）
+#
+# 【四选一互斥】共享冷却令牌：四个 interaction 用同一个 cooldown_token = MND_four_winds，
+#   cooldown_years = 5。点掉任意一个 → 四个一起进入 5 年冷却（其余三个变灰）→ 到期同时恢复。
+#   原版同款：02_iqta.txt:40-42 / 104-106 / 160-162
+#     （efficient_tax_farming / land_acquisition / lenient_taxation 三个政策共享 cooldown_token = iqta_mechanic）
+#
+# 【解锁门禁】四个按钮的 trigger 各查一条 has_country_modifier，
+#   钥匙 = common/event_modifiers/MND_modifiers.txt 里的 MND_wind_dragon / _wolf / _lion / _eagle，
+#   由任务树 MND_missions_4_9 / 4_10 / 5_9 / 5_10 授予（东风之龙/南风之狮在西风骑士团列，
+#   西风之鹰/北风之狼在蒙德帝国列；均为独立任务，无前置无后续，duration = -1）。
+#   没拿到钥匙 → 按钮变灰点不动（readme：trigger 默认空 = 不禁用；写了 has_country_modifier 即灰）。
+#
+# 【5 年效果】effect 里 add_country_modifier + duration = 1825（365×5），
+#   修正定义同在 common/event_modifiers/MND_modifiers.txt（MND_wind_*_boon）。
+#   duration 与 cooldown_years 对齐：冷却结束那天 buff 也刚好到期，可以立刻再选。
+#
+# 【冷却提示文案】cooldown_desc 指向本地化键（原版用法 02_iqta.txt:42 的 AN_IQTA_TAXATION_POLICY），
+#   本机制用 MND_four_winds_cooldown。
+#
+# 【图标】icon 直接写 spriteType 名（不加 GFX_ 前缀，与 NNM 一致：
+#   common/government_mechanics/NNM_mikazuki_mechanic.txt:117 icon = "ACG_MEC_E_NNM_interaction_1"
+#   ↔ interface/NNM_reform_icons.gfx:9 name = "ACG_MEC_E_NNM_interaction_1"）
+#   四个 sprite 定义在 interface/MND_reform_icons.gfx，贴图在
+#   gfx/interface/government_reform_icons/ACG_MEC_E_MND/ACG_MEC_E_MND_interaction_*.dds。
+#
+# 【一行排布】原版把 interaction 按钮塞进 countrygovernmentview.gui 的
+#   "government_interaction_list"，引擎按 **固定 100 像素一格、按声明顺序** 横排；
+#   原版那条栏只有 300 宽，第 4 格（x=300）会被整格裁掉（实机验证：只剩 3 个，且第 4 个怎么偏都不出来）。
+#   两步解决：
+#     1) interface/zz_MND_government_view.gui —— 把交互栏加宽到 440，第 4 格才进得了界
+#        （文件名用 zz_ 开头，保证排在 countrygovernmentview.gui 之后加载）；
+#     2) interface/government_mechanics/MND_four_winds.gui —— 4 个 action 各一个窗口，
+#        把 100 的格距收紧成 56 的间距，排成紧凑一行：龙 / 狼 / 狮 / 鹰。
+#   偏移算式与图标尺寸的理由写在那两份文件头部。
+#
+# 【AI】ai_chance 固定 0：AI 不会自己点。
+# ============================================================
+
+MND_four_winds_mechanic = {
+	available = {
+		always = yes
+	}
+
+	interactions = {
+		# ---------------- 东风之龙 · 特瓦林 ----------------
+		# 钥匙：MND_wind_dragon（任务 7_1）
+		# 效果：+10% 补员速度 / -10% 所受士气打击
+		MND_wind_dragon_east = {
+			icon = "ACG_MEC_E_MND_interaction_dragon"
+			gui = MND_four_winds_row_1
+			trigger = {
+				has_country_modifier = MND_wind_dragon
+			}
+			effect = {
+				add_country_modifier = {
+					name = MND_wind_dragon_boon
+					duration = 1825
+				}
+			}
+			cooldown_years = 5
+			cooldown_token = MND_four_winds
+			cooldown_desc = MND_four_winds_cooldown
+			ai_chance = {
+				factor = 0
+			}
+		}
+
+		# ---------------- 北风之狼 · 安德留斯 ----------------
+		# 钥匙：MND_wind_wolf（任务 7_4）
+		# 效果：+15% 冲击伤害 / +2.5% 训练度
+		MND_wind_wolf_north = {
+			icon = "ACG_MEC_E_MND_interaction_wolf"
+			gui = MND_four_winds_row_2
+			trigger = {
+				has_country_modifier = MND_wind_wolf
+			}
+			effect = {
+				add_country_modifier = {
+					name = MND_wind_wolf_boon
+					duration = 1825
+				}
+			}
+			cooldown_years = 5
+			cooldown_token = MND_four_winds
+			cooldown_desc = MND_four_winds_cooldown
+			ai_chance = {
+				factor = 0
+			}
+		}
+
+		# ---------------- 南风之狮 · 温妮莎 ----------------
+		# 钥匙：MND_wind_lion（任务 7_2）
+		# 效果：+15% 骑兵作战 / +10% 骑兵比例
+		MND_wind_lion_south = {
+			icon = "ACG_MEC_E_MND_interaction_lion"
+			gui = MND_four_winds_row_3
+			trigger = {
+				has_country_modifier = MND_wind_lion
+			}
+			effect = {
+				add_country_modifier = {
+					name = MND_wind_lion_boon
+					duration = 1825
+				}
+			}
+			cooldown_years = 5
+			cooldown_token = MND_four_winds
+			cooldown_desc = MND_four_winds_cooldown
+			ai_chance = {
+				factor = 0
+			}
+		}
+
+		# ---------------- 西风之鹰 · 教会之鹰 ----------------
+		# 钥匙：MND_wind_eagle（任务 7_3）
+		# 效果：+10% 移动速度 / +10% 士气打击
+		MND_wind_falcon_west = {
+			icon = "ACG_MEC_E_MND_interaction_falcon"
+			gui = MND_four_winds_row_4
+			trigger = {
+				has_country_modifier = MND_wind_eagle
+			}
+			effect = {
+				add_country_modifier = {
+					name = MND_wind_eagle_boon
+					duration = 1825
+				}
+			}
+			cooldown_years = 5
+			cooldown_token = MND_four_winds
+			cooldown_desc = MND_four_winds_cooldown
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}

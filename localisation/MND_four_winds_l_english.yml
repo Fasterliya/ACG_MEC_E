@@ -1,0 +1,27 @@
+﻿l_english:
+
+ MND_four_winds_reform: "ÛVÎ˜ˆR²b"
+ MND_four_winds_reform_desc: "NÎ˜KN™Ÿ0SÎ˜KNür0WSÎ˜KNîr0‰Î˜KNpž  ÛVµ^™^‡Rée1SLX†NÿÛV*NTWRØIR(W™„·VºN„v¨š4YÌ‘0‘šëXâVŠbÙÛVSÎ˜Í‘°e÷‹ÞV®‹‹N…SÿúQVKNMRÿÎWÌ‘êS¹pNÏvopÿ	N4YˆR‹Q–›Q0op¹pN»SÿæSY	NÏv1S—V„q@wI{  ‰I{”Nt^ÿÎ˜Í‘°e9TÇÎW™XÿMbýwQ	N!k0"
+ MND_four_winds_cooldown: "ÛVÎ˜ˆR²b„v‰béb"
+ MND_wind_dragon_east: "NÎ˜KN™Ÿ"
+ MND_wind_dragon_east_desc: "yræt—g„vÎ˜ÎNNpôv¿u0ŠbƒR÷‹Nb:Wÿ–OO(WLeºNØ¡lR‹Y5–„vöePÿ1SòTÏuždÛ»S†N0\nHeœgÿcíu 5 t^	ÿÿeˆXT¦^ +10%ÿ@b×SëXlSbûQ -10%0"
+ MND_wind_wolf_north: "SÎ˜KNür"
+ MND_wind_wolf_north_desc: "‰R·VYu¯e„vür²ˆR@wê–ŸS0SÎ˜w„vöePÿ™„·VºNfRO†N(W»QWN¬qÇ+RºN¬qNÇ„v¬Q)Y0\nHeœgÿcíu 5 t^	ÿÿ²QûQ2O³R +15%ÿ­‹Ãu¦^ +2.5%0"
+ MND_wind_lion_south: "WSÎ˜KNîr"
+ MND_wind_lion_south_desc: ")n®YŽƒ>N×e£t^ÿWSÎ˜4YNÞV:NtY¶–w9T0îrPR–›QÿÎWÌ‘Ïk*NºNýåwSêñT:NÀNHNwb0\nHeœgÿcíu 5 t^	ÿÿ‘šuQjOb +15%ÿ‘šuQÔk‹O +10%0"
+ MND_wind_falcon_west: "‰Î˜KNpž"
+ MND_wind_falcon_west_desc: "YeO„vpžNôvØvËe(W‰Î˜'YYeXN¹e0ƒRwÁ‰„vN‰ÿ‘šëXâV,{ŒN)Y1SOåwS0\nHeœgÿcíu 5 t^	ÿÿûy¨R¦^ +10%ÿëXlSbûQ +10%0"
+ MND_wind_dragon_boon: "NÎ˜„v‡^QO"
+ MND_wind_dragon_boon_desc: "yræt—g„vÎ˜Xb@w‘šëXâV„vTY–ÿ2OuQÞV%„ôfëVÿ(c†NëXlSbûQ_Nce—Vba0"
+ desc_MND_wind_dragon_boon: "yræt—g„vÎ˜Xb@w‘šëXâV„vTY–ÿ2OuQÞV%„ôfëVÿ(c†NëXlSbûQ_Nce—Vba0"
+ MND_wind_wolf_boon: "SÎ˜„v‡^QO"
+ MND_wind_wolf_boon_desc: "ür²‹SNeg„v£NIRgàrÿ²QûQ6–µk•dV:ãSÿ–O„vªu‹V_Nß@wlx†NN*b0"
+ desc_MND_wind_wolf_boon: "ür²‹SNeg„v£NIRgàrÿ²QûQ6–µk•dV:ãSÿ–O„vªu‹V_Nß@wlx†NN*b0"
+ MND_wind_lion_boon: "WSÎ˜„v‡^QO"
+ MND_wind_lion_boon_desc: "îrPRNI{ºNÿ‘šuQ²Q—Vôfàrÿ–OÌ‘beŠblš>e0RMR’c„v_NôfY†N0"
+ desc_MND_wind_lion_boon: "îrPRNI{ºNÿ‘šuQ²Q—Vôfàrÿ–OÌ‘beŠblš>e0RMR’c„v_NôfY†N0"
+ MND_wind_eagle_boon: "‰Î˜„v‡^QO"
+ MND_wind_eagle_boon_desc: "pžHQwÁ‰ÿ_N1SHQ¨RKbÿte›Q¨cÛ—VôfëVÿVSböeHQNek‹S†NùR¹e„vëXl0"
+ desc_MND_wind_eagle_boon: "pžHQwÁ‰ÿ_N1SHQ¨RKbÿte›Q¨cÛ—VôfëVÿVSböeHQNek‹S†NùR¹e„vëXl0"
+ ability_MND_four_winds_mechanic: "ÛVÎ˜ˆR²b"
+ MND_four_winds_mechanic: "ÛVÎ˜ˆR²b"

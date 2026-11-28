@@ -1,0 +1,36 @@
+# ============================================================
+# 蒙德：让「骑士团特许状」也被「收王领免扣忠诚」认到
+# ------------------------------------------------------------
+# 【现象】特许状里写了 mechanics = { exempt_from_seize_land }，
+#   王领确实拔不动（阶层领地占比不掉），但收一次王领，西风骑士团照样 -15/-20 忠诚。
+#
+# 【根因】原版「收回王领」交互是两步，互不相干：
+#   1) common/estate_crown_land/00_interactions.txt:469  take_estate_land_share_massive = { estate = all }
+#      —— 这一步受特权的 mechanics = { exempt_from_seize_land } 保护（领地占比不动）；
+#   2) 同一交互 :485-508  add_estate_loyalty = { estate = all loyalty = -15/-20 }
+#      —— 这一步是**无条件对所有阶层**扣的，压根不看特权；
+#   3) 真正的「返还」在 :510 re_add_loyalty_from_seized_land
+#      （common/scripted_effects/01_scripted_effects_for_estates.txt:4085），
+#      它只对「有免拔特权」的阶层 +15/+20 抵消扣分。
+#   而它判断「有没有免拔特权」用的是脚本触发器
+#      estate_has_exempt_from_seize_land_privilege
+#        → has_exempt_from_seize_land_for_estate_maratha
+#      这条触发器是**写死的特权白名单**：
+#        estate_maratha_levies / estate_maratha_special_privilege（原版与 ACG1 完全一致）
+#   ⇒ 我们自建的 MND_knights_of_favonius_charter 不在名单里 ⇒ 只扣不返。
+#   （结论：mechanics = { exempt_from_seize_land } 只解决「地不被拔」，
+#     不解决「忠诚照扣」，两者是两套东西。）
+#
+# 【做法】本文件重定义同名触发器。模组在 ACG1 之后加载，同名定义后者覆盖前者，
+#   因此这份会顶掉原版 + ACG1 的两条定义。
+#   为免丢内容，先原样抄它们的两条，再追加蒙德的那条。
+#   ⚠ 若以后 ACG1 给 estate_maratha 加了新的免拔特权，记得同步到下面 OR 里。
+# ============================================================
+
+has_exempt_from_seize_land_for_estate_maratha = {
+	OR = {
+		has_estate_privilege = estate_maratha_levies
+		has_estate_privilege = estate_maratha_special_privilege
+		has_estate_privilege = MND_knights_of_favonius_charter
+	}
+}

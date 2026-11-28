@@ -1,0 +1,123 @@
+guiTypes = {
+
+	# ============================================================
+	# 蒙德 MND —— 四风守护行动按钮排成一行
+	# ------------------------------------------------------------
+	# 【引擎规则·实机测量确认】interactions 里的按钮按 **固定 100 像素一格** 横排，
+	#   第 n 个（按在 mechanic 文件里 **声明的先后顺序**，不是按窗口名）落在 x = 100n：
+	#     实测（2026-11-26 截图量像素）：第 1 个 = 0、第 2 个 = 100、第 3 个 = 200；
+	#     把窗口 size 从 100 改成 74 后位置一格没动 → 栅格与窗口宽度无关。
+	#   并且第 4 格（x=300）超出原版 300 宽的交互栏，**整格不绘制**。
+	#
+	# 【解法】两件事一起做：
+	#   1) zz_MND_government_view.gui —— 把 government_mechanic_interactions 的交互栏加宽到 440，
+	#      第 4 格才进得了界（文件名故意用 zz_ 开头，保证排在 countrygovernmentview.gui 之后加载；
+	#      之前叫 MND_government_view.gui 时按字母序排在 c 前面，被 ACG 那份覆盖了，白改）。
+	#   2) 本文件 —— 给 4 个 action 各一个窗口，把按钮从 100 的格距收紧成 56 的间距：
+	#        图标 48 宽、间隙 8 → 目标位置 x = 0 / 56 / 112 / 168
+	#        偏移 = 目标 - 100n  →  0 / -44 / -88 / -132
+	#
+	# 【顺序】窗口按 action 的声明顺序取用：龙 / 狼 / 狮 / 鹰 = row_1 / row_2 / row_3 / row_4。
+	#   所以一行从左到右就是：东风之龙、北风之狼、南风之狮、西风之鹰。
+	#
+	# 【写法来源】原版 interface/government_mechanics/arabic_trade_influence.gui:31-104
+	#   （每个 interaction 一个窗口，按钮元素必须叫 government_interaction_button，
+	#    显示的图标由引擎按 interaction 的 icon 覆盖）
+	# ============================================================
+
+	# 第 1 格：东风之龙
+	windowType = {
+		name = "MND_four_winds_row_1"
+		size = { x = 100 y = 100 }
+		backGround = ""
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_russian_ability_ADM" #占位，避免 assert；实际图标由 interaction 的 icon 覆盖
+			position = { x = 0 y = 0 }
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+	}
+
+	# 第 2 格：北风之狼
+	windowType = {
+		name = "MND_four_winds_row_2"
+		size = { x = 100 y = 100 }
+		backGround = ""
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_russian_ability_ADM"
+			position = { x = -44 y = 0 }
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+	}
+
+	# 第 3 格：南风之狮
+	windowType = {
+		name = "MND_four_winds_row_3"
+		size = { x = 100 y = 100 }
+		backGround = ""
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_russian_ability_ADM"
+			position = { x = -88 y = 0 }
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+	}
+
+	# 第 4 格：西风之鹰
+	windowType = {
+		name = "MND_four_winds_row_4"
+		size = { x = 100 y = 100 }
+		backGround = ""
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_russian_ability_ADM"
+			position = { x = -132 y = 0 }
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+	}
+}
