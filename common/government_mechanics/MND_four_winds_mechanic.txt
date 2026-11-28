@@ -17,7 +17,8 @@
 #
 # 【解锁门禁】四个按钮的 trigger 各查一条 has_country_modifier，
 #   钥匙 = common/event_modifiers/MND_modifiers.txt 里的 MND_wind_dragon / _wolf / _lion / _eagle，
-#   由任务树 MND_missions_7_1 ~ 7_4 授予（missions/MND_missions.txt:1538-1594，duration = -1）。
+#   由任务树 MND_missions_4_9 / 4_10 / 5_9 / 5_10 授予（东风之龙/南风之狮在西风骑士团列，
+#   西风之鹰/北风之狼在蒙德帝国列；均为独立任务，无前置无后续，duration = -1）。
 #   没拿到钥匙 → 按钮变灰点不动（readme：trigger 默认空 = 不禁用；写了 has_country_modifier 即灰）。
 #
 # 【5 年效果】effect 里 add_country_modifier + duration = 1825（365×5），

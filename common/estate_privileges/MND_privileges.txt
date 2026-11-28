@@ -113,3 +113,39 @@ MND_knights_of_favonius_charter = {
 		factor = 1
 	}
 }
+
+# ============================================================
+# 西风教会（estate_brahmins）：牧歌祷告
+#   忠诚 +10 / 影响力 +10
+#   发展成本 -5% / 省份贸易竞争力 +10%
+# 只有蒙德能用：is_valid 与 can_select 都锁 tag = MND
+#   （is_valid 不满足 → 别的国家列表里根本不出现；can_select 是第二道门）
+# 修正键：development_cost（国家发展成本，负值=更便宜）
+#         global_prov_trade_power_modifier（country 作用域，所有省份贸易竞争力 +%，
+#         原版 modifiers.txt:337；注意不是 province_trade_power_modifier，那个是省份作用域）
+# 登记：common/estates/ACG_MEC_MND_estate.txt 的 estate_brahmins -> privileges
+# ============================================================
+MND_pastoral_prayer = {
+	icon = privilege_religious
+	loyalty = 0.10
+	influence = 0.10
+	is_valid = {
+		tag = MND
+	}
+	can_select = {
+		tag = MND
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		development_cost = -0.05
+		global_prov_trade_power_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

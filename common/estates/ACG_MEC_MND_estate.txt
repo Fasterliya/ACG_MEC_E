@@ -29,6 +29,9 @@ estate_brahmins = {
 			tag = MND
 		}
 	}
+	privileges = {
+		MND_pastoral_prayer
+	}
 }
 
 estate_maratha = {

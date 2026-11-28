@@ -207,7 +207,7 @@ MND_wind_wolf = {	# 北风之狼
 # ===== 四风守护：政府行动的 5 年效果 =====
 # 由 common/government_mechanics/MND_four_winds_mechanic.txt 的 interaction effect 发放，
 # duration = 1825（5 年），与那里的 cooldown_years = 5 同步。
-# 前置钥匙是上面的 MND_wind_*（任务 MND_missions_7_1~7_4 授予，duration = -1）。
+# 前置钥匙是上面的 MND_wind_*（任务 MND_missions_4_9 / 4_10 / 5_9 / 5_10 授予，duration = -1）。
 
 MND_wind_dragon_boon = {	# 东风之龙 · 庇佑
 	reinforce_speed = 0.10
@@ -236,4 +236,61 @@ MND_economic_recovery = {	# 蒙德复苏期
 
 MND_wine_factory = {	# 蒙德酒厂（省份修正）
 	trade_goods_size = 1.0
+}
+
+# 听凭风的指引：任务 MND_missions_4_1 授予，限时 25 年（duration = 9125）
+# 注意与上面的 MND_wind_guidance（风神的指引，5_2 给的永久士气）不是同一个键
+MND_follow_the_wind = {	# 听凭风的指引
+	ae_impact = -0.15
+	core_creation = -0.05
+}
+
+# 风起之地：任务 MND_missions_1_1 授予，永久（duration = -1）
+MND_wind_rising = {	# 风起之地
+	province_warscore_cost = -0.10
+}
+
+# 蒙德远征军：任务 MND_missions_3_8 授予，永久（duration = -1）
+MND_expeditionary_army = {	# 蒙德远征军
+	land_forcelimit_modifier = 0.15
+	global_manpower_modifier = 0.15
+}
+
+# 魔女会：任务 MND_missions_3_9 授予，永久（duration = -1）
+# pulse_mana_get_modifier = 周期性魔法值获得；magic_power_government = 法术强度（法强）
+MND_witch_council = {	# 魔女会
+	pulse_mana_get_modifier = 5
+	magic_power_government = 1
+}
+
+# 大团长法尔伽：任务 MND_missions_3_10 授予，永久（duration = -1）
+# maratha_privilege_slots = 西风骑士团（本 mod 把 estate_maratha 改名为「西风骑士团」）特权上限 +1
+MND_grand_master = {	# 蒙德大团长
+	maratha_privilege_slots = 1
+	discipline = 0.025
+}
+
+# 大团长法尔伽的额外奖励（二选一）
+MND_varka = {	# 法尔伽
+	shock_damage = 0.10
+}
+
+MND_knightly_code = {	# 骑士准则
+	cav_to_inf_ratio = 0.10
+}
+
+# 吟游诗人的乐章：任务 MND_missions_1_9 授予，永久（duration = -1）
+# all_power_cost = 所有君主点数花费（原版任务修正同值用例：01_mission_modifiers.txt:8779）
+MND_bard_songs = {	# 吟游诗人
+	all_power_cost = -0.025
+}
+
+# 全盛蒙德：任务 MND_missions_3_11 授予，永久（duration = -1）
+MND_pinnacle_mondstadt = {	# 全盛蒙德
+	land_forcelimit = 13
+	cavalry_fire = 0.2
+	leader_land_shock = 1
+	leader_land_fire = 1
+	leader_land_manuever = 1
+	leader_siege = 1
 }

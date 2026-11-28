@@ -23,4 +23,5 @@ capital = 97
 	add_ruler_personality = kind_hearted_personality
 	add_ruler_personality = inspiring_leader_personality
 	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = industrious_personality
 }

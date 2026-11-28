@@ -33,6 +33,11 @@ MND_missions_1 = {
 		}
 		effect = {
 			change_government_reform_progress = 100
+			# 永久 buff：省份战争分数花费 -10%
+			add_country_modifier = {
+				name = MND_wind_rising
+				duration = -1
+			}
 		}
 	}
 
@@ -224,14 +229,36 @@ MND_missions_1 = {
 		}
 	}
 
+	# ── 1_9 吟游诗人的乐章（前置 1_8）
+	MND_missions_1_9 = {
+		icon = "mission_early_modern_university"
+		position = 9
+		required_missions = {
+			MND_missions_1_8
+		}
+		trigger = {
+			innovativeness = 20
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_bard_songs
+				duration = -1
+			}
+			change_innovativeness = 20
+		}
+	}
+
 	# ── 1_10 蒙德经济复苏（无前置）
 	MND_missions_1_10 = {
 		icon = "mission_have_manufactories"
 		position = 10
 		trigger = {
+			# 原写 has_building = manufactory —— 原版没有这个可建建筑（manufactory 只是模板，
+			# 实际是 wharf/weapons/textile/tradecompany/farm_estate/mills/furnace 等），
+			# 原版专门给了 province 作用域的脚本触发器 has_manufactory_trigger（00_scripted_triggers.txt:665）
 			num_of_owned_provinces_with = {
 				value = 10
-				has_building = manufactory
+				has_manufactory_trigger = yes
 			}
 		}
 		effect = {
@@ -474,6 +501,28 @@ MND_missions_2 = {
 		}
 	}
 
+	# ── 2_10 大魔女们（前置 2_9）
+	MND_missions_2_10 = {
+		icon = "mission_gain_mana"
+		position = 10
+		required_missions = {
+			MND_missions_2_9
+		}
+		trigger = {
+			# 魔法学院 = ACG1 的 magic_building_2_1（common/buildings/magic_buildings.txt:1478）
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = magic_building_2_1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = Mana
+				value = 40
+			}
+		}
+	}
+
 }
 
 MND_missions_3 = {
@@ -616,6 +665,114 @@ MND_missions_3 = {
 		}
 	}
 
+	# ── 3_8 蒙德远征军（前置 3_7）
+	MND_missions_3_8 = {
+		icon = "mission_build_up_to_force_limit"
+		position = 8
+		required_missions = {
+			MND_missions_3_7
+		}
+		trigger = {
+			num_of_cavalry = 55		# 55 支骑兵 = 5.5 万
+			treasury = 500
+			# 发展度 ≥ 开局 42（96 Zeeland 11 + 97 Holland 16 + 4383 Haag 15）的 10 倍
+			total_development = 420
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_expeditionary_army
+				duration = -1
+			}
+		}
+	}
+
+	# ── 3_9 魔女会（前置 3_8 + 2_8）
+	MND_missions_3_9 = {
+		icon = "mission_gain_mana"
+		position = 9
+		required_missions = {
+			MND_missions_3_8
+			MND_missions_2_8
+		}
+		trigger = {
+			# ACG 魔法系统的「魔法值」（变量 Mana）≥ 125
+			check_variable = {
+				which = Mana
+				value = 125
+			}
+		}
+		effect = {
+			subtract_variable = {
+				which = Mana
+				value = 65
+			}
+			add_country_modifier = {
+				name = MND_witch_council
+				duration = -1
+			}
+		}
+	}
+
+	# ── 3_10 大团长法尔伽（前置 3_9）
+	MND_missions_3_10 = {
+		icon = "mission_empire"
+		position = 10
+		required_missions = {
+			MND_missions_3_9
+		}
+		trigger = {
+			num_of_cities = 44
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_grand_master
+				duration = -1
+			}
+			# 额外奖励（二选一，complex_dynamic_effect 是 if / else_if，先命中先生效）
+			complex_dynamic_effect = {
+				first_custom_tooltip = MND_missions_3_10_bonus_cav_tt
+				first_limit = "
+					cavalry_fraction = 1.0
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = MND_varka
+						duration = -1
+					}
+				"
+				second_custom_tooltip = MND_missions_3_10_bonus_mixed_tt
+				second_limit = "
+					NOT = { cavalry_fraction = 1.0 }
+				"
+				second_effect = "
+					add_country_modifier = {
+						name = MND_knightly_code
+						duration = -1
+					}
+				"
+			}
+		}
+	}
+
+	# ── 3_11 全盛蒙德（前置 3_10 + 2_10）
+	MND_missions_3_11 = {
+		icon = "mission_empire"
+		position = 11
+		required_missions = {
+			MND_missions_3_10
+			MND_missions_2_10
+		}
+		trigger = {
+			num_of_cavalry = 100		# 100 支骑兵 = 10 万
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_pinnacle_mondstadt
+				duration = -1
+			}
+		}
+	}
+
 }
 
 MND_missions_4 = {
@@ -638,6 +795,11 @@ MND_missions_4 = {
 		effect = {
 			low_countries_region = {
 				add_permanent_claim = ROOT
+			}
+			# 限时 25 年（9125 天）：扩张更易消化
+			add_country_modifier = {
+				name = MND_follow_the_wind
+				duration = 9125
 			}
 		}
 	}
@@ -1140,6 +1302,60 @@ MND_missions_4 = {
 		}
 	}
 
+	# ── 4_8 副团长洛恩（前置 3_7）
+	MND_missions_4_8 = {
+		icon = "mission_assemble_an_army"
+		position = 8
+		required_missions = {
+			MND_missions_3_7
+		}
+		trigger = {
+			mil_power = 110
+		}
+		effect = {
+			add_mil_power = -100
+			define_general = {
+				name = "洛恩"
+				fire = 5
+				shock = 5
+				manuever = 5
+				siege = 3
+			}
+		}
+	}
+
+	# ── 4_9 东风之龙（独立任务，无前置无后续）
+	MND_missions_4_9 = {
+		icon = "mission_cannons_firing"
+		position = 9
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_dragon
+				duration = -1
+			}
+			add_mil_power = -50
+		}
+	}
+
+	# ── 4_10 南风之狮（独立任务，无前置无后续）
+	MND_missions_4_10 = {
+		icon = "mission_landsknecht_soldier"
+		position = 10
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_lion
+				duration = -1
+			}
+			add_mil_power = -50
+		}
+	}
+
 }
 
 MND_missions_5 = {
@@ -1225,7 +1441,7 @@ MND_missions_5 = {
 		}
 		trigger = {
 			total_development = 251
-			num_of_cities = 30
+			num_of_cities = 22
 			land_forcelimit = 61
 			treasury = 500
 		}
@@ -1345,6 +1561,38 @@ MND_missions_5 = {
 				name = MND_mondstadt_empire
 				duration = -1
 			}
+		}
+	}
+
+	# ── 5_9 西风之鹰（独立任务，无前置无后续）
+	MND_missions_5_9 = {
+		icon = "mission_steppe_warriors"
+		position = 9
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_eagle
+				duration = -1
+			}
+			add_mil_power = -50
+		}
+	}
+
+	# ── 5_10 北风之狼（独立任务，无前置无后续）
+	MND_missions_5_10 = {
+		icon = "mission_cossack_cavalry"
+		position = 10
+		trigger = {
+			mil_power = 250
+		}
+		effect = {
+			add_country_modifier = {
+				name = MND_wind_wolf
+				duration = -1
+			}
+			add_mil_power = -50
 		}
 	}
 
@@ -1581,77 +1829,4 @@ MND_missions_6 = {
 
 }
 
-MND_missions_7 = {
-	slot = 7
-	generic = no
-	ai = yes
-	potential = {
-		tag = MND
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
 
-	# ── 7_1 东风之龙（独立任务，无前置）
-	MND_missions_7_1 = {
-		icon = "mission_cannons_firing"
-		position = 1
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-			add_country_modifier = {
-				name = MND_wind_dragon
-				duration = -1
-			}
-			add_mil_power = -50
-		}
-	}
-
-	# ── 7_2 南风之狮（独立任务，无前置）
-	MND_missions_7_2 = {
-		icon = "mission_landsknecht_soldier"
-		position = 2
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-			add_country_modifier = {
-				name = MND_wind_lion
-				duration = -1
-			}
-			add_mil_power = -50
-		}
-	}
-
-	# ── 7_3 西风之鹰（独立任务，无前置）
-	MND_missions_7_3 = {
-		icon = "mission_steppe_warriors"
-		position = 3
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-			add_country_modifier = {
-				name = MND_wind_eagle
-				duration = -1
-			}
-			add_mil_power = -50
-		}
-	}
-
-	# ── 7_4 北风之狼（独立任务，无前置）
-	MND_missions_7_4 = {
-		icon = "mission_cossack_cavalry"
-		position = 4
-		trigger = {
-			mil_power = 250
-		}
-		effect = {
-			add_country_modifier = {
-				name = MND_wind_wolf
-				duration = -1
-			}
-			add_mil_power = -50
-		}
-	}
-}
